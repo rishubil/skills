@@ -1,0 +1,40 @@
+---
+title: Hidden - Meta Box Documentation
+source: https://docs.metabox.io/fields/hidden/
+---
+
+The hidden field creates a simple hidden input. It's usually used to store custom data that cannot be changed.
+
+## Screenshots
+
+![The hidden field settings](https://docs.metabox.io/assets/images/hidden-cff07f9c0ce3fabdd73f791498523adb.png)
+
+## Settings
+
+This field doesn't have any specific settings. It only uses [common settings](https://docs.metabox.io/field-settings/).
+
+To store the hidden value, put it in the `std` setting.
+
+This is a sample field settings array when creating this field with code:
+
+```php
+[
+    'id'   => 'field_id',
+    'type' => 'hidden',
+    // Hidden field must have predefined value
+    'std'  => 'Hidden value',
+],
+```
+
+## Data
+
+Although the value is fixed in the code, this field still saves it in the database.
+
+## Template usage
+
+To get the field value, use this code
+
+```php
+<?php $value = rwmb_meta( 'my_field_id' ) ?>
+<p>The hidden value: <?= $value ?>
+```

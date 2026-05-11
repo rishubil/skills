@@ -1,0 +1,46 @@
+---
+title: Updates - Meta Box Documentation
+source: https://docs.metabox.io/updates/
+---
+
+Meta Box and all extensions can be updated automatically or manually. The automatic update uses the WordPress update mechanism which checks for new versions twice a day. This is the recommended way to get new updates from our website.
+
+## Automatic update
+
+To enable automatic updates, you need to have a valid license key. Go to [My Account](https://metabox.io/my-account/) page to get it.
+
+Then go to **Meta Box » License** and enter your license key and click **Save Changes** button.
+
+![entering meta box license key](https://imgur.elightup.com/vybVU36.png)
+
+From now on, when WordPress checks new versions for plugins, it will also check for new versions of Meta Box extensions. If there is any new update, you'll see this:
+
+![New versions](https://imgur.elightup.com/Gul7JuL.png)
+
+Then you can update the extensions the same way as for other plugins by clicking the **Update now** link.
+
+## Manual update
+
+You can also update the extensions manually by following these steps:
+
+1. Go to [My Account](https://metabox.io/my-account/) page.
+2. On your account page, you will see all downloads for your purchased extensions. Download the extension(s) to your computer, unzip the file and upload the extension folder to your website, overwriting the old files.
+
+## FAQ
+
+> [!-info] -info
+> Why can't I update even with a valid license key?
+> 
+> We cache the requests to check updates in a WordPress transient, which has a one-day lifetime. To force WordPress to check for updates, you need to remove this transient. To do that, please install the [WP-Sweep](https://wordpress.org/plugins/wp-sweep/) plugin and clear all transients. Then go to **Dashboard » Updates** and click the **Check again** button.
+> 
+> [\# Link to this question](#why-cant-i-update-even-with-a-valid-license-key)
+
+> [!-info] -info
+> Can I define the license key via a constant in wp-config.php?
+> 
+> You can define the license key in a constant in the `wp-config.php` file instead of storing it in the database. It might be more secure since no one can see it from the WordPress dashboard or in the database. To do that, define it via the `META_BOX_KEY` constant:
+> 
+> ```php
+> define( 'META_BOX_KEY', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456' ); // Your Meta Box license key.
+> ```
+> [\# Link to this question](#can-i-define-the-license-key-via-a-constant-in-wp-configphp)
