@@ -35,6 +35,15 @@
       "skills": [
         "./skills/monkey-c"
       ]
+    },
+    {
+      "name": "wordpress-meta-box",
+      "description": "Specialist skill for WordPress Meta Box plugin — custom fields, meta boxes, custom post types, and the full Meta Box API (fields, actions, filters, functions).",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/wordpress-meta-box"
+      ]
     }
   ]
 }
