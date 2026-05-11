@@ -1,6 +1,8 @@
 ---
 title: Showing the featured restaurants - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’ll display the featured posts on the frontend using a custom field for manually choosing. Take restaurants as an example:

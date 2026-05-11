@@ -1,6 +1,8 @@
 ---
 title: Switch - Meta Box Documentation
 source: https://docs.metabox.io/fields/switch/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The switch field shows an on/off switch for you to enable/disable something. You can choose a style (rounded or square) and set custom text/icon labels.
@@ -17,7 +19,7 @@ The switch field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

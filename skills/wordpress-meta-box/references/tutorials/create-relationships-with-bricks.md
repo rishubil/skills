@@ -1,6 +1,8 @@
 ---
 title: Creating relationships - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-relationships-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you want to create a relationship between two objects on your website, the **MB Relationships** from **Meta Box** can help you. In this practice, we’ll create a bi-directional relationship between Courses and Instructors post type for example. In addition, we also display them on the page with the help of **Bricks Builder**.

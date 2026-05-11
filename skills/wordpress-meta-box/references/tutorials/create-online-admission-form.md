@@ -1,6 +1,8 @@
 ---
 title: Creating online admission form for schools - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-online-admission-form/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 instead of submitting hard copies for student information, schools may have online submission forms then students can submit on the website. We’re going to find out how to create that online admission forms in this practice.

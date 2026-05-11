@@ -1,6 +1,8 @@
 ---
 title: Creating a dynamic landing page - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-dynamic-landing-page/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The information such as title, tagline, button, image, … of the landing page will be saved in custom fields. When you change them, the landing page will be changed the content but keep the layout and style. It’s called dynamic landing page.

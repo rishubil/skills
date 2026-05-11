@@ -1,6 +1,8 @@
 ---
 title: Displaying the latest products - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-product-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today's practice, we're going to create the latest product section using Meta Box and Breakdance.

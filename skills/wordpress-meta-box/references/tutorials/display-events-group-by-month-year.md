@@ -1,6 +1,8 @@
 ---
 title: Displaying events group by month and year - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-events-group-by-month-year/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Grouping events by month and year** is the perfect solution. It not only allows **visitors to easily find and browse events based on their dates**, but it also lets them quickly **locate upcoming activities or review past events in a structured manner**. Let’s dig into how to achieve it with **Meta Box**!
@@ -354,4 +356,4 @@ Now, the section is more visual.
 
 ![Group events by month and year with Meta Box after styling](https://imgur.elightup.com/LjXznGu.gif)
 
-If you’re looking to take your event display even further, consider checking out our tutorial on [displaying related events](https://docs.metabox.io/tutorials/display-related-posts-based-on-shared-relationship/). Thanks for reading!
+If you’re looking to take your event display even further, consider checking out our tutorial on [displaying related events](display-related-posts-based-on-shared-relationship.md). Thanks for reading!

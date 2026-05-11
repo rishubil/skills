@@ -1,6 +1,8 @@
 ---
 title: MB Term Meta - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-term-meta/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Term Meta helps you to add custom fields to taxonomies.
@@ -50,7 +52,7 @@ WordPress provides an identical way to store values in the meta tables for post 
 
 ## Getting field value
 
-You're able to use helper function [rwmb\_meta()](https://docs.metabox.io/functions/rwmb-meta/) to get field value for terms.
+You're able to use helper function [rwmb\_meta()](../functions/rwmb-meta.md) to get field value for terms.
 
 ```php
 $term_id = get_queried_object_id();
@@ -64,12 +66,12 @@ echo $value;
 > - In the 2nd parameter, you need to pass `'object_type' => 'term'`, and
 > - The last parameter is the term ID. To get the ID of the the current category/term page, please use the function `get_queried_object_id()`.
 
-Other parameters are the same as for post. Please see [this documentation](https://docs.metabox.io/displaying-fields-with-code/) for details.
+Other parameters are the same as for post. Please see [this documentation](../displaying-fields-with-code.md) for details.
 
 > [!-warning] -warning
 > warning
 > 
-> It requires the extension version 1.1+ to use the helper function. If you're using an older version, please [update now](https://docs.metabox.io/updates/).
+> It requires the extension version 1.1+ to use the helper function. If you're using an older version, please [update now](../updates.md).
 
 ## FAQ
 

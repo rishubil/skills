@@ -1,6 +1,8 @@
 ---
 title: Meta Box - Polylang integration - Meta Box Documentation
 source: https://docs.metabox.io/integrations/polylang/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Integration with Polylang offers an intuitive interface to translate both values and labels of all objects, including post types, taxonomies, custom fields, settings pages, and relationships. It works smoothly whether you're using Polylang or Polylang Pro.
@@ -63,7 +65,7 @@ To display translation on the frontend, you can use MB Views, a page builder or 
 
 ## Post types
 
-For example, I [created a post type](https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/) named Events. Now, our goal is to translate its labels and posts.
+For example, I [created a post type](../tutorials/create-custom-post-types-taxonomies.md) named Events. Now, our goal is to translate its labels and posts.
 
 ### Post type labels
 

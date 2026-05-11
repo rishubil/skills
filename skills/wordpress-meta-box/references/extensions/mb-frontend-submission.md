@@ -1,9 +1,11 @@
 ---
 title: MB Frontend Submission - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-frontend-submission/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-MB Frontend Submission helps you create front-end forms for users to submit data to your website. It allows you to submit data for posts like post fields (title, content, etc.) and also custom fields created by Meta Box. It also support to custom table models and works with all extensions like [MB Group](https://docs.metabox.io/extensions/meta-box-group/) or [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/).
+MB Frontend Submission helps you create front-end forms for users to submit data to your website. It allows you to submit data for posts like post fields (title, content, etc.) and also custom fields created by Meta Box. It also support to custom table models and works with all extensions like [MB Group](meta-box-group.md) or [MB Conditional Logic](meta-box-conditional-logic.md).
 
 ![submission form](https://imgur.elightup.com/jfXHqSc.png)
 
@@ -23,13 +25,13 @@ The plugin also provides a shortcode to insert the submission form into a page:
 [mb_frontend_form id="field-group-id" post_fields="title,content"]
 ```
 
-You can also submit data to a [MB Custom Table](https://docs.metabox.io/extensions/mb-custom-table/) model:
+You can also submit data to a [MB Custom Table](mb-custom-table.md) model:
 
 ```php
 [mb_frontend_form id="field-group-id" object_type="model"]
 ```
 
-If you're using [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), go to **Meta Box > Custom Fields** admin page and copy the content in the **Shortcode** column for the field group that you created:
+If you're using [MB Builder](meta-box-builder.md), go to **Meta Box > Custom Fields** admin page and copy the content in the **Shortcode** column for the field group that you created:
 
 ![Copy submission form shortcode in MB Builder](https://imgur.elightup.com/sfeWhBA.png)
 
@@ -68,7 +70,7 @@ Below is the list of the settings. The attribute is used for the shortcode.
 
 When you set the form to display fields from a field group, all fields are displayed by default. If you want to hide a field from front-end forms, then you need to set a settings for it.
 
-If you use [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) to build the field group, please enable the settings **Hide from front end** from the field's **Advanced** settings menu:
+If you use [MB Builder](meta-box-builder.md) to build the field group, please enable the settings **Hide from front end** from the field's **Advanced** settings menu:
 
 ![Hide a field from the front end](https://docs.metabox.io/assets/images/hide-front-end-7d617974ef24ecad31c64e35427f4939.png)
 
@@ -192,13 +194,13 @@ To make the plugin recognize the post fields, you need to set correct IDs for th
 | Post date | `post_date` |
 | Post thumbnail | `_thumbnail_id` |
 
-With this method, you're able to set the label for post fields or change settings (even field type) for them easily using any [field settings](https://docs.metabox.io/field-settings/).
+With this method, you're able to set the label for post fields or change settings (even field type) for them easily using any [field settings](../field-settings.md).
 
 ### Validation
 
 There are 2 ways to validate fields: on the front end with JavaScript and on the back end with PHP.
 
-For front-end validation with JavaScript, please see [this documentation](https://docs.metabox.io/validation/).
+For front-end validation with JavaScript, please see [this documentation](../validation.md).
 
 To validate on the back end with PHP, please use the `rwmb_frontend_validate` filter as follows:
 
@@ -532,7 +534,7 @@ $field   = apply_filters( 'rwmb_frontend_post_content', [
 ] );
 ```
 
-Each post field is treated as a normal Meta Box field (see here for the full list of [field settings](https://docs.metabox.io/field-settings/)).
+Each post field is treated as a normal Meta Box field (see here for the full list of [field settings](../field-settings.md)).
 
 So, to make the post title required, you can do like this:
 
@@ -687,6 +689,6 @@ As you might know, Meta Box uses [nonces](https://developer.wordpress.org/apis/s
 
 ## Tutorials
 
-- [Adding guest authors and guest posts](https://docs.metabox.io/tutorials/add-guest-authors/)
+- [Adding guest authors and guest posts](../tutorials/add-guest-authors.md)
 - [MB Frontend Submission: Dashboard, Ajax, reCaptcha & More](https://metabox.io/mb-frontend-submission-dashboard-ajax-recaptcha/)
 - [How to Create a Classified Ads Website using Meta Box](https://metabox.io/create-classified-ads-website-using-meta-box/)

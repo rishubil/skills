@@ -1,6 +1,8 @@
 ---
 title: Custom HTML - Meta Box Documentation
 source: https://docs.metabox.io/fields/custom-html/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The custom HTML field allows you to output anything. You can even use a PHP callback function to output the HTML.
@@ -19,7 +21,7 @@ The custom html field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -37,7 +39,7 @@ This is a sample field settings array for registering this field with code:
 
 ## Styling
 
-Because this field is usually used to display custom content, it requires some CSS to make the content looks good. To enqueue a CSS file to the admin editing page, use the [rwmb\_enqueue\_scripts](https://docs.metabox.io/actions/rwmb-enqueue-scripts/) hook:
+Because this field is usually used to display custom content, it requires some CSS to make the content looks good. To enqueue a CSS file to the admin editing page, use the [rwmb\_enqueue\_scripts](../actions/rwmb-enqueue-scripts.md) hook:
 
 ```php
 add_action( 'rwmb_enqueue_scripts', function () {

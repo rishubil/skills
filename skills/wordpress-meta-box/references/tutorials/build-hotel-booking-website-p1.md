@@ -1,6 +1,8 @@
 ---
 title: tutorials/build-hotel-booking-website-p1.md
 source: https://docs.metabox.io/tutorials/build-hotel-booking-website-p1/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 1. The archive page for all the rooms, along with their information.
@@ -56,7 +58,7 @@ These are some fields I created:
 
 ![Some fields I created for rooms](https://i0.wp.com/images.elightup.com/meta-box/blog/hotel-booking-room-archive/fields.png)
 
-They are the basic fields and no special settings. In the case that you want to add more information, just choose the corresponding [field type](https://docs.metabox.io/fields/) provided with Meta Box.
+They are the basic fields and no special settings. In the case that you want to add more information, just choose the corresponding [field type](../fields/index.md) provided with Meta Box.
 
 After having all the fields, click to the **Settings** panel, set the **Location** as **Post type**, and choose the **Room** to apply the fields to this post type.
 

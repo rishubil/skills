@@ -1,6 +1,8 @@
 ---
 title: rwmb_meta_boxes - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-meta-boxes/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This is the most important filter of Meta Box. It is used to add/remove/edit field groups.

@@ -1,6 +1,8 @@
 ---
 title: Creating a custom 404 page in WordPress - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-custom-404-page-with-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Let’s explore an interesting way to have a **custom 404 page** with flexible content using custom fields created with **Meta Box** and displaying them with **Oxygen**.

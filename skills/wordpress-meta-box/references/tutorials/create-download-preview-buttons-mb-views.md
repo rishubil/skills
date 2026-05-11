@@ -1,6 +1,8 @@
 ---
 title: Creating Download and Preview Buttons - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-download-preview-buttons-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you want to give users options to read previews or download PDF files, you shouldn't skip this article. Here is a quick tutorial on how to create an ebook page with 2 buttons **allowing preview and download the ebook using MB Views**.

@@ -1,6 +1,8 @@
 ---
 title: Heading - Meta Box Documentation
 source: https://docs.metabox.io/fields/heading/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The heading field creates a simple `<h4>` heading, which has an optional description. It doesn't have any value and is usually used to separate fields into sections for better reading experience.

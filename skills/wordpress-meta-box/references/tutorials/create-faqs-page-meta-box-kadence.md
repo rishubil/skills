@@ -1,6 +1,8 @@
 ---
 title: Creating an FAQs page - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-meta-box-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Continuing our series on [creating an FAQs Page](https://metabox.io/series/faqs-page/) with **Meta Box** and page builders, today we have just explored a different method, using **Meta Box** and **Kadence**. Having an FAQ page is a way to be more proactive and predictive with what readers are going to need help with. Let’s dive in to explore the process of creating the FAQs page in detail.

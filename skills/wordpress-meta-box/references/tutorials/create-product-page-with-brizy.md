@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Brizy - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-with-brizy/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 An effective product page can capture customer attention and contain all the information they might need before buying. Follow these practices using Meta Box and Brizy, you’ll be able to simply create a product page that’s full of needed information.

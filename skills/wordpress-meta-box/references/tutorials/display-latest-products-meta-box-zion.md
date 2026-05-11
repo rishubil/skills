@@ -1,6 +1,8 @@
 ---
 title: Displaying the latest products - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-products-meta-box-zion/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’ll create a section and choose the products or posts that are the latest ones to display only on the homepage.

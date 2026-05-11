@@ -1,6 +1,8 @@
 ---
 title: Creating a team members page - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to use a new method to create a team members page using Meta Box only with MB Views.

@@ -1,6 +1,8 @@
 ---
 title: Displaying the most viewed posts - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-most-viewed-posts-with-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes finding the best content or most wanted products on your website can be hard for your visitors. So, [showing the most viewed posts](https://metabox.io/series/most-viewed-posts/) on your homepage or anywhere on your WordPress website will help them a lot to find the most popular ones.

@@ -1,6 +1,8 @@
 ---
 title: Creating charts in posts - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-charts-in-posts-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Using charts to present information is a vivid and easy-to-understand manner for your audience. Whether you want to display statistics, growth trends, or comparisons among many items, **charts can make your content stand out and attract the attention** of your visitors.
@@ -92,7 +94,7 @@ Based on the rule I said before, we should set the key of the rule as the ID of 
 
 ![Set the key of the rule as the ID of the select field, and the value should be the value of the line](https://imgur.elightup.com/JpzwGH3.png)
 
-This means the **Line Color** field displays only when users set the Select field above as the **Line** option. For more details and advanced on setting conditions with MB Conditional Logic, you can refer to [its doc](https://docs.metabox.io/extensions/meta-box-conditional-logic/).
+This means the **Line Color** field displays only when users set the Select field above as the **Line** option. For more details and advanced on setting conditions with MB Conditional Logic, you can refer to [its doc](../extensions/meta-box-conditional-logic.md).
 
 The data will be set in a couple of fields including the X-axis and the Y-axis. As well as, two axes will be in a line since I set the column size for them. This feature is provided by the [MB Columns](https://metabox.io/plugins/meta-box-columns/) extension, which **allows us to set the field’s display in columns**. This is just optional so I didn’t mention it from the beginning.
 
@@ -425,4 +427,4 @@ If you want to change the type or any data of the chart, go back to the settings
 
 All the code I use in this tutorial is updated on [GitHub](https://github.com/wpmetabox/tutorials/tree/master/create_chart) for your reference.
 
-You also can explore the power of MB Views in [other tutorials](https://docs.metabox.io/tutorials/mb-views/).
+You also can explore the power of MB Views in [other tutorials](mb-views.md).

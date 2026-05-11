@@ -1,6 +1,8 @@
 ---
 title: Creating a timeline page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-timeline-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes, you should show the content in a timeline format. This type of content is really useful when you want to display the timeline of an event, historical milestones, roadmap, or changelog of a plugin/theme, etc. A **logical and clear timeline** can help visitors get information easily. In this article, let’s create and display a timeline page using a combination of **Meta Box** with **Bricks**.

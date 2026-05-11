@@ -1,6 +1,8 @@
 ---
 title: Adding custom Javascript actions using Button field with Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-javascript-actions-button-field/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In WordPress, there are only default functional buttons on the backend to do some actions like submitting posts or adding categories. Do you want to add other custom functional buttons to make your management much easier? Today, we’ll find a way to add custom JavaScript actions using the Button field with Meta Box in the most convenient way.

@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-with-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this practice, we’ll use **Kadence** to build a singular page and get the recipe information stored in the custom fields created with **Meta Box**.

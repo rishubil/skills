@@ -1,6 +1,8 @@
 ---
 title: Creating an FAQs page - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you are looking at how to **create an FAQs page without using any page builder**, we will share an easy and straightforward tip using **MB Views** that you can follow to build that page. Let’s dive in to explore the process of creating the FAQs page in detail.

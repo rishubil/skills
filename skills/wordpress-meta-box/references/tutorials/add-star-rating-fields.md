@@ -1,6 +1,8 @@
 ---
 title: Adding star rating fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-star-rating-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Meta Box hasn’t provided any **field type for star rating** yet. If you want to have one, you should create it on your own by following this tutorial. **This will be a new field type** which will stand by current 40+ field types from Meta Box.

@@ -1,6 +1,8 @@
 ---
 title: Storing cloneable fields in multiple rows in the database - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/store-cloneable-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Normally, the data saved in a custom field is stored in one row only in the database, even when it is a cloneable/repeater field. To convert its data to store in multiple rows, let’s follow this tutorial.
@@ -39,7 +41,7 @@ Before we go, you should:
 
 **Meta Box** provides an option to set the cloneable field to store values in multiple rows.
 
-In the settings of the fields using the UI provided by the [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) extension, whenever you set the field as **Cloneable**, there will be an extra setting named ‘ **Clone as multiple** ’ right below the **Cloneable** option.
+In the settings of the fields using the UI provided by the [MB Builder](../extensions/meta-box-builder.md) extension, whenever you set the field as **Cloneable**, there will be an extra setting named ‘ **Clone as multiple** ’ right below the **Cloneable** option.
 
 ![The "Clone as multiple" feature of Meta Box allows storing cloneable values in multiple rows in the database](https://imgur.elightup.com/LjhoGyn.png)
 

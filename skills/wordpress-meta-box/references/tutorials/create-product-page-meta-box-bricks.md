@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-meta-box-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to find out how to create a product page using Meta Box and Bricks. I chose to create a car rental page as an example.

@@ -1,6 +1,8 @@
 ---
 title: Bundling Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/bundling/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Meta Box and extensions can be used as standalone plugins or bundled within other themes or plugins.

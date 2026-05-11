@@ -1,6 +1,8 @@
 ---
 title: Creating a video gallery page - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-video-gallery-page-meta-box-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today's practice, we're going to find out how to create a video gallery page with the help of Meta Box and Breakdance.

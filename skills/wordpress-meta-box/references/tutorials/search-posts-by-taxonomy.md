@@ -1,6 +1,8 @@
 ---
 title: Searching posts by taxonomy on archive page - P1 - Using Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/search-posts-by-taxonomy/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’ll create taxonomies for a custom post type, and in the archive page of this post type, also create a search box that allows users to search for posts based on the name of the taxonomy.
@@ -395,4 +397,4 @@ When you enter a location in the Search box, only the hotels in that location wi
 
 In this way, you can create similar filters to search for hotels or posts by any criteria. You can apply it flexibly to create more filtering features for your website. Hope this tip is helpful for you!
 
-If you found this helpful, you might also like these tutorials about [creating a simple listing](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/), [filtering posts by custom taxonomies](https://docs.metabox.io/tutorials/filter-posts-by-custom-fields-taxonomies/).
+If you found this helpful, you might also like these tutorials about [creating a simple listing](create-simple-listing-meta-box-bricks.md), [filtering posts by custom taxonomies](filter-posts-by-custom-fields-taxonomies.md).

@@ -1,6 +1,8 @@
 ---
 title: Showing upcoming events - using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we're delving into a practical application of the **MB Views** extension from Meta Box on how to **show upcoming events**. It helps to highlight important dates and deadlines, making it easier for everyone to stay informed and participate.
@@ -206,4 +208,4 @@ On the frontend, you can see the upcoming events clearly. Just events have the e
 
 ![You can see the upcoming events clearly on the frontend.](https://imgur.elightup.com/xSyaxCt.png)
 
-To learn how to [display posts based on specific criteria](https://docs.metabox.io/tutorials/show-posts-specific-criteria-oxygen/), check out our comprehensive guide. I hope you find it helpful!
+To learn how to [display posts based on specific criteria](show-posts-specific-criteria-oxygen.md), check out our comprehensive guide. I hope you find it helpful!

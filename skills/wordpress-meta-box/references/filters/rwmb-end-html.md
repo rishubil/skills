@@ -1,9 +1,11 @@
 ---
 title: rwmb_end_html - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-end-html/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-This filter is similar to [rwmb\_begin\_html](https://docs.metabox.io/filters/rwmb-begin-html/) and is used to change the ending HTML output of a field.
+This filter is similar to [rwmb\_begin\_html](rwmb-begin-html.md) and is used to change the ending HTML output of a field.
 
 When outputting a field, it will have the following HTML:
 

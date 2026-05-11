@@ -1,6 +1,8 @@
 ---
 title: Creating download buttons in WordPress - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-download-button/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The Internet allows us to chat, exchange, search for news, share experiences, and download documents, gadgets, applications, etc. Besides saving documentation from websites, you can share your documents with users on the WordPress website. **Creating a download button using custom fields** is not a bad idea - it looks beautiful, professional, and not difficult to create at all.

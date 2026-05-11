@@ -1,6 +1,8 @@
 ---
 title: Creating custom post types and taxonomies - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Video version

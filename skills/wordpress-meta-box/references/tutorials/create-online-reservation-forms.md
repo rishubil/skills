@@ -1,6 +1,8 @@
 ---
 title: Creating online reservation form for restaurants - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-online-reservation-forms/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 It's common for restaurants to offer online booking services on their websites. In this tutorial, I'll show you how to create an online reservation form. This form allows clients to provide essential information for their reservation, select their desired services or items, and even calculate the total amount right within the form.

@@ -1,6 +1,8 @@
 ---
 title: Dynamic styling with data attributes - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/dynamic-styling-with-data-attributes/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 You usually use classes and IDs to style your WordPress. However, they can not style an element depending on its state, taxonomy, or specific properties. In those cases, data attributes can help you achieve them. So, let’s explore a new way to **target and style elements** in web design using **data attributes**. It helps to make styling dynamic.

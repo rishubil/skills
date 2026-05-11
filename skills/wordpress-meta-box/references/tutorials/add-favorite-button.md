@@ -1,6 +1,8 @@
 ---
 title: Adding a favorite button - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-favorite-button/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **MB Favorite Posts** is a solution of Meta Box for users saving a post to their Favorite lists. This solution provides you with all the needed tools and features to **add a Favorite button**. This tutorial will show how!

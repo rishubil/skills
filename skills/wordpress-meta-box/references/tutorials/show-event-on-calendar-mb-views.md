@@ -1,6 +1,8 @@
 ---
 title: Showing events on calendar - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-event-on-calendar-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you're looking for a way to track and manage important events such as meetings, conferences, holidays, or personal tasks, showing them on the calendar is a brilliant idea. It is also an incredibly useful feature in many applications and information management systems. When events are visually displayed on a calendar, users can plan more efficiently and avoid redundancy or missing important activities.

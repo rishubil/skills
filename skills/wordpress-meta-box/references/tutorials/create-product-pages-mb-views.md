@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Gutenberg - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-pages-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you are using a theme without any page builders or just using Gutenberg, you can create a product page using MB Views.

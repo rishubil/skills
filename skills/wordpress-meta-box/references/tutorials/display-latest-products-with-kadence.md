@@ -1,6 +1,8 @@
 ---
 title: Displaying the latest products - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-products-with-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today's practice, we're going to show the latest products in a section on a page using Meta Box and Kadence.

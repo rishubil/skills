@@ -1,6 +1,8 @@
 ---
 title: MB Conditional Logic - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-conditional-logic/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **MB Conditional Logic** helps you to show or hide meta boxes, custom fields or any elements based on other fields' values.
@@ -11,7 +13,7 @@ You can also combine conditions. It works not only for meta boxes or custom fiel
 
 ### With UI
 
-If you are using [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) (which is included in [Meta Box Lite](https://metabox.io/lite/) or [Meta Box AIO](https://metabox.io/pricing/)), you can set conditional logic for a specific field by clicking the plus in the **Conditional Logic** section:
+If you are using [MB Builder](meta-box-builder.md) (which is included in [Meta Box Lite](https://metabox.io/lite/) or [Meta Box AIO](https://metabox.io/pricing/)), you can set conditional logic for a specific field by clicking the plus in the **Conditional Logic** section:
 
 ![conditional logic in MB Builder](https://docs.metabox.io/assets/images/add-conditional-logic-86716c3453f69e821ce6a687c9b78eba.png)
 
@@ -305,7 +307,7 @@ add_filter( 'rwmb_outside_conditions', function( $conditions ) {
 } );
 ```
 
-If you want to hide a tab created by [MB Tabs](https://docs.metabox.io/extensions/meta-box-tabs/), [see this](https://docs.metabox.io/hide-tabs-with-conditional-logic/).
+If you want to hide a tab created by [MB Tabs](meta-box-tabs.md), [see this](../hide-tabs-with-conditional-logic.md).
 
 ## Using with taxonomies
 
@@ -493,4 +495,4 @@ Then if A or B is hidden, the C is always hidden, regardless values of A and B.
 
 ## Known issues
 
-Conditional Logic doesn't works with [autocomplete](https://docs.metabox.io/fields/autocomplete/) field.
+Conditional Logic doesn't works with [autocomplete](../fields/autocomplete.md) field.

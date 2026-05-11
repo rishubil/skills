@@ -1,6 +1,8 @@
 ---
 title: Displaying the latest products - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-product-meta-box-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to figure out how to have a section for the latest products on the homepage using Meta Box and Oxygen.

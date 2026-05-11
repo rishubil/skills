@@ -1,6 +1,8 @@
 ---
 title: Showing posts with specific criteria - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-posts-specific-criteria-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this practice, we’ll find out how to show posts with this kind of specific criteria using Meta Box and Oxygen.

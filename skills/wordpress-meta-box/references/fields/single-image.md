@@ -1,6 +1,8 @@
 ---
 title: Single image - Meta Box Documentation
 source: https://docs.metabox.io/fields/single-image/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The single image field allows users to select or upload one image via the WordPress media library.
@@ -17,7 +19,7 @@ The single image field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -100,7 +102,7 @@ The 2nd argument for `rwmb_meta()` and `rwmb_the_value()` is an array of extra p
 
 ## Filters
 
-This field inherits from image advanced and thus, uses the [same filters](https://docs.metabox.io/fields/image-advanced/) to change the texts displayed on the screen.
+This field inherits from image advanced and thus, uses the [same filters](image-advanced.md) to change the texts displayed on the screen.
 
 | Filter | Default | Description |
 | --- | --- | --- |

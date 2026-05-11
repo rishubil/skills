@@ -1,6 +1,8 @@
 ---
 title: rwmb_outer_html - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-outer-html/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This filter is used to change the outer HTML output of a field. Outer HTML is the surrounding div (the most outside) of the field.

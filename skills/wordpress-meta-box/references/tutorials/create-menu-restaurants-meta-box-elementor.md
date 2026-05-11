@@ -1,6 +1,8 @@
 ---
 title: Creating menus for restaurants - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-menu-restaurants-meta-box-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In an online food order website, you may have more than one restaurant and each one will have their own menu. Let's see how to create menus for them by using custom fields with the support from Meta Box and Elementor in this practice.

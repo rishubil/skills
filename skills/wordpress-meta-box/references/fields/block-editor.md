@@ -1,6 +1,8 @@
 ---
 title: Block Editor - Meta Box Documentation
 source: https://docs.metabox.io/fields/block-editor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The block editor field creates an isolated standalone Gutenberg block editor in meta boxes, settings pages, and other supported Meta Box objects. This is useful when you want to create a custom field for users to edit content with the same experience as the main WordPress block editor.
@@ -19,7 +21,7 @@ The block editor field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has a specific setting, the key is for use with code:
+Besides the [common settings](../field-settings.md), this field has a specific setting, the key is for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

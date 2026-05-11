@@ -1,6 +1,8 @@
 ---
 title: File Input - Meta Box Documentation
 source: https://docs.metabox.io/fields/file-input/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The file input field creates a simple text input for uploading a single file. You can select a file from the Media Library or enter a file URL directly (even a URL for a file hosted on another website). After selecting from the Media Library, the input file URL will be pasted into the input and is saved into the database.
@@ -17,7 +19,7 @@ The file input field settings
 
 ## Settings
 
-This field doesn't have any specific settings. It only uses [common settings](https://docs.metabox.io/field-settings/).
+This field doesn't have any specific settings. It only uses [common settings](../field-settings.md).
 
 ## Data
 

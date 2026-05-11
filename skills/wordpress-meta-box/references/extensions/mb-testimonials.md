@@ -1,6 +1,8 @@
 ---
 title: MB Testimonials - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-testimonials/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Overview

@@ -1,6 +1,8 @@
 ---
 title: Save WYSIWYG content as post content - Meta Box Documentation
 source: https://docs.metabox.io/save-wysiwyg-content-post-content/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes you want to move the traditional editor for the post to another location, probably inside a meta box. It will keep everything more organized. For example, if you have an event post type, then you might have the following data:
@@ -14,7 +16,7 @@ Sometimes you want to move the traditional editor for the post to another locati
 Then keeping the description (which can be the post content) along with other fields make users easier to fill in the data. While this is impossible to do that with the default WordPress editor, we can do that with the [Meta Box](https://metabox.io/) plugin. The steps to do that are describe below:
 
 1. Remove the default editor (we don't want to display it at the top)
-2. [Create a new wysiwyg field](https://docs.metabox.io/fields/wysiwyg/)
+2. [Create a new wysiwyg field](fields/wysiwyg.md)
 3. Set that field take the post content as the value
 4. Save that field content into post content
 

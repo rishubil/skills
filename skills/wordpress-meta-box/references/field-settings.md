@@ -1,6 +1,8 @@
 ---
 title: Field settings - Meta Box Documentation
 source: https://docs.metabox.io/field-settings/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Each field contains settings to determine where and how data is loaded and saved. All fields share some common settings, but also offer unique settings per field type. There are also settings from extensions which are explained on each extension docs.

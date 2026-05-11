@@ -1,6 +1,8 @@
 ---
 title: Creating filters of job listing for career page using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-filters-job-listing-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This tutorial will walk you through how to **create a job listing page with advanced filtering** options using the **MB Views** extension from Meta Box - ideal for helping users quickly find the most relevant opportunities.

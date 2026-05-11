@@ -1,9 +1,11 @@
 ---
 title: rwmb_meta - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-meta/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-This filter is used to change the returned value of the [rwmb\_meta()](https://docs.metabox.io/functions/rwmb-meta/) helper function.
+This filter is used to change the returned value of the [rwmb\_meta()](../functions/rwmb-meta.md) helper function.
 
 ```php
 apply_filters( 'rwmb_meta', $value, $field_id, $args, $object_id );

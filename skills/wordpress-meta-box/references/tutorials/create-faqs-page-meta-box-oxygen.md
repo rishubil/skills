@@ -1,6 +1,8 @@
 ---
 title: Creating an FAQs page - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-meta-box-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We are going to **create an FAQs page** using **Meta Box** and **Oxygen**. It has questions and answers that have been saved in custom fields created with Meta Box.
@@ -111,6 +113,6 @@ Now, on the FAQs page, you will see the result like this.
 
 You may be interested in:
 
-- [Creating a product page](https://docs.metabox.io/tutorials/create-product-page-meta-box-oxygen/)
-- [Creating a recipe](https://docs.metabox.io/tutorials/create-recipe-meta-box-oxygen/)
-- [Creating a team members page](https://docs.metabox.io/tutorials/create-team-members-page-meta-box-oxygen/)
+- [Creating a product page](create-product-page-meta-box-oxygen.md)
+- [Creating a recipe](create-recipe-meta-box-oxygen.md)
+- [Creating a team members page](create-team-members-page-meta-box-oxygen.md)

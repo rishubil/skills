@@ -1,6 +1,8 @@
 ---
 title: tutorials/create-pricing-table-page-with-mb-views.md
 source: https://docs.metabox.io/tutorials/create-pricing-table-page-with-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this tutorial, I’ll show you how to create a clear and well-structured pricing table using **MB Views**.
@@ -258,4 +260,4 @@ Here’s how my Pricing Table page looks in the end.
 
 Somedays, when you want to change the price of a plan, add features, or something else, just change the content in the custom fields. All the data on this pricing table page is dynamic.
 
-We have had tutorials about [how to create dynamic landing pages](https://docs.metabox.io/tutorials/create-dynamic-landing-page-with-bricks/), including a pricing section and other information. We hope that they’re useful for you.
+We have had tutorials about [how to create dynamic landing pages](create-dynamic-landing-page-with-bricks.md), including a pricing section and other information. We hope that they’re useful for you.

@@ -1,6 +1,8 @@
 ---
 title: Creating a simple listing - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-with-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today we’re going to try a new way to do it with **Kadence**. We also **display the products with information** on a page and **filter them** as well.
@@ -206,4 +208,4 @@ This is the page after taking some actions to modify.
 
 ![The page got a better look](https://imgur.elightup.com/vetbHVm.gif)
 
-You also can try to [create a listing page with advanced filters with UI](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-wp-grid-builder/) provided by MB Builder.
+You also can try to [create a listing page with advanced filters with UI](create-simple-listing-meta-box-wp-grid-builder.md) provided by MB Builder.

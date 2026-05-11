@@ -1,6 +1,8 @@
 ---
 title: Creating a full-width WordPress dashboard widget - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-full-width-wordpress-dashboard-widget/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 As a regular user of some classic WordPress themes, I often felt frustrated by the narrow widget area in the admin dashboard. The limited space made it challenging to manage and customize widgets effectively, slowing down my workflow.

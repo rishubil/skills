@@ -1,6 +1,8 @@
 ---
 title: Status column - Meta Box Documentation
 source: https://docs.metabox.io/status-column/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The status column lets you quickly switch the status of field groups, custom post types, custom taxonomies, settings pages, and relationships between Publish and Draft without opening each item individually. You can enable this feature for posts of a custom post type as well.
@@ -13,7 +15,7 @@ As a result, the traditional **Publish** / **Update** actions on the edit screen
 
 ## Custom post types
 
-To add status column into the table of the post list of a custom post type, when you [creating that post type](https://docs.metabox.io/custom-post-types/) with Meta Box, navigate to the **Features** tab, then enable the setting as below:
+To add status column into the table of the post list of a custom post type, when you [creating that post type](custom-post-types.md) with Meta Box, navigate to the **Features** tab, then enable the setting as below:
 
 ![Enable the status column for the posts of custom post type](https://docs.metabox.io/assets/images/enable-feature-23b9495ebdeb2e4ccef0c2b539bb5191.png)
 

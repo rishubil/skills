@@ -1,6 +1,8 @@
 ---
 title: MB Builder - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-builder/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This extension helps you create custom fields, settings pages, and relationships with a user-friendly interface.
@@ -43,7 +45,7 @@ After that click the **Save Changes** button to finish.
 
 ## Field settings
 
-When adding fields to a field group, each field has its own settings. The list of settings with detailed explanation is [here](https://docs.metabox.io/field-settings/). MB Builder creates UI for them.
+When adding fields to a field group, each field has its own settings. The list of settings with detailed explanation is [here](../field-settings.md). MB Builder creates UI for them.
 
 To view and edit field settings, click anywhere in the field preview:
 
@@ -53,14 +55,14 @@ Each field settings are self-explained. We also add some tooltips next to the se
 
 All field settings are divided into some sections: General, Appearance, Conditional logic, Validation and Advanced. The General tab has most settings you need while the Appearance decides how your field display in the post editor. Besides:
 
-- Conditional logic: if you install the [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/), then this part is for creating rules with UI.
-- Validation: helps you to create [complex validation rules](https://docs.metabox.io/validation/).
+- Conditional logic: if you install the [MB Conditional Logic](meta-box-conditional-logic.md), then this part is for creating rules with UI.
+- Validation: helps you to create [complex validation rules](../validation.md).
 - Advanced tab has the following settings:
 	- Custom CSS class: if you need to cusomize the style of the field.
 		- Before & after: For entering custom HTML that outputed before and after the field.
-		- Custom sanitize callback: if you need [custom sanitization](https://docs.metabox.io/sanitization/).
+		- Custom sanitize callback: if you need [custom sanitization](../sanitization.md).
 		- Save field value: if you don't want Meta Box to save the field value (which rarely happens) and you want to handle saving by yourself, then uncheck this checkbox.
-		- Custom HTML5 attributes: helps you add [custom HTMl5 attributes](https://docs.metabox.io/custom-attributes/) to your input fields.
+		- Custom HTML5 attributes: helps you add [custom HTMl5 attributes](../custom-attributes.md) to your input fields.
 		- Custom settings: if you want to add extra settings to the field. We'll cover it in a next section.
 
 ![edit field advanced settings](https://docs.metabox.io/assets/images/advanced-panel-b1ff324efb124a58cbd554a03276af6c.png)
@@ -75,13 +77,13 @@ The field group settings are put in the tab **Settings** panel:
 
 There are several settings:
 
-- Location: where you select this field group is for posts, terms, users, comments, blocks or settings pages. For each object type, you'll be able to select corresponding post types, taxonomies or settings pages. Please note that it's required to install and activate corresponding extensions: [MB Term Meta](https://docs.metabox.io/extensions/mb-term-meta/), [MB User Meta](https://docs.metabox.io/extensions/mb-term-meta/), [MB Comment Meta](https://metabox.io/plugins/mb-comment-meta/), [MB Blocks](https://docs.metabox.io/extensions/mb-blocks/), and [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/). In there, the Advanced rules allows you to add advanced rules for which category, post, user,... the field group appears for. Requires the [MB Include Exclude](https://docs.metabox.io/extensions/meta-box-include-exclude/) extension.
-- Toggle rules: select which conditions to show or hide the field group. Requires the [MB Show Hide](https://docs.metabox.io/extensions/meta-box-show-hide/) extension.
-- Conditional Logic: setup the conditional logic rules to toggle the field group based on other fields' values. Requires the [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/) extension.
+- Location: where you select this field group is for posts, terms, users, comments, blocks or settings pages. For each object type, you'll be able to select corresponding post types, taxonomies or settings pages. Please note that it's required to install and activate corresponding extensions: [MB Term Meta](mb-term-meta.md), [MB User Meta](mb-term-meta.md), [MB Comment Meta](https://metabox.io/plugins/mb-comment-meta/), [MB Blocks](mb-blocks.md), and [MB Settings Page](mb-settings-page.md). In there, the Advanced rules allows you to add advanced rules for which category, post, user,... the field group appears for. Requires the [MB Include Exclude](meta-box-include-exclude.md) extension.
+- Toggle rules: select which conditions to show or hide the field group. Requires the [MB Show Hide](meta-box-show-hide.md) extension.
+- Conditional Logic: setup the conditional logic rules to toggle the field group based on other fields' values. Requires the [MB Conditional Logic](meta-box-conditional-logic.md) extension.
 - Post settings, such as context, priority if you select the location is for posts.
-- Custom block settings, such as block icon, render callback if you select the location is for blocks, which means creating custom Gutenberg blocks. Requires [MB Blocks](https://docs.metabox.io/extensions/mb-blocks/) extension. See the **Create Gutenberg blocks** section below.
-- Tab style and default active tab: these are the settings for [MB Tabs](https://docs.metabox.io/extensions/meta-box-tabs/) extension.
-- Custom table settings, including table name, table prefix and option to create custom table automatically. These are the settings for [MB Custom Table](https://docs.metabox.io/extensions/mb-custom-table/) extension. Note that if you select to create the custom table automatically, all columns will have the data type `TEXT` to ensure maximum compatibility.
+- Custom block settings, such as block icon, render callback if you select the location is for blocks, which means creating custom Gutenberg blocks. Requires [MB Blocks](mb-blocks.md) extension. See the **Create Gutenberg blocks** section below.
+- Tab style and default active tab: these are the settings for [MB Tabs](meta-box-tabs.md) extension.
+- Custom table settings, including table name, table prefix and option to create custom table automatically. These are the settings for [MB Custom Table](mb-custom-table.md) extension. Note that if you select to create the custom table automatically, all columns will have the data type `TEXT` to ensure maximum compatibility.
 - Advanced:
 	- Custom CSS class: the custom CSS class for the wrapper `div` if you need to cusomize the style of the field group.
 		- Field ID prefix: if you want to prefix all fields in the field group, then this settings is for that. It's optional, but a good practice to keep your custom fields separated from other custom fields. You can also use underscore `_` as prefix to keep your fields hidden in the default WordPress **Custom Fields** meta box.
@@ -299,17 +301,17 @@ Or this code will output the site title:
 
 ## Creating settings pages
 
-This feature helps you to create custom settings pages (or Customize panels) with UI. It requires the [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/) extension.
+This feature helps you to create custom settings pages (or Customize panels) with UI. It requires the [MB Settings Page](mb-settings-page.md) extension.
 
 To start, go to **Meta Box > Settings Pages** and click **Add New**.
 
 ![create settings pages](https://docs.metabox.io/assets/images/create-settings-page-d7627f2416f120db6f4fa9c68031deb0.png)
 
-Here you can enter all the settings for the settings page. All settings are self-explained. Please see the [documentation of MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/) to understand them.
+Here you can enter all the settings for the settings page. All settings are self-explained. Please see the [documentation of MB Settings Page](mb-settings-page.md) to understand them.
 
 ## Creating relationships
 
-This feature helps you to create relationships between posts, terms and users with UI. It requires the [MB Relationships](https://docs.metabox.io/extensions/mb-relationships/) extension.
+This feature helps you to create relationships between posts, terms and users with UI. It requires the [MB Relationships](mb-relationships.md) extension.
 
 To start, go to **Meta Box > Relationships** and click **Add New**.
 
@@ -321,7 +323,7 @@ Here you can enter all the settings for each side of the relationship (**From** 
 - Meta Box: for extra meta box settings. These settings are the same as the field group settings when creating custom fields.
 - Field: for extra field settings. These settings are the same as the field settings (post, term or user depending on the object type).
 
-Please see the [documentation of MB Relationships](https://docs.metabox.io/extensions/mb-relationships/) to understand them.
+Please see the [documentation of MB Relationships](mb-relationships.md) to understand them.
 
 ## Extending the builder
 
@@ -394,7 +396,7 @@ This is the result of the above example:
 
 ### Adding custom controls field groups
 
-Similarly, you can add custom controls for the whole field group. Here is how we do to add custom controls when [MB Tabs](https://docs.metabox.io/extensions/meta-box-tabs/) extension is activated.
+Similarly, you can add custom controls for the whole field group. Here is how we do to add custom controls when [MB Tabs](meta-box-tabs.md) extension is activated.
 
 ```php
 add_filter( 'mbb_settings_controls', 'your_prefix_add_settings_controls' );

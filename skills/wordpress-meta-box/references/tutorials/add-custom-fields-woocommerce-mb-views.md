@@ -1,6 +1,8 @@
 ---
 title: Adding custom fields for WooCommerce - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-custom-fields-woocommerce-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 WooCommerce is a popular platform for eCommerce in WordPress which provides numerous features and functions, but you still may need some things further that it does not provide, such as custom fields for extra information about products. That’s when custom fields created with Meta Box will come in handy. But how can we **add those fields to the products which are in an online store built with WooCommerce?**

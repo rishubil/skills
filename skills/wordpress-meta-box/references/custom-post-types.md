@@ -1,6 +1,8 @@
 ---
 title: Custom post types - Meta Box Documentation
 source: https://docs.metabox.io/custom-post-types/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 When building a website, there may be sections on the website such as events and projects where the content and appearance are very different from posts and pages. That's when you need custom post types.
@@ -15,7 +17,7 @@ Custom post types are different types of content in WordPress. You should consid
 
 ## How to create a custom post type?
 
-Creating custom post types is done easily with the [MB Custom Post Types & Custom Taxonomies](https://docs.metabox.io/extensions/mb-custom-post-type/) extension. This extension is already bundled in [Meta Box Lite](https://metabox.io/lite/), [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/), or you can install it for free from [WordPress.org](https://wordpress.org/plugins/mb-custom-post-type/).
+Creating custom post types is done easily with the [MB Custom Post Types & Custom Taxonomies](extensions/mb-custom-post-type.md) extension. This extension is already bundled in [Meta Box Lite](https://metabox.io/lite/), [Meta Box AIO](extensions/meta-box-aio.md), or you can install it for free from [WordPress.org](https://wordpress.org/plugins/mb-custom-post-type/).
 
 To create a new custom post type, go to **Meta Box** » **Post Types** » **New Post Type**:
 
@@ -26,7 +28,7 @@ There are several settings divided into tabs. In most cases, you only need to en
 > [!-info] -info
 > Settings
 > 
-> To understand the settings in detail, please [see the docs](https://docs.metabox.io/extensions/mb-custom-post-type/#post-type-settings) for the MB Custom Post Types & Custom Taxonomies extension.
+> To understand the settings in detail, please [see the docs](extensions/mb-custom-post-type.md#post-type-settings) for the MB Custom Post Types & Custom Taxonomies extension.
 
 ## Creating custom taxonomies
 
@@ -43,7 +45,7 @@ There are several settings divided into tabs. In most cases, you only need to en
 > [!-info] -info
 > Settings
 > 
-> To understand the settings in details, please [see the docs](https://docs.metabox.io/extensions/mb-custom-post-type/#taxonomy-settings) for the MB Custom Post Types & Custom Taxonomies extension.
+> To understand the settings in details, please [see the docs](extensions/mb-custom-post-type.md#taxonomy-settings) for the MB Custom Post Types & Custom Taxonomies extension.
 
 ## Video tutorial
 
@@ -51,4 +53,4 @@ The video below shows you the steps and explains the settings for a custom post 
 
 ## Next steps
 
-After creating a custom post type, let's [add custom fields](https://docs.metabox.io/custom-fields/) to add more details for posts of that post type! That's the most important part of the whole process and is the heart of Meta Box.
+After creating a custom post type, let's [add custom fields](custom-fields.md) to add more details for posts of that post type! That's the most important part of the whole process and is the heart of Meta Box.

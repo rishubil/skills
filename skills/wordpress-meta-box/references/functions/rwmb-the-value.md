@@ -1,13 +1,15 @@
 ---
 title: rwmb_the_value - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-the-value/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `rwmb_the_value` is a helper function that outputs the HTML of a field.
 
 It's very helpful in case you want to output a real Google maps or a player for oEmbed field.
 
-Unlike [rwmb\_get\_value()](https://docs.metabox.io/functions/rwmb-get-value/), this function always outputs human-readable content. For example, for a checkbox list or a select field, it outputs the labels of the choices, not the values.
+Unlike [rwmb\_get\_value()](rwmb-get-value.md), this function always outputs human-readable content. For example, for a checkbox list or a select field, it outputs the labels of the choices, not the values.
 
 ## Arguments
 
@@ -42,7 +44,7 @@ For **choice fields** (select, select advanced, checkbox list, radio, and button
 ],
 ```
 
-Then when using with this function, it outputs the label "United States" or "Australia" depending on its value. If you want to get the value "us", "uk", or "au", please use the [rwmb\_get\_value()](https://docs.metabox.io/functions/rwmb-get-value/) function.
+Then when using with this function, it outputs the label "United States" or "Australia" depending on its value. If you want to get the value "us", "uk", or "au", please use the [rwmb\_get\_value()](rwmb-get-value.md) function.
 
 ## Examples
 

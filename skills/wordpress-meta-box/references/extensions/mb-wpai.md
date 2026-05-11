@@ -1,6 +1,8 @@
 ---
 title: MB WPAI Integration - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-wpai/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB WPAI Integration integrates WP All Import with Meta Box which ported from ACF Integration. It creates a section in WP All Import plugin to map Meta Box's fields to import data. Allows you to handle more complex fields and settings.

@@ -1,6 +1,8 @@
 ---
 title: Showing the featured restaurants - P4 - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this practice, we’re going to display the featured restaurants using **Meta Box** only with the help of **MB Views**. Let’s see how to do it.

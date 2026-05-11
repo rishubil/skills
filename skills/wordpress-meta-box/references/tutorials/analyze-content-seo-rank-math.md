@@ -1,6 +1,8 @@
 ---
 title: Analyzing content in custom fields for SEO - Rank Math - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/analyze-content-seo-rank-math/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We will use custom fields to add extra information to the content analysis of Rank Math by using the MB Rank Math extension from Meta Box. It supports not only the Text, Textarea, and Wysiwyg fields from Meta Box but also **cloneable fields** (or repeated fields).

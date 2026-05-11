@@ -1,6 +1,8 @@
 ---
 title: Creating filters for real estate page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-filters-real-estate-page-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, I’ll walk you through how to **create a professional-looking property listing** using **Meta Box** and **Bricks Builder**, with filters displayed neatly in the sidebar and results updating instantly based on user selections.
@@ -9,7 +11,7 @@ Today, I’ll walk you through how to **create a professional-looking property l
 
 This method isn’t just for properties; it also works great for other types of content like products, job listings, or services where users need to filter by specific criteria.
 
-It’s quite similar to our previous [job listing tutorial](https://docs.metabox.io/tutorials/create-filters-job-listing-mb-views/). We’ll still use custom fields and a custom post type to store the property data. But this time, we’ll take advantage of the built-in features of **Bricks** to handle the filtering in a more visual and streamlined way.
+It’s quite similar to our previous [job listing tutorial](create-filters-job-listing-mb-views.md). We’ll still use custom fields and a custom post type to store the property data. But this time, we’ll take advantage of the built-in features of **Bricks** to handle the filtering in a more visual and streamlined way.
 
 Let’s get started!
 
@@ -72,7 +74,7 @@ These are some fields I created:
 
 ![Some fields as example](https://i0.wp.com/images.elightup.com/meta-box/blog/real-estate-filter/custom-fields.png)
 
-There’s no special setting for them. You can freely create more fields to store information for products as you want with [40+ field types](https://docs.metabox.io/fields/) provided by **Meta Box**.
+There’s no special setting for them. You can freely create more fields to store information for products as you want with [40+ field types](../fields/index.md) provided by **Meta Box**.
 
 For fields that require a selection, such as **Status**, I use the **Select** field type. In the Choices section, I enter the available options, like For sale or For rent.
 

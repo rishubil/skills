@@ -1,6 +1,8 @@
 ---
 title: Icon - Meta Box Documentation
 source: https://docs.metabox.io/fields/icon/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The icon field allows you to select an icon from a predefined icon library and show it on the front end. With this field, you can quickly search and select an icon from any icon library:
@@ -28,9 +30,9 @@ The icon field settings
 
 Font Awesome Free is the most popular icon library available on the Internet with more than 2000 icons. It's supported and included by Meta Box and you don't have to download it.
 
-To use Font Awesome Free for your icon field, add a field with type `icon` in the [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) (similar to the settings screenshot above). Leave all the icon settings as default.
+To use Font Awesome Free for your icon field, add a field with type `icon` in the [MB Builder](../extensions/meta-box-builder.md) (similar to the settings screenshot above). Leave all the icon settings as default.
 
-If you use code, use the following [field settings](https://docs.metabox.io/field-settings/):
+If you use code, use the following [field settings](../field-settings.md):
 
 ```php
 [
@@ -47,7 +49,7 @@ After that, go to edit your post and you'll see the select box for search and pi
 > [!-info] -info
 > info
 > 
-> The `icon` field is inherited from the [`select_advanced`](https://docs.metabox.io/fields/select-advanced/) field, which makes it have the interface of the "select2" library.
+> The `icon` field is inherited from the [`select_advanced`](select-advanced.md) field, which makes it have the interface of the "select2" library.
 
 ### Font Awesome Pro
 

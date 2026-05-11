@@ -1,6 +1,8 @@
 ---
 title: Support policy - Meta Box Documentation
 source: https://docs.metabox.io/support-policy/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Support channels

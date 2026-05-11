@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Divi - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-divi/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 An effective product page can increase the customer experience, thereby boosting sales. It may have various information, images, even specifications that we should show on the page to help customers more easily make decisions. Let’s simply **create a product page** with all the needed information using **Meta Box** and **Divi**.

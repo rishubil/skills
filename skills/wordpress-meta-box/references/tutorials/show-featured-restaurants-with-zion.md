@@ -1,6 +1,8 @@
 ---
 title: Showing the featured restaurants - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-with-zion/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today’s practice, we're going to **show the featured products** using **Meta Box** and **Zion**.

@@ -1,6 +1,8 @@
 ---
 title: Creating reading time to WordPress posts - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-reading-time-to-wordpress-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Providing a number of reading time will help the visitor know in advance how much time it takes to finish reading the post. Let’s find out how to have this reading time number in each article on your WordPress blog. We’ll use the **MB Views** from **Meta Box**.

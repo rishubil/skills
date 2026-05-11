@@ -1,6 +1,8 @@
 ---
 title: rwmb_after_save_field - Meta Box Documentation
 source: https://docs.metabox.io/actions/rwmb-after-save-field/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This action runs after a field is saved.

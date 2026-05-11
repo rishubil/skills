@@ -1,6 +1,8 @@
 ---
 title: Building a hotel booking website using Meta Box – P3 – Booking page for customer - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/build-hotel-booking-website-p3-frontend/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this part, we are adding a booking form to the Room’s page, which shows all the room’s information. This form allows your customers to submit a booking from the frontend easily.

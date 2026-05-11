@@ -1,6 +1,8 @@
 ---
 title: rwmb_begin_html - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-begin-html/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This filter is used to change the beginning HTML output of a field.

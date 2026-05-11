@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today's practice, we're going to create a recipe page with Breakdance.
@@ -21,7 +23,7 @@ And, we use **Breakdance** to create the page.
 
 ## 1\. Creating a new custom post type
 
-We'll create a new post type for the recipe. You can refer to [this article](https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/) for more details.
+We'll create a new post type for the recipe. You can refer to [this article](create-custom-post-types-taxonomies.md) for more details.
 
 Use quick action in the dashboard or go to **Meta Box** > **Post Types** > **Add New**.
 

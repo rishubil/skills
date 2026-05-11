@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-meta-box-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’ll use Oxygen to build a singular page and get the recipe information stored in the custom fields created with Meta Box.
@@ -121,6 +123,6 @@ Go to the recipe page, and you’ll see the new look.
 
 You may be interested in:
 
-- [Creating a product page](https://docs.metabox.io/tutorials/create-product-page-meta-box-oxygen/)
-- [Creating a team members page](https://docs.metabox.io/tutorials/create-team-members-page-meta-box-oxygen/)
-- [Creating a video gallery page](https://docs.metabox.io/tutorials/create-video-gallery-page-meta-box-oxygen/)
+- [Creating a product page](create-product-page-meta-box-oxygen.md)
+- [Creating a team members page](create-team-members-page-meta-box-oxygen.md)
+- [Creating a video gallery page](create-video-gallery-page-meta-box-oxygen.md)

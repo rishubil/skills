@@ -1,6 +1,8 @@
 ---
 title: Displaying the most viewed posts - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-most-viewed-posts-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll showcase the most viewed posts on the homepage to attract customers. It’s so easy with **MB Views**. Let’s take the restaurants as a demo for this practice.

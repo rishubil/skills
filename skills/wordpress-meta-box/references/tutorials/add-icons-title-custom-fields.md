@@ -1,6 +1,8 @@
 ---
 title: Adding icons to the title of custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-icons-title-custom-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes you may want to **embellish the fields, or have some signatures for them**. There is not only a way to do that such as adjusting size, space, color, … but also **adding icons into their title**. Instead of using only text for the meta box’s title or field name, we can **use icons for addition or alternative**. Let’s dive in to explore the process of adding icons to the title in detail.

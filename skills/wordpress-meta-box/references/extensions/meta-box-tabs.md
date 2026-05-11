@@ -1,6 +1,8 @@
 ---
 title: MB Tabs - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-tabs/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Tabs helps you to put custom fields into tabs for a better view. Tabs can have icons and can be put on the left side of the meta box.
@@ -10,11 +12,11 @@ MB Tabs helps you to put custom fields into tabs for a better view. Tabs can hav
 > [!-info] -info
 > Tabs in settings pages
 > 
-> Tabs in the settings pages are created separately with different settings by the [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/) extension. This extension is for grouping fields inside a field group only.
+> Tabs in the settings pages are created separately with different settings by the [MB Settings Page](mb-settings-page.md) extension. This extension is for grouping fields inside a field group only.
 
 ## Creating tabs
 
-First, you need to create custom fields as usual. Go to **Meta Box » Custom Fields** and [create a field group](https://docs.metabox.io/custom-fields/#how-to-create-custom-fields) with the custom fields you need.
+First, you need to create custom fields as usual. Go to **Meta Box » Custom Fields** and [create a field group](../custom-fields.md#how-to-create-custom-fields) with the custom fields you need.
 
 ![Creating a field group with some custom fields](https://docs.metabox.io/assets/images/create-field-b9dc11ae82a9b5c60d3d0e4e367606e1.png)
 
@@ -23,7 +25,7 @@ Then adding tabs to the field group. **Tab is a special field type** and is avai
 > [!-info] -info
 > info
 > 
-> The instruction above uses [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/). If you prefer to use code, please see below.
+> The instruction above uses [MB Builder](meta-box-builder.md), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](meta-box-aio.md). If you prefer to use code, please see below.
 
 To add a tab, click the **\+ Add Field** button and search for **Tab**:
 

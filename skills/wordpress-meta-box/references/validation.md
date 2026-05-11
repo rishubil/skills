@@ -1,6 +1,8 @@
 ---
 title: Validation - Meta Box Documentation
 source: https://docs.metabox.io/validation/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Meta Box has a built-in validation module for all fields. You can use validation to make a field required, check password length, check phone number format, etc. The validation is done on the **client side**.
@@ -9,7 +11,7 @@ There are 2 ways of doing validation: basic validation with input attributes and
 
 ## Basic validation
 
-Meta Box supports [custom attributes](https://docs.metabox.io/custom-attributes/) for all input fields. You can use these attributes to validate the values of fields.
+Meta Box supports [custom attributes](custom-attributes.md) for all input fields. You can use these attributes to validate the values of fields.
 
 > [!-warning] -warning
 > warning
@@ -25,7 +27,7 @@ In the **Key** input box, you can select any rule from the dropdown (if you don'
 > [!-info] -info
 > info
 > 
-> The instruction above uses [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/). If you prefer to use code, please see below.
+> The instruction above uses [MB Builder](extensions/meta-box-builder.md), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](extensions/meta-box-aio.md). If you prefer to use code, please see below.
 
 These are the available attributes that you can use for validation:
 
@@ -40,7 +42,7 @@ These are the available attributes that you can use for validation:
 | `step` | Match the step increment. Enter `any` to accept any step. |
 | `type` | Mostly used as `url` or `email` to validate value as a valid URL or email |
 
-If you prefer to [use code to create fields](https://docs.metabox.io/creating-fields-with-code/), add pairs of `'key' => 'value'` rules for the field settings array:
+If you prefer to [use code to create fields](creating-fields-with-code.md), add pairs of `'key' => 'value'` rules for the field settings array:
 
 ```php
 [
@@ -87,7 +89,7 @@ These are available validation rules that you can use:
 | `phoneUS` | Validate for valid US phone number |
 | `remote` | Requests a resource to check the element for validity. Value can be the URL of the resource to request for server-side validation (string) or options to fully customize the request, see [jQuery.ajax](https://api.jquery.com/jQuery.ajax). The server-side resource is called via jQuery.ajax and gets a key/value pair corresponding to the name of the validated element and its value as a GET parameter. The response is evaluated as JSON and must be `true` for valid elements, and can be any `false`, `undefined` or `null` for invalid elements, using the default message; or a string, eg. "That name is already taken, try peter123 instead" to display as the error message. |
 
-If you prefer code, you need to add a key `validation` to the [field group settings](https://docs.metabox.io/creating-fields-with-code/#field-group-settings). This key has a parameter `rules` for validation rules and `messages` for error messages.
+If you prefer code, you need to add a key `validation` to the [field group settings](creating-fields-with-code.md#field-group-settings). This key has a parameter `rules` for validation rules and `messages` for error messages.
 
 ```php
 add_filter( 'rwmb_meta_boxes', function ( $meta_boxes ) {

@@ -1,9 +1,11 @@
 ---
 title: Hide Tabs with Conditional Logic - Meta Box Documentation
 source: https://docs.metabox.io/hide-tabs-with-conditional-logic/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-Conditional Logic works with any DOM elements. That means you can hide your tabs created by [MB Tabs](https://docs.metabox.io/extensions/meta-box-tabs/) extension with MB Conditional Logic. This guide show you how to do that.
+Conditional Logic works with any DOM elements. That means you can hide your tabs created by [MB Tabs](extensions/meta-box-tabs.md) extension with MB Conditional Logic. This guide show you how to do that.
 
 ## Basic
 

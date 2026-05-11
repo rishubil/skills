@@ -1,6 +1,8 @@
 ---
 title: Composer - Meta Box Documentation
 source: https://docs.metabox.io/composer/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This docs shows you how to use [Composer](https://getcomposer.org/) to install and update Meta Box and its extensions.

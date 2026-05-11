@@ -1,6 +1,8 @@
 ---
 title: Adding guest authors and guest posts - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-guest-authors/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, I'll show you how to **allow users to sign up for a guest author account and submit guest posts** using **Meta Box**.

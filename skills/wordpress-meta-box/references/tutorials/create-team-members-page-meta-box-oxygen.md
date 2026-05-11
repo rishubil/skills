@@ -1,6 +1,8 @@
 ---
 title: Creating a team members page - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-meta-box-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re having this post to create a team member page with Meta Box and Oxygen.

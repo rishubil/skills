@@ -1,6 +1,8 @@
 ---
 title: Using custom HTML to output anything - Meta Box Documentation
 source: https://docs.metabox.io/using-custom-html-to-output-anything/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `custom_html` is a very useful field in Meta Box, which helps you to *output anything* in the post edit screen. It can be a warning box or an instruction for users to help them enter the correct data. But do you know that **you can use PHP** to render the HTML for the field?

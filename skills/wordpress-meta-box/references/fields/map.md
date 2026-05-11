@@ -1,6 +1,8 @@
 ---
 title: Google Maps - Meta Box Documentation
 source: https://docs.metabox.io/fields/map/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The **Google Maps field** lets you select and save a location directly on a map. It works together with an **address text field**, which supports **autocomplete** powered by the Google Maps Geocoding service.
@@ -22,7 +24,7 @@ The map field settings
 
 ## Settings
 
-In addition to the [common field settings](https://docs.metabox.io/field-settings/), this field has the following options:
+In addition to the [common field settings](../field-settings.md), this field has the following options:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -36,7 +38,7 @@ In addition to the [common field settings](https://docs.metabox.io/field-setting
 > [!-warning] -warning
 > Address field required
 > 
-> You must create a [text field](https://docs.metabox.io/fields/text/) for the address input, and pass its ID to the map's **Address field** setting.
+> You must create a [text field](text.md) for the address input, and pass its ID to the map's **Address field** setting.
 
 The `address_field` can also be a list of multiple field IDs, separated by commas (e.g. `street,city,state`). In this case:
 
@@ -82,7 +84,7 @@ Example: `53.346881,-6.258860,14`
 
 ### Displaying a map
 
-To show the map on the frontend, use [`rwmb_the_value()`](https://docs.metabox.io/functions/rwmb-the-value/) with extra parameters:
+To show the map on the frontend, use [`rwmb_the_value()`](../functions/rwmb-the-value.md) with extra parameters:
 
 ```php
 <h2>Google Maps</h2>
@@ -138,7 +140,7 @@ echo $location['longitude'];
 echo $location['zoom'];
 ```
 
-See more about [`rwmb_get_value()`](https://docs.metabox.io/functions/rwmb-get-value/).
+See more about [`rwmb_get_value()`](../functions/rwmb-get-value.md).
 
 ### Displaying a map inside a group
 

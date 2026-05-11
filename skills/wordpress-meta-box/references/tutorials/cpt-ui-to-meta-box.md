@@ -1,6 +1,8 @@
 ---
 title: Migrating from CPT UI to Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/cpt-ui-to-meta-box/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 You can move data from the **CPT UI** to the **Meta Box** with the help of the **MB Custom Post Types** **& Taxonomies** extensions. It will save a lot of time and shorten the process dramatically.

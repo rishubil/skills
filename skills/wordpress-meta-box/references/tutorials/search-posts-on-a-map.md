@@ -1,6 +1,8 @@
 ---
 title: Searching Posts on a Map - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/search-posts-on-a-map/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we are going to find out how to **search posts on a map** using **MB Views**. Imagine that you run a restaurant chain, coffee shop, store, or any business with locations in different cities. Displaying all of them on a single map helps users get a clear overview and explore what’s available at a glance. This is exactly where this method becomes useful.
@@ -33,7 +35,7 @@ Go to **Meta Box** and create a new post type for your listings. Here I’ve alr
 
 ![Here I’ve already set up a post type](https://docs.metabox.io/assets/images/post-type-cd30bd5bdc0480dcb3c5168cd67e9df5.png)
 
-And I’ve done the same for the custom fields as well. If you want to see the details, you can find it on [this practice](https://docs.metabox.io/tutorials/create-download-preview-buttons-mb-views/).
+And I’ve done the same for the custom fields as well. If you want to see the details, you can find it on [this practice](create-download-preview-buttons-mb-views.md).
 
 ![And I’ve done the same for the custom fields as well](https://docs.metabox.io/assets/images/custom-field-cfdfcc65331a9ab851b594035391a541.png)
 
@@ -47,7 +49,7 @@ Go to the post editor, you will see the created custom fields.
 
 ## 2\. Showing restaurants on the map
 
-In this step, we’ll show all posts on the page using **MB Views** from **Meta Box**, which means displaying all restaurants. For filtering, I’ll do it later. We already have a case study that shows how to display listings on a map. You can find it on [this tutorial](https://docs.metabox.io/tutorials/display-listings-on-map/).
+In this step, we’ll show all posts on the page using **MB Views** from **Meta Box**, which means displaying all restaurants. For filtering, I’ll do it later. We already have a case study that shows how to display listings on a map. You can find it on [this tutorial](display-listings-on-map.md).
 
 First, create a new page for the restaurant listing.
 

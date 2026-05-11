@@ -1,6 +1,8 @@
 ---
 title: Creating a video gallery page - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-video-gallery-page-with-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Ready to beautify your website with a stunning video gallery? In today's practice, we're going to find out how to do it with **Meta Box** and **Kadence**.
@@ -184,4 +186,4 @@ Let’s see how they look on the page!
 
 So, we've created the page for the video gallery.
 
-Sometimes, you may want to display an attractive [video playlist](https://docs.metabox.io/tutorials/display-video-playlist-mb-views/) on your sites as well. You can refer to it
+Sometimes, you may want to display an attractive [video playlist](display-video-playlist-mb-views.md) on your sites as well. You can refer to it

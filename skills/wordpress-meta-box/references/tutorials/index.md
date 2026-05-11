@@ -1,78 +1,80 @@
 ---
 title: Tutorials - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-[![create custom post type taxonomies](https://docs.metabox.io/assets/images/banner-1-807ff9418b5e3e0988a4657594319b84.png)](https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/)
+[![create custom post type taxonomies](https://docs.metabox.io/assets/images/banner-1-807ff9418b5e3e0988a4657594319b84.png)](create-custom-post-types-taxonomies.md)
 
-[![create custom fields](https://docs.metabox.io/assets/images/banner-2-d54783c5fe2c3e3ff88d1067ce412b79.png)](https://docs.metabox.io/tutorials/create-custom-fields/)
+[![create custom fields](https://docs.metabox.io/assets/images/banner-2-d54783c5fe2c3e3ff88d1067ce412b79.png)](create-custom-fields.md)
 
-[![create category thumbnails](https://docs.metabox.io/assets/images/banner-3-75913ed90eb54962a67788cf2ad21d77.png)](https://docs.metabox.io/tutorials/category-thumbnails/)
+[![create category thumbnails](https://docs.metabox.io/assets/images/banner-3-75913ed90eb54962a67788cf2ad21d77.png)](category-thumbnails.md)
 
-[![filter posts](https://docs.metabox.io/assets/images/banner-4-d335348f4d0c3a5f0245ee3ee33f63fd.png)](https://docs.metabox.io/tutorials/filter-posts-by-custom-fields-taxonomies/)
+[![filter posts](https://docs.metabox.io/assets/images/banner-4-d335348f4d0c3a5f0245ee3ee33f63fd.png)](filter-posts-by-custom-fields-taxonomies.md)
 
 ## Trending now
 
-## [Creating category thumbnails](https://docs.metabox.io/tutorials/category-thumbnails/)
+## [Creating category thumbnails](category-thumbnails.md)
 
 ![icon](https://docs.metabox.io/tutorials/Rectangle.png)
 
-## [Displaying featured posts](https://docs.metabox.io/tutorials/displaying-featured-posts-with-wp-grid-builder/)
+## [Displaying featured posts](displaying-featured-posts-with-wp-grid-builder.md)
 
 ![icon](https://docs.metabox.io/tutorials/Rectangle.png)
 
-## [Creating a simple listing site](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/)
+## [Creating a simple listing site](create-simple-listing-meta-box-bricks.md)
 
-## [Beginners](https://docs.metabox.io/tutorials/beginners/)
+## [Beginners](beginners.md)
 
-[![beginners](https://docs.metabox.io/assets/images/category-1-49b46b5764e80db1230f390a6df7d225.png)](https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/)
+[![beginners](https://docs.metabox.io/assets/images/category-1-49b46b5764e80db1230f390a6df7d225.png)](create-custom-post-types-taxonomies.md)
 
-- [Custom fields vs custom taxonomies](https://docs.metabox.io/tutorials/custom-fields-vs-taxonomies/)
-- [Copying fields’ data to custom tables](https://docs.metabox.io/tutorials/move-data-to-custom-tables/)
-- [Copying custom fields from sites to sites](https://docs.metabox.io/tutorials/copy-custom-fields/)
-- [Exporting and importing custom fields](https://docs.metabox.io/tutorials/export-import-custom-fields-meta-box-builder/)
+- [Custom fields vs custom taxonomies](custom-fields-vs-taxonomies.md)
+- [Copying fields’ data to custom tables](move-data-to-custom-tables.md)
+- [Copying custom fields from sites to sites](copy-custom-fields.md)
+- [Exporting and importing custom fields](export-import-custom-fields-meta-box-builder.md)
 
-## [Case Studies](https://docs.metabox.io/tutorials/case-studies/)
+## [Case Studies](case-studies.md)
 
-[![case studies](https://docs.metabox.io/assets/images/category-2-48b0a68b735a405b58a2f6297a82da8f.png)](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/)
+[![case studies](https://docs.metabox.io/assets/images/category-2-48b0a68b735a405b58a2f6297a82da8f.png)](create-simple-listing-meta-box-bricks.md)
 
-- [Creating a simple listing - with Bricks](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/)
-- [Creating a FAQs page - with Elementor](https://docs.metabox.io/tutorials/create-faqs-page-meta-box-elementor/)
-- [Creating buttons with dynamic link](https://docs.metabox.io/tutorials/create-buttons-dynamic-links/)
-- [Creating a video gallery page - with Oxygen](https://docs.metabox.io/tutorials/create-video-gallery-page-meta-box-oxygen/)
+- [Creating a simple listing - with Bricks](create-simple-listing-meta-box-bricks.md)
+- [Creating a FAQs page - with Elementor](create-faqs-page-meta-box-elementor.md)
+- [Creating buttons with dynamic link](create-buttons-dynamic-links.md)
+- [Creating a video gallery page - with Oxygen](create-video-gallery-page-meta-box-oxygen.md)
 
-## [General Guide](https://docs.metabox.io/tutorials/general-guide/)
+## [General Guide](general-guide.md)
 
-[![general guide](https://docs.metabox.io/assets/images/category-3-5cb0e9cee6be3bbb62f2e0889a8fa9e4.png)](https://docs.metabox.io/tutorials/add-custom-fields-to-yoast-seo/)
+[![general guide](https://docs.metabox.io/assets/images/category-3-5cb0e9cee6be3bbb62f2e0889a8fa9e4.png)](add-custom-fields-to-yoast-seo.md)
 
-- [Adding custom fields to Yoast SEO meta tags](https://docs.metabox.io/tutorials/add-custom-fields-to-yoast-seo/)
-- [Moving custom fields’ data to custom tables](https://docs.metabox.io/tutorials/move-data-to-custom-tables/)
-- [Displaying a user list on the frontend](https://docs.metabox.io/tutorials/display-users-list/)
-- [Getting posts by custom fields](https://docs.metabox.io/tutorials/get-posts-by-custom-fields/)
+- [Adding custom fields to Yoast SEO meta tags](add-custom-fields-to-yoast-seo.md)
+- [Moving custom fields’ data to custom tables](move-data-to-custom-tables.md)
+- [Displaying a user list on the frontend](display-users-list.md)
+- [Getting posts by custom fields](get-posts-by-custom-fields.md)
 
-## [Extensions](https://docs.metabox.io/tutorials/extensions/)
+## [Extensions](extensions.md)
 
-[![extensions](https://docs.metabox.io/assets/images/category-5-997fd17c5a46aa7095b34858cdacff4b.png)](https://docs.metabox.io/tutorials/create-subscription-form-connect-to-mailchimp/)
+[![extensions](https://docs.metabox.io/assets/images/category-5-997fd17c5a46aa7095b34858cdacff4b.png)](create-subscription-form-connect-to-mailchimp.md)
 
-- [Creating subscription form connecting to Mailchimp](https://docs.metabox.io/tutorials/create-subscription-form-connect-to-mailchimp/)
+- [Creating subscription form connecting to Mailchimp](create-subscription-form-connect-to-mailchimp.md)
 - Creating settings page for customizer options
-- [Analyzing content in custom fields for SEO](https://docs.metabox.io/tutorials/analyze-content-seo-rank-math/)
-- [Adding testimonials](https://docs.metabox.io/tutorials/add-testimonials/)
+- [Analyzing content in custom fields for SEO](analyze-content-seo-rank-math.md)
+- [Adding testimonials](add-testimonials.md)
 
-## [Page Builders](https://docs.metabox.io/tutorials/builders/)
+## [Page Builders](builders.md)
 
-[![mb with builders](https://docs.metabox.io/assets/images/category-4-37a2be45d0ce81423d856489838a841d.png)](https://docs.metabox.io/tutorials/create-faqs-page-meta-box-oxygen/)
+[![mb with builders](https://docs.metabox.io/assets/images/category-4-37a2be45d0ce81423d856489838a841d.png)](create-faqs-page-meta-box-oxygen.md)
 
-- [Creating an FAQs page - with Oxygen](https://docs.metabox.io/tutorials/create-faqs-page-meta-box-oxygen/)
-- [Creating a simple listing - with Bricks](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/)
-- [Showing featured products - with Elementor](https://docs.metabox.io/tutorials/create-team-members-page-meta-box-elementor/)
-- [Displaying latest products - with Zion](https://docs.metabox.io/tutorials/display-latest-products-meta-box-zion/)
+- [Creating an FAQs page - with Oxygen](create-faqs-page-meta-box-oxygen.md)
+- [Creating a simple listing - with Bricks](create-simple-listing-meta-box-bricks.md)
+- [Showing featured products - with Elementor](create-team-members-page-meta-box-elementor.md)
+- [Displaying latest products - with Zion](display-latest-products-meta-box-zion.md)
 
-## [MB Views](https://docs.metabox.io/tutorials/mb-views/)
+## [MB Views](mb-views.md)
 
-[![mb views](https://docs.metabox.io/assets/images/category-6-a35923ee4352db6f5c8a9eb370eb4b13.png)](https://docs.metabox.io/tutorials/create-buttons-dynamic-links/)
+[![mb views](https://docs.metabox.io/assets/images/category-6-a35923ee4352db6f5c8a9eb370eb4b13.png)](create-buttons-dynamic-links.md)
 
-- [Creating buttons with dynamic link](https://docs.metabox.io/tutorials/create-buttons-dynamic-links/)
-- [Creating user profile page on frontend](https://docs.metabox.io/tutorials/create-user-profile-page/)
-- [Creating a dynamic landing page](https://docs.metabox.io/tutorials/create-dynamic-landing-page/)
-- [Creating a team members page](https://docs.metabox.io/tutorials/create-team-members-page-mb-views/)
+- [Creating buttons with dynamic link](create-buttons-dynamic-links.md)
+- [Creating user profile page on frontend](create-user-profile-page.md)
+- [Creating a dynamic landing page](create-dynamic-landing-page.md)
+- [Creating a team members page](create-team-members-page-mb-views.md)

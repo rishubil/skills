@@ -1,6 +1,8 @@
 ---
 title: Counting the number of related posts using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/count-related-posts-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Numbering related posts** and **displaying their total count** is an effective way to enhance user experience. Using the **MB Views** extension from Meta Box, you can implement this feature easily and provide readers with a clear idea of how much relevant content they can explore.
@@ -50,7 +52,7 @@ Specifically, in the **Post types** setting, you should choose the post type tha
 
 ![Choose the post type that the related posts are](https://imgur.elightup.com/iYt03A4.png)
 
-Next, in the **Field type** setting, you can choose a kind of selecting field, then the created field will inherit its style of displaying and inputting data. To know more about the style of each option in this setting, you can refer to [the documentation](https://docs.metabox.io/fields/post/#settings) of each providing field type.
+Next, in the **Field type** setting, you can choose a kind of selecting field, then the created field will inherit its style of displaying and inputting data. To know more about the style of each option in this setting, you can refer to [the documentation](../fields/post.md#settings) of each providing field type.
 
 ![In the Field type setting, you can choose a kind of selecting field](https://imgur.elightup.com/IZyvaRW.png)
 
@@ -140,4 +142,4 @@ Now, you'll see the total number of related posts displayed, giving you a clear 
 
 ![The total number of related posts displayed](https://imgur.elightup.com/9hK72Et.png)
 
-If you want to learn more about displaying related posts in a dynamic way, check out our tutorial on [displaying related posts based on a shared relationship](https://docs.metabox.io/tutorials/create-relationships-mb-views/) or explore how to [add related posts with Meta Box](https://docs.metabox.io/tutorials/add-related-posts/).
+If you want to learn more about displaying related posts in a dynamic way, check out our tutorial on [displaying related posts based on a shared relationship](create-relationships-mb-views.md) or explore how to [add related posts with Meta Box](add-related-posts.md).

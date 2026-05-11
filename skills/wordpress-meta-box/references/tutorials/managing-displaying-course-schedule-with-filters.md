@@ -1,6 +1,8 @@
 ---
 title: Managing & displaying course schedule with filters - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/managing-displaying-course-schedule-with-filters/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Using a schedule filter is perfect for an educational platform offering different course schedules, a booking page for doctors or spa services, movie or theater showtimes, or homestay listings with availability filters. This approach improves the user experience.
@@ -85,7 +87,7 @@ Simply add a **Number** field for the price.
 
 ![Add a Number field for the price](https://i0.wp.com/images.elightup.com/meta-box/blog/schedule-filter/sf3.png)
 
-Next, regarding the course, add a field in the type of **Post**. [This field type](https://docs.metabox.io/fields/post/) allows you to choose more than one post from a regulated post type.
+Next, regarding the course, add a field in the type of **Post**. [This field type](../fields/post.md) allows you to choose more than one post from a regulated post type.
 
 ![Add a Post field](https://i0.wp.com/images.elightup.com/meta-box/blog/schedule-filter/sf4.png)
 

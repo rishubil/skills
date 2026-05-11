@@ -1,6 +1,8 @@
 ---
 title: Tools - Meta Box Documentation
 source: https://docs.metabox.io/tools/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 [Meta Box AIO](https://metabox.io/aio/) includes four tools that help you clean up and optimize your WordPress database. They focus on removing unused data, fixing field inconsistencies, and handling post types efficiently. These tools let you:

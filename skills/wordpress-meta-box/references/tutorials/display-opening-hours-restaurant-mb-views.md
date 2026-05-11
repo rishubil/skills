@@ -1,6 +1,8 @@
 ---
 title: Displaying opening hours for restaurants - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-opening-hours-restaurant-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 For a website having information about more than one restaurant, each one may have their own opening hours. To have this kind of information, we can use custom fields.

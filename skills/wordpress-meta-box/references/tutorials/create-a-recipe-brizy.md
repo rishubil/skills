@@ -1,9 +1,11 @@
 ---
 title: Creating a recipe - Meta Box + Brizy - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-a-recipe-brizy/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-In the [previous tutorials](https://docs.metabox.io/tutorials/create-recipes-meta-box-zion/) of this series, we’ve found out how to create a recipe page using some of the page builders. In this practice, we’ll use another one - Brizy to do it with the help of Meta Box.
+In the [previous tutorials](create-recipes-meta-box-zion.md) of this series, we’ve found out how to create a recipe page using some of the page builders. In this practice, we’ll use another one - Brizy to do it with the help of Meta Box.
 
 This is the page that I created as an example:
 

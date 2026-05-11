@@ -1,6 +1,8 @@
 ---
 title: rwmb_get_field_settings - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-get-field-settings/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `rwmb_get_field_settings` is a helper function that gets the field settings by field ID.
@@ -23,7 +25,7 @@ Result:
 */
 ```
 
-However, if you create a custom field for [terms](https://docs.metabox.io/extensions/mb-term-meta/), [users](https://docs.metabox.io/extensions/mb-user-meta/) or [settings pages](https://docs.metabox.io/extensions/mb-settings-page/), you will need to specify object type in the second parameter:
+However, if you create a custom field for [terms](../extensions/mb-term-meta.md), [users](../extensions/mb-user-meta.md) or [settings pages](../extensions/mb-settings-page.md), you will need to specify object type in the second parameter:
 
 ```php
 $field = rwmb_get_field_settings( $field_id, ['object_type' => 'term'] ); // or 'user', 'setting
@@ -40,7 +42,7 @@ $field = rwmb_get_field_settings( $field_id, $args, $object_id );
 | Name | Description |
 | --- | --- |
 | `$field_id` | The field ID. Required. |
-| `$args` | Extra arguments for some object types or storages. It works similarly in [rwmb\_meta](https://docs.metabox.io/functions/rwmb-meta/) function. Can be array or a string in format `param1=value1&param2=value2`. Optional. |
+| `$args` | Extra arguments for some object types or storages. It works similarly in [rwmb\_meta](rwmb-meta.md) function. Can be array or a string in format `param1=value1&param2=value2`. Optional. |
 | `$object_id` | Object ID that custom fields are get from. Optional. If not present, current post ID is used. |
 
 ## Returned value

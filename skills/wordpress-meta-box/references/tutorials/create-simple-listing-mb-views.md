@@ -1,9 +1,11 @@
 ---
 title: Creating a simple listing - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-Continuing our series on [how to create simple listing](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/), where we've explored the way to build custom post listings using various page builders, this sixth part introduces a new approach only with Meta Box. It’s using **MB Views**.
+Continuing our series on [how to create simple listing](create-simple-listing-meta-box-bricks.md), where we've explored the way to build custom post listings using various page builders, this sixth part introduces a new approach only with Meta Box. It’s using **MB Views**.
 
 This is my example with a list of restaurants:
 
@@ -71,7 +73,7 @@ These are some fields I created:
 
 ![Some fields as example](https://i0.wp.com/images.elightup.com/meta-box/blog/simple-listing-views/field.png)
 
-There’s no special setting for them. You can freely create more fields to store information for products as you want with [40+ field types](https://docs.metabox.io/fields/) provided by Meta Box.
+There’s no special setting for them. You can freely create more fields to store information for products as you want with [40+ field types](../fields/index.md) provided by Meta Box.
 
 After having all the fields you need, move to the **Settings** tab, choose **Location** as **Post type**, and select your post type to apply these fields to it.
 

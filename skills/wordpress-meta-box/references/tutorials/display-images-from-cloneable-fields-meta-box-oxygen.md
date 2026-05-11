@@ -1,6 +1,8 @@
 ---
 title: Displaying images from cloneable fields - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-from-cloneable-fields-meta-box-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to find out how to **use Oxygen to display images from cloneable fields** created with Meta Box.
@@ -189,6 +191,6 @@ Here is the result.
 
 You may be interested in:
 
-- [Creating a team members page](https://docs.metabox.io/tutorials/create-team-members-page-meta-box-oxygen/)
-- [Creating a video gallery page](https://docs.metabox.io/tutorials/create-video-gallery-page-meta-box-oxygen/)
-- [Creating an FAQs page](https://docs.metabox.io/tutorials/create-faqs-page-meta-box-oxygen/)
+- [Creating a team members page](create-team-members-page-meta-box-oxygen.md)
+- [Creating a video gallery page](create-video-gallery-page-meta-box-oxygen.md)
+- [Creating an FAQs page](create-faqs-page-meta-box-oxygen.md)

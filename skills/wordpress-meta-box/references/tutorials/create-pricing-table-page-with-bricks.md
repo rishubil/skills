@@ -1,6 +1,8 @@
 ---
 title: Creating a pricing table page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-pricing-table-page-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If your products come with multiple pricing plans rather than just one, a well-structured pricing table page is a smart way to showcase your offerings. Today, we’ll do it with **Meta Box** and **Bricks**.

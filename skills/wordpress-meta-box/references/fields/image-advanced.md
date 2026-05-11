@@ -1,6 +1,8 @@
 ---
 title: Image Advanced - Meta Box Documentation
 source: https://docs.metabox.io/fields/image-advanced/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The image advanced field uses the WordPress media popup for selecting / uploading images. You can also reorder images if you want.
@@ -17,7 +19,7 @@ The image advanced field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -124,7 +126,7 @@ The 2nd argument for `rwmb_meta()` and `rwmb_the_value()` is an array of extra p
 
 ## Filters
 
-This field inherits from file advanced and thus, uses the [same filters](https://docs.metabox.io/fields/file-advanced/) to change the texts displayed on the screen.
+This field inherits from file advanced and thus, uses the [same filters](file-advanced.md) to change the texts displayed on the screen.
 
 | Filter | Default | Description |
 | --- | --- | --- |

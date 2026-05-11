@@ -1,11 +1,13 @@
 ---
 title: MB Show Hide - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-show-hide/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Show Hide helps you to toggle the visibility of a meta box based on some conditions such as categories, page template or post format.
 
-MB Show Hide is a simplified version of [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/). MB Conditional Logic can control the visibility of custom fields and other HTML elements and supports more types of conditions.
+MB Show Hide is a simplified version of [MB Conditional Logic](meta-box-conditional-logic.md). MB Conditional Logic can control the visibility of custom fields and other HTML elements and supports more types of conditions.
 
 ## Settings
 

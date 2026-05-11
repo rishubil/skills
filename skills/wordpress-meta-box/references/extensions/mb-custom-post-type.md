@@ -1,6 +1,8 @@
 ---
 title: MB Custom Post Types & Custom Taxonomies - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-custom-post-type/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This extension helps you create custom post types and custom taxonomies with a user-friendly interface.
@@ -94,7 +96,7 @@ And thanks to `map_meta_cap`, the admin role can edit the posts types.
 
 ### Block templates with MB Blocks
 
-Sometimes you want to load default blocks created by [MB Blocks](https://docs.metabox.io/extensions/mb-blocks/) when creating a new post. Block templates allow specifying a default initial state for an editor session. Use the argument `template` when registering the post type:
+Sometimes you want to load default blocks created by [MB Blocks](mb-blocks.md) when creating a new post. Block templates allow specifying a default initial state for an editor session. Use the argument `template` when registering the post type:
 
 `'template'              => [     ['meta-box/{$block_id}'] ]`
 
@@ -142,7 +144,7 @@ There is a complete set of reserved keywords, or terms, in WordPress that should
 > [!-info] -info
 > Can I change the back-end UI for selecting taxonomy to radio buttons?
 > 
-> The default WordPress UI can't be changed to radio buttons. However, you can remove the default WordPress UI and create a [taxonomy field](https://docs.metabox.io/fields/taxonomy/) with Meta Box, which supports many ways to display and choose terms, including radio buttons. See this video for how to do that:
+> The default WordPress UI can't be changed to radio buttons. However, you can remove the default WordPress UI and create a [taxonomy field](../fields/taxonomy.md) with Meta Box, which supports many ways to display and choose terms, including radio buttons. See this video for how to do that:
 > 
 > [\# Link to this question](#can-i-change-the-back-end-ui-for-selecting-taxonomy-to-radio-buttons)
 
