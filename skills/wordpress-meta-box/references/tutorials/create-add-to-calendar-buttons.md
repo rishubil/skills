@@ -1,6 +1,8 @@
 ---
 title: Creating add-to-calendar buttons - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-add-to-calendar-buttons/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Creating an **"Add to Calendar" button for events, sales promotions, or coming soon pages** with countdown timers can help users quickly add the event to their calendars via the `.ics` file. Thanks to that, readers can remember or create reminders to attend your event. Let’s find out how to make it in this article!

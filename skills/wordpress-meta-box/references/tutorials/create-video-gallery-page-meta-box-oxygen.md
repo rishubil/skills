@@ -1,6 +1,8 @@
 ---
 title: Creating a video gallery page - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-video-gallery-page-meta-box-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’ll use Oxygen to **create a page showing a video gallery**. **The video's information is stored in the custom fields created by Meta Box**. Here is an example:

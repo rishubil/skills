@@ -1,6 +1,8 @@
 ---
 title: Automatically adding alt text to uploaded images - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-alt-text-automatically/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The alternative text (Alt text) plays an important role in improving your website's SEO and image rankings. However, manually adding alt-text to every uploaded image in WordPress can be time-consuming, especially for sites that frequently upload large amounts of media.
@@ -23,7 +25,7 @@ Many users are used to uploading images manually to WordPress. However, I sugges
 
 As you may know, custom fields are used for dynamic content. Therefore, you can update images easily without affecting the WordPress core.
 
-[`rwmb_after_save_field`](https://docs.metabox.io/actions/rwmb-after-save-field/) is a Meta Box action hook that runs after a field is saved. And, `rwmb_{field_id}_after_save_field` is one of its variations. It applies to a field with a particular ID. Using this action, **adding alt text will be automatic, dynamic, and flexible**.
+[`rwmb_after_save_field`](../actions/rwmb-after-save-field.md) is a Meta Box action hook that runs after a field is saved. And, `rwmb_{field_id}_after_save_field` is one of its variations. It applies to a field with a particular ID. Using this action, **adding alt text will be automatic, dynamic, and flexible**.
 
 You can also specify where the image alt text should come from. It could be the image name, description, or anything else. In this article, I will use the image name as an example.
 

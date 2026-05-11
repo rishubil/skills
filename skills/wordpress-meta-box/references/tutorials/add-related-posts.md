@@ -1,6 +1,8 @@
 ---
 title: Adding related posts using custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-related-posts/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Adding related ports is a common way to keep your visitor stay on your site and help them find more useful content. In this practice, we will find out how to **choose a specific post to be related to another one using custom fields** created with Meta Box.

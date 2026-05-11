@@ -1,9 +1,11 @@
 ---
 title: Rendering blocks with views in Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/render-block-with-view/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-[MB Blocks](https://docs.metabox.io/extensions/mb-blocks/) is a powerful plugin for creating custom Gutenberg blocks. If using a separate template file to render the block is inconvenient, we have a more optimal way for you: **render blocks using views**.
+[MB Blocks](../extensions/mb-blocks.md) is a powerful plugin for creating custom Gutenberg blocks. If using a separate template file to render the block is inconvenient, we have a more optimal way for you: **render blocks using views**.
 
 We have this quote block with some simple content as an example. It is rendered and styled using a view provided by the **MB Views** extension from Meta Box.
 
@@ -21,7 +23,7 @@ If you use the MB Blocks from Meta Box to create custom blocks for a time, you h
 
 However, all of them may be difficult to manage the templates of all the blocks since each one is in a different place.
 
-That’s why we highly recommend using views to render the block with the help of the [MB Views](https://docs.metabox.io/extensions/mb-views/) extension. These are some benefits of this method:
+That’s why we highly recommend using views to render the block with the help of the [MB Views](../extensions/mb-views.md) extension. These are some benefits of this method:
 
 - MB Views can help to **get and display data** from custom fields in the block more **easil** y than ever.
 - All the templates for rendering the blocks are in **one place for management**.

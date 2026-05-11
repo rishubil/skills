@@ -1,9 +1,11 @@
 ---
 title: MB Admin Columns - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-admin-columns/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-**MB Admin Columns** helps you display the custom fields' values in the table of the post list in the **All Posts** screen in the **back end**. It works with any custom post types and supports for terms and users as well (requires [MB Term Meta](https://docs.metabox.io/extensions/mb-term-meta/) and [MB User Meta](https://docs.metabox.io/extensions/mb-user-meta/) correspondingly).
+**MB Admin Columns** helps you display the custom fields' values in the table of the post list in the **All Posts** screen in the **back end**. It works with any custom post types and supports for terms and users as well (requires [MB Term Meta](mb-term-meta.md) and [MB User Meta](mb-user-meta.md) correspondingly).
 
 Showing fields' values in the post table give users a better overview of the posts without going to edit each post. It saves you time verifying/viewing the data.
 
@@ -35,7 +37,7 @@ These settings are self-explained. We also add some tooltips next to the setting
 > [!-info] -info
 > info
 > 
-> The instruction above uses [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/). If you prefer to use code, please see below.
+> The instruction above uses [MB Builder](meta-box-builder.md), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](meta-box-aio.md). If you prefer to use code, please see below.
 
 ## Using code
 

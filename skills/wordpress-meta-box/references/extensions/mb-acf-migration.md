@@ -1,6 +1,8 @@
 ---
 title: MB ACF Migration - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-acf-migration/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB ACF Migration extension helps you to migrate field groups and custom field data from Advanced Custom Fields (ACF) to Meta Box. It works with both free and pro versions of Advanced Custom Fields.
@@ -11,7 +13,7 @@ This is the walkthrough video created by David McCan that shows you how to migra
 
 ## Backup the database
 
-Before migrating data, make sure you have a backup of your database. During the migration process, because of the difference in [data format](https://docs.metabox.io/database/), the plugin will attempt to modify the existing data in custom fields created by ACF. We try to do it at a very minimum level and create a backup of fields for some specific cases, but it's still important to make a backup just in case something goes wrong.
+Before migrating data, make sure you have a backup of your database. During the migration process, because of the difference in [data format](../database.md), the plugin will attempt to modify the existing data in custom fields created by ACF. We try to do it at a very minimum level and create a backup of fields for some specific cases, but it's still important to make a backup just in case something goes wrong.
 
 ## Migrate
 
@@ -29,7 +31,7 @@ MB ACF Migration tries to migrate all the following data from ACF to Meta Box. P
 
 ### Field groups
 
-ACF field groups are migrated to Meta Box's field groups, which requires [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/). Most of the field group settings are the same as in Meta Box.
+ACF field groups are migrated to Meta Box's field groups, which requires [MB Builder](meta-box-builder.md). Most of the field group settings are the same as in Meta Box.
 
 > [!-warning] -warning
 > warning
@@ -38,23 +40,23 @@ ACF field groups are migrated to Meta Box's field groups, which requires [MB Bui
 
 For **field group locations**, the basic rules are already supported in Meta Box and extensions. You might need extensions such as:
 
-- [MB Term Meta](https://docs.metabox.io/extensions/mb-term-meta/): If you set locations for taxonomies.
-- [MB User Meta](https://docs.metabox.io/extensions/mb-user-meta/): If you set locations for users.
+- [MB Term Meta](mb-term-meta.md): If you set locations for taxonomies.
+- [MB User Meta](mb-user-meta.md): If you set locations for users.
 - [MB Comment Meta](https://metabox.io/plugins/mb-comment-meta/): If you set locations for comments.
-- [MB Settings Pages](https://docs.metabox.io/extensions/mb-settings-page/): If you set locations for settings pages.
+- [MB Settings Pages](mb-settings-page.md): If you set locations for settings pages.
 
-For "Blocks", although there's an [equivalent in Meta Box](https://docs.metabox.io/extensions/mb-blocks/), the data of blocks are stored in post content and hard to parsed and migrated, so it's ignored at the moment.
+For "Blocks", although there's an [equivalent in Meta Box](mb-blocks.md), the data of blocks are stored in post content and hard to parsed and migrated, so it's ignored at the moment.
 
 For other rules like "Page Type", "Widget", "Menu", "Menu Item", there's no equivalent in Meta Box and they will be ignored.
 
-Besides, if you use complex locations, then you'll need [MB Include Exclude](https://docs.metabox.io/extensions/meta-box-include-exclude/) extension. Due to the difference in how plugins create rules, the plugin works the following way:
+Besides, if you use complex locations, then you'll need [MB Include Exclude](meta-box-include-exclude.md) extension. Due to the difference in how plugins create rules, the plugin works the following way:
 
 - If there's only one location group: the plugin will migrate all rules with operator `AND`.
 - If there are multiple location groups: the plugin will take the first rule of each group and combine them with operator `OR`.
 
 ### Settings pages
 
-ACF requires you to use code to register settings pages. In Meta Box, thanks to [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), you can create and manage settings pages with UI.
+ACF requires you to use code to register settings pages. In Meta Box, thanks to [MB Builder](meta-box-builder.md), you can create and manage settings pages with UI.
 
 During the migration, the plugin will try to create settings pages with UI if you have settings pages registered with ACF.
 
@@ -64,7 +66,7 @@ Most ACF field types work well with Meta Box, such as text, radio, select, etc. 
 
 1. **Remove all extra keys** in the database. ACF stores an extra meta in the database for field reference. It has the format `_{$field_id}`. This is redundant and causes the database to bloat. We don't need them and thus, we remove them.
 2. For **fields that have multiple values** such as gallery, select (with multiple options), ACF saves their values as serialized arrays. We'll migrate them multiple rows in the database (similar to what `add_post_meta` does with the last parameter `false`).
-3. For **layout fields**, ACF saves values of each sub-fields in a row in the database. We'll migrate them into groups (which requires [MB Group](https://docs.metabox.io/extensions/meta-box-group/)).
+3. For **layout fields**, ACF saves values of each sub-fields in a row in the database. We'll migrate them into groups (which requires [MB Group](meta-box-group.md)).
 
 Details are below:
 
@@ -76,9 +78,9 @@ Details are below:
 | Post, Page link, Relationship | Post. In the case of page link, it works only with a post is selected, archive links don't work. |
 | Taxonomy | Taxonomy advanced |
 | Google maps | A pair of address field - which is a text field, and a Google maps field |
-| Group | Non-cloneable group. Requires [MB Group](https://docs.metabox.io/extensions/meta-box-group/). |
-| Repeater | Cloneable group. Requires [MB Group](https://docs.metabox.io/extensions/meta-box-group/). |
-| Flexible content | Cloneable group with 2 sub-fields: a select field for selecting a layout, and a non-cloneable group for data. Requires [MB Group](https://docs.metabox.io/extensions/meta-box-group/) and [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/). |
+| Group | Non-cloneable group. Requires [MB Group](meta-box-group.md). |
+| Repeater | Cloneable group. Requires [MB Group](meta-box-group.md). |
+| Flexible content | Cloneable group with 2 sub-fields: a select field for selecting a layout, and a non-cloneable group for data. Requires [MB Group](meta-box-group.md) and [MB Conditional Logic](meta-box-conditional-logic.md). |
 
 > [!-info] -info
 > Field backup

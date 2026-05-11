@@ -1,6 +1,8 @@
 ---
 title: Creating user profile page on the frontend - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-user-profile-page/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 WordPress allows you to add more users to your website, but only from the backend. To let visitors register and manage accounts on the frontend, you can **create a user profile page** and also add custom fields for them to fill in their information. If you are using the Meta Box plugin, you can do it easily.
@@ -191,7 +193,7 @@ Now, you can fill in the additional information and save it on this user profile
 
 ## Final words
 
-To finalize all the forms, you should change the settings of each block provided by [MB User Profile](https://docs.metabox.io/extensions/mb-user-profile/) as well as style the fields for better display. For your quick reference, we have a tutorial for styling custom fields using CSS in [this post](https://metabox.io/style-meta-boxs-custom-fields-using-css/).
+To finalize all the forms, you should change the settings of each block provided by [MB User Profile](../extensions/mb-user-profile.md) as well as style the fields for better display. For your quick reference, we have a tutorial for styling custom fields using CSS in [this post](https://metabox.io/style-meta-boxs-custom-fields-using-css/).
 
 We hope that with these tools and tutorials, you can easily make your own custom user profile page and get a lot of users. And note that you should use [a transactional email service](https://metabox.io/free-transactional-email-services/) to notify your users after they successfully register an account on your site. That will help you become more professional.
 

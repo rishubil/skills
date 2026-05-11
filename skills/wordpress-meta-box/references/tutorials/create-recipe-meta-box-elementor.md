@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-meta-box-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to find out how to **create a recipe page** using a page builder - Elementor. This page is a singular page of a custom post type and includes information that is stored in custom fields created with Meta Box.
@@ -25,7 +27,7 @@ Make sure you have **Elementor Pro** on your site.
 
 ## 1\. Creating a new custom post type
 
-We'll create a new post type for the recipe. You can refer to [this article](https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/) for more details.
+We'll create a new post type for the recipe. You can refer to [this article](create-custom-post-types-taxonomies.md) for more details.
 
 Use quick action in the dashboard or go to **Meta Box** > **Post Types** > **Add New** to create a new post type.
 
@@ -194,6 +196,6 @@ Now, the recipe has a new look as below:
 
 You may be interested in:
 
-- [Displaying images from cloneable fields](https://docs.metabox.io/tutorials/display-images-from-cloneable-fields-meta-box-elementor/)
-- [Displaying the latest products](https://docs.metabox.io/tutorials/display-latest-product-meta-box-elementor/)
+- [Displaying images from cloneable fields](display-images-from-cloneable-fields-meta-box-elementor.md)
+- [Displaying the latest products](display-latest-product-meta-box-elementor.md)
 - [Showing featured products](https://docs.metabox.io/tutorials/show-featured-products-meta-box-elementor-wp-grid-builder/)

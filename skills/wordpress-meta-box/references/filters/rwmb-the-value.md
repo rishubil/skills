@@ -1,9 +1,11 @@
 ---
 title: rwmb_the_value - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-the-value/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-This filter is used to change the returned value of the [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/) helper function.
+This filter is used to change the returned value of the [rwmb\_the\_value()](../functions/rwmb-the-value.md) helper function.
 
 ```php
 apply_filters( 'rwmb_the_value', $value, $field_id, $args, $object_id );

@@ -1,6 +1,8 @@
 ---
 title: Creating a video gallery page - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-video-gallery-page-with-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this series, we learned how to **create a video gallery page** using page builders. This post is one of them on how to create it using **Meta Box** and **Elementor**.

@@ -1,6 +1,8 @@
 ---
 title: Getting posts by custom fields’ values - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/get-posts-by-custom-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this article, I will get posts in two ways. One is using the `WP_Query` to get the post. The second one is joining the `wp_posts` and `wp_postmeta` tables together and then querying by SQL, which will be more convenient when we have to deal with databases. Let’s see how to do it in both ways.

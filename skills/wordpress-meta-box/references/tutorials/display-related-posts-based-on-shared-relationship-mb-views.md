@@ -1,6 +1,8 @@
 ---
 title: Displaying related posts based on a shared relationship using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-related-posts-based-on-shared-relationship-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This time, we’ll display related posts based on a shared relationship using the **MB Views** extension. You can use this approach to show related events by the same artist, products in the same category, or articles by the same author.

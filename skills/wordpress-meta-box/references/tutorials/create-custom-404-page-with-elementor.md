@@ -1,6 +1,8 @@
 ---
 title: Creating a custom 404 page in WordPress - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-custom-404-page-with-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 404 page is not a kind of main content on your website, since it appears only when visitors come to an unavailable page. However, for better SEO and better experience, we should pay some attention to this kind of page, to harmonize content, and drive visitors to the wanted pages.

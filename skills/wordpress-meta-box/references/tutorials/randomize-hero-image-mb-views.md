@@ -1,6 +1,8 @@
 ---
 title: Randomizing hero image in WordPress - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/randomize-hero-image-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Each site usually has only one hero image. Then, the visitors will see the same image as well as the same tagline and information on the hero section. It may be boring and can not showcase more than one prominent campaign. Having multiple hero sets with different content and displaying them randomly will make your website more interesting. Let’s do it with the help of MB Views from Meta Box.

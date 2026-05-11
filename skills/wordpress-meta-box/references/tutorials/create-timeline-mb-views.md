@@ -1,6 +1,8 @@
 ---
 title: Having a chronological timeline in WordPress using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-timeline-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we'll use the **MB Views** extension from Meta Box to **create a professional timeline**, visually presenting events, roadmaps, milestones, and changelogs for easy access.
@@ -251,6 +253,6 @@ After saving the template, go back to the page on the frontend. You can see the 
 
 ![The new look of the timeline, and the buttons work well.](https://imgur.elightup.com/ANBWmnE.png)
 
-By the way, if you use different page builders, stay tuned for our upcoming guide to [have a chronological timeline](https://docs.metabox.io/tutorials/create-timeline-with-bricks/).
+By the way, if you use different page builders, stay tuned for our upcoming guide to [have a chronological timeline](create-timeline-with-bricks.md).
 
-Additionally, we recommend our article on [showing upcoming events](https://docs.metabox.io/tutorials/show-upcoming-events-with-mb-views/), which filters and displays ongoing or future events, ensuring your visitors don’t miss any information. I hope you find it helpful!
+Additionally, we recommend our article on [showing upcoming events](show-upcoming-events-with-mb-views.md), which filters and displays ongoing or future events, ensuring your visitors don’t miss any information. I hope you find it helpful!

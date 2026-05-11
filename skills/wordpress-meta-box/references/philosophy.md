@@ -1,6 +1,8 @@
 ---
 title: Philosophy - Meta Box Documentation
 source: https://docs.metabox.io/philosophy/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Plugins-As-Libraries
@@ -8,19 +10,19 @@ source: https://docs.metabox.io/philosophy/
 Meta Box is created as a library to help WordPress users work with custom post types and custom fields easier. As a library, it has some uniqueness:
 
 - It's very lightweight and contains only what's really needed.
-- It can be [used in other themes or plugins](https://docs.metabox.io/bundling/) to provide the functionality needed for the themes or plugins.
+- It can be [used in other themes or plugins](bundling.md) to provide the functionality needed for the themes or plugins.
 - Extra functionality is provided by extensions, which can be installed as libraries as well.
 
 > [!-warning] -warning
 > No admin menu?
 > 
-> Because Meta Box is a library, the **free version** doesn't have admin pages for configuration or settings. Instead of that, it provides an API that you can use to speed up the process of creating meta boxes and custom fields. Developers need [use code](https://docs.metabox.io/creating-fields-with-code/) to create custom fields.
+> Because Meta Box is a library, the **free version** doesn't have admin pages for configuration or settings. Instead of that, it provides an API that you can use to speed up the process of creating meta boxes and custom fields. Developers need [use code](creating-fields-with-code.md) to create custom fields.
 > 
 > For normal users and beginners, we recommend using the [Meta Box Lite](https://metabox.io/lite/) which includes UI to build custom fields inside WordPress. Or if you're a premium user, you can use the [Meta Box AIO](https://metabox.io/aio/) which includes all the extensions and UI to build custom fields inside WordPress.
 
 ## Modular
 
-Meta Box is modular, which means each functionality is separated into an extension. Each extension is a WordPress plugin and can be installed and used independently or together. Extensions can also be used as libraries and you can [bundle them](https://docs.metabox.io/bundling/) in your themes or plugins.
+Meta Box is modular, which means each functionality is separated into an extension. Each extension is a WordPress plugin and can be installed and used independently or together. Extensions can also be used as libraries and you can [bundle them](bundling.md) in your themes or plugins.
 
 The modularity keeps Meta Box all the extensions as minimal as possible and keeps Meta Box not bloated.
 

@@ -1,9 +1,11 @@
 ---
 title: Shortcode - Meta Box Documentation
 source: https://docs.metabox.io/shortcode/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-Besides [normal ways](https://docs.metabox.io/custom-fields/#displaying-fields) to display fields on the website, Meta Box also provides a simple shortcode `[rwmb_meta]` to help you show custom fields in the post content or widgets easily.
+Besides [normal ways](custom-fields.md#displaying-fields) to display fields on the website, Meta Box also provides a simple shortcode `[rwmb_meta]` to help you show custom fields in the post content or widgets easily.
 
 ```php
 [rwmb_meta id="field_id" object_id="15"]
@@ -15,15 +17,15 @@ Besides [normal ways](https://docs.metabox.io/custom-fields/#displaying-fields) 
 | --- | --- |
 | `id` | The field ID. Required. |
 | `object_id` | The object ID. Optional. If not defined, then the current object ID is used. |
-| `attribute` | Get a single attribute from the field value (such as URL of the image or term slug). The field value is get with the [rwmb\_get\_value()](https://docs.metabox.io/functions/rwmb-get-value/) helper function. This works only when the value is an array. |
+| `attribute` | Get a single attribute from the field value (such as URL of the image or term slug). The field value is get with the [rwmb\_get\_value()](functions/rwmb-get-value.md) helper function. This works only when the value is an array. |
 | `render_shortcode` | Whether to render inner shortcodes inside the value of the field. For example, if you enter a shortcode in a textarea/editor field, this attribute will render that shortcode and return the rendered content. Default true. |
 
-This shortcode works exactly like the [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/) function with the same parameters.
+This shortcode works exactly like the [rwmb\_the\_value()](functions/rwmb-the-value.md) function with the same parameters.
 
 > [!-success] -success
 > Other attributes
 > 
-> You can pass **other attributes** to the shortcode if you want. If you do so, those attributes will be passed to the [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/) function as the 2nd parameter.
+> You can pass **other attributes** to the shortcode if you want. If you do so, those attributes will be passed to the [rwmb\_the\_value()](functions/rwmb-the-value.md) function as the 2nd parameter.
 
 ## Examples
 

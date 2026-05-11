@@ -1,6 +1,8 @@
 ---
 title: Creating an FAQs page - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-meta-box-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to add FAQs to a page using Meta Box. And, we’ll use Elementor to build the page.
@@ -135,5 +137,5 @@ Then all the changes in the skin will be automatically applied for the page.
 You may be interested in:
 
 - [Creating a team members page](https://docs.metabox.io/tutorials/create-team-members-page-meta-box-elementors/)
-- [Creating buttons with dynamic link](https://docs.metabox.io/tutorials/create-buttons-dynamic-links/)
-- [Displaying images from cloneable fields](https://docs.metabox.io/tutorials/display-images-from-cloneable-fields-meta-box-elementor/)
+- [Creating buttons with dynamic link](create-buttons-dynamic-links.md)
+- [Displaying images from cloneable fields](display-images-from-cloneable-fields-meta-box-elementor.md)

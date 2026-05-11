@@ -1,6 +1,8 @@
 ---
 title: Post Type Generator - Meta Box Documentation
 source: https://docs.metabox.io/post-type-generator/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 [Post Type Generator](https://metabox.io/post-type-generator/) is a free online tool to help you create and set up custom post types easily with a simple and intuitive user interface. With this tool, you can copy and paste PHP code for custom post types in a few clicks.

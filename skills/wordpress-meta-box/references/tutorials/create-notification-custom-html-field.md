@@ -1,6 +1,8 @@
 ---
 title: Creating notification using custom HTML field - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-notification-custom-html-field/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 When input data to custom fields, you definitely can use the field's description to notice or warn users about something. But it is not attractive enough so they can skip it. That’s when you should use an alert message for your custom fields. With Meta Box, you can do it easily with the help of the Custom HTML field type. Let’s explore how to create a notification using this field.

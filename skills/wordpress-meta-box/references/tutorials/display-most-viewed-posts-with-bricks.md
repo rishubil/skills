@@ -1,6 +1,8 @@
 ---
 title: Displaying the most viewed posts - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-most-viewed-posts-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll display the most viewed posts with Meta Box and Bricks. Here is my example:

@@ -1,6 +1,8 @@
 ---
 title: Creating dynamic landing page in WordPress - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-dynamic-landing-page-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you're struggling and spending too much time creating landing pages for multiple marketing campaigns, even when they have the same content structure, check out this article right away!
@@ -138,7 +140,7 @@ After publishing, there will be a shortcode automatically generated, just copy i
 
 ![Copy the shortcode automatically generated](https://imgur.elightup.com/Bc0wwbR.png)
 
-We had a useful tutorial on [how to use the MB Testimonials solution](https://docs.metabox.io/extensions/mb-testimonials/) to create and customize the testimonial section. You can watch it for more details.
+We had a useful tutorial on [how to use the MB Testimonials solution](../extensions/mb-testimonials.md) to create and customize the testimonial section. You can watch it for more details.
 
 ## 4\. Creating template for the landing page
 
@@ -284,6 +286,6 @@ Go to the pages on frontend, you will see that you now have different versions o
 
 ## Last words
 
-I hope that this way will help you create landing pages for multiple marketing campaigns faster, more conveniently, and more efficiently. If you want to try this with other page builders, follow [this tut](https://docs.metabox.io/tutorials/create-dynamic-landing-page-with-elementor/).
+I hope that this way will help you create landing pages for multiple marketing campaigns faster, more conveniently, and more efficiently. If you want to try this with other page builders, follow [this tut](create-dynamic-landing-page-with-elementor.md).
 
-Additionally, you also can apply this way to customize your homepage easily. We also have a tutorial on [configuring the homepage regularly without touching code every time](https://docs.metabox.io/tutorials/configure-homepage/). Feel free to check it out!
+Additionally, you also can apply this way to customize your homepage easily. We also have a tutorial on [configuring the homepage regularly without touching code every time](configure-homepage.md). Feel free to check it out!

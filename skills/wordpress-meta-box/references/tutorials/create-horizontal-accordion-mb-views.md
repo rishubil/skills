@@ -1,6 +1,8 @@
 ---
 title: Creating a dynamic horizontal posts accordion - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-horizontal-accordion-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you're looking for a way to present your blog in a fresh and dynamic way, then this guide is for you. We'll explore how to create a **horizontal accordion** of featured images with the help of **MB Views** from Meta Box.

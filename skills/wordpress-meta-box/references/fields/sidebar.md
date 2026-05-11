@@ -1,6 +1,8 @@
 ---
 title: Sidebar - Meta Box Documentation
 source: https://docs.metabox.io/fields/sidebar/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The sidebar field allows you to select one or multiple sidebars. This field has several settings that can be displayed as a: simple select dropdown, checkbox list, or beautiful select dropdown with select2 library.
@@ -25,7 +27,7 @@ The sidebar field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -36,10 +38,10 @@ This field inherits the look and field (and settings) from other fields, dependi
 
 | Field type | Description | Settings inherited from |
 | --- | --- | --- |
-| `select` | Simple select dropdown. | [Select](https://docs.metabox.io/fields/select/) |
-| `select_advanced` | Beautiful select dropdown using the select2 library. This is the default value. | [Select advanced](https://docs.metabox.io/fields/select-advanced/) |
-| `checkbox_list` | Flatten list of checkboxes which allows to select multiple items. | [Checkbox list](https://docs.metabox.io/fields/checkbox-list/) |
-| `radio_list` | Flatten list of radio boxes which allows to select only 1 item. | [Radio](https://docs.metabox.io/fields/radio/) |
+| `select` | Simple select dropdown. | [Select](select.md) |
+| `select_advanced` | Beautiful select dropdown using the select2 library. This is the default value. | [Select advanced](select-advanced.md) |
+| `checkbox_list` | Flatten list of checkboxes which allows to select multiple items. | [Checkbox list](checkbox-list.md) |
+| `radio_list` | Flatten list of radio boxes which allows to select only 1 item. | [Radio](radio.md) |
 
 This is a sample field settings array when creating this field with code:
 

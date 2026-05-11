@@ -1,6 +1,8 @@
 ---
 title: Showing upcoming events - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Showing upcoming events** provides a clear view of upcoming deadlines and important dates, allowing you to manage tasks and priorities effectively. Today, we’re going to do it by combining **Meta Box** and **Elementor**.
@@ -242,4 +244,4 @@ Now, all of the upcoming events are displayed as we want.
 
 We've covered all the steps to display **the upcoming events** using **Meta Box** and **Elementor**. If you use other page builders, you can follow our channel to see them later.
 
-In case you want to show posts with other specific conditions, you can refer to [this tut](https://docs.metabox.io/tutorials/show-posts-specific-criteria-with-elementor/). Hope it can be helpful to you!
+In case you want to show posts with other specific conditions, you can refer to [this tut](show-posts-specific-criteria-with-elementor.md). Hope it can be helpful to you!

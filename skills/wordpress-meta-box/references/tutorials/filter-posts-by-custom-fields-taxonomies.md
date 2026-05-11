@@ -1,6 +1,8 @@
 ---
 title: Filtering posts by custom fields and taxonomies - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-custom-fields-taxonomies/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Besides using Tag and Category to filter your posts, you can also use custom fields and custom taxonomies to do it. This is a tutorial on doing it with the example of creating two filters for a bookselling site with two different features: publishers and authors.

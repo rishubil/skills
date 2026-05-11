@@ -1,6 +1,8 @@
 ---
 title: Filtering posts by relationships - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-relationtion-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Filtering and displaying posts based on certain criteria is one of the most common functionalities every website needs. And today, let me show you another method: **filtering by relationship**. We’ll do it with the help of **MB Views** from **Meta Box**.

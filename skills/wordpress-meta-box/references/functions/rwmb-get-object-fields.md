@@ -1,6 +1,8 @@
 ---
 title: rwmb_get_object_fields - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-get-object-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `rwmb_get_object_fields` is a helper function that gets list of custom fields for a specific object. The object can be a post or a term or a settings page.

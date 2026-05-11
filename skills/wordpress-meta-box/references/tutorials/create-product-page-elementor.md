@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Let’s find out how to create a great product page using Meta Box and Elementor! I take a car rental for the product as an example.

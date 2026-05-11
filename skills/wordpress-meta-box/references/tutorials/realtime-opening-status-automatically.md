@@ -1,6 +1,8 @@
 ---
 title: Displaying real-time opening status automatically - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/realtime-opening-status-automatically/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Having a real-time-opening-status is a brilliant feature on this kind of site. So, I’d like to share a way to **display the real-time opening status dynamically and automatically** right now on this post. It's easily with the help of MB Views from Meta Box. Let’s see how now!
@@ -26,7 +28,7 @@ So, we need these tools:
 - [MB Views](https://metabox.io/plugins/mb-views/): to create a template to display the opening time and the restaurant status;
 - [MB Builder](https://metabox.io/plugins/meta-box-builder/): to have a UI on the backend to create the custom fields visually.
 
-Furthermore, there are some other extensions you may want to use to have the appropriate structure of the custom fields such as group, conditional logic. We mentioned them in detail in other tutorials on [showing opening hours](https://docs.metabox.io/tutorials/display-opening-hours-restaurant-mb-views/).
+Furthermore, there are some other extensions you may want to use to have the appropriate structure of the custom fields such as group, conditional logic. We mentioned them in detail in other tutorials on [showing opening hours](display-opening-hours-restaurant-mb-views.md).
 
 You can install them individually, or use **Meta Box AIO** to have them all.
 
@@ -40,7 +42,7 @@ Go to **Meta Box** > **Custom Fields**, and create a new field group for the ope
 
 ![Go to Meta Box > Custom Fields, and create a new field group for the opening time](https://imgur.elightup.com/ts9uZn3.png)
 
-We have had another tutorial on [how to have them and display the timing information in detail](https://docs.metabox.io/tutorials/display-opening-hours-restaurant-with-bricks/) as I mentioned, so you should refer to them for more details of this step and concept.
+We have had another tutorial on [how to have them and display the timing information in detail](display-opening-hours-restaurant-with-bricks.md) as I mentioned, so you should refer to them for more details of this step and concept.
 
 I’m going to create typical and quite simple groups of fields for this practice following this structure.
 

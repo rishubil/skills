@@ -1,6 +1,8 @@
 ---
 title: Creating new field types - Meta Box Documentation
 source: https://docs.metabox.io/creating-new-field-types/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If the existing Meta Box field types don't quite fit your needs, you can create your own. In this guide, we'll walk through how to create a custom field type called `phone`, which only accepts phone numbers in the format `xxx-xxx-xxxx`.
@@ -72,7 +74,7 @@ class RWMB_Phone_Field extends RWMB_Field {
 
 ## 3\. Add the field to the builder (optional)
 
-If you want to use your custom field in the [builder](https://docs.metabox.io/extensions/meta-box-builder/), you need to register it via the `mbb_field_types` filter:
+If you want to use your custom field in the [builder](extensions/meta-box-builder.md), you need to register it via the `mbb_field_types` filter:
 
 ```php
 use MBB\Control;
@@ -188,7 +190,7 @@ When you edit a post, you'll see the new field:
 > [!-warning] -warning
 > Cloneable fields
 > 
-> If your field should support [cloning](https://docs.metabox.io/cloning-fields/), make sure your inputs have a CSS class starting with `rwmb`. The cloning script automatically detects these inputs and updates their `id` and `name` attributes correctly.
+> If your field should support [cloning](cloning-fields.md), make sure your inputs have a CSS class starting with `rwmb`. The cloning script automatically detects these inputs and updates their `id` and `name` attributes correctly.
 
 ## RWMB\_Field Class Methods
 

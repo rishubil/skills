@@ -1,6 +1,8 @@
 ---
 title: Creating a video gallery page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-video-gallery-page-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this practice, we will find another way to do it with the help of **Meta Box** and **Bricks**.

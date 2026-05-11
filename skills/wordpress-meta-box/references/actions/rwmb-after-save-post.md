@@ -1,6 +1,8 @@
 ---
 title: rwmb_after_save_post - Meta Box Documentation
 source: https://docs.metabox.io/actions/rwmb-after-save-post/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This action runs after all fields in a field group are saved.

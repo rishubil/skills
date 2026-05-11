@@ -1,6 +1,8 @@
 ---
 title: Creating a team members page - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-meta-box-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We will go through some steps to create a team member page using Meta Box and Elementor.

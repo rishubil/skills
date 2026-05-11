@@ -1,6 +1,8 @@
 ---
 title: Installation - Meta Box Documentation
 source: https://docs.metabox.io/installation/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Requirements
@@ -14,7 +16,7 @@ While Meta Box also works with PHP 7.0 and older versions of WordPress, these ve
 
 ## Installing Meta Box
 
-Meta Box offers [three different versions](https://docs.metabox.io/introduction/#meta-box-overview), each with slightly different installation steps.
+Meta Box offers [three different versions](introduction.md#meta-box-overview), each with slightly different installation steps.
 
 We recommend using [**Meta Box Lite**](https://metabox.io/lite/), a free version with essential features and a user-friendly interface.
 
@@ -39,14 +41,14 @@ Then, click **Activate** to start using Meta Box Lite. Now, you can see it in th
 
 Now you have everything ready!
 
-As most WordPress websites require custom post types, let's [learn how to create them](https://docs.metabox.io/custom-post-types/).
+As most WordPress websites require custom post types, let's [learn how to create them](custom-post-types.md).
 
 ## FAQ
 
 > [!-info] -info
 > What is included in Meta Box Lite and is it completely free?
 > 
-> Yes, **Meta Box Lite** is 100% free. It includes Meta Box, [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), and all free extensions, giving you powerful tools to create and manage dynamic content at no cost.
+> Yes, **Meta Box Lite** is 100% free. It includes Meta Box, [MB Builder](extensions/meta-box-builder.md), and all free extensions, giving you powerful tools to create and manage dynamic content at no cost.
 > 
 > [\# Link to this question](#what-is-included-in-meta-box-lite-and-is-it-completely-free)
 

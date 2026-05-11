@@ -1,6 +1,8 @@
 ---
 title: Text - Meta Box Documentation
 source: https://docs.metabox.io/fields/text/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The text field creates a simple text input. You can enter any value or select a value from a predefined list.
@@ -8,7 +10,7 @@ The text field creates a simple text input. You can enter any value or select a 
 > [!-info] -info
 > Input types
 > 
-> This docs is also used for **URL** and **email** field types as they share the same settings. If you want to have full text editing abilities, checkout the [WYSIWYG](https://docs.metabox.io/fields/wysiwyg/) field.
+> This docs is also used for **URL** and **email** field types as they share the same settings. If you want to have full text editing abilities, checkout the [WYSIWYG](wysiwyg.md) field.
 
 ## Screenshots
 
@@ -22,7 +24,7 @@ The text field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

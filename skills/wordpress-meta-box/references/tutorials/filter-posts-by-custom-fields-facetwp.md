@@ -1,6 +1,8 @@
 ---
 title: Filtering posts by custom fields with FacetWP - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-custom-fields-facetwp/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 On an archive page, we’ll display posts and filter them by the values stored in the custom fields created by Meta Box. With the help of FacetWP, we can do it easily without coding.

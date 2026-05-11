@@ -1,6 +1,8 @@
 ---
 title: Filtering posts by date picker field - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-date-picker-field/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this tutorial, we’ll show you how to **filter posts on the front end using a date picker custom field** with Meta Box. This is ideal for time-sensitive content such as events or movie schedules, allowing visitors to quickly find posts by a specific date or within a date range.

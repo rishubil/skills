@@ -1,6 +1,8 @@
 ---
 title: Sanitization - Meta Box Documentation
 source: https://docs.metabox.io/sanitization/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 To ensure the user input is safe to save to the database, Meta Box provides a mechanism to sanitize fields' values. The sanitization is automatically applied for all built-in field types. For some fields such as select or radio, Meta Box also validates the submitted value to ensure it's a valid value (e.g. available in the field options).
@@ -18,7 +20,7 @@ To see the list of default sanitize callbacks, please [see the plugin source cod
 > 
 > - **Textarea field**: Meta Box **removes all scripts and iframes** from the value. If you want to enter scripts (like Google Analytics) or embed videos, then you need to disable sanitization. See below for details.
 > - **Choice fields**: Meta Box validates the input to make sure it's in the field options.
-> - **[Groups](https://docs.metabox.io/extensions/meta-box-group/)** are not sanitized due to their complexity.
+> - **[Groups](extensions/meta-box-group.md)** are not sanitized due to their complexity.
 
 ## Bypass the sanitization
 
@@ -31,9 +33,9 @@ In this case, whatever users input will be saved.
 > [!-info] -info
 > info
 > 
-> The instruction above uses [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/). If you prefer to use code, please see below.
+> The instruction above uses [MB Builder](extensions/meta-box-builder.md), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](extensions/meta-box-aio.md). If you prefer to use code, please see below.
 
-If you use code, then set `'sanitize_callback' => 'none'` in the [field settings](https://docs.metabox.io/field-settings/):
+If you use code, then set `'sanitize_callback' => 'none'` in the [field settings](field-settings.md):
 
 ```php
 [

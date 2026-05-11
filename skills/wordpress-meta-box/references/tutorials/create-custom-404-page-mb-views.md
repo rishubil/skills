@@ -1,6 +1,8 @@
 ---
 title: Creating a custom 404 page using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-custom-404-page-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, I’ll show you how to **create a better 404 page** with flexible content that you can change anytime without affecting the design using the **MB Views** extension from Meta Box.

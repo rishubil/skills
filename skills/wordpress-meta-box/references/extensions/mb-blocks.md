@@ -1,6 +1,8 @@
 ---
 title: MB Blocks - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-blocks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 With the help of MB Blocks, WordPress developers are now able to create Gutenberg blocks using PHP only. There is no JavaScript configuration and build process. The plugin is also compatible with Full-Site Editing, so your blocks can be used to create templates in the FSE.
@@ -13,7 +15,7 @@ The preview of the block is displayed in the main content area while the block c
 
 ## Block registration with MB Builder
 
-The easiest way to create a block is using [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/). The plugin provides you with the UI to create blocks easily. This is the video on doing that:
+The easiest way to create a block is using [MB Builder](meta-box-builder.md). The plugin provides you with the UI to create blocks easily. This is the video on doing that:
 
 ## Block registration with block.json
 
@@ -157,7 +159,7 @@ By following WordPress standards, these parameters are available in the block te
 
 You can also use MB Views to render the block. This is useful when you want to create views with twig, manage JS, CSS from within the Dashboard.
 
-To do so, first, make sure you have the [MB Views](https://docs.metabox.io/extensions/mb-views/) plugin installed and activated. Then, instead of using `file:` prefix, use `view:` instead.
+To do so, first, make sure you have the [MB Views](mb-views.md) plugin installed and activated. Then, instead of using `file:` prefix, use `view:` instead.
 
 ```json
 {
@@ -581,14 +583,14 @@ Sets the storage for the block fields. Default, it's `attributes`, which means s
 
 If you want to save the block fields into custom fields, set it to `post_meta`. Saving block fields in the custom fields makes the block act as a wrapper of custom fields. In this case, to prevent bugs, you *should* set `multiple` to `false` to prevent inserting the same block multiple times (see `supports` parameter above).
 
-If you want to save the block fields into custom tables, you need to activate the [MB Custom Table](https://docs.metabox.io/extensions/mb-custom-table/) extension first. Then set `storage_type` and `table` as follows:
+If you want to save the block fields into custom tables, you need to activate the [MB Custom Table](mb-custom-table.md) extension first. Then set `storage_type` and `table` as follows:
 
 ```php
 'storage_type' => 'custom_table',
 'table'        => 'your table name',
 ```
 
-See [MB Custom Table documentation](https://docs.metabox.io/extensions/mb-custom-table/) for more details.
+See [MB Custom Table documentation](mb-custom-table.md) for more details.
 
 ### Block fields
 
@@ -617,7 +619,7 @@ add_filter( 'rwmb_meta_boxes', function( $meta_boxes ) {
 } );
 ```
 
-Each field is an array of its settings. See [this guide](https://docs.metabox.io/field-settings/) for details about field settings.
+Each field is an array of its settings. See [this guide](../field-settings.md) for details about field settings.
 
 ## Block rendering
 
@@ -629,7 +631,7 @@ There are various ways to render a block (via `render` property if you use `bloc
 
 ### Automatically prepare attributes
 
-By default, all attributes inside `$attributes` are automatically prepared for you. `$attributes[ $field_id ]` returns the value of the [`rwmb_get_value()`](https://docs.metabox.io/functions/rwmb-get-value/) function, which gives you all the data for the field.
+By default, all attributes inside `$attributes` are automatically prepared for you. `$attributes[ $field_id ]` returns the value of the [`rwmb_get_value()`](../functions/rwmb-get-value.md) function, which gives you all the data for the field.
 
 For example, if you have a `single_image` field, the value of that field is stored as a number (attachment ID). But when you access the field value via `$attributes['image']`, you'll get the whole attachment object like below, which is more convenient to use:
 
@@ -672,7 +674,7 @@ For example, for a `single_image` field, the value of `$attributes['data']['imag
 
 In addition to the automatic preparation of attributes, to make it easier to access the block fields' data, we created 2 helper functions: `mb_get_block_field()` and `mb_the_block_field()`.
 
-These functions work exactly like the [`rwmb_get_value()`](https://docs.metabox.io/functions/rwmb-get-value/) and [`rwmb_the_value()`](https://docs.metabox.io/functions/rwmb-the-value/), but applied for the current block only. The first function returns the data stored for a block field, while the 2nd one outputs that data.
+These functions work exactly like the [`rwmb_get_value()`](../functions/rwmb-get-value.md) and [`rwmb_the_value()`](../functions/rwmb-the-value.md), but applied for the current block only. The first function returns the data stored for a block field, while the 2nd one outputs that data.
 
 ```php
 // Get block image field.
@@ -901,7 +903,7 @@ By doing this, it tells WordPress that MB Blocks will control the output of inne
 
 ## Block templates
 
-Sometimes you want to load default blocks when creating a new post. Block templates allow specifying a default initial state for an editor session. Use the argument `template` when [registering the post type](https://docs.metabox.io/custom-post-types/):
+Sometimes you want to load default blocks when creating a new post. Block templates allow specifying a default initial state for an editor session. Use the argument `template` when [registering the post type](../custom-post-types.md):
 
 ```php
 'template'              => [
@@ -966,7 +968,7 @@ If you want to save block data in post meta, in the meta box's group, set the `s
 
 In this case, to prevent bugs, you *should* set `multiple` to `false` to prevent inserting the same block multiple times (the codes above already have that).
 
-If you want to save the block fields into custom tables, you need to activate the [MB Custom Table](https://docs.metabox.io/extensions/mb-custom-table/) extension first. Then set `storage_type` and `table` as follows:
+If you want to save the block fields into custom tables, you need to activate the [MB Custom Table](mb-custom-table.md) extension first. Then set `storage_type` and `table` as follows:
 
 ```php
 [
@@ -981,7 +983,7 @@ If you want to save the block fields into custom tables, you need to activate th
 > [!-warning] -warning
 > Caveats
 > 
-> When saving block data in post meta or custom tables, there is no attributes stored in the block itself. Automatic preparation of attributes is not available, helpers functions like `mb_get_block_field()` and `mb_the_block_field()` will not work. You will have to use the [rwmb\_meta](https://docs.metabox.io/functions/rwmb-meta/) function to get the block data.
+> When saving block data in post meta or custom tables, there is no attributes stored in the block itself. Automatic preparation of attributes is not available, helpers functions like `mb_get_block_field()` and `mb_the_block_field()` will not work. You will have to use the [rwmb\_meta](../functions/rwmb-meta.md) function to get the block data.
 
 ## Hooks
 

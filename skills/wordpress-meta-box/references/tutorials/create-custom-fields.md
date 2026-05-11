@@ -1,6 +1,8 @@
 ---
 title: Creating and configuring custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-custom-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Video version
@@ -170,7 +172,7 @@ In the **Advanced** tab of each field, these settings are the same for all the f
 - **Custom CSS class**: to add your CSS if you want to have custom style;
 - **Save field value**: to save the field value into the database. Normally, this option will be chosen in default;
 - **Custom sanitize callback**: allow to enter PHP function name for custom sanitization;
-- **Custom HTML5 attributes**: if you want some attributes in type of HTML5, refer to [this documentation](https://docs.metabox.io/custom-attributes/) for more details to know how to add it here;
+- **Custom HTML5 attributes**: if you want some attributes in type of HTML5, refer to [this documentation](../custom-attributes.md) for more details to know how to add it here;
 - **Validation**: helps to check the value of the field. Some rules are available in this option. You can also add new rules for your own needs.
 - **Custom Settings**: to add your own custom settings. These settings are saved in the field settings as well.
 
@@ -186,7 +188,7 @@ The conditional logic will allow you to create rules to control the display of t
 
 Each option has its clear explanation, you also see the tooltips of each when hovering over the icon.
 
-For more details about field settings including the general and advanced ones, please read [this documentation](https://docs.metabox.io/field-settings/).
+For more details about field settings including the general and advanced ones, please read [this documentation](../field-settings.md).
 
 ## Configuring the field group
 
@@ -217,4 +219,4 @@ If you want to make the field group always collapse in the post editor, choose t
 
 **Save data in a custom table** is the settings provided by **MB Custom Table** to optimize the database. For more information, look at [this](https://metabox.io/plugins/mb-custom-table/).
 
-There are also some other special settings if you use more Meta Box extensions. To know more details about each extension, refer to this [documentation](https://docs.metabox.io/extensions/).
+There are also some other special settings if you use more Meta Box extensions. To know more details about each extension, refer to this [documentation](../extensions/index.md).

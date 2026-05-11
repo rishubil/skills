@@ -1,6 +1,8 @@
 ---
 title: Showing the featured restaurants - Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Let’s see how to showcase some featured posts on a page. Take restaurants as an example like this:

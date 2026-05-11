@@ -1,6 +1,8 @@
 ---
 title: Copying custom fields from sites to sites - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/copy-custom-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Instead of rebuilding similar custom fields in different sites, you can use the [MB Builder](https://metabox.io/plugins/meta-box-builder/) extension to easily copy them from one site to others with just a few clicks.
@@ -29,10 +31,10 @@ Actually, cloning is copying the code of the meta boxes (field groups) / custom 
 There are some benefits of cloning which you definitely are interested in:
 
 - It helps your embedded website operate with the adequacy of necessary custom fields and its configuration. If you follow method 1, your embedded site will operate with much faster speed because of not installing any plugin for these custom fields beyond our [ultra lightweight Meta Box Framework](https://wordpress.org/plugins/meta-box/).
-- You only need to create a series of custom fields on local with an adequate configuration as you want. Then embed code of the needed fields in the targeted sites. That ensures that all of the fields which you [import into the sites](https://docs.metabox.io/tutorials/export-import-custom-fields-meta-box-builder/) have the same settings.
+- You only need to create a series of custom fields on local with an adequate configuration as you want. Then embed code of the needed fields in the targeted sites. That ensures that all of the fields which you [import into the sites](export-import-custom-fields-meta-box-builder.md) have the same settings.
 - It may not waste time anymore in the field's configuration with the complex attributions or conditions. You only do once, and clone to the sites you need. That’ll save a lot of time.
 
-**Please note that**: Cloning meta boxes among sites is different to cloning a custom field inside a meta box. Learn more about [cloning a custom field](https://docs.metabox.io/cloning-fields/).
+**Please note that**: Cloning meta boxes among sites is different to cloning a custom field inside a meta box. Learn more about [cloning a custom field](../cloning-fields.md).
 
 ## Preparation
 
@@ -48,7 +50,7 @@ Note: If you already have custom fields on your website, you can skip this step.
 
 Create the meta boxes and custom fields inside through the UI of MB Builder. Remember to completely configure all the fields.
 
-In there, you can also concurrently use the other extensions of Meta Box to configure your custom fields as you want, ex: [MB Group](https://docs.metabox.io/extensions/meta-box-group/), [MB Conditional Logic](https://metabox.io/plugins/meta-box-conditional-logic/), [MB Geolocation](https://docs.metabox.io/extensions/meta-box-geolocation/), etc. Depending on your demand, you can create as many as fields you want and set configuration for them.
+In there, you can also concurrently use the other extensions of Meta Box to configure your custom fields as you want, ex: [MB Group](../extensions/meta-box-group.md), [MB Conditional Logic](https://metabox.io/plugins/meta-box-conditional-logic/), [MB Geolocation](../extensions/meta-box-geolocation.md), etc. Depending on your demand, you can create as many as fields you want and set configuration for them.
 
 I just created a simple field group for example:
 

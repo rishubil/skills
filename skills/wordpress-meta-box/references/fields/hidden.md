@@ -1,6 +1,8 @@
 ---
 title: Hidden - Meta Box Documentation
 source: https://docs.metabox.io/fields/hidden/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The hidden field creates a simple hidden input. It's usually used to store custom data that cannot be changed.
@@ -11,7 +13,7 @@ The hidden field creates a simple hidden input. It's usually used to store custo
 
 ## Settings
 
-This field doesn't have any specific settings. It only uses [common settings](https://docs.metabox.io/field-settings/).
+This field doesn't have any specific settings. It only uses [common settings](../field-settings.md).
 
 To store the hidden value, put it in the `std` setting.
 

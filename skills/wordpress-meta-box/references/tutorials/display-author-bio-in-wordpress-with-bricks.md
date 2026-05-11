@@ -1,6 +1,8 @@
 ---
 title: Displaying author bio in wordpress - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-author-bio-in-wordpress-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Having a section for their bio is to let people know more about the author who made the fantastic content. This way also helps to improve the credit of the content as well as the author on the post. Let’s dive in to explore how to display them with **Meta Box** and **Bricks**.

@@ -1,6 +1,8 @@
 ---
 title: Creating taxonomy thumbnails & featured images - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-taxonomy-thumbnails-featured-images-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Having taxonomy thumbnails will be a good way to make that page be more attractive. In today’s practice, we are going to find out how to create thumbnails for a taxonomy and featured images for a portfolio page with MB Views from Meta Box.

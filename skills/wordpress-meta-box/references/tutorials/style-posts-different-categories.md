@@ -1,6 +1,8 @@
 ---
 title: Styling posts in different categories - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/style-posts-different-categories/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you want posts in different categories to have different styles, just follow this tutorial. I will set the background color for the posts as the example in this practice. The posts in a category will have a blue background color, then posts in another category will have another background color.

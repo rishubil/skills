@@ -1,6 +1,8 @@
 ---
 title: Custom attributes - Meta Box Documentation
 source: https://docs.metabox.io/custom-attributes/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 With Meta Box, you can add custom attributes for inputs like text, URL, email field. This feature is very helpful if developers want to add HTML5 attributes or something like `data-*` attribute for their custom JavaScript code.
@@ -16,14 +18,14 @@ Then add your attribute name and value.
 > [!-info] -info
 > info
 > 
-> The instruction above uses [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/). If you prefer to use code, please see below.
+> The instruction above uses [MB Builder](extensions/meta-box-builder.md), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](extensions/meta-box-aio.md). If you prefer to use code, please see below.
 
 Currently, this feature is supported in text, URL, email, checkbox, radio, date, time, datetime fields.
 
 > [!-info] -info
 > Complex values
 > 
-> By default, custom attributes accept strings as keys and values. If you want to enter complex values, like array, please use the [dot notation](https://docs.metabox.io/extensions/meta-box-builder/#dot-notation) or [JSON notation](https://docs.metabox.io/extensions/meta-box-builder/#json-notation).
+> By default, custom attributes accept strings as keys and values. If you want to enter complex values, like array, please use the [dot notation](extensions/meta-box-builder.md#dot-notation) or [JSON notation](extensions/meta-box-builder.md#json-notation).
 
 ## Adding custom attributes with code
 

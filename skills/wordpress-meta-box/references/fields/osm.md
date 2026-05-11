@@ -1,11 +1,13 @@
 ---
 title: Open Street Map - Meta Box Documentation
 source: https://docs.metabox.io/fields/osm/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The **Open Street Map (OSM) field** lets you select and save a location using [OpenStreetMap](https://openstreetmap.org/).
 
-It's very similar to the [Google Maps field](https://docs.metabox.io/fields/map/), but it provides a free alternative since [Google now requires billing details](https://metabox.io/meta-box-weekly-updates-july-2018/) (such as a credit card) to use their maps.
+It's very similar to the [Google Maps field](map.md), but it provides a free alternative since [Google now requires billing details](https://metabox.io/meta-box-weekly-updates-july-2018/) (such as a credit card) to use their maps.
 
 This field includes all the features of the Google Maps field. It comes with an address text field that supports **autocomplete**, powered by the [Nominatim](https://wiki.openstreetmap.org/wiki/Nominatim) geocoding service.
 
@@ -28,7 +30,7 @@ The osm field settings
 
 ## Settings
 
-In addition to the [common field settings](https://docs.metabox.io/field-settings/), this field has the following options:
+In addition to the [common field settings](../field-settings.md), this field has the following options:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -41,7 +43,7 @@ In addition to the [common field settings](https://docs.metabox.io/field-setting
 > [!-warning] -warning
 > Address field required
 > 
-> You must create a [text field](https://docs.metabox.io/fields/text/) for the address input, and pass its ID to the map's **Address field** setting.
+> You must create a [text field](text.md) for the address input, and pass its ID to the map's **Address field** setting.
 
 The `address_field` can also be a list of multiple field IDs, separated by commas (e.g. `street,city,state`). In this case:
 
@@ -81,7 +83,7 @@ Example: `53.346881,-6.258860,14`
 
 ### Displaying the map
 
-To show the map on the frontend, use [`rwmb_the_value()`](https://docs.metabox.io/functions/rwmb-the-value/) with extra parameters:
+To show the map on the frontend, use [`rwmb_the_value()`](../functions/rwmb-the-value.md) with extra parameters:
 
 ```php
 <h2>Maps</h2>
@@ -136,7 +138,7 @@ echo $location['longitude'];
 echo $location['zoom'];
 ```
 
-See more about [`rwmb_get_value()`](https://docs.metabox.io/functions/rwmb-get-value/).
+See more about [`rwmb_get_value()`](../functions/rwmb-get-value.md).
 
 ### Displaying a map inside a group
 

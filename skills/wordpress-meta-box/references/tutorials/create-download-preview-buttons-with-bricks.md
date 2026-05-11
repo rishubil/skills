@@ -1,6 +1,8 @@
 ---
 title: Creating download and preview buttons - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-download-preview-buttons-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’re going to use Meta Box and Bricks to create 2 buttons: One is to download a PDF file and the other button is to view the information from the file.

@@ -1,6 +1,8 @@
 ---
 title: Creating download and preview buttons - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-download-preview-buttons-with-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 It’s convenient to allow visitors to have two options: read the preview or download the PDF file. Therefore, **creating download and preview buttons** on an e-book page can be a useful topic for you. Today, let’s do it using **Meta Box** and **Kadence**.

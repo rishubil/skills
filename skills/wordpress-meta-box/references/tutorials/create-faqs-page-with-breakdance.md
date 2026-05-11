@@ -1,6 +1,8 @@
 ---
 title: Creating a FAQs page - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-with-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Having a FAQs page on your site will help the visitors to find the information they want quickly. There’re many ways to create a page for FAQs and in this practice, we’ll share with you one of the most helpful ways by using **Meta Box** and then use **Breakdance** to build it.

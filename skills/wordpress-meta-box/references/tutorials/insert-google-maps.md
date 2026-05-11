@@ -1,6 +1,8 @@
 ---
 title: Inserting Google Maps to a website using custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/insert-google-maps/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 You **should insert a map to your website** to provide your physical store address to help customers reach it more quickly and easily.

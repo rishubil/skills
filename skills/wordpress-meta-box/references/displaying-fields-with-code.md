@@ -1,14 +1,16 @@
 ---
 title: Displaying fields with code - Meta Box Documentation
 source: https://docs.metabox.io/displaying-fields-with-code/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you're a developer and familiar with changing template file with PHP code, you can use Meta Box helper functions to display fields:
 
-- [`rwmb_get_value()`](https://docs.metabox.io/functions/rwmb-get-value/): to get a field value as a variable
-- [`rwmb_the_value()`](https://docs.metabox.io/functions/rwmb-the-value/): to display a field
+- [`rwmb_get_value()`](functions/rwmb-get-value.md): to get a field value as a variable
+- [`rwmb_the_value()`](functions/rwmb-the-value.md): to display a field
 
-In addition, we also provide [`rwmb_meta()`](https://docs.metabox.io/functions/rwmb-meta/) function, which is a wrapper of the 2 functions above which:
+In addition, we also provide [`rwmb_meta()`](functions/rwmb-meta.md) function, which is a wrapper of the 2 functions above which:
 
 - Returns the HTML output for rich-content fields: `map`, `osm`, and `oembed`, same as `rwmb_the_value()`,
 - Returns the same value as `rwmb_get_value()` for other field types.
@@ -47,7 +49,7 @@ Now open your template file for the single event content. Usually, it's `templat
 > [!-warning] -warning
 > Block themes
 > 
-> For block themes, everything is blocks and there's no PHP template files. In that case, please use the [MB Views](https://docs.metabox.io/extensions/mb-views/) extension.
+> For block themes, everything is blocks and there's no PHP template files. In that case, please use the [MB Views](extensions/mb-views.md) extension.
 
 All functions accept the following parameters:
 
@@ -103,6 +105,6 @@ All functions accept the following parameters:
 > [!-info] -info
 > Can I use a page builder to show Meta Box fields?
 > 
-> Absolutely. We have official support for Beaver Builder and Elementor. Some page builders already have built-in support for Meta Box like Oxygen Builder, Bricks, and Brizy. See the [list of compatible plugins](https://docs.metabox.io/compatibility/) and refer to their docs for how to use them with Meta Box.
+> Absolutely. We have official support for Beaver Builder and Elementor. Some page builders already have built-in support for Meta Box like Oxygen Builder, Bricks, and Brizy. See the [list of compatible plugins](compatibility.md) and refer to their docs for how to use them with Meta Box.
 > 
 > [\# Link to this question](#can-i-use-a-page-builder-to-show-meta-box-fields)

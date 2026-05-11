@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-meta-box-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this practice, we’re going to find out the way to create a typical product page with Breakdance.

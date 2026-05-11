@@ -1,11 +1,13 @@
 ---
 title: rwmb_get_value - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-get-value/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `rwmb_get_value` is a helper function that helps you get a field value.
 
-It's actually a wrapper of `get_post_meta()` function with some additions to match [the way Meta Box saves field values in the database](https://docs.metabox.io/database/).
+It's actually a wrapper of `get_post_meta()` function with some additions to match [the way Meta Box saves field values in the database](../database.md).
 
 It automatically handles cloneable fields as well as fields with multiple values (like post, taxonomy, or checkbox list).
 
@@ -33,7 +35,7 @@ rwmb_get_value( $field_id, $args, $object_id );
 > [!-info] -info
 > Returned value format
 > 
-> Depending on the field types, the returned value can be different. Please refer to each field type in the [Fields](https://docs.metabox.io/fields/) section for more details.
+> Depending on the field types, the returned value can be different. Please refer to each field type in the [Fields](../fields/index.md) section for more details.
 
 ## Examples
 
@@ -182,6 +184,6 @@ if ( $layout === 'content-sidebar' ) {
 > ],
 > ```
 > 
-> Then when using with this function, it returns the value "us", "uk", or "au". To get the label like "United States", please use the [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/) function.
+> Then when using with this function, it returns the value "us", "uk", or "au". To get the label like "United States", please use the [rwmb\_the\_value()](rwmb-the-value.md) function.
 > 
 > [\# Link to this question](#why-cant-i-get-the-label-for-a-select-field)

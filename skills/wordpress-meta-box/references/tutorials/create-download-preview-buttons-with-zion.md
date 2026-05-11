@@ -1,6 +1,8 @@
 ---
 title: Creating download and preview buttons - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-download-preview-buttons-with-zion/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Are you running a WordPress website where you share valuable content like educational materials, documentation, product information, portfolios, or other downloadable files? If so, you’ve probably wondered how to make it easier for users to access your content in a way that suits them best. Giving users the option to preview or download files can make their experience much better. In this practice, we’ll create the Download and Preview buttons for e-books using **Meta Box** and **Zion**. Check out the e-book page I made as an example, which includes two buttons:

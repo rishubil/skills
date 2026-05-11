@@ -1,6 +1,8 @@
 ---
 title: Divider - Meta Box Documentation
 source: https://docs.metabox.io/fields/divider/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The divider field creates a simple horizontal line. It doesn't have any value and is usually used to separate fields for a better reading experience.

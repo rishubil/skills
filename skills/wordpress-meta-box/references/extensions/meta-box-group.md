@@ -1,6 +1,8 @@
 ---
 title: MB Group - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-group/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **MB Group** helps you to organize custom fields into repeatable and collapsible groups. You can use this extension to group related fields into one group to create hierarchy. You can clone the whole group, or sub-group. There's no limitation on the nesting level.
@@ -9,7 +11,7 @@ source: https://docs.metabox.io/extensions/meta-box-group/
 
 ## Tutorial
 
-If this is your first time using [MB Group](https://docs.metabox.io/extensions/meta-box-group/), start with this beginner-friendly guide:
+If this is your first time using [MB Group](meta-box-group.md), start with this beginner-friendly guide:
 
 👉 [How to Create a Group of Custom Fields with MB Group](https://metabox.io/create-group-of-custom-fields-with-meta-box-group/)
 
@@ -294,7 +296,7 @@ foreach ( $contacts as $contact ) {
 ### Outputting groups with page builders
 
 - ✅ Elementor and Oxygen: can output group sub-fields directly.
-- ❌ Other builders (e.g., Beaver Builder, Divi): use an [MB View](https://docs.metabox.io/extensions/mb-views/) or a shortcode
+- ❌ Other builders (e.g., Beaver Builder, Divi): use an [MB View](mb-views.md) or a shortcode
 
 Example shortcode (group with `title`, `images`, and `desc`):
 
@@ -370,7 +372,7 @@ These are some helper functions that you can use to retrieve more info:
 | `post` | [`get_post()`](https://developer.wordpress.org/reference/functions/get_post/) |
 | `wysiwyg` | [`wpautop()`](https://developer.wordpress.org/reference/functions/wpautop/) |
 
-Read more on [how field values are saved into the database](https://docs.metabox.io/database/).
+Read more on [how field values are saved into the database](../database.md).
 
 ## Setting default values
 
@@ -488,7 +490,7 @@ When cloning a group:
 - If the group has `'clone_default' => true`, all sub-fields will use their default values.
 - If a sub-field is cloneable, its own `clone_default` takes priority.
 
-Learn more: [`clone_default` parameter](https://docs.metabox.io/cloning-fields/)
+Learn more: [`clone_default` parameter](../cloning-fields.md)
 
 ## Changing group titles with JavaScript
 

@@ -1,6 +1,8 @@
 ---
 title: Displaying product variations - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-product-variations-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Let’s create a single product page that contains different information of product variations stored in custom fields. Whenever you click on a color button, all the corresponding information of that variation will be displayed, even in the image gallery.

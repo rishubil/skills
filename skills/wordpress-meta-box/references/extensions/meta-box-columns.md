@@ -1,9 +1,11 @@
 ---
 title: MB Columns - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-columns/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-MB Columns helps you put custom fields into columns in a 12-column grid. You can create nested columns for sub-fields in [groups](https://docs.metabox.io/extensions/meta-box-group/) or put multiple fields into one column.
+MB Columns helps you put custom fields into columns in a 12-column grid. You can create nested columns for sub-fields in [groups](meta-box-group.md) or put multiple fields into one column.
 
 ![put custom fields in columns](https://i2.wp.com/metabox.io/wp-content/uploads/2014/07/meta-box-columns-screenshot.png)
 

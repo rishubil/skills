@@ -1,6 +1,8 @@
 ---
 title: Migrating data when switching from cloneable fields to groups - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/migrate-data-switching-from-cloneable-fields-to-groups/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Learn how to safely migrate existing data when switching from cloneable fields to a Group field in Meta Box, so you can upgrade to a more structured setup without losing any information.
@@ -168,4 +170,4 @@ Refresh the post editor. You’ll see that the speaker names are back, this time
 
 From here, you can safely add avatars or any additional subfields without losing your existing data.
 
-If you also need to [migrate data when changing field IDs](https://docs.metabox.io/tutorials/change-id-meta-box-field/), we have a dedicated tutorial for that. You can check it out to learn how to update field IDs without losing existing values.
+If you also need to [migrate data when changing field IDs](change-id-meta-box-field.md), we have a dedicated tutorial for that. You can check it out to learn how to update field IDs without losing existing values.

@@ -1,6 +1,8 @@
 ---
 title: Displaying images from cloneable fields - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-from-cloneable-fields-meta-box-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We will display images from cloneable fields using Meta Box and Elementor.
@@ -139,6 +141,6 @@ Here is the result we’ve got:
 
 You may be interested in:
 
-- [Creating an FAQs page](https://docs.metabox.io/tutorials/create-faqs-page-meta-box-elementor/)
-- [Creating buttons with dynamic link](https://docs.metabox.io/tutorials/create-buttons-dynamic-links/)
-- [Displaying the latest products](https://docs.metabox.io/tutorials/display-latest-product-meta-box-elementor/)
+- [Creating an FAQs page](create-faqs-page-meta-box-elementor.md)
+- [Creating buttons with dynamic link](create-buttons-dynamic-links.md)
+- [Displaying the latest products](display-latest-product-meta-box-elementor.md)

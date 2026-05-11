@@ -1,6 +1,8 @@
 ---
 title: Meta Box - WPML Integration - Meta Box Documentation
 source: https://docs.metabox.io/integrations/wpml/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 WPML (**WPML Multilingual CMS**) seamlessly integrates with Meta Box, allowing you to easily translate data (both values and labels) of various objects, including posts, taxonomies, custom fields, settings pages, relationships, and users.
@@ -80,7 +82,7 @@ After that, when you switch languages on the admin bar, the corresponding conten
 
 ## Custom post types
 
-After [creating your custom post type](https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/), you need to make it translatable, then input the translation for posts of the post type.
+After [creating your custom post type](../tutorials/create-custom-post-types-taxonomies.md), you need to make it translatable, then input the translation for posts of the post type.
 
 The custom post types created with Meta Box will be included in the **Post Types Translation** section in the settings of WPML. In this section, locate the custom post type you want to translate. It’s along with three options:
 
@@ -207,7 +209,7 @@ Simply switch the language in the admin bar, and input the corresponding transla
 
 ![Switch language and enter the translation directly](https://imgur.elightup.com/r9FRIS9.gif)
 
-For displaying translation on the frontend, you can refer to [this docs](https://docs.metabox.io/extensions/mb-settings-page/#getting-field-value). The [`rwmb_meta()`](https://docs.metabox.io/functions/rwmb-meta/) fucntion can detected the language to get and display the corresponding field value automatically. In this case, I use this code:
+For displaying translation on the frontend, you can refer to [this docs](../extensions/mb-settings-page.md#getting-field-value). The [`rwmb_meta()`](../functions/rwmb-meta.md) fucntion can detected the language to get and display the corresponding field value automatically. In this case, I use this code:
 
 ```php
 $value = rwmb_meta( 'name', ['object_type' => 'setting'], 'brand' );

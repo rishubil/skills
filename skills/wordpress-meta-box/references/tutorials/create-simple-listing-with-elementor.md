@@ -1,6 +1,8 @@
 ---
 title: Creating a simple listing - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-with-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll create a **simple listing with Meta Box and Elementor**. We’ll use custom fields and taxonomies from Meta Box to **showcase product information on an archive page as well as filter it easily**.

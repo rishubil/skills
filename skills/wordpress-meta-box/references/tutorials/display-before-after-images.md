@@ -1,6 +1,8 @@
 ---
 title: Displaying before and after images - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-before-after-images/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Displaying before-and-after images** in an interactive way is a powerful tool for showing transformations. It can let your audience visually compare changes or differences. Just drag between the images then they can see a more dynamic comparison.
@@ -399,4 +401,4 @@ Move on to a post, let's see the final result! When we drag the middle bar, the 
 
 ![When we drag the middle bar, the before image will be shown less or more based on the bar position.](https://imgur.elightup.com/KFWd6zk.gif)
 
-If you're interested in exploring more ways to display images dynamically, you might find this tutorial helpful: [Displaying images from cloneable fields](https://docs.metabox.io/tutorials/display-images-cloneable-fields-mb-views/).
+If you're interested in exploring more ways to display images dynamically, you might find this tutorial helpful: [Displaying images from cloneable fields](display-images-cloneable-fields-mb-views.md).

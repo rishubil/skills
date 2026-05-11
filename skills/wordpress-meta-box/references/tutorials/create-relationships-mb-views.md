@@ -1,6 +1,8 @@
 ---
 title: Creating relationships - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-relationships-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In the previous part of [this series](https://metabox.io/series/create-relationships/), we learned how to **create relationships** with several page builders. However, if you don’t want to use them, you still can create and display the relationship between two objects on your website with the help of **MB Relationships and MB Views from Meta Box**. In this practice, we’ll create a bi-directional relationship between Courses and Instructors post type and show them on the page.

@@ -1,6 +1,8 @@
 ---
 title: Adding custom fields to products in WooCommerce - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-custom-fields-to-products-in-woocommerce-meta-box-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 WooCommerce is a popular platform for eCommerce in WordPress which provides some information saved in the product data section. But, you still may need some things further that it does not provide, such as custom fields for extra information about products. Let’s dive in to explore how to display them with **Meta Box** and **Bricks**.

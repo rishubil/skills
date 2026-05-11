@@ -1,6 +1,8 @@
 ---
 title: Select - Meta Box Documentation
 source: https://docs.metabox.io/fields/select/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The select field creates a simple select dropdown. You can select one or multiple values from the predefined list.
@@ -17,7 +19,7 @@ The select field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

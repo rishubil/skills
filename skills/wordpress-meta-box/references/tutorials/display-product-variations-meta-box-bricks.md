@@ -1,6 +1,8 @@
 ---
 title: Displaying product variations - Using Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-product-variations-meta-box-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this tutorial, let’s find out how to have product variations using custom fields created by Meta Box and display them on a single page by Bricks.

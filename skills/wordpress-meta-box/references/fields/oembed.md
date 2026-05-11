@@ -1,6 +1,8 @@
 ---
 title: oEmbed - Meta Box Documentation
 source: https://docs.metabox.io/fields/oembed/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The oEmbed field creates a simple text input for entering a media URL. This field offers a live preview of the media content such as videos, audios, images, tweets, polls, podcasts, etc. from [many 3rd-party services](https://codex.wordpress.org/Embeds).
@@ -21,7 +23,7 @@ This is an easy way to add videos from [Youtube](https://www.youtube.com/), [Vim
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

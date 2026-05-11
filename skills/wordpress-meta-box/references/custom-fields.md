@@ -1,6 +1,8 @@
 ---
 title: Custom fields - Meta Box Documentation
 source: https://docs.metabox.io/custom-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 After creating custom post types and custom taxonomies, you'll need to add more details to your posts. For example, you'll need "date" and "location" for the "event" post type. Such details are called custom fields and that's the main thing that Meta Box does for you.
@@ -16,7 +18,7 @@ Custom fields are a very important feature of WordPress and make WordPress a pow
 
 ## How to create custom fields?
 
-To create custom fields, you should use the [**MB Builder**](https://docs.metabox.io/extensions/meta-box-builder/) extension to have an intuitive interface. This extension is already bundled in [**Meta Box Lite**](https://metabox.io/lite/) so you can use it right away.
+To create custom fields, you should use the [**MB Builder**](extensions/meta-box-builder.md) extension to have an intuitive interface. This extension is already bundled in [**Meta Box Lite**](https://metabox.io/lite/) so you can use it right away.
 
 Custom fields are organized in groups. Each group is displayed as a collapsible panel below the post editor.
 
@@ -24,11 +26,11 @@ Go to **Meta Box » Custom Fields** and click **Add New**. You'll see a screen t
 
 ![Adding custom fields to the group](https://docs.metabox.io/assets/images/create-field-group-d1527c50ccc54a2df7068f33ac66de3d.png)
 
-Enter the field group title at the top and then click the **\+ Add Field** button and select a field type to add to the group. Meta Box provides [40+ field types](https://docs.metabox.io/fields/) for all of your data types.
+Enter the field group title at the top and then click the **\+ Add Field** button and select a field type to add to the group. Meta Box provides [40+ field types](fields/index.md) for all of your data types.
 
 After that, a new field will appear in the field list. Clicking on the field bar will open the field settings panel in the left sidebar, where you can edit settings for the field, such as title or default value.
 
-Each setting is clearly labeled, with tooltips available for extra guidance. To know more about field settings, please see [this docs](https://docs.metabox.io/field-settings/).
+Each setting is clearly labeled, with tooltips available for extra guidance. To know more about field settings, please see [this docs](field-settings.md).
 
 When finishing adding fields, click the **Settings** icon and select the post type where the fields are displayed for.
 
@@ -53,7 +55,7 @@ In the case that you don't want to use [Meta Box Lite](https://metabox.io/lite/)
 > [!-success] -success
 > For developers
 > 
-> You can also [create custom fields with code](https://docs.metabox.io/creating-fields-with-code/), which is suitable if you want to keep everything in your themes or plugins.
+> You can also [create custom fields with code](creating-fields-with-code.md), which is suitable if you want to keep everything in your themes or plugins.
 
 ## Displaying fields
 
@@ -63,7 +65,7 @@ We'll display the event details for the event post type that we created in the p
 
 ![Event page](https://imgur.elightup.com/rSPicJm.png)
 
-To do that, we'll use the [MB Views](https://docs.metabox.io/extensions/mb-views/) extension, which offers a powerful and flexible way to select and display fields.
+To do that, we'll use the [MB Views](extensions/mb-views.md) extension, which offers a powerful and flexible way to select and display fields.
 
 > [!-info] -info
 > Don't have a license?
@@ -122,20 +124,20 @@ Now go to the event page on the front end and you'll see the custom fields that 
 > [!-info] -info
 > info
 > 
-> If you use a page builder to display the data, you can refer to the [tutorials](https://docs.metabox.io/tutorials/builders/) for usage in real cases.
+> If you use a page builder to display the data, you can refer to the [tutorials](tutorials/builders.md) for usage in real cases.
 
 > [!-success] -success
 > For developers
 > 
-> You can also [display custom fields with code](https://docs.metabox.io/displaying-fields-with-code/), which is suitable if you want to keep everything in your themes or plugins.
+> You can also [display custom fields with code](displaying-fields-with-code.md), which is suitable if you want to keep everything in your themes or plugins.
 
 ## Next steps
 
 Now you know all the basics for working with custom fields in Meta Box. Depending on your needs, I'd suggest you take a look at:
 
 - [Advanced topics](https://docs.metabox.io/category/advanced/), or
-- Explore the [field type gallery](https://docs.metabox.io/fields/) to know which fields are suitable for your needs, or
-- Explore more features provided by [extensions](https://docs.metabox.io/extensions/)
+- Explore the [field type gallery](fields/index.md) to know which fields are suitable for your needs, or
+- Explore more features provided by [extensions](extensions/index.md)
 
 If you have any questions, feel free to ask in the [support forum](https://support.metabox.io/) or discuss in the [Facebook community group](https://www.facebook.com/groups/metaboxusers).
 

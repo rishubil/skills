@@ -1,6 +1,8 @@
 ---
 title: Showing posts with specific criteria - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-posts-specific-criteria-with-zion/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll show you how to display posts with specific criteria, such as products that are on sale, using **Meta Box** and **Zion**.

@@ -1,6 +1,8 @@
 ---
 title: Creating a team members page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-meta-box-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’ll introduce a way to create a team member page with **Bricks** using custom post type and custom fields.

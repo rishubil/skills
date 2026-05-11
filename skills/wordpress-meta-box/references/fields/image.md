@@ -1,11 +1,13 @@
 ---
 title: Image - Meta Box Documentation
 source: https://docs.metabox.io/fields/image/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The image field creates a simple image upload with default UI like `<input type="file">`. Unlike other media fields, this field doesn't use Media Library UI to upload images.
 
-This field is very similar to [file](https://docs.metabox.io/fields/file/). The only difference is that the file field allows uploading all file types while this field allows only images.
+This field is very similar to [file](file.md). The only difference is that the file field allows uploading all file types while this field allows only images.
 
 ## Screenshots
 
@@ -19,7 +21,7 @@ The image field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

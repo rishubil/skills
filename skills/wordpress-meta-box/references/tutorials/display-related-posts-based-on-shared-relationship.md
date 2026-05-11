@@ -1,6 +1,8 @@
 ---
 title: Displaying related posts based on a shared relationship with Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-related-posts-based-on-shared-relationship/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’re going to **create and display related posts in a single post based on a shared relationship** with **Meta Box**. This can be applied to various scenarios, such as showing related events connected to the same artists, related products within the same category, or additional articles by the same author.
@@ -261,4 +263,4 @@ Go to the frontend, you can see that there are some posts displayed in the relat
 
 ![There are some posts displayed in the related events section on each single event post](https://imgur.elightup.com/ldG9pph.gif)
 
-If you simply want to display related content using bi-directional relationships, take a look at [this guide](https://docs.metabox.io/tutorials/create-relationships-mb-views/) for detailed instructions. Thanks for reading!
+If you simply want to display related content using bi-directional relationships, take a look at [this guide](create-relationships-mb-views.md) for detailed instructions. Thanks for reading!

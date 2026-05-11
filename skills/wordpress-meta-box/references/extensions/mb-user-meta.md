@@ -1,13 +1,15 @@
 ---
 title: MB User Meta - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-user-meta/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB User Meta helps you to add custom fields to user profile.
 
 ![user meta](https://i1.wp.com/metabox.io/wp-content/uploads/2016/07/user-meta-1.png)
 
-The extension works only on the back end. If you want to edit user profile on the front end, please see [MB User Profile](https://docs.metabox.io/extensions/mb-user-profile/).
+The extension works only on the back end. If you want to edit user profile on the front end, please see [MB User Profile](mb-user-profile.md).
 
 ## Adding fields to user profile
 
@@ -74,7 +76,7 @@ WordPress provides an identical way to store values in the meta tables for post 
 
 ## Getting field value
 
-You're able to use helper function [rwmb\_meta()](https://docs.metabox.io/functions/rwmb-meta/) to get field value:
+You're able to use helper function [rwmb\_meta()](../functions/rwmb-meta.md) to get field value:
 
 ```php
 $value = rwmb_meta( $field_id, ['object_type' => 'user'], $user_id );
@@ -86,9 +88,9 @@ The code is very similar to getting post meta. The differences are:
 - In the 2nd parameter, you need to pass `'object_type' => 'user'`, and
 - In the last parameter, you need to pass the user ID
 
-Other parameters are the same as for posts. Please see [this documentation](https://docs.metabox.io/displaying-fields-with-code/) for details.
+Other parameters are the same as for posts. Please see [this documentation](../displaying-fields-with-code.md) for details.
 
 > [!-warning] -warning
 > warning
 > 
-> It requires the extension version 1.1+ to use the helper function. If you're using an older version, please [update now](https://docs.metabox.io/updates/).
+> It requires the extension version 1.1+ to use the helper function. If you're using an older version, please [update now](../updates.md).

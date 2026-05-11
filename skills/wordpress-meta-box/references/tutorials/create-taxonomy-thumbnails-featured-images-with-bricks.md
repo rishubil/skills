@@ -1,6 +1,8 @@
 ---
 title: Creating taxonomy thumbnails & featured Images - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-taxonomy-thumbnails-featured-images-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today’s practice, we are going to find out **how to create thumbnails for a taxonomy and featured images for a portfolio page combining Meta Box and Bricks.**

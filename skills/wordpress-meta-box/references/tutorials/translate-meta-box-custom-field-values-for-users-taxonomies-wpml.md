@@ -1,6 +1,8 @@
 ---
 title: Translating Meta Box custom field values for users and taxonomies with WPML - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/translate-meta-box-custom-field-values-for-users-taxonomies-wpml/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Having a multilingual website for products, and services is more and more essential in the global economy. And, it’s undeniable that using a translation plugin is an optimal choice to build it.
@@ -134,7 +136,7 @@ We have just added translation versions for the values of each field. They are n
 
 First, we should display the field’s values as the same as when the website has only one language.
 
-You can use any tools or plugins that support displaying content on the frontend. You can refer to [other tutorials](https://docs.metabox.io/tutorials/) to know how.
+You can use any tools or plugins that support displaying content on the frontend. You can refer to [other tutorials](index.md) to know how.
 
 Since I have the MB Views plugin that is included in the Meta Box package, I’ll use it as a demonstration.
 

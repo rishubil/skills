@@ -1,6 +1,8 @@
 ---
 title: Filtering posts by taxonomy on archive page - P2 - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-taxonomy-mbviews/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this part of the “ **filtering posts by custom taxonomy** ” series, we’ll do it using the **MB Views** extension from **Meta Box**.
@@ -391,4 +393,4 @@ On the frontend, enter a location in the **Search** box, then only the hotels in
 
 ![results](https://docs.metabox.io/assets/images/result-f9d504c0541138beb8402f4128c95be0.gif)
 
-You might also like these tutorials about [creating a simple listing](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/), [filtering posts by custom taxonomies](https://docs.metabox.io/tutorials/filter-posts-by-custom-fields-taxonomies/).
+You might also like these tutorials about [creating a simple listing](create-simple-listing-meta-box-bricks.md), [filtering posts by custom taxonomies](filter-posts-by-custom-fields-taxonomies.md).

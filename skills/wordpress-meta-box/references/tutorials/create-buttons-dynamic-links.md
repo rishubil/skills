@@ -1,6 +1,8 @@
 ---
 title: Creating buttons with dynamic links - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-buttons-dynamic-links/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Dynamic links are created to show various links in different posts and are displayed as buttons. It can be made in a variety of ways. One method is to use custom fields.

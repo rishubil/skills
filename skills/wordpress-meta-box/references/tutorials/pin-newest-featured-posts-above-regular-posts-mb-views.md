@@ -1,9 +1,11 @@
 ---
 title: Pining newest featured posts above regular posts using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/pin-newest-featured-posts-above-regular-posts-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-In the previous tut, we focused on [displaying only the featured posts](https://docs.metabox.io/tutorials/show-featured-restaurants-mb-views/). But in many real-world cases, highlighting important content without hiding the rest is a common need. Instead of splitting featured items into a separate section, you can simply prioritize them within the same list for better visibility. In this tutorial, we’re going to explore how to do it using the **MB Views** extension of **Meta Box**.
+In the previous tut, we focused on [displaying only the featured posts](show-featured-restaurants-mb-views.md). But in many real-world cases, highlighting important content without hiding the rest is a common need. Instead of splitting featured items into a separate section, you can simply prioritize them within the same list for better visibility. In this tutorial, we’re going to explore how to do it using the **MB Views** extension of **Meta Box**.
 
 ![result](https://docs.metabox.io/assets/images/result-6fc1ad2cc49436dbcac50fae59f910ff.png)
 
@@ -13,7 +15,7 @@ In the previous tut, we focused on [displaying only the featured posts](https://
 
 In this tutorial, we’ll create a custom post type to manage all the tours on our travel website. Each tour will include essential information, such as price, duration, and whether it’s featured for the month. All details will be stored in custom fields created with Meta Box.
 
-So I recommend using [Meta Box AlO](https://docs.metabox.io/tutorials/show-featured-restaurants-mb-views/), which includes the framework and all extensions you’ll need for this setup.
+So I recommend using [Meta Box AlO](show-featured-restaurants-mb-views.md), which includes the framework and all extensions you’ll need for this setup.
 
 - [MB Admin Columns](https://metabox.io/plugins/mb-admin-columns/): help you show whether a tour is marked as featured directly in the dashboard, making it easy to quickly scan and manage which tours should be pushed to the top;
 - [MB Custom Post Type](https://metabox.io/plugins/custom-post-type/): create a custom post type for tours;

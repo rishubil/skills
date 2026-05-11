@@ -1,6 +1,8 @@
 ---
 title: rwmb_get_registry - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-get-registry/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `rwmb_get_registry` is a helper function that gets list of registered meta boxes or fields.
@@ -44,7 +46,7 @@ $args = [
 $meta_boxes = $meta_box_registry->get_by( $args );
 ```
 
-Here `$args` is an array of the [meta box settings](https://docs.metabox.io/creating-fields-with-code/#field-group-settings) that you use to filter the list of meta boxes.
+Here `$args` is an array of the [meta box settings](../creating-fields-with-code.md#field-group-settings) that you use to filter the list of meta boxes.
 
 ## Field registry
 

@@ -1,6 +1,8 @@
 ---
 title: rwmb_set_meta - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-set-meta/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `rwmb_set_meta` is a helper function that helps you to set value for a field.
@@ -17,8 +19,8 @@ rwmb_set_meta( $object_id, $field_id, $value, $args = [] );
 | --- | --- |
 | `$object_id` | Object (post, term, user) ID. If you need to set value for an option (using MB Settings Page), object ID is the option name. |
 | `$field_id` | Field ID. |
-| `$value` | Value. Should be compatible with field value format. See [database](https://docs.metabox.io/database/). |
-| `$args` | Extra arguments for some object types or storages. It works similarly in [rwmb\_meta](https://docs.metabox.io/functions/rwmb-meta/) function. Can be array or a string in format param1=value1&param2=value2. Optional. |
+| `$value` | Value. Should be compatible with field value format. See [database](../database.md). |
+| `$args` | Extra arguments for some object types or storages. It works similarly in [rwmb\_meta](rwmb-meta.md) function. Can be array or a string in format param1=value1&param2=value2. Optional. |
 
 > [!-warning] -warning
 > warning

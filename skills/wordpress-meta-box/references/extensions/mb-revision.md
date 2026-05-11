@@ -1,6 +1,8 @@
 ---
 title: MB Revision - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-revision/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Revision adds support for custom fields in WordPress revision that helps you to track changes of custom fields.
@@ -41,7 +43,7 @@ Except title and content, which are post fields, other items on this screen are 
 
 If the custom field has simple value (like a string), it will display fully here. If the custom field has structural value (array), it will display here as a JSON-encoded string. Using JSON allows you to see the values of each element in the array as well as the structure in general.
 
-Please note that the extension works well with [MB Group](https://docs.metabox.io/extensions/meta-box-group/) extension.
+Please note that the extension works well with [MB Group](meta-box-group.md) extension.
 
 ## Restoring the revision
 
@@ -51,6 +53,6 @@ MB Revision will copy values of the custom fields from the revision to the paren
 
 ## Notes
 
-Because WordPress supports revision for posts and custom post types only, the extension doesn't work for [term meta](https://docs.metabox.io/extensions/mb-term-meta/), [user meta](https://docs.metabox.io/extensions/mb-user-meta/) or [settings pages](https://docs.metabox.io/extensions/mb-settings-page/).
+Because WordPress supports revision for posts and custom post types only, the extension doesn't work for [term meta](mb-term-meta.md), [user meta](mb-user-meta.md) or [settings pages](mb-settings-page.md).
 
 Please make sure you either not define `WP_POST_REVISIONS` or set it to a proper value in `wp-config.php`. This constant disables or limits the number of revisions. Therefore, it might cause unexprected result. Please see [WordPress Codex](https://codex.wordpress.org/Revisions#Revision_Options) for more information.

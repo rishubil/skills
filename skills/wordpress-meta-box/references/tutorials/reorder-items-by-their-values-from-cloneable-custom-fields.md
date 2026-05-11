@@ -1,6 +1,8 @@
 ---
 title: Reordering items by their values from cloneable custom fields - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/reorder-items-by-their-values-from-cloneable-custom-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll **reorder items by their values from cloneable custom fields**. Imagine that you have a list of services, each with its own name and price, and you want to display them in order from the lowest to the highest. That’s exactly when this method comes in handy. In this tutotial, we’ll walk through a simple case study to show you how it’s done.

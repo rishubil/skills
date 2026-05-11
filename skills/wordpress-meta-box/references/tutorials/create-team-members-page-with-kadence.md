@@ -1,6 +1,8 @@
 ---
 title: Creating a team members page - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-with-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In the previous posts of the [Creating a Team Members Page](https://metabox.io/series/team-members/) series, we have tried with many page builders and Meta Box only. To continue, let’s see how to create the member page using **Meta Box** and **Kadence**.

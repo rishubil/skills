@@ -1,6 +1,8 @@
 ---
 title: Creating a load more button with Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-load-more-button/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, I’ll show you how to **create a Load More button using Meta Box**, to let users load posts dynamically without refreshing the page. This makes browsing smoother and improves user experience.

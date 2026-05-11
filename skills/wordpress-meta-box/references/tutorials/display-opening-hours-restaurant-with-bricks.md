@@ -1,6 +1,8 @@
 ---
 title: Displaying opening hours for restaurants - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-opening-hours-restaurant-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 On a website for booking tables for several restaurants, we can show the **daily opening hours** for each one. It helps your customers be more proactive in managing schedules and bookings. It’s a piece of cake to add that information into a single page of each restaurant with the help of **Meta Box** and **Bricks**.

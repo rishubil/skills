@@ -1,6 +1,8 @@
 ---
 title: Reordering posts manually using custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/reorder-posts-manually-by-custom-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Arranging posts in a custom order will be much easier if you use custom fields. It allows you to set any post first without criteria.

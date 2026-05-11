@@ -1,11 +1,13 @@
 ---
 title: Reorder posts & terms - Meta Box Documentation
 source: https://docs.metabox.io/reorder-posts-terms/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This feature lets you **drag and drop** posts (from any custom post type) or terms (from any custom taxonomy) to rearrange their order right inside the WordPress admin. It's perfect when you need a custom order that doesn't follow the default publish date or alphabetical sorting.
 
-This functionality is included in the **[MB Custom Post Types & Custom Taxonomies](https://docs.metabox.io/extensions/mb-custom-post-type/)** extension - completely free to use.
+This functionality is included in the **[MB Custom Post Types & Custom Taxonomies](extensions/mb-custom-post-type.md)** extension - completely free to use.
 
 ## Reordering posts
 

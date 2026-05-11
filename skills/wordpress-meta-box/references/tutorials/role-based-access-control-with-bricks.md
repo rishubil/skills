@@ -1,6 +1,8 @@
 ---
 title: Filter posts by relationships - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/role-based-access-control-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Imagine that you’re building an internal company portal with training documents. Each document is linked to a department through a **Meta Box relationship**. When employees in different departments log in, they should only see the documents assigned to their department, not the ones from others.

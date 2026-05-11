@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to **create a recipe** page using MB Views. This page is a singular page of a custom post type and includes information that is stored in custom fields created with Meta Box.
@@ -255,6 +257,6 @@ Now my pizza recipe looks much more delicious and beautiful.
 
 You may be interested in:
 
-- [Creating a team members page](https://docs.metabox.io/tutorials/create-team-members-page-mb-views/)
-- [Displaying images from cloneable fields](https://docs.metabox.io/tutorials/display-images-cloneable-fields-mb-views/)
-- [Creating a product page](https://docs.metabox.io/tutorials/create-product-pages-mb-views/)
+- [Creating a team members page](create-team-members-page-mb-views.md)
+- [Displaying images from cloneable fields](display-images-cloneable-fields-mb-views.md)
+- [Creating a product page](create-product-pages-mb-views.md)

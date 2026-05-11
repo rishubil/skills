@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Divi - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-with-divi/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Have you tried MB Divi Integrator? Continuing the [Create a Recipe page](https://metabox.io/series/recipe/) series, today we will figure out the way to create an impressive, eye-catching recipe using **Meta Box** and **Divi Builder** with the help of their integration.

@@ -1,6 +1,8 @@
 ---
 title: Date - Meta Box Documentation
 source: https://docs.metabox.io/fields/date/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The date field allows you to select a date via a friendly UI. This field uses the jQuery UI datepicker library to select a date.
@@ -17,7 +19,7 @@ The date field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -106,7 +108,7 @@ Or simpler:
 > [!-info] -info
 > info
 > 
-> The 2nd parameter of [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/) accepts and extra parameter " **format** " which specify the datetime format to output in the frontend.
+> The 2nd parameter of [rwmb\_the\_value()](../functions/rwmb-the-value.md) accepts and extra parameter " **format** " which specify the datetime format to output in the frontend.
 
 **Querying posts by date:**
 

@@ -1,6 +1,8 @@
 ---
 title: Creating YouTube video timestamps on WordPress - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-youtube-video-timestamps-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 You might know the timestamps feature on YouTube, but how can you have it for videos on your site? Rather than waiting for a complete video to run from zero seconds to the point you are referring to, timestamps enable you to jump to any second of the video directly where a timestamp regulates. You can add timestamps as many as the parts you want to have fast access. Let’s **create YouTube video timestamps using MB Views**!

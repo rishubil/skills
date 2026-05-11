@@ -1,6 +1,8 @@
 ---
 title: Creating reusable template parts in WordPress - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-reusable-template-parts/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes you need to display the same information with the same layout as well, but in different places. Instead of storing and getting that data several times, today we are going to use **MB Views** to **create template parts**, then **include them in multiple templates** for reusable purposes.
