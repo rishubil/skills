@@ -1,0 +1,454 @@
+---
+title: MB Builder - Meta Box Documentation
+source: https://docs.metabox.io/extensions/meta-box-builder/
+---
+
+This extension helps you create custom fields, settings pages, and relationships with a user-friendly interface.
+
+## Creating custom fields
+
+Custom fields are organized in groups. Each group is displayed as a collapsible panel below the post editor.
+
+To create a field group, go to **Meta Box » Custom Fields** and click **Add New**. You'll see a screen to add fields to the group:
+
+![adding custom fields to the group](https://docs.metabox.io/assets/images/add-field-e58fbc0afcb57afaa04526defbfef2bf.png)
+
+On the left side bar, there are three icons with corresponding panels: Add field, Structure, and Settings. Panels are resizable.
+
+Enter the group title on the top and then click the **\+ Add Field** button and select a field type to add to the group. There are two buttons you can click to add a new field:
+
+![Two positions to add a new field](https://docs.metabox.io/assets/images/add-new-field-310a7536d1b6ea4e923e71c2ebec2be3.png)
+
+After that, a new field will appear in the field list. Clicking on that field on the preview to open the field settings panel where you can edit settings. Besides, to edit the label and ID of the field, you can double click on the preview to change them directly.
+
+> [!-success] -success
+> Quickly find a field type
+> 
+> To find a field type quickly, type its name in the input box above the field list. The plugin will filter the fields and show only matched fields.
+
+> [!-success] -success
+> tip
+> 
+> You can delete, duplicate or add a new field above/below the current field by clicking the icons in the field toolbar. To reorder fields, drag and drop them to the new positions.
+
+You can see the field settings and structure at the same time by opening the floating structure panel. It’s also resizable.
+
+![The floating structure panel](https://docs.metabox.io/assets/images/floating-2e783d125bff2820b4d214f4712fea5e.gif)
+
+When finishing adding fields, click the **Settings** icon and select the location where the fields are displayed for.
+
+![selecting a post type for the field group](https://docs.metabox.io/assets/images/field-group-location-36ea51aa1113270fd0a1160125e38b8b.png)
+
+After that click the **Save Changes** button to finish.
+
+## Field settings
+
+When adding fields to a field group, each field has its own settings. The list of settings with detailed explanation is [here](https://docs.metabox.io/field-settings/). MB Builder creates UI for them.
+
+To view and edit field settings, click anywhere in the field preview:
+
+![Edit field settings](https://docs.metabox.io/assets/images/setting-e30e3be43b1409b39f4124532b688032.png)
+
+Each field settings are self-explained. We also add some tooltips next to the setting title to give you more information if needed.
+
+All field settings are divided into some sections: General, Appearance, Conditional logic, Validation and Advanced. The General tab has most settings you need while the Appearance decides how your field display in the post editor. Besides:
+
+- Conditional logic: if you install the [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/), then this part is for creating rules with UI.
+- Validation: helps you to create [complex validation rules](https://docs.metabox.io/validation/).
+- Advanced tab has the following settings:
+	- Custom CSS class: if you need to cusomize the style of the field.
+		- Before & after: For entering custom HTML that outputed before and after the field.
+		- Custom sanitize callback: if you need [custom sanitization](https://docs.metabox.io/sanitization/).
+		- Save field value: if you don't want Meta Box to save the field value (which rarely happens) and you want to handle saving by yourself, then uncheck this checkbox.
+		- Custom HTML5 attributes: helps you add [custom HTMl5 attributes](https://docs.metabox.io/custom-attributes/) to your input fields.
+		- Custom settings: if you want to add extra settings to the field. We'll cover it in a next section.
+
+![edit field advanced settings](https://docs.metabox.io/assets/images/advanced-panel-b1ff324efb124a58cbd554a03276af6c.png)
+
+Note that: plugins and developers might add more settings for fields. We'll see how to do that later in this docs.
+
+## Field group settings
+
+The field group settings are put in the tab **Settings** panel:
+
+![field group settings](https://docs.metabox.io/assets/images/settings-panel-7ad9d1682c0f3a1a500c0e514bb2a382.png)
+
+There are several settings:
+
+- Location: where you select this field group is for posts, terms, users, comments, blocks or settings pages. For each object type, you'll be able to select corresponding post types, taxonomies or settings pages. Please note that it's required to install and activate corresponding extensions: [MB Term Meta](https://docs.metabox.io/extensions/mb-term-meta/), [MB User Meta](https://docs.metabox.io/extensions/mb-term-meta/), [MB Comment Meta](https://metabox.io/plugins/mb-comment-meta/), [MB Blocks](https://docs.metabox.io/extensions/mb-blocks/), and [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/). In there, the Advanced rules allows you to add advanced rules for which category, post, user,... the field group appears for. Requires the [MB Include Exclude](https://docs.metabox.io/extensions/meta-box-include-exclude/) extension.
+- Toggle rules: select which conditions to show or hide the field group. Requires the [MB Show Hide](https://docs.metabox.io/extensions/meta-box-show-hide/) extension.
+- Conditional Logic: setup the conditional logic rules to toggle the field group based on other fields' values. Requires the [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/) extension.
+- Post settings, such as context, priority if you select the location is for posts.
+- Custom block settings, such as block icon, render callback if you select the location is for blocks, which means creating custom Gutenberg blocks. Requires [MB Blocks](https://docs.metabox.io/extensions/mb-blocks/) extension. See the **Create Gutenberg blocks** section below.
+- Tab style and default active tab: these are the settings for [MB Tabs](https://docs.metabox.io/extensions/meta-box-tabs/) extension.
+- Custom table settings, including table name, table prefix and option to create custom table automatically. These are the settings for [MB Custom Table](https://docs.metabox.io/extensions/mb-custom-table/) extension. Note that if you select to create the custom table automatically, all columns will have the data type `TEXT` to ensure maximum compatibility.
+- Advanced:
+	- Custom CSS class: the custom CSS class for the wrapper `div` if you need to cusomize the style of the field group.
+		- Field ID prefix: if you want to prefix all fields in the field group, then this settings is for that. It's optional, but a good practice to keep your custom fields separated from other custom fields. You can also use underscore `_` as prefix to keep your fields hidden in the default WordPress **Custom Fields** meta box.
+		- Custom settings: if you want to add extra settings to the field group. See below for details.
+
+## Custom settings
+
+Custom settings is a feature for both fields and field groups, which allows you to add extra settings for them in case the builder doesn't have. It's useful when you want to add your own settings or the settings the builder hasn't added yet (in this case, please let us know).
+
+> [!-info] -info
+> Key-value settings
+> 
+> What describes in this section is applied also for similar key-value settings, including: choice field options, JavaScript options (date, datepicker, slider,...), query args (post, taxonomy, taxonomy advanced, user) and custom HTML5 attributes.
+
+To add custom settings, scroll down to the last setting of the **Advanced** section of the fields or field group. Then click **\+ Add New** button and add new settings. Like this:
+
+![custom settings](data:image/png;base64,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)
+
+Which will produce the result like this:
+
+```php
+[
+    'id'   => 'new-your-phone',
+    'name' => 'New Your phone',
+    'type' => 'text',
+
+    // Custom settings.
+    'mask'   => '012-345-6789',
+    'enable' => false
+],
+```
+
+Remember, MB Builder treats `true`, `false` as boolean values.
+
+If you want to add complex custom settings, like multi-dimentional arrays:
+
+```php
+[
+    'type'       => 'post',
+    'id'         => 'field_id',
+    'query_args' => [
+        'tax_query' => [
+            [
+                'taxonomy' => 'category',
+                'field'    => 'slug',
+                'terms'    => 'technology',
+            ],
+        ],
+    ],
+],
+```
+
+Then you can use the dot notation or JSON for custom attributes:
+
+### Dot notation
+
+Dot notation is a way that let you define structural data (hierarchical data) with dots (.). Each dot (.) defines a level in your data.
+
+If you want to enter a structural custom settings for a field like:
+
+```php
+'my_prop' => [
+    'param1' => 'Value 1',
+    'param2' => 'Value 2',
+    'param3' => 'Value 3',
+]
+```
+
+This can be understood like this:
+
+```php
+"my_prop.param1": "Value 1",
+"my_prop.param1": "Value 2",
+"my_prop.param1": "Value 3",
+```
+
+Here the params param1, param2, param3 are sub-params of the my\_prop and they're defined with a dot prefixed.
+
+Implementing that in MB Builder as follows:
+
+![implement structural custom settings](data:image/png;base64,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)
+
+Another case is when you want to add a set of data without keys. The data in PHP looks like this:
+
+```php
+'my_prop' => [
+    'Value 1',
+    'Value 2',
+    'Value 3',
+]
+```
+
+Although keys are not implemented, we can understand that this list (array) uses numeric keys: 0, 1, 2. So we can rewrite it as:
+
+```php
+'my_prop': [
+    0: 'Value 1',
+    1: 'Value 2',
+    2: 'Value 3',
+]
+```
+
+Similar to above, this can be understood as:
+
+```php
+"my_prop.0": "Value 1",
+"my_prop.1": "Value 2",
+"my_prop.2": "Value 3",
+```
+
+And can be implemented as follows in MB Builder:
+
+![adding array of data for custom settings](data:image/png;base64,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)
+
+Combining these, you can define a complex data structure as follows (this is a post field with advanced query args):
+
+```php
+[
+    'type'       => 'post',
+    'id'         => 'field_id',
+    'query_args' => [
+        'tax_query' => [
+            [
+                'taxonomy' => 'category',
+                'field'    => 'slug',
+                'terms'    => 'technology',
+            ],
+        ],
+    ],
+],
+```
+
+In MB Builder:
+
+![dot notation for advanced query args](data:image/png;base64,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)
+
+### JSON notation
+
+Another way to enter nested array in MB Builder, you can use JSON notation. Paste the JSON string into the value input, and this JSON will be parsed into an array in PHP.
+
+For example, the `tax_query` above can be implemented like this:
+
+![json value](data:image/png;base64,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)
+
+## Getting PHP code
+
+For each field group, MB Buider can create a PHP code that you can copy and paste into your theme's `functions.php` file (or your plugin file) and then *deactivate the MB Builder extension*.
+
+This is helpful if you want to:
+
+- [Share field groups to other websites](https://metabox.io/copy-custom-fields-with-meta-box-builder/) which doesn't have MB Builder installed.
+- Improve the performance since field groups are loaded directly from your file.
+
+To get the code, click the **Get PHP Code** button on the toolbar:
+
+![export code](https://docs.metabox.io/assets/images/theme-code-b0531a9b45fbd6c17e802306d11e5730.png)
+
+On this screen, set the text domain (for field labels in case you want to translate them in a multilingual website) and the function name. Then click the **Generate** button to generate the code. Finally, click the **Copy** button to copy the code and paste it into your theme's `functions.php` file.
+
+When you copy PHP code and paste it into your theme's `functions.php` file, you can **safely deactivate MB Builder** (do *not* deactivate Meta Box, it's still required).
+
+For detailed instruction, please see [this tutorial](https://metabox.io/copy-custom-fields-with-meta-box-builder/).
+
+Please note that once you take the PHP code and remove the settings from the MB Builder, there's no way to edit the field group in the MB Builder directly from the exported code.
+
+In order to do re-edit the field group, we suggest after taking the PHP code, export the field group settings from MB Builder (see the section below). Then whenever you want to edit the field group, just import it back and edit.
+
+## Export / Import
+
+To export one or more field groups, go to the main screen *Meta Box → Custom Fields*. Then click the checkboxes next to the field groups' titles you want to export. Then choose **Export** from the Bulk Actions dropdown. Then click **Apply**.
+
+![export field groups](https://imgur.elightup.com/r1moj0S.png)
+
+Or you can export individual field group by clicking on **Export** link when hover the mouse over the field group title:
+
+![export a single field group](https://docs.metabox.io/assets/images/export-e11821e450073b63c4cf103e0333e11a.png)
+
+To import field groups, select the *Import* button at the top of the page. Then choose the downloaded file in the previous step, then press **Upload file and import**. That’s all!
+
+![import field groups](https://docs.metabox.io/assets/images/import-7e70c41f76c2e66ed63d7b2152b98c92.png)
+
+For detailed instruction, please see [this tutorial](https://metabox.io/export-import-custom-fields-meta-box-builder/).
+
+Video tutorial:
+
+## Creating Gutenberg blocks
+
+Since v3.1.0, MB Builder allows you to create Gutenberg blocks visually, without writing code. See this video tutorial on how to do that:
+
+Note that the plugin supports Twig template engine to write block template code. See [Twig documentation](https://twig.symfony.com/doc/1.x/templates.html) for how to use variables, conditions and functions.
+
+For more convenient, the plugin supports the following variables:
+
+- `{{ align }}`: block alignment (if the block supports it).
+- `{{ anchor }}`: block anchor (if the block supports it).
+- `{{ className }}`: custom CSS class name (if the block supports it).
+- `{{ is_preview }}`: whether or not in preview mode.
+- `{{ post_id }}`: the current post ID.
+
+To access the field value, you can use `{{ field_id }}`, where `field_id` is the field ID. If the field returns an array (such as `single_image` field), you can access to field's attribute with `{{ my_image.full_url }}`.
+
+Besides, the plugin also allows you to use any PHP/WordPress function via `mb.function()` where `function` is the function name. For example, the code below get the post object and output the post title:
+
+```php
+{% set post = mb.get_post( post_id ) %}
+{{ post.post_title }}
+```
+
+Or this code will output the site title:
+
+```php
+{% set site_title = mb.get_bloginfo( 'name' ) %}
+{{ site_title }}
+```
+
+## Creating settings pages
+
+This feature helps you to create custom settings pages (or Customize panels) with UI. It requires the [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/) extension.
+
+To start, go to **Meta Box > Settings Pages** and click **Add New**.
+
+![create settings pages](https://docs.metabox.io/assets/images/create-settings-page-d7627f2416f120db6f4fa9c68031deb0.png)
+
+Here you can enter all the settings for the settings page. All settings are self-explained. Please see the [documentation of MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/) to understand them.
+
+## Creating relationships
+
+This feature helps you to create relationships between posts, terms and users with UI. It requires the [MB Relationships](https://docs.metabox.io/extensions/mb-relationships/) extension.
+
+To start, go to **Meta Box > Relationships** and click **Add New**.
+
+![create relationships](https://docs.metabox.io/assets/images/relationship-bb671b67a185c721014b9948e9b11666.png)
+
+Here you can enter all the settings for each side of the relationship (**From** and **To**). For each side, there are 3 tabs of settings:
+
+- General: for general settings such as object type and post type.
+- Meta Box: for extra meta box settings. These settings are the same as the field group settings when creating custom fields.
+- Field: for extra field settings. These settings are the same as the field settings (post, term or user depending on the object type).
+
+Please see the [documentation of MB Relationships](https://docs.metabox.io/extensions/mb-relationships/) to understand them.
+
+## Extending the builder
+
+### Adding custom controls to fields
+
+If you develop [extra solutions for Meta Box](https://metabox.io/resources/), then you might need to add a custom settings for fields. Luckily, MB Builder has API for you to create custom controls for these settings.
+
+To add a control, use the following hook:
+
+```php
+add_filter( 'mbb_field_controls', 'your_prefix_add_field_controls', 10, 2 );
+
+function your_prefix_add_field_controls( $controls, $type ) {
+    // Add a checkbox control.
+    $controls[] = \MBB\Control::Checkbox( 'custom_layout', __( 'Custom layout', 'your-text-domain' ) );
+
+    // Add a select control.
+    $controls[] = \MBB\Control::Select(
+        'layout',
+        [
+            'label'   => __( 'Layout', 'your-text-domain' ),
+            'tooltip' => __( 'Select the layout for the field', 'your-text-domain' ),
+            'options' => [
+                'one-third'  => __( 'One-third', 'your-text-domain' ),
+                'one-half'   => __( 'One-half', 'your-text-domain' ),
+                'two-third'  => __( 'Two-third', 'your-text-domain' ),
+                'full-width' => __( 'Full-width', 'your-text-domain' ),
+            ],
+            'dependency' => 'custom_layout:true',
+        ],
+        'one-half',
+        'general'
+    );
+
+    return $controls;
+}
+```
+
+The filter `mbb_field_controls` accepts 2 parameters:
+
+- `$controls`: Array of controls.
+- `$type`: Field type, useful if you want to add controls to specific field types only.
+
+Each control has a specific type (`\MBB\Control::Select` in the above example, which is a select dropdown) and several parameters:
+
+1. Setting name
+2. Control properties, which is an array:
+	- `label`: the control label.
+		- `tooltip`: the content of the tooltip, if you want to explain what the control is for users.
+		- `options`: array of options for the select control, in format of `'value' => 'label'`.
+		- `dependency`: if you want to show the control only when another control has a specific value, then set this to `{$other_control_setting_name}:{$value}`. Optional.
+3. Default value. Optional.
+4. Settings tab: `general` (default) or `advanced`. Optional.
+
+In case your control has only `label` property, you can set the property as a string (see the checkbox control in the above example).
+
+List of supported control types:
+
+| Name | Description |
+| --- | --- |
+| `MBB\Control::Checkbox` | A checkbox |
+| `MBB\Control::Input` | An input text. You can set the `'type' => 'number'` for the control property to make it accepts only numbers. |
+| `MBB\Control::Select` | A select dropdown where you can select only a single value. You need to set `options` property for the control as shown in the above example. |
+| `MBB\Control::ReactSelect` | A select dropdown where you can select multiple values. You need to set `options` property for the control and the default value must be an array. |
+| `MBB\Control::Textarea` | A textarea. |
+
+This is the result of the above example:
+
+![custom field controls](https://docs.metabox.io/assets/images/custom-layout-94b07c772b26fc20e3cc37fbd376f8c7.png)
+
+### Adding custom controls field groups
+
+Similarly, you can add custom controls for the whole field group. Here is how we do to add custom controls when [MB Tabs](https://docs.metabox.io/extensions/meta-box-tabs/) extension is activated.
+
+```php
+add_filter( 'mbb_settings_controls', 'your_prefix_add_settings_controls' );
+
+function your_prefix_add_settings_controls( $controls ) {
+    $controls[] = \MBB\Control::Select( 'tab_style', [
+        'label'   => __( 'Tab style', 'meta-box-builder' ),
+        'tooltip' => __( 'Change how look and feel of tabs in MB Tabs', 'meta-box-builder' ),
+        'options' => [
+            'default' => __( 'Default', 'meta-box-builder' ),
+            'box'     => __( 'Box', 'meta-box-builder' ),
+            'left'    => __( 'Left', 'meta-box-builder' ),
+        ],
+    ] );
+    $controls[] = Control::Input( 'tab_default_active', __( 'Default active tab ID', 'meta-box-builder' ) );
+
+    return $controls;
+}
+```
+
+The filter `mbb_settings_controls` accepts only one parameter - an array of controls. Each control is defined similarly as for fields.
+
+### Changing the parsed settings
+
+In most cases, when adding a new control or a new field type, the settings are saved correctly. These settings will be parsed to a PHP array and is used by Meta Box and extensions. The parsed result is also used when you generate PHP code.
+
+In some specific cases, you might want to set custom value to the fields instead of the value set in the controls. To do that, use the following hook:
+
+```php
+// For fields.
+$field_settings = apply_filters( 'mbb_field_settings', $field_settings );
+$field_settings = apply_filters( "mbb_field_settings_{$field_type}", $field_settings );
+
+// For field group.
+$field_group_settings = apply_filters( 'mbb_meta_box_settings', $field_group_settings );
+```
+
+For example: you created 2 controls for `custom_layout` (checkbox) and `layout` (select) for fields (see example in the section "Adding your own field settings" above). When parsing, you don't want to set `custom_layout` to `true` if `layout` has a value as it's redundant. You can do that with:
+
+```php
+add_filter( 'mbb_field_settings', 'your_prefix_parse_field_settings' );
+
+function your_prefix_parse_field_settings( $field_settings ) {
+    if ( ! empty( $field_settings['layout'] ) ) {
+        unset( $field_settings['custom_layout'];
+    }
+    return $field_settings;
+}
+```
+
+## Video tutorial
+
+Here is a quick video showing how to use the MB Builder to create custom fields in WordPress:
+
+## Upgrade
+
+When updating from version 4 to version 5, the plugin automatically migrates data of field groups to compatible with the new React app. The migration process doesn't touch your existing data, so you're always safe.
