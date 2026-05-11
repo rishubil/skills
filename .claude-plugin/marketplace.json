@@ -26,6 +26,15 @@
       "skills": [
         "./skills/fetch-docs"
       ]
+    },
+    {
+      "name": "monkey-c",
+      "description": "Specialist skill for developing Garmin Connect IQ applications in Monkey C. Use when writing Watch Faces, Device Apps, Widgets, or Data Fields for Garmin wearables.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/monkey-c"
+      ]
     }
   ]
 }
