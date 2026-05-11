@@ -53,3 +53,35 @@ Wrap body lines at 72 characters.
 
 File-specific arguments constrain which changes get staged; stage everything
 only when the user explicitly asks for it.
+
+## Example
+
+The following one-line Makefile change, taken from
+[John Graham-Cumming's blog post](https://blog.jgc.org/2013/07/write-good-commit-messages.html),
+illustrates the level of detail to aim for in the body:
+
+```
+fix: sort the output of $(wildcard) as it is unsorted in GNU Make 3.82+
+
+In GNU Make 3.82 the code that globs has been changed to add the
+GLOB_NOSORT option and so the output of $(wildcard) is no longer
+ordered.
+
+This Makefile was relying on the output of $(wildcard) being sorted
+because certain rules have files that are numbered and must be
+handled in order. The build system depends on this order to build
+rules in the correct sequence.
+
+To reproduce, run the build with GNU Make >= 3.82: rules are picked
+up in filesystem (i.e. effectively random) order and the resulting
+artifact differs from one produced by 3.81.
+
+Wrap the $(wildcard ...) call in $(sort ...) so the ordering is
+restored regardless of the Make version, because relying on Make's
+internal glob behaviour is fragile across releases.
+```
+
+Notice how the body answers *why* (3.82 changed glob behaviour), *what
+broke* (ordering assumption in the Makefile), *how to reproduce*, and
+*why the fix is shaped this way* — none of which is recoverable from
+the diff alone.
