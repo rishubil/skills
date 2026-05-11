@@ -54,34 +54,64 @@ Wrap body lines at 72 characters.
 File-specific arguments constrain which changes get staged; stage everything
 only when the user explicitly asks for it.
 
-## Example
+## Examples
 
-The following one-line Makefile change, taken from
-[John Graham-Cumming's blog post](https://blog.jgc.org/2013/07/write-good-commit-messages.html),
-illustrates the level of detail to aim for in the body:
+Both examples below are taken directly from
+[John Graham-Cumming's blog post](https://blog.jgc.org/2013/07/write-good-commit-messages.html)
+(obscured details in the originals are shown as `XXX`). They illustrate the
+level of detail to aim for in the body.
+
+### Example 1 — a one-line Makefile fix
 
 ```
-fix: sort the output of $(wildcard) as it is unsorted in GNU Make 3.82+
+Sort the output of $(wildcard) as it is unsorted in GNU Make 3.82+
 
-In GNU Make 3.82 the code that globs has been changed to add the
-GLOB_NOSORT option and so the output of $(wildcard) is no longer
-ordered.
+The Makefile was relying on the output of $(wildcard) to be sorted. This is
+important because the XXXXXXXXXXXX rules have files that are numbered and
+must be handled in order. The XXXXXXX relies on this order to build the rules
+in the correct order (and set the order attributes in the JSON files). This
+worked with GNU Make 3.81
 
-This Makefile was relying on the output of $(wildcard) being sorted
-because certain rules have files that are numbered and must be
-handled in order. The build system depends on this order to build
-rules in the correct sequence.
+In GNU Make 3.82 the code that globs has been changed to add the GLOB_NOSORT
+option and so the output of $(wildcard) is no longer ordered and the build
+would break. For example,
 
-To reproduce, run the build with GNU Make >= 3.82: rules are picked
-up in filesystem (i.e. effectively random) order and the resulting
-artifact differs from one produced by 3.81.
+   make clean-out && make
 
-Wrap the $(wildcard ...) call in $(sort ...) so the ordering is
-restored regardless of the Make version, because relying on Make's
-internal glob behaviour is fragile across releases.
+would fail because the XXXXXXXXXXXXXXXX (which is used for the XXXXX action)
+which appears in XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX would not have been
+parsed before the XXXXX action was used in some other XXXXX file. That would
+generate a fatal error.
+
+The solution is simple: wrap the $(wildcard) in $(sort). The actual change
+uses a $(foreach) loop because it's necessary to keep the directories in the
+order specified in the Makefile and the files within the directory are sorted
+by the $(sort $(wildcard ...)). The directory order is important because
+XXXXXXXXXXXX must be processed before the other rule directories because it
+contains XXXXXXXXXXXXXXXXXXXXXXXXXXX which sets the XXXXXXXXXX thresholds.
 ```
 
-Notice how the body answers *why* (3.82 changed glob behaviour), *what
-broke* (ordering assumption in the Makefile), *how to reproduce*, and
-*why the fix is shaped this way* — none of which is recoverable from
-the diff alone.
+The first line gives a brief summary. The body explains *why* the change was
+made (a behaviour change in GNU Make 3.82), *what actually broke*,
+*how to reproduce* the failure, and *why the specific fix is shaped the way
+it is* — none of which is recoverable from the diff alone.
+
+### Example 2 — adding signal handling
+
+```
+Handle SIGABRT and force a panic
+
+It can be useful to crash XXXXXXX via a signal to get a stack trace of every
+running goroutine. To make this reliable have added handling of SIGABRT.
+
+If you do,
+
+   kill -ABRT
+
+A panic is generated with message "panic: SIGABRT called" followed by
+a stack trace of every goroutine.
+```
+
+Even a small feature gets a body that documents the *motivation* (need to
+inspect goroutine stacks on demand) and *how to use the new behaviour*, so a
+future reader does not have to reverse-engineer either from the code.
