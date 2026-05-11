@@ -1,0 +1,20 @@
+{
+  "name": "rishubil-skills",
+  "owner": {
+    "name": "Nesswit",
+    "email": "rishubil@gmail.com"
+  },
+  "metadata": {
+    "description": "Personal collection of Claude Agent Skills by rishubil",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "personal-skills",
+      "description": "Personal collection of skills for everyday use",
+      "source": "./",
+      "strict": false,
+      "skills": []
+    }
+  ]
+}
