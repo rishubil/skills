@@ -53,6 +53,15 @@
       "skills": [
         "./skills/wordpress-classic-theme"
       ]
+    },
+    {
+      "name": "commit",
+      "description": "Create git commits following Conventional Commits format with a mandatory body explaining why the change was made.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/commit"
+      ]
     }
   ]
 }
