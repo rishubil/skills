@@ -41,12 +41,20 @@ by John Graham-Cumming:
 
 Wrap body lines at 72 characters.
 
+## Language
+
+Default to English, but if `git log` shows that recent commits are written in
+another language (e.g. Korean, Japanese), match that language for both the
+subject and the body. Consistency with the project's existing history matters
+more than personal preference — a repository whose log is in Korean should
+keep getting Korean commit messages.
+
 ## Process
 
 1. Check if the user specified particular files or a scope for the commit.
 2. Run `git status` and `git diff` (staged + unstaged) to review changes.
-3. Optionally scan recent commits (`git log --oneline -10`) to match project
-   conventions.
+3. Scan recent commits (`git log --oneline -10`, plus a full message or two
+   via `git log -n 3`) to match the project's conventions **and language**.
 4. If it is ambiguous which files should be staged, ask the user before
    proceeding.
 5. Stage the intended files and create the commit — do **not** push.
