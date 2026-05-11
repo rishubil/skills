@@ -13,15 +13,15 @@ Fields may return `null` so you should `null` check values before using them.
 
 ## Instance Member Summary
 
-- [**leftOrCombinedPedalSmoothness**](#leftOrCombinedPedalSmoothness-var "leftOrCombinedPedalSmoothness (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**leftOrCombinedPedalSmoothness**](#leftOrCombinedPedalSmoothness-var "leftOrCombinedPedalSmoothness (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Left pedal smoothness if separate is supported, else it is the combined smoothness (%).
-- [**leftTorqueEffectiveness**](#leftTorqueEffectiveness-var "leftTorqueEffectiveness (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**leftTorqueEffectiveness**](#leftTorqueEffectiveness-var "leftTorqueEffectiveness (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Left torque effectiveness.
-- [**rightPedalSmoothness**](#rightPedalSmoothness-var "rightPedalSmoothness (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**rightPedalSmoothness**](#rightPedalSmoothness-var "rightPedalSmoothness (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Right pedal smoothness (%).
-- [**rightTorqueEffectiveness**](#rightTorqueEffectiveness-var "rightTorqueEffectiveness (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**rightTorqueEffectiveness**](#rightTorqueEffectiveness-var "rightTorqueEffectiveness (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Right torque effectiveness.
-- [**separatePedalSmoothnessSupport**](#separatePedalSmoothnessSupport-var "separatePedalSmoothnessSupport (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**separatePedalSmoothnessSupport**](#separatePedalSmoothnessSupport-var "separatePedalSmoothnessSupport (Var)") as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	Define if pedal smoothness is separate.
 
 ## Instance Attribute Details

@@ -7,17 +7,17 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ClickEve
 
 ## Overview
 
-ClickEvent is an object sent to [InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html) there is tap interaction with a device's touch screen.
+ClickEvent is an object sent to [InputDelegate](InputDelegate.md) there is tap interaction with a device's touch screen.
 
 ## See Also:
 
-- [Toybox.WatchUi.InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html)
+- [Toybox.WatchUi.InputDelegate](InputDelegate.md)
 
 ## Instance Method Summary
 
-- [**getCoordinates**](#getCoordinates-instance_function "getCoordinates (Instance Function)") () as \[ [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) \]
+- [**getCoordinates**](#getCoordinates-instance_function "getCoordinates (Instance Function)") () as \[ [Lang.Number](../Lang/Number.md), [Lang.Number](../Lang/Number.md) \]
 	Get the coordinates of a click event.
-- [**getType**](#getType-instance_function "getType (Instance Function)") () as [WatchUi.ClickType](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#ClickType-module)
+- [**getType**](#getType-instance_function "getType (Instance Function)") () as [WatchUi.ClickType](../WatchUi.md#ClickType-module)
 	Get the type of click event.
 
 ## Instance Method Details

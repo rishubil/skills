@@ -9,11 +9,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuItem
 
 ## See Also:
 
-- [Toybox.WatchUi.Menu2](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Menu2.html)
+- [Toybox.WatchUi.Menu2](Menu2.md)
 
 ## Direct Known Subclasses
 
-[WatchUi.CheckboxMenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenuItem.html), [WatchUi.CustomMenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/CustomMenuItem.html), [WatchUi.IconMenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/IconMenuItem.html), [WatchUi.ToggleMenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ToggleMenuItem.html)
+[WatchUi.CheckboxMenuItem](CheckboxMenuItem.md), [WatchUi.CustomMenuItem](CustomMenuItem.md), [WatchUi.IconMenuItem](IconMenuItem.md), [WatchUi.ToggleMenuItem](ToggleMenuItem.md)
 
 ## Constant Summary
 
@@ -26,21 +26,21 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuItem
 
 ## Instance Method Summary
 
-- [**getIcon**](#getIcon-instance_function "getIcon (Instance Function)") () as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or **Null**
+- [**getIcon**](#getIcon-instance_function "getIcon (Instance Function)") () as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [WatchUi.Drawable](Drawable.md) or **Null**
 	Get the icon Retrieve the icon for this MenuItem.
-- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**
+- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Object](../Lang/Object.md) or **Null**
 	Get a MenuItem identifier.
-- [**getLabel**](#getLabel-instance_function "getLabel (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**getLabel**](#getLabel-instance_function "getLabel (Instance Function)") () as [Lang.String](../Lang/String.md)
 	Get a MenuItem label.
-- [**getSubLabel**](#getSubLabel-instance_function "getSubLabel (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) < [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html), [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or **Null** > or **Null**
+- [**getSubLabel**](#getSubLabel-instance_function "getSubLabel (Instance Function)") () as [Lang.String](../Lang/String.md) or [Lang.Dictionary](../Lang/Dictionary.md) < [Lang.Symbol](../Lang/Symbol.md), [Lang.String](../Lang/String.md) or **Null** > or **Null**
 	Get a MenuItem substring label.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (label as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html), subLabel as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or **Null**, identifier as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**, options as {:alignment as [MenuItem.Alignment](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuItem.html#Alignment-module),:icon as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) } or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (label as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md), subLabel as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md) or **Null**, identifier as [Lang.Object](../Lang/Object.md) or **Null**, options as {:alignment as [MenuItem.Alignment](MenuItem.md#Alignment-module),:icon as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [WatchUi.Drawable](Drawable.md) or [Lang.ResourceId](../Lang/ResourceId.md) } or **Null**)
 	Constructor.
-- [**setIcon**](#setIcon-instance_function "setIcon (Instance Function)") (icon as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or **Null**) as **Void**
+- [**setIcon**](#setIcon-instance_function "setIcon (Instance Function)") (icon as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [WatchUi.Drawable](Drawable.md) or [Lang.ResourceId](../Lang/ResourceId.md) or **Null**) as **Void**
 	Set the icon Set the icon displayed in the subscreen area when this MenuItem has the focus.
-- [**setLabel**](#setLabel-instance_function "setLabel (Instance Function)") (label as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html)) as **Void**
+- [**setLabel**](#setLabel-instance_function "setLabel (Instance Function)") (label as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md)) as **Void**
 	Set a MenuItem label.
-- [**setSubLabel**](#setSubLabel-instance_function "setSubLabel (Instance Function)") (subLabel as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or **Null**) as **Void**
+- [**setSubLabel**](#setSubLabel-instance_function "setSubLabel (Instance Function)") (subLabel as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md) or **Null**) as **Void**
 	Set a MenuItem substring label.
 
 ## Instance Method Details

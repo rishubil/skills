@@ -15,7 +15,7 @@ The number of available timers (default 3) and the minimum time value (default 5
 
 ## Instance Method Summary
 
-- [**start**](#start-instance_function "start (Instance Function)") (callback as [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) () as **Void**, time as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), repeat as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)) as **Void**
+- [**start**](#start-instance_function "start (Instance Function)") (callback as [Lang.Method](../Lang/Method.md) () as **Void**, time as [Lang.Number](../Lang/Number.md), repeat as [Lang.Boolean](../Lang/Boolean.md)) as **Void**
 	Start the Timer.
 - [**stop**](#stop-instance_function "stop (Instance Function)") () as **Void**
 	Stops the Timer from running.

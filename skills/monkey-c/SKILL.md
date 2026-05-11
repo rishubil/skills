@@ -160,8 +160,47 @@ class MyWatchFaceView extends Ui.WatchFace {
 - **Connect IQ SDK**: Garmin Developer 포털에서 다운로드
 - **시뮬레이터**: SDK에 포함된 기기 시뮬레이터로 실제 기기 없이 테스트 가능
 
-## 참고 자료
+## 로컬 문서 (적극 활용할 것)
 
-- [Monkey C 언어 레퍼런스](https://developer.garmin.com/connect-iq/reference-guides/monkey-c-reference/)
-- [Connect IQ 개요](https://developer.garmin.com/connect-iq/overview/)
-- [API 문서 (Toybox)](https://developer.garmin.com/connect-iq/api-docs/)
+이 스킬 디렉터리에는 공식 문서가 로컬 마크다운으로 저장되어 있습니다. 코드를 작성하거나 API를 조회할 때는 **반드시 아래 로컬 문서를 먼저 참고**하세요. 외부 URL을 열거나 추측하지 말고, 로컬 파일을 Read하여 정확한 정보를 확인하세요.
+
+### overview/ — Monkey C 언어 가이드
+
+| 파일 | 내용 |
+|------|------|
+| [overview/monkey-c.md](overview/monkey-c.md) | 기본 문법 개요 |
+| [overview/monkey-types.md](overview/monkey-types.md) | 데이터 타입 상세 |
+| [overview/objects-and-memory.md](overview/objects-and-memory.md) | 객체·메모리 모델 |
+| [overview/functions.md](overview/functions.md) | 함수 정의·호출 |
+| [overview/containers.md](overview/containers.md) | Array·Dictionary |
+| [overview/exceptions-and-errors.md](overview/exceptions-and-errors.md) | 예외 처리 |
+| [overview/annotations.md](overview/annotations.md) | 어노테이션 |
+| [overview/compiler-options.md](overview/compiler-options.md) | 컴파일러 옵션 |
+| [overview/coding-conventions.md](overview/coding-conventions.md) | 코딩 컨벤션 |
+
+### references/ — 레퍼런스 가이드
+
+| 파일 | 내용 |
+|------|------|
+| [references/monkey-c-reference.md](references/monkey-c-reference.md) | Monkey C 언어 레퍼런스 (문법 전체) |
+| [references/jungle-reference.md](references/jungle-reference.md) | Jungle 빌드 설정 언어 |
+| [references/monkey-c-command-line-setup.md](references/monkey-c-command-line-setup.md) | CLI 빌드·시뮬레이터 |
+| [references/visual-studio-code-extension.md](references/visual-studio-code-extension.md) | VS Code 확장 사용법 |
+| [references/monkey-motion-reference.md](references/monkey-motion-reference.md) | 애니메이션 변환 도구 |
+| [references/monkey-graph-reference.md](references/monkey-graph-reference.md) | FIT 데이터 시각화 도구 |
+
+### api-docs/ — Toybox API 레퍼런스 (330개 파일)
+
+`api-docs/Toybox/<Module>.md` 또는 `api-docs/Toybox/<Module>/<Class>.md` 구조입니다.
+특정 클래스·메서드를 확인할 때는 해당 경로의 파일을 직접 Read하세요.
+
+주요 진입점:
+- [api-docs/index.md](api-docs/index.md) — Toybox 네임스페이스 전체 목록
+- [api-docs/class_list.md](api-docs/class_list.md) — 클래스·모듈 인덱스
+- [api-docs/method_list.md](api-docs/method_list.md) — 메서드 전체 목록
+
+자주 쓰는 모듈 예시:
+- `api-docs/Toybox/WatchUi.md`, `api-docs/Toybox/WatchUi/View.md`
+- `api-docs/Toybox/Graphics.md`, `api-docs/Toybox/Graphics/Dc.md`
+- `api-docs/Toybox/Application/AppBase.md`
+- `api-docs/Toybox/System.md`, `api-docs/Toybox/Sensor.md`

@@ -11,9 +11,9 @@ An object representing a textured area with in a bitmap that can be can be used 
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:bitmap as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html),:offsetX as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:offsetY as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:bitmap as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [Lang.ResourceId](../Lang/ResourceId.md),:offsetX as [Lang.Number](../Lang/Number.md),:offsetY as [Lang.Number](../Lang/Number.md) })
 	Constructor.
-- [**setOffset**](#setOffset-instance_function "setOffset (Instance Function)") (offsetX as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), offsetY as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as **Void**
+- [**setOffset**](#setOffset-instance_function "setOffset (Instance Function)") (offsetX as [Lang.Number](../Lang/Number.md), offsetY as [Lang.Number](../Lang/Number.md)) as **Void**
 	Set an offset for the texture.
 
 ## Instance Method Details

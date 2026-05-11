@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Media.ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Media.ContentRef](ContentRef.md)
 [show all](#)
 
 ## Overview
@@ -18,11 +18,11 @@ Provides a reference to downloaded media content.
 
 ## Instance Method Summary
 
-- [**getContentType**](#getContentType-instance_function "getContentType (Instance Function)") () as [Media.ContentType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html#ContentType-module)
+- [**getContentType**](#getContentType-instance_function "getContentType (Instance Function)") () as [Media.ContentType](../Media.md#ContentType-module)
 	Get the media content type.
-- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
+- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Object](../Lang/Object.md)
 	Get the content ref ID.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (id as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html), type as [Media.ContentType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html#ContentType-module))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (id as [Lang.Object](../Lang/Object.md), type as [Media.ContentType](../Media.md#ContentType-module))
 	Constructor.
 
 ## Instance Method Details

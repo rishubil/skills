@@ -36,12 +36,12 @@ The ScanCode module provides functionality to for generating machine readable co
 
 ## Typedef Summary
 
-- [**QrCodeOptions**](#QrCodeOptions-named_type "QrCodeOptions (Named Type)") as {:minVersion as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:maxVersion as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:maskValue as [ScanCode.QrCodeMask](https://developer.garmin.com/connect-iq/api-docs/Toybox/ScanCode.html#QrCodeMask-module),:color as [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type),:backgroundColor as [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type) }
-- [**QrCodeValue**](#QrCodeValue-named_type "QrCodeValue (Named Type)") as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) >
+- [**QrCodeOptions**](#QrCodeOptions-named_type "QrCodeOptions (Named Type)") as {:minVersion as [Lang.Number](Lang/Number.md),:maxVersion as [Lang.Number](Lang/Number.md),:maskValue as [ScanCode.QrCodeMask](ScanCode.md#QrCodeMask-module),:color as [Graphics.ColorType](Graphics.md#ColorType-named_type),:backgroundColor as [Graphics.ColorType](Graphics.md#ColorType-named_type) }
+- [**QrCodeValue**](#QrCodeValue-named_type "QrCodeValue (Named Type)") as [Lang.ByteArray](Lang/ByteArray.md) or [Lang.String](Lang/String.md) or [Lang.Array](Lang/Array.md) < [Lang.ByteArray](Lang/ByteArray.md) or [Lang.String](Lang/String.md) >
 
 ## Instance Method Summary
 
-- [**createQrCodeImage**](#createQrCodeImage-instance_function "createQrCodeImage (Instance Function)") (value as [ScanCode.QrCodeValue](https://developer.garmin.com/connect-iq/api-docs/Toybox/ScanCode.html#QrCodeValue-named_type), ecc as [ScanCode.QrCodeEcc](https://developer.garmin.com/connect-iq/api-docs/Toybox/ScanCode.html#QrCodeEcc-module), imageSize as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), options as [ScanCode.QrCodeOptions](https://developer.garmin.com/connect-iq/api-docs/Toybox/ScanCode.html#QrCodeOptions-named_type) or **Null**) as [Graphics.BufferedBitmap](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap.html)
+- [**createQrCodeImage**](#createQrCodeImage-instance_function "createQrCodeImage (Instance Function)") (value as [ScanCode.QrCodeValue](ScanCode.md#QrCodeValue-named_type), ecc as [ScanCode.QrCodeEcc](ScanCode.md#QrCodeEcc-module), imageSize as [Lang.Number](Lang/Number.md), options as [ScanCode.QrCodeOptions](ScanCode.md#QrCodeOptions-named_type) or **Null**) as [Graphics.BufferedBitmap](Graphics/BufferedBitmap.md)
 	Create a Quick Response Code image.
 
 ## Typedef Details

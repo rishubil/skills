@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html
 
 ## Classes Under Namespace
 
-**Classes:** [Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/Info.html), [ProfileInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/ProfileInfo.html), [SplitInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/SplitInfo.html), [WorkoutIntervalStep](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep.html), [WorkoutStep](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStep.html), [WorkoutStepInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo.html)
+**Classes:** [Info](Activity/Info.md), [ProfileInfo](Activity/ProfileInfo.md), [SplitInfo](Activity/SplitInfo.md), [WorkoutIntervalStep](Activity/WorkoutIntervalStep.md), [WorkoutStep](Activity/WorkoutStep.md), [WorkoutStepInfo](Activity/WorkoutStepInfo.md)
 
 ## Constant Summary
 
@@ -293,11 +293,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html
 
 ## Instance Method Summary
 
-- [**getActivityInfo**](#getActivityInfo-instance_function "getActivityInfo (Instance Function)") () as [Activity.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/Info.html) or **Null**
+- [**getActivityInfo**](#getActivityInfo-instance_function "getActivityInfo (Instance Function)") () as [Activity.Info](Activity/Info.md) or **Null**
 	Get the current Activity Info.
-- [**getCurrentWorkoutStep**](#getCurrentWorkoutStep-instance_function "getCurrentWorkoutStep (Instance Function)") () as [Activity.WorkoutStepInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo.html) or **Null**
+- [**getCurrentWorkoutStep**](#getCurrentWorkoutStep-instance_function "getCurrentWorkoutStep (Instance Function)") () as [Activity.WorkoutStepInfo](Activity/WorkoutStepInfo.md) or **Null**
 	Get information about the current workout step.
-- [**getNextWorkoutStep**](#getNextWorkoutStep-instance_function "getNextWorkoutStep (Instance Function)") () as [Activity.WorkoutStepInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo.html) or **Null**
+- [**getNextWorkoutStep**](#getNextWorkoutStep-instance_function "getNextWorkoutStep (Instance Function)") () as [Activity.WorkoutStepInfo](Activity/WorkoutStepInfo.md) or **Null**
 	Get information about the next workout step.
-- [**getProfileInfo**](#getProfileInfo-instance_function "getProfileInfo (Instance Function)") () as [Activity.ProfileInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/ProfileInfo.html)
+- [**getProfileInfo**](#getProfileInfo-instance_function "getProfileInfo (Instance Function)") () as [Activity.ProfileInfo](Activity/ProfileInfo.md)
 	Get information about the current profile.

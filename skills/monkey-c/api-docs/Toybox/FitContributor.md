@@ -7,7 +7,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor.h
 
 ## Overview
 
-The FitContributor module allows Applications and Data Fields to record [Field](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor/Field.html) data into FIT files on the device's file system during an activity. This is useful for recording data that is not already calculated by the device, which can be synced to a service like Garmin Connect.
+The FitContributor module allows Applications and Data Fields to record [Field](FitContributor/Field.md) data into FIT files on the device's file system during an activity. This is useful for recording data that is not already calculated by the device, which can be synced to a service like Garmin Connect.
 
 There are three FitContributor message types available:
 
@@ -23,16 +23,16 @@ MESG\_TYPE\_RECORD
 
 Depending on the device, record data is written once per second or when new data is available (Smart Recording), but is never written faster than once per second. This message type is used for instantaneous values (e.g. current speed).
 
-Data type constants are also available for use with the [createField()](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording/Session.html#createField-instance_function) method.
+Data type constants are also available for use with the [createField()](ActivityRecording/Session.md#createField-instance_function) method.
 
 ## See Also:
 
-- [Session.createField()](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording/Session.html#createField-instance_function)
+- [Session.createField()](ActivityRecording/Session.md#createField-instance_function)
 - [Learn more about the FIT format](http://www.thisisant.com/resources/fit)
 
 ## Classes Under Namespace
 
-**Classes:** [Field](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor/Field.html)
+**Classes:** [Field](FitContributor/Field.md)
 
 ## Constant Summary
 

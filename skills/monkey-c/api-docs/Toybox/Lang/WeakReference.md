@@ -9,14 +9,14 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/WeakReferen
 
 ## See Also:
 
-- [Object.weak()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html#weak-instance_function)
+- [Object.weak()](Object.md#weak-instance_function)
 - [https://en.wikipedia.org/wiki/Weak\_reference](https://en.wikipedia.org/wiki/Weak_reference)
 
 ## Instance Method Summary
 
-- [**get**](#get-instance_function "get (Instance Function)") () as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**
+- [**get**](#get-instance_function "get (Instance Function)") () as [Lang.Object](Object.md) or **Null**
 	Get the Object referenced by the WeakReference.
-- [**stillAlive**](#stillAlive-instance_function "stillAlive (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**stillAlive**](#stillAlive-instance_function "stillAlive (Instance Function)") () as [Lang.Boolean](Boolean.md)
 	Determine whether a WeakReference is still alive.
 
 ## Instance Method Details

@@ -9,13 +9,13 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Animatio
 
 ## Instance Method Summary
 
-- [**getDc**](#getDc-instance_function "getDc (Instance Function)") () as [Graphics.Dc](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/Dc.html) or **Null**
+- [**getDc**](#getDc-instance_function "getDc (Instance Function)") () as [Graphics.Dc](../Graphics/Dc.md) or **Null**
 	getDc will always return `null`, as the dc buffer of animations can not be updated by user.
-- [**getResource**](#getResource-instance_function "getResource (Instance Function)") () as [WatchUi.AnimationResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/AnimationResource.html)
+- [**getResource**](#getResource-instance_function "getResource (Instance Function)") () as [WatchUi.AnimationResource](AnimationResource.md)
 	Get the animation resource.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (rez as [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or [WatchUi.AnimationResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/AnimationResource.html), options as {:locX as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type),:locY as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type),:identifier as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html),:visibility as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) } or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (rez as [Lang.ResourceId](../Lang/ResourceId.md) or [WatchUi.AnimationResource](AnimationResource.md), options as {:locX as [Lang.Numeric](../Lang.md#Numeric-named_type),:locY as [Lang.Numeric](../Lang.md#Numeric-named_type),:identifier as [Lang.Object](../Lang/Object.md),:visibility as [Lang.Boolean](../Lang/Boolean.md) } or **Null**)
 	Constructor.
-- [**play**](#play-instance_function "play (Instance Function)") (options as {:delegate as [WatchUi.AnimationDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate.html) } or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**play**](#play-instance_function "play (Instance Function)") (options as {:delegate as [WatchUi.AnimationDelegate](AnimationDelegate.md) } or **Null**) as [Lang.Boolean](../Lang/Boolean.md)
 	Play animation, animation must be added to and not abandoned by the view before it can be played.
 - [**stop**](#stop-instance_function "stop (Instance Function)") () as **Void**
 	Stop a playing animation.

@@ -11,23 +11,23 @@ A class representing a network of bike lights
 
 ## Instance Method Summary
 
-- [**getBikeLights**](#getBikeLights-instance_function "getBikeLights (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [AntPlus.LightNetworkState](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#LightNetworkState-module) > or **Null**
+- [**getBikeLights**](#getBikeLights-instance_function "getBikeLights (Instance Function)") () as [Lang.Array](../Lang/Array.md) < [AntPlus.LightNetworkState](../AntPlus.md#LightNetworkState-module) > or **Null**
 	Get a list of lights in the network.
-- [**getNetworkMode**](#getNetworkMode-instance_function "getNetworkMode (Instance Function)") () as [AntPlus.LightNetworkMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#LightNetworkMode-module)
+- [**getNetworkMode**](#getNetworkMode-instance_function "getNetworkMode (Instance Function)") () as [AntPlus.LightNetworkMode](../AntPlus.md#LightNetworkMode-module)
 	Get the light network mode.
-- [**getNetworkState**](#getNetworkState-instance_function "getNetworkState (Instance Function)") () as [AntPlus.LightNetworkState](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#LightNetworkState-module)
+- [**getNetworkState**](#getNetworkState-instance_function "getNetworkState (Instance Function)") () as [AntPlus.LightNetworkState](../AntPlus.md#LightNetworkState-module)
 	Get the light network state.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.LightNetworkListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/LightNetworkListener.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.LightNetworkListener](LightNetworkListener.md) or **Null**)
 	Constructor.
 - [**restoreHeadlightsNetworkModeControl**](#restoreHeadlightsNetworkModeControl-instance_function "restoreHeadlightsNetworkModeControl (Instance Function)") () as **Void**
 	Bring all headlights under the control of whichever light network mode has been chosen by the user.
 - [**restoreTaillightsNetworkModeControl**](#restoreTaillightsNetworkModeControl-instance_function "restoreTaillightsNetworkModeControl (Instance Function)") () as **Void**
 	Bring all taillights under the control of whichever light network mode has been chosen by the user.
-- [**setHeadlightsMode**](#setHeadlightsMode-instance_function "setHeadlightsMode (Instance Function)") (mode as [AntPlus.LightMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#LightMode-module)) as **Void**
+- [**setHeadlightsMode**](#setHeadlightsMode-instance_function "setHeadlightsMode (Instance Function)") (mode as [AntPlus.LightMode](../AntPlus.md#LightMode-module)) as **Void**
 	Tell all headlights to enter the same mode.
-- [**setTaillightsMode**](#setTaillightsMode-instance_function "setTaillightsMode (Instance Function)") (mode as [AntPlus.LightMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#LightMode-module)) as **Void**
+- [**setTaillightsMode**](#setTaillightsMode-instance_function "setTaillightsMode (Instance Function)") (mode as [AntPlus.LightMode](../AntPlus.md#LightMode-module)) as **Void**
 	Tell all taillights to enter the same mode.
-- [**toggleSignalLight**](#toggleSignalLight-instance_function "toggleSignalLight (Instance Function)") (left as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)) as **Void**
+- [**toggleSignalLight**](#toggleSignalLight-instance_function "toggleSignalLight (Instance Function)") (left as [Lang.Boolean](../Lang/Boolean.md)) as **Void**
 	A signal switch for right and left signals.
 
 ## Instance Method Details

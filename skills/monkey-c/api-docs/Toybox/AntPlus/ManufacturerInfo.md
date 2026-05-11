@@ -13,11 +13,11 @@ Fields may return `null` so you should `null` check values before using them.
 
 ## Instance Member Summary
 
-- [**hwRevision**](#hwRevision-var "hwRevision (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**hwRevision**](#hwRevision-var "hwRevision (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The Hardware revision.
-- [**manufacturerId**](#manufacturerId-var "manufacturerId (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**manufacturerId**](#manufacturerId-var "manufacturerId (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The Manufacturer ID.
-- [**modelNumber**](#modelNumber-var "modelNumber (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**modelNumber**](#modelNumber-var "modelNumber (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The Model number.
 
 ## Instance Method Summary

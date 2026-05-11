@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html
 
 ## Classes Under Namespace
 
-**Classes:** [ActiveContent](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ActiveContent.html), [AlbumArt](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/AlbumArt.html), [AudioFormat](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/AudioFormat.html), [CacheStatistics](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/CacheStatistics.html), [Content](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/Content.html), [ContentDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html), [ContentIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentIterator.html), [ContentMetadata](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentMetadata.html), [ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html), [ContentRefIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRefIterator.html), [CustomButton](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/CustomButton.html), [PlaybackProfile](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/PlaybackProfile.html), [PlayerColors](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/PlayerColors.html), [ProviderIconInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ProviderIconInfo.html), [SyncDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/SyncDelegate.html), [SystemButton](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/SystemButton.html)
+**Classes:** [ActiveContent](Media/ActiveContent.md), [AlbumArt](Media/AlbumArt.md), [AudioFormat](Media/AudioFormat.md), [CacheStatistics](Media/CacheStatistics.md), [Content](Media/Content.md), [ContentDelegate](Media/ContentDelegate.md), [ContentIterator](Media/ContentIterator.md), [ContentMetadata](Media/ContentMetadata.md), [ContentRef](Media/ContentRef.md), [ContentRefIterator](Media/ContentRefIterator.md), [CustomButton](Media/CustomButton.md), [PlaybackProfile](Media/PlaybackProfile.md), [PlayerColors](Media/PlayerColors.md), [ProviderIconInfo](Media/ProviderIconInfo.md), [SyncDelegate](Media/SyncDelegate.md), [SystemButton](Media/SystemButton.md)
 
 ## Constant Summary
 
@@ -63,15 +63,15 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html
 
 | Name | Value | Since | Description | See Also |
 | --- | --- | --- | --- | --- |
-| SONG\_EVENT\_START | 0 | API Level 3.0.0 | Indicates that a song was started from the beginning. | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_SKIP\_PREVIOUS | 2 | API Level 3.0.0 | Indicates that a song was skipped and the previous song was requested. | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_PLAYBACK\_NOTIFY | 3 | API Level 3.0.0 | Indicates that a song was played for the duration set in [PlaybackProfile.playbackNotificationThreshold](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/PlaybackProfile.html#playbackNotificationThreshold-var). | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_COMPLETE | 4 | API Level 3.0.0 | Indicates that a song was completed. | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_STOP | 5 | API Level 3.0.0 | Indicates that a song was stopped in the middle of playback. | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_PAUSE | 6 | API Level 3.0.0 | Indicates that a song was paused in the middle of playback. | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_RESUME | 7 | API Level 3.0.0 | Indicates that a song was resumed after being paused. | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_SKIP\_FORWARD | 8 | API Level 4.2.4 | Indicates that a song was skipped forward by the number of seconds specified in [PlaybackProfile.skipForwardTimeDelta](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/PlaybackProfile.html#skipForwardTimeDelta-var). | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
-| SONG\_EVENT\_SKIP\_BACKWARD | 9 | API Level 4.2.4 | Indicates that a song was skipped forward by the number of seconds specified in [PlaybackProfile.skipBackwardTimeDelta](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/PlaybackProfile.html#skipBackwardTimeDelta-var). | - [ContentDelegate.onSong()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html#onSong-instance_function) |
+| SONG\_EVENT\_START | 0 | API Level 3.0.0 | Indicates that a song was started from the beginning. | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_SKIP\_PREVIOUS | 2 | API Level 3.0.0 | Indicates that a song was skipped and the previous song was requested. | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_PLAYBACK\_NOTIFY | 3 | API Level 3.0.0 | Indicates that a song was played for the duration set in [PlaybackProfile.playbackNotificationThreshold](Media/PlaybackProfile.md#playbackNotificationThreshold-var). | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_COMPLETE | 4 | API Level 3.0.0 | Indicates that a song was completed. | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_STOP | 5 | API Level 3.0.0 | Indicates that a song was stopped in the middle of playback. | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_PAUSE | 6 | API Level 3.0.0 | Indicates that a song was paused in the middle of playback. | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_RESUME | 7 | API Level 3.0.0 | Indicates that a song was resumed after being paused. | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_SKIP\_FORWARD | 8 | API Level 4.2.4 | Indicates that a song was skipped forward by the number of seconds specified in [PlaybackProfile.skipForwardTimeDelta](Media/PlaybackProfile.md#skipForwardTimeDelta-var). | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
+| SONG\_EVENT\_SKIP\_BACKWARD | 9 | API Level 4.2.4 | Indicates that a song was skipped forward by the number of seconds specified in [PlaybackProfile.skipBackwardTimeDelta](Media/PlaybackProfile.md#skipBackwardTimeDelta-var). | - [ContentDelegate.onSong()](Media/ContentDelegate.md#onSong-instance_function) |
 
 ### RepeatMode
 
@@ -103,28 +103,28 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html
 
 ## Instance Method Summary
 
-- [**deleteCachedItem**](#deleteCachedItem-instance_function "deleteCachedItem (Instance Function)") (contentRef as [Media.ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html)) as **Void**
+- [**deleteCachedItem**](#deleteCachedItem-instance_function "deleteCachedItem (Instance Function)") (contentRef as [Media.ContentRef](Media/ContentRef.md)) as **Void**
 	Delete an individual cached media item.
-- [**getCacheStatistics**](#getCacheStatistics-instance_function "getCacheStatistics (Instance Function)") () as [Media.CacheStatistics](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/CacheStatistics.html)
+- [**getCacheStatistics**](#getCacheStatistics-instance_function "getCacheStatistics (Instance Function)") () as [Media.CacheStatistics](Media/CacheStatistics.md)
 	Get the current size statistics of the media cache.
-- [**getCachedContentObj**](#getCachedContentObj-instance_function "getCachedContentObj (Instance Function)") (contentRef as [Media.ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html)) as [Media.Content](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/Content.html)
-	Get a [Content](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/Content.html) object by ID from what has been persisted on the system.
-- [**getContentRefIter**](#getContentRefIter-instance_function "getContentRefIter (Instance Function)") (options as {:contentType as [Media.ContentType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html#ContentType-module),:shuffle as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) }) as [Media.ContentRefIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRefIterator.html)
-	Get a [ContentRefIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRefIterator.html) object.
-- [**notifySyncComplete**](#notifySyncComplete-instance_function "notifySyncComplete (Instance Function)") (errorMessage as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or **Null**) as **Void** deprecated
+- [**getCachedContentObj**](#getCachedContentObj-instance_function "getCachedContentObj (Instance Function)") (contentRef as [Media.ContentRef](Media/ContentRef.md)) as [Media.Content](Media/Content.md)
+	Get a [Content](Media/Content.md) object by ID from what has been persisted on the system.
+- [**getContentRefIter**](#getContentRefIter-instance_function "getContentRefIter (Instance Function)") (options as {:contentType as [Media.ContentType](Media.md#ContentType-module),:shuffle as [Lang.Boolean](Lang/Boolean.md) }) as [Media.ContentRefIterator](Media/ContentRefIterator.md)
+	Get a [ContentRefIterator](Media/ContentRefIterator.md) object.
+- [**notifySyncComplete**](#notifySyncComplete-instance_function "notifySyncComplete (Instance Function)") (errorMessage as [Lang.String](Lang/String.md) or **Null**) as **Void** deprecated
 	Send a system notification to indicate that the sync completed.
-- [**notifySyncProgress**](#notifySyncProgress-instance_function "notifySyncProgress (Instance Function)") (percentageComplete as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as **Void** deprecated
+- [**notifySyncProgress**](#notifySyncProgress-instance_function "notifySyncProgress (Instance Function)") (percentageComplete as [Lang.Number](Lang/Number.md)) as **Void** deprecated
 	Send a system notification to indicate overall sync progress.
 - [**requestPlaybackProfileUpdate**](#requestPlaybackProfileUpdate-instance_function "requestPlaybackProfileUpdate (Instance Function)") () as **Void**
-	Request that the media player call [ContentIterator.getPlaybackProfile()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentIterator.html#getPlaybackProfile-instance_function).
+	Request that the media player call [ContentIterator.getPlaybackProfile()](Media/ContentIterator.md#getPlaybackProfile-instance_function).
 - [**resetContentCache**](#resetContentCache-instance_function "resetContentCache (Instance Function)") () as **Void**
 	Delete the cached media content and reset the encryption key for the app.
-- [**setAlbumArt**](#setAlbumArt-instance_function "setAlbumArt (Instance Function)") (albumArt as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or **Null**) as **Void**
+- [**setAlbumArt**](#setAlbumArt-instance_function "setAlbumArt (Instance Function)") (albumArt as [Graphics.BitmapType](Graphics.md#BitmapType-named_type) or **Null**) as **Void**
 	Set the album art for the currently playing song.
-- [**startPlayback**](#startPlayback-instance_function "startPlayback (Instance Function)") (args as [Application.PersistableType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#PersistableType-named_type)) as **Void**
-	Exit the [AudioContentProviderApp](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp.html) in its current mode and launch it in playback mode.
+- [**startPlayback**](#startPlayback-instance_function "startPlayback (Instance Function)") (args as [Application.PersistableType](Application.md#PersistableType-named_type)) as **Void**
+	Exit the [AudioContentProviderApp](Application/AudioContentProviderApp.md) in its current mode and launch it in playback mode.
 - [**startSync**](#startSync-instance_function "startSync (Instance Function)") () as **Void** deprecated
-	Exit the [AudioContentProviderApp](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp.html) in its current mode and launch it in sync mode.
+	Exit the [AudioContentProviderApp](Application/AudioContentProviderApp.md) in its current mode and launch it in sync mode.
 - [**stopPlayback**](#stopPlayback-instance_function "stopPlayback (Instance Function)") () as **Void**
 	Stops playback if it was initiated by the app.
 
@@ -158,7 +158,7 @@ This method may be removed after System 9.
 
 Note:
 
-[BitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapReference.html) is only supported in CIQ 4.0.0 and later
+[BitmapReference](Graphics/BitmapReference.md) is only supported in CIQ 4.0.0 and later
 
 ### startPlayback(args as Application.PersistableType) as Void
 

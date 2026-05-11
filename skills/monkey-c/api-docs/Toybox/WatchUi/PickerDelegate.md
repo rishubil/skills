@@ -9,10 +9,10 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/PickerDe
 
 ## See Also:
 
-- [Toybox.WatchUi.Picker](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Picker.html)
+- [Toybox.WatchUi.Picker](Picker.md)
 Note:
 
-[popView()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#popView-instance_function) is not automatically called once a Picker selection is made
+[popView()](../WatchUi.md#popView-instance_function) is not automatically called once a Picker selection is made
 
 Note:
 
@@ -20,10 +20,10 @@ See the Picker sample distributed with the SDK for an example of the use of the 
 
 ## Instance Method Summary
 
-- [**onAccept**](#onAccept-instance_function "onAccept (Instance Function)") (values as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onAccept**](#onAccept-instance_function "onAccept (Instance Function)") (values as [Lang.Array](../Lang/Array.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Handle a confirm event from a Picker.
-- [**onActionMenu**](#onActionMenu-instance_function "onActionMenu (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
-- [**onCancel**](#onCancel-instance_function "onCancel (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onActionMenu**](#onActionMenu-instance_function "onActionMenu (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
+- [**onCancel**](#onCancel-instance_function "onCancel (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Handle a cancel event from a Picker.
 
 ## Instance Method Details
@@ -32,4 +32,4 @@ See the Picker sample distributed with the SDK for an example of the use of the 
 
 Note:
 
-A `null` value will be returned for any [Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) entries
+A `null` value will be returned for any [Drawable](Drawable.md) entries

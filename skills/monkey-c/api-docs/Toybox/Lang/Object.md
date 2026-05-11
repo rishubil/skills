@@ -11,15 +11,15 @@ Object is the root object for the Monkey C class hierarchy.
 
 ## Instance Method Summary
 
-- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](Object.md) or **Null**) as [Lang.Boolean](Boolean.md)
 	Test if an Object instance is equal to another instance of an Object.
-- [**hashCode**](#hashCode-instance_function "hashCode (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**hashCode**](#hashCode-instance_function "hashCode (Instance Function)") () as [Lang.Number](Number.md)
 	Get a hash code value for an Object.
-- [**method**](#method-instance_function "method (Instance Function)") (methodName as [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html)) as [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html)
+- [**method**](#method-instance_function "method (Instance Function)") (methodName as [Lang.Symbol](Symbol.md)) as [Lang.Method](Method.md)
 	Retrieve a callback to a Method.
-- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](String.md)
 	Convert an Object to a String.
-- [**weak**](#weak-instance_function "weak (Instance Function)") () as [Lang.WeakReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/WeakReference.html)
+- [**weak**](#weak-instance_function "weak (Instance Function)") () as [Lang.WeakReference](WeakReference.md)
 	Get a WeakReference to an Object.
 
 ## Instance Method Details

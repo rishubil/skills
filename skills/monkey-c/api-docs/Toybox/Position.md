@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html
 
 ## Classes Under Namespace
 
-**Classes:** [Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Info.html), [Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html)
+**Classes:** [Info](Position/Info.md), [Location](Position/Location.md)
 
 ## Constant Summary
 
@@ -75,15 +75,15 @@ Configuration values for known GNSS configurations
 
 ## Instance Method Summary
 
-- [**createBoundingBox**](#createBoundingBox-instance_function "createBoundingBox (Instance Function)") (locations as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) >) as \[ [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html), [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) \] or **Null**
-	Create a bounding box from an array of [Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) objects.
-- [**enableLocationEvents**](#enableLocationEvents-instance_function "enableLocationEvents (Instance Function)") (options as {:acquisitionType as [Position.LocationAcquisitionType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#LocationAcquisitionType-module),:constellations as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Position.Constellation](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#Constellation-module) >,:configuration as [Position.Configuration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#Configuration-module),:mode as [Position.PositioningMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#PositioningMode-module) } or [Position.LocationAcquisitionType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) (loc as [Position.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Info.html)) as **Void**) as **Void**
+- [**createBoundingBox**](#createBoundingBox-instance_function "createBoundingBox (Instance Function)") (locations as [Lang.Array](Lang/Array.md) < [Position.Location](Position/Location.md) >) as \[ [Position.Location](Position/Location.md), [Position.Location](Position/Location.md) \] or **Null**
+	Create a bounding box from an array of [Location](Position/Location.md) objects.
+- [**enableLocationEvents**](#enableLocationEvents-instance_function "enableLocationEvents (Instance Function)") (options as {:acquisitionType as [Position.LocationAcquisitionType](Position.md#LocationAcquisitionType-module),:constellations as [Lang.Array](Lang/Array.md) < [Position.Constellation](Position.md#Constellation-module) >,:configuration as [Position.Configuration](Position.md#Configuration-module),:mode as [Position.PositioningMode](Position.md#PositioningMode-module) } or [Position.LocationAcquisitionType](Position.md#LocationAcquisitionType-module), listener as **Null** or [Lang.Method](Lang/Method.md) (loc as [Position.Info](Position/Info.md)) as **Void**) as **Void**
 	Request a Location event.
-- [**getInfo**](#getInfo-instance_function "getInfo (Instance Function)") () as [Position.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Info.html)
-	Get the current [Position.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Info.html).
-- [**hasConfigurationSupport**](#hasConfigurationSupport-instance_function "hasConfigurationSupport (Instance Function)") (config as [Position.Configuration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#Configuration-module)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**getInfo**](#getInfo-instance_function "getInfo (Instance Function)") () as [Position.Info](Position/Info.md)
+	Get the current [Position.Info](Position/Info.md).
+- [**hasConfigurationSupport**](#hasConfigurationSupport-instance_function "hasConfigurationSupport (Instance Function)") (config as [Position.Configuration](Position.md#Configuration-module)) as [Lang.Boolean](Lang/Boolean.md)
 	Determines if the device supports a requested GPS configuration.
-- [**parse**](#parse-instance_function "parse (Instance Function)") (string as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), format as [Position.CoordinateFormat](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#CoordinateFormat-module)) as [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html)
+- [**parse**](#parse-instance_function "parse (Instance Function)") (string as [Lang.String](Lang/String.md), format as [Position.CoordinateFormat](Position.md#CoordinateFormat-module)) as [Position.Location](Position/Location.md)
 	Convert a String to a Location object.
 
 ## Instance Method Details
@@ -94,7 +94,7 @@ Configuration values for known GNSS configurations
 
 Note:
 
-Passing an options [Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) is only supported with ConnectIQ 3.2.0 and later.
+Passing an options [Dictionary](Lang/Dictionary.md) is only supported with ConnectIQ 3.2.0 and later.
 
 Note:
 

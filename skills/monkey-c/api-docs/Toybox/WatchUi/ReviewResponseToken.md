@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ReviewRe
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.ReviewResponseToken](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ReviewResponseToken.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.ReviewResponseToken](ReviewResponseToken.md)
 [show all](#)
 
 ## Overview

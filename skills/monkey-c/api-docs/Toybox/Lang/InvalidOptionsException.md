@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/InvalidOpti
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Lang.InvalidOptionsException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException.html)
+- [Toybox.Lang.Object](Object.md)
+- [Toybox.Lang.Exception](Exception.md)
+- [Toybox.Lang.InvalidOptionsException](InvalidOptionsException.md)
 [show all](#)
 
 ## Overview
@@ -19,11 +19,11 @@ This exception indicates invalid options during initialization.
 
 ## See Also:
 
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
+- [Toybox.Lang.Exception](Exception.md)
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](String.md))
 	InvalidOptionsException constructor.
 
 ## Instance Method Details

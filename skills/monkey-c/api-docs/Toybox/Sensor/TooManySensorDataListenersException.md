@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor/TooManySe
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Sensor.TooManySensorDataListenersException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor/TooManySensorDataListenersException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.Sensor.TooManySensorDataListenersException](TooManySensorDataListenersException.md)
 [show all](#)
 
 ## Overview
@@ -19,7 +19,7 @@ This exception indicates more than one listener is tried to register for sensor 
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](../Lang/String.md))
 	Constructor.
 
 ## Instance Method Details

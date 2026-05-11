@@ -13,14 +13,14 @@ Tones have two characteristics: frequency and duration. These characteristics ar
 
 ## Instance Member Summary
 
-- [**duration**](#duration-var "duration (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**duration**](#duration-var "duration (Var)") as [Lang.Number](../Lang/Number.md)
 	The duration of the tone in milliseconds (ms).
-- [**frequency**](#frequency-var "frequency (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**frequency**](#frequency-var "frequency (Var)") as [Lang.Number](../Lang/Number.md)
 	The frequency of the tone in hertz (hz).
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (aFrequency as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), aDuration as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (aFrequency as [Lang.Number](../Lang/Number.md), aDuration as [Lang.Number](../Lang/Number.md))
 	Constructor.
 
 ## Instance Attribute Details

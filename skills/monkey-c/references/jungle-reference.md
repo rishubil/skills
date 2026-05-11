@@ -5,10 +5,10 @@ source: https://developer.garmin.com/connect-iq/reference-guides/jungle-referenc
 
 Welcome to Jungles [<sup>1</sup>](#fntarg_1), the build language for Connect IQ apps. This guide will cover the following topics:
 
-- The [syntax](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#jungle-syntax) of the jungle build language
-- Using [build exclusions](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#excluded-annotations) to tailor your apps at build time
-- Managing [monkey barrels](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#monkey-barrel-management)
-- Using Jungles [with Visual Studio Code](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#using-jungles-with-visual-studio-code) or from the [command line](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#using-jungles-from-the-command-line)
+- The [syntax](jungle-reference.md#jungle-syntax) of the jungle build language
+- Using [build exclusions](jungle-reference.md#excluded-annotations) to tailor your apps at build time
+- Managing [monkey barrels](jungle-reference.md#monkey-barrel-management)
+- Using Jungles [with Visual Studio Code](jungle-reference.md#using-jungles-with-visual-studio-code) or from the [command line](jungle-reference.md#using-jungles-from-the-command-line)
 
 ## Jungle Syntax
 
@@ -23,8 +23,8 @@ Project qualifiers specify global information that applies across the project. P
 | Qualifier | Description |
 | --- | --- |
 | `manifest` | Path to the manifest file for the project |
-| `optimization` | Specifies the optimization level for the project. See the [`--optimization` compiler option](https://developer.garmin.com/connect-iq/monkey-c/compiler-options/#compiler-options) for details |
-| `typecheck` | Specifies the type check level. See the [`--typecheck` compiler option](https://developer.garmin.com/connect-iq/monkey-c/compiler-options/#compiler-options) for details |
+| `optimization` | Specifies the optimization level for the project. See the [`--optimization` compiler option](../overview/compiler-options.md#compiler-options) for details |
+| `typecheck` | Specifies the type check level. See the [`--typecheck` compiler option](../overview/compiler-options.md#compiler-options) for details |
 
 ### Device Qualifiers
 
@@ -139,9 +139,9 @@ When specifying localization resources within Jungle files, the supported langua
 
 ## Excluded Annotations
 
-In some cases, there are specific modules, classes, methods, or variables that should only be used by a subset of devices, but excluding an entire source file is excessive. The `excludeAnnotations` qualifier property allows build instructions to specify specific [annotations](https://developer.garmin.com/connect-iq/monkey-c/annotations/#annotations) that will be excluded when an application is built. This may help save memory during app execution on a device.
+In some cases, there are specific modules, classes, methods, or variables that should only be used by a subset of devices, but excluding an entire source file is excessive. The `excludeAnnotations` qualifier property allows build instructions to specify specific [annotations](../overview/annotations.md#annotations) that will be excluded when an application is built. This may help save memory during app execution on a device.
 
-A common reason for excluding source is when an application uses one algorithm that takes advantage of the latest APIs on newer devices, but must use a simpler algorithm on older devices that don't have the latest APIs available. For example, the following example shows an app that has two methods—one that uses the newer [Sensor.AccelerometerData](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor/AccelerometerData.html), and one that relies on [Info.accel](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor/Info.html#accel-var) data:
+A common reason for excluding source is when an application uses one algorithm that takes advantage of the latest APIs on newer devices, but must use a simpler algorithm on older devices that don't have the latest APIs available. For example, the following example shows an app that has two methods—one that uses the newer [Sensor.AccelerometerData](../api-docs/Toybox/Sensor/AccelerometerData.md), and one that relies on [Info.accel](../api-docs/Toybox/Sensor/Info.md#accel-var) data:
 
 ```c++
 import Toybox.WatchUi;
@@ -310,7 +310,7 @@ By default, each project is configured to look for a `monkey.jungle` file in the
 
 ## Using Jungles from the Command Line
 
-For those who prefer to use the `monkeyc` [shell command](https://developer.garmin.com/connect-iq/reference-guides/monkey-c-command-line-setup/#basic-commands) to build projects rather than Visual Studio Code, the `-f` option is required and accepts a list of Jungle files, separated by semicolons (`;`) or colons (`:`):
+For those who prefer to use the `monkeyc` [shell command](monkey-c-command-line-setup.md#basic-commands) to build projects rather than Visual Studio Code, the `-f` option is required and accepts a list of Jungle files, separated by semicolons (`;`) or colons (`:`):
 
 ```
 monkeyc -o myApp.prg myApp.mc -d fenix5 -f monkey.jungle;monkey2.jungle
@@ -318,9 +318,9 @@ monkeyc -o myApp.prg myApp.mc -d fenix5 -f monkey.jungle;monkey2.jungle
 
 In lieu of this new option, the `-z` option to specify resource paths, the `-x` option to specify build exclusions, the `-m` option to specify the manifest file, and the ability to specify source paths have been deprecated and will be removed in a future SDK release. Here is a general description of how this will work:
 
-- When specifying a Jungle file with the `-f` option, the [default Jungle file](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file) will first be applied to the project before the specified Jungle file is applied
+- When specifying a Jungle file with the `-f` option, the [default Jungle file](jungle-reference.md#the-default-jungle-file) will first be applied to the project before the specified Jungle file is applied
 - If more than one Jungle file is provided after the `-f` option, precedence will be given to the build instructions in the last Jungle file in the list
-- If no resource or source options are specified, either as a Jungle file the compiler will attempt to apply the [default Jungle file](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#the-default-jungle-file) to the project
+- If no resource or source options are specified, either as a Jungle file the compiler will attempt to apply the [default Jungle file](jungle-reference.md#the-default-jungle-file) to the project
 - Use of both the `-f` option and any deprecated options in combination is not allowed and will cause a compiler error
 
 The manifest file of the project must be specified within a Jungle file passed at the command line and any Jungle can contain this specification. Here is what it looks like:

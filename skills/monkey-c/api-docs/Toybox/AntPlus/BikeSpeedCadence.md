@@ -11,9 +11,9 @@ Represents a Bike Speed and Cadence Device instance.
 
 ## Instance Method Summary
 
-- [**getSpeedCadenceInfo**](#getSpeedCadenceInfo-instance_function "getSpeedCadenceInfo (Instance Function)") () as [AntPlus.BikeSpeedCadenceInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo.html)
+- [**getSpeedCadenceInfo**](#getSpeedCadenceInfo-instance_function "getSpeedCadenceInfo (Instance Function)") () as [AntPlus.BikeSpeedCadenceInfo](BikeSpeedCadenceInfo.md)
 	getSpeedCadenceInfo - Returns the most recent BikeSpeedCadenceInfo.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.BikeSpeedCadenceListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceListener.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.BikeSpeedCadenceListener](BikeSpeedCadenceListener.md) or **Null**)
 	Constructor.
 
 ## Instance Method Details

@@ -9,8 +9,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Menu.htm
 
 ## See Also:
 
-- [Toybox.WatchUi.MenuInputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate.html)
-- [WatchUi.pushView()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#pushView-instance_function)
+- [Toybox.WatchUi.MenuInputDelegate](MenuInputDelegate.md)
+- [WatchUi.pushView()](../WatchUi.md#pushView-instance_function)
 Note:
 
 The look and feel of a menu is device-specific.
@@ -25,5 +25,5 @@ The look and feel of a menu is device-specific.
 
 ## Instance Method Summary
 
-- [**addItem**](#addItem-instance_function "addItem (Instance Function)") (label as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html), identifier as [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html)) as **Void**
-- [**setTitle**](#setTitle-instance_function "setTitle (Instance Function)") (title as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html)) as **Void**
+- [**addItem**](#addItem-instance_function "addItem (Instance Function)") (label as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md), identifier as [Lang.Symbol](../Lang/Symbol.md)) as **Void**
+- [**setTitle**](#setTitle-instance_function "setTitle (Instance Function)") (title as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md)) as **Void**

@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeCade
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.BikeCadenceInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.BikeCadenceInfo](BikeCadenceInfo.md)
 [show all](#)
 
 ## Overview
@@ -18,7 +18,7 @@ Represents received bike cadence information.
 
 ## Instance Member Summary
 
-- [**cadence**](#cadence-var "cadence (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**cadence**](#cadence-var "cadence (Var)") as [Lang.Number](../Lang/Number.md)
 	Cadence (rpm).
 
 ## Instance Attribute Details

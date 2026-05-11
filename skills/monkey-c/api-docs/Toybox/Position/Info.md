@@ -9,22 +9,22 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Info.ht
 
 The Position.Info class contains all of the information provided by the positioning system.
 
-Position Info can be retrieved on every call of [onUpdate()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/View.html#onUpdate-instance_function) or it can be obtained on demand. Fields in this class may return `null` so should be checked for `null` values prior to use.
+Position Info can be retrieved on every call of [onUpdate()](../WatchUi/View.md#onUpdate-instance_function) or it can be obtained on demand. Fields in this class may return `null` so should be checked for `null` values prior to use.
 
 ## Instance Member Summary
 
-- [**accuracy**](#accuracy-var "accuracy (Var)") as [Position.Quality](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position.html#Quality-module)
+- [**accuracy**](#accuracy-var "accuracy (Var)") as [Position.Quality](../Position.md#Quality-module)
 	The positional accuracy.
-- [**altitude**](#altitude-var "altitude (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**altitude**](#altitude-var "altitude (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The elevation above mean sea level in meters (m).
-- [**heading**](#heading-var "heading (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**heading**](#heading-var "heading (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The true north referenced heading in radians.
-- [**position**](#position-var "position (Var)") as [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) or **Null**
+- [**position**](#position-var "position (Var)") as [Position.Location](Location.md) or **Null**
 	The latitude and longitude of the position.
-- [**speed**](#speed-var "speed (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**speed**](#speed-var "speed (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The horizontal speed in meters per second (mps).
-- [**when**](#when-var "when (Var)") as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or **Null**
-	The GPS time stamp of the obtained [Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) fix.
+- [**when**](#when-var "when (Var)") as [Time.Moment](../Time/Moment.md) or **Null**
+	The GPS time stamp of the obtained [Location](Location.md) fix.
 
 ## Instance Attribute Details
 
@@ -64,4 +64,4 @@ Speed is derived from the most accurate source in the following order:
 
 ### var when as Time.Moment or Null
 
-The GPS time stamp of the obtained [Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) fix.
+The GPS time stamp of the obtained [Location](Location.md) fix.

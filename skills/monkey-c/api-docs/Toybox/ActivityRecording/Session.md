@@ -11,21 +11,21 @@ Session objects control the FIT recording state machine.
 
 ## Instance Method Summary
 
-- [**addLap**](#addLap-instance_function "addLap (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**addLap**](#addLap-instance_function "addLap (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Add a lap to the current recording.
-- [**createField**](#createField-instance_function "createField (Instance Function)") (name as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), fieldId as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), type as [FitContributor.DataType](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor.html#DataType-module), options as {:count as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:mesgType as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:units as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html),:nativeNum as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) }) as [FitContributor.Field](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor/Field.html)
-	Create a new [Field](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor/Field.html).
-- [**discard**](#discard-instance_function "discard (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**createField**](#createField-instance_function "createField (Instance Function)") (name as [Lang.String](../Lang/String.md), fieldId as [Lang.Number](../Lang/Number.md), type as [FitContributor.DataType](../FitContributor.md#DataType-module), options as {:count as [Lang.Number](../Lang/Number.md),:mesgType as [Lang.Number](../Lang/Number.md),:units as [Lang.String](../Lang/String.md),:nativeNum as [Lang.Number](../Lang/Number.md) }) as [FitContributor.Field](../FitContributor/Field.md)
+	Create a new [Field](../FitContributor/Field.md).
+- [**discard**](#discard-instance_function "discard (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Complete the Session by discarding the recorded data.
-- [**isRecording**](#isRecording-instance_function "isRecording (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**isRecording**](#isRecording-instance_function "isRecording (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Check if recording is active for this Session.
-- [**save**](#save-instance_function "save (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**save**](#save-instance_function "save (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Complete the session by storing the FIT file on the file system.
-- [**setTimerEventListener**](#setTimerEventListener-instance_function "setTimerEventListener (Instance Function)") (listener as [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) (eventType as [ActivityRecording.TimerEventType](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording.html#TimerEventType-module), eventData as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html)) as **Void**) as **Void**
+- [**setTimerEventListener**](#setTimerEventListener-instance_function "setTimerEventListener (Instance Function)") (listener as [Lang.Method](../Lang/Method.md) (eventType as [ActivityRecording.TimerEventType](../ActivityRecording.md#TimerEventType-module), eventData as [Lang.Dictionary](../Lang/Dictionary.md)) as **Void**) as **Void**
 	Set the listener for Session timer events The listener method is called whenever a new timer event occurs.
-- [**start**](#start-instance_function "start (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**start**](#start-instance_function "start (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Begin recording a FIT file on the system.
-- [**stop**](#stop-instance_function "stop (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**stop**](#stop-instance_function "stop (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Stop recording a FIT file on the system.
 
 ## Instance Method Details
@@ -36,7 +36,7 @@ Add a lap to the current recording.
 
 ### createField(name as Lang.String, fieldId as Lang.Number, type as FitContributor.DataType, options as {:count as Lang.Number,:mesgType as Lang.Number,:units as Lang.String,:nativeNum as Lang.Number }) as FitContributor.Field
 
-Create a new [Field](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor/Field.html).
+Create a new [Field](../FitContributor/Field.md).
 
 Field objects allow developers to store information in FIT developer fields. This information can be displayed in Garmin Connect as a per-second graph, as lap information, or as workout summary information.
 

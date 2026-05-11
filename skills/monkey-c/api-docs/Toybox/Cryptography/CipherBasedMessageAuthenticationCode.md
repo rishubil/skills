@@ -17,11 +17,11 @@ A CipherBasedMessageAuthenticationCode is an object that can be used to compute 
 
 ## Instance Method Summary
 
-- [**digest**](#digest-instance_function "digest (Instance Function)") () as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**digest**](#digest-instance_function "digest (Instance Function)") () as [Lang.ByteArray](../Lang/ByteArray.md)
 	Return the digest of the authentication code.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.CipherAlgorithm](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.html#CipherAlgorithm-module),:key as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.CipherAlgorithm](../Cryptography.md#CipherAlgorithm-module),:key as [Lang.ByteArray](../Lang/ByteArray.md) })
 	Constructor.
-- [**update**](#update-instance_function "update (Instance Function)") (message as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)) as **Void**
+- [**update**](#update-instance_function "update (Instance Function)") (message as [Lang.ByteArray](../Lang/ByteArray.md)) as **Void**
 	Continue the computation of the CMAC by consuming the next chunk of data.
 
 ## Instance Method Details

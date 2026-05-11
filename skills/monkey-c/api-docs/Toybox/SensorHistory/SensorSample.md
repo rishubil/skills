@@ -11,9 +11,9 @@ A class containing sensor data at a given time.
 
 ## Instance Member Summary
 
-- [**data**](#data-var "data (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**data**](#data-var "data (Var)") as [Lang.Number](../Lang/Number.md) or [Lang.Float](../Lang/Float.md) or **Null**
 	The Sensor sample.
-- [**when**](#when-var "when (Var)") as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)
+- [**when**](#when-var "when (Var)") as [Time.Moment](../Time/Moment.md)
 	The time of the Sensor sample.
 
 ## Instance Attribute Details

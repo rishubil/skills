@@ -9,21 +9,21 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Animatio
 
 A representation of an animation resource.
 
-AnimationResource objects are returned by the [loadResource()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#loadResource-instance_function) method.
+AnimationResource objects are returned by the [loadResource()](../WatchUi.md#loadResource-instance_function) method.
 
 ## Instance Method Summary
 
-- [**getColorDepth**](#getColorDepth-instance_function "getColorDepth (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getColorDepth**](#getColorDepth-instance_function "getColorDepth (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the color depth in terms of bit/pixel of the animation resource.
-- [**getFrameRate**](#getFrameRate-instance_function "getFrameRate (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getFrameRate**](#getFrameRate-instance_function "getFrameRate (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the target frame rate of an animation resource.
-- [**getHeight**](#getHeight-instance_function "getHeight (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getHeight**](#getHeight-instance_function "getHeight (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the height of an animation resource.
-- [**getNumberOfFrames**](#getNumberOfFrames-instance_function "getNumberOfFrames (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getNumberOfFrames**](#getNumberOfFrames-instance_function "getNumberOfFrames (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the number of frames of an animation resource.
-- [**getWidth**](#getWidth-instance_function "getWidth (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getWidth**](#getWidth-instance_function "getWidth (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the width of an animation resource.
-- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](../Lang/String.md)
 	Get info about an animation resource as a String.
 
 ## Instance Method Details

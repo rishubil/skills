@@ -8,12 +8,12 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/VectorF
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Graphics.VectorFont](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/VectorFont.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Graphics.VectorFont](VectorFont.md)
 [show all](#)
 
 ## Overview
 
 A representation of a vector font.
 
-VectorFont objects are returned by the [getVectorFont()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#getVectorFont-instance_function) method.
+VectorFont objects are returned by the [getVectorFont()](../Graphics.md#getVectorFont-instance_function) method.

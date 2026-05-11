@@ -59,8 +59,8 @@ The following commands allow you to access the SDK tools and documentation from 
 | Command | Description |
 | --- | --- |
 | *Monkey C: Open ERA Viewer* | Opens the [Error Reporting Application](https://developer.garmin.com/connect-iq/core-topics/exception-reporting-tool/#error-reporting-application) tool |
-| *Monkey C: Open Monkey Graph* | Opens the [Monkey Graph](https://developer.garmin.com/connect-iq/reference-guides/monkey-graph-reference/#monkey-graph-reference) tool |
-| *Monkey C: Open Monkey Motion* | Opens the [Monkey Motion](https://developer.garmin.com/connect-iq/reference-guides/monkey-motion-reference/#monkey-motion) tool |
+| *Monkey C: Open Monkey Graph* | Opens the [Monkey Graph](monkey-graph-reference.md#monkey-graph-reference) tool |
+| *Monkey C: Open Monkey Motion* | Opens the [Monkey Motion](monkey-motion-reference.md#monkey-motion) tool |
 | *Monkey C: Open SDK Manager* | Opens the Connect IQ SDK Manager |
 | *Monkey C: View Documentation* | Provides access to all of the Connect IQ SDK documentation |
 

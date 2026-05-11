@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeCade
 Inherits:
 
 Toybox.AntPlus.DeviceListener
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.DeviceListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/DeviceListener.html)
-- [Toybox.AntPlus.BikeCadenceListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceListener.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.DeviceListener](DeviceListener.md)
+- [Toybox.AntPlus.BikeCadenceListener](BikeCadenceListener.md)
 [show all](#)
 
 ## Overview
@@ -21,7 +21,7 @@ Listener class for Bike Cadence
 
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
-- [**onBikeCadenceUpdate**](#onBikeCadenceUpdate-instance_function "onBikeCadenceUpdate (Instance Function)") (data as [AntPlus.BikeCadenceInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeCadenceInfo.html)) as **Void**
+- [**onBikeCadenceUpdate**](#onBikeCadenceUpdate-instance_function "onBikeCadenceUpdate (Instance Function)") (data as [AntPlus.BikeCadenceInfo](BikeCadenceInfo.md)) as **Void**
 	Callback when cadence data is updated.
 
 ## Instance Method Details

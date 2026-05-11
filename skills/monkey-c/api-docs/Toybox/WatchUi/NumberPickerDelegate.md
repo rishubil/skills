@@ -17,11 +17,11 @@ This class may be removed after System 3.
 
 ## See Also:
 
-- [Toybox.WatchUi.NumberPicker](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/NumberPicker.html)
+- [Toybox.WatchUi.NumberPicker](NumberPicker.md)
 
 ## Instance Method Summary
 
-- [**onNumberPicked**](#onNumberPicked-instance_function "onNumberPicked (Instance Function)") (value as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or [Time.Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onNumberPicked**](#onNumberPicked-instance_function "onNumberPicked (Instance Function)") (value as [Lang.Number](../Lang/Number.md) or [Lang.Float](../Lang/Float.md) or [Time.Duration](../Time/Duration.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A number was entered in a NumberPicker.
 
 ## Instance Method Details

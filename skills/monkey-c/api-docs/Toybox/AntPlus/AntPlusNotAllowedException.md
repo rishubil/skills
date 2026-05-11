@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/AntPlusN
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.AntPlus.AntPlusNotAllowedException](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/AntPlusNotAllowedException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.AntPlus.AntPlusNotAllowedException](AntPlusNotAllowedException.md)
 [show all](#)
 
 ## Overview
@@ -19,7 +19,7 @@ This exception indicates that an invalid operation was attempted.
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](../Lang/String.md))
 	Constructor.
 
 ## Instance Method Details

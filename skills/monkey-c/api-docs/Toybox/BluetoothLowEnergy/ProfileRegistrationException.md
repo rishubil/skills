@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEner
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.BluetoothLowEnergy.ProfileRegistrationException](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.BluetoothLowEnergy.ProfileRegistrationException](ProfileRegistrationException.md)
 [show all](#)
 
 ## Overview
@@ -19,4 +19,4 @@ This exception indicates that the profile registration failed due to developer e
 
 ## See Also:
 
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
+- [Toybox.Lang.Exception](../Lang/Exception.md)

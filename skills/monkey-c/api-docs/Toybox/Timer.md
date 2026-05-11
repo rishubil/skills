@@ -13,4 +13,4 @@ This Timer can be used to run code at some point in the future or at a regular i
 
 ## Classes Under Namespace
 
-**Classes:** [Timer](https://developer.garmin.com/connect-iq/api-docs/Toybox/Timer/Timer.html)
+**Classes:** [Timer](Timer/Timer.md)

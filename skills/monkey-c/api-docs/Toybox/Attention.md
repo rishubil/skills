@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html
 
 ## Classes Under Namespace
 
-**Classes:** [BacklightOnTooLongException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention/BacklightOnTooLongException.html), [ToneProfile](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention/ToneProfile.html), [VibeProfile](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention/VibeProfile.html)
+**Classes:** [BacklightOnTooLongException](Attention/BacklightOnTooLongException.md), [ToneProfile](Attention/ToneProfile.md), [VibeProfile](Attention/VibeProfile.md)
 
 ## Constant Summary
 
@@ -104,14 +104,14 @@ Flashlight result codes
 
 ## Instance Method Summary
 
-- [**backlight**](#backlight-instance_function "backlight (Instance Function)") (setting as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**backlight**](#backlight-instance_function "backlight (Instance Function)") (setting as [Lang.Boolean](Lang/Boolean.md) or [Lang.Float](Lang/Float.md)) as **Void**
 	Control the display backlight.
-- [**hasFlashlightColor**](#hasFlashlightColor-instance_function "hasFlashlightColor (Instance Function)") (color as [Attention.FlashlightColor](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#FlashlightColor-module)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**hasFlashlightColor**](#hasFlashlightColor-instance_function "hasFlashlightColor (Instance Function)") (color as [Attention.FlashlightColor](Attention.md#FlashlightColor-module)) as [Lang.Boolean](Lang/Boolean.md)
 	Determine if a given flashlight color is supported by this device.
-- [**playTone**](#playTone-instance_function "playTone (Instance Function)") (options as [Attention.Tone](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#Tone-module) or {:toneProfile as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Attention.ToneProfile](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention/ToneProfile.html) >,:repeatCount as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) }) as **Void**
+- [**playTone**](#playTone-instance_function "playTone (Instance Function)") (options as [Attention.Tone](Attention.md#Tone-module) or {:toneProfile as [Lang.Array](Lang/Array.md) < [Attention.ToneProfile](Attention/ToneProfile.md) >,:repeatCount as [Lang.Number](Lang/Number.md) }) as **Void**
 	Play a tone.
-- [**setFlashlightMode**](#setFlashlightMode-instance_function "setFlashlightMode (Instance Function)") (mode as [Attention.FlashlightMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#FlashlightMode-module), options as {:color as [Attention.FlashlightColor](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#FlashlightColor-module),:brightness as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Attention.FlashlightBrightness](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#FlashlightBrightness-module),:strobeMode as [Attention.FlashlightStrobeMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#FlashlightStrobeMode-module),:strobeSpeed as [Attention.FlashlightStrobeSpeed](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#FlashlightStrobeSpeed-module) } or **Null**) as [Attention.FlashlightResult](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention.html#FlashlightResult-module)
-- [**vibrate**](#vibrate-instance_function "vibrate (Instance Function)") (vibeProfiles as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Attention.VibeProfile](https://developer.garmin.com/connect-iq/api-docs/Toybox/Attention/VibeProfile.html) >) as **Void**
+- [**setFlashlightMode**](#setFlashlightMode-instance_function "setFlashlightMode (Instance Function)") (mode as [Attention.FlashlightMode](Attention.md#FlashlightMode-module), options as {:color as [Attention.FlashlightColor](Attention.md#FlashlightColor-module),:brightness as [Lang.Number](Lang/Number.md) or [Attention.FlashlightBrightness](Attention.md#FlashlightBrightness-module),:strobeMode as [Attention.FlashlightStrobeMode](Attention.md#FlashlightStrobeMode-module),:strobeSpeed as [Attention.FlashlightStrobeSpeed](Attention.md#FlashlightStrobeSpeed-module) } or **Null**) as [Attention.FlashlightResult](Attention.md#FlashlightResult-module)
+- [**vibrate**](#vibrate-instance_function "vibrate (Instance Function)") (vibeProfiles as [Lang.Array](Lang/Array.md) < [Attention.VibeProfile](Attention/VibeProfile.md) >) as **Void**
 	Engage the vibration motor.
 
 ## Instance Method Details
@@ -120,7 +120,7 @@ Flashlight result codes
 
 Note:
 
-Passing a [Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) is only supported with ConnectIQ 3.2.1 and later.
+Passing a [Float](Lang/Float.md) is only supported with ConnectIQ 3.2.1 and later.
 
 ### hasFlashlightColor(color as Attention.FlashlightColor) as Lang.Boolean
 
@@ -128,7 +128,7 @@ Passing a [Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/F
 
 Note:
 
-Passing an options [Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) is only supported with ConnectIQ 3.1.0 and later.
+Passing an options [Dictionary](Lang/Dictionary.md) is only supported with ConnectIQ 3.1.0 and later.
 
 ### setFlashlightMode(mode as Attention.FlashlightMode, options as {:color as Attention.FlashlightColor,:brightness as Lang.Number or Attention.FlashlightBrightness,:strobeMode as Attention.FlashlightStrobeMode,:strobeSpeed as Attention.FlashlightStrobeSpeed } or Null) as Attention.FlashlightResult
 

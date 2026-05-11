@@ -9,29 +9,29 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/GenericChann
 
 ## Instance Method Summary
 
-- [**close**](#close-instance_function "close (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**close**](#close-instance_function "close (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Close a generic ANT Channel.
-- [**disableEncryption**](#disableEncryption-instance_function "disableEncryption (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**disableEncryption**](#disableEncryption-instance_function "disableEncryption (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Disable encryption on this channel.
-- [**enableEncryption**](#enableEncryption-instance_function "enableEncryption (Instance Function)") (configuration as [Ant.CryptoConfig](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/CryptoConfig.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**enableEncryption**](#enableEncryption-instance_function "enableEncryption (Instance Function)") (configuration as [Ant.CryptoConfig](CryptoConfig.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Set the encryption configuration and enable encryption on this channel.
-- [**getDeviceConfig**](#getDeviceConfig-instance_function "getDeviceConfig (Instance Function)") () as [Ant.DeviceConfig](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/DeviceConfig.html)
+- [**getDeviceConfig**](#getDeviceConfig-instance_function "getDeviceConfig (Instance Function)") () as [Ant.DeviceConfig](DeviceConfig.md)
 	Get the current ANT channel configuration.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) (msg as [Ant.Message](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/Message.html)) as **Void**, channelAssignment as [Ant.ChannelAssignment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/ChannelAssignment.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [Lang.Method](../Lang/Method.md) (msg as [Ant.Message](Message.md)) as **Void**, channelAssignment as [Ant.ChannelAssignment](ChannelAssignment.md))
 	Constructor.
-- [**open**](#open-instance_function "open (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**open**](#open-instance_function "open (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Open a generic ANT Channel.
-- [**release**](#release-instance_function "release (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**release**](#release-instance_function "release (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Release the generic ANT Channel back to the system.
-- [**sendAcknowledge**](#sendAcknowledge-instance_function "sendAcknowledge (Instance Function)") (data as [Ant.Message](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/Message.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**sendAcknowledge**](#sendAcknowledge-instance_function "sendAcknowledge (Instance Function)") (data as [Ant.Message](Message.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Send an acknowledge message.
-- [**sendBroadcast**](#sendBroadcast-instance_function "sendBroadcast (Instance Function)") (data as [Ant.Message](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/Message.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**sendBroadcast**](#sendBroadcast-instance_function "sendBroadcast (Instance Function)") (data as [Ant.Message](Message.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Send a broadcast message.
-- [**sendBurst**](#sendBurst-instance_function "sendBurst (Instance Function)") (burstData as [Ant.BurstPayload](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload.html)) as **Void**
-	Send an [Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) of [Messages](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/Message.html) as a burst across the ANT channel.
-- [**setBurstListener**](#setBurstListener-instance_function "setBurstListener (Instance Function)") (listener as [Ant.BurstListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstListener.html)) as **Void**
-	Set the [BurstListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstListener.html) for burst events.
-- [**setDeviceConfig**](#setDeviceConfig-instance_function "setDeviceConfig (Instance Function)") (configuration as [Ant.DeviceConfig](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/DeviceConfig.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**sendBurst**](#sendBurst-instance_function "sendBurst (Instance Function)") (burstData as [Ant.BurstPayload](BurstPayload.md)) as **Void**
+	Send an [Array](../Lang/Array.md) of [Messages](Message.md) as a burst across the ANT channel.
+- [**setBurstListener**](#setBurstListener-instance_function "setBurstListener (Instance Function)") (listener as [Ant.BurstListener](BurstListener.md)) as **Void**
+	Set the [BurstListener](BurstListener.md) for burst events.
+- [**setDeviceConfig**](#setDeviceConfig-instance_function "setDeviceConfig (Instance Function)") (configuration as [Ant.DeviceConfig](DeviceConfig.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Set the current ANT channel configuration.
 
 ## Instance Method Details

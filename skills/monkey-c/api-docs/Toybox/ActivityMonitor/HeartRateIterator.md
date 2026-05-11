@@ -11,11 +11,11 @@ A class containing heart rate data for a given period of time.
 
 ## Instance Method Summary
 
-- [**getMax**](#getMax-instance_function "getMax (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**getMax**](#getMax-instance_function "getMax (Instance Function)") () as [Lang.Number](../Lang/Number.md) or **Null**
 	Get the maximum heart rate contained in this iterator.
-- [**getMin**](#getMin-instance_function "getMin (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**getMin**](#getMin-instance_function "getMin (Instance Function)") () as [Lang.Number](../Lang/Number.md) or **Null**
 	Get the minimum heart rate contained in this iterator.
-- [**next**](#next-instance_function "next (Instance Function)") () as [ActivityMonitor.HeartRateSample](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample.html) or **Null**
+- [**next**](#next-instance_function "next (Instance Function)") () as [ActivityMonitor.HeartRateSample](HeartRateSample.md) or **Null**
 	Get the next entry in the iterator.
 
 ## Instance Method Details

@@ -11,15 +11,15 @@ Represents the wind and track simulation training mode settings on the fitness e
 
 ## Instance Member Summary
 
-- [**draftFactor**](#draftFactor-var "draftFactor (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**draftFactor**](#draftFactor-var "draftFactor (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The simulated draft factor setting for simulation mode A draft factor of 0 removes all wind resistance, and 1.0 indicates no drafting effects.
-- [**slope**](#slope-var "slope (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**slope**](#slope-var "slope (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The slope (grade) setting of the simulated track.
-- [**surfaceResistance**](#surfaceResistance-var "surfaceResistance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**surfaceResistance**](#surfaceResistance-var "surfaceResistance (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The simulated surface resistance coefficient for simulation mode.
-- [**windResistance**](#windResistance-var "windResistance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**windResistance**](#windResistance-var "windResistance (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The simulated wind resistance coefficient setting for simulation mode Wind Resistance Coefficient \[kg/m\] = Frontal Surface Area \[m2\] x Drag Coefficient x Air Density \[kg/m3\].
-- [**windSpeed**](#windSpeed-var "windSpeed (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**windSpeed**](#windSpeed-var "windSpeed (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The simulated wind speed setting for simulation mode.
 
 ## Instance Attribute Details

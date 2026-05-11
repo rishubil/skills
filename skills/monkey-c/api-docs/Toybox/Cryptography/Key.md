@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Cryptography.Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Cryptography.Key](Key.md)
 [show all](#)
 
 ## Overview
@@ -18,7 +18,7 @@ A public key or a private key.
 
 ## Instance Method Summary
 
-- [**getBytes**](#getBytes-instance_function "getBytes (Instance Function)") () as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html) or **Null**
+- [**getBytes**](#getBytes-instance_function "getBytes (Instance Function)") () as [Lang.ByteArray](../Lang/ByteArray.md) or **Null**
 	Get the bytes of a Key object.
 
 ## Instance Method Details

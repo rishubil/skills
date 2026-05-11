@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Time.html
 
 The Time module provides functionality for dealing with times and dates.
 
-There are two main concepts used by Monkey C when working with time: the [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) and [Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html). A Moment is a single point in time, while a Duration is a span of time. Moments and Durations can be used together for time calculations in the following ways:
+There are two main concepts used by Monkey C when working with time: the [Moment](Time/Moment.md) and [Duration](Time/Duration.md). A Moment is a single point in time, while a Duration is a span of time. Moments and Durations can be used together for time calculations in the following ways:
 
 ```
 Expression           Method               Result    Notes
@@ -25,7 +25,7 @@ Duration - Duration  Duration.subtract()  Duration  A shorter Duration
 Duration - Moment    -                    -         Invalid
 ```
 
-Dates and times are generally represented in UTC time from the UNIX epoch, with the exception of the [Gregorian Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian.html#moment-instance_function), which are created relative to the current local time.
+Dates and times are generally represented in UTC time from the UNIX epoch, with the exception of the [Gregorian Moment](Time/Gregorian.md#moment-instance_function), which are created relative to the current local time.
 
 Date and time formatting in Monkey C is relatively open-ended, providing some formatting constants for short, medium, and long formatting (long and medium formatting are currently equivalent).
 
@@ -44,11 +44,11 @@ FORMAT_LONG    |  0        0        0      Wed          1    Mar    2017
 
 ## Modules Under Namespace
 
-**Modules:** [Time.Gregorian](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian.html)
+**Modules:** [Time.Gregorian](Time/Gregorian.md)
 
 ## Classes Under Namespace
 
-**Classes:** [Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html), [LocalMoment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/LocalMoment.html), [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html), [RealTimeClockNotValidException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/RealTimeClockNotValidException.html)
+**Classes:** [Duration](Time/Duration.md), [LocalMoment](Time/LocalMoment.md), [Moment](Time/Moment.md), [RealTimeClockNotValidException](Time/RealTimeClockNotValidException.md)
 
 ## Constant Summary
 
@@ -70,9 +70,9 @@ FORMAT_LONG    |  0        0        0      Wed          1    Mar    2017
 
 ## Instance Method Summary
 
-- [**getCurrentTime**](#getCurrentTime-instance_function "getCurrentTime (Instance Function)") (options as {:currentTimeType as [Time.CurrentTime](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time.html#CurrentTime-module) }) as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)
-	Get a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) for the current time based on the specified source.
-- [**now**](#now-instance_function "now (Instance Function)") () as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)
-	Get a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) for the current time.
-- [**today**](#today-instance_function "today (Instance Function)") () as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)
-	Get a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) for midnight today.
+- [**getCurrentTime**](#getCurrentTime-instance_function "getCurrentTime (Instance Function)") (options as {:currentTimeType as [Time.CurrentTime](Time.md#CurrentTime-module) }) as [Time.Moment](Time/Moment.md)
+	Get a [Moment](Time/Moment.md) for the current time based on the specified source.
+- [**now**](#now-instance_function "now (Instance Function)") () as [Time.Moment](Time/Moment.md)
+	Get a [Moment](Time/Moment.md) for the current time.
+- [**today**](#today-instance_function "today (Instance Function)") () as [Time.Moment](Time/Moment.md)
+	Get a [Moment](Time/Moment.md) for midnight today.

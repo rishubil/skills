@@ -11,21 +11,21 @@ Provides the media player with specific rules about what playback options are su
 
 ## Instance Member Summary
 
-- [**attemptSkipAfterThumbsDown**](#attemptSkipAfterThumbsDown-var "attemptSkipAfterThumbsDown (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**attemptSkipAfterThumbsDown**](#attemptSkipAfterThumbsDown-var "attemptSkipAfterThumbsDown (Var)") as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	Defines if the current song is skipped if a thumbs-down operation is given.
-- [**playbackControls**](#playbackControls-var "playbackControls (Var)") as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Media.PlaybackControl](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html#PlaybackControl-module) or [Media.CustomButton](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/CustomButton.html) or [Media.SystemButton](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/SystemButton.html) > or **Null**
+- [**playbackControls**](#playbackControls-var "playbackControls (Var)") as [Lang.Array](../Lang/Array.md) < [Media.PlaybackControl](../Media.md#PlaybackControl-module) or [Media.CustomButton](CustomButton.md) or [Media.SystemButton](SystemButton.md) > or **Null**
 	Playback controls that should be rendered in the player.
-- [**playbackNotificationThreshold**](#playbackNotificationThreshold-var "playbackNotificationThreshold (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**playbackNotificationThreshold**](#playbackNotificationThreshold-var "playbackNotificationThreshold (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The number of seconds a song must play to trigger a "played" notification.
-- [**playerColors**](#playerColors-var "playerColors (Var)") as [Media.PlayerColors](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/PlayerColors.html) or **Null**
+- [**playerColors**](#playerColors-var "playerColors (Var)") as [Media.PlayerColors](PlayerColors.md) or **Null**
 	The colors for the media player.
-- [**requirePlaybackNotification**](#requirePlaybackNotification-var "requirePlaybackNotification (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**requirePlaybackNotification**](#requirePlaybackNotification-var "requirePlaybackNotification (Var)") as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	Defines if the system notifies the app when each song is played.
-- [**skipBackwardTimeDelta**](#skipBackwardTimeDelta-var "skipBackwardTimeDelta (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**skipBackwardTimeDelta**](#skipBackwardTimeDelta-var "skipBackwardTimeDelta (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The number of seconds to move backward in a track during a skip backward event.
-- [**skipForwardTimeDelta**](#skipForwardTimeDelta-var "skipForwardTimeDelta (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**skipForwardTimeDelta**](#skipForwardTimeDelta-var "skipForwardTimeDelta (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The number of seconds to move forward in a track during a skip forward event.
-- [**skipPreviousThreshold**](#skipPreviousThreshold-var "skipPreviousThreshold (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**skipPreviousThreshold**](#skipPreviousThreshold-var "skipPreviousThreshold (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The amount of time a song must be played so that pressing back restarts the track and requires a second back press to skip to the previous track in seconds.
 
 ## Instance Attribute Details
@@ -38,7 +38,7 @@ Defines if the current song is skipped if a thumbs-down operation is given
 
 Playback controls that should be rendered in the player.
 
-This is an Array that holds a combination of [PLAYBACK\_CONTROL\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html#PlaybackControl-module), [CustomButton](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/CustomButton.html), and [SystemButton](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/SystemButton.html) values defined by the developer. The values in this Array determine which native media player control options are rendered and available to the end user of the current device. The first entry in the array may be used as a hotkey in the media player. This is device dependent.
+This is an Array that holds a combination of [PLAYBACK\_CONTROL\_\*](../Media.md#PlaybackControl-module), [CustomButton](CustomButton.md), and [SystemButton](SystemButton.md) values defined by the developer. The values in this Array determine which native media player control options are rendered and available to the end user of the current device. The first entry in the array may be used as a hotkey in the media player. This is device dependent.
 
 ### var playbackNotificationThreshold as Lang.Number or Null
 

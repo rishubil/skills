@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Math/IirFilter.h
 Inherits:
 
 Toybox.Math.Filter
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Math.Filter](https://developer.garmin.com/connect-iq/api-docs/Toybox/Math/Filter.html)
-- [Toybox.Math.IirFilter](https://developer.garmin.com/connect-iq/api-docs/Toybox/Math/IirFilter.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Math.Filter](Filter.md)
+- [Toybox.Math.IirFilter](IirFilter.md)
 [show all](#)
 
 ## Overview
@@ -23,8 +23,8 @@ Infinite Impulse Response (IIR) filter implementation.
 
 ## Instance Method Summary
 
-- [**apply**](#apply-instance_function "apply (Instance Function)") (data as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type) >) as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) >
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (dictionary as {:coefficients\_a as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) > or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html),:coefficients\_b as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) > or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html),:gain as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) })
+- [**apply**](#apply-instance_function "apply (Instance Function)") (data as [Lang.Array](../Lang/Array.md) < [Lang.Numeric](../Lang.md#Numeric-named_type) >) as [Lang.Array](../Lang/Array.md) < [Lang.Float](../Lang/Float.md) >
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (dictionary as {:coefficients\_a as [Lang.Array](../Lang/Array.md) < [Lang.Float](../Lang/Float.md) > or [Lang.ResourceId](../Lang/ResourceId.md),:coefficients\_b as [Lang.Array](../Lang/Array.md) < [Lang.Float](../Lang/Float.md) > or [Lang.ResourceId](../Lang/ResourceId.md),:gain as [Lang.Float](../Lang/Float.md) })
 	Constructor.
 
 ## Instance Method Details

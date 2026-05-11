@@ -16,13 +16,13 @@ An exception will be thrown if the base Filter class version of this method is c
 
 ## Direct Known Subclasses
 
-[Math.FirFilter](https://developer.garmin.com/connect-iq/api-docs/Toybox/Math/FirFilter.html), [Math.IirFilter](https://developer.garmin.com/connect-iq/api-docs/Toybox/Math/IirFilter.html)
+[Math.FirFilter](FirFilter.md), [Math.IirFilter](IirFilter.md)
 
 ## Instance Method Summary
 
-- [**apply**](#apply-instance_function "apply (Instance Function)") (data as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type) >) as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) >
+- [**apply**](#apply-instance_function "apply (Instance Function)") (data as [Lang.Array](../Lang/Array.md) < [Lang.Numeric](../Lang.md#Numeric-named_type) >) as [Lang.Array](../Lang/Array.md) < [Lang.Float](../Lang/Float.md) >
 	Apply the Filter to an Array of samples.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (dictionary as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (dictionary as [Lang.Dictionary](../Lang/Dictionary.md))
 	Constructor.
 
 ## Instance Method Details

@@ -13,14 +13,14 @@ Vibrations have two characteristics: duty cycle and length. These characteristic
 
 ## Instance Member Summary
 
-- [**dutyCycle**](#dutyCycle-var "dutyCycle (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**dutyCycle**](#dutyCycle-var "dutyCycle (Var)") as [Lang.Number](../Lang/Number.md)
 	The strength of the vibration.
-- [**length**](#length-var "length (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**length**](#length-var "length (Var)") as [Lang.Number](../Lang/Number.md)
 	Length of the vibration in milliseconds (ms).
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (dutyCycleVal as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), lengthVal as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (dutyCycleVal as [Lang.Number](../Lang/Number.md), lengthVal as [Lang.Number](../Lang/Number.md))
 	Constructor.
 
 ## Instance Attribute Details

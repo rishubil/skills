@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Complica
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.ComplicationDrawableRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.ComplicationDrawableRef](ComplicationDrawableRef.md)
 [show all](#)
 
 ## Overview
@@ -18,7 +18,7 @@ Complication drawable reference which defines the drawable and its bounds used t
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:drawable as [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html),:boundingBox as [Graphics.BoundingBox](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BoundingBox.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:drawable as [WatchUi.Drawable](Drawable.md),:boundingBox as [Graphics.BoundingBox](../Graphics/BoundingBox.md) })
 	Constructor.
 
 ## Instance Method Details

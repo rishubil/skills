@@ -19,39 +19,39 @@ This is a 2D transform, typically used for converting coordinates from one 2D co
 
 ## Instance Method Summary
 
-- [**concatenate**](#concatenate-instance_function "concatenate (Instance Function)") (xform as [Graphics.AffineTransform](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/AffineTransform.html)) as **Void**
+- [**concatenate**](#concatenate-instance_function "concatenate (Instance Function)") (xform as [Graphics.AffineTransform](AffineTransform.md)) as **Void**
 	Apply the given transform Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | x00 x01 x02 | | m10 m11 m12 | x | x10 x11 x12 | | 0 0 1 | | 0 0 1 |.
-- [**getDeterminant**](#getDeterminant-instance_function "getDeterminant (Instance Function)") () as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)
+- [**getDeterminant**](#getDeterminant-instance_function "getDeterminant (Instance Function)") () as [Lang.Float](../Lang/Float.md)
 	Get the transform determinant.
-- [**getMatrix**](#getMatrix-instance_function "getMatrix (Instance Function)") () as \[ [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) \]
+- [**getMatrix**](#getMatrix-instance_function "getMatrix (Instance Function)") () as \[ [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md) \]
 	Get the transform values Get the underlying values of this transform as an Array | m00 m01 m02 | | m10 m11 m12 | => \[ m00, m01, m02, m10, m11, m12 \] | 0 0 1 |.
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	initialize self to the identity transform | 1 0 0 | | 0 1 0 | | 0 0 1 |.
 - [**invert**](#invert-instance_function "invert (Instance Function)") () as **Void**
 	Invert self.
-- [**preConcatenate**](#preConcatenate-instance_function "preConcatenate (Instance Function)") (xform as [Graphics.AffineTransform](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/AffineTransform.html)) as **Void**
+- [**preConcatenate**](#preConcatenate-instance_function "preConcatenate (Instance Function)") (xform as [Graphics.AffineTransform](AffineTransform.md)) as **Void**
 	Apply the given transform Assign self to the result of the following matrix-matrix product: | x00 x01 x02 | | m00 m01 m02 | | x10 x11 x12 | x | m10 m11 m12 | | 0 0 1 | | 0 0 1 |.
-- [**rotate**](#rotate-instance_function "rotate (Instance Function)") (theta as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**rotate**](#rotate-instance_function "rotate (Instance Function)") (theta as [Lang.Float](../Lang/Float.md)) as **Void**
 	Apply a rotation Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | cos -sin 0 | | m10 m11 m12 | x | sin cos 0 | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToRotation(theta); self.concatenate(xform);.
-- [**scale**](#scale-instance_function "scale (Instance Function)") (sx as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), sy as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**scale**](#scale-instance_function "scale (Instance Function)") (sx as [Lang.Float](../Lang/Float.md), sy as [Lang.Float](../Lang/Float.md)) as **Void**
 	Apply a scale Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | sx 0 0 | | m10 m11 m12 | x | 0 sy 0 | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToScale(sx, sy); self.concatenate(xform);.
-- [**setMatrix**](#setMatrix-instance_function "setMatrix (Instance Function)") (m as \[ [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) \]) as **Void**
+- [**setMatrix**](#setMatrix-instance_function "setMatrix (Instance Function)") (m as \[ [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md), [Lang.Float](../Lang/Float.md) \]) as **Void**
 	Set the transform values | m00 m01 m02 | \[ m00, m01, m02, m10, m11, m12 \] => | m10 m11 m12 | | 0 0 1 |.
-- [**setToRotation**](#setToRotation-instance_function "setToRotation (Instance Function)") (theta as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**setToRotation**](#setToRotation-instance_function "setToRotation (Instance Function)") (theta as [Lang.Float](../Lang/Float.md)) as **Void**
 	Set self to a rotation transform | cos -sin 0 | | sin cos 0 | | 0 0 1 |.
-- [**setToScale**](#setToScale-instance_function "setToScale (Instance Function)") (sx as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), sy as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**setToScale**](#setToScale-instance_function "setToScale (Instance Function)") (sx as [Lang.Float](../Lang/Float.md), sy as [Lang.Float](../Lang/Float.md)) as **Void**
 	Set self to a scale transform | sx 0 0 | | 0 sy 0 | | 0 0 1 |.
-- [**setToShear**](#setToShear-instance_function "setToShear (Instance Function)") (shx as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), shy as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**setToShear**](#setToShear-instance_function "setToShear (Instance Function)") (shx as [Lang.Float](../Lang/Float.md), shy as [Lang.Float](../Lang/Float.md)) as **Void**
 	Set self to a shear transform | 1 shx 0 | | shy 1 0 | | 0 0 1 |.
-- [**setToTranslation**](#setToTranslation-instance_function "setToTranslation (Instance Function)") (tx as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), ty as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**setToTranslation**](#setToTranslation-instance_function "setToTranslation (Instance Function)") (tx as [Lang.Float](../Lang/Float.md), ty as [Lang.Float](../Lang/Float.md)) as **Void**
 	Set self to a translation transform | 1 0 tx | | 0 1 ty | | 0 0 1 |.
-- [**shear**](#shear-instance_function "shear (Instance Function)") (shx as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), shy as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**shear**](#shear-instance_function "shear (Instance Function)") (shx as [Lang.Float](../Lang/Float.md), shy as [Lang.Float](../Lang/Float.md)) as **Void**
 	Apply a shear Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | 1 shx 0 | | m10 m11 m12 | x | shy 1 0 | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToShear(shx, shy); self.concatenate(xform);.
-- [**transformPoint**](#transformPoint-instance_function "transformPoint (Instance Function)") (pt as [Graphics.Point2D](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#Point2D-named_type)) as [Graphics.Point2D](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#Point2D-named_type)
+- [**transformPoint**](#transformPoint-instance_function "transformPoint (Instance Function)") (pt as [Graphics.Point2D](../Graphics.md#Point2D-named_type)) as [Graphics.Point2D](../Graphics.md#Point2D-named_type)
 	Apply transform to a 2D coordinate Transform a single point as if by generating the following matrix-vector product: | m00 m01 m02 | | ptx | | m10 m11 m12 | x | pty | | 0 0 1 | | 1 |.
-- [**transformPoints**](#transformPoints-instance_function "transformPoints (Instance Function)") (pts as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Graphics.Point2D](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#Point2D-named_type) >) as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Graphics.Point2D](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#Point2D-named_type) >
+- [**transformPoints**](#transformPoints-instance_function "transformPoints (Instance Function)") (pts as [Lang.Array](../Lang/Array.md) < [Graphics.Point2D](../Graphics.md#Point2D-named_type) >) as [Lang.Array](../Lang/Array.md) < [Graphics.Point2D](../Graphics.md#Point2D-named_type) >
 	Apply transform to an Array of 2D coordinates Transform an array of coordinates.
-- [**translate**](#translate-instance_function "translate (Instance Function)") (tx as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), ty as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)) as **Void**
+- [**translate**](#translate-instance_function "translate (Instance Function)") (tx as [Lang.Float](../Lang/Float.md), ty as [Lang.Float](../Lang/Float.md)) as **Void**
 	Apply translation Assign self to the result of the following matrix-matrix product: | m00 m01 m02 | | 1 0 tx | | m10 m11 m12 | x | 0 1 ty | | 0 0 1 | | 0 0 1 | Equivalent to var xform = new AffineTransform(); xform.setToTranslation(tx, ty); self.concatenate(xform);.
 
 ## Instance Method Details

@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.PersistedContent.Course](https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent/Course.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.PersistedContent.Course](Course.md)
 [show all](#)
 
 ## Overview
@@ -18,17 +18,17 @@ A saved Course on the device in.FIT format.
 
 ## See Also:
 
-- [PersistedContent.getCourses()](https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent.html#getCourses-instance_function)
+- [PersistedContent.getCourses()](../PersistedContent.md#getCourses-instance_function)
 
 ## Instance Method Summary
 
-- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get a unique serializable id.
-- [**getName**](#getName-instance_function "getName (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**getName**](#getName-instance_function "getName (Instance Function)") () as [Lang.String](../Lang/String.md)
 	Get a readable name for the content.
 - [**remove**](#remove-instance_function "remove (Instance Function)") () as **Void**
 	Remove a course.
-- [**toIntent**](#toIntent-instance_function "toIntent (Instance Function)") () as [System.Intent](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/Intent.html)
+- [**toIntent**](#toIntent-instance_function "toIntent (Instance Function)") () as [System.Intent](../System/Intent.md)
 	Get a system intent for the content.
 
 ## Instance Method Details

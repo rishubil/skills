@@ -11,7 +11,7 @@ Represents the basic resistance percentage set on fitness equipment when the equ
 
 ## Instance Member Summary
 
-- [**basicResistance**](#basicResistance-var "basicResistance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**basicResistance**](#basicResistance-var "basicResistance (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The resistance percentage of the fitness equipment.
 
 ## Instance Attribute Details

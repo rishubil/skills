@@ -17,11 +17,11 @@ A HashBasedMessageAuthenticationCode is an object that can be used to compute a 
 
 ## Instance Method Summary
 
-- [**digest**](#digest-instance_function "digest (Instance Function)") () as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**digest**](#digest-instance_function "digest (Instance Function)") () as [Lang.ByteArray](../Lang/ByteArray.md)
 	Return the digest of the authentication code.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.HashAlgorithm](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.html#HashAlgorithm-module),:key as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.HashAlgorithm](../Cryptography.md#HashAlgorithm-module),:key as [Lang.ByteArray](../Lang/ByteArray.md) })
 	Constructor.
-- [**update**](#update-instance_function "update (Instance Function)") (message as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)) as **Void**
+- [**update**](#update-instance_function "update (Instance Function)") (message as [Lang.ByteArray](../Lang/ByteArray.md)) as **Void**
 	Continue computation of the HMAC by consuming the next chunk of data.
 
 ## Instance Method Details

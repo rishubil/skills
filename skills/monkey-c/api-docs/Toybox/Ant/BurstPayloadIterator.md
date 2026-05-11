@@ -7,16 +7,16 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload
 
 ## Overview
 
-An iterator to use with a [BurstPayload](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload.html).
+An iterator to use with a [BurstPayload](BurstPayload.md).
 
 The BurstPayloadIterator is used to iterate over the BurstPayload and and access each data packet.
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (newBurstPayload as [Ant.BurstPayload](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (newBurstPayload as [Ant.BurstPayload](BurstPayload.md))
 	Constructor.
-- [**next**](#next-instance_function "next (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) > or **Null**
-	Return the next message in the [BurstPayload](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload.html) object.
+- [**next**](#next-instance_function "next (Instance Function)") () as [Lang.Array](../Lang/Array.md) < [Lang.Number](../Lang/Number.md) > or **Null**
+	Return the next message in the [BurstPayload](BurstPayload.md) object.
 
 ## Instance Method Details
 
@@ -26,4 +26,4 @@ Constructor
 
 ### next() as Lang.Array<Lang.Number> or Null
 
-Return the next message in the [BurstPayload](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload.html) object.
+Return the next message in the [BurstPayload](BurstPayload.md) object.
