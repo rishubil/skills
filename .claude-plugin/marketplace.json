@@ -10,12 +10,20 @@
   },
   "plugins": [
     {
-      "name": "personal-skills",
-      "description": "Personal collection of skills for everyday use",
+      "name": "shell-script",
+      "description": "Specialist skill for writing Bash shell scripts with best practices and error handling.",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/shell-script",
+        "./skills/shell-script"
+      ]
+    },
+    {
+      "name": "fetch-docs",
+      "description": "Fetch web-based development documentation and save it as clean markdown files preserving the site's directory structure.",
+      "source": "./",
+      "strict": false,
+      "skills": [
         "./skills/fetch-docs"
       ]
     }
