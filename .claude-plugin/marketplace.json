@@ -44,6 +44,15 @@
       "skills": [
         "./skills/wordpress-meta-box"
       ]
+    },
+    {
+      "name": "wordpress-classic-theme",
+      "description": "Specialist skill for developing WordPress classic (PHP-based) themes — template hierarchy, The Loop, theme functions, sidebars, widgets, navigation menus, Customizer API, and more. Does not cover block themes.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/wordpress-classic-theme"
+      ]
     }
   ]
 }
