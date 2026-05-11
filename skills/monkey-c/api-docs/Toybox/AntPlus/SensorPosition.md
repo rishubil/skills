@@ -11,17 +11,17 @@ Information about the position of the sensor on the body. Fields may return `nul
 
 ## Instance Member Summary
 
-- [**bodyLocation**](#bodyLocation-var "bodyLocation (Var)") as [AntPlus.BodyLocation](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BodyLocation-module) or **Null**
-	[AntPlus.BODY\_LOCATION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BodyLocation-module).
-- [**orientation**](#orientation-var "orientation (Var)") as [AntPlus.SensorOrientation](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#SensorOrientation-module) or **Null**
-	[AntPlus.SENSOR\_ORIENTATION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#SensorOrientation-module).
+- [**bodyLocation**](#bodyLocation-var "bodyLocation (Var)") as [AntPlus.BodyLocation](../AntPlus.md#BodyLocation-module) or **Null**
+	[AntPlus.BODY\_LOCATION\_\*](../AntPlus.md#BodyLocation-module).
+- [**orientation**](#orientation-var "orientation (Var)") as [AntPlus.SensorOrientation](../AntPlus.md#SensorOrientation-module) or **Null**
+	[AntPlus.SENSOR\_ORIENTATION\_\*](../AntPlus.md#SensorOrientation-module).
 
 ## Instance Attribute Details
 
 ### var bodyLocation as AntPlus.BodyLocation or Null
 
-[AntPlus.BODY\_LOCATION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BodyLocation-module)
+[AntPlus.BODY\_LOCATION\_\*](../AntPlus.md#BodyLocation-module)
 
 ### var orientation as AntPlus.SensorOrientation or Null
 
-[AntPlus.SENSOR\_ORIENTATION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#SensorOrientation-module)
+[AntPlus.SENSOR\_ORIENTATION\_\*](../AntPlus.md#SensorOrientation-module)

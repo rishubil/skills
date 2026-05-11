@@ -11,11 +11,11 @@ A class representing the active minutes recorded by the device.
 
 ## Instance Member Summary
 
-- [**moderate**](#moderate-var "moderate (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**moderate**](#moderate-var "moderate (Var)") as [Lang.Number](../Lang/Number.md)
 	The total number of moderate activity minutes recorded by the device.
-- [**total**](#total-var "total (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**total**](#total-var "total (Var)") as [Lang.Number](../Lang/Number.md)
 	The total number of active minutes recorded by the device.
-- [**vigorous**](#vigorous-var "vigorous (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**vigorous**](#vigorous-var "vigorous (Var)") as [Lang.Number](../Lang/Number.md)
 	The total number of vigorous activity minutes recorded by the device.
 
 ## Instance Attribute Details

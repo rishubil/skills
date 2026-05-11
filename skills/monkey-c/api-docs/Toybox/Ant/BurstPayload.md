@@ -9,9 +9,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload
 
 ## Instance Method Summary
 
-- [**add**](#add-instance_function "add (Instance Function)") (message as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) > or [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)) as **Void**
+- [**add**](#add-instance_function "add (Instance Function)") (message as [Lang.Array](../Lang/Array.md) < [Lang.Number](../Lang/Number.md) > or [Lang.ByteArray](../Lang/ByteArray.md)) as **Void**
 	Add bytes to the end of the burst data.
-- [**getSize**](#getSize-instance_function "getSize (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getSize**](#getSize-instance_function "getSize (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Return the number of bursts contained in the payload.
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
@@ -22,4 +22,4 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/BurstPayload
 
 Note:
 
-[ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html) is supported with ConnectIQ 4.2.0 and later.
+[ByteArray](../Lang/ByteArray.md) is supported with ConnectIQ 4.2.0 and later.

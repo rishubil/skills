@@ -7,13 +7,13 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/O
 
 ## Overview
 
-An OAuthMessage received by the callback registered in [registerForOAuthMessages()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications.html#registerForOAuthMessages-instance_function).
+An OAuthMessage received by the callback registered in [registerForOAuthMessages()](../Communications.md#registerForOAuthMessages-instance_function).
 
-Unlike the `data` in the [Message](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/Message.html) parent class, data in an OAuthMessage should always be a [Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html).
+Unlike the `data` in the [Message](Message.md) parent class, data in an OAuthMessage should always be a [Dictionary](../Lang/Dictionary.md).
 
 ## Instance Member Summary
 
-- [**responseCode**](#responseCode-var "responseCode (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**responseCode**](#responseCode-var "responseCode (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	An HTTP response code (positive value) or BLE error code (negative value).
 
 ## Instance Method Summary

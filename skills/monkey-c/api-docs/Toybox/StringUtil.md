@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/StringUtil.html
 
 ## Classes Under Namespace
 
-**Classes:** [InvalidHexStringException](https://developer.garmin.com/connect-iq/api-docs/Toybox/StringUtil/InvalidHexStringException.html)
+**Classes:** [InvalidHexStringException](StringUtil/InvalidHexStringException.md)
 
 ## Constant Summary
 
@@ -30,11 +30,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/StringUtil.html
 
 ## Instance Method Summary
 
-- [**charArrayToString**](#charArrayToString-instance_function "charArrayToString (Instance Function)") (charArray as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html) >) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
-	Given an Array of [Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html) objects, return the String equivalent.
-- [**convertEncodedString**](#convertEncodedString-instance_function "convertEncodedString (Instance Function)") (input as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html), options as {:fromRepresentation as [StringUtil.Representation](https://developer.garmin.com/connect-iq/api-docs/Toybox/StringUtil.html#Representation-module),:toRepresentation as [StringUtil.Representation](https://developer.garmin.com/connect-iq/api-docs/Toybox/StringUtil.html#Representation-module),:encoding as [StringUtil.CharacterEncoding](https://developer.garmin.com/connect-iq/api-docs/Toybox/StringUtil.html#CharacterEncoding-module) }) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**charArrayToString**](#charArrayToString-instance_function "charArrayToString (Instance Function)") (charArray as [Lang.Array](Lang/Array.md) < [Lang.Char](Lang/Char.md) >) as [Lang.String](Lang/String.md)
+	Given an Array of [Char](Lang/Char.md) objects, return the String equivalent.
+- [**convertEncodedString**](#convertEncodedString-instance_function "convertEncodedString (Instance Function)") (input as [Lang.String](Lang/String.md) or [Lang.ByteArray](Lang/ByteArray.md), options as {:fromRepresentation as [StringUtil.Representation](StringUtil.md#Representation-module),:toRepresentation as [StringUtil.Representation](StringUtil.md#Representation-module),:encoding as [StringUtil.CharacterEncoding](StringUtil.md#CharacterEncoding-module) }) as [Lang.String](Lang/String.md) or [Lang.ByteArray](Lang/ByteArray.md)
 	Convert a String or ByteArray representation to a String or ByteArray representation whose underlying byte format corresponds to the provided input options.
-- [**encodeBase64**](#encodeBase64-instance_function "encodeBase64 (Instance Function)") (string as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**encodeBase64**](#encodeBase64-instance_function "encodeBase64 (Instance Function)") (string as [Lang.String](Lang/String.md)) as [Lang.String](Lang/String.md)
 	Encodes a String in base64.
-- [**utf8ArrayToString**](#utf8ArrayToString-instance_function "utf8ArrayToString (Instance Function)") (utf8Array as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) >) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**utf8ArrayToString**](#utf8ArrayToString-instance_function "utf8ArrayToString (Instance Function)") (utf8Array as [Lang.Array](Lang/Array.md) < [Lang.Number](Lang/Number.md) >) as [Lang.String](Lang/String.md)
 	Given an Array of UTF-8 bytes, return the String equivalent.

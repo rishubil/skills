@@ -9,21 +9,21 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/Workout
 
 The WorkoutStepInfo class contains information about the current workout.
 
-This information can be retrieved with the [getCurrentWorkoutStep()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#getCurrentWorkoutStep-instance_function) or [getNextWorkoutStep()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#getNextWorkoutStep-instance_function) methods.
+This information can be retrieved with the [getCurrentWorkoutStep()](../Activity.md#getCurrentWorkoutStep-instance_function) or [getNextWorkoutStep()](../Activity.md#getNextWorkoutStep-instance_function) methods.
 
 ## Instance Member Summary
 
-- [**intensity**](#intensity-var "intensity (Var)") as [Activity.WorkoutIntensity](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#WorkoutIntensity-module)
+- [**intensity**](#intensity-var "intensity (Var)") as [Activity.WorkoutIntensity](../Activity.md#WorkoutIntensity-module)
 	The intensity of the step.
-- [**name**](#name-var "name (Var)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**name**](#name-var "name (Var)") as [Lang.String](../Lang/String.md)
 	The name of the current step.
-- [**notes**](#notes-var "notes (Var)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**notes**](#notes-var "notes (Var)") as [Lang.String](../Lang/String.md)
 	The notes for the current step.
-- [**sport**](#sport-var "sport (Var)") as [Activity.Sport](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#Sport-module)
+- [**sport**](#sport-var "sport (Var)") as [Activity.Sport](../Activity.md#Sport-module)
 	The sport for the workout step.
-- [**step**](#step-var "step (Var)") as [Activity.WorkoutStep](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStep.html) or [Activity.WorkoutIntervalStep](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutIntervalStep.html)
+- [**step**](#step-var "step (Var)") as [Activity.WorkoutStep](WorkoutStep.md) or [Activity.WorkoutIntervalStep](WorkoutIntervalStep.md)
 	Duration and target information about the step.
-- [**subSport**](#subSport-var "subSport (Var)") as [Activity.SubSport](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#SubSport-module) or **Null**
+- [**subSport**](#subSport-var "subSport (Var)") as [Activity.SubSport](../Activity.md#SubSport-module) or **Null**
 	The subsport for the workout step.
 
 ## Instance Attribute Details

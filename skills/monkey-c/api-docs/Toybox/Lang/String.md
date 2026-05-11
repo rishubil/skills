@@ -9,39 +9,39 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html
 
 ## Instance Method Summary
 
-- [**compareTo**](#compareTo-instance_function "compareTo (Instance Function)") (other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**compareTo**](#compareTo-instance_function "compareTo (Instance Function)") (other as [Lang.Object](Object.md)) as [Lang.Number](Number.md)
 	Lexicographically compare self to some other string.
-- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](Object.md) or **Null**) as [Lang.Boolean](Boolean.md)
 	Test if an Object instance is equal to another instance of an Object.
-- [**find**](#find-instance_function "find (Instance Function)") (string as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**find**](#find-instance_function "find (Instance Function)") (string as [Lang.String](String.md)) as [Lang.Number](Number.md) or **Null**
 	Determine if the specified String exists in a String.
-- [**hashCode**](#hashCode-instance_function "hashCode (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**hashCode**](#hashCode-instance_function "hashCode (Instance Function)") () as [Lang.Number](Number.md)
 	Get a hash code value for a String.
-- [**length**](#length-instance_function "length (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**length**](#length-instance_function "length (Instance Function)") () as [Lang.Number](Number.md)
 	Get the number of characters in a String.
-- [**substring**](#substring-instance_function "substring (Instance Function)") (startIndex as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**, endIndex as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or **Null**
+- [**substring**](#substring-instance_function "substring (Instance Function)") (startIndex as [Lang.Number](Number.md) or **Null**, endIndex as [Lang.Number](Number.md) or **Null**) as [Lang.String](String.md) or **Null**
 	Create a new String that contains the contents of the current String from a start position to an end position.
-- [**toCharArray**](#toCharArray-instance_function "toCharArray (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html) >
+- [**toCharArray**](#toCharArray-instance_function "toCharArray (Instance Function)") () as [Lang.Array](Array.md) < [Lang.Char](Char.md) >
 	Convert a String to an Array of Char objects.
-- [**toDouble**](#toDouble-instance_function "toDouble (Instance Function)") () as [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html) or **Null**
+- [**toDouble**](#toDouble-instance_function "toDouble (Instance Function)") () as [Lang.Double](Double.md) or **Null**
 	Convert a String to a Double.
-- [**toFloat**](#toFloat-instance_function "toFloat (Instance Function)") () as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**toFloat**](#toFloat-instance_function "toFloat (Instance Function)") () as [Lang.Float](Float.md) or **Null**
 	Convert a String to a Float.
-- [**toLong**](#toLong-instance_function "toLong (Instance Function)") () as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html) or **Null**
+- [**toLong**](#toLong-instance_function "toLong (Instance Function)") () as [Lang.Long](Long.md) or **Null**
 	Convert a String to a Long.
-- [**toLongWithBase**](#toLongWithBase-instance_function "toLongWithBase (Instance Function)") (base as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html) or **Null**
+- [**toLongWithBase**](#toLongWithBase-instance_function "toLongWithBase (Instance Function)") (base as [Lang.Number](Number.md)) as [Lang.Long](Long.md) or **Null**
 	Convert a String to a Long using a specified base.
-- [**toLower**](#toLower-instance_function "toLower (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toLower**](#toLower-instance_function "toLower (Instance Function)") () as [Lang.String](String.md)
 	Convert a String to lowercase.
-- [**toNumber**](#toNumber-instance_function "toNumber (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**toNumber**](#toNumber-instance_function "toNumber (Instance Function)") () as [Lang.Number](Number.md) or **Null**
 	Convert a String to a Number.
-- [**toNumberWithBase**](#toNumberWithBase-instance_function "toNumberWithBase (Instance Function)") (base as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**toNumberWithBase**](#toNumberWithBase-instance_function "toNumberWithBase (Instance Function)") (base as [Lang.Number](Number.md)) as [Lang.Number](Number.md) or **Null**
 	Convert a String to a Number using a specified base.
-- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](String.md)
 	Convert a String to a String.
-- [**toUpper**](#toUpper-instance_function "toUpper (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toUpper**](#toUpper-instance_function "toUpper (Instance Function)") () as [Lang.String](String.md)
 	Convert a String to uppercase.
-- [**toUtf8Array**](#toUtf8Array-instance_function "toUtf8Array (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) >
+- [**toUtf8Array**](#toUtf8Array-instance_function "toUtf8Array (Instance Function)") () as [Lang.Array](Array.md) < [Lang.Number](Number.md) >
 	Convert a String to an Array of Number objects.
 
 ## Instance Method Details

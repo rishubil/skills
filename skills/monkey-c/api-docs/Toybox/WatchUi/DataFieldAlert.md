@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataFiel
 Inherits:
 
 Toybox.WatchUi.View
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.View](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/View.html)
-- [Toybox.WatchUi.DataFieldAlert](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.View](View.md)
+- [Toybox.WatchUi.DataFieldAlert](DataFieldAlert.md)
 [show all](#)
 
 ## Overview

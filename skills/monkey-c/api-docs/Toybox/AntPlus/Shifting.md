@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/Shifting
 Inherits:
 
 Toybox.AntPlus.Device
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.Device](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/Device.html)
-- [Toybox.AntPlus.Shifting](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/Shifting.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.Device](Device.md)
+- [Toybox.AntPlus.Shifting](Shifting.md)
 [show all](#)
 
 ## Overview
@@ -19,9 +19,9 @@ Represents a shifting device instance
 
 ## Instance Method Summary
 
-- [**getShiftingStatus**](#getShiftingStatus-instance_function "getShiftingStatus (Instance Function)") () as [AntPlus.ShiftingStatus](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus.html)
+- [**getShiftingStatus**](#getShiftingStatus-instance_function "getShiftingStatus (Instance Function)") () as [AntPlus.ShiftingStatus](ShiftingStatus.md)
 	Get current shifting system status Will not provide status for Shimano shifting systems.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.ShiftingListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.ShiftingListener](ShiftingListener.md) or **Null**)
 	Constructor.
 
 ## Instance Method Details

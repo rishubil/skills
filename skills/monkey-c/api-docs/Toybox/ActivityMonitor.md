@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor.
 
 ## Classes Under Namespace
 
-**Classes:** [ActiveMinutes](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes.html), [HeartRateIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator.html), [HeartRateSample](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateSample.html), [History](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/History.html), [Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/Info.html)
+**Classes:** [ActiveMinutes](ActivityMonitor/ActiveMinutes.md), [HeartRateIterator](ActivityMonitor/HeartRateIterator.md), [HeartRateSample](ActivityMonitor/HeartRateSample.md), [History](ActivityMonitor/History.md), [Info](ActivityMonitor/Info.md)
 
 ## Constant Summary
 
@@ -23,9 +23,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor.
 
 ## Instance Method Summary
 
-- [**getHeartRateHistory**](#getHeartRateHistory-instance_function "getHeartRateHistory (Instance Function)") (period as [Time.Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html) or [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**, newestFirst as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)) as [ActivityMonitor.HeartRateIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/HeartRateIterator.html)
+- [**getHeartRateHistory**](#getHeartRateHistory-instance_function "getHeartRateHistory (Instance Function)") (period as [Time.Duration](Time/Duration.md) or [Lang.Number](Lang/Number.md) or **Null**, newestFirst as [Lang.Boolean](Lang/Boolean.md)) as [ActivityMonitor.HeartRateIterator](ActivityMonitor/HeartRateIterator.md)
 	Get the heart rate history for the given period, up to the last power cycle.
-- [**getHistory**](#getHistory-instance_function "getHistory (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [ActivityMonitor.History](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/History.html) >
+- [**getHistory**](#getHistory-instance_function "getHistory (Instance Function)") () as [Lang.Array](Lang/Array.md) < [ActivityMonitor.History](ActivityMonitor/History.md) >
 	Get an Array of ActivityMonitor.History objects.
-- [**getInfo**](#getInfo-instance_function "getInfo (Instance Function)") () as [ActivityMonitor.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/Info.html)
-	Get the current [ActivityMonitor.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/Info.html).
+- [**getInfo**](#getInfo-instance_function "getInfo (Instance Function)") () as [ActivityMonitor.Info](ActivityMonitor/Info.md)
+	Get the current [ActivityMonitor.Info](ActivityMonitor/Info.md).

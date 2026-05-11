@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/Shifting
 Inherits:
 
 Toybox.AntPlus.DeviceListener
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.DeviceListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/DeviceListener.html)
-- [Toybox.AntPlus.ShiftingListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/ShiftingListener.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.DeviceListener](DeviceListener.md)
+- [Toybox.AntPlus.ShiftingListener](ShiftingListener.md)
 [show all](#)
 
 ## Overview
@@ -21,7 +21,7 @@ Listener class for shifting
 
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
-- [**onShiftingUpdate**](#onShiftingUpdate-instance_function "onShiftingUpdate (Instance Function)") (data as [AntPlus.ShiftingStatus](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/ShiftingStatus.html)) as **Void**
+- [**onShiftingUpdate**](#onShiftingUpdate-instance_function "onShiftingUpdate (Instance Function)") (data as [AntPlus.ShiftingStatus](ShiftingStatus.md)) as **Void**
 	Callback when shifting system status is changed.
 
 ## Instance Method Details

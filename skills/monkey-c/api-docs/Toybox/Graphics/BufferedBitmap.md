@@ -13,19 +13,19 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/Buffere
 
 ## Instance Method Summary
 
-- [**getDc**](#getDc-instance_function "getDc (Instance Function)") () as [Graphics.Dc](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/Dc.html)
+- [**getDc**](#getDc-instance_function "getDc (Instance Function)") () as [Graphics.Dc](Dc.md)
 	Get the Dc to draw on the buffered bitmap.
-- [**getHeight**](#getHeight-instance_function "getHeight (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getHeight**](#getHeight-instance_function "getHeight (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the height of a bitmap.
-- [**getPalette**](#getPalette-instance_function "getPalette (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type) >
+- [**getPalette**](#getPalette-instance_function "getPalette (Instance Function)") () as [Lang.Array](../Lang/Array.md) < [Graphics.ColorType](../Graphics.md#ColorType-named_type) >
 	`null` if this surface uses the system palette.
-- [**getWidth**](#getWidth-instance_function "getWidth (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getWidth**](#getWidth-instance_function "getWidth (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the width of a bitmap.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:width as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:height as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:palette as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type) >,:colorDepth as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:bitmapResource as [WatchUi.BitmapResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BitmapResource.html),:alphaBlending as [Graphics.AlphaBlending](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#AlphaBlending-module) }) deprecated
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:width as [Lang.Number](../Lang/Number.md),:height as [Lang.Number](../Lang/Number.md),:palette as [Lang.Array](../Lang/Array.md) < [Graphics.ColorType](../Graphics.md#ColorType-named_type) >,:colorDepth as [Lang.Number](../Lang/Number.md),:bitmapResource as [WatchUi.BitmapResource](../WatchUi/BitmapResource.md),:alphaBlending as [Graphics.AlphaBlending](../Graphics.md#AlphaBlending-module) }) deprecated
 	Constructor.
-- [**isCached**](#isCached-instance_function "isCached (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
-	Check if the memory for the bitmap is still loaded in the memory User can invoke this method to check if the underlying resource is still available in the memory since last used if `true`, the resource such as [BufferedBitmap](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap.html) has been cached and can be used directly without re-drawing.
-- [**setPalette**](#setPalette-instance_function "setPalette (Instance Function)") (palette as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type) >) as **Void**
+- [**isCached**](#isCached-instance_function "isCached (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
+	Check if the memory for the bitmap is still loaded in the memory User can invoke this method to check if the underlying resource is still available in the memory since last used if `true`, the resource such as [BufferedBitmap](BufferedBitmap.md) has been cached and can be used directly without re-drawing.
+- [**setPalette**](#setPalette-instance_function "setPalette (Instance Function)") (palette as [Lang.Array](../Lang/Array.md) < [Graphics.ColorType](../Graphics.md#ColorType-named_type) >) as **Void**
 
 ## Instance Method Details
 
@@ -41,4 +41,4 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/Buffere
 
 **This has been deprecated**
 
-Use [Graphics.createBufferedBitmap()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#createBufferedBitmap-instance_function) after ConnectIQ version 4.0.0.
+Use [Graphics.createBufferedBitmap()](../Graphics.md#createBufferedBitmap-instance_function) after ConnectIQ version 4.0.0.

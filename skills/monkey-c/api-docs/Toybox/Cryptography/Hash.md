@@ -13,11 +13,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Has
 
 ## Instance Method Summary
 
-- [**digest**](#digest-instance_function "digest (Instance Function)") () as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**digest**](#digest-instance_function "digest (Instance Function)") () as [Lang.ByteArray](../Lang/ByteArray.md)
 	Get the current digest of the message that has been hashed.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.HashAlgorithm](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.html#HashAlgorithm-module) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.HashAlgorithm](../Cryptography.md#HashAlgorithm-module) })
 	Constructor.
-- [**update**](#update-instance_function "update (Instance Function)") (message as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)) as **Void**
+- [**update**](#update-instance_function "update (Instance Function)") (message as [Lang.ByteArray](../Lang/ByteArray.md)) as **Void**
 	Continue hashing of a message by consuming the next chunk of data.
 
 ## Instance Method Details

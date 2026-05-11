@@ -13,27 +13,27 @@ The goal of Monkey C is to round the sharp edges of app development, allowing de
 
 ### Data Types
 
-Monkey C is a [duck typed](https://en.wikipedia.org/wiki/Duck_typing) language, and does not have true primitive types. The [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html), [Lang.Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html), [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), and [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html) types are all objects, which means primitives can have methods just like other objects. In languages like Java or C++, types must be declared for each function parameter and return value. The Monkey C compiler will optionally verify type safety, however, and runtime errors occur when functions mishandle objects. Using operators like can help avoid potential typing issues.
+Monkey C is a [duck typed](https://en.wikipedia.org/wiki/Duck_typing) language, and does not have true primitive types. The [Lang.Boolean](../api-docs/Toybox/Lang/Boolean.md), [Lang.Char](../api-docs/Toybox/Lang/Char.md), [Lang.Number](../api-docs/Toybox/Lang/Number.md), [Lang.Long](../api-docs/Toybox/Lang/Long.md), [Lang.Float](../api-docs/Toybox/Lang/Float.md), and [Lang.Double](../api-docs/Toybox/Lang/Double.md) types are all objects, which means primitives can have methods just like other objects. In languages like Java or C++, types must be declared for each function parameter and return value. The Monkey C compiler will optionally verify type safety, however, and runtime errors occur when functions mishandle objects. Using operators like can help avoid potential typing issues.
 
 The basic data types supported by Monkey C are:
 
 | Type | Description | Example |
 | --- | --- | --- |
-| [Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) | 32-bit signed integer | `var x = 5;` |
-| [Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) | 32-bit floating point number | `var y = 6.0;` |
-| [Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html) \* | 64-bit signed integer | `var l = 5l;` |
-| [Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html) \* | 64-bit floating point number | `var d = 4.0d;` |
-| [Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) | `true` and `false` | `var bool = true;` |
-| [Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html) | UTF-32 character | `var c = 'x';` |
-| [String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) \* | A sequence of characters | `var str = "Hello";` |
-| [Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html) | A lightweight constant identifier (See for more info) | `var sym = :mySymbol;` |
+| [Number](../api-docs/Toybox/Lang/Number.md) | 32-bit signed integer | `var x = 5;` |
+| [Float](../api-docs/Toybox/Lang/Float.md) | 32-bit floating point number | `var y = 6.0;` |
+| [Long](../api-docs/Toybox/Lang/Long.md) \* | 64-bit signed integer | `var l = 5l;` |
+| [Double](../api-docs/Toybox/Lang/Double.md) \* | 64-bit floating point number | `var d = 4.0d;` |
+| [Boolean](../api-docs/Toybox/Lang/Boolean.md) | `true` and `false` | `var bool = true;` |
+| [Char](../api-docs/Toybox/Lang/Char.md) | UTF-32 character | `var c = 'x';` |
+| [String](../api-docs/Toybox/Lang/String.md) \* | A sequence of characters | `var str = "Hello";` |
+| [Symbol](../api-docs/Toybox/Lang/Symbol.md) | A lightweight constant identifier (See for more info) | `var sym = :mySymbol;` |
 
 Monkey C also supports two container types:
 
 | Type | Description | Example |
 | --- | --- | --- |
-| [Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) \* | Fixed size (not a linked list), numerically indexed, single dimensional list of objects | `var arr = new [1, 2, 3];` |
-| [Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) \* | An associative array or hash table that maps keys to values | `var dict = {one=>1, two=>2};` |
+| [Array](../api-docs/Toybox/Lang/Array.md) \* | Fixed size (not a linked list), numerically indexed, single dimensional list of objects | `var arr = new [1, 2, 3];` |
+| [Dictionary](../api-docs/Toybox/Lang/Dictionary.md) \* | An associative array or hash table that maps keys to values | `var dict = {one=>1, two=>2};` |
 
 There are several keywords, operators, and reserved words in the Monkey C programming language that cannot be used as variables or symbols in your programs:
 
@@ -42,7 +42,7 @@ There are several keywords, operators, and reserved words in the Monkey C progra
 | `and` | Logical AND, equivalent to `&&` | See |
 | `as` | Assign an alias to a module denoted by a `using` statement | See |
 | `break` | Break out of a loop or a switch-case block | See and |
-| `catch` | Catch a thrown [Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html) | See |
+| `catch` | Catch a thrown [Lang.Exception](../api-docs/Toybox/Lang/Exception.md) | See |
 | `case` | Specify a case in a `switch` block | See |
 | `class` | Declare a new class | See |
 | `const` | Declare a new constant | See |
@@ -97,7 +97,7 @@ Monkey C supports several useful operators outlined below. In the examples below
 | `++` | Increment a numeric value by one, may be prefix or postfix | `a++` results in 11 |
 | `--` | Decrement a numeric value by one, may be prefix or postfix | `a--` results in 9 |
 
-**Note:** The `+` operator is also used to concatenate [String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) values.
+**Note:** The `+` operator is also used to concatenate [String](../api-docs/Toybox/Lang/String.md) values.
 
 #### Relational Operators
 
@@ -218,7 +218,7 @@ const BANANA_YELLOW = "#FFE135";
 
 ### Symbols
 
-[Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html) objects are lightweight constant identifiers. When the Monkey C compiler finds a new symbol, it will assign it a new unique value. This allows symbols to be used as constants without explicitly declaring a constant:
+[Lang.Symbol](../api-docs/Toybox/Lang/Symbol.md) objects are lightweight constant identifiers. When the Monkey C compiler finds a new symbol, it will assign it a new unique value. This allows symbols to be used as constants without explicitly declaring a constant:
 
 ```c++
 using Toybox.System;
@@ -236,11 +236,11 @@ Symbols are also useful as keys in data structures like dictionaries:
 var person = {:title=>"George", :name=>"Taylor"};
 ```
 
-One other important use for symbols is to reference method implementations for calls to [Object.method()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html#method-instance_function) or when assigning callbacks with [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html). In this instances, if a method `myMethod{...}` has been implemented, it can be referenced as a callbacks using the symbol `:myMethod`. See the section on for more in-depth examples.
+One other important use for symbols is to reference method implementations for calls to [Object.method()](../api-docs/Toybox/Lang/Object.md#method-instance_function) or when assigning callbacks with [Lang.Method](../api-docs/Toybox/Lang/Method.md). In this instances, if a method `myMethod{...}` has been implemented, it can be referenced as a callbacks using the symbol `:myMethod`. See the section on for more in-depth examples.
 
 ### Enumerations
 
-Enumerations are constant mappings from a [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html) to a [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) value, created using the `enum` keyword. Unless explicitly set, the first symbol in an enumeration is assigned a value of `0`, and each subsequent symbol is automatically assigned the value of the previous unassigned symbol plus one. Enumeration symbols can be used just like constants (that's essentially what they are), and like constants, enumerations must be declared at the module or class level.
+Enumerations are constant mappings from a [Lang.Symbol](../api-docs/Toybox/Lang/Symbol.md) to a [Lang.Number](../api-docs/Toybox/Lang/Number.md) value, created using the `enum` keyword. Unless explicitly set, the first symbol in an enumeration is assigned a value of `0`, and each subsequent symbol is automatically assigned the value of the previous unassigned symbol plus one. Enumeration symbols can be used just like constants (that's essentially what they are), and like constants, enumerations must be declared at the module or class level.
 
 ```c++
 // Automatically incremented enumeration
@@ -268,7 +268,7 @@ enum {
 
 ### Arrays
 
-[Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) objects are fixed-size (not a linked list), numerically indexed lists of objects. All members of an array do not need to be the same type of object. Like variables, arrays in Monkey C are typeless, so it is not necessary to declare an array's type. There are two ways to create a new array:
+[Lang.Array](../api-docs/Toybox/Lang/Array.md) objects are fixed-size (not a linked list), numerically indexed lists of objects. All members of an array do not need to be the same type of object. Like variables, arrays in Monkey C are typeless, so it is not necessary to declare an array's type. There are two ways to create a new array:
 
 ```c++
 // A new array with ten empty slots, initialized to 'null'
@@ -300,11 +300,11 @@ for(var i = 0; i < first_dimension_size; i += 1) {
 }
 ```
 
-**Note:** When using this technique, it's important to pay close attention to the array dimensions. The example above only makes three [Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) allocations to provide 200 slots, but were the dimensions reversed, this would make 101 allocations, using a lot more memory to provide the same number of slots.
+**Note:** When using this technique, it's important to pay close attention to the array dimensions. The example above only makes three [Array](../api-docs/Toybox/Lang/Array.md) allocations to provide 200 slots, but were the dimensions reversed, this would make 101 allocations, using a lot more memory to provide the same number of slots.
 
 ### Dictionaries
 
-[Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) objects, also called associative arrays or hash tables, are data structures similar to [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) objects that map key-value pairs. Keys and values can be any type of [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html), and each key-value pair does not need to be the same type combination within a given dictionary.
+[Lang.Dictionary](../api-docs/Toybox/Lang/Dictionary.md) objects, also called associative arrays or hash tables, are data structures similar to [Lang.Array](../api-docs/Toybox/Lang/Array.md) objects that map key-value pairs. Keys and values can be any type of [Lang.Object](../api-docs/Toybox/Lang/Object.md), and each key-value pair does not need to be the same type combination within a given dictionary.
 
 ```c++
 using Toybox.System;
@@ -317,12 +317,12 @@ System.println(myDictionary["c"]);          // Prints "three"
 System.println(myDictionary["d"]);          // Prints "null" (there is no key "d")
 ```
 
-The [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) class has a built-in [Object.hashCode()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html#hashCode-instance_function) method that automatically hashes (indexes) the keys added to a Dictionary. This provides an efficient way of looking up the arbitrarily ordered Dictionary values. Dictionaries automatically resize and rehash as items are added or removed, which makes them extremely flexible, but comes at a cost:
+The [Lang.Object](../api-docs/Toybox/Lang/Object.md) class has a built-in [Object.hashCode()](../api-docs/Toybox/Lang/Object.md#hashCode-instance_function) method that automatically hashes (indexes) the keys added to a Dictionary. This provides an efficient way of looking up the arbitrarily ordered Dictionary values. Dictionaries automatically resize and rehash as items are added or removed, which makes them extremely flexible, but comes at a cost:
 
 - Insertion and removal of Dictionary contents can cause performance problems if there is excessive resizing and rehashing
-- Dictionaries are not as space-efficient as either [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) type objects because they require extra memory allocation space
+- Dictionaries are not as space-efficient as either [Lang.Object](../api-docs/Toybox/Lang/Object.md) or [Lang.Array](../api-docs/Toybox/Lang/Array.md) type objects because they require extra memory allocation space
 
-The built-in [Object.hashCode()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html#hashCode-instance_function) method is adequate in most cases, but if a custom [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) type is used as keys in a Dictionary, it may be beneficial to override it to avoid index collisions and reduce lookup time:
+The built-in [Object.hashCode()](../api-docs/Toybox/Lang/Object.md#hashCode-instance_function) method is adequate in most cases, but if a custom [Lang.Object](../api-docs/Toybox/Lang/Object.md) type is used as keys in a Dictionary, it may be beneficial to override it to avoid index collisions and reduce lookup time:
 
 ```c++
 class Monkey
@@ -360,8 +360,8 @@ var monkeyContinents = {
 In Monkey C, `if` statement are the most basic of the available flow control statements. They are used to execute a certain section of code *only* if a particular Boolean expression evaluates to `true`. The expression evaluated by the `if` statement cannot be an assignment. Values or objects that will evaluate to `true` include:
 
 - A value of `true`
-- A non-zero [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
-- A non-null [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- A non-zero [Lang.Number](../api-docs/Toybox/Lang/Number.md)
+- A non-null [Lang.Number](../api-docs/Toybox/Lang/Number.md)
 
 As an example, this prints a message to the console when the value of `result` is greater than zero:
 
@@ -414,7 +414,7 @@ Lastly, Monkey C supports the ternary operator, which is a simple, alternative s
 var result = testExpression ? whenTrueExpression : whenFalseExpression
 ```
 
-Where `testExpression` is evaluated to determine whether it is `true`, `whenTrueExpression` is the `true` result, and `whenFalseExpression` is the `false` result. The value of the resulting expression is assigned to the `result` variable. If resulting expression does not resolve to a value (e.g. something like a [System.println()](https://developer.garmin.com/connect-iq/api-docs/Toybox/System.html#println-instance_function) statement), the `result` variable is assigned a value of `null`.
+Where `testExpression` is evaluated to determine whether it is `true`, `whenTrueExpression` is the `true` result, and `whenFalseExpression` is the `false` result. The value of the resulting expression is assigned to the `result` variable. If resulting expression does not resolve to a value (e.g. something like a [System.println()](../api-docs/Toybox/System.md#println-instance_function) statement), the `result` variable is assigned a value of `null`.
 
 ```c++
 // If 'a' is true, 'myValue' is assigned a value of 1; otherwise, it is assigned a value of 2.
@@ -585,7 +585,7 @@ for (var i = 0; i < 10; i += 1) {
 
 ### Exception Handling
 
-Monkey C supports structured [Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html) handling for non-fatal errors in the form of `try-catch` blocks:
+Monkey C supports structured [Lang.Exception](../api-docs/Toybox/Lang/Exception.md) handling for non-fatal errors in the form of `try-catch` blocks:
 
 ```c++
 try {
@@ -595,7 +595,7 @@ try {
 }
 ```
 
-Multiple `catch` statements are allowed to handle more than one possible exception type. When an exception is thrown, the first matching catch block will execute, and all subsequent catch blocks will be skipped (if a generic [Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html) handler is used, it's a good idea to place last). An optional `finally` statement can be placed at the end of a try-catch block, which will execute regardless of whether an exception has been thrown.
+Multiple `catch` statements are allowed to handle more than one possible exception type. When an exception is thrown, the first matching catch block will execute, and all subsequent catch blocks will be skipped (if a generic [Lang.Exception](../api-docs/Toybox/Lang/Exception.md) handler is used, it's a good idea to place last). An optional `finally` statement can be placed at the end of a try-catch block, which will execute regardless of whether an exception has been thrown.
 
 ```c++
 try {
@@ -609,13 +609,13 @@ try {
 }
 ```
 
-To throw an [Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html), use The `throw` keyword:
+To throw an [Lang.Exception](../api-docs/Toybox/Lang/Exception.md), use The `throw` keyword:
 
 ```c++
 throw new Lang.Exception();
 ```
 
-If an exception is not handled, an *Unhandled Exception* error will occur at runtime. The Connect IQ API throws exceptions in a few instances instances, such as [Lang.SymbolNotAllowedException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException.html) and [Lang.UnexpectedTypeException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException.html). Refer to the [API Documentation](https://developer.garmin.com/connect-iq/api-docs/index.html) for more details about the various [Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html) types.
+If an exception is not handled, an *Unhandled Exception* error will occur at runtime. The Connect IQ API throws exceptions in a few instances instances, such as [Lang.SymbolNotAllowedException](../api-docs/Toybox/Lang/SymbolNotAllowedException.md) and [Lang.UnexpectedTypeException](../api-docs/Toybox/Lang/UnexpectedTypeException.md). Refer to the [API Documentation](../api-docs/index.md) for more details about the various [Lang.Exception](../api-docs/Toybox/Lang/Exception.md) types.
 
 ## Functions
 
@@ -890,7 +890,7 @@ if (value instanceof Lang.Number) {
 }
 ```
 
-The `has` operator checks whether a given object has a particular symbol, which may be a public method, instance variable, or even a class definition or module. For example, accelerometer data is available in [Sensor.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor/Info.html), but not all products have an accelerometer. Attempting to use this data on certain products may cause the app to crash with a *Symbol Not Found* error. To avoid this, the `has` operator can be used to check for accelerometer support:
+The `has` operator checks whether a given object has a particular symbol, which may be a public method, instance variable, or even a class definition or module. For example, accelerometer data is available in [Sensor.Info](../api-docs/Toybox/Sensor/Info.md), but not all products have an accelerometer. Attempting to use this data on certain products may cause the app to crash with a *Symbol Not Found* error. To avoid this, the `has` operator can be used to check for accelerometer support:
 
 ```c++
 using Toybox.Sensor as Sensor;
@@ -906,7 +906,7 @@ if (sensorInfo has :accel && sensorInfo.accel != null) {
 
 ### Callbacks
 
-Functions in Monkey C are not first class, so cannot be passed as arguments to other functions to be used as callbacks. Since functions are bound to the object in which they are created, [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) objects must be used to create callbacks.
+Functions in Monkey C are not first class, so cannot be passed as arguments to other functions to be used as callbacks. Since functions are bound to the object in which they are created, [Lang.Method](../api-docs/Toybox/Lang/Method.md) objects must be used to create callbacks.
 
 One approach is to use a combination of a function and its object instance:
 
@@ -924,7 +924,7 @@ function myFunction() {
 }
 ```
 
-Unlike classes, modules do not inherit from [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) so do not have access to the `method()` function. However, a new instance of [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) can be created, which allows module-level functions to be invoked as callbacks in a similar fashion:
+Unlike classes, modules do not inherit from [Lang.Object](../api-docs/Toybox/Lang/Object.md) so do not have access to the `method()` function. However, a new instance of [Lang.Method](../api-docs/Toybox/Lang/Method.md) can be created, which allows module-level functions to be invoked as callbacks in a similar fashion:
 
 ```c++
 using Toybox.Lang as Lang;
@@ -943,7 +943,7 @@ function myFunction() {
 }
 ```
 
-A [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) object will invoke a method on the instance of the object it came from, and keeps a strong reference to the source object.
+A [Lang.Method](../api-docs/Toybox/Lang/Method.md) object will invoke a method on the instance of the object it came from, and keeps a strong reference to the source object.
 
 ### Weak References
 
@@ -959,14 +959,14 @@ The memory for A and B should be freed at this point, but A and B both have a re
 
 ![](https://developer.garmin.com/connect-iq/resources/programmers-guide/weak-reference-3.png)
 
-To create a weak reference, use the `weak()` method, an [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) method available to all Monkey C objects.
+To create a weak reference, use the `weak()` method, an [Lang.Object](../api-docs/Toybox/Lang/Object.md) method available to all Monkey C objects.
 
 ```c++
 // We would make a "Hans and Franz" reference here but certain advertising has probably made them uncool.
 var weakReference = myObject.weak()
 ```
 
-If calling `weak()` on one of the immutable types ([Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [Lang.Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html), [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html), [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html), [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)), then it returns the object itself. Otherwise, it will return a [Lang.WeakReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/WeakReference.html) instance. Weak references have a `stillAlive()` method to check if a weak reference is still valid, and have a `get()` method to create a strong reference to an object:
+If calling `weak()` on one of the immutable types ([Lang.Number](../api-docs/Toybox/Lang/Number.md), [Lang.Float](../api-docs/Toybox/Lang/Float.md), [Lang.Char](../api-docs/Toybox/Lang/Char.md), [Lang.Long](../api-docs/Toybox/Lang/Long.md), [Lang.Double](../api-docs/Toybox/Lang/Double.md), [Lang.String](../api-docs/Toybox/Lang/String.md)), then it returns the object itself. Otherwise, it will return a [Lang.WeakReference](../api-docs/Toybox/Lang/WeakReference.md) instance. Weak references have a `stillAlive()` method to check if a weak reference is still valid, and have a `get()` method to create a strong reference to an object:
 
 ```c++
 if (weakReference.stillAlive()) {
@@ -1135,7 +1135,7 @@ The following annotations have special meanings to the Monkey C compiler:
 
 **:background**
 
-Denotes code blocks available to the [Background](https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html) process.
+Denotes code blocks available to the [Background](../api-docs/Toybox/Background.md) process.
 
 **:debug**
 
@@ -1147,6 +1147,6 @@ Code blocks decorated with this annotation will not be included in debug builds 
 
 **:test**
 
-Denotes code blocks available to the [Test](https://developer.garmin.com/connect-iq/api-docs/Toybox/Test.html) module for [Run No Evil](https://developer.garmin.com/connect-iq/core-topics/unit-testing/#unit-testing) tests
+Denotes code blocks available to the [Test](../api-docs/Toybox/Test.md) module for [Run No Evil](https://developer.garmin.com/connect-iq/core-topics/unit-testing/#unit-testing) tests
 
 For reference, annotations are written into the `debug.xml` file generated in a project's 'bin' directory by the compiler when a project is built.

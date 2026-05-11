@@ -11,9 +11,9 @@ Stores media cache size statistics
 
 ## Instance Member Summary
 
-- [**capacity**](#capacity-var "capacity (Var)") as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html)
+- [**capacity**](#capacity-var "capacity (Var)") as [Lang.Long](../Lang/Long.md)
 	The capacity of the media cache.
-- [**size**](#size-var "size (Var)") as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html)
+- [**size**](#size-var "size (Var)") as [Lang.Long](../Lang/Long.md)
 	The current size of the media cache.
 
 ## Instance Attribute Details

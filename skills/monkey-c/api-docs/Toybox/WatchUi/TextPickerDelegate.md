@@ -13,13 +13,13 @@ This class should be extended to handle the specified text.
 
 ## See Also:
 
-- [Toybox.WatchUi.TextPicker](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/TextPicker.html)
+- [Toybox.WatchUi.TextPicker](TextPicker.md)
 
 ## Instance Method Summary
 
-- [**onCancel**](#onCancel-instance_function "onCancel (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onCancel**](#onCancel-instance_function "onCancel (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Text entry has been canceled.
-- [**onTextEntered**](#onTextEntered-instance_function "onTextEntered (Instance Function)") (text as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), changed as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onTextEntered**](#onTextEntered-instance_function "onTextEntered (Instance Function)") (text as [Lang.String](../Lang/String.md), changed as [Lang.Boolean](../Lang/Boolean.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A text string was entered into a TextPicker.
 
 ## Instance Method Details

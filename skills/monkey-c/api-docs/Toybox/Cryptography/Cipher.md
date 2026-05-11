@@ -15,11 +15,11 @@ A Cipher object.
 
 ## Instance Method Summary
 
-- [**decrypt**](#decrypt-instance_function "decrypt (Instance Function)") (ciphertext as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)) as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**decrypt**](#decrypt-instance_function "decrypt (Instance Function)") (ciphertext as [Lang.ByteArray](../Lang/ByteArray.md)) as [Lang.ByteArray](../Lang/ByteArray.md)
 	Decrypt data with the key, depending on how the cipher was initialized.
-- [**encrypt**](#encrypt-instance_function "encrypt (Instance Function)") (plaintext as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)) as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**encrypt**](#encrypt-instance_function "encrypt (Instance Function)") (plaintext as [Lang.ByteArray](../Lang/ByteArray.md)) as [Lang.ByteArray](../Lang/ByteArray.md)
 	Encrypt data with the key, depending on how the cipher was initialized.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.CipherAlgorithm](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.html#CipherAlgorithm-module),:mode as [Cryptography.EncryptionMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.html#EncryptionMode-module),:key as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html),:iv as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:algorithm as [Cryptography.CipherAlgorithm](../Cryptography.md#CipherAlgorithm-module),:mode as [Cryptography.EncryptionMode](../Cryptography.md#EncryptionMode-module),:key as [Lang.ByteArray](../Lang/ByteArray.md),:iv as [Lang.ByteArray](../Lang/ByteArray.md) })
 	Constructor.
 
 ## Instance Method Details

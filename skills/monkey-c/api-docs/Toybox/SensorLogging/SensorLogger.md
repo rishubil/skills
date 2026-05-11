@@ -9,11 +9,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/Se
 
 ## Instance Method Summary
 
-- [**getStats**](#getStats-instance_function "getStats (Instance Function)") () as [SensorLogging.SensorLoggingStats](https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats.html) or **Null**
+- [**getStats**](#getStats-instance_function "getStats (Instance Function)") () as [SensorLogging.SensorLoggingStats](SensorLoggingStats.md) or **Null**
 	Get statistics for the data gathered in the current session.
-- [**getStats2**](#getStats2-instance_function "getStats2 (Instance Function)") (sensor as [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html) or **Null**) as [SensorLogging.SensorLoggingStats](https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats.html) or {:accelerometer as [SensorLogging.SensorLoggingStats](https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats.html),:gyroscope as [SensorLogging.SensorLoggingStats](https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats.html),:magnetometer as [SensorLogging.SensorLoggingStats](https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/SensorLoggingStats.html) }
+- [**getStats2**](#getStats2-instance_function "getStats2 (Instance Function)") (sensor as [Lang.Symbol](../Lang/Symbol.md) or **Null**) as [SensorLogging.SensorLoggingStats](SensorLoggingStats.md) or {:accelerometer as [SensorLogging.SensorLoggingStats](SensorLoggingStats.md),:gyroscope as [SensorLogging.SensorLoggingStats](SensorLoggingStats.md),:magnetometer as [SensorLogging.SensorLoggingStats](SensorLoggingStats.md) }
 	Get statistics for the sensor data gathered in the current session.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:accelerometer as {:enabled as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) },:gyroscope as {:enabled as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) },:magnetometer as {:enabled as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) },:synchronous as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:accelerometer as {:enabled as [Lang.Boolean](../Lang/Boolean.md) },:gyroscope as {:enabled as [Lang.Boolean](../Lang/Boolean.md) },:magnetometer as {:enabled as [Lang.Boolean](../Lang/Boolean.md) },:synchronous as [Lang.Boolean](../Lang/Boolean.md) })
 	Constructor.
 
 ## Instance Method Details
@@ -26,7 +26,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/Se
 
 Note:
 
-A SensorLogger may be initialized with the same dictionary of options provided to [registerSensorDataListener()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor.html#registerSensorDataListener-instance_function), but only the options documented below will be used.
+A SensorLogger may be initialized with the same dictionary of options provided to [registerSensorDataListener()](../Sensor.md#registerSensorDataListener-instance_function), but only the options documented below will be used.
 
 Note:
 

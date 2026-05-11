@@ -11,15 +11,15 @@ Provides media content metadata for display in native media player user-interfac
 
 ## Instance Member Summary
 
-- [**album**](#album-var "album (Var)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**album**](#album-var "album (Var)") as [Lang.String](../Lang/String.md)
 	The album title.
-- [**artist**](#artist-var "artist (Var)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**artist**](#artist-var "artist (Var)") as [Lang.String](../Lang/String.md)
 	The name of the artist.
-- [**genre**](#genre-var "genre (Var)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**genre**](#genre-var "genre (Var)") as [Lang.String](../Lang/String.md)
 	The genre.
-- [**title**](#title-var "title (Var)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**title**](#title-var "title (Var)") as [Lang.String](../Lang/String.md)
 	The track title.
-- [**trackNumber**](#trackNumber-var "trackNumber (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**trackNumber**](#trackNumber-var "trackNumber (Var)") as [Lang.Number](../Lang/Number.md)
 	The track number.
 
 ## Instance Attribute Details

@@ -8,18 +8,18 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/Obje
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Application.ObjectStoreAccessException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.Application.ObjectStoreAccessException](ObjectStoreAccessException.md)
 [show all](#)
 
 ## Overview
 
-Indicates a [Background](https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html) process has attempted to access or modify the object store.
+Indicates a [Background](../Background.md) process has attempted to access or modify the object store.
 
 ## See Also:
 
-- [Toybox.Background](https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html)
+- [Toybox.Background](../Background.md)
 
 ## Instance Method Summary
 

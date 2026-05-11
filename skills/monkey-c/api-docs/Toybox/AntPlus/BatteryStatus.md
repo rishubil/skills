@@ -17,11 +17,11 @@ Fields may return `null` so you should `null` check values before using them.
 
 ## Instance Member Summary
 
-- [**batteryStatus**](#batteryStatus-var "batteryStatus (Var)") as [AntPlus.BatteryStatusValue](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BatteryStatusValue-module) or **Null**
-	The [BATT\_STATUS\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BATT_STATUS_CNT-const) value of the battery.
-- [**batteryVoltage**](#batteryVoltage-var "batteryVoltage (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**batteryStatus**](#batteryStatus-var "batteryStatus (Var)") as [AntPlus.BatteryStatusValue](../AntPlus.md#BatteryStatusValue-module) or **Null**
+	The [BATT\_STATUS\_\*](../AntPlus.md#BATT_STATUS_CNT-const) value of the battery.
+- [**batteryVoltage**](#batteryVoltage-var "batteryVoltage (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The voltage, -1 is invalid.
-- [**operatingTime**](#operatingTime-var "operatingTime (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**operatingTime**](#operatingTime-var "operatingTime (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The operating time in seconds.
 
 ## Instance Method Summary
@@ -33,7 +33,7 @@ Fields may return `null` so you should `null` check values before using them.
 
 ### var batteryStatus as AntPlus.BatteryStatusValue or Null
 
-The [BATT\_STATUS\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BATT_STATUS_CNT-const) value of the battery.
+The [BATT\_STATUS\_\*](../AntPlus.md#BATT_STATUS_CNT-const) value of the battery.
 
 ### var batteryVoltage as Lang.Float or Null
 

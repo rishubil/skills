@@ -7,23 +7,23 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ServiceDe
 
 ## Overview
 
-ServiceDelegate is a class used to service [Background](https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html) events.
+ServiceDelegate is a class used to service [Background](../Background.md) events.
 
-This class is used as the main entry point for background processes. A callback function within the delegate can be used to initiate other system events (e.g. [Communications](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications.html)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
+This class is used as the main entry point for background processes. A callback function within the delegate can be used to initiate other system events (e.g. [Communications](../Communications.md)), but only the delegate function is guaranteed to complete. The Background process may be shut down at any time to handle higher priority processes.
 
 ## See Also:
 
-- [Toybox.Background](https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html)
+- [Toybox.Background](../Background.md)
 
 ## Instance Method Summary
 
-- [**onActivityCompleted**](#onActivityCompleted-instance_function "onActivityCompleted (Instance Function)") (activity as {:sport as [Activity.Sport](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#Sport-module),:subSport as [Activity.SubSport](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#SubSport-module) }) as **Void**
+- [**onActivityCompleted**](#onActivityCompleted-instance_function "onActivityCompleted (Instance Function)") (activity as {:sport as [Activity.Sport](../Activity.md#Sport-module),:subSport as [Activity.SubSport](../Activity.md#SubSport-module) }) as **Void**
 	The callback method that is triggered when an activity is completed.
-- [**onGoalReached**](#onGoalReached-instance_function "onGoalReached (Instance Function)") (goalType as [Application.GoalType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#GoalType-module)) as **Void**
+- [**onGoalReached**](#onGoalReached-instance_function "onGoalReached (Instance Function)") (goalType as [Application.GoalType](../Application.md#GoalType-module)) as **Void**
 	A callback method that is triggered in the background when a fitness goal is reached.
 - [**onOAuthResponse**](#onOAuthResponse-instance_function "onOAuthResponse (Instance Function)") () as **Void**
 	The callback method that is triggered in the background when an OAuth response is received from the system.
-- [**onPhoneAppMessage**](#onPhoneAppMessage-instance_function "onPhoneAppMessage (Instance Function)") (msg as [Communications.PhoneAppMessage](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage.html)) as **Void**
+- [**onPhoneAppMessage**](#onPhoneAppMessage-instance_function "onPhoneAppMessage (Instance Function)") (msg as [Communications.PhoneAppMessage](../Communications/PhoneAppMessage.md)) as **Void**
 	The callback method that is triggered when a phone app message arrives for this app.
 - [**onSleepTime**](#onSleepTime-instance_function "onSleepTime (Instance Function)") () as **Void**
 	The callback method that is triggered in the background at the configured sleep time.

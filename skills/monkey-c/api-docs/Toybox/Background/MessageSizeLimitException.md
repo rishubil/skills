@@ -8,14 +8,14 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Background/Messa
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Background.MessageSizeLimitException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Background/MessageSizeLimitException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.Background.MessageSizeLimitException](MessageSizeLimitException.md)
 [show all](#)
 
 ## Overview
 
-Indicates the message provided to [Background.requestApplicationWake()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html#requestApplicationWake-instance_function) exceeds the maximum allowed message size (255 Bytes).
+Indicates the message provided to [Background.requestApplicationWake()](../Background.md#requestApplicationWake-instance_function) exceeds the maximum allowed message size (255 Bytes).
 
 Note:
 

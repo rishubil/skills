@@ -13,7 +13,7 @@ The class that represents a glance view delegate, which can be used to relay eve
 
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
-- [**onGlanceEvent**](#onGlanceEvent-instance_function "onGlanceEvent (Instance Function)") (options as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onGlanceEvent**](#onGlanceEvent-instance_function "onGlanceEvent (Instance Function)") (options as [Lang.Dictionary](../Lang/Dictionary.md) or **Null**) as [Lang.Boolean](../Lang/Boolean.md)
 	Invoked when certain glance event occurs, none for now.
 
 ## Instance Method Details

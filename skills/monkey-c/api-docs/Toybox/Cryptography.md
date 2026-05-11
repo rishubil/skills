@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.htm
 
 ## Classes Under Namespace
 
-**Classes:** [Cipher](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Cipher.html), [CipherBasedMessageAuthenticationCode](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/CipherBasedMessageAuthenticationCode.html), [Hash](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Hash.html), [HashBasedMessageAuthenticationCode](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/HashBasedMessageAuthenticationCode.html), [InvalidBlockSizeException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/InvalidBlockSizeException.html), [Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html), [KeyAgreement](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement.html), [KeyPair](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/KeyPair.html)
+**Classes:** [Cipher](Cryptography/Cipher.md), [CipherBasedMessageAuthenticationCode](Cryptography/CipherBasedMessageAuthenticationCode.md), [Hash](Cryptography/Hash.md), [HashBasedMessageAuthenticationCode](Cryptography/HashBasedMessageAuthenticationCode.md), [InvalidBlockSizeException](Cryptography/InvalidBlockSizeException.md), [Key](Cryptography/Key.md), [KeyAgreement](Cryptography/KeyAgreement.md), [KeyPair](Cryptography/KeyPair.md)
 
 ## Constant Summary
 
@@ -50,9 +50,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.htm
 
 ## Instance Method Summary
 
-- [**createPublicKey**](#createPublicKey-instance_function "createPublicKey (Instance Function)") (algorithm as [Cryptography.HashAlgorithm](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.html#HashAlgorithm-module), bytes as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)) as [Cryptography.Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html)
-	Create a public [Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html) object from bytes to be added to a [KeyAgreement](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/KeyAgreement.html).
-- [**randomBytes**](#randomBytes-instance_function "randomBytes (Instance Function)") (size as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**createPublicKey**](#createPublicKey-instance_function "createPublicKey (Instance Function)") (algorithm as [Cryptography.HashAlgorithm](Cryptography.md#HashAlgorithm-module), bytes as [Lang.ByteArray](Lang/ByteArray.md)) as [Cryptography.Key](Cryptography/Key.md)
+	Create a public [Key](Cryptography/Key.md) object from bytes to be added to a [KeyAgreement](Cryptography/KeyAgreement.md).
+- [**randomBytes**](#randomBytes-instance_function "randomBytes (Instance Function)") (size as [Lang.Number](Lang/Number.md)) as [Lang.ByteArray](Lang/ByteArray.md)
 	Generates cryptographically random bytes.
 
 ## Instance Method Details

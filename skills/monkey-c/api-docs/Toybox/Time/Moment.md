@@ -14,19 +14,19 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html
 
 ## Instance Method Summary
 
-- [**add**](#add-instance_function "add (Instance Function)") (duration as [Time.Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html)) as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)
-	Add a [Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html) to a Moment.
-- [**compare**](#compare-instance_function "compare (Instance Function)") (moment as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**add**](#add-instance_function "add (Instance Function)") (duration as [Time.Duration](Duration.md)) as [Time.Moment](Moment.md)
+	Add a [Duration](Duration.md) to a Moment.
+- [**compare**](#compare-instance_function "compare (Instance Function)") (moment as [Time.Moment](Moment.md)) as [Lang.Number](../Lang/Number.md)
 	Determine if a Moment is before or after another Moment.
-- [**greaterThan**](#greaterThan-instance_function "greaterThan (Instance Function)") (moment as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**greaterThan**](#greaterThan-instance_function "greaterThan (Instance Function)") (moment as [Time.Moment](Moment.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Determine if a Moment is greater than another Moment.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (seconds as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (seconds as [Lang.Number](../Lang/Number.md)) [Time.Moment](Moment.md)
 	Constructor.
-- [**lessThan**](#lessThan-instance_function "lessThan (Instance Function)") (moment as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**lessThan**](#lessThan-instance_function "lessThan (Instance Function)") (moment as [Time.Moment](Moment.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Determine if a Moment is less than another Moment.
-- [**subtract**](#subtract-instance_function "subtract (Instance Function)") (subtrahend as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or [Time.Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html)) as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or [Time.Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html)
-	Subtract a [Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html) or [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) from a Moment.
-- [**value**](#value-instance_function "value (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**subtract**](#subtract-instance_function "subtract (Instance Function)") (subtrahend as [Time.Moment](Moment.md) or [Time.Duration](Duration.md)) as [Time.Moment](Moment.md) or [Time.Duration](Duration.md)
+	Subtract a [Duration](Duration.md) or [Moment](Moment.md) from a Moment.
+- [**value**](#value-instance_function "value (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the UTC value of a Moment.
 
 ## Instance Method Details

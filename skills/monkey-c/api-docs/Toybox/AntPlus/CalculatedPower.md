@@ -13,10 +13,10 @@ Fields may return `null` so you should `null` check values before using them.
 
 ## Instance Member Summary
 
-- [**power**](#power-var "power (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**power**](#power-var "power (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The average power calculated from the sensor data in watts (W).
-- [**powerSensorType**](#powerSensorType-var "powerSensorType (Var)") as [AntPlus.BikePowerSensorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BikePowerSensorType-module) or **Null**
-	The [BIKE\_POWER\_SENSOR\_TYPE\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BIKE_POWER_SENSOR_TYPE_CNT-const) value of the bike power sensor.
+- [**powerSensorType**](#powerSensorType-var "powerSensorType (Var)") as [AntPlus.BikePowerSensorType](../AntPlus.md#BikePowerSensorType-module) or **Null**
+	The [BIKE\_POWER\_SENSOR\_TYPE\_\*](../AntPlus.md#BIKE_POWER_SENSOR_TYPE_CNT-const) value of the bike power sensor.
 
 ## Instance Attribute Details
 
@@ -26,4 +26,4 @@ The average power calculated from the sensor data in watts (W).
 
 ### var powerSensorType as AntPlus.BikePowerSensorType or Null
 
-The [BIKE\_POWER\_SENSOR\_TYPE\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#BIKE_POWER_SENSOR_TYPE_CNT-const) value of the bike power sensor.
+The [BIKE\_POWER\_SENSOR\_TYPE\_\*](../AntPlus.md#BIKE_POWER_SENSOR_TYPE_CNT-const) value of the bike power sensor.

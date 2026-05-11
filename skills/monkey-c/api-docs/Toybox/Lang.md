@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html
 
 ## Classes Under Namespace
 
-**Classes:** [Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html), [Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html), [ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html), [Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html), [Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html), [Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html), [Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html), [Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html), [InvalidOptionsException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/InvalidOptionsException.html), [InvalidValueException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/InvalidValueException.html), [Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html), [Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html), [Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), [Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html), [OperationNotAllowedException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException.html), [ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html), [SerializationException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/SerializationException.html), [StorageFullException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/StorageFullException.html), [String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), [Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html), [SymbolNotAllowedException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException.html), [UnexpectedTypeException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/UnexpectedTypeException.html), [ValueOutOfBoundsException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ValueOutOfBoundsException.html), [WeakReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/WeakReference.html)
+**Classes:** [Array](Lang/Array.md), [Boolean](Lang/Boolean.md), [ByteArray](Lang/ByteArray.md), [Char](Lang/Char.md), [Dictionary](Lang/Dictionary.md), [Double](Lang/Double.md), [Exception](Lang/Exception.md), [Float](Lang/Float.md), [InvalidOptionsException](Lang/InvalidOptionsException.md), [InvalidValueException](Lang/InvalidValueException.md), [Long](Lang/Long.md), [Method](Lang/Method.md), [Number](Lang/Number.md), [Object](Lang/Object.md), [OperationNotAllowedException](Lang/OperationNotAllowedException.md), [ResourceId](Lang/ResourceId.md), [SerializationException](Lang/SerializationException.md), [StorageFullException](Lang/StorageFullException.md), [String](Lang/String.md), [Symbol](Lang/Symbol.md), [SymbolNotAllowedException](Lang/SymbolNotAllowedException.md), [UnexpectedTypeException](Lang/UnexpectedTypeException.md), [ValueOutOfBoundsException](Lang/ValueOutOfBoundsException.md), [WeakReference](Lang/WeakReference.md)
 
 ## Constant Summary
 
@@ -35,18 +35,18 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html
 ## Typedef Summary
 
 - [**Comparable**](#Comparable-named_type "Comparable (Named Type)") as interface {  
-	function compareTo(other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html);  
+	function compareTo(other as [Lang.Object](Lang/Object.md)) as [Lang.Number](Lang/Number.md);  
 	}
 	Comparable defines an ordering between an object and others.
 - [**Comparator**](#Comparator-named_type "Comparator (Named Type)") as interface {  
-	function compare(a as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html), b as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html);  
+	function compare(a as [Lang.Object](Lang/Object.md), b as [Lang.Object](Lang/Object.md)) as [Lang.Number](Lang/Number.md);  
 	}
 	Comparator defines an ordering between objects.
-- [**Decimal**](#Decimal-named_type "Decimal (Named Type)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html)
-- [**Integer**](#Integer-named_type "Integer (Named Type)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html)
-- [**Numeric**](#Numeric-named_type "Numeric (Named Type)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html) or [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html)
+- [**Decimal**](#Decimal-named_type "Decimal (Named Type)") as [Lang.Float](Lang/Float.md) or [Lang.Double](Lang/Double.md)
+- [**Integer**](#Integer-named_type "Integer (Named Type)") as [Lang.Number](Lang/Number.md) or [Lang.Long](Lang/Long.md)
+- [**Numeric**](#Numeric-named_type "Numeric (Named Type)") as [Lang.Number](Lang/Number.md) or [Lang.Float](Lang/Float.md) or [Lang.Long](Lang/Long.md) or [Lang.Double](Lang/Double.md)
 
 ## Instance Method Summary
 
-- [**format**](#format-instance_function "format (Instance Function)") (format as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), parameters as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html)) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**format**](#format-instance_function "format (Instance Function)") (format as [Lang.String](Lang/String.md), parameters as [Lang.Array](Lang/Array.md)) as [Lang.String](Lang/String.md)
 	Create a formatted String by substituting the given parameters into the given format at the corresponding locations.

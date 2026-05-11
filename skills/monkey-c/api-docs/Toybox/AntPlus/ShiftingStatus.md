@@ -11,9 +11,9 @@ Includes the shifting system status. Fields may return `null` if there is no val
 
 ## Instance Member Summary
 
-- [**frontDerailleur**](#frontDerailleur-var "frontDerailleur (Var)") as [AntPlus.DerailleurStatus](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus.html) or **Null**
+- [**frontDerailleur**](#frontDerailleur-var "frontDerailleur (Var)") as [AntPlus.DerailleurStatus](DerailleurStatus.md) or **Null**
 	Front derailleur status.
-- [**rearDerailleur**](#rearDerailleur-var "rearDerailleur (Var)") as [AntPlus.DerailleurStatus](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/DerailleurStatus.html) or **Null**
+- [**rearDerailleur**](#rearDerailleur-var "rearDerailleur (Var)") as [AntPlus.DerailleurStatus](DerailleurStatus.md) or **Null**
 	Rear derailleur status.
 
 ## Instance Attribute Details

@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html
 
 ## Classes Under Namespace
 
-**Classes:** [AffineTransform](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/AffineTransform.html), [BitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapReference.html), [BitmapTexture](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapTexture.html), [BoundingBox](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BoundingBox.html), [BufferedBitmap](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap.html), [BufferedBitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference.html), [Dc](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/Dc.html), [FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html), [InvalidBitmapResourceException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/InvalidBitmapResourceException.html), [InvalidPaletteException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/InvalidPaletteException.html), [OutOfGraphicsMemoryException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/OutOfGraphicsMemoryException.html), [ResourceReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/ResourceReference.html), [VectorFont](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/VectorFont.html)
+**Classes:** [AffineTransform](Graphics/AffineTransform.md), [BitmapReference](Graphics/BitmapReference.md), [BitmapTexture](Graphics/BitmapTexture.md), [BoundingBox](Graphics/BoundingBox.md), [BufferedBitmap](Graphics/BufferedBitmap.md), [BufferedBitmapReference](Graphics/BufferedBitmapReference.md), [Dc](Graphics/Dc.md), [FontReference](Graphics/FontReference.md), [InvalidBitmapResourceException](Graphics/InvalidBitmapResourceException.md), [InvalidPaletteException](Graphics/InvalidPaletteException.md), [OutOfGraphicsMemoryException](Graphics/OutOfGraphicsMemoryException.md), [ResourceReference](Graphics/ResourceReference.md), [VectorFont](Graphics/VectorFont.md)
 
 ## Constant Summary
 
@@ -137,28 +137,28 @@ Specifies how many pixels to sample
 
 ## Typedef Summary
 
-- [**BitmapType**](#BitmapType-named_type "BitmapType (Named Type)") as [WatchUi.BitmapResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BitmapResource.html) or [Graphics.BufferedBitmap](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap.html) or [Graphics.BitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapReference.html) or [Graphics.BufferedBitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference.html)
-- [**ColorType**](#ColorType-named_type "ColorType (Named Type)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Graphics.ColorValue](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorValue-module)
-- [**FontType**](#FontType-named_type "FontType (Named Type)") as [WatchUi.FontResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/FontResource.html) or [Graphics.FontDefinition](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#FontDefinition-module) or [Graphics.FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html) or [Graphics.VectorFont](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/VectorFont.html)
-- [**Point2D**](#Point2D-named_type "Point2D (Named Type)") as \[ [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type), [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type) \]
+- [**BitmapType**](#BitmapType-named_type "BitmapType (Named Type)") as [WatchUi.BitmapResource](WatchUi/BitmapResource.md) or [Graphics.BufferedBitmap](Graphics/BufferedBitmap.md) or [Graphics.BitmapReference](Graphics/BitmapReference.md) or [Graphics.BufferedBitmapReference](Graphics/BufferedBitmapReference.md)
+- [**ColorType**](#ColorType-named_type "ColorType (Named Type)") as [Lang.Number](Lang/Number.md) or [Graphics.ColorValue](Graphics.md#ColorValue-module)
+- [**FontType**](#FontType-named_type "FontType (Named Type)") as [WatchUi.FontResource](WatchUi/FontResource.md) or [Graphics.FontDefinition](Graphics.md#FontDefinition-module) or [Graphics.FontReference](Graphics/FontReference.md) or [Graphics.VectorFont](Graphics/VectorFont.md)
+- [**Point2D**](#Point2D-named_type "Point2D (Named Type)") as \[ [Lang.Numeric](Lang.md#Numeric-named_type), [Lang.Numeric](Lang.md#Numeric-named_type) \]
 	Type alias for an Array of length 2.
-- [**VectorFontOptions**](#VectorFontOptions-named_type "VectorFontOptions (Named Type)") as {:face as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) >,:size as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type),:font as [Graphics.FontDefinition](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#FontDefinition-module) or [Graphics.VectorFont](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/VectorFont.html),:scale as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) }
+- [**VectorFontOptions**](#VectorFontOptions-named_type "VectorFontOptions (Named Type)") as {:face as [Lang.String](Lang/String.md) or [Lang.Array](Lang/Array.md) < [Lang.String](Lang/String.md) >,:size as [Lang.Numeric](Lang.md#Numeric-named_type),:font as [Graphics.FontDefinition](Graphics.md#FontDefinition-module) or [Graphics.VectorFont](Graphics/VectorFont.md),:scale as [Lang.Float](Lang/Float.md) }
 
 ## Instance Method Summary
 
-- [**createBufferedBitmap**](#createBufferedBitmap-instance_function "createBufferedBitmap (Instance Function)") (options as {:width as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:height as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:palette as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type) >,:colorDepth as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:bitmapResource as [WatchUi.BitmapResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BitmapResource.html) or [Graphics.BitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapReference.html),:alphaBlending as [Graphics.AlphaBlending](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#AlphaBlending-module) }) as [Graphics.BufferedBitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmapReference.html)
+- [**createBufferedBitmap**](#createBufferedBitmap-instance_function "createBufferedBitmap (Instance Function)") (options as {:width as [Lang.Number](Lang/Number.md),:height as [Lang.Number](Lang/Number.md),:palette as [Lang.Array](Lang/Array.md) < [Graphics.ColorType](Graphics.md#ColorType-named_type) >,:colorDepth as [Lang.Number](Lang/Number.md),:bitmapResource as [WatchUi.BitmapResource](WatchUi/BitmapResource.md) or [Graphics.BitmapReference](Graphics/BitmapReference.md),:alphaBlending as [Graphics.AlphaBlending](Graphics.md#AlphaBlending-module) }) as [Graphics.BufferedBitmapReference](Graphics/BufferedBitmapReference.md)
 	Create a buffered bitmap object.
-- [**createColor**](#createColor-instance_function "createColor (Instance Function)") (alpha as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), red as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), green as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), blue as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**createColor**](#createColor-instance_function "createColor (Instance Function)") (alpha as [Lang.Number](Lang/Number.md), red as [Lang.Number](Lang/Number.md), green as [Lang.Number](Lang/Number.md), blue as [Lang.Number](Lang/Number.md)) as [Lang.Number](Lang/Number.md)
 	Create a color with the individual channel values passed in.
-- [**fitTextToArea**](#fitTextToArea-instance_function "fitTextToArea (Instance Function)") (text as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), font as [Graphics.FontType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#FontType-named_type), width as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type), height as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type), truncate as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or **Null**
+- [**fitTextToArea**](#fitTextToArea-instance_function "fitTextToArea (Instance Function)") (text as [Lang.String](Lang/String.md), font as [Graphics.FontType](Graphics.md#FontType-named_type), width as [Lang.Numeric](Lang.md#Numeric-named_type), height as [Lang.Numeric](Lang.md#Numeric-named_type), truncate as [Lang.Boolean](Lang/Boolean.md)) as [Lang.String](Lang/String.md) or **Null**
 	Get a text string to fit in a specified area.
-- [**getFontAscent**](#getFontAscent-instance_function "getFontAscent (Instance Function)") (font as [Graphics.FontType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#FontType-named_type)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getFontAscent**](#getFontAscent-instance_function "getFontAscent (Instance Function)") (font as [Graphics.FontType](Graphics.md#FontType-named_type)) as [Lang.Number](Lang/Number.md)
 	Get the recommended distance above the baseline for single spaced text.
-- [**getFontDescent**](#getFontDescent-instance_function "getFontDescent (Instance Function)") (font as [Graphics.FontType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#FontType-named_type)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getFontDescent**](#getFontDescent-instance_function "getFontDescent (Instance Function)") (font as [Graphics.FontType](Graphics.md#FontType-named_type)) as [Lang.Number](Lang/Number.md)
 	Get the recommended distance below the baseline for single spaced text.
-- [**getFontHeight**](#getFontHeight-instance_function "getFontHeight (Instance Function)") (font as [Graphics.FontType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#FontType-named_type)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getFontHeight**](#getFontHeight-instance_function "getFontHeight (Instance Function)") (font as [Graphics.FontType](Graphics.md#FontType-named_type)) as [Lang.Number](Lang/Number.md)
 	Get the height (ascent plus descent) of the given font.
-- [**getVectorFont**](#getVectorFont-instance_function "getVectorFont (Instance Function)") (options as [Graphics.VectorFontOptions](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#VectorFontOptions-named_type)) as [Graphics.VectorFont](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/VectorFont.html) or **Null**
+- [**getVectorFont**](#getVectorFont-instance_function "getVectorFont (Instance Function)") (options as [Graphics.VectorFontOptions](Graphics.md#VectorFontOptions-named_type)) as [Graphics.VectorFont](Graphics/VectorFont.md) or **Null**
 	Get a font for this device.
 
 ## Typedef Details
@@ -179,7 +179,7 @@ Specifies how many pixels to sample
 
 Note:
 
-The result of a draw/fill operation to a [BufferedBitmap](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BufferedBitmap.html) created with [ALPHA\_BLENDING\_PARTIAL](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#AlphaBlending-module) may produce inconsistent results between devices and the ConnectIQ simulator if the drawn pixels are not fully opaque or fully transparent.
+The result of a draw/fill operation to a [BufferedBitmap](Graphics/BufferedBitmap.md) created with [ALPHA\_BLENDING\_PARTIAL](Graphics.md#AlphaBlending-module) may produce inconsistent results between devices and the ConnectIQ simulator if the drawn pixels are not fully opaque or fully transparent.
 
 ### createColor(alpha as Lang.Number, red as Lang.Number, green as Lang.Number, blue as Lang.Number) as Lang.Number
 
@@ -187,25 +187,25 @@ The result of a draw/fill operation to a [BufferedBitmap](https://developer.garm
 
 Note:
 
-[FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html) is only supported in CIQ 4.0.0 and later
+[FontReference](Graphics/FontReference.md) is only supported in CIQ 4.0.0 and later
 
 ### getFontAscent(font as Graphics.FontType) as Lang.Number
 
 Note:
 
-[FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html) is only supported in CIQ 4.0.0 and later
+[FontReference](Graphics/FontReference.md) is only supported in CIQ 4.0.0 and later
 
 ### getFontDescent(font as Graphics.FontType) as Lang.Number
 
 Note:
 
-[FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html) is only supported in CIQ 4.0.0 and later
+[FontReference](Graphics/FontReference.md) is only supported in CIQ 4.0.0 and later
 
 ### getFontHeight(font as Graphics.FontType) as Lang.Number
 
 Note:
 
-[FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html) is only supported in CIQ 4.0.0 and later
+[FontReference](Graphics/FontReference.md) is only supported in CIQ 4.0.0 and later
 
 ### getVectorFont(options as Graphics.VectorFontOptions) as Graphics.VectorFont or Null
 

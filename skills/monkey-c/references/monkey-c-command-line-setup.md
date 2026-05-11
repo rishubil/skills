@@ -73,7 +73,7 @@ After installation, three new shell commands are available: `connectiq`, `monkey
 | `-o <arg>` | Output file to create |
 | `-y <arg>` | to sign builds with |
 
-**Note:** For more information on all the command line options, refer to the [Compiler Options](https://developer.garmin.com/connect-iq/monkey-c/compiler-options/) section in the Monkey C guide.
+**Note:** For more information on all the command line options, refer to the [Compiler Options](../overview/compiler-options.md) section in the Monkey C guide.
 
 - `monkeydo` runs a Connect IQ executable in the simulator. You must have previously started the simulator with `connectiq`. The usage is:
 ```bash
@@ -100,7 +100,7 @@ Here is an example of a basic build and run cycle from the command line:
 > monkeydo myApp.prg fenix5plus
 ```
 
-**Note:** For more information on the `-f` option and the Jungle build framework, see the [Overriding Resources](https://developer.garmin.com/connect-iq/reference-guides/jungle-reference/#jungle-reference-guide) section of this guide.
+**Note:** For more information on the `-f` option and the Jungle build framework, see the [Overriding Resources](jungle-reference.md#jungle-reference-guide) section of this guide.
 
 ## Generating a Key Using OpenSSL
 

@@ -9,11 +9,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecordin
 
 ## See Also:
 
-- [Toybox.FitContributor](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor.html)
+- [Toybox.FitContributor](FitContributor.md)
 
 ## Classes Under Namespace
 
-**Classes:** [Session](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording/Session.html)
+**Classes:** [Session](ActivityRecording/Session.md)
 
 ## Constant Summary
 
@@ -140,9 +140,9 @@ This enum may be removed after System 8.
 
 ## Typedef Summary
 
-- [**Sport**](#Sport-named_type "Sport (Named Type)") as [ActivityRecording.Sport1](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording.html#Sport1-module) or [ActivityRecording.Sport2](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording.html#Sport2-module)
+- [**Sport**](#Sport-named_type "Sport (Named Type)") as [ActivityRecording.Sport1](ActivityRecording.md#Sport1-module) or [ActivityRecording.Sport2](ActivityRecording.md#Sport2-module)
 
 ## Instance Method Summary
 
-- [**createSession**](#createSession-instance_function "createSession (Instance Function)") (options as {:sport as [ActivityRecording.Sport](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording.html#Sport-named_type) or [Activity.Sport](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#Sport-module),:subSport as [ActivityRecording.SubSport](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording.html#SubSport-module) or [Activity.SubSport](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#SubSport-module),:name as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html),:poolLength as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html),:sensorLogger as [SensorLogging.SensorLogger](https://developer.garmin.com/connect-iq/api-docs/Toybox/SensorLogging/SensorLogger.html),:autoLap as {:type as [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html),:entry as \[ [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html), [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) \],:exit as \[ [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html), [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) \] } }) as [ActivityRecording.Session](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording/Session.html)
-	Create a [Session](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityRecording/Session.html) object with options determined by the caller.
+- [**createSession**](#createSession-instance_function "createSession (Instance Function)") (options as {:sport as [ActivityRecording.Sport](ActivityRecording.md#Sport-named_type) or [Activity.Sport](Activity.md#Sport-module),:subSport as [ActivityRecording.SubSport](ActivityRecording.md#SubSport-module) or [Activity.SubSport](Activity.md#SubSport-module),:name as [Lang.String](Lang/String.md),:poolLength as [Lang.Float](Lang/Float.md),:sensorLogger as [SensorLogging.SensorLogger](SensorLogging/SensorLogger.md),:autoLap as {:type as [Lang.Symbol](Lang/Symbol.md),:entry as \[ [Position.Location](Position/Location.md), [Position.Location](Position/Location.md) \],:exit as \[ [Position.Location](Position/Location.md), [Position.Location](Position/Location.md) \] } }) as [ActivityRecording.Session](ActivityRecording/Session.md)
+	Create a [Session](ActivityRecording/Session.md) object with options determined by the caller.

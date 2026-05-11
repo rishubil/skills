@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/OperationNo
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Lang.OperationNotAllowedException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/OperationNotAllowedException.html)
+- [Toybox.Lang.Object](Object.md)
+- [Toybox.Lang.Exception](Exception.md)
+- [Toybox.Lang.OperationNotAllowedException](OperationNotAllowedException.md)
 [show all](#)
 
 ## Overview
@@ -19,11 +19,11 @@ This exception indicates that an app attempted an operation that is not allowed.
 
 ## See Also:
 
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
+- [Toybox.Lang.Exception](Exception.md)
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](String.md))
 	OperationNotAllowedException constructor.
 
 ## Instance Method Details

@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMe
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.ActionMenu](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMenu.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.ActionMenu](ActionMenu.md)
 [show all](#)
 
 ## Overview
@@ -18,13 +18,13 @@ Class that represents an action menu view.
 
 ## Typedef Summary
 
-- [**Options**](#Options-named_type "Options (Named Type)") as {:theme as [WatchUi.ActionMenuTheme](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#ActionMenuTheme-module) }
+- [**Options**](#Options-named_type "Options (Named Type)") as {:theme as [WatchUi.ActionMenuTheme](../WatchUi.md#ActionMenuTheme-module) }
 
 ## Instance Method Summary
 
-- [**addItem**](#addItem-instance_function "addItem (Instance Function)") (item as [WatchUi.ActionMenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem.html)) as **Void**
+- [**addItem**](#addItem-instance_function "addItem (Instance Function)") (item as [WatchUi.ActionMenuItem](ActionMenuItem.md)) as **Void**
 	Add Menuitem to an ActionMenu.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as [ActionMenu.Options](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMenu.html#Options-named_type) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as [ActionMenu.Options](ActionMenu.md#Options-named_type) or **Null**)
 	Constructor for the ActionMenu.
 
 ## Typedef Details

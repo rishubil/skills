@@ -11,18 +11,18 @@ A local private key in combination with a public key to generate a shared secret
 
 ## Instance Method Summary
 
-- [**addKey**](#addKey-instance_function "addKey (Instance Function)") (key as [Cryptography.Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html)) as **Void**
-	Add a public [Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html) to KeyAgreement.
-- [**generateSecret**](#generateSecret-instance_function "generateSecret (Instance Function)") () as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**addKey**](#addKey-instance_function "addKey (Instance Function)") (key as [Cryptography.Key](Key.md)) as **Void**
+	Add a public [Key](Key.md) to KeyAgreement.
+- [**generateSecret**](#generateSecret-instance_function "generateSecret (Instance Function)") () as [Lang.ByteArray](../Lang/ByteArray.md)
 	Generate a shared secret for the KeyAgreement.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:protocol as [Cryptography.KeyAgreementProtocol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography.html#KeyAgreementProtocol-module),:privateKey as [Cryptography.Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:protocol as [Cryptography.KeyAgreementProtocol](../Cryptography.md#KeyAgreementProtocol-module),:privateKey as [Cryptography.Key](Key.md) })
 	Constructor.
 
 ## Instance Method Details
 
 ### addKey(key as Cryptography.Key) as Void
 
-Add a public [Key](https://developer.garmin.com/connect-iq/api-docs/Toybox/Cryptography/Key.html) to KeyAgreement.
+Add a public [Key](Key.md) to KeyAgreement.
 
 ### generateSecret() as Lang.ByteArray
 

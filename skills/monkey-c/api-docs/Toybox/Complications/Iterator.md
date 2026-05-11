@@ -8,15 +8,15 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/It
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Complications.Iterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Iterator.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Complications.Iterator](Iterator.md)
 [show all](#)
 
 ## Overview
 
 ## Instance Method Summary
 
-- [**next**](#next-instance_function "next (Instance Function)") () as [Complications.Complication](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Complication.html) or **Null**
+- [**next**](#next-instance_function "next (Instance Function)") () as [Complications.Complication](Complication.md) or **Null**
 	Get the next complication.
 
 ## Instance Method Details

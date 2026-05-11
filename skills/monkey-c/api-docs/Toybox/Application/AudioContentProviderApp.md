@@ -9,16 +9,16 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/Audi
 
 ## Instance Method Summary
 
-- [**getContentDelegate**](#getContentDelegate-instance_function "getContentDelegate (Instance Function)") (args as [Application.PersistableType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#PersistableType-named_type)) as [Media.ContentDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html)
-	Get a [ContentDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentDelegate.html) for use by the system to get and iterate through media content on the device.
-- [**getPlaybackConfigurationView**](#getPlaybackConfigurationView-instance_function "getPlaybackConfigurationView (Instance Function)") () as \[ [WatchUi.Views](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#Views-named_type) \] or \[ [WatchUi.Views](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#Views-named_type), [WatchUi.InputDelegates](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#InputDelegates-named_type) \]
+- [**getContentDelegate**](#getContentDelegate-instance_function "getContentDelegate (Instance Function)") (args as [Application.PersistableType](../Application.md#PersistableType-named_type)) as [Media.ContentDelegate](../Media/ContentDelegate.md)
+	Get a [ContentDelegate](../Media/ContentDelegate.md) for use by the system to get and iterate through media content on the device.
+- [**getPlaybackConfigurationView**](#getPlaybackConfigurationView-instance_function "getPlaybackConfigurationView (Instance Function)") () as \[ [WatchUi.Views](../WatchUi.md#Views-named_type) \] or \[ [WatchUi.Views](../WatchUi.md#Views-named_type), [WatchUi.InputDelegates](../WatchUi.md#InputDelegates-named_type) \]
 	Override to provide the initial View and Input Delegate for configuring playback.
-- [**getProviderIconInfo**](#getProviderIconInfo-instance_function "getProviderIconInfo (Instance Function)") () as [Media.ProviderIconInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ProviderIconInfo.html) or **Null**
+- [**getProviderIconInfo**](#getProviderIconInfo-instance_function "getProviderIconInfo (Instance Function)") () as [Media.ProviderIconInfo](../Media/ProviderIconInfo.md) or **Null**
 	Get audio provider icon information.
-- [**getSyncConfigurationView**](#getSyncConfigurationView-instance_function "getSyncConfigurationView (Instance Function)") () as \[ [WatchUi.Views](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#Views-named_type) \] or \[ [WatchUi.Views](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#Views-named_type), [WatchUi.InputDelegates](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#InputDelegates-named_type) \]
+- [**getSyncConfigurationView**](#getSyncConfigurationView-instance_function "getSyncConfigurationView (Instance Function)") () as \[ [WatchUi.Views](../WatchUi.md#Views-named_type) \] or \[ [WatchUi.Views](../WatchUi.md#Views-named_type), [WatchUi.InputDelegates](../WatchUi.md#InputDelegates-named_type) \]
 	Override to provide the initial View and Input Delegate for configuring sync.
-- [**getSyncDelegate**](#getSyncDelegate-instance_function "getSyncDelegate (Instance Function)") () as [Communications.SyncDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/SyncDelegate.html) or **Null** deprecated
-	Get a [SyncDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/SyncDelegate.html) object that communicates sync status to the system for syncing media content to the device.
+- [**getSyncDelegate**](#getSyncDelegate-instance_function "getSyncDelegate (Instance Function)") () as [Communications.SyncDelegate](../Communications/SyncDelegate.md) or **Null** deprecated
+	Get a [SyncDelegate](../Communications/SyncDelegate.md) object that communicates sync status to the system for syncing media content to the device.
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
 

@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEner
 
 ## Classes Under Namespace
 
-**Classes:** [BleDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate.html), [Characteristic](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Characteristic.html), [Descriptor](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Descriptor.html), [Device](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device.html), [DevicePairException](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/DevicePairException.html), [InvalidRequestException](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/InvalidRequestException.html), [Iterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator.html), [ProfileRegistrationException](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ProfileRegistrationException.html), [ScanResult](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult.html), [Service](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Service.html), [Uuid](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid.html), [UuidFormatException](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException.html)
+**Classes:** [BleDelegate](BluetoothLowEnergy/BleDelegate.md), [Characteristic](BluetoothLowEnergy/Characteristic.md), [Descriptor](BluetoothLowEnergy/Descriptor.md), [Device](BluetoothLowEnergy/Device.md), [DevicePairException](BluetoothLowEnergy/DevicePairException.md), [InvalidRequestException](BluetoothLowEnergy/InvalidRequestException.md), [Iterator](BluetoothLowEnergy/Iterator.md), [ProfileRegistrationException](BluetoothLowEnergy/ProfileRegistrationException.md), [ScanResult](BluetoothLowEnergy/ScanResult.md), [Service](BluetoothLowEnergy/Service.md), [Uuid](BluetoothLowEnergy/Uuid.md), [UuidFormatException](BluetoothLowEnergy/UuidFormatException.md)
 
 ## Constant Summary
 
@@ -58,29 +58,29 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEner
 
 ## Instance Method Summary
 
-- [**cccdUuid**](#cccdUuid-instance_function "cccdUuid (Instance Function)") () as [BluetoothLowEnergy.Uuid](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid.html)
+- [**cccdUuid**](#cccdUuid-instance_function "cccdUuid (Instance Function)") () as [BluetoothLowEnergy.Uuid](BluetoothLowEnergy/Uuid.md)
 	Retrieves the CCCD Uuid.
-- [**getAvailableConnectionCount**](#getAvailableConnectionCount-instance_function "getAvailableConnectionCount (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getAvailableConnectionCount**](#getAvailableConnectionCount-instance_function "getAvailableConnectionCount (Instance Function)") () as [Lang.Number](Lang/Number.md)
 	Accessor for determining the number of available connections.
-- [**getBondedDevices**](#getBondedDevices-instance_function "getBondedDevices (Instance Function)") () as [BluetoothLowEnergy.Iterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator.html)
+- [**getBondedDevices**](#getBondedDevices-instance_function "getBondedDevices (Instance Function)") () as [BluetoothLowEnergy.Iterator](BluetoothLowEnergy/Iterator.md)
 	Retrieve an Iterator of devices that the Application has bonded with that the system has saved bond information for.
-- [**getPairedDevices**](#getPairedDevices-instance_function "getPairedDevices (Instance Function)") () as [BluetoothLowEnergy.Iterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Iterator.html)
+- [**getPairedDevices**](#getPairedDevices-instance_function "getPairedDevices (Instance Function)") () as [BluetoothLowEnergy.Iterator](BluetoothLowEnergy/Iterator.md)
 	Retrieve an Iterator of all currently paired devices accessible to the Application.
-- [**longToUuid**](#longToUuid-instance_function "longToUuid (Instance Function)") (mostSigBits as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html), leastSigBits as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html)) as [BluetoothLowEnergy.Uuid](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid.html)
+- [**longToUuid**](#longToUuid-instance_function "longToUuid (Instance Function)") (mostSigBits as [Lang.Long](Lang/Long.md), leastSigBits as [Lang.Long](Lang/Long.md)) as [BluetoothLowEnergy.Uuid](BluetoothLowEnergy/Uuid.md)
 	Converts long representation of a UUID to a Uuid object.
-- [**pairDevice**](#pairDevice-instance_function "pairDevice (Instance Function)") (scanResult as [BluetoothLowEnergy.ScanResult](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult.html)) as [BluetoothLowEnergy.Device](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device.html) or **Null**
+- [**pairDevice**](#pairDevice-instance_function "pairDevice (Instance Function)") (scanResult as [BluetoothLowEnergy.ScanResult](BluetoothLowEnergy/ScanResult.md)) as [BluetoothLowEnergy.Device](BluetoothLowEnergy/Device.md) or **Null**
 	Pairs a peripheral device seen in scanning with the system.
-- [**registerProfile**](#registerProfile-instance_function "registerProfile (Instance Function)") (profile as {:uuid as [BluetoothLowEnergy.Uuid](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid.html),:characteristics as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) <{:uuid as [BluetoothLowEnergy.Uuid](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid.html),:descriptors as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [BluetoothLowEnergy.Uuid](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid.html) > }> }) as **Void**
+- [**registerProfile**](#registerProfile-instance_function "registerProfile (Instance Function)") (profile as {:uuid as [BluetoothLowEnergy.Uuid](BluetoothLowEnergy/Uuid.md),:characteristics as [Lang.Array](Lang/Array.md) <{:uuid as [BluetoothLowEnergy.Uuid](BluetoothLowEnergy/Uuid.md),:descriptors as [Lang.Array](Lang/Array.md) < [BluetoothLowEnergy.Uuid](BluetoothLowEnergy/Uuid.md) > }> }) as **Void**
 	Registers a Bluetooth Profile Definition Call this function to define all of the Profiles that will be used in the application.
-- [**setConnectionStrategy**](#setConnectionStrategy-instance_function "setConnectionStrategy (Instance Function)") (connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy.html#ConnectionStrategy-module)) as **Void**
+- [**setConnectionStrategy**](#setConnectionStrategy-instance_function "setConnectionStrategy (Instance Function)") (connectionStrategy as [BluetoothLowEnergy.ConnectionStrategy](BluetoothLowEnergy.md#ConnectionStrategy-module)) as **Void**
 	Set the connection type used to connect to the BLE device.
-- [**setDelegate**](#setDelegate-instance_function "setDelegate (Instance Function)") (delegate as [BluetoothLowEnergy.BleDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate.html)) as **Void**
+- [**setDelegate**](#setDelegate-instance_function "setDelegate (Instance Function)") (delegate as [BluetoothLowEnergy.BleDelegate](BluetoothLowEnergy/BleDelegate.md)) as **Void**
 	Sets the Delegate Handler for Bluetooth Asynchronous Callbacks An application can only have 1 registered delegate.
-- [**setScanState**](#setScanState-instance_function "setScanState (Instance Function)") (scanState as [BluetoothLowEnergy.ScanState](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy.html#ScanState-module)) as **Void**
-	Starts the BLE Scanning Operations Once scanning is started [onScanResults()](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate.html#onScanResults-instance_function) will be called on the registered [BleDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/BleDelegate.html) as Advertising data is received.
-- [**stringToUuid**](#stringToUuid-instance_function "stringToUuid (Instance Function)") (str as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)) as [BluetoothLowEnergy.Uuid](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Uuid.html)
+- [**setScanState**](#setScanState-instance_function "setScanState (Instance Function)") (scanState as [BluetoothLowEnergy.ScanState](BluetoothLowEnergy.md#ScanState-module)) as **Void**
+	Starts the BLE Scanning Operations Once scanning is started [onScanResults()](BluetoothLowEnergy/BleDelegate.md#onScanResults-instance_function) will be called on the registered [BleDelegate](BluetoothLowEnergy/BleDelegate.md) as Advertising data is received.
+- [**stringToUuid**](#stringToUuid-instance_function "stringToUuid (Instance Function)") (str as [Lang.String](Lang/String.md)) as [BluetoothLowEnergy.Uuid](BluetoothLowEnergy/Uuid.md)
 	Converts the String Representation of a UUID into a Uuid Object.
-- [**unpairDevice**](#unpairDevice-instance_function "unpairDevice (Instance Function)") (device as [BluetoothLowEnergy.Device](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/Device.html)) as **Void**
+- [**unpairDevice**](#unpairDevice-instance_function "unpairDevice (Instance Function)") (device as [BluetoothLowEnergy.Device](BluetoothLowEnergy/Device.md)) as **Void**
 	Unpairs a peripheral device from the system If the device is connected the BLE Subsystem will disconnect from the device and will not attempt to reconnect.
 
 ## Instance Method Details

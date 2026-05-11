@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Serializati
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Lang.SerializationException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/SerializationException.html)
+- [Toybox.Lang.Object](Object.md)
+- [Toybox.Lang.Exception](Exception.md)
+- [Toybox.Lang.SerializationException](SerializationException.md)
 [show all](#)
 
 ## Overview
@@ -19,7 +19,7 @@ Indicates that the function could not serialize an object
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](String.md))
 	SerializationException constructor.
 
 ## Instance Method Details

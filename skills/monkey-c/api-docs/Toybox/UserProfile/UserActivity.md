@@ -11,13 +11,13 @@ A class for storing user activity information.
 
 ## Instance Member Summary
 
-- [**distance**](#distance-var "distance (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**distance**](#distance-var "distance (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Distance covered by the activity in meters.
-- [**duration**](#duration-var "duration (Var)") as [Time.Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html) or **Null**
+- [**duration**](#duration-var "duration (Var)") as [Time.Duration](../Time/Duration.md) or **Null**
 	Duration of the activity.
-- [**startTime**](#startTime-var "startTime (Var)") as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or **Null**
+- [**startTime**](#startTime-var "startTime (Var)") as [Time.Moment](../Time/Moment.md) or **Null**
 	Start time of the activity.
-- [**type**](#type-var "type (Var)") as [Activity.Sport](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity.html#Sport-module) or **Null**
+- [**type**](#type-var "type (Var)") as [Activity.Sport](../Activity.md#Sport-module) or **Null**
 	Sport type of the activity.
 
 ## Instance Attribute Details

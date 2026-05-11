@@ -13,29 +13,29 @@ The fields in this class may return `null`. It is recommended to `null` check a 
 
 ## Instance Member Summary
 
-- [**activeMinutes**](#activeMinutes-var "activeMinutes (Var)") as [ActivityMonitor.ActiveMinutes](https://developer.garmin.com/connect-iq/api-docs/Toybox/ActivityMonitor/ActiveMinutes.html) or **Null**
+- [**activeMinutes**](#activeMinutes-var "activeMinutes (Var)") as [ActivityMonitor.ActiveMinutes](ActiveMinutes.md) or **Null**
 	Number of active minutes.
-- [**calories**](#calories-var "calories (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**calories**](#calories-var "calories (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The calories for the day in kilocalories (kCal).
-- [**distance**](#distance-var "distance (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**distance**](#distance-var "distance (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The distance for the day in centimeters (cm).
-- [**floorsClimbed**](#floorsClimbed-var "floorsClimbed (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**floorsClimbed**](#floorsClimbed-var "floorsClimbed (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The number of floors climbed for the day.
-- [**floorsClimbedGoal**](#floorsClimbedGoal-var "floorsClimbedGoal (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**floorsClimbedGoal**](#floorsClimbedGoal-var "floorsClimbedGoal (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Floors climbed goal for the day.
-- [**floorsDescended**](#floorsDescended-var "floorsDescended (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**floorsDescended**](#floorsDescended-var "floorsDescended (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The number of floors descended for the day.
-- [**pushDistance**](#pushDistance-var "pushDistance (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**pushDistance**](#pushDistance-var "pushDistance (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The wheelchair push distance for the day in centimeters (cm).
-- [**pushGoal**](#pushGoal-var "pushGoal (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**pushGoal**](#pushGoal-var "pushGoal (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The wheelchair push goal for the day in number of pushes.
-- [**pushes**](#pushes-var "pushes (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**pushes**](#pushes-var "pushes (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Wheelchair push count for the day in number of pushes.
-- [**startOfDay**](#startOfDay-var "startOfDay (Var)") as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or **Null**
-	A [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) object representing the start time of the day recorded by this History object.
-- [**stepGoal**](#stepGoal-var "stepGoal (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**startOfDay**](#startOfDay-var "startOfDay (Var)") as [Time.Moment](../Time/Moment.md) or **Null**
+	A [Moment](../Time/Moment.md) object representing the start time of the day recorded by this History object.
+- [**stepGoal**](#stepGoal-var "stepGoal (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The step goal for the day in number of steps.
-- [**steps**](#steps-var "steps (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**steps**](#steps-var "steps (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The step count for the day in number of steps.
 
 ## Instance Attribute Details
@@ -80,7 +80,7 @@ Wheelchair push count for the day in number of pushes.
 
 ### var startOfDay as Time.Moment or Null
 
-A [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) object representing the start time of the day recorded by this History object
+A [Moment](../Time/Moment.md) object representing the start time of the day recorded by this History object
 
 ### var stepGoal as Lang.Number or Null
 

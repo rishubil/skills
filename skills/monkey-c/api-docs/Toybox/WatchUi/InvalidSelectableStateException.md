@@ -8,18 +8,18 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InvalidS
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.WatchUi.InvalidSelectableStateException](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InvalidSelectableStateException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.WatchUi.InvalidSelectableStateException](InvalidSelectableStateException.md)
 [show all](#)
 
 ## Overview
 
-Indicates the instance of [Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html) is assigned a state that it doesn't contain.
+Indicates the instance of [Selectable](Selectable.md) is assigned a state that it doesn't contain.
 
 ## See Also:
 
-- [Toybox.WatchUi.Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html)
+- [Toybox.WatchUi.Selectable](Selectable.md)
 
 ## Instance Method Summary
 

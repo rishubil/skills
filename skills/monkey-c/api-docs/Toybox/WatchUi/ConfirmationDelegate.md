@@ -7,15 +7,15 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Confirma
 
 ## Overview
 
-ConfirmationDelegate responds to a [Confirmation](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Confirmation.html) selection.
+ConfirmationDelegate responds to a [Confirmation](Confirmation.md) selection.
 
 ## See Also:
 
-- [Toybox.WatchUi.Confirmation](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Confirmation.html)
+- [Toybox.WatchUi.Confirmation](Confirmation.md)
 
 ## Instance Method Summary
 
-- [**onResponse**](#onResponse-instance_function "onResponse (Instance Function)") (response as [WatchUi.Confirm](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#Confirm-module)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onResponse**](#onResponse-instance_function "onResponse (Instance Function)") (response as [WatchUi.Confirm](../WatchUi.md#Confirm-module)) as [Lang.Boolean](../Lang/Boolean.md)
 	A confirmation selection was made.
 
 ## Instance Method Details
@@ -24,4 +24,4 @@ ConfirmationDelegate responds to a [Confirmation](https://developer.garmin.com/c
 
 A confirmation selection was made.
 
-This method is called when a [Confirmation](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Confirmation.html) response is selected, and receives the response as an argument. The response is either a [CONFIRM\_NO](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#CONFIRM_NO-const) or [CONFIRM\_YES](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#CONFIRM_YES-const) value.
+This method is called when a [Confirmation](Confirmation.md) response is selected, and receives the response as an argument. The response is either a [CONFIRM\_NO](../WatchUi.md#CONFIRM_NO-const) or [CONFIRM\_YES](../WatchUi.md#CONFIRM_YES-const) value.

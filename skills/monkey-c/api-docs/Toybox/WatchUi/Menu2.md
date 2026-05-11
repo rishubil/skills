@@ -9,17 +9,17 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Menu2.ht
 
 ## See Also:
 
-- [Toybox.WatchUi.Menu2InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Menu2InputDelegate.html)
-- [Toybox.WatchUi.MenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuItem.html)
-- [Toybox.WatchUi.BehaviorDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate.html)
-- [WatchUi.pushView()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#pushView-instance_function)
+- [Toybox.WatchUi.Menu2InputDelegate](Menu2InputDelegate.md)
+- [Toybox.WatchUi.MenuItem](MenuItem.md)
+- [Toybox.WatchUi.BehaviorDelegate](BehaviorDelegate.md)
+- [WatchUi.pushView()](../WatchUi.md#pushView-instance_function)
 Note:
 
 The look and feel of a Menu2 is device-specific.
 
 ## Direct Known Subclasses
 
-[WatchUi.CheckboxMenu](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/CheckboxMenu.html), [WatchUi.CustomMenu](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/CustomMenu.html)
+[WatchUi.CheckboxMenu](CheckboxMenu.md), [WatchUi.CustomMenu](CustomMenu.md)
 
 ## Constant Summary
 
@@ -34,28 +34,28 @@ Divider type for supported devices
 
 ## Instance Method Summary
 
-- [**addItem**](#addItem-instance_function "addItem (Instance Function)") (item as [WatchUi.MenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuItem.html)) as **Void**
+- [**addItem**](#addItem-instance_function "addItem (Instance Function)") (item as [WatchUi.MenuItem](MenuItem.md)) as **Void**
 	Add a MenuItem to a Menu2.
-- [**deleteItem**](#deleteItem-instance_function "deleteItem (Instance Function)") (index as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**deleteItem**](#deleteItem-instance_function "deleteItem (Instance Function)") (index as [Lang.Number](../Lang/Number.md)) as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	Delete a MenuItem from a Menu2.
-- [**findItemById**](#findItemById-instance_function "findItemById (Instance Function)") (identifier as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**findItemById**](#findItemById-instance_function "findItemById (Instance Function)") (identifier as [Lang.Object](../Lang/Object.md)) as [Lang.Number](../Lang/Number.md)
 	Find a MenuItem by ID in a Menu2.
-- [**getIcon**](#getIcon-instance_function "getIcon (Instance Function)") () as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or **Null**
+- [**getIcon**](#getIcon-instance_function "getIcon (Instance Function)") () as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [WatchUi.Drawable](Drawable.md) or **Null**
 	Get the icon Retrieve the icon for this Menu2.
-- [**getItem**](#getItem-instance_function "getItem (Instance Function)") (index as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as [WatchUi.MenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuItem.html) or **Null**
+- [**getItem**](#getItem-instance_function "getItem (Instance Function)") (index as [Lang.Number](../Lang/Number.md)) as [WatchUi.MenuItem](MenuItem.md) or **Null**
 	Get a MenuItem from a Menu2.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:title as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html),:footer as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html),:focus as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:icon as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html),:theme as [WatchUi.MenuTheme](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#MenuTheme-module) or **Null**,:dividerType as [Menu2.DividerType](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Menu2.html#DividerType-module) or **Null** } or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:title as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md) or [WatchUi.Drawable](Drawable.md),:footer as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md) or [WatchUi.Drawable](Drawable.md),:focus as [Lang.Number](../Lang/Number.md),:icon as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [WatchUi.Drawable](Drawable.md) or [Lang.ResourceId](../Lang/ResourceId.md),:theme as [WatchUi.MenuTheme](../WatchUi.md#MenuTheme-module) or **Null**,:dividerType as [Menu2.DividerType](Menu2.md#DividerType-module) or **Null** } or **Null**)
 	Constructor.
-- [**setDividerType**](#setDividerType-instance_function "setDividerType (Instance Function)") (divider as [Menu2.DividerType](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Menu2.html#DividerType-module) or **Null**) as **Void**
+- [**setDividerType**](#setDividerType-instance_function "setDividerType (Instance Function)") (divider as [Menu2.DividerType](Menu2.md#DividerType-module) or **Null**) as **Void**
 	Set or change the desired divider type.
-- [**setFocus**](#setFocus-instance_function "setFocus (Instance Function)") (focus as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**) as **Void**
+- [**setFocus**](#setFocus-instance_function "setFocus (Instance Function)") (focus as [Lang.Number](../Lang/Number.md) or **Null**) as **Void**
 	Set the focus of a MenuItem in a Menu2.
-- [**setFooter**](#setFooter-instance_function "setFooter (Instance Function)") (footer as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or **Null**) as **Void**
-- [**setIcon**](#setIcon-instance_function "setIcon (Instance Function)") (icon as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or **Null**) as **Void**
+- [**setFooter**](#setFooter-instance_function "setFooter (Instance Function)") (footer as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md) or [WatchUi.Drawable](Drawable.md) or **Null**) as **Void**
+- [**setIcon**](#setIcon-instance_function "setIcon (Instance Function)") (icon as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [WatchUi.Drawable](Drawable.md) or [Lang.ResourceId](../Lang/ResourceId.md) or **Null**) as **Void**
 	Set the icon Set the icon to display in the subscreen area when the focused MenuItem does not have an icon.
-- [**setTheme**](#setTheme-instance_function "setTheme (Instance Function)") (theme as [WatchUi.MenuTheme](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#MenuTheme-module) or **Null**) as **Void**
+- [**setTheme**](#setTheme-instance_function "setTheme (Instance Function)") (theme as [WatchUi.MenuTheme](../WatchUi.md#MenuTheme-module) or **Null**) as **Void**
 	Set the theme.
-- [**setTitle**](#setTitle-instance_function "setTitle (Instance Function)") (title as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or **Null**) as **Void**
+- [**setTitle**](#setTitle-instance_function "setTitle (Instance Function)") (title as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md) or [WatchUi.Drawable](Drawable.md) or **Null**) as **Void**
 	Set a Menu2 title.
-- [**updateItem**](#updateItem-instance_function "updateItem (Instance Function)") (item as [WatchUi.MenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuItem.html), index as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as **Void**
+- [**updateItem**](#updateItem-instance_function "updateItem (Instance Function)") (item as [WatchUi.MenuItem](MenuItem.md), index as [Lang.Number](../Lang/Number.md)) as **Void**
 	Update a MenuItem in a Menu2.

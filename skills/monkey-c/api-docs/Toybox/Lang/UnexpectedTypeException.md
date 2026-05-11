@@ -9,11 +9,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/UnexpectedT
 
 ## See Also:
 
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
+- [Toybox.Lang.Exception](Exception.md)
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), unused1 as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**, unused2 as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](String.md), unused1 as [Lang.Object](Object.md) or **Null**, unused2 as [Lang.Object](Object.md) or **Null**)
 	UnexpectedTypeException constructor.
 
 ## Instance Method Details

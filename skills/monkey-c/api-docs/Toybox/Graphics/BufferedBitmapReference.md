@@ -11,9 +11,9 @@ Object that references the bitmap resource allocated from the graphics memory po
 
 ## Instance Method Summary
 
-- [**getHeight**](#getHeight-instance_function "getHeight (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getHeight**](#getHeight-instance_function "getHeight (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Load the resource, then get the height of a bitmap resource referenced.
-- [**getWidth**](#getWidth-instance_function "getWidth (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getWidth**](#getWidth-instance_function "getWidth (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Load the resource, then get the width of a bitmap resource referenced.
 
 ## Instance Method Details

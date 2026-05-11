@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html)
+- [Toybox.Lang.Object](Object.md)
+- [Toybox.Lang.ResourceId](ResourceId.md)
 [show all](#)
 
 ## Overview
@@ -20,7 +20,7 @@ ResourceId values uniquely identify a resource to the system.
 
 ## Instance Method Summary
 
-- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](String.md)
 	Convert a ResourceId to a String.
 
 ## Instance Method Details

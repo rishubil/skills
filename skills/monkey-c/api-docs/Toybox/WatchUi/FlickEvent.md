@@ -7,21 +7,21 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/FlickEve
 
 ## Overview
 
-FlickEvent is an object sent to [InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html) when there is a flick interaction with the device's touch screen.
+FlickEvent is an object sent to [InputDelegate](InputDelegate.md) when there is a flick interaction with the device's touch screen.
 
 ## See Also:
 
-- [Toybox.WatchUi.InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html)
+- [Toybox.WatchUi.InputDelegate](InputDelegate.md)
 
 ## Instance Method Summary
 
-- [**getCoordinates**](#getCoordinates-instance_function "getCoordinates (Instance Function)") () as \[ [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) \]
+- [**getCoordinates**](#getCoordinates-instance_function "getCoordinates (Instance Function)") () as \[ [Lang.Number](../Lang/Number.md), [Lang.Number](../Lang/Number.md) \]
 	Get the coordinates of a click event.
-- [**getDirection**](#getDirection-instance_function "getDirection (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getDirection**](#getDirection-instance_function "getDirection (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the direction of the flick.
-- [**getDistance**](#getDistance-instance_function "getDistance (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getDistance**](#getDistance-instance_function "getDistance (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the distance of the flick.
-- [**getVelocity**](#getVelocity-instance_function "getVelocity (Instance Function)") () as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)
+- [**getVelocity**](#getVelocity-instance_function "getVelocity (Instance Function)") () as [Lang.Float](../Lang/Float.md)
 	Get the velocity of the flick.
 
 ## Instance Method Details

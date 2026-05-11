@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Animatio
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.AnimationDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.AnimationDelegate](AnimationDelegate.md)
 [show all](#)
 
 ## Overview
@@ -18,11 +18,11 @@ AnimationDelegate responds to an Animation event.
 
 ## See Also:
 
-- [AnimationLayer](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/AnimationLayer.html)
+- [AnimationLayer](AnimationLayer.md)
 
 ## Instance Method Summary
 
-- [**onAnimationEvent**](#onAnimationEvent-instance_function "onAnimationEvent (Instance Function)") (event as [WatchUi.AnimationEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#AnimationEvent-module), options as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html)) as **Void**
+- [**onAnimationEvent**](#onAnimationEvent-instance_function "onAnimationEvent (Instance Function)") (event as [WatchUi.AnimationEvent](../WatchUi.md#AnimationEvent-module), options as [Lang.Dictionary](../Lang/Dictionary.md)) as **Void**
 	Handle an Animation event.
 
 ## Instance Method Details

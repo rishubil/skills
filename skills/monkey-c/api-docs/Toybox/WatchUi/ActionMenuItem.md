@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMe
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.ActionMenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.ActionMenuItem](ActionMenuItem.md)
 [show all](#)
 
 ## Overview
@@ -18,15 +18,15 @@ Class that represents an action menu item.
 
 ## Typedef Summary
 
-- [**Options**](#Options-named_type "Options (Named Type)") as {:label as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) }
+- [**Options**](#Options-named_type "Options (Named Type)") as {:label as [Lang.String](../Lang/String.md) or [Lang.ResourceId](../Lang/ResourceId.md) }
 
 ## Instance Method Summary
 
-- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**
+- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Object](../Lang/Object.md) or **Null**
 	Get a MenuItem identifier.
-- [**getLabel**](#getLabel-instance_function "getLabel (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**getLabel**](#getLabel-instance_function "getLabel (Instance Function)") () as [Lang.String](../Lang/String.md)
 	Get a MenuItem label.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as [ActionMenuItem.Options](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem.html#Options-named_type), identifier as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as [ActionMenuItem.Options](ActionMenuItem.md#Options-named_type), identifier as [Lang.Object](../Lang/Object.md) or **Null**)
 	Constructor.
 
 ## Typedef Details

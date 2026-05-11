@@ -11,9 +11,9 @@ Class for the sensor logging status.
 
 ## Instance Member Summary
 
-- [**sampleCount**](#sampleCount-var "sampleCount (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**sampleCount**](#sampleCount-var "sampleCount (Var)") as [Lang.Number](../Lang/Number.md)
 	The total number of logged samples.
-- [**samplePeriod**](#samplePeriod-var "samplePeriod (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**samplePeriod**](#samplePeriod-var "samplePeriod (Var)") as [Lang.Number](../Lang/Number.md)
 	The total number of seconds of logged data.
 
 ## Instance Method Summary

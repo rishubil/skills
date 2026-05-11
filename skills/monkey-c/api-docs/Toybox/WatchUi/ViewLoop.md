@@ -19,7 +19,7 @@ Specifies the direction to transition views
 
 ## Instance Method Summary
 
-- [**changeView**](#changeView-instance_function "changeView (Instance Function)") (direction as [ViewLoop.Direction](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ViewLoop.html#Direction-module)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**changeView**](#changeView-instance_function "changeView (Instance Function)") (direction as [ViewLoop.Direction](ViewLoop.md#Direction-module)) as [Lang.Boolean](../Lang/Boolean.md)
 	Change the view to the next/previous one in the view loop based on the direction and display the page indicator after transitioning.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (factory as [WatchUi.ViewLoopFactory](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ViewLoopFactory.html), options as {:page as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:wrap as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html),:color as [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type) } or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (factory as [WatchUi.ViewLoopFactory](ViewLoopFactory.md), options as {:page as [Lang.Number](../Lang/Number.md),:wrap as [Lang.Boolean](../Lang/Boolean.md),:color as [Graphics.ColorType](../Graphics.md#ColorType-named_type) } or **Null**)
 	Constructor for the ViewLoop.

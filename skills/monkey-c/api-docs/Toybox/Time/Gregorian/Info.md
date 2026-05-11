@@ -9,23 +9,23 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian/I
 
 The Gregorian.Info class contains all of the necessary information to represent a Gregorian date.
 
-The types of some returned values depend on the Time.FORMAT\_\* value specified when calling [info()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian.html#info-instance_function) or [utcInfo()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian.html#utcInfo-instance_function).
+The types of some returned values depend on the Time.FORMAT\_\* value specified when calling [info()](../Gregorian.md#info-instance_function) or [utcInfo()](../Gregorian.md#utcInfo-instance_function).
 
 ## Instance Member Summary
 
-- [**day**](#day-var "day (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**day**](#day-var "day (Var)") as [Lang.Number](../../Lang/Number.md)
 	The date, indicating the day of the month.
-- [**day\_of\_week**](#day_of_week-var "day_of_week (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**day\_of\_week**](#day_of_week-var "day_of_week (Var)") as [Lang.Number](../../Lang/Number.md) or [Lang.String](../../Lang/String.md)
 	The day of the week (e.g.
-- [**hour**](#hour-var "hour (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**hour**](#hour-var "hour (Var)") as [Lang.Number](../../Lang/Number.md)
 	The hour of the day based on a 24-hour clock.
-- [**min**](#min-var "min (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**min**](#min-var "min (Var)") as [Lang.Number](../../Lang/Number.md)
 	The minutes within an hour.
-- [**month**](#month-var "month (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**month**](#month-var "month (Var)") as [Lang.Number](../../Lang/Number.md) or [Lang.String](../../Lang/String.md)
 	The month of the year (e.g.
-- [**sec**](#sec-var "sec (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**sec**](#sec-var "sec (Var)") as [Lang.Number](../../Lang/Number.md)
 	The seconds within a minute.
-- [**year**](#year-var "year (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**year**](#year-var "year (Var)") as [Lang.Number](../../Lang/Number.md)
 	The year.
 
 ## Instance Attribute Details

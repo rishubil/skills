@@ -13,20 +13,20 @@ ClockTime is a convenient way to get the current time in an easy-to-use format w
 
 ## See Also:
 
-- [Toybox.Time](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time.html)
-- [Number.format()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html#format-instance_function)
+- [Toybox.Time](../Time.md)
+- [Number.format()](../Lang/Number.md#format-instance_function)
 
 ## Instance Member Summary
 
-- [**dst**](#dst-var "dst (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**dst**](#dst-var "dst (Var)") as [Lang.Number](../Lang/Number.md)
 	The daylight savings time offset.
-- [**hour**](#hour-var "hour (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**hour**](#hour-var "hour (Var)") as [Lang.Number](../Lang/Number.md)
 	The hour of the day based on a 24-hour clock.
-- [**min**](#min-var "min (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**min**](#min-var "min (Var)") as [Lang.Number](../Lang/Number.md)
 	The minute of the current hour.
-- [**sec**](#sec-var "sec (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**sec**](#sec-var "sec (Var)") as [Lang.Number](../Lang/Number.md)
 	The second of the current minute.
-- [**timeZoneOffset**](#timeZoneOffset-var "timeZoneOffset (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**timeZoneOffset**](#timeZoneOffset-var "timeZoneOffset (Var)") as [Lang.Number](../Lang/Number.md)
 	The time offset from UTC in seconds.
 
 ## Instance Attribute Details

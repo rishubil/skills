@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/Watc
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Application.WatchFaceConfig.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id.html)
+- [Toybox.Lang.Object](../../Lang/Object.md)
+- [Toybox.Application.WatchFaceConfig.Id](Id.md)
 [show all](#)
 
 ## Overview
@@ -18,7 +18,7 @@ Unique identifier for watchface config settings.
 
 ## Instance Method Summary
 
-- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](../../Lang/Object.md) or **Null**) as [Lang.Boolean](../../Lang/Boolean.md)
 	Equals implementation.
 
 ## Instance Method Details

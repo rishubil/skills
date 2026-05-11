@@ -62,19 +62,19 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/SplitIn
 
 ## Instance Member Summary
 
-- [**averageSpeed**](#averageSpeed-var "averageSpeed (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**averageSpeed**](#averageSpeed-var "averageSpeed (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Average speed for split in meters per second.
-- [**elapsedTime**](#elapsedTime-var "elapsedTime (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**elapsedTime**](#elapsedTime-var "elapsedTime (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Elapsed time for split in milliseconds.
-- [**maxSpeed**](#maxSpeed-var "maxSpeed (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**maxSpeed**](#maxSpeed-var "maxSpeed (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Max speed for split in meters per second.
-- [**splitDistance**](#splitDistance-var "splitDistance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**splitDistance**](#splitDistance-var "splitDistance (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Split distance in meters.
-- [**splitType**](#splitType-var "splitType (Var)") as [SplitInfo.SplitType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/SplitInfo.html#SplitType-module) or **Null**
+- [**splitType**](#splitType-var "splitType (Var)") as [SplitInfo.SplitType](SplitInfo.md#SplitType-module) or **Null**
 	Type of split.
-- [**timerTime**](#timerTime-var "timerTime (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**timerTime**](#timerTime-var "timerTime (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Timer time for split in milliseconds.
-- [**totalAscent**](#totalAscent-var "totalAscent (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**totalAscent**](#totalAscent-var "totalAscent (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Split ascent in meters.
-- [**totalDescent**](#totalDescent-var "totalDescent (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**totalDescent**](#totalDescent-var "totalDescent (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Split descent in meters.

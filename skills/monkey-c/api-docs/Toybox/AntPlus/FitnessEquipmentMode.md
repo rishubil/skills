@@ -11,13 +11,13 @@ Represents a fitness equipment training mode Fields may return `null` so you sho
 
 ## Instance Member Summary
 
-- [**basicResistanceSupported**](#basicResistanceSupported-var "basicResistanceSupported (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**basicResistanceSupported**](#basicResistanceSupported-var "basicResistanceSupported (Var)") as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	Flag for basic resistance training mode support.
-- [**mode**](#mode-var "mode (Var)") as [AntPlus.TrainerMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#TrainerMode-module) or **Null**
+- [**mode**](#mode-var "mode (Var)") as [AntPlus.TrainerMode](../AntPlus.md#TrainerMode-module) or **Null**
 	The current training mode of the fitness equipment.
-- [**simulationSupported**](#simulationSupported-var "simulationSupported (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**simulationSupported**](#simulationSupported-var "simulationSupported (Var)") as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	Flag for simulation training mode support.
-- [**targetPowerSupported**](#targetPowerSupported-var "targetPowerSupported (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**targetPowerSupported**](#targetPowerSupported-var "targetPowerSupported (Var)") as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	Flag for target power training mode support.
 
 ## Instance Attribute Details
