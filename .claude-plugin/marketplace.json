@@ -15,7 +15,8 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/shell-script"
+        "./skills/shell-script",
+        "./skills/fetch-docs"
       ]
     }
   ]
