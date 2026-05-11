@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEner
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.BluetoothLowEnergy.UuidFormatException](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/UuidFormatException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.BluetoothLowEnergy.UuidFormatException](UuidFormatException.md)
 [show all](#)
 
 ## Overview
@@ -19,4 +19,4 @@ This exception indicates that the provided initializer for the Uuid was not vali
 
 ## See Also:
 
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
+- [Toybox.Lang.Exception](../Lang/Exception.md)

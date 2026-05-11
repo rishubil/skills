@@ -13,13 +13,13 @@ The members of this object get called by the system to delegate scanning and pai
 
 ## Instance Method Summary
 
-- [**onPair**](#onPair-instance_function "onPair (Instance Function)") (sensor as [Sensor.SensorInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor/SensorInfo.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onPair**](#onPair-instance_function "onPair (Instance Function)") (sensor as [Sensor.SensorInfo](SensorInfo.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Pair the sensor.
-- [**onScan**](#onScan-instance_function "onScan (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onScan**](#onScan-instance_function "onScan (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Start the sensor scan process.
-- [**onUnpair**](#onUnpair-instance_function "onUnpair (Instance Function)") (sensor as [Sensor.SensorInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor/SensorInfo.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onUnpair**](#onUnpair-instance_function "onUnpair (Instance Function)") (sensor as [Sensor.SensorInfo](SensorInfo.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Unpair the sensor.
-- [**pairingRequired**](#pairingRequired-instance_function "pairingRequired (Instance Function)") () as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**pairingRequired**](#pairingRequired-instance_function "pairingRequired (Instance Function)") () as [Lang.Boolean](../Lang/Boolean.md)
 	Is sensor pairing required? Is called by the system to check if sensor pairing is required.
 
 ## Instance Method Details

@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeRada
 Inherits:
 
 Toybox.AntPlus.Device
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.Device](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/Device.html)
-- [Toybox.AntPlus.BikeRadar](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeRadar.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.Device](Device.md)
+- [Toybox.AntPlus.BikeRadar](BikeRadar.md)
 [show all](#)
 
 ## Overview
@@ -19,9 +19,9 @@ Represents a Bike Radar Device instance.
 
 ## Instance Method Summary
 
-- [**getRadarInfo**](#getRadarInfo-instance_function "getRadarInfo (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [AntPlus.RadarTarget](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/RadarTarget.html) >
+- [**getRadarInfo**](#getRadarInfo-instance_function "getRadarInfo (Instance Function)") () as [Lang.Array](../Lang/Array.md) < [AntPlus.RadarTarget](RadarTarget.md) >
 	Retrieves information on the current list of tracked targets.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.BikeRadarListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeRadarListener.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.BikeRadarListener](BikeRadarListener.md) or **Null**)
 
 ## Instance Method Details
 

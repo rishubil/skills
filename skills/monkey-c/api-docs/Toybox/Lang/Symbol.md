@@ -15,9 +15,9 @@ For this reason, Symbol objects should not be used for persistent data.
 
 ## Instance Method Summary
 
-- [**toNumber**](#toNumber-instance_function "toNumber (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**toNumber**](#toNumber-instance_function "toNumber (Instance Function)") () as [Lang.Number](Number.md)
 	Convert a Symbol to a Number This will return a number containing the integer value of the symbol.
-- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](String.md)
 	Convert a Symbol to a String This will return the string for the name of the symbol in development builds.
 
 ## Instance Method Details

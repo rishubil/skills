@@ -11,13 +11,13 @@ Represents user configurations of fitness equipment for equipment that supports 
 
 ## Instance Member Summary
 
-- [**bikeWeight**](#bikeWeight-var "bikeWeight (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**bikeWeight**](#bikeWeight-var "bikeWeight (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The bike weight set for simulation training mode.
-- [**gearRatio**](#gearRatio-var "gearRatio (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**gearRatio**](#gearRatio-var "gearRatio (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The gear ratio set for simulation training mode.
-- [**userWeight**](#userWeight-var "userWeight (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**userWeight**](#userWeight-var "userWeight (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The user weight set for simulation training mode.
-- [**wheelDiameter**](#wheelDiameter-var "wheelDiameter (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**wheelDiameter**](#wheelDiameter-var "wheelDiameter (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The wheel diameter set for simulation training mode.
 
 ## Instance Attribute Details

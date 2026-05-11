@@ -9,16 +9,16 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataFiel
 
 ## See Also:
 
-- [Toybox.WatchUi.SimpleDataField](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField.html)
-- [Activity.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/Info.html)
-- [Toybox.Graphics](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html)
+- [Toybox.WatchUi.SimpleDataField](SimpleDataField.md)
+- [Activity.Info](../Activity/Info.md)
+- [Toybox.Graphics](../Graphics.md)
 Note:
 
 The system will call the onUpdate() method inherited from View when a Data Field is displayed by the system. Because compute() and onUpdate() are asynchronous, there is no guarantee that compute() will be called before onUpdate(). For this reason, variables should never be initialized in compute().
 
 ## Direct Known Subclasses
 
-[WatchUi.SimpleDataField](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/SimpleDataField.html)
+[WatchUi.SimpleDataField](SimpleDataField.md)
 
 ## Constant Summary
 
@@ -65,19 +65,19 @@ Reason for lap creation
 
 ## Typedef Summary
 
-- [**LapInfoType**](#LapInfoType-named_type "LapInfoType (Named Type)") as {:lapTrigger as [DataField.LapTriggerType](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataField.html#LapTriggerType-module) }
-- [**RouteTarget**](#RouteTarget-named_type "RouteTarget (Named Type)") as [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html) or [PersistedContent.Waypoint](https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent/Waypoint.html)
-- [**Workout**](#Workout-named_type "Workout (Named Type)") as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Activity.WorkoutStepInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStepInfo.html) > or [PersistedContent.Workout](https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent/Workout.html)
+- [**LapInfoType**](#LapInfoType-named_type "LapInfoType (Named Type)") as {:lapTrigger as [DataField.LapTriggerType](DataField.md#LapTriggerType-module) }
+- [**RouteTarget**](#RouteTarget-named_type "RouteTarget (Named Type)") as [Position.Location](../Position/Location.md) or [PersistedContent.Waypoint](../PersistedContent/Waypoint.md)
+- [**Workout**](#Workout-named_type "Workout (Named Type)") as [Lang.Array](../Lang/Array.md) < [Activity.WorkoutStepInfo](../Activity/WorkoutStepInfo.md) > or [PersistedContent.Workout](../PersistedContent/Workout.md)
 
 ## Instance Method Summary
 
-- [**compute**](#compute-instance_function "compute (Instance Function)") (info as [Activity.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/Info.html))
-	Retrieve [Activity.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/Info.html) in a DataField.
-- [**createField**](#createField-instance_function "createField (Instance Function)") (name as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html), fieldId as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), type as [FitContributor.DataType](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor.html#DataType-module), options as {:count as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:mesgType as [FitContributor.MessageType](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor.html#MessageType-module),:units as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) }) as [FitContributor.Field](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor/Field.html)
-	Create a new custom FIT [Field](https://developer.garmin.com/connect-iq/api-docs/Toybox/FitContributor/Field.html).
-- [**getBackgroundColor**](#getBackgroundColor-instance_function "getBackgroundColor (Instance Function)") () as [Graphics.ColorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#ColorType-named_type)
+- [**compute**](#compute-instance_function "compute (Instance Function)") (info as [Activity.Info](../Activity/Info.md))
+	Retrieve [Activity.Info](../Activity/Info.md) in a DataField.
+- [**createField**](#createField-instance_function "createField (Instance Function)") (name as [Lang.String](../Lang/String.md), fieldId as [Lang.Number](../Lang/Number.md), type as [FitContributor.DataType](../FitContributor.md#DataType-module), options as {:count as [Lang.Number](../Lang/Number.md),:mesgType as [FitContributor.MessageType](../FitContributor.md#MessageType-module),:units as [Lang.String](../Lang/String.md) }) as [FitContributor.Field](../FitContributor/Field.md)
+	Create a new custom FIT [Field](../FitContributor/Field.md).
+- [**getBackgroundColor**](#getBackgroundColor-instance_function "getBackgroundColor (Instance Function)") () as [Graphics.ColorType](../Graphics.md#ColorType-named_type)
 	Get the current Data Field background color.
-- [**getObscurityFlags**](#getObscurityFlags-instance_function "getObscurityFlags (Instance Function)") () as [DataField.Obscurity](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataField.html#Obscurity-module)
+- [**getObscurityFlags**](#getObscurityFlags-instance_function "getObscurityFlags (Instance Function)") () as [DataField.Obscurity](DataField.md#Obscurity-module)
 	Get the screen regions that are obscured.
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
@@ -85,7 +85,7 @@ Reason for lap creation
 	The device has transitioned to the next multisport leg.
 - [**onTimerLap**](#onTimerLap-instance_function "onTimerLap (Instance Function)") () as **Void**
 	A lap event has occurred.
-- [**onTimerLap2**](#onTimerLap2-instance_function "onTimerLap2 (Instance Function)") (trigger as [DataField.LapInfoType](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataField.html#LapInfoType-named_type)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onTimerLap2**](#onTimerLap2-instance_function "onTimerLap2 (Instance Function)") (trigger as [DataField.LapInfoType](DataField.md#LapInfoType-named_type)) as [Lang.Boolean](../Lang/Boolean.md)
 	A lap event has occurred.
 - [**onTimerPause**](#onTimerPause-instance_function "onTimerPause (Instance Function)") () as **Void**
 	The activity timer is paused.
@@ -93,9 +93,9 @@ Reason for lap creation
 	The current activity has ended.
 - [**onTimerResume**](#onTimerResume-instance_function "onTimerResume (Instance Function)") () as **Void**
 	The activity time has resumed.
-- [**onTimerSplitEnd**](#onTimerSplitEnd-instance_function "onTimerSplitEnd (Instance Function)") (info as [Activity.SplitInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/SplitInfo.html)) as **Void**
+- [**onTimerSplitEnd**](#onTimerSplitEnd-instance_function "onTimerSplitEnd (Instance Function)") (info as [Activity.SplitInfo](../Activity/SplitInfo.md)) as **Void**
 	A split has ended This method is called when a split is ended in the current activity.
-- [**onTimerSplitStart**](#onTimerSplitStart-instance_function "onTimerSplitStart (Instance Function)") (info as [Activity.SplitInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/SplitInfo.html)) as **Void**
+- [**onTimerSplitStart**](#onTimerSplitStart-instance_function "onTimerSplitStart (Instance Function)") (info as [Activity.SplitInfo](../Activity/SplitInfo.md)) as **Void**
 	A split has started This method is called when a split is added to the current activity.
 - [**onTimerStart**](#onTimerStart-instance_function "onTimerStart (Instance Function)") () as **Void**
 	The activity timer has started.
@@ -105,11 +105,11 @@ Reason for lap creation
 	The current workout is started.
 - [**onWorkoutStepComplete**](#onWorkoutStepComplete-instance_function "onWorkoutStepComplete (Instance Function)") () as **Void**
 	The current workout step is complete.
-- [**routeTo**](#routeTo-instance_function "routeTo (Instance Function)") (target as [DataField.RouteTarget](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataField.html#RouteTarget-named_type), options as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**routeTo**](#routeTo-instance_function "routeTo (Instance Function)") (target as [DataField.RouteTarget](DataField.md#RouteTarget-named_type), options as [Lang.Dictionary](../Lang/Dictionary.md) or **Null**) as [Lang.Boolean](../Lang/Boolean.md)
 	Set the activity's destination.
-- [**setWorkout**](#setWorkout-instance_function "setWorkout (Instance Function)") (workout as [DataField.Workout](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataField.html#Workout-named_type), options as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**setWorkout**](#setWorkout-instance_function "setWorkout (Instance Function)") (workout as [DataField.Workout](DataField.md#Workout-named_type), options as [Lang.Dictionary](../Lang/Dictionary.md) or **Null**) as [Lang.Boolean](../Lang/Boolean.md)
 	Set the activity's workout.
-- [**showAlert**](#showAlert-instance_function "showAlert (Instance Function)") (alertView as [WatchUi.DataFieldAlert](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DataFieldAlert.html)) as **Void**
+- [**showAlert**](#showAlert-instance_function "showAlert (Instance Function)") (alertView as [WatchUi.DataFieldAlert](DataFieldAlert.md)) as **Void**
 	Show an alert.
 
 ## Typedef Details

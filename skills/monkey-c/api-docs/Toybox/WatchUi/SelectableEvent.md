@@ -7,24 +7,24 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectab
 
 ## Overview
 
-SelectableEvent is an object sent to [InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html) when a [Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html) is manipulated using physical buttons or touch screen.
+SelectableEvent is an object sent to [InputDelegate](InputDelegate.md) when a [Selectable](Selectable.md) is manipulated using physical buttons or touch screen.
 
 ## See Also:
 
-- [Toybox.WatchUi.Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html)
+- [Toybox.WatchUi.Selectable](Selectable.md)
 
 ## Instance Method Summary
 
-- [**getInstance**](#getInstance-instance_function "getInstance (Instance Function)") () as [WatchUi.Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html)
-	Get the instance of the manipulated [Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html).
-- [**getPreviousState**](#getPreviousState-instance_function "getPreviousState (Instance Function)") () as [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html)
+- [**getInstance**](#getInstance-instance_function "getInstance (Instance Function)") () as [WatchUi.Selectable](Selectable.md)
+	Get the instance of the manipulated [Selectable](Selectable.md).
+- [**getPreviousState**](#getPreviousState-instance_function "getPreviousState (Instance Function)") () as [Lang.Symbol](../Lang/Symbol.md)
 	Get the previous state of the Selectable that generated the event.
 
 ## Instance Method Details
 
 ### getInstance() as WatchUi.Selectable
 
-Get the instance of the manipulated [Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html).
+Get the instance of the manipulated [Selectable](Selectable.md).
 
 ### getPreviousState() as Lang.Symbol
 

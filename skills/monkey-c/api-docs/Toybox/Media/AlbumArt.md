@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/AlbumArt.h
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Media.AlbumArt](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/AlbumArt.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Media.AlbumArt](AlbumArt.md)
 [show all](#)
 
 ## Overview
@@ -18,9 +18,9 @@ Stores metadata related to the location and format of album art
 
 ## Instance Member Summary
 
-- [**image\_format**](#image_format-var "image_format (Var)") as [Media.ImageFormat](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html#ImageFormat-module)
+- [**image\_format**](#image_format-var "image_format (Var)") as [Media.ImageFormat](../Media.md#ImageFormat-module)
 	The image format of the album art.
-- [**image\_offset**](#image_offset-var "image_offset (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**image\_offset**](#image_offset-var "image_offset (Var)") as [Lang.Number](../Lang/Number.md)
 	Byte offset of the album art image within the audio file.
 
 ## Instance Attribute Details

@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/SymbolNotAl
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Lang.SymbolNotAllowedException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/SymbolNotAllowedException.html)
+- [Toybox.Lang.Object](Object.md)
+- [Toybox.Lang.Exception](Exception.md)
+- [Toybox.Lang.SymbolNotAllowedException](SymbolNotAllowedException.md)
 [show all](#)
 
 ## Overview
@@ -19,11 +19,11 @@ This exception indicates that an app attempted to access a Symbol that is not ac
 
 ## See Also:
 
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
+- [Toybox.Lang.Exception](Exception.md)
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (msg as [Lang.String](String.md))
 	SymbolNotAllowedException constructor.
 
 ## Instance Method Details

@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpee
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.BikeSpeedInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.BikeSpeedInfo](BikeSpeedInfo.md)
 [show all](#)
 
 ## Overview
@@ -18,9 +18,9 @@ Represents received bike speed information.
 
 ## Instance Member Summary
 
-- [**distance**](#distance-var "distance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)
+- [**distance**](#distance-var "distance (Var)") as [Lang.Float](../Lang/Float.md)
 	Distance (m).
-- [**speed**](#speed-var "speed (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)
+- [**speed**](#speed-var "speed (Var)") as [Lang.Float](../Lang/Float.md)
 	Speed (m/s).
 
 ## Instance Attribute Details

@@ -13,21 +13,21 @@ The SensorInfo provides access to the attributes of a Sensor.
 
 ## Instance Member Summary
 
-- [**data**](#data-var "data (Var)") as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) or **Null**
+- [**data**](#data-var "data (Var)") as [Lang.Dictionary](../Lang/Dictionary.md) or **Null**
 	The Sensor-specific data A dictionary of sensor-specific attributes.
-- [**enabled**](#enabled-var "enabled (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**enabled**](#enabled-var "enabled (Var)") as [Lang.Boolean](../Lang/Boolean.md)
 	The Sensor enabled flag.
-- [**manufacturerId**](#manufacturerId-var "manufacturerId (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**manufacturerId**](#manufacturerId-var "manufacturerId (Var)") as [Lang.Number](../Lang/Number.md)
 	The Sensor manufacturer.
-- [**name**](#name-var "name (Var)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**name**](#name-var "name (Var)") as [Lang.String](../Lang/String.md)
 	The Sensor name.
-- [**partNumber**](#partNumber-var "partNumber (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**partNumber**](#partNumber-var "partNumber (Var)") as [Lang.Number](../Lang/Number.md)
 	The Sensor part number.
-- [**softwareVersion**](#softwareVersion-var "softwareVersion (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**softwareVersion**](#softwareVersion-var "softwareVersion (Var)") as [Lang.Number](../Lang/Number.md)
 	The Sensor software version.
-- [**technology**](#technology-var "technology (Var)") as [Sensor.SensorTechnology](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor.html#SensorTechnology-module)
+- [**technology**](#technology-var "technology (Var)") as [Sensor.SensorTechnology](../Sensor.md#SensorTechnology-module)
 	The Sensor technology The technology used to communicate with this sensor.
-- [**type**](#type-var "type (Var)") as [Sensor.SensorType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Sensor.html#SensorType-named_type)
+- [**type**](#type-var "type (Var)") as [Sensor.SensorType](../Sensor.md#SensorType-named_type)
 	The Sensor type.
 
 ## Instance Attribute Details
@@ -38,10 +38,10 @@ The Sensor-specific data
 
 A dictionary of sensor-specific attributes. Currently supported attributes include:
 
-- `:bleAddress` - The mac address of the BLE sensor (e.g., 01:02:03:04:05:06) as a [ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html), if available.
-- `:antSerialNumber` - The 20-bit ANT sensor serial number as a [Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
-- `:bleScanResult` - The scanresult of a discovered BLE device as a [ScanResult](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult.html).
-- `:antMessage` - The ANT message of a discovered ANT device as a [Message](https://developer.garmin.com/connect-iq/api-docs/Toybox/Ant/Message.html)
+- `:bleAddress` - The mac address of the BLE sensor (e.g., 01:02:03:04:05:06) as a [ByteArray](../Lang/ByteArray.md), if available.
+- `:antSerialNumber` - The 20-bit ANT sensor serial number as a [Number](../Lang/Number.md)
+- `:bleScanResult` - The scanresult of a discovered BLE device as a [ScanResult](../BluetoothLowEnergy/ScanResult.md).
+- `:antMessage` - The ANT message of a discovered ANT device as a [Message](../Ant/Message.md)
 
 ### var enabled as Lang.Boolean
 

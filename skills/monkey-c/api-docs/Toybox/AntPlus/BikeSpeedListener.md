@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpee
 Inherits:
 
 Toybox.AntPlus.DeviceListener
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.DeviceListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/DeviceListener.html)
-- [Toybox.AntPlus.BikeSpeedListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedListener.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.DeviceListener](DeviceListener.md)
+- [Toybox.AntPlus.BikeSpeedListener](BikeSpeedListener.md)
 [show all](#)
 
 ## Overview
@@ -21,7 +21,7 @@ Listener class for Bike Speed
 
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
-- [**onBikeSpeedUpdate**](#onBikeSpeedUpdate-instance_function "onBikeSpeedUpdate (Instance Function)") (data as [AntPlus.BikeSpeedInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedInfo.html)) as **Void**
+- [**onBikeSpeedUpdate**](#onBikeSpeedUpdate-instance_function "onBikeSpeedUpdate (Instance Function)") (data as [AntPlus.BikeSpeedInfo](BikeSpeedInfo.md)) as **Void**
 	Callback when speed data is updated.
 
 ## Instance Method Details

@@ -11,11 +11,11 @@ Stores metadata related to the quality of the audio data associated with a media
 
 ## Instance Member Summary
 
-- [**bitRate**](#bitRate-var "bitRate (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**bitRate**](#bitRate-var "bitRate (Var)") as [Lang.Number](../Lang/Number.md)
 	The bit rate of the audio.
-- [**numChannels**](#numChannels-var "numChannels (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**numChannels**](#numChannels-var "numChannels (Var)") as [Lang.Number](../Lang/Number.md)
 	The number of channels.
-- [**sampleRate**](#sampleRate-var "sampleRate (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**sampleRate**](#sampleRate-var "sampleRate (Var)") as [Lang.Number](../Lang/Number.md)
 	The sample rate of the audio in Hz.
 
 ## Instance Attribute Details

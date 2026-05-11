@@ -11,21 +11,21 @@ Receive events on a Watch Face.
 
 ## See Also:
 
-- [Toybox.WatchUi.WatchFace](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/WatchFace.html)
+- [Toybox.WatchUi.WatchFace](WatchFace.md)
 
 ## Instance Method Summary
 
-- [**getComplicationDrawable**](#getComplicationDrawable-instance_function "getComplicationDrawable (Instance Function)") (complication as [WatchFaceConfig.ComplicationRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef.html)) as [WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html) or [WatchUi.ComplicationDrawableRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ComplicationDrawableRef.html) or **Null**
+- [**getComplicationDrawable**](#getComplicationDrawable-instance_function "getComplicationDrawable (Instance Function)") (complication as [WatchFaceConfig.ComplicationRef](../Application/WatchFaceConfig/ComplicationRef.md)) as [WatchUi.Drawable](Drawable.md) or [WatchUi.ComplicationDrawableRef](ComplicationDrawableRef.md) or **Null**
 	Get a Drawable for highlighting purposes.
-- [**onPowerBudgetExceeded**](#onPowerBudgetExceeded-instance_function "onPowerBudgetExceeded (Instance Function)") (powerInfo as [WatchUi.WatchFacePowerInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/WatchFacePowerInfo.html)) as **Void**
+- [**onPowerBudgetExceeded**](#onPowerBudgetExceeded-instance_function "onPowerBudgetExceeded (Instance Function)") (powerInfo as [WatchUi.WatchFacePowerInfo](WatchFacePowerInfo.md)) as **Void**
 	Handle a partial update exceeding the power budget.
-- [**onPress**](#onPress-instance_function "onPress (Instance Function)") (clickEvent as [WatchUi.ClickEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ClickEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onPress**](#onPress-instance_function "onPress (Instance Function)") (clickEvent as [WatchUi.ClickEvent](ClickEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	Called when user does a touch and hold.
-- [**onTap**](#onTap-instance_function "onTap (Instance Function)") (clickEvent as [WatchUi.ClickEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ClickEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onTap**](#onTap-instance_function "onTap (Instance Function)") (clickEvent as [WatchUi.ClickEvent](ClickEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A screen tap event has occurred.
-- [**onWatchFaceConfigEdited**](#onWatchFaceConfigEdited-instance_function "onWatchFaceConfigEdited (Instance Function)") (options as {:configId as [WatchFaceConfig.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id.html),:type as [WatchUi.WatchFaceConfigType](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#WatchFaceConfigType-module) or **Null**,:committed as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) }) as **Void**
+- [**onWatchFaceConfigEdited**](#onWatchFaceConfigEdited-instance_function "onWatchFaceConfigEdited (Instance Function)") (options as {:configId as [WatchFaceConfig.Id](../Application/WatchFaceConfig/Id.md),:type as [WatchUi.WatchFaceConfigType](../WatchUi.md#WatchFaceConfigType-module) or **Null**,:committed as [Lang.Boolean](../Lang/Boolean.md) }) as **Void**
 	A watchface config change has occurred.
-- [**setSelectedComplication**](#setSelectedComplication-instance_function "setSelectedComplication (Instance Function)") (complicationIdentifier as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)) as **Void**
+- [**setSelectedComplication**](#setSelectedComplication-instance_function "setSelectedComplication (Instance Function)") (complicationIdentifier as [Lang.Number](../Lang/Number.md)) as **Void**
 	Set the selected complication field.
 
 ## Instance Method Details
@@ -40,7 +40,7 @@ Called by system to get a Drawable for the given complication field for highligh
 
 Handle a partial update exceeding the power budget.
 
-If the [onPartialUpdate()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/WatchFace.html#onPartialUpdate-instance_function) callback of the associated [WatchFace](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/WatchFace.html) exceeds the power budget of the device, this method will be called with information about the limits that were exceeded.
+If the [onPartialUpdate()](WatchFace.md#onPartialUpdate-instance_function) callback of the associated [WatchFace](WatchFace.md) exceeds the power budget of the device, this method will be called with information about the limits that were exceeded.
 
 ### onPress(clickEvent as WatchUi.ClickEvent) as Lang.Boolean
 
@@ -50,13 +50,13 @@ Called when user does a touch and hold
 
 A screen tap event has occurred.
 
-Only available in WatchFace config mode. Can be overridden by application to change the selected `complication`, using [WatchFaceDelegate.setSelectedComplication()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/WatchFaceDelegate.html#setSelectedComplication-instance_function)
+Only available in WatchFace config mode. Can be overridden by application to change the selected `complication`, using [WatchFaceDelegate.setSelectedComplication()](WatchFaceDelegate.md#setSelectedComplication-instance_function)
 
 ### onWatchFaceConfigEdited(options as {:configId as WatchFaceConfig.Id,:type as WatchUi.WatchFaceConfigType or Null,:committed as Lang.Boolean }) as Void
 
 A watchface config change has occurred.
 
-Only available in WatchFace config mode, application can call [WatchFaceConfig.getSettings()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig.html#getSettings-instance_function) to retrieve the current settings.
+Only available in WatchFace config mode, application can call [WatchFaceConfig.getSettings()](../Application/WatchFaceConfig.md#getSettings-instance_function) to retrieve the current settings.
 
 ### setSelectedComplication(complicationIdentifier as Lang.Number) as Void
 

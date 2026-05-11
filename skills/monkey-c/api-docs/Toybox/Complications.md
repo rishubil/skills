@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.ht
 
 ## Classes Under Namespace
 
-**Classes:** [Complication](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Complication.html), [ComplicationNotFoundException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException.html), [Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html), [Iterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Iterator.html)
+**Classes:** [Complication](Complications/Complication.md), [ComplicationNotFoundException](Complications/ComplicationNotFoundException.md), [Id](Complications/Id.md), [Iterator](Complications/Iterator.md)
 
 ## Constant Summary
 
@@ -41,10 +41,10 @@ System build-in complication type
 | COMPLICATION\_TYPE\_INTENSITY\_MINUTES | 5 | API Level 4.2.0 | Value is a non-negative Number of intensity minutes that resets weekly |
 | COMPLICATION\_TYPE\_DATE | 6 | API Level 4.2.0 | Value is a String with the day of the month and the month e.g., 28 Mar |
 | COMPLICATION\_TYPE\_WEEKDAY\_MONTHDAY | 7 | API Level 4.2.0 | Value is a String with the day of the week and the day of the month e.g., Mon 28 |
-| COMPLICATION\_TYPE\_CURRENT\_WEATHER | 8 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather.html#CONDITION_CLEAR-const) for the current weather |
-| COMPLICATION\_TYPE\_FORECAST\_WEATHER\_1DAY | 9 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather.html#CONDITION_CLEAR-const) for the forecast weather one day in the future |
-| COMPLICATION\_TYPE\_FORECAST\_WEATHER\_2DAY | 10 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather.html#CONDITION_CLEAR-const) for the forecast weather two days in the future |
-| COMPLICATION\_TYPE\_FORECAST\_WEATHER\_3DAY | 11 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather.html#CONDITION_CLEAR-const) for the forecast weather three days in the future |
+| COMPLICATION\_TYPE\_CURRENT\_WEATHER | 8 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](Weather.md#CONDITION_CLEAR-const) for the current weather |
+| COMPLICATION\_TYPE\_FORECAST\_WEATHER\_1DAY | 9 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](Weather.md#CONDITION_CLEAR-const) for the forecast weather one day in the future |
+| COMPLICATION\_TYPE\_FORECAST\_WEATHER\_2DAY | 10 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](Weather.md#CONDITION_CLEAR-const) for the forecast weather two days in the future |
+| COMPLICATION\_TYPE\_FORECAST\_WEATHER\_3DAY | 11 | API Level 4.2.0 | Value is a [Weather.CONDITION\_\*](Weather.md#CONDITION_CLEAR-const) for the forecast weather three days in the future |
 | COMPLICATION\_TYPE\_CALENDAR\_EVENTS | 12 | API Level 4.2.0 | Value is a String with the time of your next calendar event or `null` |
 | COMPLICATION\_TYPE\_SUNRISE | 13 | API Level 4.2.0 | Value is a non-negative Number representing seconds since midnight local time of the sunrise or `null` |
 | COMPLICATION\_TYPE\_SUNSET | 14 | API Level 4.2.0 | Value is a non-negative Number representing seconds since midnight local time of the sunset or `null` |
@@ -78,29 +78,29 @@ System build-in complication type
 
 ## Typedef Summary
 
-- [**ComplicationChangedCallback**](#ComplicationChangedCallback-named_type "ComplicationChangedCallback (Named Type)") as [Lang.Method](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Method.html) (id as [Complications.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html)) as **Void**
+- [**ComplicationChangedCallback**](#ComplicationChangedCallback-named_type "ComplicationChangedCallback (Named Type)") as [Lang.Method](Lang/Method.md) (id as [Complications.Id](Complications/Id.md)) as **Void**
 	Callback for subscribers to be notified of complication updates.
-- [**Data**](#Data-named_type "Data (Named Type)") as {:shortLabel as [Complications.Label](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Label-named_type),:value as [Complications.Value](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Value-named_type),:unit as [Complications.Unit](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Unit-module) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html),:ranges as [Complications.Ranges](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Ranges-named_type) }
-- [**Icon**](#Icon-named_type "Icon (Named Type)") as [WatchUi.BitmapResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BitmapResource.html) or [Graphics.BitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapReference.html)
-- [**Label**](#Label-named_type "Label (Named Type)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
-- [**RangeValue**](#RangeValue-named_type "RangeValue (Named Type)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html) or [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html)
-- [**Ranges**](#Ranges-named_type "Ranges (Named Type)") as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Complications.RangeValue](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#RangeValue-named_type) >
-- [**Value**](#Value-named_type "Value (Named Type)") as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Complications.RangeValue](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#RangeValue-named_type)
+- [**Data**](#Data-named_type "Data (Named Type)") as {:shortLabel as [Complications.Label](Complications.md#Label-named_type),:value as [Complications.Value](Complications.md#Value-named_type),:unit as [Complications.Unit](Complications.md#Unit-module) or [Lang.String](Lang/String.md),:ranges as [Complications.Ranges](Complications.md#Ranges-named_type) }
+- [**Icon**](#Icon-named_type "Icon (Named Type)") as [WatchUi.BitmapResource](WatchUi/BitmapResource.md) or [Graphics.BitmapReference](Graphics/BitmapReference.md)
+- [**Label**](#Label-named_type "Label (Named Type)") as [Lang.String](Lang/String.md)
+- [**RangeValue**](#RangeValue-named_type "RangeValue (Named Type)") as [Lang.Number](Lang/Number.md) or [Lang.Float](Lang/Float.md) or [Lang.Long](Lang/Long.md) or [Lang.Double](Lang/Double.md)
+- [**Ranges**](#Ranges-named_type "Ranges (Named Type)") as [Lang.Array](Lang/Array.md) < [Complications.RangeValue](Complications.md#RangeValue-named_type) >
+- [**Value**](#Value-named_type "Value (Named Type)") as [Lang.String](Lang/String.md) or [Complications.RangeValue](Complications.md#RangeValue-named_type)
 
 ## Instance Method Summary
 
-- [**exitTo**](#exitTo-instance_function "exitTo (Instance Function)") (id as [Complications.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html)) as **Void**
+- [**exitTo**](#exitTo-instance_function "exitTo (Instance Function)") (id as [Complications.Id](Complications/Id.md)) as **Void**
 	Launches the app associated with the complication.
-- [**getComplication**](#getComplication-instance_function "getComplication (Instance Function)") (id as [Complications.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html)) as [Complications.Complication](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Complication.html)
+- [**getComplication**](#getComplication-instance_function "getComplication (Instance Function)") (id as [Complications.Id](Complications/Id.md)) as [Complications.Complication](Complications/Complication.md)
 	Given a complication Id, get the complication.
-- [**getComplications**](#getComplications-instance_function "getComplications (Instance Function)") () as [Complications.Iterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Iterator.html)
+- [**getComplications**](#getComplications-instance_function "getComplications (Instance Function)") () as [Complications.Iterator](Complications/Iterator.md)
 	Provide an iterator over complication id that we have access to.
-- [**registerComplicationChangeCallback**](#registerComplicationChangeCallback-instance_function "registerComplicationChangeCallback (Instance Function)") (callback as [Complications.ComplicationChangedCallback](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#ComplicationChangedCallback-named_type) or **Null**) as **Void**
-- [**subscribeToUpdates**](#subscribeToUpdates-instance_function "subscribeToUpdates (Instance Function)") (id as [Complications.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**registerComplicationChangeCallback**](#registerComplicationChangeCallback-instance_function "registerComplicationChangeCallback (Instance Function)") (callback as [Complications.ComplicationChangedCallback](Complications.md#ComplicationChangedCallback-named_type) or **Null**) as **Void**
+- [**subscribeToUpdates**](#subscribeToUpdates-instance_function "subscribeToUpdates (Instance Function)") (id as [Complications.Id](Complications/Id.md)) as [Lang.Boolean](Lang/Boolean.md)
 	Subscribes to complication.
 - [**unsubscribeFromAllUpdates**](#unsubscribeFromAllUpdates-instance_function "unsubscribeFromAllUpdates (Instance Function)") () as **Void**
 	Unsubscribes from all subscribed complications.
-- [**unsubscribeFromUpdates**](#unsubscribeFromUpdates-instance_function "unsubscribeFromUpdates (Instance Function)") (id as [Complications.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html)) as **Void**
+- [**unsubscribeFromUpdates**](#unsubscribeFromUpdates-instance_function "unsubscribeFromUpdates (Instance Function)") (id as [Complications.Id](Complications/Id.md)) as **Void**
 	Unsubscribes from complication.
-- [**updateComplication**](#updateComplication-instance_function "updateComplication (Instance Function)") (index as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), data as [Complications.Data](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Data-named_type)) as **Void**
+- [**updateComplication**](#updateComplication-instance_function "updateComplication (Instance Function)") (index as [Lang.Number](Lang/Number.md), data as [Complications.Data](Complications.md#Data-named_type)) as **Void**
 	Update the complication data Values not specified in \`data\` will not be updated from the last update or what is specified in the resource definition.

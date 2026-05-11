@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/System.html
 
 ## Classes Under Namespace
 
-**Classes:** [AppNotInstalledException](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/AppNotInstalledException.html), [ClockTime](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ClockTime.html), [ConnectionInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ConnectionInfo.html), [DeviceSettings](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/DeviceSettings.html), [Intent](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/Intent.html), [PreviousOperationNotCompleteException](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/PreviousOperationNotCompleteException.html), [ServiceDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ServiceDelegate.html), [Stats](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/Stats.html), [UnexpectedAppTypeException](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/UnexpectedAppTypeException.html)
+**Classes:** [AppNotInstalledException](System/AppNotInstalledException.md), [ClockTime](System/ClockTime.md), [ConnectionInfo](System/ConnectionInfo.md), [DeviceSettings](System/DeviceSettings.md), [Intent](System/Intent.md), [PreviousOperationNotCompleteException](System/PreviousOperationNotCompleteException.md), [ServiceDelegate](System/ServiceDelegate.md), [Stats](System/Stats.md), [UnexpectedAppTypeException](System/UnexpectedAppTypeException.md)
 
 ## Constant Summary
 
@@ -111,8 +111,8 @@ Enum class for display mode
 
 | Name | Value | Since | Description |
 | --- | --- | --- | --- |
-| DISPLAY\_MODE\_HIGH\_POWER | 0 | API Level 5.0.0 | Display in high power mode. [View.onUpdate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/View.html#onUpdate-instance_function) are not subject to burn-in protection. |
-| DISPLAY\_MODE\_LOW\_POWER | 1 | API Level 5.0.0 | Display in low power mode, including watch face always-on mode. [View.onUpdate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/View.html#onUpdate-instance_function) subject to burn-in protection. |
+| DISPLAY\_MODE\_HIGH\_POWER | 0 | API Level 5.0.0 | Display in high power mode. [View.onUpdate](WatchUi/View.md#onUpdate-instance_function) are not subject to burn-in protection. |
+| DISPLAY\_MODE\_LOW\_POWER | 1 | API Level 5.0.0 | Display in low power mode, including watch face always-on mode. [View.onUpdate](WatchUi/View.md#onUpdate-instance_function) subject to burn-in protection. |
 | DISPLAY\_MODE\_OFF | 2 | API Level 5.0.0 | Display is off. |
 
 ### PhoneOperatingSystem
@@ -127,27 +127,27 @@ The platform associated with a connected phone.
 
 ## Instance Method Summary
 
-- [**error**](#error-instance_function "error (Instance Function)") (msg as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)) as **Void**
+- [**error**](#error-instance_function "error (Instance Function)") (msg as [Lang.String](Lang/String.md)) as **Void**
 	Write an error to the console and exit the system.
 - [**exit**](#exit-instance_function "exit (Instance Function)") () as **Void**
 	End execution of the current app.
-- [**exitTo**](#exitTo-instance_function "exitTo (Instance Function)") (intent as [System.Intent](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/Intent.html)) as **Void**
+- [**exitTo**](#exitTo-instance_function "exitTo (Instance Function)") (intent as [System.Intent](System/Intent.md)) as **Void**
 	Exit the current app and launch a new app.
-- [**getClockTime**](#getClockTime-instance_function "getClockTime (Instance Function)") () as [System.ClockTime](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ClockTime.html)
+- [**getClockTime**](#getClockTime-instance_function "getClockTime (Instance Function)") () as [System.ClockTime](System/ClockTime.md)
 	Get the current clock time.
-- [**getDeviceSettings**](#getDeviceSettings-instance_function "getDeviceSettings (Instance Function)") () as [System.DeviceSettings](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/DeviceSettings.html)
+- [**getDeviceSettings**](#getDeviceSettings-instance_function "getDeviceSettings (Instance Function)") () as [System.DeviceSettings](System/DeviceSettings.md)
 	Get the current device settings.
-- [**getDisplayMode**](#getDisplayMode-instance_function "getDisplayMode (Instance Function)") () as [System.DisplayMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/System.html#DisplayMode-module)
+- [**getDisplayMode**](#getDisplayMode-instance_function "getDisplayMode (Instance Function)") () as [System.DisplayMode](System.md#DisplayMode-module)
 	Get the current display mode, only available in devices with AMOLED or LCD screens.
-- [**getSystemStats**](#getSystemStats-instance_function "getSystemStats (Instance Function)") () as [System.Stats](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/Stats.html)
+- [**getSystemStats**](#getSystemStats-instance_function "getSystemStats (Instance Function)") () as [System.Stats](System/Stats.md)
 	Get the current system stats.
-- [**getTimer**](#getTimer-instance_function "getTimer (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getTimer**](#getTimer-instance_function "getTimer (Instance Function)") () as [Lang.Number](Lang/Number.md)
 	Get the current millisecond timer value.
-- [**isAppInstalled**](#isAppInstalled-instance_function "isAppInstalled (Instance Function)") (uri as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**isAppInstalled**](#isAppInstalled-instance_function "isAppInstalled (Instance Function)") (uri as [Lang.String](Lang/String.md)) as [Lang.Boolean](Lang/Boolean.md)
 	Check the installation status of an app.
-- [**print**](#print-instance_function "print (Instance Function)") (output as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**) as **Void**
+- [**print**](#print-instance_function "print (Instance Function)") (output as [Lang.Object](Lang/Object.md) or **Null**) as **Void**
 	Print to the console.
-- [**println**](#println-instance_function "println (Instance Function)") (output as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**) as **Void**
+- [**println**](#println-instance_function "println (Instance Function)") (output as [Lang.Object](Lang/Object.md) or **Null**) as **Void**
 	Print to the console with a line terminator.
 
 ## Instance Method Details

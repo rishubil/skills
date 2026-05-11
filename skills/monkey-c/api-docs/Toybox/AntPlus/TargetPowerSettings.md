@@ -11,7 +11,7 @@ Represents the target power set on fitness equipment when the equipment is in ta
 
 ## Instance Member Summary
 
-- [**targetPower**](#targetPower-var "targetPower (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**targetPower**](#targetPower-var "targetPower (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The target power set for the Fitness Equipment.
 
 ## Instance Attribute Details

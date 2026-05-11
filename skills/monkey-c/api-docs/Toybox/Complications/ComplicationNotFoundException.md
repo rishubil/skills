@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Co
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Complications.ComplicationNotFoundException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/ComplicationNotFoundException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.Complications.ComplicationNotFoundException](ComplicationNotFoundException.md)
 [show all](#)
 
 ## Overview
@@ -19,7 +19,7 @@ This exception indicates that the requested complication was not found.
 
 ## See Also:
 
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
 
 ## Instance Method Summary
 

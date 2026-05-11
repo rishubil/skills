@@ -15,7 +15,7 @@ Class that represents an action menu delegate, which can be used to relay events
 	Constructor for the ActionMenuDelegate.
 - [**onBack**](#onBack-instance_function "onBack (Instance Function)") () as **Void**
 	An ActionMenu back key was pressed.
-- [**onSelect**](#onSelect-instance_function "onSelect (Instance Function)") (item as [WatchUi.ActionMenuItem](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ActionMenuItem.html)) as **Void**
+- [**onSelect**](#onSelect-instance_function "onSelect (Instance Function)") (item as [WatchUi.ActionMenuItem](ActionMenuItem.md)) as **Void**
 	An ActionMenuItem was selected.
 
 ## Instance Method Details

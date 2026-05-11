@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Transpar
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.TransparentProgressBar](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/TransparentProgressBar.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.TransparentProgressBar](TransparentProgressBar.md)
 [show all](#)
 
 ## Overview
@@ -18,7 +18,7 @@ A representation of an on-screen transparent progress bar or spinner.
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as [Lang.Dictionary](../Lang/Dictionary.md) or **Null**)
 	Constructor.
 
 ## Instance Method Details

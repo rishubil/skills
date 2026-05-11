@@ -8,21 +8,21 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Media.ContentRefIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRefIterator.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Media.ContentRefIterator](ContentRefIterator.md)
 [show all](#)
 
 ## Overview
 
-Iterates over [ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html) objects present on the system for this application.
+Iterates over [ContentRef](ContentRef.md) objects present on the system for this application.
 
 ## Instance Method Summary
 
-- [**next**](#next-instance_function "next (Instance Function)") () as [Media.ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html)
-	Get the next [ContentIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentIterator.html).
+- [**next**](#next-instance_function "next (Instance Function)") () as [Media.ContentRef](ContentRef.md)
+	Get the next [ContentIterator](ContentIterator.md).
 
 ## Instance Method Details
 
 ### next() as Media.ContentRef
 
-Get the next [ContentIterator](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentIterator.html)
+Get the next [ContentIterator](ContentIterator.md)

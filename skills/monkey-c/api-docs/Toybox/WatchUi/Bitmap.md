@@ -9,17 +9,17 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Bitmap.h
 
 ## See Also:
 
-- [Toybox.WatchUi.Drawable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Drawable.html)
+- [Toybox.WatchUi.Drawable](Drawable.md)
 
 ## Instance Method Summary
 
-- [**draw**](#draw-instance_function "draw (Instance Function)") (dc as [Graphics.Dc](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/Dc.html)) as **Void**
-	Draw a Bitmap to the device context ([Dc](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/Dc.html)).
-- [**getDimensions**](#getDimensions-instance_function "getDimensions (Instance Function)") () as \[ [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type), [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type) \]
+- [**draw**](#draw-instance_function "draw (Instance Function)") (dc as [Graphics.Dc](../Graphics/Dc.md)) as **Void**
+	Draw a Bitmap to the device context ([Dc](../Graphics/Dc.md)).
+- [**getDimensions**](#getDimensions-instance_function "getDimensions (Instance Function)") () as \[ [Lang.Numeric](../Lang.md#Numeric-named_type), [Lang.Numeric](../Lang.md#Numeric-named_type) \]
 	Get the dimensions of a Bitmap.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:rezId as [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html),:bitmap as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type),:identifier as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html),:locX as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type),:locY as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type),:width as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type),:height as [Lang.Numeric](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang.html#Numeric-named_type),:visible as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) })
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (options as {:rezId as [Lang.ResourceId](../Lang/ResourceId.md),:bitmap as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type),:identifier as [Lang.Object](../Lang/Object.md),:locX as [Lang.Numeric](../Lang.md#Numeric-named_type),:locY as [Lang.Numeric](../Lang.md#Numeric-named_type),:width as [Lang.Numeric](../Lang.md#Numeric-named_type),:height as [Lang.Numeric](../Lang.md#Numeric-named_type),:visible as [Lang.Boolean](../Lang/Boolean.md) })
 	Constructor.
-- [**setBitmap**](#setBitmap-instance_function "setBitmap (Instance Function)") (bitmap as [Graphics.BitmapType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics.html#BitmapType-named_type) or [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html) or **Null**) as **Void**
+- [**setBitmap**](#setBitmap-instance_function "setBitmap (Instance Function)") (bitmap as [Graphics.BitmapType](../Graphics.md#BitmapType-named_type) or [Lang.ResourceId](../Lang/ResourceId.md) or **Null**) as **Void**
 	Set the resource associated with the Bitmap.
 
 ## Instance Method Details

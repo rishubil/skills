@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/RunningD
 Inherits:
 
 Toybox.AntPlus.DeviceListener
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.DeviceListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/DeviceListener.html)
-- [Toybox.AntPlus.RunningDynamicsListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsListener.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.DeviceListener](DeviceListener.md)
+- [Toybox.AntPlus.RunningDynamicsListener](RunningDynamicsListener.md)
 [show all](#)
 
 ## Overview
@@ -21,9 +21,9 @@ Listener class for Running Dynamics.
 
 - [**initialize**](#initialize-instance_function "initialize (Instance Function)") ()
 	Constructor.
-- [**onRunningDynamicsUpdate**](#onRunningDynamicsUpdate-instance_function "onRunningDynamicsUpdate (Instance Function)") (data as [AntPlus.RunningDynamicsData](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/RunningDynamicsData.html)) as **Void**
+- [**onRunningDynamicsUpdate**](#onRunningDynamicsUpdate-instance_function "onRunningDynamicsUpdate (Instance Function)") (data as [AntPlus.RunningDynamicsData](RunningDynamicsData.md)) as **Void**
 	Callback when running dynamics are updated (max freq 1Hz).
-- [**onSensorPositionUpdate**](#onSensorPositionUpdate-instance_function "onSensorPositionUpdate (Instance Function)") (data as [AntPlus.SensorPosition](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/SensorPosition.html)) as **Void**
+- [**onSensorPositionUpdate**](#onSensorPositionUpdate-instance_function "onSensorPositionUpdate (Instance Function)") (data as [AntPlus.SensorPosition](SensorPosition.md)) as **Void**
 	Callback when sensor position is updated (max freq 1Hz).
 
 ## Instance Method Details

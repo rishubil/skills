@@ -11,42 +11,42 @@ InputDelegate handles basic input events.
 
 There are four types of basic inputs InputDelegate can handle:
 
-- Key, represented by [KeyEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/KeyEvent.html)
-- Touch, represented by [ClickEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ClickEvent.html)
-- Swipe, represented by [SwipeEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent.html)
-- Selectable, represented by [SelectableEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent.html)
+- Key, represented by [KeyEvent](KeyEvent.md)
+- Touch, represented by [ClickEvent](ClickEvent.md)
+- Swipe, represented by [SwipeEvent](SwipeEvent.md)
+- Selectable, represented by [SelectableEvent](SelectableEvent.md)
 
-This class is the base class for [BehaviorDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate.html), which goes beyond simple key and screen-based input.
+This class is the base class for [BehaviorDelegate](BehaviorDelegate.md), which goes beyond simple key and screen-based input.
 
 ## See Also:
 
-- [Toybox.WatchUi.BehaviorDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate.html)
+- [Toybox.WatchUi.BehaviorDelegate](BehaviorDelegate.md)
 
 ## Direct Known Subclasses
 
-[WatchUi.BehaviorDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BehaviorDelegate.html)
+[WatchUi.BehaviorDelegate](BehaviorDelegate.md)
 
 ## Instance Method Summary
 
-- [**onDrag**](#onDrag-instance_function "onDrag (Instance Function)") (dragEvent as [WatchUi.DragEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DragEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onDrag**](#onDrag-instance_function "onDrag (Instance Function)") (dragEvent as [WatchUi.DragEvent](DragEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A touch screen drag event has occurred.
-- [**onFlick**](#onFlick-instance_function "onFlick (Instance Function)") (flickEvent as [WatchUi.FlickEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/FlickEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onFlick**](#onFlick-instance_function "onFlick (Instance Function)") (flickEvent as [WatchUi.FlickEvent](FlickEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A touch screen flick event has occurred.
-- [**onHold**](#onHold-instance_function "onHold (Instance Function)") (clickEvent as [WatchUi.ClickEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ClickEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onHold**](#onHold-instance_function "onHold (Instance Function)") (clickEvent as [WatchUi.ClickEvent](ClickEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A touch screen hold event has occurred.
-- [**onKey**](#onKey-instance_function "onKey (Instance Function)") (keyEvent as [WatchUi.KeyEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/KeyEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onKey**](#onKey-instance_function "onKey (Instance Function)") (keyEvent as [WatchUi.KeyEvent](KeyEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A physical button has been pressed and released.
-- [**onKeyPressed**](#onKeyPressed-instance_function "onKeyPressed (Instance Function)") (keyEvent as [WatchUi.KeyEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/KeyEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onKeyPressed**](#onKeyPressed-instance_function "onKeyPressed (Instance Function)") (keyEvent as [WatchUi.KeyEvent](KeyEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A physical button has been pressed down.
-- [**onKeyReleased**](#onKeyReleased-instance_function "onKeyReleased (Instance Function)") (keyEvent as [WatchUi.KeyEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/KeyEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onKeyReleased**](#onKeyReleased-instance_function "onKeyReleased (Instance Function)") (keyEvent as [WatchUi.KeyEvent](KeyEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A physical button has been released.
-- [**onRelease**](#onRelease-instance_function "onRelease (Instance Function)") (clickEvent as [WatchUi.ClickEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ClickEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onRelease**](#onRelease-instance_function "onRelease (Instance Function)") (clickEvent as [WatchUi.ClickEvent](ClickEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A touch screen release event has occurred.
-- [**onSelectable**](#onSelectable-instance_function "onSelectable (Instance Function)") (selectableEvent as [WatchUi.SelectableEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/SelectableEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
-	The state of a [Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html) has changed.
-- [**onSwipe**](#onSwipe-instance_function "onSwipe (Instance Function)") (swipeEvent as [WatchUi.SwipeEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/SwipeEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onSelectable**](#onSelectable-instance_function "onSelectable (Instance Function)") (selectableEvent as [WatchUi.SelectableEvent](SelectableEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
+	The state of a [Selectable](Selectable.md) has changed.
+- [**onSwipe**](#onSwipe-instance_function "onSwipe (Instance Function)") (swipeEvent as [WatchUi.SwipeEvent](SwipeEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A touch screen swipe event has occurred.
-- [**onTap**](#onTap-instance_function "onTap (Instance Function)") (clickEvent as [WatchUi.ClickEvent](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/ClickEvent.html)) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**onTap**](#onTap-instance_function "onTap (Instance Function)") (clickEvent as [WatchUi.ClickEvent](ClickEvent.md)) as [Lang.Boolean](../Lang/Boolean.md)
 	A screen tap event has occurred.
 
 ## Instance Method Details
@@ -73,29 +73,29 @@ This is sent when the touch screen is touched and not released.
 
 A physical button has been pressed and released.
 
-To find out which key was pressed, use [KeyEvent.getKey()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/KeyEvent.html#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#KEY_POWER-const) enum value.
+To find out which key was pressed, use [KeyEvent.getKey()](KeyEvent.md#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](../WatchUi.md#KEY_POWER-const) enum value.
 
 ### onKeyPressed(keyEvent as WatchUi.KeyEvent) as Lang.Boolean
 
 A physical button has been pressed down.
 
-To find out which key was pressed, use [KeyEvent.getKey()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/KeyEvent.html#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#KEY_POWER-const) enum value.
+To find out which key was pressed, use [KeyEvent.getKey()](KeyEvent.md#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](../WatchUi.md#KEY_POWER-const) enum value.
 
 ### onKeyReleased(keyEvent as WatchUi.KeyEvent) as Lang.Boolean
 
 A physical button has been released.
 
-To find out which key was pressed, use [KeyEvent.getKey()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/KeyEvent.html#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#KEY_POWER-const) enum value.
+To find out which key was pressed, use [KeyEvent.getKey()](KeyEvent.md#getKey-instance_function) to get the button's [WatchUi.KEY\_\*](../WatchUi.md#KEY_POWER-const) enum value.
 
 ### onRelease(clickEvent as WatchUi.ClickEvent) as Lang.Boolean
 
 A touch screen release event has occurred.
 
-This is only sent after an [onHold()](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html#onHold-instance_function) event, once the hold on the touch screen is released.
+This is only sent after an [onHold()](InputDelegate.md#onHold-instance_function) event, once the hold on the touch screen is released.
 
 ### onSelectable(selectableEvent as WatchUi.SelectableEvent) as Lang.Boolean
 
-The state of a [Selectable](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Selectable.html) has changed.
+The state of a [Selectable](Selectable.md) has changed.
 
 ### onSwipe(swipeEvent as WatchUi.SwipeEvent) as Lang.Boolean
 

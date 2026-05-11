@@ -13,11 +13,11 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html
 
 ## Modules Under Namespace
 
-**Modules:** [Application.Properties](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/Properties.html), [Application.Storage](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/Storage.html), [Application.WatchFaceConfig](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig.html)
+**Modules:** [Application.Properties](Application/Properties.md), [Application.Storage](Application/Storage.md), [Application.WatchFaceConfig](Application/WatchFaceConfig.md)
 
 ## Classes Under Namespace
 
-**Classes:** [AppBase](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AppBase.html), [AudioContentProviderApp](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AudioContentProviderApp.html), [ObjectStoreAccessException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/ObjectStoreAccessException.html)
+**Classes:** [AppBase](Application/AppBase.md), [AudioContentProviderApp](Application/AudioContentProviderApp.md), [ObjectStoreAccessException](Application/ObjectStoreAccessException.md)
 
 ## Constant Summary
 
@@ -31,17 +31,17 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html
 
 ## Typedef Summary
 
-- [**PersistableType**](#PersistableType-named_type "PersistableType (Named Type)") as [Application.PropertyValueType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#PropertyValueType-named_type)
-- [**PropertyKeyType**](#PropertyKeyType-named_type "PropertyKeyType (Named Type)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html) or [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or [Lang.Char](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Char.html)
-- [**PropertyValueType**](#PropertyValueType-named_type "PropertyValueType (Named Type)") as [Application.PropertyKeyType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#PropertyKeyType-named_type) or [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Application.PropertyValueType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#PropertyValueType-named_type) > or [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) < [Application.PropertyKeyType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#PropertyKeyType-named_type), [Application.PropertyValueType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#PropertyValueType-named_type) > or [WatchUi.BitmapResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BitmapResource.html) or [BluetoothLowEnergy.ScanResult](https://developer.garmin.com/connect-iq/api-docs/Toybox/BluetoothLowEnergy/ScanResult.html) or [Complications.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html) or [WatchFaceConfig.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id.html) or **Null**
-- [**ResourceReferenceType**](#ResourceReferenceType-named_type "ResourceReferenceType (Named Type)") as [Graphics.BitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapReference.html) or [Graphics.FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html)
-- [**ResourceType**](#ResourceType-named_type "ResourceType (Named Type)") as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) or [Lang.Dictionary](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Dictionary.html) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or [WatchUi.AnimationResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/AnimationResource.html) or [WatchUi.BitmapResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BitmapResource.html) or [WatchUi.FontResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/FontResource.html)
+- [**PersistableType**](#PersistableType-named_type "PersistableType (Named Type)") as [Application.PropertyValueType](Application.md#PropertyValueType-named_type)
+- [**PropertyKeyType**](#PropertyKeyType-named_type "PropertyKeyType (Named Type)") as [Lang.Number](Lang/Number.md) or [Lang.Float](Lang/Float.md) or [Lang.Long](Lang/Long.md) or [Lang.Double](Lang/Double.md) or [Lang.String](Lang/String.md) or [Lang.Boolean](Lang/Boolean.md) or [Lang.Char](Lang/Char.md)
+- [**PropertyValueType**](#PropertyValueType-named_type "PropertyValueType (Named Type)") as [Application.PropertyKeyType](Application.md#PropertyKeyType-named_type) or [Lang.Array](Lang/Array.md) < [Application.PropertyValueType](Application.md#PropertyValueType-named_type) > or [Lang.Dictionary](Lang/Dictionary.md) < [Application.PropertyKeyType](Application.md#PropertyKeyType-named_type), [Application.PropertyValueType](Application.md#PropertyValueType-named_type) > or [WatchUi.BitmapResource](WatchUi/BitmapResource.md) or [BluetoothLowEnergy.ScanResult](BluetoothLowEnergy/ScanResult.md) or [Complications.Id](Complications/Id.md) or [WatchFaceConfig.Id](Application/WatchFaceConfig/Id.md) or **Null**
+- [**ResourceReferenceType**](#ResourceReferenceType-named_type "ResourceReferenceType (Named Type)") as [Graphics.BitmapReference](Graphics/BitmapReference.md) or [Graphics.FontReference](Graphics/FontReference.md)
+- [**ResourceType**](#ResourceType-named_type "ResourceType (Named Type)") as [Lang.Array](Lang/Array.md) or [Lang.Dictionary](Lang/Dictionary.md) or [Lang.String](Lang/String.md) or [WatchUi.AnimationResource](WatchUi/AnimationResource.md) or [WatchUi.BitmapResource](WatchUi/BitmapResource.md) or [WatchUi.FontResource](WatchUi/FontResource.md)
 
 ## Instance Method Summary
 
-- [**getApp**](#getApp-instance_function "getApp (Instance Function)") () as [Application.AppBase](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AppBase.html)
-	Retrieve the AppBase [Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) that is currently running.
-- [**loadResource**](#loadResource-instance_function "loadResource (Instance Function)") (resource as [Lang.ResourceId](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ResourceId.html)) as [Application.ResourceType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#ResourceType-named_type) or [Application.ResourceReferenceType](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html#ResourceReferenceType-named_type)
+- [**getApp**](#getApp-instance_function "getApp (Instance Function)") () as [Application.AppBase](Application/AppBase.md)
+	Retrieve the AppBase [Object](Lang/Object.md) that is currently running.
+- [**loadResource**](#loadResource-instance_function "loadResource (Instance Function)") (resource as [Lang.ResourceId](Lang/ResourceId.md)) as [Application.ResourceType](Application.md#ResourceType-named_type) or [Application.ResourceReferenceType](Application.md#ResourceReferenceType-named_type)
 	Load a resource from the executable.
 
 ## Typedef Details
@@ -64,4 +64,4 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Application.html
 
 Note:
 
-[Toybox::Graphics::BitmapReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/BitmapReference.html) and [Toybox::Graphics::FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html) are returned for [Toybox::WatchUi::BitmapResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/BitmapResource.html) and [Toybox::WatchUi::FontResource](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/FontResource.html) in CIQ 4.0.0 and later.
+[Toybox::Graphics::BitmapReference](Graphics/BitmapReference.md) and [Toybox::Graphics::FontReference](Graphics/FontReference.md) are returned for [Toybox::WatchUi::BitmapResource](WatchUi/BitmapResource.md) and [Toybox::WatchUi::FontResource](WatchUi/FontResource.md) in CIQ 4.0.0 and later.

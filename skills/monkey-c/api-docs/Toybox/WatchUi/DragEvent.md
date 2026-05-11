@@ -7,17 +7,17 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/DragEven
 
 ## Overview
 
-DragEvent is an object sent to [InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html) when there is a drag interaction with a device's touch screen.
+DragEvent is an object sent to [InputDelegate](InputDelegate.md) when there is a drag interaction with a device's touch screen.
 
 ## See Also:
 
-- [Toybox.WatchUi.InputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/InputDelegate.html)
+- [Toybox.WatchUi.InputDelegate](InputDelegate.md)
 
 ## Instance Method Summary
 
-- [**getCoordinates**](#getCoordinates-instance_function "getCoordinates (Instance Function)") () as \[ [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html), [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) \]
+- [**getCoordinates**](#getCoordinates-instance_function "getCoordinates (Instance Function)") () as \[ [Lang.Number](../Lang/Number.md), [Lang.Number](../Lang/Number.md) \]
 	Get the coordinates of a drag event.
-- [**getType**](#getType-instance_function "getType (Instance Function)") () as [WatchUi.DragType](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi.html#DragType-module)
+- [**getType**](#getType-instance_function "getType (Instance Function)") () as [WatchUi.DragType](../WatchUi.md#DragType-module)
 	Get the type of drag event.
 
 ## Instance Method Details

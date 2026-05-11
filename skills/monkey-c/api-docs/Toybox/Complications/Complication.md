@@ -11,18 +11,18 @@ Complication object
 
 ## Instance Member Summary
 
-- [**complicationId**](#complicationId-var "complicationId (Var)") as [Complications.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications/Id.html) or **Null**
-- [**longLabel**](#longLabel-var "longLabel (Var)") as [Complications.Label](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Label-named_type) or **Null**
-- [**ranges**](#ranges-var "ranges (Var)") as [Complications.Ranges](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Ranges-named_type) or **Null**
-- [**shortLabel**](#shortLabel-var "shortLabel (Var)") as [Complications.Label](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Label-named_type) or **Null**
-- [**unit**](#unit-var "unit (Var)") as [Complications.Unit](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Unit-module) or [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or **Null**
-- [**value**](#value-var "value (Var)") as [Complications.Value](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Value-named_type) or **Null**
+- [**complicationId**](#complicationId-var "complicationId (Var)") as [Complications.Id](Id.md) or **Null**
+- [**longLabel**](#longLabel-var "longLabel (Var)") as [Complications.Label](../Complications.md#Label-named_type) or **Null**
+- [**ranges**](#ranges-var "ranges (Var)") as [Complications.Ranges](../Complications.md#Ranges-named_type) or **Null**
+- [**shortLabel**](#shortLabel-var "shortLabel (Var)") as [Complications.Label](../Complications.md#Label-named_type) or **Null**
+- [**unit**](#unit-var "unit (Var)") as [Complications.Unit](../Complications.md#Unit-module) or [Lang.String](../Lang/String.md) or **Null**
+- [**value**](#value-var "value (Var)") as [Complications.Value](../Complications.md#Value-named_type) or **Null**
 
 ## Instance Method Summary
 
-- [**getIcon**](#getIcon-instance_function "getIcon (Instance Function)") () as [Complications.Icon](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Icon-named_type) or **Null**
+- [**getIcon**](#getIcon-instance_function "getIcon (Instance Function)") () as [Complications.Icon](../Complications.md#Icon-named_type) or **Null**
 	Get the complication icon.
-- [**getType**](#getType-instance_function "getType (Instance Function)") () as [Complications.Type](https://developer.garmin.com/connect-iq/api-docs/Toybox/Complications.html#Type-module) or **Null**
+- [**getType**](#getType-instance_function "getType (Instance Function)") () as [Complications.Type](../Complications.md#Type-module) or **Null**
 	Get the complication type.
 
 ## Instance Attribute Details

@@ -8,14 +8,14 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/P
 Inherits:
 
 Toybox.Communications.Message
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Communications.Message](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/Message.html)
-- [Toybox.Communications.PhoneAppMessage](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications/PhoneAppMessage.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Communications.Message](Message.md)
+- [Toybox.Communications.PhoneAppMessage](PhoneAppMessage.md)
 [show all](#)
 
 ## Overview
 
-A PhoneAppMessage received by the callback registered in [registerForPhoneAppMessages()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications.html#registerForPhoneAppMessages-instance_function)
+A PhoneAppMessage received by the callback registered in [registerForPhoneAppMessages()](../Communications.md#registerForPhoneAppMessages-instance_function)
 
 ## Instance Method Summary
 

@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpee
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.AntPlus.BikeSpeedCadenceInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeSpeedCadenceInfo.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.AntPlus.BikeSpeedCadenceInfo](BikeSpeedCadenceInfo.md)
 [show all](#)
 
 ## Overview
@@ -18,11 +18,11 @@ Represents received bike speed and cadence information.
 
 ## Instance Member Summary
 
-- [**cadence**](#cadence-var "cadence (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**cadence**](#cadence-var "cadence (Var)") as [Lang.Number](../Lang/Number.md)
 	Cadence (rpm).
-- [**distance**](#distance-var "distance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)
+- [**distance**](#distance-var "distance (Var)") as [Lang.Float](../Lang/Float.md)
 	Distance (m).
-- [**speed**](#speed-var "speed (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)
+- [**speed**](#speed-var "speed (Var)") as [Lang.Float](../Lang/Float.md)
 	Speed (m/s).
 
 ## Instance Attribute Details

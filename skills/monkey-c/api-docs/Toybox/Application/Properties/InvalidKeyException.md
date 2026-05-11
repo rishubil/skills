@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/Prop
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Application.Properties.InvalidKeyException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/Properties/InvalidKeyException.html)
+- [Toybox.Lang.Object](../../Lang/Object.md)
+- [Toybox.Lang.Exception](../../Lang/Exception.md)
+- [Toybox.Application.Properties.InvalidKeyException](InvalidKeyException.md)
 [show all](#)
 
 ## Overview

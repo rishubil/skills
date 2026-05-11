@@ -11,11 +11,11 @@ Represents general fitness equipment transmitted data. Fields may return `null` 
 
 ## Instance Member Summary
 
-- [**feDistance**](#feDistance-var "feDistance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**feDistance**](#feDistance-var "feDistance (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The elapsed distance calculated by the trainer since reset Range is always greater than or equal to 0m.
-- [**feHeartRate**](#feHeartRate-var "feHeartRate (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**feHeartRate**](#feHeartRate-var "feHeartRate (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The heart rate calculated by the trainer.
-- [**feSpeed**](#feSpeed-var "feSpeed (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**feSpeed**](#feSpeed-var "feSpeed (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	The speed calculated by the trainer.
 
 ## Instance Attribute Details

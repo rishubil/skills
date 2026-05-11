@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuInpu
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.WatchUi.MenuInputDelegate](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/MenuInputDelegate.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.WatchUi.MenuInputDelegate](MenuInputDelegate.md)
 [show all](#)
 
 ## Overview
@@ -20,11 +20,11 @@ This class should be extended to handle selected Menu items.
 
 ## See Also:
 
-- [Toybox.WatchUi.Menu](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/Menu.html)
+- [Toybox.WatchUi.Menu](Menu.md)
 
 ## Instance Method Summary
 
-- [**onMenuItem**](#onMenuItem-instance_function "onMenuItem (Instance Function)") (item as [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html)) as **Void**
+- [**onMenuItem**](#onMenuItem-instance_function "onMenuItem (Instance Function)") (item as [Lang.Symbol](../Lang/Symbol.md)) as **Void**
 	A Menu item was chosen.
 
 ## Instance Method Details

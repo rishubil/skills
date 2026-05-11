@@ -8,16 +8,16 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Test/AssertExcep
 Inherits:
 
 Toybox.Lang.Exception
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Lang.Exception](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Exception.html)
-- [Toybox.Test.AssertException](https://developer.garmin.com/connect-iq/api-docs/Toybox/Test/AssertException.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Lang.Exception](../Lang/Exception.md)
+- [Toybox.Test.AssertException](AssertException.md)
 [show all](#)
 
 ## Overview
 
 ## Instance Method Summary
 
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (message as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (message as [Lang.String](../Lang/String.md) or **Null**)
 	Constructor.
 
 ## Instance Method Details

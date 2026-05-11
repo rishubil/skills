@@ -8,9 +8,9 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontRef
 Inherits:
 
 Toybox.Graphics.ResourceReference
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.Graphics.ResourceReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/ResourceReference.html)
-- [Toybox.Graphics.FontReference](https://developer.garmin.com/connect-iq/api-docs/Toybox/Graphics/FontReference.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.Graphics.ResourceReference](ResourceReference.md)
+- [Toybox.Graphics.FontReference](FontReference.md)
 [show all](#)
 
 ## Overview

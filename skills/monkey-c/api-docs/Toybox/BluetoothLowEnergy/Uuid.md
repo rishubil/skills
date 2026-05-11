@@ -11,13 +11,13 @@ Encapsulates a Bluetooth UUID and provides various helper methods for interactin
 
 ## Instance Method Summary
 
-- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](../Lang/Object.md) or **Null**) as [Lang.Boolean](../Lang/Boolean.md)
 	Compares the Uuid to another object for equality.
-- [**hashCode**](#hashCode-instance_function "hashCode (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**hashCode**](#hashCode-instance_function "hashCode (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Retrieve a hash code of the UUID Optimized for BLE standard.
-- [**toByteArray**](#toByteArray-instance_function "toByteArray (Instance Function)") () as [Lang.ByteArray](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/ByteArray.html)
+- [**toByteArray**](#toByteArray-instance_function "toByteArray (Instance Function)") () as [Lang.ByteArray](../Lang/ByteArray.md)
 	Convert UUID to a Little Endian Byte Array.
-- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](../Lang/String.md)
 	Convert a UUID to a String.
 
 ## Instance Method Details

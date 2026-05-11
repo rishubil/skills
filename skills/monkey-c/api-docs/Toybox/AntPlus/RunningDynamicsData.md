@@ -11,23 +11,23 @@ All running dynamics information. Fields may return `null` so you should `null` 
 
 ## Instance Member Summary
 
-- [**cadence**](#cadence-var "cadence (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**cadence**](#cadence-var "cadence (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Filtered instantaneous cadence (0 - 255 strides/min).
-- [**groundContactBalance**](#groundContactBalance-var "groundContactBalance (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**groundContactBalance**](#groundContactBalance-var "groundContactBalance (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Filtered instantaneous ground contact balance (0 - 100%, 0.03125% precision).
-- [**groundContactTime**](#groundContactTime-var "groundContactTime (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**groundContactTime**](#groundContactTime-var "groundContactTime (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Filtered instantaneous ground contact time (0 - 2047 ms).
-- [**stanceTime**](#stanceTime-var "stanceTime (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**stanceTime**](#stanceTime-var "stanceTime (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Filtered instantaneous stance time percentage (0 - 100%, 0.25% precision).
-- [**stepCount**](#stepCount-var "stepCount (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**stepCount**](#stepCount-var "stepCount (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Step count (rolls over!) (0 - 127 steps).
-- [**stepLength**](#stepLength-var "stepLength (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**stepLength**](#stepLength-var "stepLength (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Step Length (0 - 8191 mm).
-- [**verticalOscillation**](#verticalOscillation-var "verticalOscillation (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**verticalOscillation**](#verticalOscillation-var "verticalOscillation (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Filtered instantaneous vertical oscillation (0 - 2047 mm, 0.25mm precision).
-- [**verticalRatio**](#verticalRatio-var "verticalRatio (Var)") as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or **Null**
+- [**verticalRatio**](#verticalRatio-var "verticalRatio (Var)") as [Lang.Float](../Lang/Float.md) or **Null**
 	Vertical ratio (0 - 100%, 0.03125% precision).
-- [**walkingFlag**](#walkingFlag-var "walkingFlag (Var)") as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html) or **Null**
+- [**walkingFlag**](#walkingFlag-var "walkingFlag (Var)") as [Lang.Boolean](../Lang/Boolean.md) or **Null**
 	`true` if walking, `false` if running.
 
 ## Instance Attribute Details

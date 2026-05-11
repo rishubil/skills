@@ -11,11 +11,11 @@ The WorkoutIntervalStep class contains information about the current workout int
 
 ## Instance Member Summary
 
-- [**activeStep**](#activeStep-var "activeStep (Var)") as [Activity.WorkoutStep](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStep.html)
+- [**activeStep**](#activeStep-var "activeStep (Var)") as [Activity.WorkoutStep](WorkoutStep.md)
 	The step data for the active portion of the interval.
-- [**repetitionNumber**](#repetitionNumber-var "repetitionNumber (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**repetitionNumber**](#repetitionNumber-var "repetitionNumber (Var)") as [Lang.Number](../Lang/Number.md)
 	The repetition number in the interval.
-- [**restStep**](#restStep-var "restStep (Var)") as [Activity.WorkoutStep](https://developer.garmin.com/connect-iq/api-docs/Toybox/Activity/WorkoutStep.html)
+- [**restStep**](#restStep-var "restStep (Var)") as [Activity.WorkoutStep](WorkoutStep.md)
 	The step data for the rest portion of the interval.
 
 ## Instance Attribute Details

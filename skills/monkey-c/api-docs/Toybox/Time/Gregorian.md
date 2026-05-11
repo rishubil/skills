@@ -13,7 +13,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian.h
 
 ## Classes Under Namespace
 
-**Classes:** [Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian/Info.html)
+**Classes:** [Info](Gregorian/Info.md)
 
 ## Constant Summary
 
@@ -57,16 +57,16 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian.h
 
 ## Instance Method Summary
 
-- [**duration**](#duration-instance_function "duration (Instance Function)") (options as {:years as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:days as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:hours as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:minutes as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:seconds as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) }) as [Time.Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html)
-	Create a [Duration](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Duration.html) from a Dictionary of options.
-- [**info**](#info-instance_function "info (Instance Function)") (moment as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or [Time.LocalMoment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/LocalMoment.html), format as [Time.DateFormat](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time.html#DateFormat-module)) as [Gregorian.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian/Info.html)
-	Get [Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian/Info.html) for a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) in local time.
-- [**localMoment**](#localMoment-instance_function "localMoment (Instance Function)") (location as [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html), moment as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)) as [Time.LocalMoment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/LocalMoment.html) or **Null**
+- [**duration**](#duration-instance_function "duration (Instance Function)") (options as {:years as [Lang.Number](../Lang/Number.md),:days as [Lang.Number](../Lang/Number.md),:hours as [Lang.Number](../Lang/Number.md),:minutes as [Lang.Number](../Lang/Number.md),:seconds as [Lang.Number](../Lang/Number.md) }) as [Time.Duration](Duration.md)
+	Create a [Duration](Duration.md) from a Dictionary of options.
+- [**info**](#info-instance_function "info (Instance Function)") (moment as [Time.Moment](Moment.md) or [Time.LocalMoment](LocalMoment.md), format as [Time.DateFormat](../Time.md#DateFormat-module)) as [Gregorian.Info](Gregorian/Info.md)
+	Get [Info](Gregorian/Info.md) for a [Moment](Moment.md) in local time.
+- [**localMoment**](#localMoment-instance_function "localMoment (Instance Function)") (location as [Position.Location](../Position/Location.md), moment as [Time.Moment](Moment.md)) as [Time.LocalMoment](LocalMoment.md) or **Null**
 	Create a LocalMoment from a Moment and a Location.
-- [**moment**](#moment-instance_function "moment (Instance Function)") (options as {:year as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:month as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Lang.Symbol](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Symbol.html),:day as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:hour as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:minute as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html),:second as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) }) as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)
-	Create a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) from a Dictionary of options.
-- [**utcInfo**](#utcInfo-instance_function "utcInfo (Instance Function)") (moment as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html), format as [Time.DateFormat](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time.html#DateFormat-module)) as [Gregorian.Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian/Info.html)
-	Get [Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian/Info.html) for a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) in UTC time.
+- [**moment**](#moment-instance_function "moment (Instance Function)") (options as {:year as [Lang.Number](../Lang/Number.md),:month as [Lang.Number](../Lang/Number.md) or [Lang.Symbol](../Lang/Symbol.md),:day as [Lang.Number](../Lang/Number.md),:hour as [Lang.Number](../Lang/Number.md),:minute as [Lang.Number](../Lang/Number.md),:second as [Lang.Number](../Lang/Number.md) }) as [Time.Moment](Moment.md)
+	Create a [Moment](Moment.md) from a Dictionary of options.
+- [**utcInfo**](#utcInfo-instance_function "utcInfo (Instance Function)") (moment as [Time.Moment](Moment.md), format as [Time.DateFormat](../Time.md#DateFormat-module)) as [Gregorian.Info](Gregorian/Info.md)
+	Get [Info](Gregorian/Info.md) for a [Moment](Moment.md) in UTC time.
 
 ## Instance Method Details
 
@@ -78,17 +78,17 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian.h
 
 ### moment(options as {:year as Lang.Number,:month as Lang.Number or Lang.Symbol,:day as Lang.Number,:hour as Lang.Number,:minute as Lang.Number,:second as Lang.Number }) as Time.Moment
 
-Create a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) from a Dictionary of options.
+Create a [Moment](Moment.md) from a Dictionary of options.
 
 ```
 Each option value is assumed to be in the UTC time zone.
 ```
 
-Unlike [Moment.initialize()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html#initialize-instance_function), which is based on the UNIX epoch, a Moment created with Gregorian.moment() is based on [today()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time.html#today-instance_function). The result is determined by taking the result of [today()](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time.html#today-instance_function) and overlaying the options provided.
+Unlike [Moment.initialize()](Moment.md#initialize-instance_function), which is based on the UNIX epoch, a Moment created with Gregorian.moment() is based on [today()](../Time.md#today-instance_function). The result is determined by taking the result of [today()](../Time.md#today-instance_function) and overlaying the options provided.
 
 ### utcInfo(moment as Time.Moment, format as Time.DateFormat) as Gregorian.Info
 
-Get [Info](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Gregorian/Info.html) for a [Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) in UTC time.
+Get [Info](Gregorian/Info.md) for a [Moment](Moment.md) in UTC time.
 
 ```
 Info

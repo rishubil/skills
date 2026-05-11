@@ -7,13 +7,13 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ActiveCont
 
 ## Overview
 
-Pairs a [ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html) with associated [ContentMetadata](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentMetadata.html) information and allows a playback start position to be set.
+Pairs a [ContentRef](ContentRef.md) with associated [ContentMetadata](ContentMetadata.md) information and allows a playback start position to be set.
 
 ## Instance Method Summary
 
-- [**getPlaybackStartPosition**](#getPlaybackStartPosition-instance_function "getPlaybackStartPosition (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getPlaybackStartPosition**](#getPlaybackStartPosition-instance_function "getPlaybackStartPosition (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get the playback start position for media content.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (contentRef as [Media.ContentRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentRef.html), metadata as [Media.ContentMetadata](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media/ContentMetadata.html), playbackStartPos as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or [Media.PlaybackPosition](https://developer.garmin.com/connect-iq/api-docs/Toybox/Media.html#PlaybackPosition-module))
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (contentRef as [Media.ContentRef](ContentRef.md), metadata as [Media.ContentMetadata](ContentMetadata.md), playbackStartPos as [Lang.Number](../Lang/Number.md) or [Media.PlaybackPosition](../Media.md#PlaybackPosition-module))
 	Constructor.
 
 ## Instance Method Details

@@ -9,23 +9,23 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html
 
 ## Instance Method Summary
 
-- [**abs**](#abs-instance_function "abs (Instance Function)") () as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html)
+- [**abs**](#abs-instance_function "abs (Instance Function)") () as [Lang.Long](Long.md)
 	Get the absolute value of a Long.
-- [**compareTo**](#compareTo-instance_function "compareTo (Instance Function)") (other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)) as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**compareTo**](#compareTo-instance_function "compareTo (Instance Function)") (other as [Lang.Object](Object.md)) as [Lang.Number](Number.md)
 	Compare the numeric value of self to some other numeric value.
-- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html) or **Null**) as [Lang.Boolean](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Boolean.html)
+- [**equals**](#equals-instance_function "equals (Instance Function)") (other as [Lang.Object](Object.md) or **Null**) as [Lang.Boolean](Boolean.md)
 	Test if an Object instance is equal to another instance of an Object.
-- [**format**](#format-instance_function "format (Instance Function)") (format as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)) as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**format**](#format-instance_function "format (Instance Function)") (format as [Lang.String](String.md)) as [Lang.String](String.md)
 	Format a Long using a formatting String.
-- [**toDouble**](#toDouble-instance_function "toDouble (Instance Function)") () as [Lang.Double](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Double.html)
+- [**toDouble**](#toDouble-instance_function "toDouble (Instance Function)") () as [Lang.Double](Double.md)
 	Convert a Long to a Double.
-- [**toFloat**](#toFloat-instance_function "toFloat (Instance Function)") () as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html)
+- [**toFloat**](#toFloat-instance_function "toFloat (Instance Function)") () as [Lang.Float](Float.md)
 	Convert a Long to a Float.
-- [**toLong**](#toLong-instance_function "toLong (Instance Function)") () as [Lang.Long](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Long.html)
+- [**toLong**](#toLong-instance_function "toLong (Instance Function)") () as [Lang.Long](Long.md)
 	Convert a Long to a Long.
-- [**toNumber**](#toNumber-instance_function "toNumber (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**toNumber**](#toNumber-instance_function "toNumber (Instance Function)") () as [Lang.Number](Number.md)
 	Convert a Long to a Number.
-- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**toString**](#toString-instance_function "toString (Instance Function)") () as [Lang.String](String.md)
 	Convert a Long to a String.
 
 ## Instance Method Details

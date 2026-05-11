@@ -13,13 +13,13 @@ Fields may return `null` so you should `null` check values before using them.
 
 ## Direct Known Subclasses
 
-[AntPlus.BatteryStatus](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BatteryStatus.html), [AntPlus.BikeLight](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/BikeLight.html), [AntPlus.ManufacturerInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/ManufacturerInfo.html), [AntPlus.ProductInfo](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/ProductInfo.html)
+[AntPlus.BatteryStatus](BatteryStatus.md), [AntPlus.BikeLight](BikeLight.md), [AntPlus.ManufacturerInfo](ManufacturerInfo.md), [AntPlus.ProductInfo](ProductInfo.md)
 
 ## Instance Member Summary
 
-- [**identifier**](#identifier-var "identifier (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**identifier**](#identifier-var "identifier (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	The Component Identifier.
-- [**numComponents**](#numComponents-var "numComponents (Var)") as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html) or **Null**
+- [**numComponents**](#numComponents-var "numComponents (Var)") as [Lang.Number](../Lang/Number.md) or **Null**
 	Number of components in the system.
 
 ## Instance Attribute Details

@@ -11,23 +11,23 @@ Represents a Fitness Equipment Device instance.
 
 ## Instance Method Summary
 
-- [**controlEquipment**](#controlEquipment-instance_function "controlEquipment (Instance Function)") (setting as [AntPlus.TrainerValue](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#TrainerValue-module), data as [Lang.Float](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Float.html) or [AntPlus.TrainerMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#TrainerMode-module)) as **Void**
+- [**controlEquipment**](#controlEquipment-instance_function "controlEquipment (Instance Function)") (setting as [AntPlus.TrainerValue](../AntPlus.md#TrainerValue-module), data as [Lang.Float](../Lang/Float.md) or [AntPlus.TrainerMode](../AntPlus.md#TrainerMode-module)) as **Void**
 	Control the fitness Equipment Note: Setting a value related to a specific training mode will cause the fitness equipment to change to that mode.
-- [**getEquipmentData**](#getEquipmentData-instance_function "getEquipmentData (Instance Function)") () as [AntPlus.FitnessEquipmentData](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentData.html)
+- [**getEquipmentData**](#getEquipmentData-instance_function "getEquipmentData (Instance Function)") () as [AntPlus.FitnessEquipmentData](FitnessEquipmentData.md)
 	Get the current training data from the FE.
-- [**getResistanceSettings**](#getResistanceSettings-instance_function "getResistanceSettings (Instance Function)") () as [AntPlus.ResistanceSettings](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/ResistanceSettings.html)
+- [**getResistanceSettings**](#getResistanceSettings-instance_function "getResistanceSettings (Instance Function)") () as [AntPlus.ResistanceSettings](ResistanceSettings.md)
 	Get the resistance percentage setting of the fitness equipment for basic resistance training mode.
-- [**getSimulationSettings**](#getSimulationSettings-instance_function "getSimulationSettings (Instance Function)") () as [AntPlus.SimulationSettings](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/SimulationSettings.html)
+- [**getSimulationSettings**](#getSimulationSettings-instance_function "getSimulationSettings (Instance Function)") () as [AntPlus.SimulationSettings](SimulationSettings.md)
 	Get the wind and track resistance simulation settings.
-- [**getTargetPowerSettings**](#getTargetPowerSettings-instance_function "getTargetPowerSettings (Instance Function)") () as [AntPlus.TargetPowerSettings](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/TargetPowerSettings.html)
+- [**getTargetPowerSettings**](#getTargetPowerSettings-instance_function "getTargetPowerSettings (Instance Function)") () as [AntPlus.TargetPowerSettings](TargetPowerSettings.md)
 	Get the target power setting of the fitness equipment for target power training mode.
-- [**getTrainerMode**](#getTrainerMode-instance_function "getTrainerMode (Instance Function)") () as [AntPlus.FitnessEquipmentMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentMode.html)
+- [**getTrainerMode**](#getTrainerMode-instance_function "getTrainerMode (Instance Function)") () as [AntPlus.FitnessEquipmentMode](FitnessEquipmentMode.md)
 	Get the current training mode and supported modes of the fitness equipment.
-- [**getUserSettings**](#getUserSettings-instance_function "getUserSettings (Instance Function)") () as [AntPlus.UserSettings](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/UserSettings.html)
+- [**getUserSettings**](#getUserSettings-instance_function "getUserSettings (Instance Function)") () as [AntPlus.UserSettings](UserSettings.md)
 	Get the user configuration settings of the fitness equipment for simulation training mode.
-- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.FitnessEquipmentListener](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus/FitnessEquipmentListener.html) or **Null**)
+- [**initialize**](#initialize-instance_function "initialize (Instance Function)") (listener as [AntPlus.FitnessEquipmentListener](FitnessEquipmentListener.md) or **Null**)
 	Constructor.
-- [**setTrainerMode**](#setTrainerMode-instance_function "setTrainerMode (Instance Function)") (mode as [AntPlus.TrainerMode](https://developer.garmin.com/connect-iq/api-docs/Toybox/AntPlus.html#TrainerMode-module)) as **Void**
+- [**setTrainerMode**](#setTrainerMode-instance_function "setTrainerMode (Instance Function)") (mode as [AntPlus.TrainerMode](../AntPlus.md#TrainerMode-module)) as **Void**
 	Set the trainer mode.
 
 ## Instance Method Details

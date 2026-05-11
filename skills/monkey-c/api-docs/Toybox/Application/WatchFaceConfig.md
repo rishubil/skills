@@ -11,15 +11,15 @@ The WatchFaceConfig module facilitates access to persisted watchface configurati
 
 ## Classes Under Namespace
 
-**Classes:** [Color](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Color.html), [ComplicationRef](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/ComplicationRef.html), [Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id.html), [Settings](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings.html)
+**Classes:** [Color](WatchFaceConfig/Color.md), [ComplicationRef](WatchFaceConfig/ComplicationRef.md), [Id](WatchFaceConfig/Id.md), [Settings](WatchFaceConfig/Settings.md)
 
 ## Instance Method Summary
 
-- [**getIds**](#getIds-instance_function "getIds (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [WatchFaceConfig.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id.html) > or **Null**
+- [**getIds**](#getIds-instance_function "getIds (Instance Function)") () as [Lang.Array](../Lang/Array.md) < [WatchFaceConfig.Id](WatchFaceConfig/Id.md) > or **Null**
 	Returns ids of all saved watchface config settings.
-- [**getSettings**](#getSettings-instance_function "getSettings (Instance Function)") (configId as [WatchFaceConfig.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id.html) or **Null**) as [WatchFaceConfig.Settings](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings.html) or **Null**
+- [**getSettings**](#getSettings-instance_function "getSettings (Instance Function)") (configId as [WatchFaceConfig.Id](WatchFaceConfig/Id.md) or **Null**) as [WatchFaceConfig.Settings](WatchFaceConfig/Settings.md) or **Null**
 	Returns the watchface config settings for the given unique identifier.
-- [**setSettings**](#setSettings-instance_function "setSettings (Instance Function)") (configId as [WatchFaceConfig.Id](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Id.html) or **Null**, settings as [WatchFaceConfig.Settings](https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/WatchFaceConfig/Settings.html)) as **Void**
+- [**setSettings**](#setSettings-instance_function "setSettings (Instance Function)") (configId as [WatchFaceConfig.Id](WatchFaceConfig/Id.md) or **Null**, settings as [WatchFaceConfig.Settings](WatchFaceConfig/Settings.md)) as **Void**
 	Set or update watchface config settings with the given unique identifier, `configId`.
 
 ## Instance Method Details

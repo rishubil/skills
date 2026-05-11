@@ -8,8 +8,8 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent
 Inherits:
 
 Toybox.Lang.Object
-- [Toybox.Lang.Object](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Object.html)
-- [Toybox.PersistedContent.Workout](https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent/Workout.html)
+- [Toybox.Lang.Object](../Lang/Object.md)
+- [Toybox.PersistedContent.Workout](Workout.md)
 [show all](#)
 
 ## Overview
@@ -18,17 +18,17 @@ A structured custom Workout saved on the device.
 
 ## See Also:
 
-- [PersistedContent.getWorkouts()](https://developer.garmin.com/connect-iq/api-docs/Toybox/PersistedContent.html#getWorkouts-instance_function)
+- [PersistedContent.getWorkouts()](../PersistedContent.md#getWorkouts-instance_function)
 
 ## Instance Method Summary
 
-- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Number](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Number.html)
+- [**getId**](#getId-instance_function "getId (Instance Function)") () as [Lang.Number](../Lang/Number.md)
 	Get a unique serializable id.
-- [**getName**](#getName-instance_function "getName (Instance Function)") () as [Lang.String](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/String.html)
+- [**getName**](#getName-instance_function "getName (Instance Function)") () as [Lang.String](../Lang/String.md)
 	Get a readable name for the content.
 - [**remove**](#remove-instance_function "remove (Instance Function)") () as **Void**
 	Remove a workout.
-- [**toIntent**](#toIntent-instance_function "toIntent (Instance Function)") () as [System.Intent](https://developer.garmin.com/connect-iq/api-docs/Toybox/System/Intent.html)
+- [**toIntent**](#toIntent-instance_function "toIntent (Instance Function)") () as [System.Intent](../System/Intent.md)
 	Get a system intent for the content.
 
 ## Instance Method Details

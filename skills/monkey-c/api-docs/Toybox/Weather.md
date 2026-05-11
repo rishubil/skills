@@ -9,7 +9,7 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather.html
 
 ## Classes Under Namespace
 
-**Classes:** [CurrentConditions](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather/CurrentConditions.html), [DailyForecast](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather/DailyForecast.html), [HourlyForecast](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather/HourlyForecast.html)
+**Classes:** [CurrentConditions](Weather/CurrentConditions.md), [DailyForecast](Weather/DailyForecast.md), [HourlyForecast](Weather/HourlyForecast.md)
 
 ## Constant Summary
 
@@ -74,13 +74,13 @@ source: https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather.html
 
 ## Instance Method Summary
 
-- [**getCurrentConditions**](#getCurrentConditions-instance_function "getCurrentConditions (Instance Function)") () as [Weather.CurrentConditions](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather/CurrentConditions.html) or **Null**
+- [**getCurrentConditions**](#getCurrentConditions-instance_function "getCurrentConditions (Instance Function)") () as [Weather.CurrentConditions](Weather/CurrentConditions.md) or **Null**
 	Get the most recently cached weather conditions.
-- [**getDailyForecast**](#getDailyForecast-instance_function "getDailyForecast (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Weather.DailyForecast](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather/DailyForecast.html) > or **Null**
+- [**getDailyForecast**](#getDailyForecast-instance_function "getDailyForecast (Instance Function)") () as [Lang.Array](Lang/Array.md) < [Weather.DailyForecast](Weather/DailyForecast.md) > or **Null**
 	Get the daily forecast.
-- [**getHourlyForecast**](#getHourlyForecast-instance_function "getHourlyForecast (Instance Function)") () as [Lang.Array](https://developer.garmin.com/connect-iq/api-docs/Toybox/Lang/Array.html) < [Weather.HourlyForecast](https://developer.garmin.com/connect-iq/api-docs/Toybox/Weather/HourlyForecast.html) > or **Null**
+- [**getHourlyForecast**](#getHourlyForecast-instance_function "getHourlyForecast (Instance Function)") () as [Lang.Array](Lang/Array.md) < [Weather.HourlyForecast](Weather/HourlyForecast.md) > or **Null**
 	Get the hourly forecast.
-- [**getSunrise**](#getSunrise-instance_function "getSunrise (Instance Function)") (location as [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html), date as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)) as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or **Null**
+- [**getSunrise**](#getSunrise-instance_function "getSunrise (Instance Function)") (location as [Position.Location](Position/Location.md), date as [Time.Moment](Time/Moment.md)) as [Time.Moment](Time/Moment.md) or **Null**
 	Get sunrise time for the provided location and date.
-- [**getSunset**](#getSunset-instance_function "getSunset (Instance Function)") (location as [Position.Location](https://developer.garmin.com/connect-iq/api-docs/Toybox/Position/Location.html), date as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html)) as [Time.Moment](https://developer.garmin.com/connect-iq/api-docs/Toybox/Time/Moment.html) or **Null**
+- [**getSunset**](#getSunset-instance_function "getSunset (Instance Function)") (location as [Position.Location](Position/Location.md), date as [Time.Moment](Time/Moment.md)) as [Time.Moment](Time/Moment.md) or **Null**
 	Get sunrise time for the provided location and date.
