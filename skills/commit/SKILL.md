@@ -61,10 +61,13 @@ Both examples below are taken directly from
 (obscured details in the originals are shown as `XXX`). They illustrate the
 level of detail to aim for in the body.
 
+Subject lines have been rewritten to follow the Conventional Commits format
+defined above; the bodies are unchanged from the original blog post.
+
 ### Example 1 — a one-line Makefile fix
 
 ```
-Sort the output of $(wildcard) as it is unsorted in GNU Make 3.82+
+fix(make): sort the output of $(wildcard), unsorted in GNU Make 3.82+
 
 The Makefile was relying on the output of $(wildcard) to be sorted. This is
 important because the XXXXXXXXXXXX rules have files that are numbered and
@@ -99,7 +102,7 @@ it is* — none of which is recoverable from the diff alone.
 ### Example 2 — adding signal handling
 
 ```
-Handle SIGABRT and force a panic
+feat: handle SIGABRT and force a panic
 
 It can be useful to crash XXXXXXX via a signal to get a stack trace of every
 running goroutine. To make this reliable have added handling of SIGABRT.
