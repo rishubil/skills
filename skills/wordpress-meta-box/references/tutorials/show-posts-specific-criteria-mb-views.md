@@ -1,6 +1,8 @@
 ---
 title: Showing posts with a specific criteria - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-posts-specific-criteria-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this practice, we will find another way to do it with the help of MB Views from Meta Box.

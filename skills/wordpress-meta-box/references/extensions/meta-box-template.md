@@ -1,6 +1,8 @@
 ---
 title: MB Template - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-template/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Template helps you write configuration for custom fields in the YAML format, which is human-readable and easy to understand.
@@ -162,7 +164,7 @@ Each field group or custom field has a list of the settings which is written in 
 > [!-warning] -warning
 > warning
 > 
-> Please refer to [field group settings](https://docs.metabox.io/creating-fields-with-code/) and [field settings](https://docs.metabox.io/field-settings/) when defining keys.
+> Please refer to [field group settings](../creating-fields-with-code.md) and [field settings](../field-settings.md) when defining keys.
 
 **If you register single meta box**, then enter field group settings and its fields like this:
 

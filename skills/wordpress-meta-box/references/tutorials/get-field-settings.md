@@ -1,6 +1,8 @@
 ---
 title: Getting field settings by field ID - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/get-field-settings/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In case you want to refer to the field's name, field's options array (in a select field) or other settings later in your code, the `rwmb_get_field_settings()` function will help you do it as your desire.

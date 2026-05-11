@@ -1,6 +1,8 @@
 ---
 title: Creating a custom avatar for users - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-custom-avatar/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 As you know, each WordPress user account has a unique avatar. And, you can completely **add or change the avatar by creating a custom field** that allows users to **upload photos right on the website**.

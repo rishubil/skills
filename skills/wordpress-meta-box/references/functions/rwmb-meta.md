@@ -1,16 +1,18 @@
 ---
 title: rwmb_meta - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-meta/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 `rwmb_meta` is a helper function that helps you get a field value.
 
-It's actually a wrapper of [rwmb\_get\_value()](https://docs.metabox.io/functions/rwmb-get-value/) and [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/) functions to make sure the returned value is always helpful to developers.
+It's actually a wrapper of [rwmb\_get\_value()](rwmb-get-value.md) and [rwmb\_the\_value()](rwmb-the-value.md) functions to make sure the returned value is always helpful to developers.
 
 More precisely:
 
-- If field type is either oEmbed, Google maps, or Open Street Maps, it's exactly the same as [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/), but returns the field HTML output.
-- For other field types, it's exactly the same as [rwmb\_get\_value()](https://docs.metabox.io/functions/rwmb-get-value/).
+- If field type is either oEmbed, Google maps, or Open Street Maps, it's exactly the same as [rwmb\_the\_value()](rwmb-the-value.md), but returns the field HTML output.
+- For other field types, it's exactly the same as [rwmb\_get\_value()](rwmb-get-value.md).
 
 ## Arguments
 
@@ -39,7 +41,7 @@ rwmb_meta( $field_id, $args, $object_id );
 > [!-info] -info
 > Returned value format
 > 
-> Depending on the field types, the returned value can be different. Please refer to each field type in the [Fields](https://docs.metabox.io/fields/) section for more details.
+> Depending on the field types, the returned value can be different. Please refer to each field type in the [Fields](../fields/index.md) section for more details.
 
 ## Examples
 
@@ -197,6 +199,6 @@ if ( $layout === 'content-sidebar' ) {
 > ],
 > ```
 > 
-> Then when using with this function, it returns the value "us", "uk", or "au". To get the label like "United States", please use the [rwmb\_the\_value()](https://docs.metabox.io/functions/rwmb-the-value/) function.
+> Then when using with this function, it returns the value "us", "uk", or "au". To get the label like "United States", please use the [rwmb\_the\_value()](rwmb-the-value.md) function.
 > 
 > [\# Link to this question](#why-cant-i-get-the-label-for-a-select-field)

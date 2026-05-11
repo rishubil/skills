@@ -1,6 +1,8 @@
 ---
 title: Time - Meta Box Documentation
 source: https://docs.metabox.io/fields/time/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The time field allows you to select a time via a friendly UI. This field uses jQuery UI time picker libraries.
@@ -21,7 +23,7 @@ The time field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

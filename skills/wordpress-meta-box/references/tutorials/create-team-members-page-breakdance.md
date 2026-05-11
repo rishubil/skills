@@ -1,6 +1,8 @@
 ---
 title: Creating a team members page - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll introduce a way to create a team using Meta Box and Breakdance. This is a sample we’ll use for this practice:

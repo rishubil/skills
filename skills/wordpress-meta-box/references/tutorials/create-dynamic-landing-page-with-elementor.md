@@ -1,6 +1,8 @@
 ---
 title: Creating dynamic landing page in WordPress - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-dynamic-landing-page-with-elementor/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Did you spend a lot of time and effort creating landing pages for multiple marketing campaigns by adding one by one image or text to the page template, even when they have the same structure of content?
@@ -134,7 +136,7 @@ There will be a shortcode automatically generated, just copy it since we will us
 
 ![copy the shortcode automatically generated](https://imgur.elightup.com/WVAKBcp.png)
 
-We had another tutorial on [how to use the MB Testimonials solution](https://docs.metabox.io/extensions/mb-testimonials/) to create and customize the testimonial section. You can watch it for more details.
+We had another tutorial on [how to use the MB Testimonials solution](../extensions/mb-testimonials.md) to create and customize the testimonial section. You can watch it for more details.
 
 Let’s move on to the next step.
 

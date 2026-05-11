@@ -1,6 +1,8 @@
 ---
 title: Showing posts with specific criteria - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-posts-specific-criteria-meta-box-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you want to display some on-sale products in a promotion campaign only, [this series](https://metabox.io/series/specific-criteria/) can be useful for your e-commerce website. In this practice, we’re going to **show posts with specific criteria** that is the on-sale status using **Meta Box** and **Breakdance**.

@@ -1,6 +1,8 @@
 ---
 title: MB Favorite Posts - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-favorite-posts/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Overview
@@ -39,7 +41,7 @@ There are also options to let you specify where and when the button is displayed
 
 ### Dashboard Page and Register Page
 
-MB Favorite Posts are integrated with [MB User Profile](https://docs.metabox.io/extensions/mb-user-profile/) to help users create the Dashboard page and the Register page automatically without coding.
+MB Favorite Posts are integrated with [MB User Profile](mb-user-profile.md) to help users create the Dashboard page and the Register page automatically without coding.
 
 The Dashboard page shows all the favorite posts of a user, and the Register page contains a form that users can sign up for accounts to use the Favorite Posts feature.
 

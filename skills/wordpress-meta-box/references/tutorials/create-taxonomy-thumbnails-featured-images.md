@@ -1,6 +1,8 @@
 ---
 title: Creating taxonomy thumbnails & featured Images - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-taxonomy-thumbnails-featured-images/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We are going to **create taxonomy thumbnails and featured images using custom fields**. The images will be saved in custom fields, then displayed as thumbnails and featured images of the taxonomy on a portfolio page, like this:

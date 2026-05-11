@@ -1,6 +1,8 @@
 ---
 title: Button Group - Meta Box Documentation
 source: https://docs.metabox.io/fields/button-group/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The button group allows you to select one or more options by enabling buttons from a button group. This field is helpful when you want to display choices in the style of a toolbar.
@@ -17,7 +19,7 @@ The select field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

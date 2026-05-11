@@ -1,6 +1,8 @@
 ---
 title: Creating a reading progress bar in WordPress posts - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-reading-progress-bar-wordpress-posts-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, I’ll use the **MB Views** extension from Meta Box in a real case to **create a simple reading progress bar** in WordPress posts.

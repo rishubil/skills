@@ -1,6 +1,8 @@
 ---
 title: Displaying a users list on the frontend - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-users-list/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In this guide, I'll show you how to **use Meta Box to easily display a user list on a page** as well as publish the user accounts **only when they are allowed** by the owners, besides, hide the accounts that users don’t want to publish.
@@ -20,7 +22,7 @@ I will separate the list into pages, limit the number of users displayed on a pa
 These are the tools we need for this practice:
 
 - [Meta Box core plugin](https://wordpress.org/plugins/meta-box/): to have a framework to create custom fields;
-- [MB Builder](https://metabox.io/plugins/meta-box-builder/): to [create custom fields with an intuitive user interface](https://docs.metabox.io/tutorials/create-custom-fields/) (UI) with easy drag-and-drop manipulations on the backend. If you can code to create a custom field, you can skip this extension. But there is another free tool if you still want to use UI, which is the [Online Genera-tor](https://metabox.io/online-generator/).
+- [MB Builder](https://metabox.io/plugins/meta-box-builder/): to [create custom fields with an intuitive user interface](create-custom-fields.md) (UI) with easy drag-and-drop manipulations on the backend. If you can code to create a custom field, you can skip this extension. But there is another free tool if you still want to use UI, which is the [Online Genera-tor](https://metabox.io/online-generator/).
 - [DataTables](https://datatables.net/): It is a library that uses jQuery to add advanced features to tables in HTML. It helps you display and create functions (pagination and search) with tables more easily.
 
 ## 1\. Creating custom fields
@@ -329,4 +331,4 @@ And, this is the table with those functions in the final result. The pagination 
 
 ![The user list table with wanted functions](https://imgur.elightup.com/UiBK2AF.gif)
 
-We have finished **displaying a user list on the frontend** with two methods: using PHP and using MB Views. In the case that you want to do something more for your user, there's something that you may want to dig into: how to [create a custom avatar for users](https://docs.metabox.io/tutorials/create-custom-avatar/) or how to [create a custom user profile page on frontend](https://docs.metabox.io/tutorials/create-user-profile-page/) to avoid accessing the backend from unexpected users. Thanks for reading!
+We have finished **displaying a user list on the frontend** with two methods: using PHP and using MB Views. In the case that you want to do something more for your user, there's something that you may want to dig into: how to [create a custom avatar for users](create-custom-avatar.md) or how to [create a custom user profile page on frontend](create-user-profile-page.md) to avoid accessing the backend from unexpected users. Thanks for reading!

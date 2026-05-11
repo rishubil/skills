@@ -1,6 +1,8 @@
 ---
 title: Export/Import custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/export-import-custom-fields-meta-box-builder/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Instead of [using code to embed custom fields from one site to others](https://metabox.io/copy-custom-fields-with-meta-box-builder/), we could use another method supported by [MB Builder](https://metabox.io/plugins/meta-box-builder/). This extension allows you to export/import custom fields fast and easily.
@@ -23,7 +25,7 @@ After activating two plugins, you’ll see a new **Meta Box** menu as below:
 
 ## Creating custom fields
 
-On the original site, let’s create some fields. We have a tutorial on creating custom fields with MB Builder, please take a look for more detail [here](https://docs.metabox.io/tutorials/create-custom-fields/).
+On the original site, let’s create some fields. We have a tutorial on creating custom fields with MB Builder, please take a look for more detail [here](create-custom-fields.md).
 
 Here we’ll create a field group named **Author** and export/import its settings to other sites for example.
 

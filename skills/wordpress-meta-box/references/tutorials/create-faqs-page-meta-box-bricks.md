@@ -1,6 +1,8 @@
 ---
 title: Creating an FAQs page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-meta-box-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today’s practice, let me show you a way to create an FAQs page using Meta Box and Bricks.

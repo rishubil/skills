@@ -1,6 +1,8 @@
 ---
 title: Adding code to header and footer in WordPress - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-code-to-wordpress-header-footer-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In the header and footer of the WordPress website, you can add custom code such as tracking scripts, meta tags, or custom CSS to connect with external services. Today, let’s try a simple way to **add code to the WordPress header and footer** with the help of **MB Views** from Meta Box.

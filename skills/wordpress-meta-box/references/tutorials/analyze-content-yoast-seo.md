@@ -1,6 +1,8 @@
 ---
 title: Analyzing content in custom fields for SEO - Yoast SEO - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/analyze-content-yoast-seo/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We will use custom fields to add extra information for the posts / products. It also can be indexed by search engines along with the posts/products content, so we should add them to the content analysis of Yoast SEO to know if it is good for SEO or not.

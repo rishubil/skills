@@ -1,6 +1,8 @@
 ---
 title: Database - Meta Box Documentation
 source: https://docs.metabox.io/database/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Wondering how the Meta Box stores custom fields in the database? Understanding this can help you get the custom fields easily and understand the returned value from `get_post_meta` or helper functions.
@@ -9,8 +11,8 @@ Wondering how the Meta Box stores custom fields in the database? Understanding t
 
 In general, each custom field is saved as **one row** in the database, where the field `id` will be the `meta_key` and the value will be the `meta_value` in the meta table. This is the same way that WordPress saves data with `add_post_meta` or `update_post_meta` function.
 
-- If you use [custom tables](https://docs.metabox.io/extensions/mb-custom-table/), the field value will be saved in the column with the name equal to the field `id`.
-- If you create a field for a [settings page](https://docs.metabox.io/extensions/mb-settings-page/), the whole data for the settings page will be saved as an array in an option in the format of `['field_id' => 'field_value']`.
+- If you use [custom tables](extensions/mb-custom-table.md), the field value will be saved in the column with the name equal to the field `id`.
+- If you create a field for a [settings page](extensions/mb-settings-page.md), the whole data for the settings page will be saved as an array in an option in the format of `['field_id' => 'field_value']`.
 
 The sections below describe how field values are formatted.
 

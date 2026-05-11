@@ -1,9 +1,11 @@
 ---
 title: Building a hotel booking website using Meta Box - P2 - Booking page in backend - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/build-hotel-booking-website-p2-backend/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-In [the first post of this series](https://docs.metabox.io/tutorials/build-hotel-booking-website-p1/), we created a page showing all the hotel room’s information. It normally has a button or several call-to-action areas to go to the booking page, which allows your customers to make an order. However, cause some businesses have strong direct channels, they want their sales to **make booking orders for their customers** as well. Along with that, to have you imagine how to create a booking page in the frontend later (which is in the 3rd post), I made this post to show you how to create one in the backend. That is for **internal users** only.
+In [the first post of this series](build-hotel-booking-website-p1.md), we created a page showing all the hotel room’s information. It normally has a button or several call-to-action areas to go to the booking page, which allows your customers to make an order. However, cause some businesses have strong direct channels, they want their sales to **make booking orders for their customers** as well. Along with that, to have you imagine how to create a booking page in the frontend later (which is in the 3rd post), I made this post to show you how to create one in the backend. That is for **internal users** only.
 
 ![Create a booking page in the back end](https://i0.wp.com/images.elightup.com/meta-box/blog/hotel-booking-back-end/create-booking-page-in-back-end.gif)
 
@@ -113,7 +115,7 @@ Besides that, each sub-field in this group has some remarks:
 
 #### 2.4.1 Fields for the Room Name
 
-For the room, choose the field type as **Post**. In the field settings, choose the corresponding post type. This lets users choose from the list of rooms we created earlier [in the previous part](https://docs.metabox.io/tutorials/build-hotel-booking-website-p1/).
+For the room, choose the field type as **Post**. In the field settings, choose the corresponding post type. This lets users choose from the list of rooms we created earlier [in the previous part](build-hotel-booking-website-p1.md).
 
 #### 2.4.2 The Children field
 

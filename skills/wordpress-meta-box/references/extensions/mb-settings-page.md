@@ -1,6 +1,8 @@
 ---
 title: MB Settings Page - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-settings-page/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Settings Page helps you create settings pages for your website. You can use it to create a theme options page, or a settings page for your plugin, or a custom settings page for clients' websites.
@@ -35,7 +37,7 @@ On the new screen, you'll see all details for the settings page.
 > [!-info] -info
 > info
 > 
-> The instruction above uses [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/). If you prefer to use code, please see below.
+> The instruction above uses [MB Builder](meta-box-builder.md), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](meta-box-aio.md). If you prefer to use code, please see below.
 
 ### Settings
 
@@ -196,7 +198,7 @@ Each tab has the following parameters:
 
 ## Settings fields
 
-After creating a settings page, you need to create settings fields for it. Creating settings fields for settings pages is [similar as for posts](https://docs.metabox.io/custom-fields/#how-to-create-custom-fields). You can do it [with UI using MB Builder](https://docs.metabox.io/extensions/meta-box-builder/#creating-custom-fields) or [with code](https://docs.metabox.io/creating-fields-with-code/).
+After creating a settings page, you need to create settings fields for it. Creating settings fields for settings pages is [similar as for posts](../custom-fields.md#how-to-create-custom-fields). You can do it [with UI using MB Builder](meta-box-builder.md#creating-custom-fields) or [with code](../creating-fields-with-code.md).
 
 If you use MB Builder to create fields, make sure to select the correct settings page in the Location settings:
 
@@ -321,9 +323,9 @@ What if you want the *section to be inside another panel*? Like inside another p
 
 ### Compatibility
 
-At the moment, all Meta Box fields are supported in the Customizer, except [file](https://docs.metabox.io/fields/file/) and [image](https://docs.metabox.io/fields/image/) field types. These field types will be converted to the [file\_advanced](https://docs.metabox.io/fields/file-advanced/) and [image\_advanced](https://docs.metabox.io/fields/image-advanced/) automatically to avoid any problems. Other upload field types such as [file\_advanced](https://docs.metabox.io/fields/file-advanced/), [file\_upload](https://docs.metabox.io/fields/file-upload/), [image\_advanced](https://docs.metabox.io/fields/image-advanced/), [image\_upload](https://docs.metabox.io/fields/image-upload/), [single\_image](https://docs.metabox.io/fields/single-image/) still work well.
+At the moment, all Meta Box fields are supported in the Customizer, except [file](../fields/file.md) and [image](../fields/image.md) field types. These field types will be converted to the [file\_advanced](../fields/file-advanced.md) and [image\_advanced](../fields/image-advanced.md) automatically to avoid any problems. Other upload field types such as [file\_advanced](../fields/file-advanced.md), [file\_upload](../fields/file-upload.md), [image\_advanced](../fields/image-advanced.md), [image\_upload](../fields/image-upload.md), [single\_image](../fields/single-image.md) still work well.
 
-The good news is all the extensions such as [MB Conditional Logic](https://docs.metabox.io/extensions/meta-box-conditional-logic/), [MB Tabs](https://docs.metabox.io/extensions/meta-box-tabs/) are supported. That will help you create much better experiences for your users.
+The good news is all the extensions such as [MB Conditional Logic](meta-box-conditional-logic.md), [MB Tabs](meta-box-tabs.md) are supported. That will help you create much better experiences for your users.
 
 > [!-warning] -warning
 > postMessage transport
@@ -393,7 +395,7 @@ It will show a textarea field in your settings page like this:
 
 When you add it to your settings page, it will show all of your settings in JSON. And you can just copy it and save it to a file to back up the settings. To restore the settings, just paste the JSON again and click the Save Settings button.
 
-The backup field inherits from [`textarea`](https://docs.metabox.io/fields/textarea/) so you can customize it the way you want: change the field name, description, input size, etc. This field doesn't require an `ID`. And of course, you should have only one backup field on your settings page.
+The backup field inherits from [`textarea`](../fields/textarea.md) so you can customize it the way you want: change the field name, description, input size, etc. This field doesn't require an `ID`. And of course, you should have only one backup field on your settings page.
 
 > [!-warning] -warning
 > warning
@@ -433,7 +435,7 @@ By using Settings API, all the fields' values will be saved as an array in a sin
 
 ## Getting field value
 
-You're able to use helper function [rwmb\_meta()](https://docs.metabox.io/functions/rwmb-meta/) to get field value as follows:
+You're able to use helper function [rwmb\_meta()](../functions/rwmb-meta.md) to get field value as follows:
 
 ```php
 $value = rwmb_meta( $field_id, ['object_type' => 'setting'], $option_name );
@@ -452,9 +454,9 @@ Notes:
 - In the 2nd parameter, you need to pass `'object_type' => 'setting'` or `'object_type' => 'network_setting'`
 - In the last parameter, you need to pass the option name for the settings page
 
-Other parameters are the same as for posts. Please see [this documentation](https://docs.metabox.io/displaying-fields-with-code/) for details.
+Other parameters are the same as for posts. Please see [this documentation](../displaying-fields-with-code.md) for details.
 
 > [!-warning] -warning
 > warning
 > 
-> It requires the extension version 1.2+ to use the helper function. If you're using an older version, please [update now](https://docs.metabox.io/updates/).
+> It requires the extension version 1.2+ to use the helper function. If you're using an older version, please [update now](../updates.md).

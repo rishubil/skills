@@ -1,6 +1,8 @@
 ---
 title: MB Rank Math - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-rank-math/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Rank Math helps you to add content of custom fields to Rank Math Content Analysis to have better SEO score.

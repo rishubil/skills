@@ -1,6 +1,8 @@
 ---
 title: Creating menus for restaurants - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-menu-restaurants-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 There will be a large number of restaurants on your site and you may want to create their own menu for each one. In this practice, we’re going to do it using Meta Box and Bricks Builder.

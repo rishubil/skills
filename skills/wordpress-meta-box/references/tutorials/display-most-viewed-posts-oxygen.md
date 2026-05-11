@@ -1,6 +1,8 @@
 ---
 title: Displaying the most viewed posts - P2 - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-most-viewed-posts-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We are going to create a section to display the most viewed posts on the homepage built with Oxygen. Let’s take restaurants as an example of these posts.

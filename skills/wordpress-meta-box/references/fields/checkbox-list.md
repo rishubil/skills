@@ -1,6 +1,8 @@
 ---
 title: Checkbox list - Meta Box Documentation
 source: https://docs.metabox.io/fields/checkbox-list/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The checkbox list field creates a list of tick-able checkboxes with options. You can select multiple choices from the predefined list.
@@ -21,7 +23,7 @@ The checkbox list field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/) such as Label, ID, Default value, Cloneable, etc., this field has the following specific settings:
+Besides the [common settings](../field-settings.md) such as Label, ID, Default value, Cloneable, etc., this field has the following specific settings:
 
 ![specific settings of the field](https://docs.metabox.io/assets/images/special-settings-9937d5bfbcf14ace5ea82f08bad14699.png)
 
@@ -84,7 +86,7 @@ If the field is cloneable, then the value is stored as a serialized array in a s
 
 ### Using MB Views
 
-[MB Views](https://docs.metabox.io/extensions/mb-views/) is an extension for Meta Box, which helps you to get Meta Box fields and build your templates on the front end fast and easily. The extension supports all custom fields built with Meta Box, and also post fields (such as post title and post content), site settings, user fields, and even query fields. MB Views is already bundled in the **Meta Box AIO**. So it's available in the Ultimate and Lifetime plans.
+[MB Views](../extensions/mb-views.md) is an extension for Meta Box, which helps you to get Meta Box fields and build your templates on the front end fast and easily. The extension supports all custom fields built with Meta Box, and also post fields (such as post title and post content), site settings, user fields, and even query fields. MB Views is already bundled in the **Meta Box AIO**. So it's available in the Ultimate and Lifetime plans.
 
 **Displaying selected values or labels:**
 

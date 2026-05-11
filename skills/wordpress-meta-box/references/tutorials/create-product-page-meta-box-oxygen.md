@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-meta-box-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 I’ll create a car rental page for example of a product page. It’s a singular page of a custom post type.

@@ -1,6 +1,8 @@
 ---
 title: Creating a contact form using Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-contact-form/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The contact form makes it simple and reliable for anyone to **leave their information** for buying your product, looking for consulting, or just contacting your brand. And you know what, **Meta Box can help you create a contact form in WordPress very easily**.

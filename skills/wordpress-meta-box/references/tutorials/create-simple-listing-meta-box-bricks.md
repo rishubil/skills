@@ -1,6 +1,8 @@
 ---
 title: Creating a simple listing site - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to create a simple archive page to list all the posts of a custom post type. It’s called simple listing. Beside that, we will display extra information saved in custom fields of each post on this page.

@@ -1,6 +1,8 @@
 ---
 title: Meta Box AIO - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-aio/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Meta Box AIO is a special plugin that contains all the extensions. It allows you to install only one plugin and have everything, so you can have the plugin list short and clean.
@@ -35,7 +37,7 @@ This filter allows you to change the list of enabled premium extensions. Thus, e
 
 This filter takes a list of enabled extensions (their slugs), and returns the filtered list.
 
-For example, the code below enables only the [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) extension:
+For example, the code below enables only the [MB Builder](meta-box-builder.md) extension:
 
 ```php
 add_filter( 'mb_aio_extensions', function( $extensions ) {

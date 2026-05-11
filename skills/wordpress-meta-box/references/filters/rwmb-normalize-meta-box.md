@@ -1,6 +1,8 @@
 ---
 title: rwmb_normalize_meta_box - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-normalize-meta-box/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This filter is used to normalize field group settings. It's useful when you want to set default values for a field group.

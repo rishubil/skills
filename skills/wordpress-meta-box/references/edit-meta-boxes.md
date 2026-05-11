@@ -1,9 +1,11 @@
 ---
 title: Edit meta boxes - Meta Box Documentation
 source: https://docs.metabox.io/edit-meta-boxes/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-When you use a WordPress theme or plugin which [integrates Meta Box](https://docs.metabox.io/bundling/), all the information of fields and meta boxes are fixed, such as: meta box title, number of fields, fields' names and descriptions,... How to change these texts or add/remove fields of an existing meta box or even remove a meta box?
+When you use a WordPress theme or plugin which [integrates Meta Box](bundling.md), all the information of fields and meta boxes are fixed, such as: meta box title, number of fields, fields' names and descriptions,... How to change these texts or add/remove fields of an existing meta box or even remove a meta box?
 
 Assuming we have 2 meta boxes registered in a parent theme:
 

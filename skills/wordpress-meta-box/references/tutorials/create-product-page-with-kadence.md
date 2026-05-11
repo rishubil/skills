@@ -1,6 +1,8 @@
 ---
 title: Creating a Product Page - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-with-kadence/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 There are numerous ways to build ecommerce product pages that I shared in [this series](https://metabox.io/series/product-page/). In this article, we’ll share some best practices for product page design by using Meta Box and Kadence.

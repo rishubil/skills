@@ -1,6 +1,8 @@
 ---
 title: Creating a pricing table page - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-pricing-table-page-with-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 When your products have some pricing plans instead of only one, a well-designed pricing table page will be an intelligent choice to show offering your products or services.
@@ -248,4 +250,4 @@ And, this is the final look of my pricing page.
 
 Somedays, when you want to change the price of a plan, or add features, or something else, just change the content in the custom fields. All the data on this pricing table page is dynamic.
 
-We have had tutorials about [how to create dynamic landing pages](https://docs.metabox.io/tutorials/create-dynamic-landing-page-with-bricks/) including pricing section and other information. We hope that they’re useful for you.
+We have had tutorials about [how to create dynamic landing pages](create-dynamic-landing-page-with-bricks.md) including pricing section and other information. We hope that they’re useful for you.

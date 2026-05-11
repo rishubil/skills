@@ -1,6 +1,8 @@
 ---
 title: Filtering posts by Relationships - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-relationships-with-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Are you building an internal company portal to manage training materials? Each document is connected to a department by a Meta Box relationship. When staff log in, they’ll only see the documents for their own department, not others. If so, you should not skip this article because today, I will show you how to **create a filter posts by relationships** using **Meta Box** and **Oxygen**.

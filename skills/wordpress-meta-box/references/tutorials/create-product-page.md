@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - without builders - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 I’ll create a detailed page about car rental as an example for a product page. It’s a singular page of a custom post type.

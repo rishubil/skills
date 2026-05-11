@@ -1,6 +1,8 @@
 ---
 title: Creating a subscription form connecting to Mailchimp - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-subscription-form-connect-to-mailchimp/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to use the [MB Frontend Submission](https://metabox.io/plugins/mb-frontend-submission/) extension of Meta Box to create a subscription form and connect it with an email marketing service - Mailchimp to manage and send emails fast and easily.
@@ -184,7 +186,7 @@ add_action( 'rwmb_frontend_after_process', function( $config, $post_id ) {
 **In there**:
 
 - `'/inc/MailChimp.php'`: This is the direction of the file that we have just added to the theme folder;
-- We use the `rwmb_frontend_after_process` hook to do below actions after the subscriber submits the form. You can look for more details about the hook on [Meta Box documentation](https://docs.metabox.io/extensions/mb-frontend-submission/#form-hooks).
+- We use the `rwmb_frontend_after_process` hook to do below actions after the subscriber submits the form. You can look for more details about the hook on [Meta Box documentation](../extensions/mb-frontend-submission.md#form-hooks).
 - `'your API keys mailchimp'`: Where you can fill in your MailChimp API keys;
 - `'id of the list that you want to integrate'`: Where you can enter the ID of the list to stipulate that the contact will be sent to which contact list in your MailChimp account;
 - `$_POST[' '],`: This is to get the value stored in custom fields;

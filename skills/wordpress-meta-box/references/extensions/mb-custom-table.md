@@ -1,6 +1,8 @@
 ---
 title: MB Custom Table - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-custom-table/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **MB Custom Table** helps you to save custom fields' values to a custom table instead of the default WordPress meta table. All custom fields for a post are saved in a single row, where each column contains the value of a corresponding field.
@@ -11,7 +13,7 @@ This reduces the number of rows in the database which can help improve the perfo
 
 ## Getting started
 
-The easiest way to work with custom tables is using [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/). It provides a UI to create custom tables and automatically save custom fields to table columns.
+The easiest way to work with custom tables is using [MB Builder](meta-box-builder.md). It provides a UI to create custom tables and automatically save custom fields to table columns.
 
 When creating a field group with MB Builder, click on the settings button on the left sidebar and you'll see options to use a custom table as follows:
 
@@ -150,7 +152,7 @@ Now you can go to the edit post screen (or the edit user profile if you use the 
 
 ## Getting field value
 
-Use the helper [rwmb\_meta()](https://docs.metabox.io/functions/rwmb-meta/) function to get a field value. The only difference is you need to specify the table name in the 2nd argument:
+Use the helper [rwmb\_meta()](../functions/rwmb-meta.md) function to get a field value. The only difference is you need to specify the table name in the 2nd argument:
 
 ```php
 $args = [
@@ -163,7 +165,7 @@ echo $value;
 
 Also, note that the call to the custom table will be cached, e.g. if you call the helper function several times for the same `$post_id`, it will only query once. This technique will improve the database performance.
 
-You can also use the [`[rwmb_meta]`](https://docs.metabox.io/shortcode/) shortcode to display a field value. You need to set the shortcode attributes similar to the `rwmb_meta()` helper function:
+You can also use the [`[rwmb_meta]`](../shortcode.md) shortcode to display a field value. You need to set the shortcode attributes similar to the `rwmb_meta()` helper function:
 
 ```php
 [rwmb_meta id="field_id" storage_type="custom_table" table="table_name"]

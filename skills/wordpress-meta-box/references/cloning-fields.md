@@ -1,9 +1,11 @@
 ---
 title: Cloning fields - Meta Box Documentation
 source: https://docs.metabox.io/cloning-fields/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-The clone feature of Meta Box allows you to create multiple inputs from a text, textarea, select,... fields without declaring many fields in the code. Combining the clone feature with [groups](https://docs.metabox.io/extensions/meta-box-group/) gives you a flexible way to define repeatable content.
+The clone feature of Meta Box allows you to create multiple inputs from a text, textarea, select,... fields without declaring many fields in the code. Combining the clone feature with [groups](extensions/meta-box-group.md) gives you a flexible way to define repeatable content.
 
 > [!-info] -info
 > Clone is a feature
@@ -23,7 +25,7 @@ After turning in the Cloneable option, other clone settings will appear.
 > [!-info] -info
 > info
 > 
-> The instruction above uses [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://docs.metabox.io/extensions/meta-box-aio/). If you prefer to use code, please see below.
+> The instruction above uses [MB Builder](extensions/meta-box-builder.md), an extension providing the UI to create fields, and is already bundled in [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](extensions/meta-box-aio.md). If you prefer to use code, please see below.
 
 No matter what you are using the UI or code, this is a brief description of the clone settings. The keys are for reference in code.
 
@@ -42,7 +44,7 @@ After saving the field group, in the post editor, you'll see an **\+ Add more** 
 
 ![view clones in action](https://imgur.elightup.com/PM4Mbqb.png)
 
-If you're a developer and want to use code, then you need to add the clone settings into the [field settings](https://docs.metabox.io/creating-fields-with-code/#fields):
+If you're a developer and want to use code, then you need to add the clone settings into the [field settings](creating-fields-with-code.md#fields):
 
 ```php
 add_filter( 'rwmb_meta_boxes', function ( $meta_boxes ) {

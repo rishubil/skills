@@ -1,6 +1,8 @@
 ---
 title: Button - Meta Box Documentation
 source: https://docs.metabox.io/fields/button/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The button field creates a simple button. It doesn't have any value. Usually, this field is used to trigger custom JavaScript actions.
@@ -17,12 +19,12 @@ The button field settings
 
 ## Settings
 
-This field doesn't have any specific settings. It only uses [common settings](https://docs.metabox.io/field-settings/). But there are important settings that you should pay attention to, the keys are for use with code:
+This field doesn't have any specific settings. It only uses [common settings](../field-settings.md). But there are important settings that you should pay attention to, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
 | Default value | `std` | Button text. |
-| Custom HTML5 attributes | `attributes` | A list of custom HTML5 attributes for the button. [More info](https://docs.metabox.io/custom-attributes/). |
+| Custom HTML5 attributes | `attributes` | A list of custom HTML5 attributes for the button. [More info](../custom-attributes.md). |
 
 This is a sample field settings array when creating this field with code:
 
@@ -44,7 +46,7 @@ This field does not save any value in the database.
 
 ## Custom JavaScript
 
-As said above, this field is usually used for custom JavaScript actions. To enqueue a JavaScript file to the admin editing page, use the [rwmb\_enqueue\_scripts](https://docs.metabox.io/actions/rwmb-enqueue-scripts/) hook:
+As said above, this field is usually used for custom JavaScript actions. To enqueue a JavaScript file to the admin editing page, use the [rwmb\_enqueue\_scripts](../actions/rwmb-enqueue-scripts.md) hook:
 
 ```php
 add_action( 'rwmb_enqueue_scripts', 'prefix_enqueue_custom_script' );

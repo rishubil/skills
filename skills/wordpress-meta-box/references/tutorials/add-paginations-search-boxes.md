@@ -1,6 +1,8 @@
 ---
 title: Adding paginations & searching box to custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-paginations-search-boxes/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Rendering all the pre-made data of a custom field at once on the screen in the backend can cause the post or page editor to look very confusing. Adding pagination to separate those values into pages, and also providing a search box to search any value right in the field will come in handy.

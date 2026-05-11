@@ -1,6 +1,8 @@
 ---
 title: MB Text Limiter - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-text-limiter/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Text Limiter helps you to limit the number of characters or words entered for text and textarea fields.
@@ -42,4 +44,4 @@ If you need to limit by words, just add `'limit_type' => 'word'`:
 
 That's all!
 
-Note that this extension works only with [text](https://docs.metabox.io/fields/text/) and [textarea](https://docs.metabox.io/fields/textarea/) fields.
+Note that this extension works only with [text](../fields/text.md) and [textarea](../fields/textarea.md) fields.

@@ -1,6 +1,8 @@
 ---
 title: Creating download and preview buttons - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-download-preview-buttons-with-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today's post, we'll walk you through the way to create an e-book page with download and preview buttons using Meta Box and Oxygen\*\*. The e-book files can be downloaded easily or viewed online by website visitors with just one click.

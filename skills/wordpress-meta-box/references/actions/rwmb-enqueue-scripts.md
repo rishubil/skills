@@ -1,6 +1,8 @@
 ---
 title: rwmb_enqueue_scripts - Meta Box Documentation
 source: https://docs.metabox.io/actions/rwmb-enqueue-scripts/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This action runs after all Meta Box scripts and styles are enqueued to allows developers to enqueue more scripts and styles.

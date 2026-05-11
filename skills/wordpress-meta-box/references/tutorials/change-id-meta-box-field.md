@@ -1,6 +1,8 @@
 ---
 title: Changing the ID of a Meta Box field - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/change-id-meta-box-field/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 For any reason, you may want to change the ID of the custom field without having an effect on existing data. But, if you only change the ID of the field from the field group settings, the data in the field will be lost. So, how does the data remain intact when changing the field ID? Let’s find it out.

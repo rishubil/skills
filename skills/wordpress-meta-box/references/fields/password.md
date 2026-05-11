@@ -1,6 +1,8 @@
 ---
 title: Password - Meta Box Documentation
 source: https://docs.metabox.io/fields/password/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The password field creates a simple password input. The password is encrypted by [wp\_hash\_password()](https://developer.wordpress.org/reference/functions/wp_hash_password/) before saving it into the database to make sure it's safe.
@@ -17,7 +19,7 @@ The password field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |

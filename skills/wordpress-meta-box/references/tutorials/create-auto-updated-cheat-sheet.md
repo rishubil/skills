@@ -1,6 +1,8 @@
 ---
 title: Creating an auto-updated cheat sheet - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-auto-updated-cheat-sheet/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll create a submission form to input data, then the data will be automatically inserted into a table in a post.
@@ -86,7 +88,7 @@ And the custom fields of my submission form will show up on the frontend like th
 
 ![The created fields in the frontend](https://imgur.elightup.com/EDsxdKx.png)
 
-If you want to add more things to the submission form, you can add other attributes to the shortcode. You can see a list of addable attributes and detailed instructions [here](https://docs.metabox.io/extensions/mb-frontend-submission/#shortcode-attributes).
+If you want to add more things to the submission form, you can add other attributes to the shortcode. You can see a list of addable attributes and detailed instructions [here](../extensions/mb-frontend-submission.md#shortcode-attributes).
 
 ## 4\. Styling the submission form
 

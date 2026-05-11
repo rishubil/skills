@@ -1,6 +1,8 @@
 ---
 title: MB User Profile - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-user-profile/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB User Profile helps you to add information to the user profile and edit these details on the front end. It also includes a register form, login form, and edit profile form that you can embed anywhere using shortcodes.
@@ -27,7 +29,7 @@ Below is the list of the settings. The attribute is used for the shortcode.
 
 | Name | Attribute | Description |
 | --- | --- | --- |
-| ID | `id` | Field group ID(s) [created for users](https://docs.metabox.io/extensions/mb-user-meta/), separated by commas. Optional. Leave blank to show the default registration form. |
+| ID | `id` | Field group ID(s) [created for users](mb-user-meta.md), separated by commas. Optional. Leave blank to show the default registration form. |
 | Redirect URL | `redirect` | Redirect URL, to which users will be redirected after a successful registration. |
 | Form ID | `form_id` | ID (HTML attribute) of the form. |
 | Title | `label_title` | Label for the title of the form. Default empty. |
@@ -105,7 +107,7 @@ Below is the list of the settings. The attribute is used for the shortcode.
 
 | Name | Attribute | Description |
 | --- | --- | --- |
-| ID | `id` | Field group ID(s) [created for users](https://docs.metabox.io/extensions/mb-user-meta/), separated by commas. All fields from field groups will be included in the profile form. Required. |
+| ID | `id` | Field group ID(s) [created for users](mb-user-meta.md), separated by commas. All fields from field groups will be included in the profile form. Required. |
 | User ID | `user_id` | User ID, whose info will be edited. If not specified, the current user ID is used. |
 | Redirect URL | `redirect` | Redirect URL, to which users will be redirected after successful submission. |
 | Form ID | `form_id` | ID (HTML attribute) of the form. |
@@ -123,7 +125,7 @@ Below is the list of the settings. The attribute is used for the shortcode.
 
 ### Default fields
 
-By default, the user profile form doesn't include any default user fields, such as first name, last name, or biography. To be able to edit these fields, please [create a field group for users](https://docs.metabox.io/extensions/mb-user-meta/) with those fields, keeping the same field IDs as WordPress's.
+By default, the user profile form doesn't include any default user fields, such as first name, last name, or biography. To be able to edit these fields, please [create a field group for users](mb-user-meta.md) with those fields, keeping the same field IDs as WordPress's.
 
 For example, the code below creates a meta box for editing the user's first name, last name, and biography:
 
@@ -319,7 +321,7 @@ This filter is used to modify the submitted user data before it's passed to the 
 $data = apply_filters( 'rwmb_profile_insert_user_data', $data, $config );
 ```
 
-Please note that this filter works only for default user fields such as user email or password. For changing custom field data, please use [`rwmb_{$field_id}_value`](https://docs.metabox.io/filters/rwmb-value/) filter.
+Please note that this filter works only for default user fields such as user email or password. For changing custom field data, please use [`rwmb_{$field_id}_value`](../filters/rwmb-value.md) filter.
 
 ### rwmb\_profile\_update\_user\_data
 
@@ -329,7 +331,7 @@ This filter is used to modify the submitted user data before it's passed to the 
 $data = apply_filters( 'rwmb_profile_update_user_data', $data, $config );
 ```
 
-Please note that this filter works only for default user fields such as user email or password. For changing custom field data, please use [`rwmb_{$field_id}_value`](https://docs.metabox.io/filters/rwmb-value/) filter.
+Please note that this filter works only for default user fields such as user email or password. For changing custom field data, please use [`rwmb_{$field_id}_value`](../filters/rwmb-value.md) filter.
 
 ### Default form fields
 

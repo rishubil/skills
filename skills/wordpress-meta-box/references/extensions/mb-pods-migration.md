@@ -1,6 +1,8 @@
 ---
 title: MB Pods Migration - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-pods-migration/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Pods Migration extension helps you to migrate field groups, custom field data, and relationships from Pods to Meta Box.
@@ -12,7 +14,7 @@ MB Pods Migration extension helps you to migrate field groups, custom field data
 
 ## Backup the database
 
-Before migrating data, make sure you have a backup of your database. During the migration process, because of the difference in [data format](https://docs.metabox.io/database/), the plugin will attempt to modify the existing data in custom fields created by Pods. We try to do it at a very minimum level and create a backup of fields for some specific cases, but it's still important to make a backup just in case something goes wrong.
+Before migrating data, make sure you have a backup of your database. During the migration process, because of the difference in [data format](../database.md), the plugin will attempt to modify the existing data in custom fields created by Pods. We try to do it at a very minimum level and create a backup of fields for some specific cases, but it's still important to make a backup just in case something goes wrong.
 
 ## Migrate
 
@@ -30,7 +32,7 @@ MB Pods Migration tries to migrate all the following data from Pods to Meta Box.
 
 ### Post types and taxonomies
 
-The plugin will migrate all custom post types and custom taxonomies created in Pods to Meta Box. This job requires the [MB Custom Post Type](https://docs.metabox.io/extensions/mb-custom-post-type/) extension. All the settings like labels and icons are migrated as well.
+The plugin will migrate all custom post types and custom taxonomies created in Pods to Meta Box. This job requires the [MB Custom Post Type](mb-custom-post-type.md) extension. All the settings like labels and icons are migrated as well.
 
 > [!-warning] -warning
 > warning
@@ -39,7 +41,7 @@ The plugin will migrate all custom post types and custom taxonomies created in P
 
 ### Field groups
 
-Pods field groups are migrated to Meta Box's field groups, which requires [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/). Most of the field group settings are the same as in Meta Box.
+Pods field groups are migrated to Meta Box's field groups, which requires [MB Builder](meta-box-builder.md). Most of the field group settings are the same as in Meta Box.
 
 > [!-warning] -warning
 > warning
@@ -48,11 +50,11 @@ Pods field groups are migrated to Meta Box's field groups, which requires [MB Bu
 
 For **field group locations**, the basic rules are already supported in Meta Box and extensions. You might need extensions such as:
 
-- [MB Term Meta](https://docs.metabox.io/extensions/mb-term-meta/): If you set locations for taxonomies.
-- [MB User Meta](https://docs.metabox.io/extensions/mb-user-meta/): If you set locations for users.
-- [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/): If you set locations for settings page.
+- [MB Term Meta](mb-term-meta.md): If you set locations for taxonomies.
+- [MB User Meta](mb-user-meta.md): If you set locations for users.
+- [MB Settings Page](mb-settings-page.md): If you set locations for settings page.
 
-Besides, if you use complex locations, then you'll need [MB Include Exclude](https://docs.metabox.io/extensions/meta-box-include-exclude/) extension. Due to the difference in how plugins create rules, the plugin works the following way:
+Besides, if you use complex locations, then you'll need [MB Include Exclude](meta-box-include-exclude.md) extension. Due to the difference in how plugins create rules, the plugin works the following way:
 
 - If there's only one location group: the plugin will migrate all rules with operator `AND`.
 - If there are multiple location groups: the plugin will take the first rule of each group and combine them with operator `OR`.
@@ -68,7 +70,7 @@ Most Pods field types work well with Meta Box, such as text, radio, select, etc.
 
 ### Settings Page
 
-The plugin also migrates all Settings Page from Pods to Meta Box. You'll need the [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) and [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/) to do this. We'll migrate the settings and data of all Pods settings page to Meta Box.
+The plugin also migrates all Settings Page from Pods to Meta Box. You'll need the [MB Builder](meta-box-builder.md) and [MB Settings Page](mb-settings-page.md) to do this. We'll migrate the settings and data of all Pods settings page to Meta Box.
 
 > [!-warning] -warning
 > warning
@@ -77,7 +79,7 @@ The plugin also migrates all Settings Page from Pods to Meta Box. You'll need th
 
 ### Relationships
 
-The plugin also migrates all relationships from Pods to Meta Box. You'll need the [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) and [MB Relationships](https://docs.metabox.io/extensions/mb-relationships/) to do this. As the settings are quite different between the plugins, we'll migrate the settings of all Pods relationships to many-to-many relationships in Meta Box.
+The plugin also migrates all relationships from Pods to Meta Box. You'll need the [MB Builder](meta-box-builder.md) and [MB Relationships](mb-relationships.md) to do this. As the settings are quite different between the plugins, we'll migrate the settings of all Pods relationships to many-to-many relationships in Meta Box.
 
 Of course, the data of relationships (the connections between items) are also migrated.
 

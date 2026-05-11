@@ -1,6 +1,8 @@
 ---
 title: Taxonomy Advanced - Meta Box Documentation
 source: https://docs.metabox.io/fields/taxonomy-advanced/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The taxonomy advanced field allows you to select one or multiple taxonomy terms. This field has several settings that can be displayed as a: simple select dropdown, checkbox list, or beautiful select dropdown with select2 library.
@@ -45,7 +47,7 @@ The taxonomy field with radio list inline interface
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -60,12 +62,12 @@ This field inherits the look and field (and settings) from other fields, dependi
 
 | Field type | Description | Settings inherited from |
 | --- | --- | --- |
-| `select` | Simple select dropdown. | [Select](https://docs.metabox.io/fields/select/) |
-| `select_advanced` | Beautiful select dropdown using the select2 library. This is the default value. | [Select advanced](https://docs.metabox.io/fields/select-advanced/) |
-| `select_tree` | Hierarchical list of select boxes which allows to select multiple items (select/deselect parent item will show/hide child items). Applied only when the taxonomy is hierarchical (like category). | [Select](https://docs.metabox.io/fields/select/) |
-| `checkbox_list` | Flatten list of checkboxes which allows to select multiple items. | [Checkbox list](https://docs.metabox.io/fields/checkbox-list/) |
-| `checkbox_tree` | Hierarchical list of checkboxes which allows to select multiple items (select/deselect parent item will show/hide child items). Applied only when the taxonomy is hierarchical (like category). | [Checkbox list](https://docs.metabox.io/fields/checkbox-list/) |
-| `radio_list` | Flatten list of radio boxes which allows to select only 1 item. | [Radio](https://docs.metabox.io/fields/radio/) |
+| `select` | Simple select dropdown. | [Select](select.md) |
+| `select_advanced` | Beautiful select dropdown using the select2 library. This is the default value. | [Select advanced](select-advanced.md) |
+| `select_tree` | Hierarchical list of select boxes which allows to select multiple items (select/deselect parent item will show/hide child items). Applied only when the taxonomy is hierarchical (like category). | [Select](select.md) |
+| `checkbox_list` | Flatten list of checkboxes which allows to select multiple items. | [Checkbox list](checkbox-list.md) |
+| `checkbox_tree` | Hierarchical list of checkboxes which allows to select multiple items (select/deselect parent item will show/hide child items). Applied only when the taxonomy is hierarchical (like category). | [Checkbox list](checkbox-list.md) |
+| `radio_list` | Flatten list of radio boxes which allows to select only 1 item. | [Radio](radio.md) |
 
 This is a sample field settings array when creating this field with code:
 
@@ -156,7 +158,7 @@ This parameter sets the minimum number of characters required to start a search.
 
 ## Data
 
-Unlike the [taxonomy](https://docs.metabox.io/fields/taxonomy/) field, this field saves terms' IDs in the database.
+Unlike the [taxonomy](taxonomy.md) field, this field saves terms' IDs in the database.
 
 If "Multiple" is not set, a single term ID is saved in the database. Otherwise, the field saves multiple term IDs in a single row in the database in the comma-separated strings (e.g. format `1,2,3`).
 

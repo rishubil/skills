@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipes-meta-box-zion/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Let’s create a recipe page which contains different kinds of information stored in custom fields and display each recipe in a singular page. We’ll use **Zion** to build that page.
@@ -122,5 +124,5 @@ Here is an example result of how I styled the page in my way.
 
 You may be interested in:
 
-- [Creating a recipe - Zion](https://docs.metabox.io/tutorials/create-recipes-meta-box-zion/)
-- [Displaying the latest products - Zion](https://docs.metabox.io/tutorials/display-latest-products-meta-box-zion/)
+- [Creating a recipe - Zion](create-recipes-meta-box-zion.md)
+- [Displaying the latest products - Zion](display-latest-products-meta-box-zion.md)

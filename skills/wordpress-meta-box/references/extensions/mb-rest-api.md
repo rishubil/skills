@@ -1,6 +1,8 @@
 ---
 title: MB Rest API - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-rest-api/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 [MB Rest API](https://metabox.io/plugins/mb-rest-api/) helps you get and update custom fields via the WordPress Rest API. It's very helpful if you develop an application that uses WordPress as a back end such as a mobile app, or if you need to integrate WordPress with another system.
@@ -43,7 +45,7 @@ MB Rest API uses standard methods as follows:
 
 ## Getting custom fields for posts
 
-Assuming you have a [custom post type](https://docs.metabox.io/custom-post-types/) called "Event" and you [create a field group](https://docs.metabox.io/custom-fields/) "Event details" for it like this:
+Assuming you have a [custom post type](../custom-post-types.md) called "Event" and you [create a field group](../custom-fields.md) "Event details" for it like this:
 
 ![Event details fields](https://docs.metabox.io/assets/images/field-d54b849b1e9d69713c905d5bd33ef3a1.png)
 
@@ -72,7 +74,7 @@ console.log( response );
 > [!-warning] -warning
 > Custom post type rest API support
 > 
-> If you use Rest API for a custom post type, make sure you enable Rest API support for it. You can do that with our [MB Custom Post Types & Custom Taxonomies](https://docs.metabox.io/extensions/mb-custom-post-type/) or with code according to the [WordPress docs](https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types/). In this article, we're using the "Event" post type which has Rest API supports, and the Rest API base is `event`.
+> If you use Rest API for a custom post type, make sure you enable Rest API support for it. You can do that with our [MB Custom Post Types & Custom Taxonomies](mb-custom-post-type.md) or with code according to the [WordPress docs](https://developer.wordpress.org/rest-api/extending-the-rest-api/adding-rest-api-support-for-custom-content-types/). In this article, we're using the "Event" post type which has Rest API supports, and the Rest API base is `event`.
 
 The response is a JSON string that contains full post details (which come from the default WordPress Rest API response) and **also custom fields from Meta Box**. **The Meta Box fields are available in the `meta_box` key** of the response (which is highlighted in the red rectangle in the screenshot from Insomnia above).
 
@@ -180,7 +182,7 @@ If you're using an API testing app like [Postman](https://www.postman.com/) or [
 > [!-info] -info
 > Data format
 > 
-> Note that the data returned from the Rest API is auto-formatted. For example, for maps, you'll see an array of latitude, longitude, and zoom as in the example above (not the plain text "latitude,longitude,zoom" as in the database). For other fields, like images and files, you'll get more information for the fields, just like you do with the helper functions [`rwmb_meta`](https://docs.metabox.io/functions/rwmb-meta/) or [`rwmb_get_value`](https://docs.metabox.io/functions/rwmb-get-value/).
+> Note that the data returned from the Rest API is auto-formatted. For example, for maps, you'll see an array of latitude, longitude, and zoom as in the example above (not the plain text "latitude,longitude,zoom" as in the database). For other fields, like images and files, you'll get more information for the fields, just like you do with the helper functions [`rwmb_meta`](../functions/rwmb-meta.md) or [`rwmb_get_value`](../functions/rwmb-get-value.md).
 
 ## Updating custom fields for posts
 
@@ -237,7 +239,7 @@ Or if you prefer to use an API testing tool like Postman or Insomnia, you can do
 
 The response from the update requests is not important as long as the returned status is `200 OK`. This response is simply the same as retrieving data via `GET`, which can be used to examine the data after updating.
 
-In case you use [a group field](https://docs.metabox.io/extensions/meta-box-group/), and you want to update a whole group, you can pass it as a full JSON object like this:
+In case you use [a group field](meta-box-group.md), and you want to update a whole group, you can pass it as a full JSON object like this:
 
 ```json
 {
@@ -401,7 +403,7 @@ You can also perform the request in Postman or Insomnia like this:
 
 By default, Meta Box returns all fields for the REST API responses. If you want to hide a field from the responses, then you need to set a settings for it.
 
-If you use [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/) to build the field group, please enable the settings **Hide from REST API** in the **Advanced** panel from the field's **Settings** panel:
+If you use [MB Builder](meta-box-builder.md) to build the field group, please enable the settings **Hide from REST API** in the **Advanced** panel from the field's **Settings** panel:
 
 ![Hiding a field from REST API responses](https://docs.metabox.io/assets/images/hide-5ac81901d325126965891bb4ed680f5c.png)
 

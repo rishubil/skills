@@ -1,6 +1,8 @@
 ---
 title: Displaying uploaded images as a WordPress image gallery - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-as-gallery/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes, you may want to show product images, a portfolio, or just a photography album on your site. So, the image gallery is very helpful. You can upload images to your website via a custom field then **display them as a gallery** on a page.
@@ -165,6 +167,6 @@ After updating the template, you will see a gallery in the style of a slider on 
 
 ## Last Words
 
-I hope this tut helpful for you guys. If you want to see more about how to use the Image Advanced custom field to display an image gallery, please dig into the tut on [creating product pages](https://docs.metabox.io/tutorials/create-product-page/).
+I hope this tut helpful for you guys. If you want to see more about how to use the Image Advanced custom field to display an image gallery, please dig into the tut on [creating product pages](create-product-page.md).
 
-In case you want to display an image gallery along with some information associated with the image, you can refer to another way: [display images from cloneable fields](https://docs.metabox.io/tutorials/display-images-cloneable-fields-mb-views/).
+In case you want to display an image gallery along with some information associated with the image, you can refer to another way: [display images from cloneable fields](display-images-cloneable-fields-mb-views.md).

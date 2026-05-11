@@ -1,6 +1,8 @@
 ---
 title: Custom fields vs custom taxonomies - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/custom-fields-vs-taxonomies/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 With the help of [Meta Box](https://metabox.io/), today you can easily create both custom fields and custom taxonomies to store data for the custom post types. However, many users may be confused about when they should use each of them. Let’s clarify it.

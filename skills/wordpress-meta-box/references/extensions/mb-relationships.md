@@ -1,6 +1,8 @@
 ---
 title: MB Relationships - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-relationships/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Relationships helps you to create relationships between posts, terms, and users in WordPress. So when you edit an item (post, term, user), you can select other items to connect to. It works with all post types, and all custom taxonomies and users, and supports many-to-many, one-to-many, or many-to-one relationships.
@@ -22,10 +24,10 @@ The custom table is automatically created when the plugin is activated.
 
 Creating a relationship is done by either of the following methods:
 
-- **Using [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/)**, which helps you create relationships with UI. This extension is a premium extension and is already bundled in Meta Box AIO/MB Core.
+- **Using [MB Builder](meta-box-builder.md)**, which helps you create relationships with UI. This extension is a premium extension and is already bundled in Meta Box AIO/MB Core.
 - **Using code**.
 
-Before going into the detailed settings of a relationships, it's important to note that: when a relationship is created, you'll see a meta box (usually on the right side - this position can be changed). And inside that meta box, there'll be a cloneable field ([`post`](https://docs.metabox.io/fields/post/), [`taxonomy_advanced`](https://docs.metabox.io/fields/taxonomy-advanced/), or [`user`](https://docs.metabox.io/fields/user/) depending on the object type) for you to select connected items. So the settings of a relationships will be divided into 3 parts: settings for the relationship, for the meta box and for the field.
+Before going into the detailed settings of a relationships, it's important to note that: when a relationship is created, you'll see a meta box (usually on the right side - this position can be changed). And inside that meta box, there'll be a cloneable field ([`post`](../fields/post.md), [`taxonomy_advanced`](../fields/taxonomy-advanced.md), or [`user`](../fields/user.md) depending on the object type) for you to select connected items. So the settings of a relationships will be divided into 3 parts: settings for the relationship, for the meta box and for the field.
 
 Now let's see how to create a relationship with MB Builder.
 
@@ -52,7 +54,7 @@ For each side, there are 3 tabs of settings:
 
 - **General**: for general settings such as object type and post type.
 - **Meta Box**: for extra meta box settings. These settings are the same as the field group settings when creating custom fields.
-- **Field**: for extra field settings. These settings are the same as the field settings ([post](https://docs.metabox.io/fields/post/), [taxonomy\_advanced](https://docs.metabox.io/fields/taxonomy-advanced/), or [user](https://docs.metabox.io/fields/user/) depending on the object type).
+- **Field**: for extra field settings. These settings are the same as the field settings ([post](../fields/post.md), [taxonomy\_advanced](../fields/taxonomy-advanced.md), or [user](../fields/user.md) depending on the object type).
 
 ### Using code
 
@@ -124,9 +126,9 @@ Both sides `from` or `to` accept various parameters for the connection and meta 
 | `post_type` | The post type if the `object_type` is set to `post`. Default `post`. Optional. |
 | `taxonomy` | The taxonomy if the `object_type` is set to `term`. |
 | `empty_message` | The message displayed when there's no connections. |
-| `meta_box` | Meta box settings, has the [same settings as a normal meta box](https://docs.metabox.io/creating-fields-with-code/#field-group-settings). Below are common settings you might want to change: |
+| `meta_box` | Meta box settings, has the [same settings as a normal meta box](../creating-fields-with-code.md#field-group-settings). Below are common settings you might want to change: |
 | \-- `title` | The meta box title. Default is "Connect To" for "from" side and "Connected From" for "to" side. |
-| `field` | Field settings, has the same settings as a [post](https://docs.metabox.io/fields/post/), [user](https://docs.metabox.io/fields/user/) or [taxonomy](https://docs.metabox.io/fields/taxonomy/) field according to the object type. Below are common settings you might want to change: |
+| `field` | Field settings, has the same settings as a [post](../fields/post.md), [user](../fields/user.md) or [taxonomy](../fields/taxonomy.md) field according to the object type. Below are common settings you might want to change: |
 | \-- `name` | Field title. |
 | \-- `placeholder` | Placeholder text. |
 | \-- `query_args` | Custom query arguments to get objects of `object_type`. These arguments will be passed to `WP_Query()`, `get_terms()` or `get_users()` depending what `object_type` is. |
@@ -158,7 +160,7 @@ MB_Relationships_API::register( [
 ] );
 ```
 
-Similar to [MB Admin Columns](https://docs.metabox.io/extensions/mb-admin-columns/), the plugin supports 3 formats of the parameter:
+Similar to [MB Admin Columns](mb-admin-columns.md), the plugin supports 3 formats of the parameter:
 
 1. A boolean `true`: to simply display the admin column. The column will be added to the end of the list table. And the title of the column will be the title of the connection meta box (when you edit a post).
 2. A string "before title": to specify the column position. It accepts 2 words: the first one is the placement ("before", "after" or "replace") and the last one is the target existing column ID.

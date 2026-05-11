@@ -1,6 +1,8 @@
 ---
 title: Displaying a video playlist - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-video-playlist-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Using a video playlist allows you to display a collection of videos. You can use this type of content for websites of many fields such as education for courses, exercise for daily movements, music for songs in a category, etc.

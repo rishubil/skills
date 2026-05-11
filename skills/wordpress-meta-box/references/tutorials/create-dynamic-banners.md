@@ -1,6 +1,8 @@
 ---
 title: Displaying dynamic banners - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-dynamic-banners/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Displaying dynamic banners in multiple places on a website with the same content but varying in size and position may not be easy to design. If you are looking at how to create banners without using any page builder, we will share an easy and straightforward tip using **MB Views** that you can follow. Let’s dive in to explore the process of creating banners in detail.

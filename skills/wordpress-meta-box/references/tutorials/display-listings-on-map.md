@@ -1,6 +1,8 @@
 ---
 title: Displaying all listings on a map with Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-listings-on-map/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you own a chain restaurant, coffee shop, store, or even a company that has different branches in different cities, then you may want to markup all of them on a single map, and show this network on your website. Meta Box will give you an easy way to find exactly what you need!
@@ -58,7 +60,7 @@ I have the **Address** field above where I input the location in text. To autoco
 
 ![Fill in the ID of the Address field into the settings of the map field](https://imgur.elightup.com/WrtwGAH.png)
 
-Then, you can type some text to the **Address** field and choose one from the suggested list, or just click on the map, drag and drop the marker to set the location. To know more about this field type, please dig in [our documentation](https://docs.metabox.io/fields/osm/) for more detail.
+Then, you can type some text to the **Address** field and choose one from the suggested list, or just click on the map, drag and drop the marker to set the location. To know more about this field type, please dig in [our documentation](../fields/osm.md) for more detail.
 
 For the marker icon, I choose a URL field to save the icon link.
 

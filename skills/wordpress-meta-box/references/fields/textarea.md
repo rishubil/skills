@@ -1,6 +1,8 @@
 ---
 title: Textarea - Meta Box Documentation
 source: https://docs.metabox.io/fields/textarea/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The textarea field creates a simple textarea (multiline) input. You can use this field for entering a paragraph of text.
@@ -17,7 +19,7 @@ The select field settings
 
 ## Settings
 
-Besides the [common settings](https://docs.metabox.io/field-settings/), this field has the following specific settings, the keys are for use with code:
+Besides the [common settings](../field-settings.md), this field has the following specific settings, the keys are for use with code:
 
 | Name | Key | Description |
 | --- | --- | --- |
@@ -34,7 +36,7 @@ If the field is cloneable, then the value is stored as a serialized array in a s
 > [!-warning] -warning
 > warning
 > 
-> Meta Box **removes all scripts and iframes** from the value. If you want to enter scripts (like Google Analytics) or embed videos, then you need to [disable sanitization](https://docs.metabox.io/sanitization/#bypass-the-sanitization).
+> Meta Box **removes all scripts and iframes** from the value. If you want to enter scripts (like Google Analytics) or embed videos, then you need to [disable sanitization](../sanitization.md#bypass-the-sanitization).
 
 ## Template usage
 

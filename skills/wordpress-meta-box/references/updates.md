@@ -1,6 +1,8 @@
 ---
 title: Updates - Meta Box Documentation
 source: https://docs.metabox.io/updates/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Meta Box and all extensions can be updated automatically or manually. The automatic update uses the WordPress update mechanism which checks for new versions twice a day. This is the recommended way to get new updates from our website.

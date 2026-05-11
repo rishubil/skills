@@ -1,6 +1,8 @@
 ---
 title: Creating a video gallery page - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-video-gallery-page-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 If you don’t want to use any page builder, you can use **MB Views from Meta Box to create a video gallery page**.

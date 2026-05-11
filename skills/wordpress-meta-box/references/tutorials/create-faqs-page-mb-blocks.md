@@ -1,6 +1,8 @@
 ---
 title: Creating an FAQs page - MB Blocks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-mb-blocks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In today’s practice, we’re going to **create an FAQs page** by using custom blocks and custom fields with the help of the **MB Blocks** extension from Meta Box.
@@ -108,7 +110,7 @@ Go back to the settings of the created block. On the **Settings** tab, the **Ren
 
 ![The Block Render Settings section helps to render the data saved in custom fields](https://imgur.elightup.com/MzsbYeM.png)
 
-There are three options to choose how to render. You should dig in [the documentation](https://docs.metabox.io/extensions/mb-blocks/) to know their details. I’ll choose the third one.
+There are three options to choose how to render. You should dig in [the documentation](../extensions/mb-blocks.md) to know their details. I’ll choose the third one.
 
 ![Choose option how to render](https://imgur.elightup.com/P5r0xii.png)
 
@@ -150,4 +152,4 @@ Then, go back to the page, you will see the new look of the Q&As.
 
 ![The new look of the Q&As on the page](https://imgur.elightup.com/N71jB4M.png)
 
-We have finished **creating an FAQs page** using custom blocks and custom fields with the help of the **MB Blocks**. However, this is the way we do it with custom fields. There is also a way to create FAQs using custom post type. It's similar to displaying posts on an archive page, maybe with some filters. Check out our tut for creating a [simple listing page](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-wp-grid-builder/).
+We have finished **creating an FAQs page** using custom blocks and custom fields with the help of the **MB Blocks**. However, this is the way we do it with custom fields. There is also a way to create FAQs using custom post type. It's similar to displaying posts on an archive page, maybe with some filters. Check out our tut for creating a [simple listing page](create-simple-listing-meta-box-wp-grid-builder.md).

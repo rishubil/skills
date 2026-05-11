@@ -1,6 +1,8 @@
 ---
 title: Configuring homepage using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/configure-homepage/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Regularly updating the homepage brings fresh content** and helps impress website visitors easier. However, it may take time and effort to change its content. You definitely can avoid it with the help of custom fields created with Meta Box and MB Views. Let’s say goodbye to the hassle of coding in theme files!
@@ -185,4 +187,4 @@ There is no need to touch the code anymore. And the content on the homepage will
 
 ![The content on the homepage will be replaced with new ones](https://imgur.elightup.com/sRzQOS5.png)
 
-In the case that you are using a page builder to build your page, you also can **use custom fields created with Meta Box for dynamic content**. That will help a lot to save time and effort to change the content. Those cases or configuring the homepage using **MB Views** in this practice are much like [creating landing pages](https://docs.metabox.io/tutorials/create-dynamic-landing-page/) using [Meta Box](https://metabox.io/). You can refer to it and give it a try.
+In the case that you are using a page builder to build your page, you also can **use custom fields created with Meta Box for dynamic content**. That will help a lot to save time and effort to change the content. Those cases or configuring the homepage using **MB Views** in this practice are much like [creating landing pages](create-dynamic-landing-page.md) using [Meta Box](https://metabox.io/). You can refer to it and give it a try.

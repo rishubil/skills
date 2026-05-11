@@ -1,6 +1,8 @@
 ---
 title: Creating posts series - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-posts-series/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes, classifying posts by Category or Tag is not enough, and you may need another method. This article will show you how to create a post series using [Meta Box](https://metabox.io/).

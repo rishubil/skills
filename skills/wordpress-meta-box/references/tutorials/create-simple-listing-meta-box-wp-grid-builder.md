@@ -1,6 +1,8 @@
 ---
 title: Creating a simple listing site - Meta Box + WP Grid Builder - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-meta-box-wp-grid-builder/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’ll use WP Grid Builder to **create an archive page for restaurants** and then **get data stored in the custom fields of Meta Box**. The filters based on custom fields values are also available, as you can see in the below picture.
@@ -42,7 +44,7 @@ To create custom fields, go to **Meta Box** > **Custom Fields** > **Add New**.
 
 ![Create custom fields for the custom post type](https://imgur.elightup.com/nun5Rt6.png)
 
-You can refer to [this tutorial](https://docs.metabox.io/tutorials/create-custom-fields/) to know how to create them.
+You can refer to [this tutorial](create-custom-fields.md) to know how to create them.
 
 ## 2\. Creating a card
 

@@ -1,6 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipes-meta-box-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We’re going to **create a recipe page** using **Meta Box** and **Bricks**. This page is a singular page of a custom post type and includes information that is stored in custom fields created with Meta Box.
@@ -21,7 +23,7 @@ And, we use [Bricks](https://bricksbuilder.io/) to build the page.
 
 ## 1\. Creating a new custom post type
 
-We'll create a new post type for the recipe. You can refer to [this article](https://docs.metabox.io/tutorials/create-custom-post-types-taxonomies/) for more details.
+We'll create a new post type for the recipe. You can refer to [this article](create-custom-post-types-taxonomies.md) for more details.
 
 ![Create a new custom post type for the recipe](https://imgur.elightup.com/8iPsfQD.png)
 
@@ -135,6 +137,6 @@ Here is the result.
 
 You may be interested in:
 
-- [Creating a simple listing site](https://docs.metabox.io/tutorials/create-simple-listing-meta-box-bricks/)
-- [Creating a team members](https://docs.metabox.io/tutorials/create-team-members-page-meta-box-bricks/)
-- [Creating a product page](https://docs.metabox.io/tutorials/display-latest-product-meta-box-bricks/)
+- [Creating a simple listing site](create-simple-listing-meta-box-bricks.md)
+- [Creating a team members](create-team-members-page-meta-box-bricks.md)
+- [Creating a product page](display-latest-product-meta-box-bricks.md)

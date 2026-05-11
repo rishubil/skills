@@ -1,6 +1,8 @@
 ---
 title: Creating fields with code - Meta Box Documentation
 source: https://docs.metabox.io/creating-fields-with-code/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Creating custom fields with code is suitable if you want to keep everything in your themes or plugins. This way, you can re-use them in many websites and put them under a version control like Git.
@@ -95,7 +97,7 @@ Meta Box supports more than 40 field types. They share some common settings but 
 
 When adding a field, you need to know what type it is and how it works. Understanding that helps you choose the right type of field and, therefore, the right type of data that you want to add to your posts.
 
-Below is the list of supported field types in alphabet order with a brief description. The field type key is used for reference in code. For how do they look like and how to use them, please see details in the [Field types](https://docs.metabox.io/fields/) menu.
+Below is the list of supported field types in alphabet order with a brief description. The field type key is used for reference in code. For how do they look like and how to use them, please see details in the [Field types](fields/index.md) menu.
 
 ### Field settings
 

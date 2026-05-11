@@ -1,6 +1,8 @@
 ---
 title: Displaying featured posts with WP Grid Builder - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/displaying-featured-posts-with-wp-grid-builder/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 We'll create a section to **display the featured posts on the homepage** which is built with Elementor. To choose which product is featured and displayed, we'll **use a custom field and use a condition based on this field's value**. The condition will be created with the help of WP Grid Builder.

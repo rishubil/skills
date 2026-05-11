@@ -1,6 +1,8 @@
 ---
 title: Showing upcoming events - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-oxygen/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Showing upcoming events** highlights important dates and deadlines, making it easier for everyone to join. Let's use **Meta Box** and **Oxygen** to make it happen!
@@ -182,4 +184,4 @@ Check the frontend to double-check.
 
 Just events have the end date after the current day, which I marked at the beginning could be displayed.
 
-For displaying posts with [specific criteria](https://docs.metabox.io/tutorials/show-posts-specific-criteria-oxygen/), you can refer to our guide. I hope you find it helpful!
+For displaying posts with [specific criteria](show-posts-specific-criteria-oxygen.md), you can refer to our guide. I hope you find it helpful!

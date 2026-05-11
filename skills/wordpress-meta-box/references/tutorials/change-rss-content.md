@@ -1,6 +1,8 @@
 ---
 title: Changing the RSS content using custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/change-rss-content/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This article will show you how to **get information from a custom field created by Meta Box**, then **include them into the** [RSS feed](https://gretathemes.com/rss-feed-applications-wordpress/). Now, let’s do it.

@@ -1,6 +1,8 @@
 ---
 title: MB Views - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Views helps you to get Meta Box fields and build your templates in the front end fast and easily.
@@ -33,8 +35,8 @@ To insert a field, click the **Insert Field** button. It will open a panel on th
 Fields are categorized into 4 tabs:
 
 - Post: contains all post fields and custom fields for posts.
-- Site: contains all site fields and settings fields (created by [MB Settings Page](https://docs.metabox.io/extensions/mb-settings-page/) plugin).
-- User: contains all user fields and custom fields for users (created by [MB User Meta](https://docs.metabox.io/extensions/mb-user-meta/) plugin).
+- Site: contains all site fields and settings fields (created by [MB Settings Page](mb-settings-page.md) plugin).
+- User: contains all user fields and custom fields for users (created by [MB User Meta](mb-user-meta.md) plugin).
 - Query: contains loop and pagination for archive pages.
 
 To insert a field, click on the field title to insert it. The field might have additional parameters (such as choosing image size for the image field). And in that case, the plugin will open a popup for you to enter or select options.
@@ -82,7 +84,7 @@ To insert a sub-field, click on the sub-field title, like inserting a normal fie
 
 ### Relationship fields
 
-Relationships created with [MB Relationships](https://docs.metabox.io/extensions/mb-relationships/) extension can be inserted in the tab **Query**.
+Relationships created with [MB Relationships](mb-relationships.md) extension can be inserted in the tab **Query**.
 
 Once you registered a relationship, it will show 2 fields here: one for the "from" side, and one for the "to" side. Clicking a field will insert a loop of connected items, and inside the loop, you can insert post/term/user fields as usual.
 
@@ -209,7 +211,7 @@ What type of page do you want to set the view for? Supports:
 - Action: the view will display when an action fires
 - Code: you can use PHP or [WordPress conditional tags](https://developer.wordpress.org/themes/basics/conditional-tags/) to set the rules where to show the view.
 - Shortcode: you need to use a shortcode to insert the view to the location you want. The shortcode is available *after* you save the view.
-- Block: For [MB Blocks](https://docs.metabox.io/extensions/mb-blocks/#using-mb-views), blocks can then use `render: "view:view-name"` to render the view.
+- Block: For [MB Blocks](mb-blocks.md#using-mb-views), blocks can then use `render: "view:view-name"` to render the view.
 
 ### Location Rules
 

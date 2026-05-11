@@ -1,6 +1,8 @@
 ---
 title: Displaying images from cloneable fields - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-cloneable-fields-mb-views/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Images like a series of brand logos of typical partners or avatar of clients in the testimonial section, could be saved in custom fields. This tutorial is on how to display them without using any page builders.
@@ -140,6 +142,6 @@ After adding css, my brand section turned into a new look.
 
 You may be interested in:
 
-- [Creating user profile page on frontend](https://docs.metabox.io/tutorials/create-user-profile-page/)
-- [Creating a dynamic landing page](https://docs.metabox.io/tutorials/create-dynamic-landing-page/)
-- [Creating a team members page](https://docs.metabox.io/tutorials/create-team-members-page-mb-views/)
+- [Creating user profile page on frontend](create-user-profile-page.md)
+- [Creating a dynamic landing page](create-dynamic-landing-page.md)
+- [Creating a team members page](create-team-members-page-mb-views.md)

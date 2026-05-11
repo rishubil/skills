@@ -1,6 +1,8 @@
 ---
 title: Adding testimonials - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-testimonials/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Adding testimonials to the homepage will be easier when you use the MB Testimonials extension. It’s a ready-to-use solution from Meta Box.

@@ -1,6 +1,8 @@
 ---
 title: Creating an FAQs page - Meta Box + Divi - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-meta-box-divi/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Creating an FAQs page** on your website is a useful method for visitors to quickly find the information they're looking for. Let’s see how to do it by using **Meta Box** and **Divi**.

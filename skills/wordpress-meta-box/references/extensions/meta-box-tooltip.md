@@ -1,6 +1,8 @@
 ---
 title: MB Tooltip - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-tooltip/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Tooltip helps you to add help information via tooltips.

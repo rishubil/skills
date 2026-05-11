@@ -1,6 +1,8 @@
 ---
 title: Displaying personalized data for users - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-personalized-data-for-users/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Today, we’ll walk you through a useful way of **displaying dynamic, personalized data for users** on your website with Meta Box.
@@ -415,4 +417,4 @@ Now, on the frontend, let's see the final result! The Sales Rep looks great alre
 
 So, it works the same with the first method with MB Views. Now, just choose the one that feels better to you.
 
-If you’re interested in exploring more about relationships and dynamic content, check out this guide on [displaying related posts based on shared relationships with Meta Box](https://docs.metabox.io/tutorials/create-relationships-mb-views/).
+If you’re interested in exploring more about relationships and dynamic content, check out this guide on [displaying related posts based on shared relationships with Meta Box](create-relationships-mb-views.md).

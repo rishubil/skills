@@ -1,6 +1,8 @@
 ---
 title: Creating a simple listing - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-with-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Next to the previous tutorial on [the series](https://metabox.io/series/simple-listing-with-filters/) ‘ **creating a simple listing** ’ using **Meta Box** and page builders, we’re going to find out a new way to do it with **Breakdance**. We use custom fields and taxonomies created by Meta Box to **display information about products on an archive page and filter them** as well.

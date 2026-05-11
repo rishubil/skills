@@ -1,6 +1,8 @@
 ---
 title: Beginners - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/beginners/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Let’s start with some basic practices with Meta Box.

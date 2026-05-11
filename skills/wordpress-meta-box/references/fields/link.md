@@ -1,6 +1,8 @@
 ---
 title: Link - Meta Box Documentation
 source: https://docs.metabox.io/fields/link/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 The link field allows you to insert or edit a link, which includes a URL, optional title text, an option to open the link in a new tab. You can also select an existing content (post, page, etc.).
@@ -17,7 +19,7 @@ The link field settings
 
 ## Settings
 
-This field has no additional settings besides the [common settings](https://docs.metabox.io/field-settings/).
+This field has no additional settings besides the [common settings](../field-settings.md).
 
 This is a sample field settings array when creating this field with code:
 

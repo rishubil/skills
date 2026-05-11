@@ -1,6 +1,8 @@
 ---
 title: MB Geolocation - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-geolocation/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 MB Geolocation helps you fill in address fields (street address, zip code, city, state, and country) quickly by using Geocoding API from Google Maps/Open Street Maps.

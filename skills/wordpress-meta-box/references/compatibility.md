@@ -1,6 +1,8 @@
 ---
 title: Compatibility - Meta Box Documentation
 source: https://docs.metabox.io/compatibility/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 ## Plugins

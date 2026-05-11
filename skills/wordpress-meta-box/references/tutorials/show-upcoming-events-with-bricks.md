@@ -1,6 +1,8 @@
 ---
 title: Showing upcoming events - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sharing what’s coming up helps us see important dates and deadlines, so we can manage events better. Take **the upcoming events** as an example. Let's use **Meta Box** and **Bricks** to make it happen!
@@ -165,4 +167,4 @@ On the frontend, just events have the end date after the current day, which I ma
 
 ![Just events have the end date after the current day](https://imgur.elightup.com/cHLKvtj.png)
 
-Should you need to display posts with additional [specific criteria](https://docs.metabox.io/tutorials/show-posts-with-specific-criteria-bricks/), you can refer to it. Hope it can be helpful to you!
+Should you need to display posts with additional [specific criteria](show-posts-with-specific-criteria-bricks.md), you can refer to it. Hope it can be helpful to you!

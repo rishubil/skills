@@ -1,6 +1,8 @@
 ---
 title: Showing posts with specific criteria - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-posts-with-specific-criteria-bricks/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 In sale seasons, you may want to create an archive page to display only the products which are on sale, then this series is for you. In this practice, we’re going to show posts with specific criteria, in this case, it’s the products that are on sale.

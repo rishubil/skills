@@ -1,6 +1,8 @@
 ---
 title: rwmb_after - Meta Box Documentation
 source: https://docs.metabox.io/actions/rwmb-after/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 This action runs after all fields in a field group is displayed. It's usually used for outputting custom HTML.

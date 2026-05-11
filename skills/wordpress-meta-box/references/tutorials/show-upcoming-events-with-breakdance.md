@@ -1,6 +1,8 @@
 ---
 title: Showing upcoming events - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 **Displaying upcoming events** highlights important dates and deadlines, making it easier for everyone to join. Let's use **Meta Box** and **Breakdance** to achieve this!
@@ -214,4 +216,4 @@ Now, just the upcoming events are displayed. Only events have the end date after
 
 ![The upcoming events section created by Meta Box and Breakdance](https://imgur.elightup.com/CI38tj5.png)
 
-For [displaying posts with specific criteria](https://docs.metabox.io/tutorials/show-posts-specific-criteria-oxygen/), you can refer to our guide. I hope you find it helpful!
+For [displaying posts with specific criteria](show-posts-specific-criteria-oxygen.md), you can refer to our guide. I hope you find it helpful!

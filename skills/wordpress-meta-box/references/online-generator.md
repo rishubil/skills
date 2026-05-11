@@ -1,11 +1,13 @@
 ---
 title: Online Generator - Meta Box Documentation
 source: https://docs.metabox.io/online-generator/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 [Online Generator](https://metabox.io/online-generator/) is a tool to help you create and set up **custom fields** using a simple, friendly user interface. With it, you can add fields, set options and generate needed code that's ready to copy and paste.
 
-Before using **Online Generator**, make sure you [installed and activated Meta Box plugin](https://docs.metabox.io/installation/).
+Before using **Online Generator**, make sure you [installed and activated Meta Box plugin](installation.md).
 
 ## Create and set up custom fields
 
@@ -56,7 +58,7 @@ You might want to modify the code if needed. After copying to your theme's `func
 
 It works as a stand-alone tool, meaning that it can't be put inside your WordPress admin. Instead, you can copy the generated code and paste it into your theme's functions.php file.
 
-In the case that you want to use it inside your WordPress admin and have extra settings for fields or [premium extensions](https://metabox.io/plugins/), don’t forget to try [MB Builder](https://docs.metabox.io/extensions/meta-box-builder/).
+In the case that you want to use it inside your WordPress admin and have extra settings for fields or [premium extensions](https://metabox.io/plugins/), don’t forget to try [MB Builder](extensions/meta-box-builder.md).
 
 Beside using the generator for the custom fields, you may want to have custom post types and custom taxonomies. So, **Meta Box** also provides several WordPress generator tools such as [WordPress Custom Post Type Generator](https://metabox.io/post-type-generator/), and [WordPress Custom Taxonomy Generator](https://metabox.io/taxonomy-generator/). Or. you can use the [MB Custom Post Type plugin](https://metabox.io/plugins/custom-post-type/) to create custom post type and custom taxonomy inside your website. It is free and available on [wordpress.org](https://wordpress.org/plugins/mb-custom-post-type/).
 

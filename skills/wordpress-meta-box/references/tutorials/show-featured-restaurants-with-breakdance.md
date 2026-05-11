@@ -1,6 +1,8 @@
 ---
 title: Showing the featured restaurants - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-with-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Sometimes you may want to feature some products on your homepage. It's a popular technique to **improve conversion** by attracting customers to the most irresistible products. So, let’s see how we **showcase featured products** on a page with **Meta Box** and **Breakdance**.
@@ -193,6 +195,6 @@ Then back to the homepage, you will see all the featured restaurants are display
 
 ## Last Words
 
-Let’s try out this simple tutorial and effortlessly **showcase your featured products** using **Meta Box** and **Breakdance**. In the event that you’re using another page builder or just do it without any page builder, just go to [our documentation](https://docs.metabox.io/tutorials/case-studies/) and look for the one that fits your case.
+Let’s try out this simple tutorial and effortlessly **showcase your featured products** using **Meta Box** and **Breakdance**. In the event that you’re using another page builder or just do it without any page builder, just go to [our documentation](case-studies.md) and look for the one that fits your case.
 
-If you like an automated approach for selecting and displaying products based on specific conditions instead of doing it manually, the tut ‘ [Showing posts with specific criteria - Meta Box + Breakdance](https://docs.metabox.io/tutorials/show-posts-specific-criteria-meta-box-breakdance/) ’ will give you a hand.
+If you like an automated approach for selecting and displaying products based on specific conditions instead of doing it manually, the tut ‘ [Showing posts with specific criteria - Meta Box + Breakdance](show-posts-specific-criteria-meta-box-breakdance.md) ’ will give you a hand.

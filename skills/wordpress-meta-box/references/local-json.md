@@ -1,9 +1,11 @@
 ---
 title: Local JSON - Meta Box Documentation
 source: https://docs.metabox.io/local-json/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
-Beside [creating fields with PHP](https://docs.metabox.io/creating-fields-with-code/), you can also register custom fields with JSON. This way is more convenient and easier to manage the fields since you can put them in a separate file, use version control (Git), leverage caching, and better code editor support with JSON schema.
+Beside [creating fields with PHP](creating-fields-with-code.md), you can also register custom fields with JSON. This way is more convenient and easier to manage the fields since you can put them in a separate file, use version control (Git), leverage caching, and better code editor support with JSON schema.
 
 This feature is available in the [Meta Box Builder](https://metabox.io/plugins/meta-box-builder/) extension and is included in both [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://metabox.io/aio/).
 
@@ -13,7 +15,7 @@ To use local JSON to register custom fields, you need to create a new folder cal
 
 ## JSON format
 
-The JSON format is the same as when you export a field group and is very similar to the [PHP version](https://docs.metabox.io/creating-fields-with-code/) when you creating a field group, except the `$schema` and `modified` attributes:
+The JSON format is the same as when you export a field group and is very similar to the [PHP version](creating-fields-with-code.md) when you creating a field group, except the `$schema` and `modified` attributes:
 
 ```json
 {

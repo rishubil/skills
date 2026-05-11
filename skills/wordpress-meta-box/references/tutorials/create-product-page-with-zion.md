@@ -1,6 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-with-zion/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 A well-designed product page can enhance the customer experience and lead to increased sales. It should include details like various information, images, and specifications to help customers make informed decisions. In this practice, we are going to find out how to **create a Product Page** using **Meta Box** and **Zion**.

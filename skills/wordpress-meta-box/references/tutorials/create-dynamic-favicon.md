@@ -1,6 +1,8 @@
 ---
 title: Creating dynamic favicon in wordPress - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-dynamic-favicon/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Do you recognize those tiny symbols that appear in your browser next to the website name? The favicon is that. The small icon helps to attract and create a memorable image of the brand in the user’s mind. It is typically 16 and 16 pixels in size and is kept in a file called favicon.io in the server's root folder. But, in some other cases, you may want to highlight your products or any page by setting other specific favicons for each of them. Then, using the Meta Box plugin along with editing the theme a little bit will help you get it.

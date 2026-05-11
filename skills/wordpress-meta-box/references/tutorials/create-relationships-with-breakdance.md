@@ -1,6 +1,8 @@
 ---
 title: Creating relationships - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-relationships-with-breakdance/
+version: 5.12.0
+fetched: 2026-05-11
 ---
 
 Continuing the series on **creating a relationship** between two objects on your website, we have just explored a different method, using **Meta Box** and **Breakdance**. In this practice, we’ll create a bi-directional relationship between Courses and Instructors post types and show them on both singular and archive pages.
