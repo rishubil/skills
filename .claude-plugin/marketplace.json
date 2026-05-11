@@ -14,7 +14,9 @@
       "description": "Personal collection of skills for everyday use",
       "source": "./",
       "strict": false,
-      "skills": []
+      "skills": [
+        "./skills/shell-script"
+      ]
     }
   ]
 }
