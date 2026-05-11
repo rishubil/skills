@@ -55,6 +55,14 @@
 
 설치 후에는 스킬 이름이나 설명을 언급하면 Claude가 자동으로 해당 스킬을 활용합니다.
 
+## 다른 저장소에서 불러온 스킬
+
+이 저장소 외에 아래 외부 스킬도 함께 사용합니다.
+
+| 마켓플레이스 | 플러그인 | 설치 명령 |
+|---|---|---|
+| `forrestchang/andrej-karpathy-skills` | `andrej-karpathy-skills` | `/plugin marketplace add forrestchang/andrej-karpathy-skills` → `/plugin install andrej-karpathy-skills@karpathy-skills` |
+
 ## 참고
 
 - [Agent Skills 공식 스펙](https://agentskills.io)
