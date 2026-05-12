@@ -32,6 +32,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `wordpress-meta-box` | WordPress Meta Box plugin — custom fields, meta boxes, CPTs, and the full Meta Box API. |
 | `wordpress-classic-theme` | WordPress classic (PHP) themes — template hierarchy, The Loop, widgets, Customizer API, etc. (block themes excluded) |
 | `commit` | Write commit messages in Conventional Commits format with a body explaining *why* the change was made. |
+| `plan-review` | Structured, opinionated review of an implementation plan — architecture, code quality, tests, performance, and debuggability. |
 
 ## Using in Claude Code
 

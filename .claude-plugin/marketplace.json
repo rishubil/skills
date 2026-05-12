@@ -62,6 +62,15 @@
       "skills": [
         "./skills/commit"
       ]
+    },
+    {
+      "name": "plan-review",
+      "description": "Structured, opinionated review of an implementation plan across architecture, code quality, tests, performance, and debuggability before any code changes.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/plan-review"
+      ]
     }
   ]
 }
