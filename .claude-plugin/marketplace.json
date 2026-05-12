@@ -71,6 +71,15 @@
       "skills": [
         "./skills/plan-review"
       ]
+    },
+    {
+      "name": "resticprofile",
+      "description": "Specialist skill for resticprofile — a configuration profile manager for the restic backup tool. Covers profile config files (TOML/YAML/JSON/HCL), commands, and scheduling.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/resticprofile"
+      ]
     }
   ]
 }
