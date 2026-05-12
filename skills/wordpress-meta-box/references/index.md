@@ -1,9 +1,6 @@
 ---
 title: Meta Box Documentation
 source: https://docs.metabox.io/
-copyright: "(c) MetaBox.io / eLightUp"
-license: "All rights reserved (no open license granted)"
-notice: ../NOTICE.md
 version: 5.12.0
 fetched: 2026-05-11
 ---
