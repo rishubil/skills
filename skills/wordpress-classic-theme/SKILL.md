@@ -1,45 +1,45 @@
 ---
 name: wordpress-classic-theme
-description: WordPress 클래식 테마 개발 전문 스킬. PHP 기반 클래식 테마를 처음 만들거나, 템플릿 계층·루프·테마 함수·사이드바·위젯·커스터마이저 API 등 클래식 테마 고유의 기능을 구현하거나 디버깅할 때 사용하세요. 블록 테마(FSE)는 다루지 않습니다.
+description: Specialist skill for developing WordPress classic (PHP-based) themes. Use when creating a classic theme from scratch or when implementing or debugging classic-theme-specific features such as template hierarchy, The Loop, theme functions, sidebars, widgets, or the Customizer API. Does not cover block themes (FSE).
 ---
 
-# WordPress 클래식 테마 개발 가이드
+# WordPress Classic Theme Development Guide
 
-> 공식 문서: https://developer.wordpress.org/themes/classic-themes/
+> Official documentation: https://developer.wordpress.org/themes/classic-themes/
 
-WordPress 클래식 테마는 `index.php`, `style.css`를 필수 파일로 하는 PHP 기반 테마입니다. 템플릿 계층 구조, The Loop, 테마 함수, 커스터마이저 API 등 WordPress 고유 메커니즘을 직접 다룹니다.
+A WordPress classic theme is a PHP-based theme that requires `index.php` and `style.css` as mandatory files. It works directly with WordPress-specific mechanisms such as template hierarchy, The Loop, theme functions, and the Customizer API.
 
-## 핵심 개념
+## Core Concepts
 
-| 개념 | 설명 |
-|------|------|
-| **Template Hierarchy** | 요청 URL에 따라 어떤 템플릿 파일을 사용할지 결정하는 규칙 |
-| **The Loop** | DB에서 포스트를 가져와 반복 출력하는 WordPress 핵심 패턴 |
-| **Template Tags** | `the_title()`, `the_content()` 등 템플릿 내 출력 함수 |
-| **Theme Functions** | `functions.php`에 등록하는 훅·기능 |
-| **Conditional Tags** | `is_single()`, `is_archive()` 등 조건 분기 함수 |
-| **Customizer API** | 실시간 미리보기를 지원하는 테마 옵션 UI |
+| Concept | Description |
+|---------|-------------|
+| **Template Hierarchy** | The rules that determine which template file to use based on the requested URL |
+| **The Loop** | The core WordPress pattern for fetching posts from the database and iterating over them |
+| **Template Tags** | Output functions used inside templates, such as `the_title()` and `the_content()` |
+| **Theme Functions** | Hooks and features registered in `functions.php` |
+| **Conditional Tags** | Conditional branching functions such as `is_single()` and `is_archive()` |
+| **Customizer API** | The theme options UI with live preview support |
 
-## 기본 파일 구조
+## Basic File Structure
 
 ```
 my-theme/
-├── style.css          # 필수: 테마 메타데이터 + 스타일
-├── index.php          # 필수: 기본 템플릿
-├── functions.php      # 훅·기능 등록
+├── style.css          # Required: theme metadata + styles
+├── index.php          # Required: default template
+├── functions.php      # Hook and feature registration
 ├── header.php
 ├── footer.php
 ├── sidebar.php
-├── single.php         # 단일 포스트
-├── page.php           # 페이지
-├── archive.php        # 아카이브
+├── single.php         # Single post
+├── page.php           # Page
+├── archive.php        # Archive
 ├── search.php
 └── 404.php
 ```
 
-## 자주 쓰는 패턴
+## Common Patterns
 
-### style.css 테마 헤더
+### style.css Theme Header
 
 ```css
 /*
@@ -53,7 +53,7 @@ Text Domain: my-theme
 */
 ```
 
-### functions.php 기본 뼈대
+### functions.php Skeleton
 
 ```php
 function my_theme_setup() {
@@ -82,101 +82,101 @@ add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
 <?php endif; ?>
 ```
 
-## 로컬 문서 (반드시 먼저 참고할 것)
+## Local Documentation (consult first)
 
-이 스킬 디렉터리의 `references/` 폴더에 공식 문서 전체가 마크다운으로 저장되어 있습니다. 템플릿 파일·훅·함수·Customizer API를 확인할 때는 **외부 URL을 열지 말고 로컬 파일을 Read하여 정확한 정보를 사용**하세요.
+The `references/` folder in this skill directory contains the full official documentation as markdown files. When checking template files, hooks, functions, or the Customizer API, **do not open external URLs — Read the local files for accurate information**.
 
-### references/ 디렉터리 구조
+### references/ Directory Structure
 
 ```
 references/
-├── index.md                              # 클래식 테마 개요
-├── your-first-theme.md                   # 첫 번째 테마 만들기
+├── index.md                              # Classic theme overview
+├── your-first-theme.md                   # Creating your first theme
 ├── basics/
-│   ├── index.md                          # 기초 개요
-│   ├── template-files.md                 # 템플릿 파일
-│   ├── template-hierarchy.md             # 템플릿 계층 구조
-│   ├── template-tags.md                  # 템플릿 태그
+│   ├── index.md                          # Basics overview
+│   ├── template-files.md                 # Template files
+│   ├── template-hierarchy.md             # Template hierarchy
+│   ├── template-tags.md                  # Template tags
 │   ├── the-loop.md                       # The Loop
 │   ├── theme-functions.md                # functions.php
-│   ├── post-types.md                     # 포스트 타입
-│   ├── conditional-tags.md               # 조건 태그
-│   ├── categories-tags-custom-taxonomies.md  # 분류체계
+│   ├── post-types.md                     # Post types
+│   ├── conditional-tags.md               # Conditional tags
+│   ├── categories-tags-custom-taxonomies.md  # Taxonomies
 │   ├── main-stylesheet-style-css.md      # style.css
-│   ├── organizing-theme-files.md         # 파일 구조
-│   ├── including-css-javascript.md       # CSS/JS 로드
-│   ├── linking-theme-files-directories.md # 파일 경로
+│   ├── organizing-theme-files.md         # File structure
+│   ├── including-css-javascript.md       # Loading CSS/JS
+│   ├── linking-theme-files-directories.md # File paths
 │   ├── reworking-theme-files-organization.md
 │   └── tools-resources.md
 ├── templates/
-│   ├── index.md                          # 템플릿 파일 개요
-│   ├── post-template-files.md            # 포스트 템플릿
-│   ├── page-template-files.md            # 페이지 템플릿 파일
-│   ├── page-templates.md                 # 페이지 템플릿 (커스텀)
-│   ├── attachment-template-files.md      # 첨부파일 템플릿
-│   ├── custom-post-type-template-files.md # CPT 템플릿
-│   ├── taxonomy-templates.md             # 택소노미 템플릿
+│   ├── index.md                          # Template files overview
+│   ├── post-template-files.md            # Post templates
+│   ├── page-template-files.md            # Page template files
+│   ├── page-templates.md                 # Page templates (custom)
+│   ├── attachment-template-files.md      # Attachment templates
+│   ├── custom-post-type-template-files.md # CPT templates
+│   ├── taxonomy-templates.md             # Taxonomy templates
 │   └── partial-and-miscellaneous-template-files/
-│       ├── index.md                      # 부분 템플릿
-│       └── comment-template.md           # 댓글 템플릿
+│       ├── index.md                      # Partial templates
+│       └── comment-template.md           # Comment template
 ├── functionality/
-│   ├── index.md                          # 기능 개요
-│   ├── custom-headers.md                 # 커스텀 헤더
-│   ├── custom-backgrounds.md             # 커스텀 배경
-│   ├── custom-logo.md                    # 커스텀 로고
-│   ├── custom-front-page-templates.md    # 프론트 페이지
-│   ├── featured-images-post-thumbnails.md # 대표 이미지
-│   ├── navigation-menus.md               # 내비게이션 메뉴
-│   ├── sidebars.md                       # 사이드바
-│   ├── widgets.md                        # 위젯
-│   ├── pagination.md                     # 페이지네이션
-│   ├── post-formats.md                   # 포스트 포맷
-│   ├── sticky-posts.md                   # 스티키 포스트
-│   ├── 404-pages.md                      # 404 페이지
+│   ├── index.md                          # Functionality overview
+│   ├── custom-headers.md                 # Custom headers
+│   ├── custom-backgrounds.md             # Custom backgrounds
+│   ├── custom-logo.md                    # Custom logo
+│   ├── custom-front-page-templates.md    # Front page
+│   ├── featured-images-post-thumbnails.md # Featured images
+│   ├── navigation-menus.md               # Navigation menus
+│   ├── sidebars.md                       # Sidebars
+│   ├── widgets.md                        # Widgets
+│   ├── pagination.md                     # Pagination
+│   ├── post-formats.md                   # Post formats
+│   ├── sticky-posts.md                   # Sticky posts
+│   ├── 404-pages.md                      # 404 pages
 │   ├── media/
 │   │   ├── index.md
 │   │   ├── images.md
 │   │   ├── video.md
 │   │   ├── audio.md
 │   │   └── galleries.md
-│   ├── internationalization.md           # 국제화(i18n)
-│   ├── localization.md                   # 현지화(l10n)
-│   ├── accessibility.md                  # 접근성
-│   ├── administration-menus.md           # 관리자 메뉴
-│   ├── core-supported.md                 # 코어 지원 기능
+│   ├── internationalization.md           # Internationalization (i18n)
+│   ├── localization.md                   # Localization (l10n)
+│   ├── accessibility.md                  # Accessibility
+│   ├── administration-menus.md           # Admin menus
+│   ├── core-supported.md                 # Core-supported features
 │   └── block-theme-accessibility.md
 ├── customize-api/
-│   ├── index.md                          # Customizer API 개요
-│   ├── customizer-objects.md             # Panel·Section·Setting·Control
+│   ├── index.md                          # Customizer API overview
+│   ├── customizer-objects.md             # Panel, Section, Setting, Control
 │   ├── the-customizer-javascript-api.md  # JS API
 │   ├── javascriptunderscore-js-rendered-custom-controls.md
-│   ├── tools-for-improved-user-experience.md # Selective Refresh 등
-│   ├── advanced-usage.md                 # 고급 활용
+│   ├── tools-for-improved-user-experience.md # Selective Refresh, etc.
+│   ├── advanced-usage.md                 # Advanced usage
 │   └── other-resources.md
 └── references/
-    ├── index.md                          # 레퍼런스 목록
-    ├── list-of-template-tags.md          # 템플릿 태그 전체 목록
-    └── list-of-conditional-tags.md       # 조건 태그 전체 목록
+    ├── index.md                          # Reference list
+    ├── list-of-template-tags.md          # Full template tag list
+    └── list-of-conditional-tags.md       # Full conditional tag list
 ```
 
-### 자주 찾는 문서
+### Commonly Referenced Documents
 
-| 주제 | 파일 경로 |
-|------|-----------|
-| 첫 테마 만들기 | `references/your-first-theme.md` |
-| 템플릿 계층 구조 | `references/basics/template-hierarchy.md` |
+| Topic | File Path |
+|-------|-----------|
+| Creating your first theme | `references/your-first-theme.md` |
+| Template hierarchy | `references/basics/template-hierarchy.md` |
 | The Loop | `references/basics/the-loop.md` |
-| 템플릿 태그 목록 | `references/references/list-of-template-tags.md` |
-| 조건 태그 목록 | `references/references/list-of-conditional-tags.md` |
+| Template tag list | `references/references/list-of-template-tags.md` |
+| Conditional tag list | `references/references/list-of-conditional-tags.md` |
 | functions.php | `references/basics/theme-functions.md` |
-| CSS/JS 로드 | `references/basics/including-css-javascript.md` |
-| 내비게이션 메뉴 | `references/functionality/navigation-menus.md` |
-| 사이드바·위젯 | `references/functionality/sidebars.md` |
-| 커스텀 로고 | `references/functionality/custom-logo.md` |
-| 대표 이미지 | `references/functionality/featured-images-post-thumbnails.md` |
-| Customizer 기본 | `references/customize-api/index.md` |
-| Customizer 객체 | `references/customize-api/customizer-objects.md` |
-| 페이지 템플릿 | `references/templates/page-templates.md` |
-| 택소노미 템플릿 | `references/templates/taxonomy-templates.md` |
+| Loading CSS/JS | `references/basics/including-css-javascript.md` |
+| Navigation menus | `references/functionality/navigation-menus.md` |
+| Sidebars and widgets | `references/functionality/sidebars.md` |
+| Custom logo | `references/functionality/custom-logo.md` |
+| Featured images | `references/functionality/featured-images-post-thumbnails.md` |
+| Customizer basics | `references/customize-api/index.md` |
+| Customizer objects | `references/customize-api/customizer-objects.md` |
+| Page templates | `references/templates/page-templates.md` |
+| Taxonomy templates | `references/templates/taxonomy-templates.md` |
 
-문서를 찾을 때는 위 경로를 직접 Read하거나, `find <스킬경로>/references -name "*.md" | grep <키워드>`로 검색하세요.
+To find documentation, Read the paths above directly or search with `find <skill-path>/references -name "*.md" | grep <keyword>`.

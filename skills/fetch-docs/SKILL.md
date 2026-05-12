@@ -5,89 +5,89 @@ description: Fetch web-based development documentation and save it as clean mark
 
 # fetch-docs
 
-웹 기반 개발 문서를 크롤링하여 URL 경로를 유지한 디렉터리 구조로 깔끔한 마크다운 파일로 저장합니다.
+Crawls web-based development documentation and saves it as clean markdown files in a directory structure that mirrors the URL paths.
 
-## 사전 준비
+## Prerequisites
 
 ```bash
-npx agent-browser --version   # 확인
-npx defuddle --version        # 확인
+npx agent-browser --version   # verify
+npx defuddle --version        # verify
 URL_UTILS="$(find ~/.claude ~/.local/share/chezmoi/.claude -name url_utils.py -path '*/fetch-docs/*' 2>/dev/null | head -1)"
 ```
 
-## 핵심 도구 역할
+## Tool Roles
 
-| 도구 | 역할 |
+| Tool | Role |
 |------|------|
-| **agent-browser** | 실제 브라우저로 페이지를 열고 네비게이션 링크를 탐색 (SPA/JS 렌더링 대응) |
-| **defuddle** | 각 페이지에서 본문만 추출하여 깔끔한 마크다운으로 변환 |
-| **url_utils.py** | URL 정규화, 파일 경로 변환, 범위 필터링 |
+| **agent-browser** | Opens pages in a real browser and navigates links (handles SPA/JS rendering) |
+| **defuddle** | Extracts main content from each page and converts it to clean markdown |
+| **url_utils.py** | URL normalization, file path conversion, and scope filtering |
 
-## 파일 경로 결정 원칙
+## File Path Resolution Rules
 
-URL → 파일 경로 매핑 시 **전체 URL 목록을 먼저 수집한 뒤** `smart-filepaths` 명령으로 일괄 결정합니다.
-하위 URL이 있으면 `path/index.md`, 없으면 `path.md`로 저장합니다:
+When mapping URLs to file paths, **collect the full URL list first**, then determine all paths at once using the `smart-filepaths` command.
+If a URL has child URLs, it is saved as `path/index.md`; otherwise as `path.md`:
 
 ```
-/reference/commands/   (하위: /add/, /apply/ 존재)  → reference/commands/index.md
-/reference/commands/add/  (하위 없음)               → reference/commands/add.md
-/user-guide/daily-ops/    (하위 없음)               → user-guide/daily-ops.md
+/reference/commands/   (children: /add/, /apply/ exist)  → reference/commands/index.md
+/reference/commands/add/  (no children)                  → reference/commands/add.md
+/user-guide/daily-ops/    (no children)                  → user-guide/daily-ops.md
 ```
 
-## 워크플로
+## Workflow
 
-### 1단계: 파라미터 확인
+### Step 1: Confirm Parameters
 
 ```bash
-BASE_URL="https://docs.example.com"   # 크롤링 시작 URL (경로 없이 도메인 루트 권장)
-OUTPUT_DIR="./docs-example-com"       # 저장 디렉터리
+BASE_URL="https://docs.example.com"   # Starting URL for crawl (domain root recommended)
+OUTPUT_DIR="./docs-example-com"       # Output directory
 ```
 
-사용자에게 확인:
-- **시작 URL**: 문서 루트 URL (경로 포함 가능)
-- **저장 디렉터리**: 기본값은 도메인명 기반 (`./docs-example-com/`)
+Confirm with the user:
+- **Start URL**: The root URL of the documentation (may include a path)
+- **Output directory**: Defaults to a domain-based name (`./docs-example-com/`)
 
-### 2단계: 네비게이션 완전 탐색 → URL 목록 수집
+### Step 2: Full Navigation Traversal → URL Collection
 
-이 단계가 가장 중요합니다. **모든 URL을 누락 없이 수집해야** 올바른 파일 경로를 결정할 수 있습니다.
+This is the most critical step. **Every URL must be collected without omission** to determine correct file paths.
 
 ```bash
 agent-browser open "$BASE_URL"
 agent-browser wait --load networkidle
 ```
 
-#### 네비게이션 완전 펼치기
+#### Expand All Navigation
 
-많은 문서 사이트는 사이드바가 접혀 있습니다. 모든 섹션을 펼쳐야 합니다:
+Many documentation sites have a collapsed sidebar. All sections must be expanded:
 
 ```bash
-# 1. 전체 스냅샷으로 접힌 섹션 파악
+# 1. Take a full snapshot to identify collapsed sections
 agent-browser snapshot -i -u
 
-# 2. 접힌 섹션(토글/아코디언)을 모두 클릭해서 펼치기
-#    스냅샷에서 [LabelText], [button], [details summary] 형태의 토글을 찾아 클릭
-agent-browser click @e5   # 예: "Advanced" 섹션 토글
-agent-browser click @e9   # 예: "Reference" 섹션 토글
+# 2. Click all collapsed sections (toggles/accordions) to expand them
+#    Find toggles in the form [LabelText], [button], [details summary] in the snapshot
+agent-browser click @e5   # e.g. "Advanced" section toggle
+agent-browser click @e9   # e.g. "Reference" section toggle
 
-# 3. 펼친 후 다시 스냅샷
+# 3. Take another snapshot after expanding
 agent-browser snapshot -i -u
 ```
 
-#### URL 추출 전략
+#### URL Extraction Strategy
 
-문서 사이트의 네비게이션 패턴에 맞게 선택:
+Choose based on the documentation site's navigation pattern:
 
-**패턴 A — 사이드바 전체 탐색** (MkDocs, Docusaurus 등):
+**Pattern A — Full Sidebar Traversal** (MkDocs, Docusaurus, etc.):
 ```bash
-# 사이드바 영역만 스코프해서 모든 링크 추출
+# Scope to sidebar area only and extract all links
 agent-browser snapshot -i -u -s "nav"
 agent-browser snapshot -i -u -s ".sidebar"
 agent-browser snapshot -i -u -s ".md-nav"
 ```
 
-**패턴 B — 메인 탭/섹션별 탐색** (섹션마다 별도 네비게이션이 있는 경우):
+**Pattern B — Per-Section Tab Traversal** (when each section has its own navigation):
 ```bash
-# 각 상위 섹션 페이지로 이동해 그 섹션의 사이드바를 스냅샷
+# Navigate to each top-level section page and snapshot its sidebar
 for SECTION_URL in "https://docs.ex.com/user-guide/" "https://docs.ex.com/reference/"; do
   agent-browser open "$SECTION_URL"
   agent-browser wait --load networkidle
@@ -95,56 +95,56 @@ for SECTION_URL in "https://docs.ex.com/user-guide/" "https://docs.ex.com/refere
 done
 ```
 
-**패턴 C — 사이트맵 활용** (빠른 완전 수집):
+**Pattern C — Sitemap** (fast and complete collection):
 ```bash
-# 많은 사이트가 sitemap.xml을 제공
+# Many sites provide a sitemap.xml
 curl -s "https://docs.example.com/sitemap.xml" | grep -oP '<loc>\K[^<]+'
 ```
 
-#### 반복 탐색으로 누락 URL 보완
+#### Supplementing Missing URLs via Iterative Traversal
 
-각 페이지를 저장한 후 그 페이지에서도 새 링크를 발견할 수 있습니다:
+After saving each page, new links may be discovered on that page:
 ```bash
-# 저장한 각 페이지에서 추가 링크 확인
+# Check for additional links on each saved page
 agent-browser open "$PAGE_URL"
 agent-browser wait --load networkidle
 agent-browser snapshot -i -u
-# 새로 발견한 URL을 큐에 추가
+# Add newly discovered URLs to the queue
 ```
 
-### 3단계: URL 목록 완성 및 파일 경로 일괄 결정
+### Step 3: Finalize URL List and Batch-Determine File Paths
 
-수집한 URL들을 필터링하고 파일 경로를 결정합니다:
+Filter the collected URLs and determine file paths:
 
 ```bash
-# 수집한 모든 링크를 JSON 배열로 구성
+# Build all collected links as a JSON array
 LINKS='["/guide/install", "https://docs.example.com/guide/usage", ...]'
 
-# 범위 내 URL 필터링 (외부 링크, 이진 파일, 중복 제거)
+# Filter in-scope URLs (remove external links, binary files, and duplicates)
 VISITED='["https://docs.example.com"]'
 FILTERED=$(python3 "$URL_UTILS" filter "$BASE_URL" "$VISITED" "$LINKS")
 
-# 전체 URL 목록이 확정되면 파일 경로를 일괄 결정
-# smart-filepaths: 하위 URL 유무를 기준으로 path.md vs path/index.md 자동 선택
+# Once the full URL list is finalized, determine file paths in batch
+# smart-filepaths: automatically chooses path.md vs path/index.md based on whether child URLs exist
 echo "$FILTERED" | python3 "$URL_UTILS" smart-filepaths "$BASE_URL"
-# 출력: {"https://docs.ex.com/guide/": "guide.md", "https://docs.ex.com/reference/": "reference/index.md", ...}
+# Output: {"https://docs.ex.com/guide/": "guide.md", "https://docs.ex.com/reference/": "reference/index.md", ...}
 ```
 
-### 4단계: 각 페이지 수집 및 저장
+### Step 4: Fetch and Save Each Page
 
-파일 경로 매핑을 얻은 뒤 각 URL을 처리합니다:
+Process each URL using the file path mapping:
 
 ```bash
 PAGE_URL="https://docs.example.com/guide/installation"
-REL_PATH="guide/installation.md"   # smart-filepaths 결과에서
+REL_PATH="guide/installation.md"   # from smart-filepaths output
 
-# defuddle로 마크다운 추출
+# Extract markdown with defuddle
 npx defuddle parse "$PAGE_URL" --markdown --output /tmp/page_content.md
 
-# 페이지 제목 추출
+# Extract page title
 PAGE_TITLE=$(npx defuddle parse "$PAGE_URL" --property title 2>/dev/null)
 
-# 저장
+# Save
 FULL_PATH="$OUTPUT_DIR/$REL_PATH"
 mkdir -p "$(dirname "$FULL_PATH")"
 {
@@ -152,23 +152,23 @@ mkdir -p "$(dirname "$FULL_PATH")"
   cat /tmp/page_content.md
 } > "$FULL_PATH"
 
-echo "저장됨: $FULL_PATH"
+echo "Saved: $FULL_PATH"
 ```
 
-### 5단계: 완료 리포트
+### Step 5: Completion Report
 
 ```bash
-echo "=== 수집 완료 ==="
+echo "=== Collection Complete ==="
 find "$OUTPUT_DIR" -name "*.md" | sort
-echo "총 파일 수: $(find "$OUTPUT_DIR" -name "*.md" | wc -l)"
+echo "Total files: $(find "$OUTPUT_DIR" -name "*.md" | wc -l)"
 agent-browser close
 ```
 
-## URL → 파일 경로 매핑 예시
+## URL → File Path Mapping Examples
 
-`smart-filepaths` 적용 시 (전체 URL 목록 기준):
+When `smart-filepaths` is applied (based on the full URL list):
 
-| URL | 하위 URL 있음 | 저장 경로 |
+| URL | Has Child URLs | Save Path |
 |-----|:---:|-----------|
 | `https://docs.ex.com/` | ✓ | `index.md` |
 | `https://docs.ex.com/install/` | ✗ | `install.md` |
@@ -177,66 +177,66 @@ agent-browser close
 | `https://docs.ex.com/reference/commands/add/` | ✗ | `reference/commands/add.md` |
 | `https://docs.ex.com/user-guide/daily-ops/` | ✗ | `user-guide/daily-ops.md` |
 
-## 엣지 케이스
+## Edge Cases
 
-### SPA 사이트 (React, Vue, Vite 등 공식 문서)
-- `wait --load networkidle` 필수
-- 사이드바 토글 버튼이 있으면 클릭 후 재스냅샷
+### SPA Sites (React, Vue, Vite official docs, etc.)
+- `wait --load networkidle` is required
+- If there are sidebar toggle buttons, click them and re-snapshot
 
-### 접힌 네비게이션 완전 펼치기
+### Fully Expanding Collapsed Navigation
 ```bash
-# LabelText나 button 형태 토글을 모두 클릭
-agent-browser snapshot -i  # ref 확인
-agent-browser click @e12   # 토글 클릭
-agent-browser snapshot -i -u  # 펼쳐진 링크 확인
+# Click all toggles in [LabelText] or [button] form
+agent-browser snapshot -i  # check ref
+agent-browser click @e12   # click toggle
+agent-browser snapshot -i -u  # verify expanded links
 ```
 
-### defuddle 추출 실패 시
+### When defuddle Extraction Fails
 ```bash
 npx defuddle parse "$PAGE_URL" --json | python3 -c "
 import json, sys
 d = json.load(sys.stdin)
 print('length:', len(d.get('content', '')))
 "
-# 내용이 너무 짧으면 로그에 기록하고 넘어감
+# If content is too short, log it and move on
 ```
 
-### 로그인이 필요한 문서
+### Documentation Requiring Login
 ```bash
 agent-browser auth save docs-site --url https://docs.example.com/login \
   --username user@example.com --password-stdin
 agent-browser auth login docs-site
 ```
 
-## scripts/url_utils.py 명령 참조
+## scripts/url_utils.py Command Reference
 
 ```bash
-# URL → 파일 경로 (단일, 하위 URL 정보 없이 단순 변환)
+# URL → file path (single, simple conversion without child URL info)
 python3 "$URL_UTILS" filepath "https://docs.ex.com/guide/install" "https://docs.ex.com"
 # → guide/install.md
 
-# URL → 파일 경로 (단일, 전체 URL 목록 기반)
+# URL → file path (single, based on full URL list)
 python3 "$URL_UTILS" smart-filepath "https://docs.ex.com/guide/" "https://docs.ex.com" \
   '["https://docs.ex.com/guide/", "https://docs.ex.com/guide/install/"]'
-# → guide/index.md  (하위 /install/ 존재하므로)
+# → guide/index.md  (because child /install/ exists)
 
-# URL → 파일 경로 일괄 처리 (stdin에 JSON 배열 입력)
+# URL → file path batch processing (JSON array via stdin)
 echo '["https://docs.ex.com/guide/", "https://docs.ex.com/guide/install/"]' \
   | python3 "$URL_UTILS" smart-filepaths "https://docs.ex.com"
 # → {"https://docs.ex.com/guide/": "guide/index.md", "https://docs.ex.com/guide/install/": "guide/install.md"}
 
-# URL 정규화 (프래그먼트 제거)
+# URL normalization (remove fragments)
 python3 "$URL_UTILS" normalize "https://docs.ex.com/guide#section"
 # → https://docs.ex.com/guide
 
-# 링크 배열 필터링
+# Filter link array
 python3 "$URL_UTILS" filter \
   "https://docs.ex.com" \
   '["https://docs.ex.com/guide"]' \
   '["/api/ref", "https://external.com", "#skip", "/guide"]'
 # → ["https://docs.ex.com/api/ref"]
 
-# 범위 내 URL 확인
+# Check if URL is in scope
 python3 "$URL_UTILS" in-scope "https://docs.ex.com/guide/foo" "https://docs.ex.com"
 # → true
 ```
