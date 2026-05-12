@@ -11,16 +11,43 @@ resticprofile is a configuration profile manager for [restic](https://restic.net
 
 Detailed documentation is bundled in `references/`. Read the relevant files when working on specific topics:
 
-| Topic | File |
-|-------|------|
-| Configuration reference (all keys) | `references/reference/index.md` and subdirs |
-| Command-line usage | `references/usage/index.md` |
-| Scheduling | `references/schedules/index.md` |
-| Installation | `references/installation.md` |
-| Getting started / overview | `references/index.md` |
-| How-to guides | `references/how-to/index.md` |
+| Topic | Files |
+|-------|-------|
+| Overview / what resticprofile does | `references/index.md` |
+| Installation (Linux, macOS, Windows, Docker, Ansible…) | `references/installation/index.md` and subdirs |
+| Configuration basics & getting started | `references/configuration/index.md`, `references/configuration/getting_started.md` |
+| Profile inheritance | `references/configuration/inheritance.md` |
+| Run hooks (run-before/after/after-fail/finally) | `references/configuration/run_hooks.md` |
+| HTTP hooks (send-before/after/after-fail/finally) | `references/configuration/http_hooks.md` |
+| Templates & variables in config | `references/configuration/templates.md`, `references/configuration/variables.md` |
+| Configuration v2 format | `references/configuration/v2.md` |
+| Scheduling overview | `references/schedules/index.md` |
+| Schedule configuration options | `references/schedules/configuration.md` |
+| systemd scheduling | `references/schedules/systemd.md` |
+| launchd scheduling (macOS) | `references/schedules/launchd.md` |
+| cron scheduling | `references/schedules/cron.md` |
+| Windows Task Scheduler | `references/schedules/task_scheduler.md` |
+| Schedule examples | `references/schedules/examples.md` |
+| Profile section reference (all flags per command) | `references/reference/profile/index.md` |
+| backup command reference | `references/reference/profile/backup.md` |
+| forget command reference | `references/reference/profile/forget.md` |
+| retention section reference | `references/reference/profile/retention.md` |
+| check command reference | `references/reference/profile/check.md` |
+| restore command reference | `references/reference/profile/restore.md` |
+| init command reference | `references/reference/profile/init.md` |
+| prune command reference | `references/reference/profile/prune.md` |
+| copy command reference | `references/reference/profile/copy.md` |
+| snapshots command reference | `references/reference/profile/snapshots.md` |
+| Global section reference | `references/reference/global.md` |
+| Groups section reference | `references/reference/groups.md` |
+| Schedule config nested section | `references/reference/nested/scheduleconfig.md` |
+| Monitoring (status file, Prometheus) | `references/monitoring/index.md` |
+| Locks | `references/usage/locks.md` |
+| Key file generation | `references/usage/keyfile.md` |
+| Memory check | `references/usage/memory.md` |
+| Logging | `references/configuration/logs.md` |
 
-Always read the relevant reference file before answering questions about config keys, commands, or scheduler options.
+Always read the relevant reference file before answering questions about specific config keys, command flags, or scheduler options.
 
 ## Configuration File
 
@@ -79,20 +106,22 @@ Within a profile, you configure restic repository settings and sub-sections for 
 
 ### Key Configuration Properties
 
-**Repository settings** (profile level):
+**Profile level** (common repository settings):
 - `repository` — restic repository path/URL
 - `password-file` / `password-command` — repository password
 - `initialize` — auto-init repo if missing (bool)
 - `inherit` — inherit from another profile name
 - `cache-dir` — restic cache directory
+- `env` — environment variables (subsection)
 
 **Backup section** (`[profile.backup]`):
 - `source` — list of paths to back up
 - `exclude` — glob patterns to exclude
 - `exclude-file` — path to exclude file
-- `schedule` — when to run (see Scheduling)
-- `schedule-permission` — `"user"` or `"system"`
-- `run-before` / `run-after` / `run-after-fail` — shell commands
+- `schedule` — when to run (see Scheduling below)
+- `schedule-permission` — `"auto"` | `"user"` | `"system"` | `"user_logged_on"`
+- `run-before` / `run-after` / `run-after-fail` / `run-finally` — shell commands
+- `check-before` / `check-after` — run check before/after backup
 
 **Retention section** (`[profile.retention]`):
 - `keep-last` / `keep-hourly` / `keep-daily` / `keep-weekly` / `keep-monthly` / `keep-yearly`
@@ -169,6 +198,8 @@ schedule = "Mon..Fri *-*-* 20:00:00"   # Systemd calendar notation
 schedule = "@daily"            # Cron-style
 schedule = "0 20 * * 1-5"     # Cron expression
 ```
+
+For per-scheduler details read the files under `references/schedules/`.
 
 ## Common Patterns
 
@@ -249,6 +280,7 @@ schedule = "0 20 * * 1-5"     # Cron expression
 
 - Use `resticprofile show` to see the merged/effective config for a profile — invaluable for debugging inheritance.
 - `initialize = true` at the profile level auto-inits the repo if it doesn't exist yet.
-- `run-before`/`run-after`/`run-after-fail` accept a list of shell commands — useful for healthcheck pings or mounting network shares.
+- `run-before`/`run-after`/`run-after-fail`/`run-finally` accept a list of shell commands — useful for healthcheck pings or mounting network shares.
 - For systemd scheduling with `schedule-permission = "system"`, run `resticprofile schedule` as root.
 - `--dry-run` flag is available for most commands to preview what would happen.
+- For all available flags per command, read `references/reference/profile/<command>.md`.

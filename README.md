@@ -126,6 +126,7 @@ In short:
 | `skills/wordpress-classic-theme/references/**` | GPL-2.0-or-later (WordPress contributors) |
 | `skills/monkey-c/{overview,references,api-docs}/**` | All rights reserved — (c) Garmin Ltd. (local reference cache only) |
 | `skills/wordpress-meta-box/references/**` | All rights reserved — (c) MetaBox.io / eLightUp (local reference cache only) |
+| `skills/resticprofile/references/**` | MIT License — (c) resticprofile contributors (local reference cache) |
 
 If you are a rights holder for any of the cached third-party content
 and wish it removed, please open an issue.
