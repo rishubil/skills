@@ -56,6 +56,42 @@ Example:
 
 After installation, mention the skill name or description and Claude will automatically use the relevant skill.
 
+### Auto-install via `.claude/settings.json`
+
+To prompt every team member (or yourself, across projects) to install this marketplace automatically when the project folder is trusted, add it to `.claude/settings.json`. See [Require marketplaces for your team](https://code.claude.com/docs/en/plugin-marketplaces#require-marketplaces-for-your-team) for details.
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "rishubil-skills": {
+      "source": {
+        "source": "github",
+        "repo": "rishubil/skills"
+      }
+    }
+  }
+}
+```
+
+You can also enable specific plugins by default with `enabledPlugins`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "rishubil-skills": {
+      "source": {
+        "source": "github",
+        "repo": "rishubil/skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "shell-script@rishubil-skills": true,
+    "commit@rishubil-skills": true
+  }
+}
+```
+
 ## Skills from Other Repositories
 
 In addition to this repository, the following external skills are also used.
