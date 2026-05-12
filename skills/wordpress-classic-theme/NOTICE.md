@@ -22,17 +22,18 @@ from the WordPress Theme Developer Handbook.
   the same license terms to downstream recipients.
 - A copy of the GPL v2 text is available at the URL above.
 
-## Per-file metadata
+## Per-file source
 
-Each fetched file records the same information in its YAML
-frontmatter:
+Each cached file records its upstream URL in the `source` field of
+its YAML frontmatter:
 
 ```yaml
 ---
+title: ...
 source: https://developer.wordpress.org/themes/...
-copyright: "(c) The WordPress contributors"
-license: GPL-2.0-or-later
-license_url: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-retrieved: YYYY-MM-DD
 ---
 ```
+
+Copyright and license information is not duplicated per file —
+GPL-2.0-or-later (as stated in this NOTICE.md) applies to every
+file under `references/`.

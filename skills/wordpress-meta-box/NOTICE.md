@@ -26,16 +26,18 @@ If you are the rights holder (MetaBox.io / eLightUp or an authorised
 representative) and you wish these files to be removed, please open
 an issue on this repository and they will be deleted promptly.
 
-## Per-file metadata
+## Per-file source
 
-Each fetched file also records the same information in its YAML
-frontmatter:
+Each cached file records its upstream URL in the `source` field of
+its YAML frontmatter:
 
 ```yaml
 ---
+title: ...
 source: https://docs.metabox.io/...
-copyright: "(c) MetaBox.io / eLightUp"
-license: "All rights reserved (no open license granted)"
-retrieved: YYYY-MM-DD
 ---
 ```
+
+Copyright and license information is not duplicated per file —
+those terms are stated once in this NOTICE.md and apply to every
+file under `references/`.
