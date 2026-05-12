@@ -56,9 +56,12 @@ When adding or refreshing such content:
    ---
    ```
 
-2. If the directory does not yet have a `NOTICE.md`, create one that
-   states the source, copyright, license, and that the repository's
-   MIT License does not apply to the files in the directory.
+2. If the skill does not yet have a `NOTICE.md` at its top level
+   (`skills/<skill-name>/NOTICE.md`), create one that states the
+   source, copyright, license, the affected subdirectories, and that
+   the repository's MIT License does not apply to the cached files.
+   One NOTICE.md per skill — do not place a separate copy inside
+   each subdirectory.
 3. Update the root `NOTICE` and the "License" section of `README.md`
    when a new third-party source is introduced.
 4. Never overwrite or remove the upstream copyright/license metadata

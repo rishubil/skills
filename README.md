@@ -75,11 +75,10 @@ Some skills additionally cache reference documentation that was
 fetched from third-party sources. **Those cached files are NOT covered
 by the MIT License above**; they remain under the copyright and
 license of their original authors. See [`NOTICE`](./NOTICE) for the
-full list, and the `NOTICE.md` inside each affected directory
+full list, and the `NOTICE.md` at each affected skill's top level
 (`skills/monkey-c/NOTICE.md`,
-`skills/wordpress-classic-theme/references/NOTICE.md`,
-`skills/wordpress-meta-box/references/NOTICE.md`) for per-directory
-details.
+`skills/wordpress-classic-theme/NOTICE.md`,
+`skills/wordpress-meta-box/NOTICE.md`) for per-skill details.
 
 In short:
 

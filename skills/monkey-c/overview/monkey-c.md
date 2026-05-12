@@ -2,7 +2,7 @@
 title: Hello Monkey C!
 source: https://developer.garmin.com/connect-iq/monkey-c/
 copyright: "(c) Garmin Ltd. or its subsidiaries"
-license: "All rights reserved (no open license granted) — see ../../NOTICE.md"
+license: "All rights reserved (no open license granted) — see ../NOTICE.md"
 ---
 
 ![](https://developer.garmin.com/connect-iq/resources/programmers-guide/smart-monkey.png)
