@@ -41,16 +41,11 @@ If a URL has child URLs, it is saved as `path/index.md`; otherwise as `path.md`:
 ```bash
 BASE_URL="https://docs.example.com"   # Starting URL for crawl (domain root recommended)
 OUTPUT_DIR="./docs-example-com"       # Output directory
-COPYRIGHT="(c) Example Corp."         # Upstream copyright holder
-LICENSE="All rights reserved (no open license granted)"  # or e.g. "CC-BY-4.0", "GPL-2.0-or-later"
 ```
 
 Confirm with the user:
 - **Start URL**: The root URL of the documentation (may include a path)
 - **Output directory**: Defaults to a domain-based name (`./docs-example-com/`)
-- **Copyright holder**: Who owns the upstream content (check the site footer / Terms)
-- **License**: SPDX identifier if the site grants an open license, otherwise
-  "All rights reserved (no open license granted)". See "Attribution Metadata".
 
 ### Step 2: Full Navigation Traversal → URL Collection
 
@@ -149,12 +144,11 @@ npx defuddle parse "$PAGE_URL" --markdown --output /tmp/page_content.md
 # Extract page title
 PAGE_TITLE=$(npx defuddle parse "$PAGE_URL" --property title 2>/dev/null)
 
-# Save (include copyright/license metadata — see "Attribution Metadata" below)
+# Save
 FULL_PATH="$OUTPUT_DIR/$REL_PATH"
 mkdir -p "$(dirname "$FULL_PATH")"
 {
-  printf -- "---\ntitle: %s\nsource: %s\ncopyright: %q\nlicense: %q\nretrieved: %s\n---\n\n" \
-    "$PAGE_TITLE" "$PAGE_URL" "$COPYRIGHT" "$LICENSE" "$(date +%F)"
+  printf -- "---\ntitle: %s\nsource: %s\n---\n\n" "$PAGE_TITLE" "$PAGE_URL"
   cat /tmp/page_content.md
 } > "$FULL_PATH"
 
@@ -182,56 +176,6 @@ When `smart-filepaths` is applied (based on the full URL list):
 | `https://docs.ex.com/reference/commands/` | ✓ | `reference/commands/index.md` |
 | `https://docs.ex.com/reference/commands/add/` | ✗ | `reference/commands/add.md` |
 | `https://docs.ex.com/user-guide/daily-ops/` | ✗ | `user-guide/daily-ops.md` |
-
-## Attribution Metadata
-
-Fetched documentation belongs to its original authors. To avoid
-implicitly relicensing it under the destination repository's
-license, every saved file MUST record source and license metadata,
-and each output directory should carry a `NOTICE.md`.
-
-### Per-file frontmatter
-
-```yaml
----
-title: <page title>
-source: <upstream URL>
-copyright: "(c) <original author>"
-license: <SPDX id, or "All rights reserved (no open license granted)">
-license_url: <license text URL, optional>
-retrieved: YYYY-MM-DD
----
-```
-
-### Directory NOTICE.md
-
-After the crawl finishes, write a `NOTICE.md` in `OUTPUT_DIR` that
-states the upstream source URL, copyright holder, license, and
-clarifies that the destination repository's license does not apply
-to the cached files:
-
-```bash
-cat > "$OUTPUT_DIR/NOTICE.md" <<EOF
-# Third-Party Content Notice
-
-Source:    $BASE_URL
-Copyright: $COPYRIGHT
-License:   $LICENSE
-
-The destination repository's license does NOT apply to the files in
-this directory; they remain under the upstream copyright and license
-above. If you are the rights holder and wish these files removed,
-please open an issue.
-EOF
-```
-
-### Choosing the license string
-
-- Site is silent about reuse → `"All rights reserved (no open license granted)"`
-- Site explicitly grants an open license (CC, GPL, MIT, Apache, etc.)
-  → use the SPDX identifier (`CC-BY-4.0`, `GPL-2.0-or-later`, ...)
-- When in doubt, ask the user before writing — do NOT invent a
-  license that the upstream did not actually grant.
 
 ## Edge Cases
 
