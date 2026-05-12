@@ -1,43 +1,43 @@
 # CLAUDE.md
 
-이 저장소는 Claude Code 플러그인 마켓플레이스(`rishubil-skills`)로 등록되는 개인용 Agent Skills 모음입니다. 작업할 때 다음 규칙을 따르세요.
+This repository is a personal collection of Agent Skills registered as a Claude Code plugin marketplace (`rishubil-skills`). Follow these rules when working here.
 
-## 저장소 구조
+## Repository Structure
 
-- `.claude-plugin/marketplace.json` — 마켓플레이스 매니페스트. 플러그인 항목과 각 플러그인에 포함되는 스킬 경로를 정의.
-- `skills/<skill-name>/SKILL.md` — 개별 스킬. 폴더 하나가 곧 하나의 스킬이며 `SKILL.md`는 YAML frontmatter(`name`, `description`)와 본문 지시사항으로 구성.
-- `skills/<skill-name>/` 하위에 스크립트나 보조 리소스를 자유롭게 둘 수 있음.
+- `.claude-plugin/marketplace.json` — Marketplace manifest. Defines plugin entries and the skill paths included in each plugin.
+- `skills/<skill-name>/SKILL.md` — Individual skill. Each folder is one skill; `SKILL.md` consists of YAML frontmatter (`name`, `description`) and body instructions.
+- Scripts and auxiliary resources can be placed freely under `skills/<skill-name>/`.
 
-## 플러그인 구성 원칙
+## Plugin Principles
 
-- 이 마켓플레이스는 **스킬 하나당 플러그인 하나**를 원칙으로 한다. 사용자가 필요한 스킬만 골라 설치할 수 있어야 하기 때문이다.
-- 플러그인 이름(`plugins[].name`)은 포함된 스킬의 폴더명과 동일하게 맞춘다.
-- 여러 스킬을 묶어야 할 합당한 이유가 생기기 전까지는 새 스킬마다 새 플러그인 항목을 추가한다.
+- This marketplace follows a **one plugin per skill** principle, so users can install only the skills they need.
+- The plugin name (`plugins[].name`) must match the folder name of the skill it contains.
+- Add a new plugin entry for each new skill until there is a clear reason to bundle multiple skills together.
 
-## 새 스킬을 추가할 때
+## Adding a New Skill
 
-1. `skills/<new-skill-name>/SKILL.md` 를 생성한다.
-   - `name`은 폴더명과 동일하게, 소문자와 하이픈만 사용.
-   - `description`은 "무엇을 하는지 + 언제 사용해야 하는지"가 한두 문장에 모두 드러나도록 작성.
-2. **반드시** `.claude-plugin/marketplace.json` 의 `plugins` 배열에 새 플러그인 항목을 추가한다.
-   - `name`은 스킬 폴더명과 동일.
-   - `description`은 영어 한 문장 정도로 간결하게.
-   - `source`는 `"./"`, `strict`는 `false`.
-   - `skills` 배열에 `./skills/<new-skill-name>` 경로 추가.
-   - 누락하면 마켓플레이스를 통해 설치되지 않는다.
-3. 필요하면 `README.md` 의 "제공 플러그인" 표에도 새 항목을 추가한다.
+1. Create `skills/<new-skill-name>/SKILL.md`.
+   - `name` must match the folder name, using only lowercase letters and hyphens.
+   - `description` should convey both "what it does" and "when to use it" in one or two sentences.
+2. **You must** add a new plugin entry to the `plugins` array in `.claude-plugin/marketplace.json`.
+   - `name` matches the skill folder name.
+   - `description` should be concise — roughly one sentence in English.
+   - `source` is `"./"`, `strict` is `false`.
+   - Add `./skills/<new-skill-name>` to the `skills` array.
+   - Omitting this will prevent installation through the marketplace.
+3. If needed, add a new row to the "Available Plugins" table in `README.md`.
 
-## 스킬 수정/삭제 시
+## Modifying or Deleting a Skill
 
-- 스킬 폴더를 삭제하거나 이름을 바꾸면 `marketplace.json` 의 해당 플러그인 항목(또는 그 `skills` 배열)도 동기화하고, `README.md` 의 플러그인 목록도 함께 갱신한다.
-- `SKILL.md` 의 `name` 필드는 폴더명과 일치해야 한다.
+- If you delete or rename a skill folder, sync the corresponding plugin entry (or its `skills` array) in `marketplace.json`, and update the plugin list in `README.md`.
+- The `name` field in `SKILL.md` must match the folder name.
 
-## 커밋/푸시
+## Committing and Pushing
 
-- 작업 브랜치는 사용자가 지정한 브랜치를 사용하고, 임의로 `main`에 직접 푸시하지 않는다.
-- 커밋 메시지는 변경의 "왜"를 1~2문장으로 간결하게 작성한다.
+- Use the branch specified by the user; do not push directly to `main` without permission.
+- Keep commit messages concise — one or two sentences explaining *why* the change was made.
 
-## 참고 링크
+## References
 
-- [Agent Skills 스펙](https://agentskills.io)
-- [Anthropic 예시 스킬 저장소](https://github.com/anthropics/skills)
+- [Agent Skills spec](https://agentskills.io)
+- [Anthropic example skills repository](https://github.com/anthropics/skills)

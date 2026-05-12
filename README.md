@@ -1,70 +1,70 @@
 # rishubil/skills
 
-개인적으로 사용하는 Claude [Agent Skills](https://agentskills.io) 모음입니다. Claude Code 플러그인 마켓플레이스로 등록하여 사용할 수 있습니다.
+A personal collection of Claude [Agent Skills](https://agentskills.io). Can be registered as a Claude Code plugin marketplace for easy installation.
 
-## 저장소 구조
+## Repository Structure
 
 ```
 .
 ├── .claude-plugin/
-│   └── marketplace.json   # 마켓플레이스 정의 (플러그인 = 스킬 1:1)
-├── skills/                # 스킬 모음 (각 폴더가 하나의 스킬)
+│   └── marketplace.json   # Marketplace definition (one plugin per skill)
+├── skills/                # Skill collection (each folder is one skill)
 │   └── <skill-name>/
 │       └── SKILL.md
 ├── LICENSE
 └── README.md
 ```
 
-각 스킬은 `skills/<skill-name>/SKILL.md` 파일 하나만 있어도 동작합니다. 필요하면 같은 폴더에 스크립트나 보조 파일을 자유롭게 추가하면 됩니다.
+A skill only needs a `skills/<skill-name>/SKILL.md` file to work. You can freely add scripts or auxiliary files to the same folder as needed.
 
-이 마켓플레이스는 **스킬 하나를 플러그인 하나**로 분리해 등록합니다. 원하는 스킬만 골라 설치할 수 있도록 하기 위함입니다.
+This marketplace registers **one skill as one plugin**, so users can pick and install only the skills they need.
 
-> **새 스킬을 추가할 때는 `.claude-plugin/marketplace.json`의 `plugins` 배열에 항목을 추가하고, 해당 항목의 `skills`에 `./skills/<skill-name>` 경로를 등록해야 합니다.**
+> **When adding a new skill, add an entry to the `plugins` array in `.claude-plugin/marketplace.json` and register the `./skills/<skill-name>` path in that entry's `skills` field.**
 
-## 제공 플러그인
+## Available Plugins
 
-| 플러그인 | 설명 |
+| Plugin | Description |
 | --- | --- |
-| `shell-script` | Bash 셸 스크립트 작성 베스트 프랙티스와 에러 처리 패턴. |
-| `fetch-docs` | 웹 기반 개발 문서를 깔끔한 마크다운으로 내려받아 디렉터리 구조 그대로 보관. |
-| `monkey-c` | Garmin Connect IQ용 Monkey C 앱(Watch Face, Device App, Widget, Data Field 등) 개발. |
-| `wordpress-meta-box` | WordPress Meta Box 플러그인 — 커스텀 필드·메타 박스·CPT 및 Meta Box API 전반. |
-| `wordpress-classic-theme` | WordPress 클래식(PHP) 테마 — 템플릿 계층, 루프, 위젯, Customizer API 등. (블록 테마 제외) |
-| `commit` | Conventional Commits 형식에 *왜* 변경했는지를 본문에 담아 커밋 메시지 작성. |
+| `shell-script` | Best practices and error handling patterns for writing Bash shell scripts. |
+| `fetch-docs` | Download web-based development documentation as clean markdown files, preserving the directory structure. |
+| `monkey-c` | Develop Garmin Connect IQ apps in Monkey C (Watch Face, Device App, Widget, Data Field, etc.). |
+| `wordpress-meta-box` | WordPress Meta Box plugin — custom fields, meta boxes, CPTs, and the full Meta Box API. |
+| `wordpress-classic-theme` | WordPress classic (PHP) themes — template hierarchy, The Loop, widgets, Customizer API, etc. (block themes excluded) |
+| `commit` | Write commit messages in Conventional Commits format with a body explaining *why* the change was made. |
 
-## Claude Code에서 사용하기
+## Using in Claude Code
 
-먼저 마켓플레이스를 등록합니다.
+First, add the marketplace:
 
 ```
 /plugin marketplace add rishubil/skills
 ```
 
-필요한 플러그인을 개별적으로 설치합니다.
+Then install individual plugins:
 
 ```
 /plugin install <plugin-name>@rishubil-skills
 ```
 
-예시:
+Example:
 
 ```
 /plugin install shell-script@rishubil-skills
 /plugin install commit@rishubil-skills
 ```
 
-설치 후에는 스킬 이름이나 설명을 언급하면 Claude가 자동으로 해당 스킬을 활용합니다.
+After installation, mention the skill name or description and Claude will automatically use the relevant skill.
 
-## 다른 저장소에서 불러온 스킬
+## Skills from Other Repositories
 
-이 저장소 외에 아래 외부 스킬도 함께 사용합니다.
+In addition to this repository, the following external skills are also used.
 
-| 마켓플레이스 | 플러그인 | 설치 명령 |
+| Marketplace | Plugin | Install Command |
 |---|---|---|
 | `forrestchang/andrej-karpathy-skills` | `andrej-karpathy-skills` | `/plugin marketplace add forrestchang/andrej-karpathy-skills` → `/plugin install andrej-karpathy-skills@karpathy-skills` |
 
-## 참고
+## References
 
-- [Agent Skills 공식 스펙](https://agentskills.io)
-- [Anthropic의 예시 스킬 저장소](https://github.com/anthropics/skills)
-- [커스텀 스킬 만들기 가이드](https://support.claude.com/en/articles/12512198-creating-custom-skills)
+- [Agent Skills official spec](https://agentskills.io)
+- [Anthropic's example skills repository](https://github.com/anthropics/skills)
+- [Guide to creating custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills)

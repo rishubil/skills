@@ -1,33 +1,33 @@
 ---
 name: monkey-c
-description: Garmin Connect IQ 플랫폼을 위한 Monkey C 언어 전문 스킬. Garmin 스마트워치·웨어러블 앱(Watch Face, Device App, Widget, Data Field 등)을 개발하거나, Monkey C 코드 작성·디버깅·리팩터링이 필요할 때 사용하세요.
+description: Specialist skill for Monkey C on the Garmin Connect IQ platform. Use when developing Garmin smartwatch or wearable apps (Watch Face, Device App, Widget, Data Field, etc.) or when writing, debugging, or refactoring Monkey C code.
 ---
 
-# Monkey C 개발 가이드
+# Monkey C Development Guide
 
-> 참고: https://developer.garmin.com/connect-iq/monkey-c/
+> Reference: https://developer.garmin.com/connect-iq/monkey-c/
 
-Monkey C는 Garmin이 Connect IQ 플랫폼용으로 만든 객체지향 언어입니다. Java·JavaScript·Python·Ruby의 문법을 혼합하여 설계되었으며, 동적 타이핑과 덕 타이핑을 지원합니다.
+Monkey C is an object-oriented language created by Garmin for the Connect IQ platform. It blends syntax from Java, JavaScript, Python, and Ruby, and supports dynamic typing and duck typing.
 
-## 앱 타입
+## App Types
 
-| 타입 | 설명 |
-|------|------|
-| **Watch Face** | 시계 화면 커스터마이징 |
-| **Device App** | 디바이스 자원에 완전 접근하는 풀 앱 |
-| **Widget** | 메인 캐러셀의 정보 카드 |
-| **Data Field** | 활동 화면의 커스텀 측정 항목 표시 |
-| **Audio Content Provider** | 서드파티 오디오 서비스 연동 |
+| Type | Description |
+|------|-------------|
+| **Watch Face** | Customize the watch display |
+| **Device App** | Full app with complete access to device resources |
+| **Widget** | Information card in the main carousel |
+| **Data Field** | Custom metric display on the activity screen |
+| **Audio Content Provider** | Integration with third-party audio services |
 
-## 언어 핵심 규칙
+## Core Language Rules
 
-### 변수 & 상수
+### Variables & Constants
 ```monkey-c
-var count = 0;          // 변수
-const MAX = 100;        // 상수
+var count = 0;          // variable
+const MAX = 100;        // constant
 ```
 
-### 클래스 & 상속
+### Classes & Inheritance
 ```monkey-c
 using Toybox.Application as App;
 
@@ -42,14 +42,14 @@ class MyApp extends App.AppBase {
 }
 ```
 
-### 함수
+### Functions
 ```monkey-c
 function add(a, b) {
     return a + b;
 }
 ```
 
-### 제어 구조
+### Control Structures
 ```monkey-c
 // if/else
 if (value > 0) {
@@ -79,7 +79,7 @@ switch (value) {
 }
 ```
 
-### 모듈 임포트
+### Module Imports
 ```monkey-c
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
@@ -87,29 +87,29 @@ using Toybox.System as Sys;
 using Toybox.Activity as Act;
 ```
 
-## Toybox 표준 라이브러리 주요 모듈
+## Key Toybox Standard Library Modules
 
-| 모듈 | 용도 |
-|------|------|
-| `Toybox.Application` | 앱 생명주기 관리 |
-| `Toybox.WatchUi` | UI 뷰·델리게이트·메뉴 |
-| `Toybox.Graphics` | 그래픽 그리기 (drawText, drawLine 등) |
-| `Toybox.System` | 시스템 정보, println 디버그 출력 |
-| `Toybox.Activity` | 현재 활동 데이터 |
-| `Toybox.ActivityMonitor` | 걸음 수, 칼로리 등 일상 활동 |
-| `Toybox.Sensor` | 심박수, 고도, 기압 등 센서 |
-| `Toybox.SensorHistory` | 센서 이력 데이터 |
-| `Toybox.Communications` | BLE, HTTP 요청 |
-| `Toybox.Ant` / `Toybox.AntPlus` | ANT+ 연결 |
-| `Toybox.Time` | 날짜·시간 처리 |
-| `Toybox.Position` | GPS 위치 정보 |
-| `Toybox.Math` | 수학 함수 |
-| `Toybox.Lang` | 기본 타입·컬렉션 |
-| `Toybox.StringUtil` | 문자열 유틸리티 |
-| `Toybox.Cryptography` | 암호화 |
-| `Toybox.Timer` | 타이머 |
+| Module | Purpose |
+|--------|---------|
+| `Toybox.Application` | App lifecycle management |
+| `Toybox.WatchUi` | UI views, delegates, and menus |
+| `Toybox.Graphics` | Drawing graphics (drawText, drawLine, etc.) |
+| `Toybox.System` | System info, println debug output |
+| `Toybox.Activity` | Current activity data |
+| `Toybox.ActivityMonitor` | Daily activity: steps, calories, etc. |
+| `Toybox.Sensor` | Sensors: heart rate, altitude, barometer, etc. |
+| `Toybox.SensorHistory` | Historical sensor data |
+| `Toybox.Communications` | BLE, HTTP requests |
+| `Toybox.Ant` / `Toybox.AntPlus` | ANT+ connectivity |
+| `Toybox.Time` | Date and time handling |
+| `Toybox.Position` | GPS location |
+| `Toybox.Math` | Math functions |
+| `Toybox.Lang` | Basic types and collections |
+| `Toybox.StringUtil` | String utilities |
+| `Toybox.Cryptography` | Cryptography |
+| `Toybox.Timer` | Timers |
 
-## Watch Face 기본 구조
+## Watch Face Basic Structure
 
 ```monkey-c
 using Toybox.WatchUi as Ui;
@@ -122,11 +122,11 @@ class MyWatchFaceView extends Ui.WatchFace {
     }
 
     function onLayout(dc) {
-        // 레이아웃 초기화
+        // initialize layout
     }
 
     function onUpdate(dc) {
-        // 화면 갱신 (매 초 또는 분마다 호출)
+        // screen refresh (called every second or minute)
         var clockTime = Sys.getClockTime();
         var hour = clockTime.hour;
         var min = clockTime.min;
@@ -146,60 +146,60 @@ class MyWatchFaceView extends Ui.WatchFace {
 }
 ```
 
-## 베스트 프랙티스
+## Best Practices
 
-- **메모리 절약**: Garmin 기기는 RAM이 수십~수백 KB로 제한되어 있음. 큰 배열이나 불필요한 객체 생성을 피할 것.
-- **배터리 효율**: `onUpdate()`에서 무거운 연산을 하지 말고 결과를 캐시할 것.
-- **null 체크**: 동적 타이핑이므로 센서 데이터나 외부 값은 반드시 null 체크 후 사용.
-- **퍼미션 선언**: Communications, Sensor 등 특수 기능은 `manifest.xml`에 퍼미션을 명시해야 함.
-- **디버그 출력**: `Sys.println("msg")` 사용. 릴리즈 전 제거 권장.
+- **Conserve memory**: Garmin devices have limited RAM (tens to hundreds of KB). Avoid large arrays and unnecessary object creation.
+- **Battery efficiency**: Don't perform heavy computation in `onUpdate()` — cache results instead.
+- **Null checks**: Due to dynamic typing, always null-check sensor data and external values before use.
+- **Declare permissions**: Special features like Communications and Sensor must be declared in `manifest.xml`.
+- **Debug output**: Use `Sys.println("msg")`. Remove before releasing.
 
-## 개발 환경
+## Development Environment
 
-- **VS Code**: 공식 Monkey C 확장 설치 (자동완성, 구문 강조, 실시간 오류, 코드 폴딩)
-- **Connect IQ SDK**: Garmin Developer 포털에서 다운로드
-- **시뮬레이터**: SDK에 포함된 기기 시뮬레이터로 실제 기기 없이 테스트 가능
+- **VS Code**: Install the official Monkey C extension (autocomplete, syntax highlighting, real-time errors, code folding)
+- **Connect IQ SDK**: Download from the Garmin Developer portal
+- **Simulator**: The SDK includes a device simulator for testing without a physical device
 
-## 로컬 문서 (적극 활용할 것)
+## Local Documentation (use first)
 
-이 스킬 디렉터리에는 공식 문서가 로컬 마크다운으로 저장되어 있습니다. 코드를 작성하거나 API를 조회할 때는 **반드시 아래 로컬 문서를 먼저 참고**하세요. 외부 URL을 열거나 추측하지 말고, 로컬 파일을 Read하여 정확한 정보를 확인하세요.
+This skill directory contains official documentation saved as local markdown files. When writing code or looking up APIs, **always consult the local docs below first**. Do not open external URLs or guess — Read the local files for accurate information.
 
-### overview/ — Monkey C 언어 가이드
+### overview/ — Monkey C Language Guide
 
-| 파일 | 내용 |
-|------|------|
-| [overview/monkey-c.md](overview/monkey-c.md) | 기본 문법 개요 |
-| [overview/monkey-types.md](overview/monkey-types.md) | 데이터 타입 상세 |
-| [overview/objects-and-memory.md](overview/objects-and-memory.md) | 객체·메모리 모델 |
-| [overview/functions.md](overview/functions.md) | 함수 정의·호출 |
-| [overview/containers.md](overview/containers.md) | Array·Dictionary |
-| [overview/exceptions-and-errors.md](overview/exceptions-and-errors.md) | 예외 처리 |
-| [overview/annotations.md](overview/annotations.md) | 어노테이션 |
-| [overview/compiler-options.md](overview/compiler-options.md) | 컴파일러 옵션 |
-| [overview/coding-conventions.md](overview/coding-conventions.md) | 코딩 컨벤션 |
+| File | Contents |
+|------|----------|
+| [overview/monkey-c.md](overview/monkey-c.md) | Basic syntax overview |
+| [overview/monkey-types.md](overview/monkey-types.md) | Data types in detail |
+| [overview/objects-and-memory.md](overview/objects-and-memory.md) | Object and memory model |
+| [overview/functions.md](overview/functions.md) | Defining and calling functions |
+| [overview/containers.md](overview/containers.md) | Array and Dictionary |
+| [overview/exceptions-and-errors.md](overview/exceptions-and-errors.md) | Exception handling |
+| [overview/annotations.md](overview/annotations.md) | Annotations |
+| [overview/compiler-options.md](overview/compiler-options.md) | Compiler options |
+| [overview/coding-conventions.md](overview/coding-conventions.md) | Coding conventions |
 
-### references/ — 레퍼런스 가이드
+### references/ — Reference Guides
 
-| 파일 | 내용 |
-|------|------|
-| [references/monkey-c-reference.md](references/monkey-c-reference.md) | Monkey C 언어 레퍼런스 (문법 전체) |
-| [references/jungle-reference.md](references/jungle-reference.md) | Jungle 빌드 설정 언어 |
-| [references/monkey-c-command-line-setup.md](references/monkey-c-command-line-setup.md) | CLI 빌드·시뮬레이터 |
-| [references/visual-studio-code-extension.md](references/visual-studio-code-extension.md) | VS Code 확장 사용법 |
-| [references/monkey-motion-reference.md](references/monkey-motion-reference.md) | 애니메이션 변환 도구 |
-| [references/monkey-graph-reference.md](references/monkey-graph-reference.md) | FIT 데이터 시각화 도구 |
+| File | Contents |
+|------|----------|
+| [references/monkey-c-reference.md](references/monkey-c-reference.md) | Full Monkey C language reference |
+| [references/jungle-reference.md](references/jungle-reference.md) | Jungle build configuration language |
+| [references/monkey-c-command-line-setup.md](references/monkey-c-command-line-setup.md) | CLI build and simulator |
+| [references/visual-studio-code-extension.md](references/visual-studio-code-extension.md) | VS Code extension usage |
+| [references/monkey-motion-reference.md](references/monkey-motion-reference.md) | Animation conversion tool |
+| [references/monkey-graph-reference.md](references/monkey-graph-reference.md) | FIT data visualization tool |
 
-### api-docs/ — Toybox API 레퍼런스 (330개 파일)
+### api-docs/ — Toybox API Reference (330 files)
 
-`api-docs/Toybox/<Module>.md` 또는 `api-docs/Toybox/<Module>/<Class>.md` 구조입니다.
-특정 클래스·메서드를 확인할 때는 해당 경로의 파일을 직접 Read하세요.
+Structured as `api-docs/Toybox/<Module>.md` or `api-docs/Toybox/<Module>/<Class>.md`.
+When looking up a specific class or method, Read the file at the corresponding path directly.
 
-주요 진입점:
-- [api-docs/index.md](api-docs/index.md) — Toybox 네임스페이스 전체 목록
-- [api-docs/class_list.md](api-docs/class_list.md) — 클래스·모듈 인덱스
-- [api-docs/method_list.md](api-docs/method_list.md) — 메서드 전체 목록
+Key entry points:
+- [api-docs/index.md](api-docs/index.md) — Full Toybox namespace listing
+- [api-docs/class_list.md](api-docs/class_list.md) — Class and module index
+- [api-docs/method_list.md](api-docs/method_list.md) — Full method listing
 
-자주 쓰는 모듈 예시:
+Commonly used modules:
 - `api-docs/Toybox/WatchUi.md`, `api-docs/Toybox/WatchUi/View.md`
 - `api-docs/Toybox/Graphics.md`, `api-docs/Toybox/Graphics/Dc.md`
 - `api-docs/Toybox/Application/AppBase.md`
