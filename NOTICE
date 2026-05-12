@@ -1,0 +1,69 @@
+rishubil/skills — Third-Party Content Notice
+============================================
+
+The MIT License in `LICENSE` applies only to the original work in this
+repository:
+
+  - Each skill's `SKILL.md` (instructions authored for this repository)
+  - Scripts and auxiliary code under `skills/*/scripts/`
+  - The marketplace manifest at `.claude-plugin/marketplace.json`
+  - The repository's own `README.md`, `CLAUDE.md`, this `NOTICE`, etc.
+
+The directories listed below contain documentation that was fetched or
+adapted from third-party sources. Those files are NOT covered by this
+repository's MIT License; they remain under the copyright and license of
+their original authors. Each directory contains its own `NOTICE.md`
+with details. Per-file YAML frontmatter (`source`, `copyright`,
+`license`, `license_url`, `retrieved`) records the same information at
+the document level.
+
+Third-party content in this repository
+--------------------------------------
+
+1. skills/monkey-c/overview/
+   skills/monkey-c/references/
+   skills/monkey-c/api-docs/
+     Source:    https://developer.garmin.com/connect-iq/
+     Copyright: (c) Garmin Ltd. or its subsidiaries
+     License:   No open license has been granted by Garmin for the
+                Connect IQ developer documentation. The files in these
+                directories are kept here as a local reference cache
+                solely to assist Claude during skill execution; they
+                are NOT redistributed under the MIT License of this
+                repository and are NOT relicensed in any way. If you
+                are the rights holder and wish these files removed,
+                please open an issue.
+     See:       skills/monkey-c/NOTICE.md
+
+2. skills/wordpress-classic-theme/references/
+     Source:    https://developer.wordpress.org/themes/
+     Copyright: (c) The WordPress contributors (see individual page
+                authors, e.g. Carolina Nymark and others)
+     License:   GNU General Public License, version 2 or (at your
+                option) any later version
+                https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+     See:       skills/wordpress-classic-theme/references/NOTICE.md
+
+3. skills/wordpress-meta-box/references/
+     Source:    https://docs.metabox.io/
+     Copyright: (c) MetaBox.io / eLightUp
+     License:   No open license has been granted by MetaBox.io for the
+                Meta Box documentation. The files in this directory
+                are kept here as a local reference cache solely to
+                assist Claude during skill execution; they are NOT
+                redistributed under the MIT License of this repository
+                and are NOT relicensed in any way. If you are the
+                rights holder and wish these files removed, please
+                open an issue.
+     See:       skills/wordpress-meta-box/references/NOTICE.md
+
+Notes on attribution vs. license
+--------------------------------
+
+Attribution alone does not grant a license. Where no open license has
+been granted by the upstream author (Garmin, MetaBox.io), inclusion in
+this repository should be understood as a non-commercial, internal
+reference cache for the purpose of assisting an AI agent at runtime.
+This notice exists to make the upstream copyright explicit and to
+avoid any implication that the upstream materials have been
+relicensed under MIT.

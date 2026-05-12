@@ -32,6 +32,38 @@ This repository is a personal collection of Agent Skills registered as a Claude 
 - If you delete or rename a skill folder, sync the corresponding plugin entry (or its `skills` array) in `marketplace.json`, and update the plugin list in `README.md`.
 - The `name` field in `SKILL.md` must match the folder name.
 
+## Third-Party Reference Content
+
+Some skills bundle a local cache of upstream documentation (e.g.
+`skills/monkey-c/{overview,references,api-docs}/`,
+`skills/wordpress-classic-theme/references/`,
+`skills/wordpress-meta-box/references/`). Those files are owned by
+their original authors and are not relicensed by this repository.
+
+When adding or refreshing such content:
+
+1. Record the source URL, copyright holder, and license in the YAML
+   frontmatter of every cached file:
+
+   ```yaml
+   ---
+   title: ...
+   source: <upstream URL>
+   copyright: "(c) <original author>"
+   license: <SPDX identifier, or "All rights reserved (no open license granted)">
+   license_url: <license text URL, if applicable>
+   retrieved: YYYY-MM-DD
+   ---
+   ```
+
+2. If the directory does not yet have a `NOTICE.md`, create one that
+   states the source, copyright, license, and that the repository's
+   MIT License does not apply to the files in the directory.
+3. Update the root `NOTICE` and the "License" section of `README.md`
+   when a new third-party source is introduced.
+4. Never overwrite or remove the upstream copyright/license metadata
+   without consulting the user.
+
 ## Committing and Pushing
 
 - Use the branch specified by the user; do not push directly to `main` without permission.

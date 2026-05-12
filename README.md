@@ -12,6 +12,7 @@ A personal collection of Claude [Agent Skills](https://agentskills.io). Can be r
 │   └── <skill-name>/
 │       └── SKILL.md
 ├── LICENSE
+├── NOTICE
 └── README.md
 ```
 
@@ -62,6 +63,35 @@ In addition to this repository, the following external skills are also used.
 | Marketplace | Plugin | Install Command |
 |---|---|---|
 | `forrestchang/andrej-karpathy-skills` | `andrej-karpathy-skills` | `/plugin marketplace add forrestchang/andrej-karpathy-skills` → `/plugin install andrej-karpathy-skills@karpathy-skills` |
+
+## License
+
+The original work in this repository — each skill's `SKILL.md`, the
+scripts under `skills/*/scripts/`, the marketplace manifest, and the
+top-level documentation — is released under the
+[MIT License](./LICENSE).
+
+Some skills additionally cache reference documentation that was
+fetched from third-party sources. **Those cached files are NOT covered
+by the MIT License above**; they remain under the copyright and
+license of their original authors. See [`NOTICE`](./NOTICE) for the
+full list, and the `NOTICE.md` inside each affected directory
+(`skills/monkey-c/NOTICE.md`,
+`skills/wordpress-classic-theme/references/NOTICE.md`,
+`skills/wordpress-meta-box/references/NOTICE.md`) for per-directory
+details.
+
+In short:
+
+| Path | License |
+| --- | --- |
+| Everything else | MIT (this repository) |
+| `skills/wordpress-classic-theme/references/**` | GPL-2.0-or-later (WordPress contributors) |
+| `skills/monkey-c/{overview,references,api-docs}/**` | All rights reserved — (c) Garmin Ltd. (local reference cache only) |
+| `skills/wordpress-meta-box/references/**` | All rights reserved — (c) MetaBox.io / eLightUp (local reference cache only) |
+
+If you are a rights holder for any of the cached third-party content
+and wish it removed, please open an issue.
 
 ## References
 
