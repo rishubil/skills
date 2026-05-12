@@ -2,7 +2,7 @@
 title: Toybox
 source: https://developer.garmin.com/connect-iq/api-docs/index.html
 copyright: "(c) Garmin Ltd. or its subsidiaries"
-license: "All rights reserved (no open license granted) — see ../../NOTICE.md"
+license: "All rights reserved (no open license granted) — see ../NOTICE.md"
 ---
 
 ## Module: Toybox

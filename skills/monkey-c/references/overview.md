@@ -2,7 +2,7 @@
 title: Reference Guides
 source: https://developer.garmin.com/connect-iq/reference-guides/
 copyright: "(c) Garmin Ltd. or its subsidiaries"
-license: "All rights reserved (no open license granted) — see ../../NOTICE.md"
+license: "All rights reserved (no open license granted) — see ../NOTICE.md"
 ---
 
 This section provides a reference guide for the tools that power the Connect IQ system.

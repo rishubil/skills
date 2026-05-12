@@ -1,7 +1,7 @@
 # Third-Party Content Notice — Meta Box documentation cache
 
-The files in this directory were fetched and adapted from the
-official Meta Box documentation site.
+The files under `references/` in this skill were fetched and adapted
+from the official Meta Box documentation site.
 
 | Field | Value |
 | --- | --- |
@@ -12,8 +12,8 @@ official Meta Box documentation site.
 ## What this means
 
 - The MIT License at the root of this repository (`/LICENSE`) does
-  **not** apply to the files in this directory.
-- These files are stored here only as a local reference cache to
+  **not** apply to the files under `references/`.
+- Those files are stored here only as a local reference cache to
   assist Claude during execution of the `wordpress-meta-box` skill.
 - They are **not** relicensed, redistributed for general use, or
   offered under any open-source license by this repository.

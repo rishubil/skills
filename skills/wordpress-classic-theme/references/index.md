@@ -4,7 +4,7 @@ source: https://developer.wordpress.org/themes/classic-themes/
 copyright: "(c) The WordPress contributors"
 license: GPL-2.0-or-later
 license_url: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-notice: ./NOTICE.md
+notice: ../NOTICE.md
 updated: 2026-05-11
 ---
 

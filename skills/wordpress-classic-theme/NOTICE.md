@@ -1,7 +1,7 @@
 # Third-Party Content Notice — WordPress Theme Developer Handbook
 
-The files in this directory are adaptations of pages from the
-WordPress Theme Developer Handbook.
+The files under `references/` in this skill are adaptations of pages
+from the WordPress Theme Developer Handbook.
 
 | Field | Value |
 | --- | --- |
@@ -13,10 +13,10 @@ WordPress Theme Developer Handbook.
 ## What this means
 
 - The MIT License at the root of this repository (`/LICENSE`) does
-  **not** apply to the files in this directory. These files remain
+  **not** apply to the files under `references/`. Those files remain
   under **GPL-2.0-or-later** as inherited from the upstream
   documentation.
-- If you redistribute these files (modified or not), you must
+- If you redistribute those files (modified or not), you must
   comply with the terms of the GPL: retain this notice, retain the
   attribution to the original WordPress contributors, and provide
   the same license terms to downstream recipients.
