@@ -1,0 +1,98 @@
+{
+  "expectations": [
+    {
+      "text": "[\"base\"] 또는 [base] 섹션이 존재함",
+      "passed": true,
+      "evidence": "profiles.toml line 4: '[base]' section is present"
+    },
+    {
+      "text": "base 프로필에 /mnt/nas/backup 저장소가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 5: 'repository = \"/mnt/nas/backup\"' inside [base]"
+    },
+    {
+      "text": "base 프로필에 /root/.restic-password가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 6: 'password-file = \"/root/.restic-password\"' inside [base]"
+    },
+    {
+      "text": "base 프로필에 keep-daily=7, keep-weekly=4, keep-monthly=12, after-backup=true가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 8-12: [base.retention] contains keep-daily = 7, keep-weekly = 4, keep-monthly = 12, after-backup = true — all four values match"
+    },
+    {
+      "text": "documents 프로필에 inherit = \"base\"가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 15: 'inherit = \"base\"' inside [documents]"
+    },
+    {
+      "text": "documents 프로필 backup 섹션에 /srv/documents가 source로 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 17-18: [documents.backup] contains 'source = [\"/srv/documents\"]'"
+    },
+    {
+      "text": "photos 프로필에 inherit = \"base\"가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 21: 'inherit = \"base\"' inside [photos]"
+    },
+    {
+      "text": "photos 프로필 backup 섹션에 /srv/photos가 source로 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 23-24: [photos.backup] contains 'source = [\"/srv/photos\"]'"
+    },
+    {
+      "text": "photos 프로필에 *.tmp 관련 exclude가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml line 25: 'exclude = [\"*.tmp\"]' inside [photos.backup]"
+    },
+    {
+      "text": "출력이 유효한 TOML 구조임",
+      "passed": true,
+      "evidence": "profiles.toml uses valid TOML syntax: standard section headers ([base], [base.retention], [documents], [documents.backup], [photos], [photos.backup]), key=value pairs with proper quoting and array syntax. No syntax violations detected on manual inspection."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {},
+  "timing": {},
+  "claims": [
+    {
+      "claim": "The file uses TOML format as requested",
+      "type": "factual",
+      "verified": true,
+      "evidence": "profiles.toml uses TOML syntax with bracketed section headers and key = value pairs"
+    },
+    {
+      "claim": "retention after-backup = true triggers automatic forget after backup",
+      "type": "factual",
+      "verified": true,
+      "evidence": "explanation.md states 'after-backup = true: 백업 완료 후 자동으로 forget(정리) 실행' which is correct resticprofile behavior"
+    },
+    {
+      "claim": "The [global] section is needed / optional",
+      "type": "quality",
+      "verified": true,
+      "evidence": "profiles.toml includes an empty [global] section with a comment '# Global settings (optional)'. It is harmless but unnecessary given the prompt didn't ask for it."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "The 'valid-toml-structure' assertion cannot be reliably verified without actually parsing the file with a TOML parser. A manual visual check may miss subtle syntax errors (e.g., duplicate keys, invalid escapes). Consider running 'python3 -c \"import tomllib; tomllib.load(open(f, 'rb'))\"' or a similar tool call in the grader to confirm machine-parseable TOML."
+      },
+      {
+        "reason": "No assertion checks that the retention section is placed under the 'base' profile rather than under a child profile (documents or photos). Placing retention under a child profile would still satisfy all individual key checks but would violate the inheritance-based design intent."
+      }
+    ],
+    "overall": "All assertions are meaningful and correctly discriminating for this task. Two minor gaps: TOML validity should be machine-verified rather than visually inspected, and the placement of the retention block (must be under base, not a child profile) is not explicitly asserted."
+  }
+}
