@@ -1,0 +1,465 @@
+{
+  "metadata": {
+    "skill_name": "resticprofile",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-05-13T00:43:29Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 10,
+        "failed": 0,
+        "total": 10,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "profiles.toml\uc5d0 repository = \"/mnt/backup/home\"\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 5: `repository = \"/mnt/backup/home\"`"
+        },
+        {
+          "text": "password-file = \"/etc/restic/password\"\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 6: `password-file = \"/etc/restic/password\"`"
+        },
+        {
+          "text": "backup source\uc5d0 \ud648 \ub514\ub809\ud1a0\ub9ac(/home \ub610\ub294 /home/user \ub4f1)\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 10: `source = [\"/home\"]`"
+        },
+        {
+          "text": ".cache \uad00\ub828 exclude \ud328\ud134\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 11: `exclude = [\"**/.cache\", \"**/node_modules\"]` \u2014 `**/.cache` pattern excludes .cache directories"
+        },
+        {
+          "text": "node_modules \uad00\ub828 exclude \ud328\ud134\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 11: `exclude = [\"**/.cache\", \"**/node_modules\"]` \u2014 `**/node_modules` pattern excludes node_modules directories"
+        },
+        {
+          "text": "\uc0c8\ubcbd 2\uc2dc schedule \uc124\uc815\uc774 \ud3ec\ud568\ub428 (02:00 \ub610\ub294 \uc720\uc0ac \ud45c\ud604)",
+          "passed": true,
+          "evidence": "profiles.toml line 12: `schedule = \"*-*-* 02:00:00\"` \u2014 systemd calendar expression for daily 2 AM"
+        },
+        {
+          "text": "keep-daily = 7\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 18: `keep-daily = 7`"
+        },
+        {
+          "text": "keep-weekly = 4\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 19: `keep-weekly = 4`"
+        },
+        {
+          "text": "after-backup = true\uac00 retention \uc139\uc158\uc5d0 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 20: `after-backup = true` is inside the `[home-backup.retention]` section"
+        },
+        {
+          "text": "\ucd9c\ub825\uc774 \uc62c\ubc14\ub978 TOML \uad6c\uc870\uc774\uba70 profiles.toml \ud30c\uc77c\ub85c \uc800\uc7a5\ub428",
+          "passed": true,
+          "evidence": "Output file is named `profiles.toml` and contains valid TOML with properly nested sections: [global], [\"home-backup\"], [home-backup.backup], [home-backup.retention]"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 10,
+        "failed": 0,
+        "total": 10,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "[\"base\"] \ub610\ub294 [base] \uc139\uc158\uc774 \uc874\uc7ac\ud568",
+          "passed": true,
+          "evidence": "profiles.toml line 1: [\"base\"] section header is present"
+        },
+        {
+          "text": "base \ud504\ub85c\ud544\uc5d0 /mnt/nas/backup \uc800\uc7a5\uc18c\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 2: repository = \"/mnt/nas/backup\" under the [\"base\"] section"
+        },
+        {
+          "text": "base \ud504\ub85c\ud544\uc5d0 /root/.restic-password\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 3: password-file = \"/root/.restic-password\" under the [\"base\"] section"
+        },
+        {
+          "text": "base \ud504\ub85c\ud544\uc5d0 keep-daily=7, keep-weekly=4, keep-monthly=12, after-backup=true\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 6-9: [base.retention] section contains keep-daily = 7, keep-weekly = 4, keep-monthly = 12, after-backup = true \u2014 all four required values present"
+        },
+        {
+          "text": "documents \ud504\ub85c\ud544\uc5d0 inherit = \"base\"\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 13: inherit = \"base\" under the [\"documents\"] section"
+        },
+        {
+          "text": "documents \ud504\ub85c\ud544 backup \uc139\uc158\uc5d0 /srv/documents\uac00 source\ub85c \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 14-15: [documents.backup] section with source = [\"/srv/documents\"]"
+        },
+        {
+          "text": "photos \ud504\ub85c\ud544\uc5d0 inherit = \"base\"\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 18: inherit = \"base\" under the [\"photos\"] section"
+        },
+        {
+          "text": "photos \ud504\ub85c\ud544 backup \uc139\uc158\uc5d0 /srv/photos\uac00 source\ub85c \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 19-20: [photos.backup] section with source = [\"/srv/photos\"]"
+        },
+        {
+          "text": "photos \ud504\ub85c\ud544\uc5d0 *.tmp \uad00\ub828 exclude\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 21: exclude = [\"*.tmp\"] under [photos.backup]"
+        },
+        {
+          "text": "\ucd9c\ub825\uc774 \uc720\ud6a8\ud55c TOML \uad6c\uc870\uc784",
+          "passed": true,
+          "evidence": "The TOML file uses valid quoted table headers ([\"base\"], [\"documents\"], [\"photos\"]), subtables ([base.retention], [documents.backup], [photos.backup]), and standard key = value pairs throughout. Structure is syntactically valid TOML."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "s3:s3.amazonaws.com/mycompany-backup\uac00 repository\ub85c \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 8: `repository = \"s3:s3.amazonaws.com/mycompany-backup\"`"
+        },
+        {
+          "text": "env \uc139\uc158\uc5d0 AWS_ACCESS_KEY_ID\uc640 AWS_SECRET_ACCESS_KEY\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 15-17: `[mycompany.env]` section contains `AWS_ACCESS_KEY_ID = \"${AWS_ACCESS_KEY_ID}\"` and `AWS_SECRET_ACCESS_KEY = \"${AWS_SECRET_ACCESS_KEY}\"`"
+        },
+        {
+          "text": "backup source\uc5d0 /var/www\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 20: `source = [\"/var/www\", \"/etc\"]`"
+        },
+        {
+          "text": "backup source\uc5d0 /etc\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 20: `source = [\"/var/www\", \"/etc\"]`"
+        },
+        {
+          "text": "\uc77c\uc694\uc77c \uc624\uc804 3\uc2dc schedule\uc774 \uc124\uc815\ub428 (Sun 03:00 \ub610\ub294 \uc720\uc0ac \ud45c\ud604)",
+          "passed": true,
+          "evidence": "profiles.toml line 24: `schedule = \"Sun *-*-* 03:00:00\"` \u2014 systemd OnCalendar format specifying every Sunday at 03:00"
+        },
+        {
+          "text": "schedule-permission = \"system\"\uc774 \ud3ec\ud568\ub428 (systemd \uc2dc\uc2a4\ud15c \uc2a4\ucf00\uc904\ub9c1)",
+          "passed": true,
+          "evidence": "profiles.toml line 25: `schedule-permission = \"system\"`"
+        },
+        {
+          "text": "run-after\uc5d0 healthchecks.io URL\uc774 \ud3ec\ud568\ub41c curl \uba85\ub839\uc5b4\uac00 \uc788\uc74c",
+          "passed": true,
+          "evidence": "profiles.toml lines 31-33: `run-after = [\"curl -fsS -m 10 --retry 3 'https://hc-ping.com/YOUR-UUID-HERE'\"]` \u2014 curl command with hc-ping.com URL (healthchecks.io ping domain)"
+        },
+        {
+          "text": "run-after-fail\uc5d0 healthchecks.io fail URL\uc774 \ud3ec\ud568\ub41c curl \uba85\ub839\uc5b4\uac00 \uc788\uc74c",
+          "passed": true,
+          "evidence": "profiles.toml lines 36-38: `run-after-fail = [\"curl -fsS -m 10 --retry 3 'https://hc-ping.com/YOUR-UUID-HERE/fail'\"]` \u2014 curl command with /fail endpoint"
+        },
+        {
+          "text": "\ucd9c\ub825\uc774 \uc720\ud6a8\ud55c TOML \uad6c\uc870\uc784",
+          "passed": true,
+          "evidence": "profiles.toml has correct TOML syntax: version key, nested tables using dot notation ([mycompany], [mycompany.env], [mycompany.backup], [mycompany.retention], [mycompany.check]), string values, boolean values, and array literals \u2014 all syntactically valid TOML."
+        }
+      ],
+      "notes": [
+        "UUID placeholder 'YOUR-UUID-HERE' in healthchecks.io URLs must be replaced with a real check UUID before use"
+      ]
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.9,
+        "passed": 9,
+        "failed": 1,
+        "total": 10,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "profiles.toml\uc5d0 repository = \"/mnt/backup/home\"\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 7: `repository = \"/mnt/backup/home\"` appears in the [default] section."
+        },
+        {
+          "text": "password-file = \"/etc/restic/password\"\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 8: `password-file = \"/etc/restic/password\"` appears in the [default] section."
+        },
+        {
+          "text": "backup source\uc5d0 \ud648 \ub514\ub809\ud1a0\ub9ac(/home \ub610\ub294 /home/user \ub4f1)\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 13: `source = [ \"~/\" ]` under [default.backup]. The tilde expands to the current user's home directory."
+        },
+        {
+          "text": ".cache \uad00\ub828 exclude \ud328\ud134\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 15: `\"**/.cache\"` is present in the exclude list under [default.backup]."
+        },
+        {
+          "text": "node_modules \uad00\ub828 exclude \ud328\ud134\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 16: `\"**/node_modules\"` is present in the exclude list under [default.backup]."
+        },
+        {
+          "text": "\uc0c8\ubcbd 2\uc2dc schedule \uc124\uc815\uc774 \ud3ec\ud568\ub428 (02:00 \ub610\ub294 \uc720\uc0ac \ud45c\ud604)",
+          "passed": true,
+          "evidence": "profiles.toml line 17: `schedule = \"02:00\"` under [default.backup]."
+        },
+        {
+          "text": "keep-daily = 7\uc774 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 22: `keep-daily = 7` under [default.forget]."
+        },
+        {
+          "text": "keep-weekly = 4\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 23: `keep-weekly = 4` under [default.forget]."
+        },
+        {
+          "text": "after-backup = true\uac00 retention \uc139\uc158\uc5d0 \ud3ec\ud568\ub428",
+          "passed": false,
+          "evidence": "The [default.forget] section does not contain `after-backup = true`. The output uses a separate scheduled forget at 02:30 instead of triggering retention automatically after each backup. The `after-backup` key is entirely absent from the file."
+        },
+        {
+          "text": "\ucd9c\ub825\uc774 \uc62c\ubc14\ub978 TOML \uad6c\uc870\uc774\uba70 profiles.toml \ud30c\uc77c\ub85c \uc800\uc7a5\ub428",
+          "passed": true,
+          "evidence": "The file is named profiles.toml and contains valid TOML: a top-level `version = \"1\"`, a [global] table, a [default] table with nested [default.backup] and [default.forget] subtables. No syntax errors are visible."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 10,
+        "failed": 0,
+        "total": 10,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "[\"base\"] \ub610\ub294 [base] \uc139\uc158\uc774 \uc874\uc7ac\ud568",
+          "passed": true,
+          "evidence": "profiles.toml line 4: '[base]' section is present"
+        },
+        {
+          "text": "base \ud504\ub85c\ud544\uc5d0 /mnt/nas/backup \uc800\uc7a5\uc18c\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 5: 'repository = \"/mnt/nas/backup\"' under [base]"
+        },
+        {
+          "text": "base \ud504\ub85c\ud544\uc5d0 /root/.restic-password\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 6: 'password-file = \"/root/.restic-password\"' under [base]"
+        },
+        {
+          "text": "base \ud504\ub85c\ud544\uc5d0 keep-daily=7, keep-weekly=4, keep-monthly=12, after-backup=true\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 8-12: [base.retention] contains 'keep-daily = 7', 'keep-weekly = 4', 'keep-monthly = 12', 'after-backup = true'"
+        },
+        {
+          "text": "documents \ud504\ub85c\ud544\uc5d0 inherit = \"base\"\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 15: 'inherit = \"base\"' under [documents]"
+        },
+        {
+          "text": "documents \ud504\ub85c\ud544 backup \uc139\uc158\uc5d0 /srv/documents\uac00 source\ub85c \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 17-18: '[documents.backup]' section contains 'source = [\"/srv/documents\"]'"
+        },
+        {
+          "text": "photos \ud504\ub85c\ud544\uc5d0 inherit = \"base\"\uac00 \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 21: 'inherit = \"base\"' under [photos]"
+        },
+        {
+          "text": "photos \ud504\ub85c\ud544 backup \uc139\uc158\uc5d0 /srv/photos\uac00 source\ub85c \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 23-24: '[photos.backup]' section contains 'source = [\"/srv/photos\"]'"
+        },
+        {
+          "text": "photos \ud504\ub85c\ud544\uc5d0 *.tmp \uad00\ub828 exclude\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 25: 'exclude = [\"*.tmp\"]' under [photos.backup]"
+        },
+        {
+          "text": "\ucd9c\ub825\uc774 \uc720\ud6a8\ud55c TOML \uad6c\uc870\uc784",
+          "passed": true,
+          "evidence": "The file uses correct TOML syntax: section headers in brackets, key = value pairs with proper types (strings in quotes, integers, booleans). Nested sections use dotted notation (e.g., [base.retention], [documents.backup]). No syntax errors observed."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 0.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "s3:s3.amazonaws.com/mycompany-backup\uac00 repository\ub85c \uc124\uc815\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 5: `repository = \"s3:s3.amazonaws.com/mycompany-backup\"` in the [default] section."
+        },
+        {
+          "text": "env \uc139\uc158\uc5d0 AWS_ACCESS_KEY_ID\uc640 AWS_SECRET_ACCESS_KEY\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml lines 9-11: `[default.env]` section contains both `AWS_ACCESS_KEY_ID = \"{{ .Env.AWS_ACCESS_KEY_ID }}\"` and `AWS_SECRET_ACCESS_KEY = \"{{ .Env.AWS_SECRET_ACCESS_KEY }}\"`."
+        },
+        {
+          "text": "backup source\uc5d0 /var/www\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 17: `source = [\"/var/www\", \"/etc\"]` includes /var/www."
+        },
+        {
+          "text": "backup source\uc5d0 /etc\uac00 \ud3ec\ud568\ub428",
+          "passed": true,
+          "evidence": "profiles.toml line 17: `source = [\"/var/www\", \"/etc\"]` includes /etc."
+        },
+        {
+          "text": "\uc77c\uc694\uc77c \uc624\uc804 3\uc2dc schedule\uc774 \uc124\uc815\ub428 (Sun 03:00 \ub610\ub294 \uc720\uc0ac \ud45c\ud604)",
+          "passed": true,
+          "evidence": "profiles.toml line 34: `schedule = \"Sun *-*-* 03:00:00\"` uses systemd calendar syntax for every Sunday at 03:00."
+        },
+        {
+          "text": "schedule-permission = \"system\"\uc774 \ud3ec\ud568\ub428 (systemd \uc2dc\uc2a4\ud15c \uc2a4\ucf00\uc904\ub9c1)",
+          "passed": true,
+          "evidence": "profiles.toml line 36: `permission = \"system\"` is set in the [backup-weekly.schedule] block. The assertion names it 'schedule-permission' but in resticprofile TOML the field is `permission` within a schedule block, which is the correct equivalent."
+        },
+        {
+          "text": "run-after\uc5d0 healthchecks.io URL\uc774 \ud3ec\ud568\ub41c curl \uba85\ub839\uc5b4\uac00 \uc788\uc74c",
+          "passed": true,
+          "evidence": "profiles.toml lines 25-27: `run-after` contains `curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/${HC_UUID}`, which is a healthchecks.io success ping URL."
+        },
+        {
+          "text": "run-after-fail\uc5d0 healthchecks.io fail URL\uc774 \ud3ec\ud568\ub41c curl \uba85\ub839\uc5b4\uac00 \uc788\uc74c",
+          "passed": true,
+          "evidence": "profiles.toml lines 29-31: `run-after-fail` contains `curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/${HC_UUID}/fail`, which is the healthchecks.io failure endpoint."
+        },
+        {
+          "text": "\ucd9c\ub825\uc774 \uc720\ud6a8\ud55c TOML \uad6c\uc870\uc784",
+          "passed": true,
+          "evidence": "The profiles.toml file uses correct TOML syntax: section headers in brackets, key = value pairs with proper quoting, nested sections ([default.env], [backup-weekly.backup], [backup-weekly.schedule]), and array values. No syntax errors are detectable."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.9667,
+        "stddev": 0.0577,
+        "min": 0.9,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.03",
+      "time_seconds": "+0.0",
+      "tokens": "+0"
+    }
+  },
+  "notes": []
+}

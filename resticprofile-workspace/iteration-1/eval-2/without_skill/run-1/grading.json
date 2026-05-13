@@ -57,8 +57,8 @@
     "total": 10,
     "pass_rate": 1.0
   },
-  "execution_metrics": null,
-  "timing": null,
+  "execution_metrics": {},
+  "timing": {},
   "claims": [
     {
       "claim": "The output defines three profiles: base, documents, and photos",
@@ -79,7 +79,11 @@
       "evidence": "exclude = [\"*.tmp\"] appears only under [photos.backup]; [documents.backup] has no exclude setting"
     }
   ],
-  "user_notes_summary": null,
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
   "eval_feedback": {
     "suggestions": [
       {

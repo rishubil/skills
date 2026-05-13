@@ -52,8 +52,8 @@
     "total": 9,
     "pass_rate": 1.0
   },
-  "execution_metrics": null,
-  "timing": null,
+  "execution_metrics": {},
+  "timing": {},
   "claims": [
     {
       "claim": "AWS credentials are read from the shell environment at runtime using Go template syntax",
@@ -80,7 +80,11 @@
       "evidence": "In resticprofile, `permission = \"system\"` within a schedule block directs resticprofile to install systemd units under /etc/systemd/system rather than the user session, which matches the stated intent."
     }
   ],
-  "user_notes_summary": null,
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
   "eval_feedback": {
     "suggestions": [
       {

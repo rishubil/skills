@@ -57,8 +57,8 @@
     "total": 10,
     "pass_rate": 1.0
   },
-  "execution_metrics": null,
-  "timing": null,
+  "execution_metrics": {},
+  "timing": {},
   "claims": [
     {
       "claim": "schedule = \"*-*-* 02:00:00\" is a valid systemd calendar expression for daily 2 AM",
@@ -85,7 +85,11 @@
       "evidence": "profiles.toml line 21: `prune = true`. This is a correct resticprofile setting that runs `restic prune` after `restic forget`, though it was not required by the prompt. It is a reasonable addition."
     }
   ],
-  "user_notes_summary": null,
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
   "eval_feedback": {
     "suggestions": [
       {

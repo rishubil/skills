@@ -52,8 +52,8 @@
     "total": 9,
     "pass_rate": 1.0
   },
-  "execution_metrics": null,
-  "timing": null,
+  "execution_metrics": {},
+  "timing": {},
   "claims": [
     {
       "claim": "AWS credentials are passed via environment variable interpolation using ${VAR} syntax",
@@ -82,7 +82,9 @@
   ],
   "user_notes_summary": {
     "uncertainties": [],
-    "needs_review": ["UUID placeholder 'YOUR-UUID-HERE' in healthchecks.io URLs must be replaced with a real check UUID before use"],
+    "needs_review": [
+      "UUID placeholder 'YOUR-UUID-HERE' in healthchecks.io URLs must be replaced with a real check UUID before use"
+    ],
     "workarounds": []
   },
   "eval_feedback": {

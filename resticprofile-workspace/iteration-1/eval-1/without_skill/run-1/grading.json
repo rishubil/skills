@@ -57,8 +57,8 @@
     "total": 10,
     "pass_rate": 0.9
   },
-  "execution_metrics": null,
-  "timing": null,
+  "execution_metrics": {},
+  "timing": {},
   "claims": [
     {
       "claim": "source = [\"~/\"] backs up the current user's home directory",
@@ -85,7 +85,11 @@
       "evidence": "Without `after-backup = true` in the forget section, retention is only triggered by its own separate schedule (02:30), not immediately after each backup run. If a backup runs outside the schedule, retention won't follow automatically."
     }
   ],
-  "user_notes_summary": null,
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
   "eval_feedback": {
     "suggestions": [
       {
