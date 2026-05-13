@@ -33,6 +33,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `wordpress-classic-theme` | WordPress classic (PHP) themes — template hierarchy, The Loop, widgets, Customizer API, etc. (block themes excluded) |
 | `commit` | Write commit messages in Conventional Commits format with a body explaining *why* the change was made. |
 | `plan-review` | Structured, opinionated review of an implementation plan — architecture, code quality, tests, performance, and debuggability. |
+| `resticprofile` | resticprofile configuration profile manager for restic — profile config files (TOML/YAML/JSON/HCL), commands, and scheduling. |
 
 ## Using in Claude Code
 
@@ -125,6 +126,7 @@ In short:
 | `skills/wordpress-classic-theme/references/**` | GPL-2.0-or-later (WordPress contributors) |
 | `skills/monkey-c/{overview,references,api-docs}/**` | All rights reserved — (c) Garmin Ltd. (local reference cache only) |
 | `skills/wordpress-meta-box/references/**` | All rights reserved — (c) MetaBox.io / eLightUp (local reference cache only) |
+| `skills/resticprofile/references/**` | MIT License — (c) resticprofile contributors (local reference cache) |
 
 If you are a rights holder for any of the cached third-party content
 and wish it removed, please open an issue.

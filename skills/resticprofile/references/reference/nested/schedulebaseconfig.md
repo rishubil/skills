@@ -1,0 +1,25 @@
+---
+title: ScheduleBaseConfig :: resticprofile
+source: https://creativeprojects.github.io/resticprofile/reference/nested/schedulebaseconfig/
+---
+
+## ScheduleBaseConfig
+
+#### Nested ScheduleBaseConfig
+
+| Name | Type | Default | Notes |
+| --- | --- | --- | --- |
+| **after-network-online** | `true` / `false` |  | Don’t start this schedule when the network is offline (supported in “systemd”) |
+| **capture-environment** | one or more `strings` | `RESTIC_*` | Set names (or glob expressions) of environment variables to capture during schedule creation. The captured environment is applied prior to “profile.env” when running the schedule. Whether capturing is supported depends on the type of scheduler being used (supported in “systemd” and “launchd”) |
+| **command-output** | `string` | `auto` | Sets the destination for command output (stderr/stdout). “log” sends output to the log file (if specified), “console” sends it to the console instead. “auto” sends it to “both” if console is a terminal otherwise to “log” only - see [configuration/logs/](https://creativeprojects.github.io/resticprofile/configuration/logs/). Is one of `auto`, `log`, `console`, `all` |
+| **hide-window** | `true` / `false` | `false` | Hide schedule window when running in foreground (Windows only) |
+| **ignore-on-battery** | `true` / `false` | `false` | Don’t start this schedule when running on battery |
+| **ignore-on-battery-less-than** | `integer` |  | Don’t start this schedule when running on battery and the state of charge is less than this percentage. **Examples**: `20`, `33`, `50`, `75` |
+| **lock-mode** | `string` | `default` | Specify how locks are used when running on schedule - see [schedules/configuration/](https://creativeprojects.github.io/resticprofile/schedules/configuration/). Is one of `default`, `fail`, `ignore` |
+| **lock-wait** | `integer` OR `duration` |  | Set the maximum time to wait for acquiring locks when running on schedule. **Examples**: `150s`, `15m`, `30m`, `45m`, `1h`, `2h30m` |
+| **log** | `string` |  | Redirect the output into a log file or to syslog when running on schedule - see [configuration/logs/](https://creativeprojects.github.io/resticprofile/configuration/logs/). **Examples**: `/resticprofile.log`, `syslog-tcp://syslog-server:514`, `syslog:server`, `syslog:` |
+| **permission** | `string` | `auto` | Specify whether the schedule runs with system or user privileges - see [schedules/configuration/](https://creativeprojects.github.io/resticprofile/schedules/configuration/). Is one of `auto`, `system`, `user`, `user_logged_on` |
+| **priority** | `string` | `standard` | Set the priority at which the schedule is run. Is one of `background`, `standard` |
+| **run-level** | `string` | `auto` | Specify the schedule privilege level (for Windows Task Scheduler only). Is one of `auto`, `lowest`, `highest` |
+| **start-when-available** | `true` / `false` | `false` | Start the task as soon as possible after a scheduled start is missed (Windows only) |
+| **systemd-drop-in-files** | one or more `strings` |  | Files containing systemd drop-in (override) files - see [schedules/systemd/](https://creativeprojects.github.io/resticprofile/schedules/systemd/) |
