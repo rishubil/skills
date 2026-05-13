@@ -1,0 +1,44 @@
+Split: 12 train, 8 test (holdout=0.4)
+
+============================================================
+Iteration 1/5
+Description: Specialist skill for resticprofile — a configuration profile manager for the restic backup tool. Use this skill whenever the user is configuring resticprofile profiles, writing or editing resticprofile config files (TOML/YAML/JSON/HCL), setting up backup schedules, running resticprofile commands, or troubleshooting restic backups managed by resticprofile. Trigger on any mention of resticprofile, restic profiles, restic config files, or restic backup automation.
+============================================================
+Train: 20/36 correct, precision=100% recall=11% accuracy=56% (62.6s)
+  [FAIL] rate=1/3 expected=True: resticprofile로 로컬 디스크 백업을 Docker 컨테이너 안에서 실행하고 싶어. 어떻게 설정해야 
+  [FAIL] rate=0/3 expected=True: resticprofile show 명령어가 뭘 보여줘? 설정 디버깅할 때 어떻게 쓰는 거야?
+  [FAIL] rate=0/3 expected=True: resticprofile retention 섹션에 after-backup = true 넣으면 자동으로 for
+  [FAIL] rate=0/3 expected=True: resticprofile로 B2 버킷 백업 설정하면서 healthchecks.io에 성공/실패 알림 보내는 
+  [FAIL] rate=0/3 expected=True: resticprofile로 /home 백업 설정 파일 만들어줘. 저장소는 sftp:backup-server:
+  [FAIL] rate=1/3 expected=True: resticprofile profiles.toml에서 base 프로필 상속해서 web-server랑 data
+  [PASS] rate=0/3 expected=False: Python으로 파일 시스템 백업 스크립트 짜줘. 변경된 파일만 증분 백업하고 오래된 건 삭제해줘.
+  [PASS] rate=0/3 expected=False: systemd 타이머 만들어서 백업 스크립트 매일 실행하려면 어떻게 해? .service랑 .timer 파일
+  [PASS] rate=0/3 expected=False: restic으로 S3 백업하는 스크립트 짜줘. 크론으로 매일 새벽 3시에 돌리고 싶어.
+  [PASS] rate=0/3 expected=False: Borg Backup 쓰는 중인데 restic으로 이전하려면 어떻게 해? 기존 백업 마이그레이션 방법 알려줘
+  [PASS] rate=0/3 expected=False: launchd로 macOS에서 백그라운드 작업 등록하는 방법 알려줘. plist 파일 어떻게 써?
+  [PASS] rate=0/3 expected=False: AWS S3 버킷 정책이랑 IAM 역할 설정하는 법 알려줘. 백업용으로 최소 권한 주고 싶어.
+Test : 13/24 correct, precision=100% recall=8% accuracy=54% (0.0s)
+  [FAIL] rate=1/3 expected=True: 내 resticprofile 설정이 있는데, schedule 등록하고 나서 resticprofile stat
+  [FAIL] rate=0/3 expected=True: resticprofile env 섹션에 AWS 키 넣으려고 하는데 ${AWS_ACCESS_KEY_ID} 이렇
+  [FAIL] rate=0/3 expected=True: resticprofile 스케줄 설정할 때 schedule-permission = system이랑 user 
+  [FAIL] rate=0/3 expected=True: resticprofile TOML 설정에서 프로필 이름에 하이픈 쓰면 따옴표로 감싸야 해? 아니면 그냥 [m
+  [PASS] rate=0/3 expected=False: 내 서버에서 rsync로 /var/www 백업 스크립트 만들어줘. 원격 서버로 매일 동기화하고 싶어.
+  [PASS] rate=0/3 expected=False: Ansible로 백업 자동화하려고 해. restic 설치하고 크론 설정하는 playbook 만들어줘.
+  [PASS] rate=0/3 expected=False: TOML 파일에서 배열이랑 테이블 문법이 헷갈려. [[array of tables]]랑 [table] 차이가
+  [PASS] rate=0/3 expected=False: restic init 하면 어떤 일이 벌어져? 저장소 구조는 어떻게 생겼어?
+
+Improving description...
+Proposed (37.0s): TRIGGER whenever 'resticprofile' appears anywhere in the user's query — in any language. resticprofile is a profile-based configuration manager and scheduler for the restic backup tool.
+
+Use for: creating or editing resticprofile config files (profiles.toml/yaml/json/hcl), the `show` command for debugging effective config, profile inheritance (`inherit` key), backup/retention/check sections, `after-backup` and forget behavior, run hooks (`run-before`/`run-after`/`run-after-fail`/`run-finally`), monitoring integrations (healthchecks.io pings), scheduling via systemd/launchd/cron/Task Scheduler, Docker or container deployments, and any resticprofile CLI command (schedule, status, profiles, init).
+
+SKIP for bare restic scripts (no resticprofile), Borg Backup, plain systemd timers, or other backup tools not involving resticprofile.
+
+============================================================
+Iteration 2/5
+Description: TRIGGER whenever 'resticprofile' appears anywhere in the user's query — in any language. resticprofile is a profile-based configuration manager and scheduler for the restic backup tool.
+
+Use for: creating or editing resticprofile config files (profiles.toml/yaml/json/hcl), the `show` command for debugging effective config, profile inheritance (`inherit` key), backup/retention/check sections, `after-backup` and forget behavior, run hooks (`run-before`/`run-after`/`run-after-fail`/`run-finally`), monitoring integrations (healthchecks.io pings), scheduling via systemd/launchd/cron/Task Scheduler, Docker or container deployments, and any resticprofile CLI command (schedule, status, profiles, init).
+
+SKIP for bare restic scripts (no resticprofile), Borg Backup, plain systemd timers, or other backup tools not involving resticprofile.
+============================================================

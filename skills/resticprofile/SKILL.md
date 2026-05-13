@@ -1,6 +1,6 @@
 ---
 name: resticprofile
-description: "Specialist skill for resticprofile — a configuration profile manager for the restic backup tool. Use this skill whenever the user is configuring resticprofile profiles, writing or editing resticprofile config files (TOML/YAML/JSON/HCL), setting up backup schedules, running resticprofile commands, or troubleshooting restic backups managed by resticprofile. Trigger on any mention of resticprofile, restic profiles, restic config files, or restic backup automation."
+description: "TRIGGER whenever 'resticprofile' appears anywhere in the user's query — in any language. resticprofile is a profile-based configuration manager and scheduler for the restic backup tool. Use for: creating or editing resticprofile config files (profiles.toml/yaml/json/hcl), the `show` command for debugging effective config, profile inheritance (`inherit` key), backup/retention/check sections, `after-backup` and forget behavior, run hooks (`run-before`/`run-after`/`run-after-fail`/`run-finally`), monitoring integrations (healthchecks.io pings), scheduling via systemd/launchd/cron/Task Scheduler, Docker or container deployments, and any resticprofile CLI command (schedule, status, profiles, init). SKIP for bare restic scripts (no resticprofile), Borg Backup, plain systemd timers, or other backup tools not involving resticprofile."
 ---
 
 # resticprofile
