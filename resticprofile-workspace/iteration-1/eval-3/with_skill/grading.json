@@ -1,0 +1,100 @@
+{
+  "expectations": [
+    {
+      "text": "s3:s3.amazonaws.com/mycompany-backup가 repository로 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 8: `repository = \"s3:s3.amazonaws.com/mycompany-backup\"`"
+    },
+    {
+      "text": "env 섹션에 AWS_ACCESS_KEY_ID와 AWS_SECRET_ACCESS_KEY가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 15-17: `[mycompany.env]` section contains `AWS_ACCESS_KEY_ID = \"${AWS_ACCESS_KEY_ID}\"` and `AWS_SECRET_ACCESS_KEY = \"${AWS_SECRET_ACCESS_KEY}\"`"
+    },
+    {
+      "text": "backup source에 /var/www가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml line 20: `source = [\"/var/www\", \"/etc\"]`"
+    },
+    {
+      "text": "backup source에 /etc가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml line 20: `source = [\"/var/www\", \"/etc\"]`"
+    },
+    {
+      "text": "일요일 오전 3시 schedule이 설정됨 (Sun 03:00 또는 유사 표현)",
+      "passed": true,
+      "evidence": "profiles.toml line 24: `schedule = \"Sun *-*-* 03:00:00\"` — systemd OnCalendar format specifying every Sunday at 03:00"
+    },
+    {
+      "text": "schedule-permission = \"system\"이 포함됨 (systemd 시스템 스케줄링)",
+      "passed": true,
+      "evidence": "profiles.toml line 25: `schedule-permission = \"system\"`"
+    },
+    {
+      "text": "run-after에 healthchecks.io URL이 포함된 curl 명령어가 있음",
+      "passed": true,
+      "evidence": "profiles.toml lines 31-33: `run-after = [\"curl -fsS -m 10 --retry 3 'https://hc-ping.com/YOUR-UUID-HERE'\"]` — curl command with hc-ping.com URL (healthchecks.io ping domain)"
+    },
+    {
+      "text": "run-after-fail에 healthchecks.io fail URL이 포함된 curl 명령어가 있음",
+      "passed": true,
+      "evidence": "profiles.toml lines 36-38: `run-after-fail = [\"curl -fsS -m 10 --retry 3 'https://hc-ping.com/YOUR-UUID-HERE/fail'\"]` — curl command with /fail endpoint"
+    },
+    {
+      "text": "출력이 유효한 TOML 구조임",
+      "passed": true,
+      "evidence": "profiles.toml has correct TOML syntax: version key, nested tables using dot notation ([mycompany], [mycompany.env], [mycompany.backup], [mycompany.retention], [mycompany.check]), string values, boolean values, and array literals — all syntactically valid TOML."
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": null,
+  "timing": null,
+  "claims": [
+    {
+      "claim": "AWS credentials are passed via environment variable interpolation using ${VAR} syntax",
+      "type": "factual",
+      "verified": true,
+      "evidence": "profiles.toml uses `\"${AWS_ACCESS_KEY_ID}\"` and `\"${AWS_SECRET_ACCESS_KEY}\"` — resticprofile expands these at runtime"
+    },
+    {
+      "claim": "The schedule uses systemd OnCalendar format",
+      "type": "factual",
+      "verified": true,
+      "evidence": "`Sun *-*-* 03:00:00` is a valid systemd OnCalendar expression"
+    },
+    {
+      "claim": "run-after and run-after-fail hooks use hc-ping.com (healthchecks.io ping domain)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "hc-ping.com is the correct healthchecks.io ping domain; /fail suffix on run-after-fail is correct"
+    },
+    {
+      "claim": "The TOML profile name is 'mycompany' (matching the S3 bucket prefix)",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Profile named [\"mycompany\"] is a reasonable choice matching the bucket name mycompany-backup"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": ["UUID placeholder 'YOUR-UUID-HERE' in healthchecks.io URLs must be replaced with a real check UUID before use"],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "env 섹션에 AWS_ACCESS_KEY_ID와 AWS_SECRET_ACCESS_KEY가 포함됨",
+        "reason": "The assertion passes even if the env section uses hardcoded dummy strings rather than environment variable references. A stronger assertion would require the values to use ${VAR} interpolation syntax so credentials are actually read from the environment at runtime, not baked into the config file."
+      },
+      {
+        "reason": "No assertion checks that run-after and run-after-fail hooks are placed under the [profile.backup] section (not at the global profile level). Placement matters — hooks at the wrong level won't fire on backup completion/failure."
+      }
+    ],
+    "overall": "Core assertions are well-targeted and cover all required features. Two gaps worth closing: (1) env values should be verified as interpolation references, not just key presence; (2) hook placement within the correct sub-section should be checked."
+  }
+}

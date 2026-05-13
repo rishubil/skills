@@ -1,0 +1,99 @@
+{
+  "expectations": [
+    {
+      "text": "[\"base\"] 또는 [base] 섹션이 존재함",
+      "passed": true,
+      "evidence": "profiles.toml line 1: [\"base\"] section header is present"
+    },
+    {
+      "text": "base 프로필에 /mnt/nas/backup 저장소가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 2: repository = \"/mnt/nas/backup\" under the [\"base\"] section"
+    },
+    {
+      "text": "base 프로필에 /root/.restic-password가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 3: password-file = \"/root/.restic-password\" under the [\"base\"] section"
+    },
+    {
+      "text": "base 프로필에 keep-daily=7, keep-weekly=4, keep-monthly=12, after-backup=true가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 6-9: [base.retention] section contains keep-daily = 7, keep-weekly = 4, keep-monthly = 12, after-backup = true — all four required values present"
+    },
+    {
+      "text": "documents 프로필에 inherit = \"base\"가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 13: inherit = \"base\" under the [\"documents\"] section"
+    },
+    {
+      "text": "documents 프로필 backup 섹션에 /srv/documents가 source로 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 14-15: [documents.backup] section with source = [\"/srv/documents\"]"
+    },
+    {
+      "text": "photos 프로필에 inherit = \"base\"가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 18: inherit = \"base\" under the [\"photos\"] section"
+    },
+    {
+      "text": "photos 프로필 backup 섹션에 /srv/photos가 source로 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 19-20: [photos.backup] section with source = [\"/srv/photos\"]"
+    },
+    {
+      "text": "photos 프로필에 *.tmp 관련 exclude가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml line 21: exclude = [\"*.tmp\"] under [photos.backup]"
+    },
+    {
+      "text": "출력이 유효한 TOML 구조임",
+      "passed": true,
+      "evidence": "The TOML file uses valid quoted table headers ([\"base\"], [\"documents\"], [\"photos\"]), subtables ([base.retention], [documents.backup], [photos.backup]), and standard key = value pairs throughout. Structure is syntactically valid TOML."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": null,
+  "timing": null,
+  "claims": [
+    {
+      "claim": "base 프로필이 공통 설정을 담는 기본 프로필로 사용됨",
+      "type": "quality",
+      "verified": true,
+      "evidence": "profiles.toml correctly places repository, password-file, and retention under [\"base\"], while documents and photos only specify their unique backup sources"
+    },
+    {
+      "claim": "documents와 photos 프로필이 base로부터 설정을 상속받음",
+      "type": "process",
+      "verified": true,
+      "evidence": "Both [\"documents\"] and [\"photos\"] sections contain inherit = \"base\""
+    },
+    {
+      "claim": "photos 프로필에만 *.tmp 제외 규칙이 적용됨 (documents에는 없음)",
+      "type": "quality",
+      "verified": true,
+      "evidence": "exclude = [\"*.tmp\"] appears only in [photos.backup], not in [documents.backup], matching the requirement"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "출력이 유효한 TOML 구조임",
+        "reason": "This assertion is checked only by human inspection. Consider adding a step that runs 'python3 -c \"import tomllib; tomllib.load(open(...)rb)\"' or a similar TOML parser to verify syntactic validity programmatically. The current check could pass even for subtly malformed TOML."
+      },
+      {
+        "reason": "No assertion verifies that the documents profile does NOT have an exclude directive. The requirement states only photos should exclude *.tmp files, but an output that incorrectly added exclude to documents would still pass all current assertions."
+      }
+    ],
+    "overall": "Assertions cover the required fields well and all pass with clear evidence. Two gaps worth addressing: a machine-parseable TOML validity check, and a negative assertion confirming documents does not inherit the *.tmp exclusion."
+  }
+}
