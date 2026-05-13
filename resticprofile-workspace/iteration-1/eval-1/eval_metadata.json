@@ -1,0 +1,17 @@
+{
+  "eval_id": 1,
+  "eval_name": "home-backup-daily-schedule",
+  "prompt": "resticprofile로 홈 디렉토리 백업 설정을 만들어줘. 저장소는 /mnt/backup/home이고, 패스워드 파일은 /etc/restic/password야. 매일 새벽 2시에 자동 백업이 되어야 하고, 최근 7일치 일별 백업과 4주치 주별 백업을 유지하면서 나머지는 정리해줘. .cache 폴더와 node_modules는 제외해줘.",
+  "assertions": [
+    {"name": "has-repository", "check": "profiles.toml에 repository = \"/mnt/backup/home\"이 포함됨"},
+    {"name": "has-password-file", "check": "password-file = \"/etc/restic/password\"이 포함됨"},
+    {"name": "has-source-home", "check": "backup source에 홈 디렉토리(/home 또는 /home/user 등)가 포함됨"},
+    {"name": "has-exclude-cache", "check": ".cache 관련 exclude 패턴이 포함됨"},
+    {"name": "has-exclude-node-modules", "check": "node_modules 관련 exclude 패턴이 포함됨"},
+    {"name": "has-schedule-2am", "check": "새벽 2시 schedule 설정이 포함됨 (02:00 또는 유사 표현)"},
+    {"name": "has-keep-daily-7", "check": "keep-daily = 7이 포함됨"},
+    {"name": "has-keep-weekly-4", "check": "keep-weekly = 4가 포함됨"},
+    {"name": "has-after-backup", "check": "after-backup = true가 retention 섹션에 포함됨"},
+    {"name": "valid-toml-structure", "check": "출력이 올바른 TOML 구조이며 profiles.toml 파일로 저장됨"}
+  ]
+}

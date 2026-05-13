@@ -1,0 +1,37 @@
+[global]
+  priority = "low"
+
+[default]
+  repository = "s3:s3.amazonaws.com/mycompany-backup"
+  password-file = "/etc/resticprofile/restic-password"
+  initialize = false
+
+  [default.env]
+    AWS_ACCESS_KEY_ID = "{{ .Env.AWS_ACCESS_KEY_ID }}"
+    AWS_SECRET_ACCESS_KEY = "{{ .Env.AWS_SECRET_ACCESS_KEY }}"
+
+[backup-weekly]
+  inherit = "default"
+
+  [backup-weekly.backup]
+    source = ["/var/www", "/etc"]
+    exclude-caches = true
+    tag = ["weekly", "automated"]
+
+    run-before = [
+      "curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/${HC_UUID}/start"
+    ]
+
+    run-after = [
+      "curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/${HC_UUID}"
+    ]
+
+    run-after-fail = [
+      "curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/${HC_UUID}/fail"
+    ]
+
+  [backup-weekly.schedule]
+    schedule = "Sun *-*-* 03:00:00"
+    log = "/var/log/resticprofile/backup-weekly.log"
+    permission = "system"
+    lock-mode = "default"

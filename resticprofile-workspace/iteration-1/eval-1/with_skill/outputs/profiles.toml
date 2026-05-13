@@ -1,0 +1,21 @@
+[global]
+  priority = "low"
+
+["home-backup"]
+  repository = "/mnt/backup/home"
+  password-file = "/etc/restic/password"
+  initialize = true
+
+  [home-backup.backup]
+    source = ["/home"]
+    exclude = ["**/.cache", "**/node_modules"]
+    schedule = "*-*-* 02:00:00"
+    schedule-permission = "system"
+    schedule-lock-mode = "default"
+    schedule-lock-wait = "30m"
+
+  [home-backup.retention]
+    keep-daily = 7
+    keep-weekly = 4
+    after-backup = true
+    prune = true

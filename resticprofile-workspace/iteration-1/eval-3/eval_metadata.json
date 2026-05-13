@@ -1,0 +1,16 @@
+{
+  "eval_id": 3,
+  "eval_name": "s3-backup-with-healthcheck-hooks",
+  "prompt": "resticprofile에서 S3 버킷(s3:s3.amazonaws.com/mycompany-backup)을 저장소로 사용하는 백업 설정을 만들어줘. AWS 자격증명은 환경변수로 넣어야 하고, /var/www와 /etc를 매주 일요일 오전 3시에 백업하게 해줘. 백업 성공/실패 여부를 healthchecks.io에 알리는 run-after와 run-after-fail 훅도 넣어줘. systemd로 스케줄링할 거야.",
+  "assertions": [
+    {"name": "has-s3-repository", "check": "s3:s3.amazonaws.com/mycompany-backup가 repository로 설정됨"},
+    {"name": "has-aws-env-section", "check": "env 섹션에 AWS_ACCESS_KEY_ID와 AWS_SECRET_ACCESS_KEY가 포함됨"},
+    {"name": "has-source-var-www", "check": "backup source에 /var/www가 포함됨"},
+    {"name": "has-source-etc", "check": "backup source에 /etc가 포함됨"},
+    {"name": "has-sunday-3am-schedule", "check": "일요일 오전 3시 schedule이 설정됨 (Sun 03:00 또는 유사 표현)"},
+    {"name": "has-schedule-permission-system", "check": "schedule-permission = \"system\"이 포함됨 (systemd 시스템 스케줄링)"},
+    {"name": "has-run-after-healthcheck", "check": "run-after에 healthchecks.io URL이 포함된 curl 명령어가 있음"},
+    {"name": "has-run-after-fail-healthcheck", "check": "run-after-fail에 healthchecks.io fail URL이 포함된 curl 명령어가 있음"},
+    {"name": "valid-toml-structure", "check": "출력이 유효한 TOML 구조임"}
+  ]
+}

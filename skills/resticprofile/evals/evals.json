@@ -1,0 +1,26 @@
+{
+  "skill_name": "resticprofile",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "resticprofile로 홈 디렉토리 백업 설정을 만들어줘. 저장소는 /mnt/backup/home이고, 패스워드 파일은 /etc/restic/password야. 매일 새벽 2시에 자동 백업이 되어야 하고, 최근 7일치 일별 백업과 4주치 주별 백업을 유지하면서 나머지는 정리해줘. .cache 폴더와 node_modules는 제외해줘.",
+      "expected_output": "profiles.toml 파일에 홈 디렉토리 백업 프로필이 포함되어야 함. backup 섹션에 source, exclude, schedule(매일 2시), retention 섹션에 keep-daily=7, keep-weekly=4, after-backup=true가 있어야 함.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "prompt": "우리 서버에 resticprofile 설정이 있는데, base 프로필에서 상속해서 documents랑 photos 두 개 프로필을 만들고 싶어. base에는 공통 저장소(/mnt/nas/backup)와 패스워드 파일(/root/.restic-password), retention 정책(daily 7, weekly 4, monthly 12, after-backup true)을 넣고, documents는 /srv/documents를 소스로, photos는 /srv/photos를 소스로 하되 *.tmp 파일은 제외해줘. TOML 형식으로 작성해줘.",
+      "expected_output": "base 프로필에 repository, password-file, retention이 정의되고, documents와 photos 프로필 각각에 inherit = 'base'가 설정됨. photos에는 exclude = ['**/*.tmp']가 포함됨.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 3,
+      "prompt": "resticprofile에서 S3 버킷(s3:s3.amazonaws.com/mycompany-backup)을 저장소로 사용하는 백업 설정을 만들어줘. AWS 자격증명은 환경변수로 넣어야 하고, /var/www와 /etc를 매주 일요일 오전 3시에 백업하게 해줘. 백업 성공/실패 여부를 healthchecks.io에 알리는 run-after와 run-after-fail 훅도 넣어줘. systemd로 스케줄링할 거야.",
+      "expected_output": "S3 저장소와 env 섹션(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)이 포함된 프로필. backup 섹션에 source=['/var/www','/etc'], schedule이 일요일 3시, run-after와 run-after-fail에 curl healthchecks.io 명령어가 포함됨.",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}

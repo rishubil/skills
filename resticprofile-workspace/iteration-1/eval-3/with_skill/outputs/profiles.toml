@@ -1,0 +1,49 @@
+version = "1"
+
+[global]
+  priority = "low"
+  ionice = true
+
+["mycompany"]
+  repository = "s3:s3.amazonaws.com/mycompany-backup"
+  password-file = "/etc/resticprofile/password"
+  initialize = true
+
+  # AWS credentials are read from environment variables.
+  # Set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in the environment
+  # before running resticprofile, or in the systemd service override.
+  [mycompany.env]
+    AWS_ACCESS_KEY_ID = "${AWS_ACCESS_KEY_ID}"
+    AWS_SECRET_ACCESS_KEY = "${AWS_SECRET_ACCESS_KEY}"
+
+  [mycompany.backup]
+    source = ["/var/www", "/etc"]
+    exclude = ["**/.cache", "**/node_modules", "**/__pycache__"]
+
+    # Run every Sunday at 03:00 (systemd OnCalendar format)
+    schedule = "Sun *-*-* 03:00:00"
+    schedule-permission = "system"
+    schedule-after-network-online = true
+    schedule-lock-wait = "30m"
+    schedule-log = "syslog:"
+
+    # Notify healthchecks.io on success
+    run-after = [
+      "curl -fsS -m 10 --retry 3 'https://hc-ping.com/YOUR-UUID-HERE'"
+    ]
+
+    # Notify healthchecks.io on failure
+    run-after-fail = [
+      "curl -fsS -m 10 --retry 3 'https://hc-ping.com/YOUR-UUID-HERE/fail'"
+    ]
+
+  [mycompany.retention]
+    keep-daily = 7
+    keep-weekly = 8
+    keep-monthly = 12
+    keep-yearly = 2
+    after-backup = true
+
+  [mycompany.check]
+    schedule = "Mon *-*-* 04:00:00"
+    schedule-permission = "system"
