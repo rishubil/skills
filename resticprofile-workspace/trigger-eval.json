@@ -1,0 +1,82 @@
+[
+  {
+    "query": "resticprofile로 /home 백업 설정 파일 만들어줘. 저장소는 sftp:backup-server:/backups/home이고 패스워드는 파일로 관리할 거야. 주중 매일 밤 11시에 자동으로 돌아가야 해.",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile profiles.toml에서 base 프로필 상속해서 web-server랑 database 두 개 프로필 만드는 법 알려줘. 공통 설정은 base에 넣고 싶어.",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile 스케줄 설정할 때 schedule-permission = system이랑 user 차이가 뭐야? systemd로 등록하려면 어떻게 해?",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile env 섹션에 AWS 키 넣으려고 하는데 ${AWS_ACCESS_KEY_ID} 이렇게 써도 돼? 아니면 다른 문법 써야 해?",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile로 B2 버킷 백업 설정하면서 healthchecks.io에 성공/실패 알림 보내는 설정 예시 만들어줘. run-after랑 run-after-fail 어떻게 쓰는지 모르겠어.",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile show 명령어가 뭘 보여줘? 설정 디버깅할 때 어떻게 쓰는 거야?",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile retention 섹션에 after-backup = true 넣으면 자동으로 forget이 돌아가는 거야? prune은 따로 해야 해?",
+    "should_trigger": true
+  },
+  {
+    "query": "내 resticprofile 설정이 있는데, schedule 등록하고 나서 resticprofile status 하면 아무것도 안 나와. 뭐가 문제일까?",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile TOML 설정에서 프로필 이름에 하이픈 쓰면 따옴표로 감싸야 해? 아니면 그냥 [my-profile] 해도 돼?",
+    "should_trigger": true
+  },
+  {
+    "query": "resticprofile로 로컬 디스크 백업을 Docker 컨테이너 안에서 실행하고 싶어. 어떻게 설정해야 해?",
+    "should_trigger": true
+  },
+  {
+    "query": "restic으로 S3 백업하는 스크립트 짜줘. 크론으로 매일 새벽 3시에 돌리고 싶어.",
+    "should_trigger": false
+  },
+  {
+    "query": "systemd 타이머 만들어서 백업 스크립트 매일 실행하려면 어떻게 해? .service랑 .timer 파일 예시 알려줘.",
+    "should_trigger": false
+  },
+  {
+    "query": "restic init 하면 어떤 일이 벌어져? 저장소 구조는 어떻게 생겼어?",
+    "should_trigger": false
+  },
+  {
+    "query": "TOML 파일에서 배열이랑 테이블 문법이 헷갈려. [[array of tables]]랑 [table] 차이가 뭐야?",
+    "should_trigger": false
+  },
+  {
+    "query": "Ansible로 백업 자동화하려고 해. restic 설치하고 크론 설정하는 playbook 만들어줘.",
+    "should_trigger": false
+  },
+  {
+    "query": "내 서버에서 rsync로 /var/www 백업 스크립트 만들어줘. 원격 서버로 매일 동기화하고 싶어.",
+    "should_trigger": false
+  },
+  {
+    "query": "AWS S3 버킷 정책이랑 IAM 역할 설정하는 법 알려줘. 백업용으로 최소 권한 주고 싶어.",
+    "should_trigger": false
+  },
+  {
+    "query": "launchd로 macOS에서 백그라운드 작업 등록하는 방법 알려줘. plist 파일 어떻게 써?",
+    "should_trigger": false
+  },
+  {
+    "query": "Python으로 파일 시스템 백업 스크립트 짜줘. 변경된 파일만 증분 백업하고 오래된 건 삭제해줘.",
+    "should_trigger": false
+  },
+  {
+    "query": "Borg Backup 쓰는 중인데 restic으로 이전하려면 어떻게 해? 기존 백업 마이그레이션 방법 알려줘.",
+    "should_trigger": false
+  }
+]
