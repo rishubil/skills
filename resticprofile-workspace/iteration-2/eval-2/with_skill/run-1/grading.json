@@ -1,0 +1,99 @@
+{
+  "expectations": [
+    {
+      "text": "[\"base\"] 또는 [base] 섹션이 존재함",
+      "passed": true,
+      "evidence": "profiles.toml line 1: [\"base\"] section header is present at the top of the file."
+    },
+    {
+      "text": "base 프로필에 /mnt/nas/backup 저장소가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 2: repository = \"/mnt/nas/backup\" is set directly under the [\"base\"] section."
+    },
+    {
+      "text": "base 프로필에 /root/.restic-password가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 3: password-file = \"/root/.restic-password\" is present in the base profile."
+    },
+    {
+      "text": "base 프로필에 keep-daily=7, keep-weekly=4, keep-monthly=12, after-backup=true가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 5-9: [base.retention] contains keep-daily=7, keep-weekly=4, keep-monthly=12, and after-backup=true — all four values are correct."
+    },
+    {
+      "text": "documents 프로필에 inherit = \"base\"가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 12: inherit = \"base\" appears directly under the [\"documents\"] section header."
+    },
+    {
+      "text": "documents 프로필 backup 섹션에 /srv/documents가 source로 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 14-15: [documents.backup] section contains source = [\"/srv/documents\"]."
+    },
+    {
+      "text": "photos 프로필에 inherit = \"base\"가 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 18: inherit = \"base\" appears directly under the [\"photos\"] section header."
+    },
+    {
+      "text": "photos 프로필 backup 섹션에 /srv/photos가 source로 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 20-22: [photos.backup] section contains source = [\"/srv/photos\"]."
+    },
+    {
+      "text": "photos 프로필에 *.tmp 관련 exclude가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml line 22: exclude = [\"*.tmp\"] is present inside [photos.backup], which is the correct location per resticprofile documentation."
+    },
+    {
+      "text": "출력이 유효한 TOML 구조임",
+      "passed": true,
+      "evidence": "The file uses consistent TOML syntax: quoted table headers ([\"base\"], [\"documents\"], [\"photos\"]), dotted sub-tables ([base.retention], [documents.backup], [photos.backup]), and correct key = value assignments. No syntax errors are apparent."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {},
+  "timing": {},
+  "claims": [
+    {
+      "claim": "The output is a TOML format resticprofile configuration with base, documents, and photos profiles",
+      "type": "factual",
+      "verified": true,
+      "evidence": "profiles.toml contains exactly three profile sections ([\"base\"], [\"documents\"], [\"photos\"]) in valid TOML format."
+    },
+    {
+      "claim": "exclude must be placed inside [profile.backup] section, not at the top-level profile",
+      "type": "factual",
+      "verified": true,
+      "evidence": "explanation.md explicitly notes this placement rule, and profiles.toml correctly places exclude = [\"*.tmp\"] inside [photos.backup]."
+    },
+    {
+      "claim": "documents profile inherits repository, password, and retention settings from base",
+      "type": "quality",
+      "verified": true,
+      "evidence": "inherit = \"base\" is set in both documents and photos profiles, and the base profile contains all three shared settings (repository, password-file, retention)."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "출력이 유효한 TOML 구조임",
+        "reason": "This assertion is verified by visual inspection only — there is no programmatic TOML parse check. A file with a subtle syntax error could still look plausible to a human reviewer. Consider adding a step that runs `toml-lint` or `python3 -c \"import tomllib; tomllib.load(open('profiles.toml','rb'))\"` on the output file to confirm it parses without error."
+      },
+      {
+        "reason": "No assertion verifies that the `[global]` or `[version]` header is absent/present as appropriate, or that there is no spurious top-level key that would be silently ignored by resticprofile. The current assertions check key content but not that the file is free of extra junk sections."
+      }
+    ],
+    "overall": "All 10 assertions pass and are well-targeted to the task requirements. The only gap worth addressing is machine-verifiable TOML validity rather than relying on visual inspection."
+  }
+}
