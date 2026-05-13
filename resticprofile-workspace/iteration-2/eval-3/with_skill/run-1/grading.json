@@ -1,0 +1,103 @@
+{
+  "expectations": [
+    {
+      "text": "s3:s3.amazonaws.com/mycompany-backup가 repository로 설정됨",
+      "passed": true,
+      "evidence": "profiles.toml line 6: `repository    = \"s3:s3.amazonaws.com/mycompany-backup\"`"
+    },
+    {
+      "text": "env 섹션에 AWS_ACCESS_KEY_ID와 AWS_SECRET_ACCESS_KEY가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml lines 14-16: `[\"mycompany-backup\".env]` section contains `AWS_ACCESS_KEY_ID = \"{{ .Env.AWS_ACCESS_KEY_ID }}\"` and `AWS_SECRET_ACCESS_KEY = \"{{ .Env.AWS_SECRET_ACCESS_KEY }}\"`"
+    },
+    {
+      "text": "backup source에 /var/www가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml line 19: `source  = [\"/var/www\", \"/etc\"]`"
+    },
+    {
+      "text": "backup source에 /etc가 포함됨",
+      "passed": true,
+      "evidence": "profiles.toml line 19: `source  = [\"/var/www\", \"/etc\"]`"
+    },
+    {
+      "text": "일요일 오전 3시 schedule이 설정됨 (Sun 03:00 또는 유사 표현)",
+      "passed": true,
+      "evidence": "profiles.toml line 20: `schedule            = \"Sun *-*-* 03:00:00\"` — valid systemd OnCalendar expression for every Sunday at 03:00"
+    },
+    {
+      "text": "schedule-permission = \"system\"이 포함됨 (systemd 시스템 스케줄링)",
+      "passed": true,
+      "evidence": "profiles.toml line 21: `schedule-permission = \"system\"`"
+    },
+    {
+      "text": "run-after에 healthchecks.io URL이 포함된 curl 명령어가 있음",
+      "passed": true,
+      "evidence": "profiles.toml line 25: `run-after      = [\"curl -fsS -m 10 --retry 3 'https://hc-ping.com/<YOUR-UUID>'\"]` — curl command with healthchecks.io (hc-ping.com) URL"
+    },
+    {
+      "text": "run-after-fail에 healthchecks.io fail URL이 포함된 curl 명령어가 있음",
+      "passed": true,
+      "evidence": "profiles.toml line 26: `run-after-fail = [\"curl -fsS -m 10 --retry 3 'https://hc-ping.com/<YOUR-UUID>/fail'\"]` — curl command with /fail endpoint"
+    },
+    {
+      "text": "출력이 유효한 TOML 구조임",
+      "passed": true,
+      "evidence": "The file uses consistent TOML syntax: dotted-key table headers (e.g. `[\"mycompany-backup\".backup]`), string values, arrays, and booleans are all properly formatted. No obvious TOML syntax errors were found."
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {},
+  "timing": {},
+  "claims": [
+    {
+      "claim": "env 섹션이 Go 템플릿 문법({{ .Env.VAR }})을 사용해 환경변수를 전달함",
+      "type": "factual",
+      "verified": true,
+      "evidence": "profiles.toml lines 15-16 use `{{ .Env.AWS_ACCESS_KEY_ID }}` and `{{ .Env.AWS_SECRET_ACCESS_KEY }}` — correct resticprofile template syntax for reading host environment variables"
+    },
+    {
+      "claim": "run-before 훅도 healthchecks.io /start 엔드포인트를 호출함",
+      "type": "factual",
+      "verified": true,
+      "evidence": "profiles.toml line 24: `run-before = [\"curl -fsS -m 10 --retry 3 'https://hc-ping.com/<YOUR-UUID>/start'\"]` — added beyond what was required, correctly signals start"
+    },
+    {
+      "claim": "schedule 표현식이 systemd OnCalendar 형식임",
+      "type": "factual",
+      "verified": true,
+      "evidence": "\"Sun *-*-* 03:00:00\" is a valid systemd OnCalendar expression meaning every Sunday at 03:00:00"
+    },
+    {
+      "claim": "retention 정책이 설정됨",
+      "type": "quality",
+      "verified": true,
+      "evidence": "profiles.toml lines 28-32 define keep-weekly=8, keep-monthly=12, keep-yearly=3, after-backup=true — sensible defaults added beyond requirements"
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "run-after에 healthchecks.io URL이 포함된 curl 명령어가 있음",
+        "reason": "The assertion passes even if the URL uses the /fail endpoint or /start endpoint — it only checks for the hc-ping.com domain. Consider asserting that run-after uses the base UUID URL (no suffix) to confirm it signals success rather than failure."
+      },
+      {
+        "reason": "No assertion verifies that the env section uses resticprofile Go template syntax ({{ .Env.VAR }}) rather than shell substitution (${VAR}). Shell syntax is a common mistake that silently fails at runtime. Adding this check would catch a meaningful class of errors."
+      },
+      {
+        "reason": "No assertion checks that the schedule format is a valid systemd OnCalendar expression. A cron expression (e.g. '0 3 * * 0') would satisfy the current assertion text but would not work with resticprofile's systemd integration."
+      }
+    ],
+    "overall": "All 9 assertions pass and the output is high quality. The main gaps are: the run-after URL endpoint distinction is not checked, the env variable syntax correctness is not verified, and the schedule format compatibility with systemd is not tested."
+  }
+}
