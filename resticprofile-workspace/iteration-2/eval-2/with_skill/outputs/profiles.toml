@@ -1,0 +1,22 @@
+["base"]
+  repository    = "/mnt/nas/backup"
+  password-file = "/root/.restic-password"
+
+  [base.retention]
+    keep-daily   = 7
+    keep-weekly  = 4
+    keep-monthly = 12
+    after-backup = true
+
+["documents"]
+  inherit = "base"
+
+  [documents.backup]
+    source = ["/srv/documents"]
+
+["photos"]
+  inherit = "base"
+
+  [photos.backup]
+    source  = ["/srv/photos"]
+    exclude = ["*.tmp"]

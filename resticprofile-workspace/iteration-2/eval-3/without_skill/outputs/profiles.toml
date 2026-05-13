@@ -1,0 +1,30 @@
+[global]
+  # Use systemd for scheduling
+  scheduler = "systemd"
+
+[default]
+  repository = "s3:s3.amazonaws.com/mycompany-backup"
+  password-file = "/etc/resticprofile/password"
+
+  # AWS credentials via environment variables
+  [default.env]
+    AWS_ACCESS_KEY_ID = "{{ .Env.AWS_ACCESS_KEY_ID }}"
+    AWS_SECRET_ACCESS_KEY = "{{ .Env.AWS_SECRET_ACCESS_KEY }}"
+
+  [default.backup]
+    source = ["/var/www", "/etc"]
+
+    # Run after successful backup: notify healthchecks.io
+    run-after = [
+      "curl -fsS --retry 3 https://hc-ping.com/${HC_UUID}"
+    ]
+
+    # Run after failed backup: notify healthchecks.io with failure signal
+    run-after-fail = [
+      "curl -fsS --retry 3 https://hc-ping.com/${HC_UUID}/fail"
+    ]
+
+    # Schedule: every Sunday at 03:00
+    schedule = "Sun *-*-* 03:00:00"
+    schedule-permission = "system"
+    schedule-log = "/var/log/resticprofile/backup.log"

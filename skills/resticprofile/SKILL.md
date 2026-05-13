@@ -112,11 +112,25 @@ Within a profile, you configure restic repository settings and sub-sections for 
 - `initialize` — auto-init repo if missing (bool)
 - `inherit` — inherit from another profile name
 - `cache-dir` — restic cache directory
-- `env` — environment variables (subsection)
+- `env` — environment variables passed to restic (subsection)
+
+> **Profile name quoting**: Profile names containing hyphens or dots must be quoted: `["my-profile"]`. Simple alphanumeric names can omit quotes: `[myprofile]`.
+
+**env subsection** — passes environment variables to restic. Values are Go templates, not shell:
+
+```toml
+[myprofile.env]
+  # Correct: Go template syntax resolves at runtime
+  AWS_ACCESS_KEY_ID     = "{{ .Env.AWS_ACCESS_KEY_ID }}"
+  AWS_SECRET_ACCESS_KEY = "{{ .Env.AWS_SECRET_ACCESS_KEY }}"
+  # Wrong: ${VAR} is shell syntax and will NOT be expanded by resticprofile
+```
+
+Other available template variables: `{{ .Profile.Name }}`, `{{ .Hostname }}`, `{{ .ConfigDir }}`, `{{ .Env.HOME | or "/fallback" }}`
 
 **Backup section** (`[profile.backup]`):
 - `source` — list of paths to back up
-- `exclude` — glob patterns to exclude
+- `exclude` — glob patterns to exclude (must be inside `[profile.backup]`, not `[profile]`)
 - `exclude-file` — path to exclude file
 - `schedule` — when to run (see Scheduling below)
 - `schedule-permission` — `"auto"` | `"user"` | `"system"` | `"user_logged_on"`
@@ -125,7 +139,7 @@ Within a profile, you configure restic repository settings and sub-sections for 
 
 **Retention section** (`[profile.retention]`):
 - `keep-last` / `keep-hourly` / `keep-daily` / `keep-weekly` / `keep-monthly` / `keep-yearly`
-- `after-backup = true` — run forget immediately after each backup
+- `after-backup = true` — run forget immediately after each backup (preferred over a separate scheduled forget)
 
 ## Common Commands
 
@@ -188,15 +202,39 @@ resticprofile integrates with the OS scheduler:
 | Windows | Task Scheduler |
 | Fallback | crond |
 
-Schedule expressions (set on `backup`, `check`, etc.):
+**Flat style** — `schedule` and `schedule-*` keys directly in the command section:
 
 ```toml
-schedule = "daily"             # Every day
-schedule = "weekly"            # Every week  
-schedule = "hourly"            # Every hour
-schedule = "Mon..Fri *-*-* 20:00:00"   # Systemd calendar notation
-schedule = "@daily"            # Cron-style
-schedule = "0 20 * * 1-5"     # Cron expression
+[myprofile.backup]
+  schedule            = "Sun *-*-* 03:00:00"   # Systemd OnCalendar
+  schedule-permission = "system"
+  schedule-lock-wait  = "30m"
+  schedule-log        = "syslog:"
+```
+
+**Nested ScheduleConfig block** — alternative with different key names (`at`, `permission`, `lock-wait`, `log`):
+
+```toml
+[myprofile.backup]
+  # ... other backup settings ...
+
+[myprofile.backup.schedule]
+  at         = "Sun *-*-* 03:00:00"
+  permission = "system"
+  lock-wait  = "30m"
+  log        = "/var/log/resticprofile.log"
+```
+
+Common schedule expressions:
+
+```toml
+schedule = "daily"                    # Every day at midnight
+schedule = "weekly"                   # Every week
+schedule = "hourly"                   # Every hour
+schedule = "*-*-* 02:00:00"          # Daily at 02:00
+schedule = "Mon..Fri *-*-* 20:00:00" # Weekdays at 20:00
+schedule = "Sun *-*-* 03:00:00"      # Sundays at 03:00
+schedule = "0 20 * * 1-5"            # Cron expression
 ```
 
 For per-scheduler details read the files under `references/schedules/`.
@@ -224,27 +262,32 @@ For per-scheduler details read the files under `references/schedules/`.
     after-backup = true
 ```
 
-### S3/Cloud Backup with Schedule
+### S3/Cloud Backup with Schedule and Monitoring
 
 ```toml
 ["s3-backup"]
-  repository = "s3:s3.amazonaws.com/my-restic-bucket"
+  repository    = "s3:s3.amazonaws.com/my-restic-bucket"
   password-file = "/etc/restic/password"
+  initialize    = true
 
+  # Use Go template syntax {{ .Env.VAR }} — not shell ${VAR}
   [s3-backup.env]
-    AWS_ACCESS_KEY_ID = "your-key-id"
-    AWS_SECRET_ACCESS_KEY = "your-secret"
+    AWS_ACCESS_KEY_ID     = "{{ .Env.AWS_ACCESS_KEY_ID }}"
+    AWS_SECRET_ACCESS_KEY = "{{ .Env.AWS_SECRET_ACCESS_KEY }}"
 
   [s3-backup.backup]
-    source = ["/home", "/etc", "/var/www"]
+    source  = ["/home", "/etc", "/var/www"]
     exclude = ["**/.cache", "**/node_modules", "**/__pycache__"]
-    schedule = "daily"
+    schedule            = "daily"
     schedule-permission = "system"
-    run-after-fail = ["curl -fsS -m 10 'https://hc-ping.com/your-uuid/fail'"]
+    # healthchecks.io monitoring: signal start, success, and failure
+    run-before     = ["curl -fsS -m 10 --retry 3 'https://hc-ping.com/your-uuid/start'"]
+    run-after      = ["curl -fsS -m 10 --retry 3 'https://hc-ping.com/your-uuid'"]
+    run-after-fail = ["curl -fsS -m 10 --retry 3 'https://hc-ping.com/your-uuid/fail'"]
 
   [s3-backup.retention]
-    keep-daily = 7
-    keep-weekly = 8
+    keep-daily   = 7
+    keep-weekly  = 8
     keep-monthly = 12
     after-backup = true
 
@@ -284,3 +327,6 @@ For per-scheduler details read the files under `references/schedules/`.
 - For systemd scheduling with `schedule-permission = "system"`, run `resticprofile schedule` as root.
 - `--dry-run` flag is available for most commands to preview what would happen.
 - For all available flags per command, read `references/reference/profile/<command>.md`.
+- **`exclude` must go inside `[profile.backup]`**, not at the `[profile]` level — placing it at the wrong level silently ignores it.
+- **`after-backup = true`** in `[profile.retention]` is the resticprofile-native way to run forget after each backup. Avoid creating a separate scheduled forget section — it's redundant and harder to maintain.
+- Environment variable values in the `env` section use Go template syntax: `{{ .Env.MY_VAR }}`. Shell-style `${MY_VAR}` is not expanded by resticprofile.

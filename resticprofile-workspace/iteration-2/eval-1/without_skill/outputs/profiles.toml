@@ -1,0 +1,27 @@
+version = "1"
+
+[global]
+  # Global settings
+
+[default]
+  repository = "/mnt/backup/home"
+  password-file = "/etc/restic/password"
+  initialize = true
+
+  [default.backup]
+    source = [ "~/" ]
+    exclude = [
+      "~/.cache",
+      "**/node_modules",
+    ]
+    schedule = "02:00"
+    schedule-permission = "system"
+    schedule-log = "/var/log/resticprofile-backup.log"
+
+  [default.forget]
+    keep-daily = 7
+    keep-weekly = 4
+    prune = true
+    schedule = "02:30"
+    schedule-permission = "system"
+    schedule-log = "/var/log/resticprofile-forget.log"
