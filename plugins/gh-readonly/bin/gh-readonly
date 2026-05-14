@@ -8,15 +8,15 @@ if [[ "${TRACE-0}" == "1" ]]; then
 fi
 
 if [[ "${1-}" =~ ^-*h(elp)?$ ]]; then
-    echo 'Usage: ./scripts/gh-readonly.sh <gh-subcommand> [args...]
+    echo 'Usage: gh-readonly <gh-subcommand> [args...]
 
 Wrapper around the gh CLI that only allows read-only operations.
 Blocks any command that could modify remote state (create, edit, delete, merge, etc.).
 
 Examples:
-  ./scripts/gh-readonly.sh issue list
-  ./scripts/gh-readonly.sh pr view 123
-  ./scripts/gh-readonly.sh api repos/owner/repo/pulls
+  gh-readonly issue list
+  gh-readonly pr view 123
+  gh-readonly api repos/owner/repo/pulls
 
 Exit codes:
   0  Command executed successfully
@@ -28,7 +28,7 @@ fi
 
 if [[ $# -lt 1 ]]; then
     echo "Error: no subcommand provided" >&2
-    echo "Usage: ./scripts/gh-readonly.sh <gh-subcommand> [args...]" >&2
+    echo "Usage: gh-readonly <gh-subcommand> [args...]" >&2
     exit 2
 fi
 
