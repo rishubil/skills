@@ -3,11 +3,10 @@ name: landing-protocol-creator
 description: >
   Analyze the current project's tech stack and generate a project-specific
   landing-protocol skill at .claude/skills/landing-protocol/SKILL.md.
-  Use when the user asks to create a landing protocol, generate a landing
-  protocol, or set up a landing protocol for this project.
-  Trigger phrases: "landing protocol 만들어줘", "landing protocol 생성",
-  "create landing protocol", "generate landing protocol",
-  "/landing-protocol-creator".
+  Use when the user asks to create, generate, or set up a landing protocol
+  for the current project.
+  Trigger phrases: "create landing protocol", "generate landing protocol",
+  "set up landing protocol", "/landing-protocol-creator".
 ---
 
 # Landing Protocol Creator
