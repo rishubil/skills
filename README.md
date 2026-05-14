@@ -131,6 +131,16 @@ In short:
 If you are a rights holder for any of the cached third-party content
 and wish it removed, please open an issue.
 
+## CLAUDE.md Template
+
+[`CLAUDE.md.template`](./CLAUDE.md.template) is a starting point for your project's `CLAUDE.md`. It includes recommended agent instructions such as:
+
+- Keeping responses honest and direct
+- Red-Green TDD workflow (find tests → red → green → verify)
+- Always reading documentation before exploring code
+
+Copy it to your project root and rename it to `CLAUDE.md`, then adjust to fit your project's needs.
+
 ## References
 
 - [Agent Skills official spec](https://agentskills.io)

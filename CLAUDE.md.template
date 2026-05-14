@@ -1,0 +1,31 @@
+# Agent Instructions
+
+**CRITICAL RULES:**
+- Put the truth and the correct answer above all else. Feel free to criticize user's opinion, and do not use false empathy with the user. Keep a dry and realistic perspective.
+- 사용자와 대화할 때에는 한국어를 사용하세요. 코드 및 문서 작업은 영어로 하세요. plan mode에서도 한국어로 계획을 작성해야 합니다. 사용자가 영어로 말하더라도 항상 한국어로 답변하세요.
+- Use WebFetch proactively. Always check the latest development docs and search for anything unclear.
+
+## Test Strategy: Red-Green TDD
+
+**Before starting work, check and run existing tests:**
+
+1. **Find test files**: use Glob/Grep to find test files related to the code you are modifying
+2. **Run existing tests**: run tests before starting work to understand the current state (pass/fail)
+3. **Establish a baseline**: know which tests pass before your changes so you can detect regressions
+
+**Apply Red-Green TDD to modification tasks:**
+
+- **Red**: first write or identify a test that verifies the behaviour to be changed (failing state)
+- **Green**: implement the minimum code needed to make the test pass
+- **Verify**: confirm that all pre-existing tests still pass
+
+**When modifying code with no tests:**
+- Add tests before modifying if possible
+- If adding tests is out of scope, state it explicitly: "This change has no tests"
+
+
+## Task Start Rules
+
+**Always check documentation before exploring code (Grep/Glob/Read):**
+
+**Never skip content just because you recognize the title or heading** — you must read the content to give accurate answers
