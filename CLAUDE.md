@@ -32,7 +32,11 @@ This repository is a personal collection of Agent Skills registered as a Claude 
 1. Create `plugins/<new-plugin-name>/skills/<new-skill-name>/SKILL.md`.
    - `name` must match the folder name, using only lowercase letters and hyphens.
    - `description` should convey both "what it does" and "when to use it" in one or two sentences.
-2. **You must** add a new plugin entry to the `plugins` array in `.claude-plugin/marketplace.json`.
+2. **You must** create `plugins/<new-plugin-name>/README.md`.
+   - Required sections: plugin name (h1), a short "What it does" description, Installation (with the `/plugin install` command), and Usage.
+   - Add a "Source" section if the plugin is based on an external technique or article.
+   - Add a "Scripts" table if the plugin includes hook or helper scripts.
+3. **You must** add a new plugin entry to the `plugins` array in `.claude-plugin/marketplace.json`.
    - `name` matches the plugin folder name under `plugins/`.
    - `description` should be concise — roughly one sentence in English.
    - `source` is `"./plugins/<new-plugin-name>"`, `strict` is `false`.
