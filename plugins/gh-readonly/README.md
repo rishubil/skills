@@ -1,30 +1,17 @@
 # gh-readonly
 
-A Claude Code plugin that intercepts direct read-only `gh` CLI calls and
-redirects Claude to a safe, allowlist-based wrapper instead.
+A Claude Code plugin that intercepts direct read-only `gh` CLI calls and redirects Claude to a safe, allowlist-based wrapper instead.
 
 ## What it does
 
-When installed, this plugin adds a **PreToolUse hook** that fires before
-every Bash command Claude runs. If Claude is about to call `gh` directly
-for a read-only operation (listing issues, viewing PRs, checking CI, etc.),
-the hook blocks the call and suggests using the wrapper instead:
+When installed, this plugin adds a **PreToolUse hook** that fires before every Bash command Claude runs. If Claude is about to call `gh` directly for a read-only operation (listing issues, viewing PRs, checking CI, etc.), the hook blocks the call and suggests using the wrapper instead:
 
 ```
 Hint: `gh issue` is a read-only command. Use `gh-readonly` instead of `gh` directly.
   Example: gh-readonly issue list
 ```
 
-Write commands (`gh issue create`, `gh pr merge`, etc.) pass through the
-hook untouched and still require explicit user permission.
-
-## Scripts
-
-| Path | Purpose |
-|---|---|
-| `bin/gh-readonly` | Wrapper: runs `gh` only for allowlisted read-only subcommands. Added to `PATH` automatically while the plugin is enabled. |
-| `scripts/gh-hook.sh` | Dispatcher: tries `uv`, then `python3`, then `python` (3.x) |
-| `scripts/gh-hook.py` | Hook logic: detects read-only `gh` calls, outputs hint, exits 2 |
+Write commands (`gh issue create`, `gh pr merge`, etc.) pass through the hook untouched and still require explicit user permission.
 
 ## Installation
 
@@ -33,12 +20,11 @@ hook untouched and still require explicit user permission.
 /plugin install gh-readonly@rishubil-skills
 ```
 
-## Recommended: allow `gh-readonly` in settings.json
+## Usage
 
-After installation, Claude will still be prompted for permission each time
-it calls `gh-readonly`. To pre-approve the wrapper and suppress these
-prompts, add a permission rule to your `~/.claude/settings.json` (or a
-project-level `.claude/settings.json`):
+After installation, Claude automatically uses `gh-readonly` instead of `gh` for read-only operations. No extra prompting is needed — the hook fires silently on every Bash call.
+
+To suppress the per-call permission prompt for the wrapper itself, add a rule to your `~/.claude/settings.json` (or a project-level `.claude/settings.json`):
 
 ```json
 {
@@ -50,16 +36,11 @@ project-level `.claude/settings.json`):
 }
 ```
 
-Because `bin/gh-readonly` is added to the Bash tool's `PATH` by the plugin,
-the command is always called simply as `gh-readonly` — no path prefix needed.
-The pattern `"Bash(gh-readonly*)"` covers all subcommand invocations.
+Because `bin/gh-readonly` is added to the Bash tool's `PATH` by the plugin, the command is always called simply as `gh-readonly` — no path prefix needed. The pattern `"Bash(gh-readonly*)"` covers all subcommand invocations.
 
-This does **not** grant access to arbitrary `gh` write commands — the wrapper
-enforces the read-only allowlist internally and exits 1 for any write operation.
+This does **not** grant access to arbitrary `gh` write commands — the wrapper enforces the read-only allowlist internally and exits 1 for any write operation.
 
-> **Tip**: Run `/fewer-permission-prompts` in your Claude Code session to
-> automatically generate a tailored allowlist based on your recent command
-> history.
+> **Tip**: Run `/fewer-permission-prompts` in your Claude Code session to automatically generate a tailored allowlist based on your recent command history.
 
 ## Read-only allowlist
 
@@ -85,6 +66,14 @@ The wrapper allows the following `gh` subcommands:
 | `ruleset` | `check`, `list`, `view` |
 | `extension` | `list`, `search` |
 | top-level | `status`, `completion`, `browse` |
+
+## Scripts
+
+| Path | Purpose |
+|---|---|
+| `bin/gh-readonly` | Wrapper: runs `gh` only for allowlisted read-only subcommands. Added to `PATH` automatically while the plugin is enabled. |
+| `scripts/gh-hook.sh` | Dispatcher: tries `uv`, then `python3`, then `python` (3.x) |
+| `scripts/gh-hook.py` | Hook logic: detects read-only `gh` calls, outputs hint, exits 2 |
 
 ## Runtime requirements
 
