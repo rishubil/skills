@@ -7,20 +7,25 @@ A personal collection of Claude [Agent Skills](https://agentskills.io). Can be r
 ```
 .
 ├── .claude-plugin/
-│   └── marketplace.json   # Marketplace definition (one plugin per skill)
-├── skills/                # Skill collection (each folder is one skill)
-│   └── <skill-name>/
-│       └── SKILL.md
+│   └── marketplace.json        # Marketplace definition (one plugin per skill)
+├── plugins/                    # Plugin collection (each folder is one plugin root)
+│   └── <plugin-name>/
+│       ├── skills/
+│       │   └── <skill-name>/
+│       │       └── SKILL.md
+│       ├── hooks/              # (optional) plugin-scoped hooks
+│       │   └── hooks.json
+│       └── scripts/            # (optional) plugin scripts
 ├── LICENSE
 ├── NOTICE
 └── README.md
 ```
 
-A skill only needs a `skills/<skill-name>/SKILL.md` file to work. You can freely add scripts or auxiliary files to the same folder as needed.
+Each plugin lives in its own directory under `plugins/`, so hooks and other components are scoped to that plugin only.
 
 This marketplace registers **one skill as one plugin**, so users can pick and install only the skills they need.
 
-> **When adding a new skill, add an entry to the `plugins` array in `.claude-plugin/marketplace.json` and register the `./skills/<skill-name>` path in that entry's `skills` field.**
+> **When adding a new skill, create `plugins/<plugin-name>/skills/<skill-name>/SKILL.md` and add an entry to `.claude-plugin/marketplace.json` with `source: "./plugins/<plugin-name>"`.**
 
 ## Available Plugins
 
@@ -34,6 +39,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `commit` | Write commit messages in Conventional Commits format with a body explaining *why* the change was made. |
 | `plan-review` | Structured, opinionated review of an implementation plan — architecture, code quality, tests, performance, and debuggability. |
 | `resticprofile` | resticprofile configuration profile manager for restic — profile config files (TOML/YAML/JSON/HCL), commands, and scheduling. |
+| `gh-readonly` | PreToolUse hook that blocks direct read-only `gh` calls and redirects them to an allowlist-based wrapper. |
 
 ## Using in Claude Code
 
@@ -54,6 +60,7 @@ Example:
 ```
 /plugin install shell-script@rishubil-skills
 /plugin install commit@rishubil-skills
+/plugin install gh-readonly@rishubil-skills
 ```
 
 After installation, mention the skill name or description and Claude will automatically use the relevant skill.
@@ -105,7 +112,7 @@ In addition to this repository, the following external skills are also used.
 ## License
 
 The original work in this repository — each skill's `SKILL.md`, the
-scripts under `skills/*/scripts/`, the marketplace manifest, and the
+scripts under `plugins/*/scripts/`, the marketplace manifest, and the
 top-level documentation — is released under the
 [MIT License](./LICENSE).
 
@@ -113,20 +120,18 @@ Some skills additionally cache reference documentation that was
 fetched from third-party sources. **Those cached files are NOT covered
 by the MIT License above**; they remain under the copyright and
 license of their original authors. See [`NOTICE`](./NOTICE) for the
-full list, and the `NOTICE.md` at each affected skill's top level
-(`skills/monkey-c/NOTICE.md`,
-`skills/wordpress-classic-theme/NOTICE.md`,
-`skills/wordpress-meta-box/NOTICE.md`) for per-skill details.
+full list, and the `NOTICE.md` at each affected skill's top level for
+per-skill details.
 
 In short:
 
 | Path | License |
 | --- | --- |
 | Everything else | MIT (this repository) |
-| `skills/wordpress-classic-theme/references/**` | GPL-2.0-or-later (WordPress contributors) |
-| `skills/monkey-c/{overview,references,api-docs}/**` | All rights reserved — (c) Garmin Ltd. (local reference cache only) |
-| `skills/wordpress-meta-box/references/**` | All rights reserved — (c) MetaBox.io / eLightUp (local reference cache only) |
-| `skills/resticprofile/references/**` | MIT License — (c) resticprofile contributors (local reference cache) |
+| `plugins/wordpress-classic-theme/skills/wordpress-classic-theme/references/**` | GPL-2.0-or-later (WordPress contributors) |
+| `plugins/monkey-c/skills/monkey-c/{overview,references,api-docs}/**` | All rights reserved — (c) Garmin Ltd. (local reference cache only) |
+| `plugins/wordpress-meta-box/skills/wordpress-meta-box/references/**` | All rights reserved — (c) MetaBox.io / eLightUp (local reference cache only) |
+| `plugins/resticprofile/skills/resticprofile/references/**` | MIT License — (c) resticprofile contributors (local reference cache) |
 
 If you are a rights holder for any of the cached third-party content
 and wish it removed, please open an issue.

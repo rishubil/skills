@@ -5,7 +5,7 @@ The MIT License in `LICENSE` applies only to the original work in this
 repository:
 
   - Each skill's `SKILL.md` (instructions authored for this repository)
-  - Scripts and auxiliary code under `skills/*/scripts/`
+  - Scripts and auxiliary code under `plugins/*/scripts/`
   - The marketplace manifest at `.claude-plugin/marketplace.json`
   - The repository's own `README.md`, `CLAUDE.md`, this `NOTICE`, etc.
 
@@ -20,9 +20,9 @@ the document level.
 Third-party content in this repository
 --------------------------------------
 
-1. skills/monkey-c/overview/
-   skills/monkey-c/references/
-   skills/monkey-c/api-docs/
+1. plugins/monkey-c/skills/monkey-c/overview/
+   plugins/monkey-c/skills/monkey-c/references/
+   plugins/monkey-c/skills/monkey-c/api-docs/
      Source:    https://developer.garmin.com/connect-iq/
      Copyright: (c) Garmin Ltd. or its subsidiaries
      License:   No open license has been granted by Garmin for the
@@ -33,18 +33,18 @@ Third-party content in this repository
                 repository and are NOT relicensed in any way. If you
                 are the rights holder and wish these files removed,
                 please open an issue.
-     See:       skills/monkey-c/NOTICE.md
+     See:       plugins/monkey-c/skills/monkey-c/NOTICE.md
 
-2. skills/wordpress-classic-theme/references/
+2. plugins/wordpress-classic-theme/skills/wordpress-classic-theme/references/
      Source:    https://developer.wordpress.org/themes/
      Copyright: (c) The WordPress contributors (see individual page
                 authors, e.g. Carolina Nymark and others)
      License:   GNU General Public License, version 2 or (at your
                 option) any later version
                 https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-     See:       skills/wordpress-classic-theme/NOTICE.md
+     See:       plugins/wordpress-classic-theme/skills/wordpress-classic-theme/NOTICE.md
 
-3. skills/wordpress-meta-box/references/
+3. plugins/wordpress-meta-box/skills/wordpress-meta-box/references/
      Source:    https://docs.metabox.io/
      Copyright: (c) MetaBox.io / eLightUp
      License:   No open license has been granted by MetaBox.io for the
@@ -55,14 +55,14 @@ Third-party content in this repository
                 and are NOT relicensed in any way. If you are the
                 rights holder and wish these files removed, please
                 open an issue.
-     See:       skills/wordpress-meta-box/NOTICE.md
+     See:       plugins/wordpress-meta-box/skills/wordpress-meta-box/NOTICE.md
 
-4. skills/resticprofile/references/
+4. plugins/resticprofile/skills/resticprofile/references/
      Source:    https://creativeprojects.github.io/resticprofile/
      Copyright: (c) 2019-present resticprofile contributors (Creative Projects)
      License:   MIT License
                 https://github.com/creativeprojects/resticprofile/blob/master/LICENSE
-     See:       skills/resticprofile/NOTICE.md
+     See:       plugins/resticprofile/skills/resticprofile/NOTICE.md
 
 Notes on attribution vs. license
 --------------------------------
