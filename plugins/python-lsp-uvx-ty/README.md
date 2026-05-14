@@ -1,39 +1,34 @@
 # python-lsp-uvx-ty
 
-Configure and use [ty](https://docs.astral.sh/ty/) — Astral's extremely fast Python type checker
-and language server — as an LSP server launched via `uvx ty server`.
+A Claude Code LSP plugin that registers [ty](https://docs.astral.sh/ty/) as a Python language server via `uvx ty server`.
 
 ## What it does
 
-Bundles a `.lsp.json` that wires `uvx ty server` into Claude Code's LSP integration, so Claude
-receives real-time diagnostics, hover info, go-to-definition, and completions for Python files as
-soon as the plugin is installed — no separate binary installation required.
+When installed, this plugin provides real-time code intelligence for `.py` and `.pyi` files by wiring `uvx ty server` into Claude Code's LSP integration:
 
+- **Instant diagnostics**: type errors and warnings appear immediately after each edit
+- **Code navigation**: go to definition, find references, hover documentation
+- **Completions**: auto-import and symbol suggestions
 
-## Scripts
-
-| File | Purpose |
-| --- | --- |
-| `.lsp.json` | Registers `uvx ty server` as the LSP server for `.py` and `.pyi` files |
+No separate binary installation is required — `uvx` fetches and runs `ty` on demand.
 
 ## Installation
 
 ```
+/plugin marketplace add rishubil/skills
 /plugin install python-lsp-uvx-ty@rishubil-skills
 ```
 
 ## Usage
 
-After installing the plugin, ask Claude to:
+After installation, Claude Code automatically starts `uvx ty server` when you open a Python file. No extra configuration is needed.
 
-- Set up ty as the LSP server in your editor configuration
-- Create or update `ty.toml` / `pyproject.toml` type-checking rules
-- Run `uvx ty check` with the right flags for your CI or local workflow
-- Explain ty language server initialization and settings options
+## Scripts
 
-## Source
+| Path | Purpose |
+|---|---|
+| `.lsp.json` | Registers `uvx ty server` as the LSP server for `.py` and `.pyi` files |
 
-- [ty documentation](https://docs.astral.sh/ty/)
-- [ty editor setup](https://docs.astral.sh/ty/editors/)
-- [ty CLI reference](https://docs.astral.sh/ty/reference/cli/)
-- [ty editor settings reference](https://docs.astral.sh/ty/reference/editor-settings/)
+## Runtime requirements
+
+- [`uv`](https://docs.astral.sh/uv/) must be installed and available in `PATH`
