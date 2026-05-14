@@ -103,6 +103,13 @@
       "skills": [
         "./skills/uv"
       ]
+    },
+    {
+      "name": "python-lsp-uvx-ty",
+      "description": "LSP plugin that registers uvx ty server as a Python language server in Claude Code, providing real-time diagnostics and code intelligence for .py and .pyi files.",
+      "source": "./plugins/python-lsp-uvx-ty",
+      "strict": false,
+      "skills": []
     }
   ]
 }
