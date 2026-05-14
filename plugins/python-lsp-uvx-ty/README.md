@@ -9,8 +9,6 @@ Bundles a `.lsp.json` that wires `uvx ty server` into Claude Code's LSP integrat
 receives real-time diagnostics, hover info, go-to-definition, and completions for Python files as
 soon as the plugin is installed — no separate binary installation required.
 
-Also provides a skill with editor-specific LSP setup instructions (VS Code, Neovim, Zed, PyCharm,
-Emacs), `ty.toml` / `pyproject.toml` configuration guidance, and `ty check` CLI usage.
 
 ## Scripts
 
