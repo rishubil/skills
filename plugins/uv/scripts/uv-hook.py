@@ -32,13 +32,23 @@ if re.search(r"\buv\s+(?:run\s+)?pip3?\s+install\b", command):
     print(hint, file=sys.stderr)
     sys.exit(2)
 
-# Check 2: direct python/python3/pip/pip3 (not via uv run) → suggest uv run
+# Check 2: direct python/python3/pip/pip3 (not via uv run)
 if re.match(r"\buv\s+run\b", command):
     sys.exit(0)
 
-if re.search(r"(?:^|&&|\|\||;|\|)\s*(?:python3?|pip3?)\b", command):
+if re.search(r"(?:^|&&|\|\||;|\|)\s*pip3?\b", command):
+    packages = re.sub(r".*\bpip3?\s+install\b\s*", "", command).strip()
+    packages = re.sub(r"\s*-[a-zA-Z-]+(?:\s+\S+)?", "", packages).strip()
+    hint = "Hint: direct pip detected. Use `uv add` instead —"
+    hint += " this project manages dependencies through uv, not pip."
+    if packages:
+        hint += f"\n  Suggested command: uv add {packages}"
+    print(hint, file=sys.stderr)
+    sys.exit(2)
+
+if re.search(r"(?:^|&&|\|\||;|\|)\s*python3?\b", command):
     print(
-        "Hint: direct python/pip detected. Use `uv run python` instead —"
+        "Hint: direct python detected. Use `uv run python` instead —"
         " this project requires all Python commands to go through uv.",
         file=sys.stderr,
     )
