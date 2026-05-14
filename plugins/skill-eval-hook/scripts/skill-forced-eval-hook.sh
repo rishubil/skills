@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Source: https://scottspence.com/posts/how-to-make-claude-code-skills-activate-reliably
 set -o errexit
 set -o nounset
 set -o pipefail
