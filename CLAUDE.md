@@ -1,6 +1,16 @@
-# CLAUDE.md
+# Agent Instructions
 
 This repository is a personal collection of Agent Skills registered as a Claude Code plugin marketplace (`rishubil-skills`). Follow these rules when working here.
+
+**CRITICAL RULES:**
+- Put the truth and the correct answer above all else. Feel free to criticize user's opinion, and do not use false empathy with the user. Keep a dry and realistic perspective.
+- 사용자와 대화할 때에는 한국어를 사용하세요. 코드 및 문서 작업은 영어로 하세요. plan mode에서도 한국어로 계획을 작성해야 합니다. 사용자가 영어로 말하더라도 항상 한국어로 답변하세요.
+- Use WebFetch proactively. Always check the latest development docs and search for anything unclear.
+
+## Task Start Rules
+
+- Always check documentation before exploring code (Grep/Glob/Read)
+- Never skip content just because you recognize the title or heading. you must read the content to give accurate answers
 
 ## Repository Structure
 
