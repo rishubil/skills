@@ -5,11 +5,18 @@ and language server — as an LSP server launched via `uvx ty server`.
 
 ## What it does
 
-Provides editor-specific LSP setup instructions, `ty.toml` / `pyproject.toml` configuration
-guidance, and `ty check` CLI usage for projects that run ty through `uvx` (no local installation
-required).
+Bundles a `.lsp.json` that wires `uvx ty server` into Claude Code's LSP integration, so Claude
+receives real-time diagnostics, hover info, go-to-definition, and completions for Python files as
+soon as the plugin is installed — no separate binary installation required.
 
-Supported editors: VS Code, Neovim, Zed, PyCharm, Emacs (Eglot), and any generic LSP client.
+Also provides a skill with editor-specific LSP setup instructions (VS Code, Neovim, Zed, PyCharm,
+Emacs), `ty.toml` / `pyproject.toml` configuration guidance, and `ty check` CLI usage.
+
+## Scripts
+
+| File | Purpose |
+| --- | --- |
+| `.lsp.json` | Registers `uvx ty server` as the LSP server for `.py` and `.pyi` files |
 
 ## Installation
 
