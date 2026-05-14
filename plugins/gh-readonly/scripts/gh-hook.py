@@ -6,7 +6,7 @@
 # ///
 """
 PreToolUse hook: detects direct `gh` invocations for read-only commands
-and suggests using the gh-readonly.sh wrapper instead.
+and suggests using the gh-readonly wrapper instead.
 
 Write commands (gh issue create, gh pr create, gh pr merge, etc.) are
 left alone; those require explicit user permission and should use `gh`
@@ -14,11 +14,10 @@ directly.
 """
 
 import json
-import os
 import re
 import sys
 
-# Read-only subcommand patterns (mirrors scripts/gh-readonly.sh allowlist)
+# Read-only subcommand patterns (mirrors bin/gh-readonly allowlist)
 READONLY_PATTERNS: dict[str, set[str] | None] = {
     # None means the top-level command itself is readonly
     "status": None,
@@ -56,7 +55,7 @@ data = json.load(sys.stdin)
 command: str = data.get("tool_input", {}).get("command", "")
 
 # Already using the wrapper → pass
-if "gh-readonly.sh" in command:
+if re.search(r"\bgh-readonly\b", command):
     sys.exit(0)
 
 # Find direct `gh` invocations (first command or after && ; | ||)
@@ -89,13 +88,10 @@ if not is_readonly:
     # Not a readonly command — let it through (needs explicit permission)
     sys.exit(0)
 
-plugin_root = os.environ.get("CLAUDE_PLUGIN_ROOT", "")
-wrapper = f"{plugin_root}/scripts/gh-readonly.sh" if plugin_root else "gh-readonly.sh"
-
 print(
     f"Hint: `gh {subcmd}` is a read-only command. Use"
-    f" `{wrapper}` instead of `gh` directly.\n"
-    f"  Example: {wrapper} {subcmd} {subsub}".rstrip(),
+    f" `gh-readonly` instead of `gh` directly.\n"
+    f"  Example: gh-readonly {subcmd} {subsub}".rstrip(),
     file=sys.stderr,
 )
 sys.exit(2)
