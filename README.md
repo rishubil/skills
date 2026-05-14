@@ -42,6 +42,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `gh-readonly` | PreToolUse hook that blocks direct read-only `gh` calls and redirects them to an allowlist-based wrapper. |
 | `uv` | PreToolUse hook that blocks direct `python`/`pip` invocations and `pip install` via uv, enforcing `uv run` and `uv add` in uv-managed Python projects. |
 | `python-lsp-uvx-ty` | LSP plugin that registers `uvx ty server` as a Python language server in Claude Code — real-time diagnostics and code intelligence for `.py` / `.pyi` files. |
+| `landing-protocol-creator` | Analyze the current project's tech stack and generate a project-specific `landing-protocol` skill at `.claude/skills/landing-protocol/SKILL.md`. |
 
 ## Using in Claude Code
 

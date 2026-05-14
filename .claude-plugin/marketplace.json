@@ -110,6 +110,15 @@
       "source": "./plugins/python-lsp-uvx-ty",
       "strict": false,
       "skills": []
+    },
+    {
+      "name": "landing-protocol-creator",
+      "description": "Analyze the current project's tech stack and generate a project-specific landing-protocol skill at .claude/skills/landing-protocol/SKILL.md.",
+      "source": "./plugins/landing-protocol-creator",
+      "strict": false,
+      "skills": [
+        "./skills/landing-protocol-creator"
+      ]
     }
   ]
 }
