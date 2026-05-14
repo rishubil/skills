@@ -12,7 +12,7 @@
     {
       "name": "shell-script",
       "description": "Specialist skill for writing Bash shell scripts with best practices and error handling.",
-      "source": "./",
+      "source": "./plugins/shell-script",
       "strict": false,
       "skills": [
         "./skills/shell-script"
@@ -21,7 +21,7 @@
     {
       "name": "fetch-docs",
       "description": "Fetch web-based development documentation and save it as clean markdown files preserving the site's directory structure.",
-      "source": "./",
+      "source": "./plugins/fetch-docs",
       "strict": false,
       "skills": [
         "./skills/fetch-docs"
@@ -30,7 +30,7 @@
     {
       "name": "monkey-c",
       "description": "Specialist skill for developing Garmin Connect IQ applications in Monkey C. Use when writing Watch Faces, Device Apps, Widgets, or Data Fields for Garmin wearables.",
-      "source": "./",
+      "source": "./plugins/monkey-c",
       "strict": false,
       "skills": [
         "./skills/monkey-c"
@@ -39,7 +39,7 @@
     {
       "name": "wordpress-meta-box",
       "description": "Specialist skill for WordPress Meta Box plugin — custom fields, meta boxes, custom post types, and the full Meta Box API (fields, actions, filters, functions).",
-      "source": "./",
+      "source": "./plugins/wordpress-meta-box",
       "strict": false,
       "skills": [
         "./skills/wordpress-meta-box"
@@ -48,7 +48,7 @@
     {
       "name": "wordpress-classic-theme",
       "description": "Specialist skill for developing WordPress classic (PHP-based) themes — template hierarchy, The Loop, theme functions, sidebars, widgets, navigation menus, Customizer API, and more. Does not cover block themes.",
-      "source": "./",
+      "source": "./plugins/wordpress-classic-theme",
       "strict": false,
       "skills": [
         "./skills/wordpress-classic-theme"
@@ -57,7 +57,7 @@
     {
       "name": "commit",
       "description": "Create git commits following Conventional Commits format with a mandatory body explaining why the change was made.",
-      "source": "./",
+      "source": "./plugins/commit",
       "strict": false,
       "skills": [
         "./skills/commit"
@@ -66,7 +66,7 @@
     {
       "name": "plan-review",
       "description": "Structured, opinionated review of an implementation plan across architecture, code quality, tests, performance, and debuggability before any code changes.",
-      "source": "./",
+      "source": "./plugins/plan-review",
       "strict": false,
       "skills": [
         "./skills/plan-review"
@@ -75,11 +75,18 @@
     {
       "name": "resticprofile",
       "description": "Specialist skill for resticprofile — a configuration profile manager for the restic backup tool. Covers profile config files (TOML/YAML/JSON/HCL), commands, and scheduling.",
-      "source": "./",
+      "source": "./plugins/resticprofile",
       "strict": false,
       "skills": [
         "./skills/resticprofile"
       ]
+    },
+    {
+      "name": "gh-readonly",
+      "description": "PreToolUse hook that intercepts read-only gh CLI calls and redirects them to a safe allowlist-based wrapper script.",
+      "source": "./plugins/gh-readonly",
+      "strict": false,
+      "skills": []
     }
   ]
 }
