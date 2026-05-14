@@ -94,6 +94,15 @@
       "source": "./plugins/skill-eval-hook",
       "strict": false,
       "skills": []
+    },
+    {
+      "name": "uv",
+      "description": "PreToolUse hook that blocks direct python/pip invocations and pip install via uv, enforcing uv run and uv add in uv-managed Python projects.",
+      "source": "./plugins/uv",
+      "strict": false,
+      "skills": [
+        "./skills/uv"
+      ]
     }
   ]
 }
