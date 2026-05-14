@@ -103,6 +103,15 @@
       "skills": [
         "./skills/uv"
       ]
+    },
+    {
+      "name": "python-lsp-uvx-ty",
+      "description": "Specialist skill for configuring ty (Astral's Python type checker) as an LSP server via uvx — editor setup, ty.toml configuration, and ty check usage.",
+      "source": "./plugins/python-lsp-uvx-ty",
+      "strict": false,
+      "skills": [
+        "./skills/python-lsp-uvx-ty"
+      ]
     }
   ]
 }

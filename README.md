@@ -41,6 +41,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `resticprofile` | resticprofile configuration profile manager for restic — profile config files (TOML/YAML/JSON/HCL), commands, and scheduling. |
 | `gh-readonly` | PreToolUse hook that blocks direct read-only `gh` calls and redirects them to an allowlist-based wrapper. |
 | `uv` | PreToolUse hook that blocks direct `python`/`pip` invocations and `pip install` via uv, enforcing `uv run` and `uv add` in uv-managed Python projects. |
+| `python-lsp-uvx-ty` | Configure ty (Astral's Python type checker) as an LSP server via `uvx ty server` — editor setup, `ty.toml` config, and `ty check` usage. |
 
 ## Using in Claude Code
 
