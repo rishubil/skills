@@ -38,7 +38,7 @@ if re.match(r"\buv\s+run\b", command):
 
 if re.search(r"(?:^|&&|\|\||;|\|)\s*(?:python3?|pip3?)\b", command):
     print(
-        "Hint: direct python/pip detected. Use `uv run python`, `uv run pip`, etc. instead —"
+        "Hint: direct python/pip detected. Use `uv run python` instead —"
         " this project requires all Python commands to go through uv.",
         file=sys.stderr,
     )
