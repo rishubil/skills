@@ -119,6 +119,15 @@
       "skills": [
         "./skills/landing-protocol-creator"
       ]
+    },
+    {
+      "name": "check-bullshit",
+      "description": "Analyze a URL or block of text for bullshit using the 13-technique BullshitBench diagnostic framework — fabricated frameworks, false precision, reified metaphors, and more.",
+      "source": "./plugins/check-bullshit",
+      "strict": false,
+      "skills": [
+        "./skills/check-bullshit"
+      ]
     }
   ]
 }
