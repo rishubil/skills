@@ -12,11 +12,12 @@ When triggered, this skill:
 2. Evaluates the content against 13 specific bullshit techniques — fabricated
    frameworks, false precision, misapplied mechanisms, reified metaphors,
    confident extrapolation, and more.
-3. Delivers results in **Korean**, starting with a plain-language TL;DR
-   verdict, followed by per-technique status with quoted evidence, and ending
-   with a direct final judgment.
+3. Reports a plain-language TL;DR verdict first (Clear bullshit / Suspicious /
+   Largely clean / Inconclusive), followed by per-technique status with quoted
+   evidence, and ends with a direct final judgment.
 
-The output does not soften real findings.
+The skill responds in the same language the user used. It does not soften
+real findings.
 
 ## Installation
 
@@ -29,12 +30,11 @@ The output does not soften real findings.
 
 Typical trigger phrases:
 
-- "이 URL 진짜야? https://..."
-- "이 글 허황된 내용 아니야? (텍스트 붙여넣기)"
-- "이거 믿을 수 있어?"
-- "check this for bullshit: ..."
-- "fact-check this article"
-- "이 글 분석해줘" (with a URL or pasted text)
+- "check this URL for bullshit: https://..."
+- "is this article credible? (paste text)"
+- "fact-check this for me"
+- "is this real or made up?"
+- "analyze this for misleading claims"
 
 ## Source
 
