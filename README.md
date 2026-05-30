@@ -40,6 +40,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `plan-review` | Structured, opinionated review of an implementation plan — architecture, code quality, tests, performance, and debuggability. |
 | `resticprofile` | resticprofile configuration profile manager for restic — profile config files (TOML/YAML/JSON/HCL), commands, and scheduling. |
 | `gh-readonly` | PreToolUse hook that blocks direct read-only `gh` calls and redirects them to an allowlist-based wrapper. |
+| `skill-eval-hook` | UserPromptSubmit hook that forces mandatory skill evaluation before every task — Claude must assess each available skill and activate relevant ones before implementation. |
 | `uv` | PreToolUse hook that blocks direct `python`/`pip` invocations and `pip install` via uv, enforcing `uv run` and `uv add` in uv-managed Python projects. |
 | `python-lsp-uvx-ty` | LSP plugin that registers `uvx ty server` as a Python language server in Claude Code — real-time diagnostics and code intelligence for `.py` / `.pyi` files. |
 | `landing-protocol-creator` | Analyze the current project's tech stack and generate a project-specific `landing-protocol` skill at `.claude/skills/landing-protocol/SKILL.md`. |
