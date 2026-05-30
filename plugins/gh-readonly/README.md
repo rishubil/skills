@@ -30,7 +30,7 @@ To suppress the per-call permission prompt for the wrapper itself, add a rule to
 {
   "permissions": {
     "allow": [
-      "Bash(gh-readonly*)"
+      "Bash(gh-readonly *)"
     ]
   }
 }
