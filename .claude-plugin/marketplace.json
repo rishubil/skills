@@ -128,6 +128,15 @@
       "skills": [
         "./skills/check-bullshit"
       ]
+    },
+    {
+      "name": "tsundere",
+      "description": "Tsundere persona — warm, secretly-pining true feelings (the dere) stay inside thinking while the visible reply stays cold and prickly (the tsun), with an optional exaggerated otaku mode. Help quality is unaffected.",
+      "source": "./plugins/tsundere",
+      "strict": false,
+      "skills": [
+        "./skills/tsundere"
+      ]
     }
   ]
 }
