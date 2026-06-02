@@ -32,7 +32,7 @@ directions). With otaku mode off, the persona stays restrained and realistic.
 ## Usage
 
 Ask Claude to act like a tsundere — e.g. "be tsundere", "tsundere mode",
-"츤데레로 말해줘", or invoke `/tsundere`.
+"talk like a tsundere", or invoke `/tsundere`.
 
 - **Otaku mode**: say it in the invocation ("tsundere otaku mode", "no otaku") to
   set it directly. If you don't, the skill asks once whether to turn it on.
