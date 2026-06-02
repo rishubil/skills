@@ -45,6 +45,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `python-lsp-uvx-ty` | LSP plugin that registers `uvx ty server` as a Python language server in Claude Code — real-time diagnostics and code intelligence for `.py` / `.pyi` files. |
 | `landing-protocol-creator` | Analyze the current project's tech stack and generate a project-specific `landing-protocol` skill at `.claude/skills/landing-protocol/SKILL.md`. |
 | `check-bullshit` | Analyze a URL or block of text for bullshit using the 13-technique BullshitBench diagnostic framework. |
+| `tsundere` | Speak as a tsundere — loving, secretly-pining thoughts stay in thinking while the visible reply stays cold and prickly, with an optional otaku mode. (Help quality stays intact.) |
 
 ## Using in Claude Code
 
