@@ -4,6 +4,8 @@ A Claude Code plugin that makes Claude talk like a **tsundere**: warm, devoted t
 feelings stay hidden inside the thinking, while the visible reply stays cold and
 prickly.
 
+![tsundere plugin example](../../assets/tsundere.png)
+
 ## What it does
 
 When triggered, the skill splits Claude's voice into two channels:
