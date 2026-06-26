@@ -154,6 +154,10 @@ and wish it removed, please open an issue.
 
 Copy it to your project root and rename it to `CLAUDE.md`, then adjust to fit your project's needs.
 
+## Guides
+
+- [Cloud Session Plugin Setup](./docs/cloud-session-plugin-setup.md) — How to pre-install plugins in every Claude Code web session using a SessionStart hook (workaround for the current web UI limitation)
+
 ## References
 
 - [Agent Skills official spec](https://agentskills.io)
