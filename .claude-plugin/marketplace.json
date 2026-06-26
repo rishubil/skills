@@ -137,6 +137,15 @@
       "skills": [
         "./skills/tsundere"
       ]
+    },
+    {
+      "name": "ascii-diagram",
+      "description": "Render simple Mermaid flowcharts and sequence diagrams as ASCII art using the mermaid-ascii CLI and insert the output into docs or code comments.",
+      "source": "./plugins/ascii-diagram",
+      "strict": false,
+      "skills": [
+        "./skills/ascii-diagram"
+      ]
     }
   ]
 }
