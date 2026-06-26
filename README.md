@@ -47,6 +47,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `check-bullshit` | Analyze a URL or block of text for bullshit using the 13-technique BullshitBench diagnostic framework. |
 | `tsundere` | Speak as a tsundere — loving, secretly-pining thoughts stay in thinking while the visible reply stays cold and prickly, with an optional otaku mode. (Help quality stays intact.) |
 | `ascii-diagram` | Render simple Mermaid flowcharts and sequence diagrams as ASCII art using mermaid-ascii. |
+| `hypothesis` | Write property-based tests for Python using Hypothesis — explore code, identify valuable properties, write and run Hypothesis tests. |
 
 ## Using in Claude Code
 

@@ -146,6 +146,15 @@
       "skills": [
         "./skills/ascii-diagram"
       ]
+    },
+    {
+      "name": "hypothesis",
+      "description": "Write property-based tests for Python codebases using Hypothesis — structured explore, identify, write, and run workflow.",
+      "source": "./plugins/hypothesis",
+      "strict": false,
+      "skills": [
+        "./skills/hypothesis"
+      ]
     }
   ]
 }
