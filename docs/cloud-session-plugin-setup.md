@@ -1,39 +1,20 @@
 # Claude Code Web — Cloud Session Plugin Setup
 
-Claude Code web에서 새 세션을 시작할 때 플러그인이 자동으로 설치된 상태로 시작하도록 설정하는 방법을 설명합니다.
+How to have plugins automatically installed whenever a new Claude Code web session starts.
 
-## 배경
+## Background
 
-현재 Claude Code web 환경에서는 `/plugin marketplace add <github-repo>` 명령으로 마켓플레이스를 직접 추가할 수 없습니다. 이 제한을 우회하기 위해 **SessionStart 훅**을 사용합니다. 훅 스크립트가 GitHub에서 마켓플레이스 저장소를 ZIP으로 다운로드해 로컬 경로에 풀어놓고, 그 경로를 마켓플레이스로 등록한 뒤 원하는 플러그인을 설치합니다.
+In the current Claude Code web environment, `/plugin marketplace add <github-repo>` cannot be used to add marketplaces directly. The workaround is to include a setup script in the cloud environment configuration. The script downloads marketplace repositories from GitHub as ZIP archives, extracts them to a local path, registers those paths as marketplaces, and then installs the desired plugins.
 
-## 동작 원리
+`rename_marketplace` is needed because some marketplace repositories (e.g. `anthropics/claude-plugins-official`) have an official-sounding name in their `marketplace.json`. Registering a marketplace under that same name from a third-party account can be rejected by an impersonation guard. Overwriting the `name` field with a neutral value such as `local-mirror` avoids this.
 
-```
-SessionStart 훅 실행
-  └─ add_marketplace()
-       ├─ GitHub에서 저장소 ZIP 다운로드
-       ├─ ~/.claude/plugins/local-marketplaces/<name>/ 에 압축 해제
-       ├─ (선택) marketplace.json 의 name 필드를 중립 이름으로 교체
-       └─ claude plugin marketplace add <로컬 경로>
-  └─ claude plugins install <plugin>@<marketplace>
-```
+## Setup
 
-`rename_marketplace`가 필요한 이유: `anthropics/claude-plugins-official` 같은 저장소의 `marketplace.json`에는 공식 이름(`claude-plugins-official` 등)이 들어 있는데, 타인이 동일한 이름의 마켓플레이스를 등록하면 사칭 방지 로직에 의해 거부될 수 있습니다. `name` 필드를 `local-mirror` 같은 중립 이름으로 바꿔서 이를 우회합니다.
-
-## 설정 방법
-
-### 1. 훅 스크립트 작성
-
-아래 템플릿을 `.claude/hooks/session-start.sh`로 저장한 뒤, 필요에 맞게 마켓플레이스와 플러그인 목록을 수정합니다.
+Open the cloud environment settings in Claude Code web and paste the script below into the setup script field.
 
 ```bash
 #!/usr/bin/env bash
 set -euo pipefail
-
-# 웹 세션에서만 실행
-if [[ "${CLAUDE_CODE_REMOTE:-}" != "true" ]]; then
-    exit 0
-fi
 
 DEBIAN_FRONTEND=noninteractive apt-get update -qq && apt-get install -y -q gh jq
 
@@ -88,78 +69,39 @@ add_marketplace() {
     echo "[$name] added"
 }
 
-# ── 마켓플레이스 등록 ────────────────────────────────────────────
-add_marketplace "rishubil-skills"   "rishubil/skills"
-add_marketplace "local-mirror"      "anthropics/claude-plugins-official" "local-mirror"
-add_marketplace "karpathy-skills"   "multica-ai/andrej-karpathy-skills"
+# -- Register marketplaces --------------------------------------------------
+add_marketplace "rishubil-skills"  "rishubil/skills"
+add_marketplace "local-mirror"     "anthropics/claude-plugins-official" "local-mirror"
+add_marketplace "karpathy-skills"  "multica-ai/andrej-karpathy-skills"
 
-# ── 플러그인 설치 ────────────────────────────────────────────────
+# -- Install plugins --------------------------------------------------------
 claude plugins install shell-script@rishubil-skills
 claude plugins install commit@rishubil-skills
 claude plugins install plan-review@rishubil-skills
 claude plugins install fetch-docs@rishubil-skills
-npm install -g agent-browser defuddle   # fetch-docs 의존성
+npm install -g agent-browser defuddle   # required by fetch-docs
 claude plugins install skill-eval-hook@rishubil-skills
 claude plugins install ascii-diagram@rishubil-skills
 claude plugins install andrej-karpathy-skills@karpathy-skills
 claude plugins install skill-creator@local-mirror
 ```
 
-```bash
-chmod +x .claude/hooks/session-start.sh
-```
+## Customization
 
-### 2. SessionStart 훅 등록
-
-`.claude/settings.json`에 아래 내용을 추가합니다 (파일이 없으면 새로 생성).
-
-```json
-{
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh"
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-### 3. 커밋 및 푸시
+### Adding a marketplace
 
 ```bash
-git add .claude/hooks/session-start.sh .claude/settings.json
-git commit -m "chore: add SessionStart hook for cloud session plugin setup"
-git push
-```
-
-이후 이 저장소로 열리는 모든 Claude Code web 세션에서 훅이 자동으로 실행되어 플러그인이 설치됩니다.
-
-## 커스터마이징
-
-### 마켓플레이스 추가
-
-```bash
-add_marketplace "<로컬-폴더명>" "<owner>/<repo>"
-# 이름 충돌이 우려되는 공식 저장소는 세 번째 인자로 중립 이름 지정
+add_marketplace "<local-folder-name>" "<owner>/<repo>"
+# Use a third argument to override the name when impersonation may be an issue
 add_marketplace "my-mirror" "<owner>/<official-repo>" "my-mirror"
 ```
 
-### 플러그인 추가/제거
+### Adding or removing plugins
 
-`claude plugins install` / `claude plugins uninstall` 줄을 추가하거나 삭제합니다. `@<마켓플레이스명>`은 `add_marketplace` 첫 번째 인자(또는 rename 시 세 번째 인자)와 일치해야 합니다.
+Add or remove `claude plugins install` lines. The `@<marketplace>` suffix must match the first argument passed to `add_marketplace` (or the third argument when a rename is used).
 
-### 로컬 세션 제외
+## Notes
 
-스크립트 상단의 `CLAUDE_CODE_REMOTE` 체크가 웹 세션에서만 훅을 실행하도록 보장합니다. 로컬 Claude Code CLI에서는 아무 동작도 하지 않습니다.
-
-## 주의사항
-
-- 훅은 세션 시작 시 **동기적으로** 실행됩니다. 설치에 걸리는 시간만큼 세션 시작이 지연됩니다.
-- 네트워크 환경에 따라 GitHub ZIP 다운로드가 실패할 수 있습니다. 재시도 로직이 없으므로 필요하다면 `add_marketplace` 에 `curl` 재시도 옵션(`--retry 3`)을 추가하세요.
-- `apt-get install gh jq`는 Debian/Ubuntu 기반 컨테이너를 가정합니다. Claude Code web의 실행 환경이 변경되면 이 부분도 함께 수정해야 합니다.
+- The setup script runs once when the cloud environment is (re)built, not on every session start. Plugin state persists across sessions until the environment is rebuilt.
+- If a GitHub ZIP download fails, the entire script aborts due to `set -euo pipefail`. Add `--retry 3` to the `curl` invocation if flaky network conditions are a concern.
+- `apt-get install gh jq` assumes a Debian/Ubuntu-based container image. Update this line if the Claude Code web runtime changes.
