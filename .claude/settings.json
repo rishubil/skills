@@ -1,0 +1,32 @@
+{
+  "extraKnownMarketplaces": {
+    "rishubil-skills": {
+      "source": {
+        "source": "github",
+        "repo": "rishubil/skills"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "karpathy-skills": {
+      "source": {
+        "source": "github",
+        "repo": "multica-ai/andrej-karpathy-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "shell-script@rishubil-skills": true,
+    "commit@rishubil-skills": true,
+    "skill-creator@claude-plugins-official": true,
+    "plan-review@rishubil-skills": true,
+    "fetch-docs@rishubil-skills": true,
+    "skill-eval-hook@rishubil-skills": true,
+    "ascii-diagram@rishubil-skills": true,
+    "andrej-karpathy-skills@karpathy-skills": true
+  }
+}
