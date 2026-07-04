@@ -20,13 +20,14 @@
     }
   },
   "enabledPlugins": {
-    "shell-script@rishubil-skills": true,
-    "commit@rishubil-skills": true,
-    "skill-creator@claude-plugins-official": true,
-    "plan-review@rishubil-skills": true,
-    "fetch-docs@rishubil-skills": true,
-    "skill-eval-hook@rishubil-skills": true,
+    "andrej-karpathy-skills@karpathy-skills": true,
     "ascii-diagram@rishubil-skills": true,
-    "andrej-karpathy-skills@karpathy-skills": true
+    "commit@rishubil-skills": true,
+    "fetch-docs@rishubil-skills": true,
+    "plan-review@rishubil-skills": true,
+    "shell-script@rishubil-skills": true,
+    "skill-creator@claude-plugins-official": true,
+    "skill-eval-hook@rishubil-skills": true,
+    "uv@rishubil-skills": true
   }
 }
