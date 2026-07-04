@@ -155,6 +155,15 @@
       "skills": [
         "./skills/hypothesis"
       ]
+    },
+    {
+      "name": "freshrss-xpath",
+      "description": "Analyze a website's HTML structure and propose verified FreshRSS HTML+XPath web scraping feed settings for sites without an RSS feed.",
+      "source": "./plugins/freshrss-xpath",
+      "strict": false,
+      "skills": [
+        "./skills/freshrss-xpath"
+      ]
     }
   ]
 }

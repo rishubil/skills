@@ -48,6 +48,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `tsundere` | Speak as a tsundere — loving, secretly-pining thoughts stay in thinking while the visible reply stays cold and prickly, with an optional otaku mode. (Help quality stays intact.) |
 | `ascii-diagram` | Render simple Mermaid flowcharts and sequence diagrams as ASCII art using mermaid-ascii. |
 | `hypothesis` | Write property-based tests for Python using Hypothesis — explore code, identify valuable properties, write and run Hypothesis tests. |
+| `freshrss-xpath` | Analyze a website's HTML structure and propose verified FreshRSS HTML+XPath web scraping feed settings for sites without an RSS feed. |
 
 ## Using in Claude Code
 
