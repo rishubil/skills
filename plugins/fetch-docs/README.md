@@ -24,6 +24,13 @@ npx defuddle --version        # HTML-to-markdown converter
 /plugin install fetch-docs@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install fetch-docs@rishubil-skills --scope project
+```
+
 ## Usage
 
 Trigger phrases include:

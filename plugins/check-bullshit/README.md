@@ -26,6 +26,13 @@ real findings.
 /plugin install check-bullshit@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install check-bullshit@rishubil-skills --scope project
+```
+
 ## Usage
 
 Typical trigger phrases:

@@ -21,6 +21,13 @@ Bundled with a local cache of the official Meta Box documentation.
 /plugin install wordpress-meta-box@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install wordpress-meta-box@rishubil-skills --scope project
+```
+
 ## Usage
 
 Triggers automatically when:

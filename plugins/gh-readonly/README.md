@@ -20,6 +20,13 @@ Write commands (`gh issue create`, `gh pr merge`, etc.) pass through the hook un
 /plugin install gh-readonly@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install gh-readonly@rishubil-skills --scope project
+```
+
 ## Usage
 
 After installation, Claude automatically uses `gh-readonly` instead of `gh` for read-only operations. No extra prompting is needed — the hook fires silently on every Bash call.

@@ -19,6 +19,13 @@ No separate binary installation is required — `uvx` fetches and runs `ty` on d
 /plugin install python-lsp-uvx-ty@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install python-lsp-uvx-ty@rishubil-skills --scope project
+```
+
 ## Usage
 
 After installation, Claude Code automatically starts `uvx ty server` when you open a Python file. No extra configuration is needed.

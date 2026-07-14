@@ -33,6 +33,13 @@ The body is **required** — it must explain the reasoning behind the change, no
 /plugin install commit@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install commit@rishubil-skills --scope project
+```
+
 ## Usage
 
 Mention "commit" or "create a commit" in your message. The skill will:

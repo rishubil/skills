@@ -21,6 +21,13 @@ When triggered, this skill writes or reviews shell scripts following opinionated
 /plugin install shell-script@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install shell-script@rishubil-skills --scope project
+```
+
 ## Usage
 
 Triggers automatically when:

@@ -24,6 +24,13 @@ Bundled with a local cache of the official resticprofile documentation.
 /plugin install resticprofile@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install resticprofile@rishubil-skills --scope project
+```
+
 ## Usage
 
 Triggers automatically whenever **"resticprofile"** appears anywhere in your query (in any language). Does **not** trigger for:

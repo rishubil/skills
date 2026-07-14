@@ -31,6 +31,13 @@ directions). With otaku mode off, the persona stays restrained and realistic.
 /plugin install tsundere@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install tsundere@rishubil-skills --scope project
+```
+
 ## Usage
 
 Ask Claude to act like a tsundere — e.g. "be tsundere", "tsundere mode",

@@ -19,6 +19,13 @@ When triggered, this skill:
 /plugin install freshrss-xpath@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install freshrss-xpath@rishubil-skills --scope project
+```
+
 ## Usage
 
 Trigger phrases include:

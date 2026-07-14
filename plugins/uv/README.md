@@ -28,6 +28,13 @@ Commands already using `uv run` pass through the hook untouched.
 /plugin install uv@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install uv@rishubil-skills --scope project
+```
+
 ## Usage
 
 After installation, Claude automatically avoids direct `python`/`pip` calls and uses `uv run` / `uv add` instead. No extra prompting is needed — the hook fires silently on every Bash call.

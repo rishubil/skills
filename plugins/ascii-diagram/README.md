@@ -55,6 +55,13 @@ Or download a prebuilt binary from the
 /plugin install ascii-diagram@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install ascii-diagram@rishubil-skills --scope project
+```
+
 ## Usage
 
 Typical trigger phrases:

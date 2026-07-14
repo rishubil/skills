@@ -17,6 +17,13 @@ Steps that are not relevant to the project are omitted entirely — not left as 
 /plugin install landing-protocol-creator@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install landing-protocol-creator@rishubil-skills --scope project
+```
+
 ## Usage
 
 In any project directory, ask Claude to create a landing protocol:

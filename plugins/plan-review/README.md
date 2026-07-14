@@ -23,6 +23,13 @@ Each section stops and asks for your input before proceeding — no silent decis
 /plugin install plan-review@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install plan-review@rishubil-skills --scope project
+```
+
 ## Usage
 
 Share a plan (in any format — bullet list, design doc, numbered steps) and ask for a review. Trigger phrases include:

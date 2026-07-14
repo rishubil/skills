@@ -28,6 +28,13 @@ Bundled with a local cache of the official WordPress theme developer documentati
 /plugin install wordpress-classic-theme@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install wordpress-classic-theme@rishubil-skills --scope project
+```
+
 ## Usage
 
 Triggers automatically when:

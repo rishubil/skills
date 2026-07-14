@@ -30,6 +30,13 @@ uv add hypothesis
 /plugin install hypothesis@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install hypothesis@rishubil-skills --scope project
+```
+
 ## Usage
 
 Trigger phrases include:

@@ -23,6 +23,13 @@ Technique from: <https://scottspence.com/posts/how-to-make-claude-code-skills-ac
 /plugin install skill-eval-hook@rishubil-skills
 ```
 
+Or install into a specific project's `.claude/settings.json` from the command line:
+
+```bash
+claude plugin marketplace add rishubil/skills --scope project
+claude plugin install skill-eval-hook@rishubil-skills --scope project
+```
+
 ## Usage
 
 No manual triggering needed — the hook fires automatically on every prompt. Example output from the assessment step:
