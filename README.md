@@ -49,6 +49,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `ascii-diagram` | Render simple Mermaid flowcharts and sequence diagrams as ASCII art using mermaid-ascii. |
 | `hypothesis` | Write property-based tests for Python using Hypothesis — explore code, identify valuable properties, write and run Hypothesis tests. |
 | `freshrss-xpath` | Analyze a website's HTML structure and propose verified FreshRSS HTML+XPath web scraping feed settings for sites without an RSS feed. |
+| `todoist-add-task` | Capture spoken or typed to-dos and add them to Todoist via the API — defaults to the Inbox with today's date, supports every create-task field. |
 
 ## Using in Claude Code
 

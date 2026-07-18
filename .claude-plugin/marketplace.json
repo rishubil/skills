@@ -164,6 +164,15 @@
       "skills": [
         "./skills/freshrss-xpath"
       ]
+    },
+    {
+      "name": "todoist-add-task",
+      "description": "Capture spoken or typed to-dos and add them to Todoist via the API — defaults to the Inbox with today's date and supports every create-task field.",
+      "source": "./plugins/todoist-add-task",
+      "strict": false,
+      "skills": [
+        "./skills/todoist-add-task"
+      ]
     }
   ]
 }
