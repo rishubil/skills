@@ -133,10 +133,16 @@ command -v jq   >/dev/null || die "jq is required but not installed"
 
 # ---- token ------------------------------------------------------------------
 get_token() {
-    command -v op >/dev/null || die "1Password CLI (op) is required but not installed"
+    # Prefer an explicit environment variable; fall back to 1Password.
+    if [[ -n "${TODOIST_API_TOKEN-}" ]]; then
+        printf '%s' "$TODOIST_API_TOKEN"
+        return 0
+    fi
+    command -v op >/dev/null \
+        || die "no TODOIST_API_TOKEN set, and the 1Password CLI (op) is not installed"
     local token
     token="$(op item get "Todoist API token" --fields label=password --reveal 2>/dev/null)" \
-        || die "could not read 'Todoist API token' from 1Password (run 'op signin'?)"
+        || die "could not read the Todoist token (set TODOIST_API_TOKEN, or run 'op signin')"
     [[ -n "$token" ]] || die "the Todoist API token from 1Password is empty"
     printf '%s' "$token"
 }

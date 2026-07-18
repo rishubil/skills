@@ -19,13 +19,15 @@ capture: the user rambles, you distill the actual task, confirm it, and file it.
 
 ## Prerequisites
 
-- The 1Password CLI (`op`) is installed and signed in. The API token is read
-  from the item **"Todoist API token"** (field: password). The bundled script
-  handles this — you never pass the token yourself.
+- A Todoist API token. The script reads it from the `TODOIST_API_TOKEN`
+  environment variable when set; otherwise it falls back to the 1Password CLI
+  (`op item get "Todoist API token"`, field: password). Either way the bundled
+  script resolves the token — you never pass it yourself.
 - `curl` and `jq` are available.
 
-If `op` is not signed in, the script fails with a clear message; tell the user
-to run `op signin` (or `eval $(op signin)`) and retry.
+If `TODOIST_API_TOKEN` is unset and `op` is not signed in, the script fails with
+a clear message; tell the user to export `TODOIST_API_TOKEN` or run `op signin`
+(or `eval $(op signin)`) and retry.
 
 ## The script
 
