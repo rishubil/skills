@@ -173,6 +173,15 @@
       "skills": [
         "./skills/todoist-add-task"
       ]
+    },
+    {
+      "name": "design-md",
+      "description": "Author, apply, evolve, and export a DESIGN.md — the Google Labs format that pins a project's visual identity as design tokens plus prose — with a PostToolUse hook that auto-lints DESIGN.md files after every Write/Edit.",
+      "source": "./plugins/design-md",
+      "strict": false,
+      "skills": [
+        "./skills/design-md"
+      ]
     }
   ]
 }

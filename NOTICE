@@ -64,6 +64,13 @@ Third-party content in this repository
                 https://github.com/creativeprojects/resticprofile/blob/master/LICENSE
      See:       plugins/resticprofile/skills/resticprofile/NOTICE.md
 
+5. plugins/design-md/skills/design-md/references/
+     Source:    https://github.com/google-labs-code/design.md
+     Copyright: (c) Google LLC
+     License:   Apache License 2.0
+                https://github.com/google-labs-code/design.md/blob/main/LICENSE
+     See:       plugins/design-md/skills/design-md/NOTICE.md
+
 Notes on attribution vs. license
 --------------------------------
 

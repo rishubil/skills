@@ -50,6 +50,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `hypothesis` | Write property-based tests for Python using Hypothesis — explore code, identify valuable properties, write and run Hypothesis tests. |
 | `freshrss-xpath` | Analyze a website's HTML structure and propose verified FreshRSS HTML+XPath web scraping feed settings for sites without an RSS feed. |
 | `todoist-add-task` | Capture spoken or typed to-dos and add them to Todoist via the API — defaults to the Inbox with today's date, supports every create-task field. |
+| `design-md` | Author, apply, evolve, and export a `DESIGN.md` (Google Labs format) — design tokens plus prose that pin a project's visual identity across sessions and agents, with a PostToolUse hook that auto-lints on every Write/Edit. |
 
 ## Using in Claude Code
 
@@ -143,6 +144,7 @@ In short:
 | `plugins/monkey-c/skills/monkey-c/{overview,references,api-docs}/**` | All rights reserved — (c) Garmin Ltd. (local reference cache only) |
 | `plugins/wordpress-meta-box/skills/wordpress-meta-box/references/**` | All rights reserved — (c) MetaBox.io / eLightUp (local reference cache only) |
 | `plugins/resticprofile/skills/resticprofile/references/**` | MIT License — (c) resticprofile contributors (local reference cache) |
+| `plugins/design-md/skills/design-md/references/**` | Apache License 2.0 — (c) Google LLC (local reference cache) |
 
 If you are a rights holder for any of the cached third-party content
 and wish it removed, please open an issue.
