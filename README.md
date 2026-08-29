@@ -51,6 +51,8 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `freshrss-xpath` | Analyze a website's HTML structure and propose verified FreshRSS HTML+XPath web scraping feed settings for sites without an RSS feed. |
 | `todoist-add-task` | Capture spoken or typed to-dos and add them to Todoist via the API — defaults to the Inbox with today's date, supports every create-task field. |
 | `design-md` | Author, apply, evolve, and export a `DESIGN.md` (Google Labs format) — design tokens plus prose that pin a project's visual identity across sessions and agents, with a PostToolUse hook that auto-lints on every Write/Edit. |
+| `discord-notify` | Ping the user on Discord through an incoming webhook when work finishes, fails, or is blocked — deliberately, under a strict no-spam policy. |
+| `discord-hang-alert` | `Notification` hook that pings Discord when a session is blocked waiting for you — permission prompts, subagent input, MCP elicitations. Not for progress reports. |
 
 ## Using in Claude Code
 

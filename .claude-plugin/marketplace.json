@@ -182,6 +182,22 @@
       "skills": [
         "./skills/design-md"
       ]
+    },
+    {
+      "name": "discord-notify",
+      "description": "Send a short, deliberate Discord webhook notification when the user needs to know something away from the terminal — under a strict no-spam policy.",
+      "source": "./plugins/discord-notify",
+      "strict": false,
+      "skills": [
+        "./skills/discord-notify"
+      ]
+    },
+    {
+      "name": "discord-hang-alert",
+      "description": "Notification hook that pings Discord when a Claude Code session is blocked waiting for the user — permission prompts, subagent input requests, and MCP elicitations — so a session never sits hung unnoticed.",
+      "source": "./plugins/discord-hang-alert",
+      "strict": false,
+      "skills": []
     }
   ]
 }

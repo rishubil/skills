@@ -1,0 +1,400 @@
+#!/usr/bin/env bash
+#
+# discord-hang-alert-hook.sh — Claude Code Notification hook that pings
+# Discord when a session is BLOCKED waiting for the user: a permission
+# prompt, a subagent needing input, or an MCP elicitation dialog. This is
+# NOT for progress or completion notices (see the discord-notify plugin
+# for that).
+#
+# IMPORTANT: the Notification hook's exit code and stderr are IGNORED by
+# Claude Code, so this script can never block or break a session no
+# matter what happens. Every failure path below logs (to the log file
+# described under "State/logging", never to stderr — stderr is discarded
+# and unreadable) and then exits 0. The only debugging surfaces are that
+# log file and, when explicitly enabled, the raw-payload capture
+# described under DISCORD_HANG_ALERT_DEBUG.
+#
+# The Notification hook's stdin JSON schema is NOT officially documented.
+# Believed fields (unconfirmed): session_id, transcript_path, cwd,
+# permission_mode, hook_event_name, notification_type. Because this is
+# unconfirmed, every field is read defensively with jq "// alt // empty"
+# fallbacks, and DISCORD_HANG_ALERT_DEBUG=1 lets a user capture the real
+# raw payload for inspection.
+#
+# This script never reads the transcript file and never includes tool
+# arguments or any other session content in the Discord message — only
+# the notification type and the project's cwd.
+
+set -o errexit
+set -o nounset
+set -o pipefail
+if [[ "${TRACE-0}" == "1" ]]; then
+    set -o xtrace
+fi
+
+# Only these hosts are accepted as a target for the webhook POST. This
+# guards against a misconfigured webhook URL silently leaking a
+# notification to an arbitrary host.
+readonly WEBHOOK_HOST_REGEX='^https://(discord\.com|discordapp\.com|ptb\.discord\.com|canary\.discord\.com)/api/webhooks/'
+
+# clip($n) must return AT MOST $n characters: the "…" marker counts toward
+# Discord's per-field limits, so slicing to $n and then appending it yields
+# $n + 1 and gets the whole message rejected with HTTP 400.
+readonly JQ_CLIP='def clip($n): if $n <= 0 then "" elif (length > $n) then .[0:$n-1] + "…" else . end;'
+
+usage() {
+    cat <<'EOF'
+Usage:
+  discord-hang-alert-hook.sh              Read a Notification hook payload
+                                           from stdin and, if it looks like
+                                           the session is blocked waiting on
+                                           the user, send a Discord alert.
+  discord-hang-alert-hook.sh --self-test   Send a synthetic test notification
+                                           (bypasses the cooldown, does not
+                                           write cooldown state, and prints
+                                           diagnostics). Use this to verify
+                                           your setup.
+  discord-hang-alert-hook.sh --help        Show this help.
+
+Purpose:
+  This is a Claude Code Notification hook. It fires when a session is
+  BLOCKED waiting for the user to respond — a permission prompt, a
+  subagent needing input, or an MCP elicitation dialog — and sends a
+  short Discord webhook message so you notice even when you're away from
+  the terminal. It is NOT for progress or completion notices.
+
+  IMPORTANT: the Notification hook's exit code and stderr are ignored by
+  Claude Code. This script can NEVER block or break a Claude Code
+  session, no matter what happens (missing config, network failure,
+  malformed input, etc.) — every failure path logs and exits 0.
+
+Webhook URL resolution (first match wins):
+  1. DISCORD_HANG_ALERT_WEBHOOK_URL environment variable
+  2. DISCORD_WEBHOOK_URL environment variable
+  3. first line of "${CLAUDE_PLUGIN_DATA}/webhook"
+     (only consulted when CLAUDE_PLUGIN_DATA is set and the file exists)
+  4. first line of "${XDG_CONFIG_HOME:-$HOME/.config}/discord-hang-alert/webhook"
+
+  If none of these resolve, the plugin is inert (this is a normal,
+  expected state, not an error): it logs "no webhook configured" and
+  exits 0.
+
+Environment variables:
+  DISCORD_HANG_ALERT_WEBHOOK_URL   Discord webhook URL (highest priority).
+  DISCORD_WEBHOOK_URL              Discord webhook URL (shared with the
+                                    discord-notify plugin).
+  DISCORD_HANG_ALERT_DISABLE       Set to 1 to disable this hook entirely.
+                                    No-ops and exits 0 immediately, without
+                                    logging anything at all.
+  DISCORD_HANG_ALERT_COOLDOWN      Minimum seconds between notifications
+                                    for the same session id. Must be a
+                                    non-negative integer; any other value
+                                    falls back to the default silently.
+                                    Default: 300.
+  DISCORD_HANG_ALERT_USERNAME      Webhook display username.
+                                    Default: "Claude Code".
+  DISCORD_HANG_ALERT_DEBUG         Set to 1 to additionally write the raw,
+                                    unmodified stdin payload to
+                                    "<state dir>/last-payload.json". This
+                                    is the only sanctioned way to inspect
+                                    the real (undocumented) hook payload
+                                    shape.
+
+Config files (used only when the corresponding env var is unset):
+  ${CLAUDE_PLUGIN_DATA}/webhook
+  ${XDG_CONFIG_HOME:-$HOME/.config}/discord-hang-alert/webhook
+
+State/logging:
+  State directory:
+    ${CLAUDE_PLUGIN_DATA:-${XDG_STATE_HOME:-$HOME/.local/state}/discord-hang-alert}
+  Files inside it:
+    session-<id>.last     unix timestamp of the last successful send for
+                            that session (used for the cooldown check;
+                            pruned automatically after 7 days)
+    hang-alert.log         one line per invocation; this is the ONLY
+                            debugging surface, since the Notification
+                            hook's stderr is discarded and unreadable
+    last-payload.json      raw stdin payload, only written when
+                            DISCORD_HANG_ALERT_DEBUG=1
+
+Requires: bash, curl, jq.
+EOF
+}
+
+log_line() {
+    # Append one timestamped line to the log file. Best-effort: if the
+    # state dir or log file can't be written, there is nowhere to log to,
+    # so this silently does nothing (the caller still exits 0).
+    local state_dir="$1" message="$2"
+    local log_file="${state_dir}/hang-alert.log"
+    local timestamp
+    # %:z is GNU-only; the portable spelling yields +0900 instead of +09:00.
+    timestamp="$(date +%Y-%m-%dT%H:%M:%S%z)"
+
+    # Keep the log from growing unbounded: if it's gotten large, truncate
+    # it to its last 200 lines before appending.
+    if [[ -f "$log_file" ]]; then
+        local size
+        size="$(wc -c <"$log_file" 2>/dev/null || echo 0)"
+        if (( size > 1048576 )); then
+            local tmp_file
+            tmp_file="${log_file}.tmp.$$"
+            if tail -n 200 "$log_file" >"$tmp_file" 2>/dev/null; then
+                mv -- "$tmp_file" "$log_file" 2>/dev/null || rm -f -- "$tmp_file"
+            fi
+        fi
+    fi
+
+    printf '%s %s\n' "$timestamp" "$message" >>"$log_file" 2>/dev/null || true
+}
+
+# Extract just the host from a URL, for safe logging (never log the full
+# URL — it's a secret).
+url_host() {
+    local url="$1" host
+    host="${url#*://}"
+    host="${host%%/*}"
+    printf '%s' "${host:-<empty>}"
+}
+
+resolve_webhook() {
+    # Prints "<source>\t<url>" on stdout ("<source>\t" with empty url if
+    # none resolved). Sources: env:DISCORD_HANG_ALERT_WEBHOOK_URL,
+    # env:DISCORD_WEBHOOK_URL, "plugin data file", "config file", "none".
+    if [[ -n "${DISCORD_HANG_ALERT_WEBHOOK_URL-}" ]]; then
+        printf 'DISCORD_HANG_ALERT_WEBHOOK_URL\t%s\n' "$DISCORD_HANG_ALERT_WEBHOOK_URL"
+        return 0
+    fi
+    if [[ -n "${DISCORD_WEBHOOK_URL-}" ]]; then
+        printf 'DISCORD_WEBHOOK_URL\t%s\n' "$DISCORD_WEBHOOK_URL"
+        return 0
+    fi
+    if [[ -n "${CLAUDE_PLUGIN_DATA-}" && -f "${CLAUDE_PLUGIN_DATA}/webhook" ]]; then
+        local url
+        url="$(head -n 1 -- "${CLAUDE_PLUGIN_DATA}/webhook" 2>/dev/null || true)"
+        if [[ -n "$url" ]]; then
+            printf 'plugin data file\t%s\n' "$url"
+            return 0
+        fi
+    fi
+    local config_file="${XDG_CONFIG_HOME:-$HOME/.config}/discord-hang-alert/webhook"
+    if [[ -f "$config_file" ]]; then
+        local url
+        url="$(head -n 1 -- "$config_file" 2>/dev/null || true)"
+        if [[ -n "$url" ]]; then
+            printf 'config file\t%s\n' "$url"
+            return 0
+        fi
+    fi
+    printf 'none\t\n'
+}
+
+title_for_type() {
+    case "$1" in
+        permission_prompt)      echo "Waiting for your permission" ;;
+        agent_needs_input)      echo "A subagent needs your input" ;;
+        elicitation_dialog)     echo "An MCP server is asking for input" ;;
+        elicitation_url_dialog) echo "An MCP server is asking you to open a URL" ;;
+        *)                      echo "Claude Code needs your attention" ;;
+    esac
+}
+
+build_payload() {
+    local notification_type="$1" cwd="$2" session_id="$3" username="$4"
+    local title project_name footer_session
+    title="$(title_for_type "$notification_type")"
+    project_name="$(basename -- "$cwd")"
+    footer_session=""
+    if [[ -n "$session_id" ]]; then
+        footer_session="${session_id:0:8}"
+    fi
+
+    jq -n \
+        --arg title "$title" \
+        --arg project "$project_name" \
+        --arg cwd "$cwd" \
+        --arg session "$footer_session" \
+        --arg username "$username" \
+        --argjson color 16776960 \
+        "$JQ_CLIP"'
+         ($title | clip(256)) as $t
+       | ("Claude Code is blocked and cannot continue until you respond.\nProject: `" + $project + "`") as $desc_raw
+       | ($desc_raw | clip(4000)) as $d
+       | ($cwd + (if $session != "" then " · " + $session else "" end)) as $footer_raw
+       | ($footer_raw | clip(2048)) as $f
+       | {embeds: [ {title: $t, description: $d, color: $color, footer: {text: $f}} ],
+          allowed_mentions: {parse: []}}
+         + (if $username != "" then {username: $username} else {} end)'
+}
+
+send_payload() {
+    # Prints "<http_code>\t<body>" on stdout. Never raises on network
+    # failure (curl's own exit status is deliberately ignored via
+    # `|| true`, matching this script's must-never-hang / must-never-fail
+    # contract), so the caller always gets a status line to inspect.
+    local payload="$1" webhook="$2"
+    local response http_code body
+
+    response="$(curl --silent --show-error --max-time 5 --request POST \
+        --header "Content-Type: application/json" \
+        --data "$payload" \
+        --write-out $'\n%{http_code}' \
+        "$webhook" 2>/dev/null)" || true
+
+    http_code="${response##*$'\n'}"
+    body="${response%$'\n'*}"
+    [[ "$http_code" =~ ^[0-9]+$ ]] || http_code=""
+
+    printf '%s\t%s\n' "$http_code" "$body"
+}
+
+main() {
+    local mode="${1---run}"
+
+    if [[ "$mode" == "--help" || "$mode" == "-h" ]]; then
+        usage
+        exit 0
+    fi
+
+    # DISCORD_HANG_ALERT_DISABLE=1 is a hard no-op: no logging at all.
+    if [[ "${DISCORD_HANG_ALERT_DISABLE-}" == "1" ]]; then
+        exit 0
+    fi
+
+    local self_test=0
+    if [[ "$mode" == "--self-test" ]]; then
+        self_test=1
+    fi
+
+    # Required tools. If either is missing there is no way to notify or
+    # (for jq) even to build the log line safely with structured data, so
+    # just fall back to a plain-text log line and exit.
+    local state_dir
+    state_dir="${CLAUDE_PLUGIN_DATA:-${XDG_STATE_HOME:-$HOME/.local/state}/discord-hang-alert}"
+
+    if ! command -v curl >/dev/null 2>&1; then
+        mkdir -p -- "$state_dir" 2>/dev/null && log_line "$state_dir" "curl not found, cannot send"
+        exit 0
+    fi
+    if ! command -v jq >/dev/null 2>&1; then
+        mkdir -p -- "$state_dir" 2>/dev/null && log_line "$state_dir" "jq not found, cannot send"
+        exit 0
+    fi
+
+    if ! mkdir -p -- "$state_dir" 2>/dev/null; then
+        # Nowhere to log to either; nothing more we can do.
+        exit 0
+    fi
+
+    # Prune stale cooldown state (older than 7 days) on every run.
+    find "$state_dir" -name 'session-*.last' -mtime +7 -delete 2>/dev/null || true
+
+    # Resolve cooldown (validated, defaults to 300 on anything invalid).
+    local cooldown="${DISCORD_HANG_ALERT_COOLDOWN:-300}"
+    if [[ ! "$cooldown" =~ ^[0-9]+$ ]]; then
+        cooldown=300
+    fi
+
+    local username="${DISCORD_HANG_ALERT_USERNAME:-Claude Code}"
+
+    local webhook_source webhook_url
+    IFS=$'\t' read -r webhook_source webhook_url < <(resolve_webhook)
+
+    if (( self_test )); then
+        echo "State directory: ${state_dir}"
+        echo "Cooldown: ${cooldown}s"
+        echo "Webhook source: ${webhook_source}"
+        if [[ -z "$webhook_url" ]]; then
+            echo "Webhook host: <none configured>"
+            log_line "$state_dir" "no webhook configured (self-test)"
+            exit 0
+        fi
+        echo "Webhook host: $(url_host "$webhook_url")"
+
+        if [[ ! "$webhook_url" =~ $WEBHOOK_HOST_REGEX ]]; then
+            echo "Result: refusing to send, non-Discord webhook host: $(url_host "$webhook_url")"
+            log_line "$state_dir" "refused non-Discord webhook host: $(url_host "$webhook_url") (self-test)"
+            exit 0
+        fi
+
+        local payload http_code body
+        payload="$(build_payload "permission_prompt" "${PWD}" "selftest0000" "$username")"
+        IFS=$'\t' read -r http_code body < <(send_payload "$payload" "$webhook_url")
+
+        if [[ "$http_code" == "200" || "$http_code" == "204" ]]; then
+            echo "Result: sent (HTTP ${http_code})"
+            log_line "$state_dir" "sent (self-test)"
+        else
+            echo "Result: failed (HTTP ${http_code:-<none>}): ${body:0:500}"
+            log_line "$state_dir" "send failed: HTTP ${http_code:-<none>} ${body:0:500} (self-test)"
+        fi
+        exit 0
+    fi
+
+    if [[ -z "$webhook_url" ]]; then
+        log_line "$state_dir" "no webhook configured"
+        exit 0
+    fi
+
+    if [[ ! "$webhook_url" =~ $WEBHOOK_HOST_REGEX ]]; then
+        log_line "$state_dir" "refused non-Discord webhook host: $(url_host "$webhook_url")"
+        exit 0
+    fi
+
+    # Read stdin payload.
+    local raw_payload
+    raw_payload="$(cat)" || raw_payload=""
+
+    if [[ "${DISCORD_HANG_ALERT_DEBUG-}" == "1" ]]; then
+        printf '%s' "$raw_payload" >"${state_dir}/last-payload.json" 2>/dev/null || true
+    fi
+
+    if ! jq -e . >/dev/null 2>&1 <<<"$raw_payload"; then
+        log_line "$state_dir" "unparseable payload"
+        exit 0
+    fi
+
+    local notification_type session_id cwd
+    notification_type="$(jq -r '.notification_type // .notificationType // empty' <<<"$raw_payload" 2>/dev/null || true)"
+    session_id="$(jq -r '.session_id // .sessionId // empty' <<<"$raw_payload" 2>/dev/null || true)"
+    cwd="$(jq -r '.cwd // empty' <<<"$raw_payload" 2>/dev/null || true)"
+    [[ -n "$cwd" ]] || cwd="$PWD"
+
+    # Sanitize the session id for use in a filename.
+    local sanitized_id
+    sanitized_id="$(tr -cd 'A-Za-z0-9_-' <<<"$session_id")"
+    [[ -n "$sanitized_id" ]] || sanitized_id="unknown"
+
+    local state_file="${state_dir}/session-${sanitized_id}.last"
+    local now
+    now="$(date +%s)"
+
+    if [[ -f "$state_file" ]]; then
+        local last remaining
+        last="$(cat -- "$state_file" 2>/dev/null || echo 0)"
+        [[ "$last" =~ ^[0-9]+$ ]] || last=0
+        if (( now - last < cooldown )); then
+            remaining=$(( cooldown - (now - last) ))
+            log_line "$state_dir" "suppressed (cooldown, ${remaining}s remaining)"
+            exit 0
+        fi
+    fi
+
+    local payload http_code body
+    payload="$(build_payload "$notification_type" "$cwd" "$session_id" "$username")"
+    IFS=$'\t' read -r http_code body < <(send_payload "$payload" "$webhook_url")
+
+    local session_log=""
+    [[ -n "$session_id" ]] && session_log=" session=${session_id:0:8}"
+
+    if [[ "$http_code" == "200" || "$http_code" == "204" ]]; then
+        printf '%s' "$now" >"$state_file" 2>/dev/null || true
+        log_line "$state_dir" "sent (${notification_type:-unknown})${session_log}"
+    else
+        log_line "$state_dir" "send failed: HTTP ${http_code:-<none>} ${body:0:500}${session_log}"
+    fi
+
+    exit 0
+}
+
+main "${1-}"
