@@ -7,9 +7,9 @@ terminal.
 ## What it does
 
 Claude Code stops and waits whenever it needs a human: a tool needs your
-approval, a subagent needs input, an MCP server opens an elicitation dialog.
-If you have stepped away, that wait costs you the whole time until you happen
-to look back at the terminal.
+approval, Claude asks you a question, a subagent needs input, an MCP server
+opens an elicitation dialog. If you have stepped away, that wait costs you the
+whole time until you happen to look back at the terminal.
 
 This plugin registers a `Notification` hook that fires on exactly those
 blocking events and sends one short Discord webhook message:
@@ -34,15 +34,37 @@ arrived" and "no such notification is emitted" impossible to tell apart.
 
 These are the types in the **default** allowlist:
 
-| Type | Meaning |
-| --- | --- |
-| `permission_prompt` | A tool call is waiting for your approval |
-| `agent_needs_input` | A subagent needs input from you |
-| `elicitation_dialog` | An MCP server is asking for input |
-| `elicitation_url_dialog` | An MCP server is asking you to open a URL |
+| Type | Meaning | Alert title |
+| --- | --- | --- |
+| `permission_prompt` | A tool call is waiting for your approval | Waiting for your permission |
+| `permission_prompt` + question marker | Claude asked you a question | Claude has a question for you |
+| `agent_needs_input` | A subagent needs input from you | A subagent needs your input |
+| `elicitation_dialog` | An MCP server is asking for input | An MCP server is asking for input |
+| `elicitation_url_dialog` | An MCP server is asking you to open a URL | An MCP server is asking you to open a URL |
 
 Anything else is logged as `ignored (<type>)` and nothing is sent. Change the
-list with `DISCORD_HANG_ALERT_TYPES` — no need to edit `hooks.json`.
+list with `DISCORD_HANG_ALERT_TYPES` — no need to edit `hooks.json`. For a type
+with no title of its own, the alert uses Claude Code's own notification text
+from the payload's `message` field.
+
+### Telling a question apart from a permission request
+
+Claude Code reports the `AskUserQuestion` tool as `permission_prompt` with the
+message `"Claude needs your permission"`, exactly like a tool awaiting
+approval — the notification payload carries nothing that separates the two.
+
+So a second hook supplies what the payload cannot. A `PreToolUse` hook matching
+the `AskUserQuestion` tool drops a marker file for the session; the
+`Notification` handler consumes a marker younger than 15 seconds and titles the
+alert **"Claude has a question for you"** instead.
+
+The marker hook only writes that file. It never touches the network and writes
+nothing to stdout, because `PreToolUse` is awaited before the tool runs and its
+stdout is a decision channel — a stray line there could block the tool call.
+Sending stays entirely with the `Notification` handler, so a question produces
+one alert, not two. The marker is consumed even when the alert is suppressed by
+the cooldown, so it can never leak onto a later permission prompt, and the log
+records these as `sent (permission_prompt/question)`.
 
 Excluded from the default list on purpose: `idle_prompt` (fires while you are
 simply reading the terminal) and `agent_completed` (that is a completion
@@ -89,7 +111,7 @@ A hook fires automatically with no model in the loop, so the limits are
 mechanical rather than advisory:
 
 - **Cooldown per session** — at most one notification per session every
-  `DISCORD_HANG_ALERT_COOLDOWN` seconds (default 300). The timestamp is
+  `DISCORD_HANG_ALERT_COOLDOWN` seconds (default 60). The timestamp is
   recorded only after a *successful* send, so a failed send never starts a
   cooldown that swallows the next real alert.
 - **No retries** — a duplicate ping is worse than a missed one.
@@ -109,7 +131,7 @@ mechanical rather than advisory:
 | --- | --- | --- |
 | `DISCORD_HANG_ALERT_WEBHOOK_URL` | — | Webhook URL (highest priority) |
 | `DISCORD_WEBHOOK_URL` | — | Webhook URL, shared with `discord-notify` |
-| `DISCORD_HANG_ALERT_COOLDOWN` | `300` | Seconds between alerts for one session |
+| `DISCORD_HANG_ALERT_COOLDOWN` | `60` | Seconds between alerts for one session. Kept short because every alert means work is already stopped |
 | `DISCORD_HANG_ALERT_TYPES` | the four types above | Allowlist of `notification_type` values, separated by commas and/or spaces. The value `all` disables filtering — use it to find out what your Claude Code actually emits |
 | `DISCORD_HANG_ALERT_USERNAME` | `Claude Code` | Webhook display name |
 | `DISCORD_HANG_ALERT_DISABLE` | — | Set to `1` to turn the hook off entirely |
@@ -185,6 +207,7 @@ claude plugin install discord-hang-alert@rishubil-skills --scope project
 
 | Event | Matcher | Script |
 |---|---|---|
+| `PreToolUse` | `AskUserQuestion` | `scripts/discord-hang-alert-hook.sh --mark-question` (timeout 5s) — records a marker only; no network, no stdout |
 | `Notification` | `*` — every type reaches the script, which filters against `DISCORD_HANG_ALERT_TYPES` so skipped types stay visible in the log | `scripts/discord-hang-alert-hook.sh` (timeout 10s) |
 
 ## Scripts
