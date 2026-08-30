@@ -6,6 +6,13 @@
 # NOT for progress or completion notices (see the discord-notify plugin
 # for that).
 #
+# The hook is registered with a `*` matcher, so it receives EVERY
+# notification type Claude Code emits. Filtering against the allowlist of
+# "blocked waiting for the user" types happens inside this script (see
+# DISCORD_HANG_ALERT_TYPES below) rather than via the matcher, so a
+# non-matching type is never silently dropped by Claude Code — it shows up
+# in the log as "ignored (<type>)" instead.
+#
 # IMPORTANT: the Notification hook's exit code and stderr are IGNORED by
 # Claude Code, so this script can never block or break a session no
 # matter what happens. Every failure path below logs (to the log file
@@ -68,6 +75,12 @@ Purpose:
   session, no matter what happens (missing config, network failure,
   malformed input, etc.) — every failure path logs and exits 0.
 
+  The hook itself is registered with a `*` matcher, so Claude Code hands
+  it every notification type it emits; this script then filters against
+  DISCORD_HANG_ALERT_TYPES below. A type that isn't in the allowlist is
+  never silently dropped by Claude Code — it shows up in the log as
+  "ignored (<type>)".
+
 Webhook URL resolution (first match wins):
   1. DISCORD_HANG_ALERT_WEBHOOK_URL environment variable
   2. DISCORD_WEBHOOK_URL environment variable
@@ -99,6 +112,21 @@ Environment variables:
                                     is the only sanctioned way to inspect
                                     the real (undocumented) hook payload
                                     shape.
+  DISCORD_HANG_ALERT_TYPES         Allowlist of notification_type values
+                                    that trigger an alert. Entries are
+                                    separated by commas and/or whitespace
+                                    (e.g. "a,b", "a b", "a, b" are all
+                                    equivalent). The special value "all"
+                                    (case-insensitive) disables filtering
+                                    entirely, letting every notification
+                                    type through — combine this with
+                                    DISCORD_HANG_ALERT_DEBUG=1 to discover
+                                    which notification types a given
+                                    Claude Code version actually emits
+                                    (e.g. whether the AskUserQuestion tool
+                                    produces any notification at all).
+                                    Default:
+                                    permission_prompt,agent_needs_input,elicitation_dialog,elicitation_url_dialog
 
 Config files (used only when the corresponding env var is unset):
   ${CLAUDE_PLUGIN_DATA}/webhook
@@ -187,6 +215,42 @@ resolve_webhook() {
         fi
     fi
     printf 'none\t\n'
+}
+
+# Notification types that mean "the session is blocked waiting for the
+# user". Overridable with DISCORD_HANG_ALERT_TYPES.
+readonly DEFAULT_TYPES='permission_prompt,agent_needs_input,elicitation_dialog,elicitation_url_dialog'
+
+# Exact-match test of a notification type against the allowlist. Entries in
+# the allowlist may be separated by commas and/or whitespace. The whole
+# value "all" (case-insensitive) disables filtering. An empty type never
+# matches, so a payload whose notification_type field is missing or renamed
+# is reported as ignored rather than silently alerting on everything.
+type_allowed() {
+    local needle="$1"
+    local raw="${DISCORD_HANG_ALERT_TYPES:-$DEFAULT_TYPES}"
+
+    if [[ "${raw,,}" == "all" ]]; then
+        return 0
+    fi
+    if [[ -z "$needle" ]]; then
+        return 1
+    fi
+
+    local item found=1
+    local old_ifs="$IFS"
+    IFS=$', \t\n'
+    # Deliberately unquoted: IFS word-splitting is the point here. Empty
+    # fields from repeated separators can never match a non-empty needle.
+    # shellcheck disable=SC2086
+    for item in $raw; do
+        if [[ "$item" == "$needle" ]]; then
+            found=0
+            break
+        fi
+    done
+    IFS="$old_ifs"
+    return "$found"
 }
 
 title_for_type() {
@@ -360,6 +424,20 @@ main() {
     cwd="$(jq -r '.cwd // empty' <<<"$raw_payload" 2>/dev/null || true)"
     [[ -n "$cwd" ]] || cwd="$PWD"
 
+    # Filter here rather than in the hook matcher. The hook is registered
+    # with "*" so every notification type reaches this script, which means
+    # a type we skip still leaves an "ignored (<type>)" line in the log.
+    # With the matcher doing the filtering there was no trace at all, so
+    # "no alert arrived" and "no such notification is emitted" looked
+    # identical and could not be told apart.
+    #
+    # This runs BEFORE the cooldown check on purpose: an ignored type must
+    # never consume the cooldown budget and hide a later real alert.
+    if ! type_allowed "$notification_type"; then
+        log_line "$state_dir" "ignored (${notification_type:-<none>})"
+        exit 0
+    fi
+
     # Sanitize the session id for use in a filename.
     local sanitized_id
     sanitized_id="$(tr -cd 'A-Za-z0-9_-' <<<"$session_id")"
@@ -384,8 +462,13 @@ main() {
     payload="$(build_payload "$notification_type" "$cwd" "$session_id" "$username")"
     IFS=$'\t' read -r http_code body < <(send_payload "$payload" "$webhook_url")
 
+    # An `x && y` statement would abort here under `set -o errexit` when the
+    # test fails, skipping the result logging entirely for a payload with no
+    # session id.
     local session_log=""
-    [[ -n "$session_id" ]] && session_log=" session=${session_id:0:8}"
+    if [[ -n "$session_id" ]]; then
+        session_log=" session=${session_id:0:8}"
+    fi
 
     if [[ "$http_code" == "200" || "$http_code" == "204" ]]; then
         printf '%s' "$now" >"$state_file" 2>/dev/null || true

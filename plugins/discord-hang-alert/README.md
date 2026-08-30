@@ -26,7 +26,13 @@ you when work *finishes*, use the separate `discord-notify` plugin.
 
 ### Which events trigger it
 
-The hook matches these `notification_type` values:
+The hook is registered with a `*` matcher, so Claude Code hands it **every**
+notification type it emits, and the filtering happens inside the script. That
+placement is deliberate: when the matcher did the filtering, a type outside the
+list never reached the script and left no trace at all, which made "no alert
+arrived" and "no such notification is emitted" impossible to tell apart.
+
+These are the types in the **default** allowlist:
 
 | Type | Meaning |
 | --- | --- |
@@ -35,9 +41,12 @@ The hook matches these `notification_type` values:
 | `elicitation_dialog` | An MCP server is asking for input |
 | `elicitation_url_dialog` | An MCP server is asking you to open a URL |
 
-Deliberately **excluded**: `idle_prompt` (fires while you are simply reading
-the terminal) and `agent_completed` (that is a completion notice, and it would
-fire on every turn).
+Anything else is logged as `ignored (<type>)` and nothing is sent. Change the
+list with `DISCORD_HANG_ALERT_TYPES` — no need to edit `hooks.json`.
+
+Excluded from the default list on purpose: `idle_prompt` (fires while you are
+simply reading the terminal) and `agent_completed` (that is a completion
+notice, and it would fire on every turn).
 
 ## Setup
 
@@ -101,6 +110,7 @@ mechanical rather than advisory:
 | `DISCORD_HANG_ALERT_WEBHOOK_URL` | — | Webhook URL (highest priority) |
 | `DISCORD_WEBHOOK_URL` | — | Webhook URL, shared with `discord-notify` |
 | `DISCORD_HANG_ALERT_COOLDOWN` | `300` | Seconds between alerts for one session |
+| `DISCORD_HANG_ALERT_TYPES` | the four types above | Allowlist of `notification_type` values, separated by commas and/or spaces. The value `all` disables filtering — use it to find out what your Claude Code actually emits |
 | `DISCORD_HANG_ALERT_USERNAME` | `Claude Code` | Webhook display name |
 | `DISCORD_HANG_ALERT_DISABLE` | — | Set to `1` to turn the hook off entirely |
 | `DISCORD_HANG_ALERT_DEBUG` | — | Set to `1` to dump the raw hook payload (see below) |
@@ -122,8 +132,25 @@ tail -20 "${XDG_STATE_HOME:-$HOME/.local/state}/discord-hang-alert/hang-alert.lo
 instead — `--self-test` prints the resolved path.)
 
 Every invocation appends one line: `sent (permission_prompt) session=a1b2c3d4`,
-`suppressed (cooldown, 240s remaining)`, `no webhook configured`,
-`unparseable payload`, or `send failed: HTTP 401 ...`.
+`ignored (agent_completed)`, `suppressed (cooldown, 240s remaining)`,
+`no webhook configured`, `unparseable payload`, or
+`send failed: HTTP 401 ...`.
+
+### Finding out which notification types you actually get
+
+`ignored (<type>)` is the line that tells you a notification arrived but was
+not on the allowlist. To see everything Claude Code emits — for instance to
+check whether the `AskUserQuestion` tool produces a notification at all —
+widen the allowlist and capture the payload:
+
+```bash
+export DISCORD_HANG_ALERT_TYPES=all
+export DISCORD_HANG_ALERT_DEBUG=1
+```
+
+Then reproduce the situation and read the log. If a type shows up that belongs
+in your alerts, add it to `DISCORD_HANG_ALERT_TYPES`; if the log stays empty,
+that situation emits no `Notification` event and no hook can catch it.
 
 ### On the undocumented payload
 
@@ -158,7 +185,7 @@ claude plugin install discord-hang-alert@rishubil-skills --scope project
 
 | Event | Matcher | Script |
 |---|---|---|
-| `Notification` | `permission_prompt\|agent_needs_input\|elicitation_dialog\|elicitation_url_dialog` | `scripts/discord-hang-alert-hook.sh` (timeout 10s) |
+| `Notification` | `*` — every type reaches the script, which filters against `DISCORD_HANG_ALERT_TYPES` so skipped types stay visible in the log | `scripts/discord-hang-alert-hook.sh` (timeout 10s) |
 
 ## Scripts
 
