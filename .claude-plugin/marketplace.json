@@ -198,6 +198,15 @@
       "source": "./plugins/discord-hang-alert",
       "strict": false,
       "skills": []
+    },
+    {
+      "name": "unslop",
+      "description": "Verbatim port of the unslop skill from Cursor's pstack plugin — edit text to remove AI tells and add human voice, using a 31-pattern checklist.",
+      "source": "./plugins/unslop",
+      "strict": false,
+      "skills": [
+        "./skills/unslop"
+      ]
     }
   ]
 }
