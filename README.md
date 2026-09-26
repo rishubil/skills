@@ -80,6 +80,16 @@ Example:
 
 After installation, mention the skill name or description and Claude will automatically use the relevant skill.
 
+### Updating installed plugins
+
+Run this from a project directory to refresh all marketplaces, then update every plugin that applies there: `user`-scope plugins plus the `project`/`local`-scope plugins installed for the current directory. Plugins installed for other projects are left alone. Restart Claude Code afterwards to apply the updates.
+
+```bash
+claude plugin marketplace update && claude plugin list --json | jq -r --arg cwd "$PWD" '.[] | select(.scope == "user" or ((.scope == "project" or .scope == "local") and .projectPath == $cwd)) | [.scope, .id] | @tsv' | sort -u | while IFS=$'\t' read -r s id; do echo "== $id [$s]"; claude plugin update "$id" -s "$s" </dev/tty; done
+```
+
+`</dev/tty` keeps `claude plugin update` from reading the loop's input and lets it show confirmation prompts. The directory must match the path the plugins were installed from exactly (a subdirectory will not match).
+
 ### Auto-install via `.claude/settings.json`
 
 To prompt every team member (or yourself, across projects) to install this marketplace automatically when the project folder is trusted, add it to `.claude/settings.json`. See [Require marketplaces for your team](https://code.claude.com/docs/en/plugin-marketplaces#require-marketplaces-for-your-team) for details.
