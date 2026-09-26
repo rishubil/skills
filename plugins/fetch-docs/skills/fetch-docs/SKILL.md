@@ -1,6 +1,6 @@
 ---
 name: fetch-docs
-description: Fetch web-based development documentation and save it as clean markdown files while preserving the site's directory structure. Use this skill whenever the user wants to download, archive, or save online documentation locally — including phrases like "fetch the docs from X", "save this documentation as markdown", "download the docs at [URL]", "convert these web docs to markdown", "archive this docs site", or "cache the API reference from [URL]". Also trigger when a user pastes a docs URL and says they want it saved or stored locally.
+description: Fetch web-based development documentation and save it as clean markdown files while preserving the site's directory structure. Use whenever the user wants online documentation or an API reference downloaded, archived, cached, or converted to markdown for local use, including when they paste a docs URL and ask to keep it.
 ---
 
 # fetch-docs

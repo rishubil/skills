@@ -58,7 +58,7 @@ Then ask the user to pick one of three options:
    most 4 top issues per section.
 3. **SMALL CHANGE:** Compressed review — Step 0 + one combined pass covering
    all 5 sections. For each section, pick the single most important issue
-   (think hard — this forces prioritization). Present as a single numbered
+   (this forces prioritization). Present as a single numbered
    list with lettered options + completion summary. One AskUserQuestion round
    at the end.
 
@@ -83,8 +83,8 @@ Evaluate:
 * For each new code path or integration point, describe one realistic
   production failure scenario and say whether the plan handles it.
 
-**STOP.** You MUST call AskUserQuestion NOW with findings from this section.
-Do NOT proceed to the next section until the user responds.
+In BIG CHANGE mode, end this section by calling AskUserQuestion with its
+findings, and wait for the answer before starting the next section.
 
 ### 2. Code quality review
 
@@ -98,8 +98,8 @@ Evaluate:
 * Areas that are over-engineered or under-engineered relative to the
   preferences above.
 
-**STOP.** You MUST call AskUserQuestion NOW with findings from this section.
-Do NOT proceed to the next section until the user responds.
+In BIG CHANGE mode, end this section by calling AskUserQuestion with its
+findings, and wait for the answer before starting the next section.
 
 ### 3. Test review
 
@@ -107,8 +107,8 @@ List every new UI, new data flow, new code path, and new branch or outcome
 in the plan. For each one, note what makes it new. Then, for each new item,
 make sure there is a matching test in the appropriate test suite.
 
-**STOP.** You MUST call AskUserQuestion NOW with findings from this section.
-Do NOT proceed to the next section until the user responds.
+In BIG CHANGE mode, end this section by calling AskUserQuestion with its
+findings, and wait for the answer before starting the next section.
 
 ### 4. Performance review
 
@@ -119,8 +119,8 @@ Evaluate:
 * Caching opportunities.
 * Slow or high-complexity code paths.
 
-**STOP.** You MUST call AskUserQuestion NOW with findings from this section.
-Do NOT proceed to the next section until the user responds.
+In BIG CHANGE mode, end this section by calling AskUserQuestion with its
+findings, and wait for the answer before starting the next section.
 
 ### 5. Debuggability review
 
@@ -149,8 +149,8 @@ Evaluate:
 * **Feature flags & kill switches:** For risky new code paths, is there a
   way to turn them off in production without a deploy?
 
-**STOP.** You MUST call AskUserQuestion NOW with findings from this section.
-Do NOT proceed to the next section until the user responds.
+In BIG CHANGE mode, end this section by calling AskUserQuestion with its
+findings, and wait for the answer before starting the next section.
 
 ## For each issue you find
 
@@ -226,7 +226,6 @@ more aggressive when reviewing areas that were problematic before.
 * The recommended option is always listed first.
 * Keep each option to one sentence max. The user should be able to pick in
   under 5 seconds.
-* After each review section, pause and ask for feedback before moving on.
 
 ## Unresolved decisions
 

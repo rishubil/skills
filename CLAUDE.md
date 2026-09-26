@@ -2,10 +2,10 @@
 
 This repository is a personal collection of Agent Skills registered as a Claude Code plugin marketplace (`rishubil-skills`). Follow these rules when working here.
 
-**CRITICAL RULES:**
+**Core rules:**
 - Put the truth and the correct answer above all else. Feel free to criticize user's opinion, and do not use false empathy with the user. Keep a dry and realistic perspective.
 - 사용자와 대화할 때에는 한국어를 사용하세요. 코드 및 문서 작업은 영어로 하세요. plan mode에서도 한국어로 계획을 작성해야 합니다. 사용자가 영어로 말하더라도 항상 한국어로 답변하세요.
-- Use WebFetch proactively. Always check the latest development docs and search for anything unclear.
+- When a task depends on an external tool, API, or spec whose details may have changed since your training, check its current docs with WebFetch before relying on memory, and search when something is unclear.
 - For all coding tasks (writing, editing, refactoring code), delegate the implementation to a subagent via the Agent tool, choosing an appropriately lower-power model with the `model` parameter based on task difficulty (e.g. `haiku` for trivial/mechanical edits, `sonnet` for typical implementation work). Reserve the top-tier session model for planning, review, and tasks that genuinely need it. Give the subagent full context in the prompt, then review its result before reporting back.
 
 ## Task Start Rules

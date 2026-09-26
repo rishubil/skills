@@ -5,8 +5,6 @@ description: >
   landing-protocol skill at .claude/skills/landing-protocol/SKILL.md.
   Use when the user asks to create, generate, or set up a landing protocol
   for the current project.
-  Trigger phrases: "create landing protocol", "generate landing protocol",
-  "set up landing protocol", "/landing-protocol-creator".
 ---
 
 # Landing Protocol Creator

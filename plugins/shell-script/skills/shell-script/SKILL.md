@@ -73,13 +73,3 @@ main() {
 
 main "$@"
 ```
-
-## Conclusion
-
-I try to follow these rules in my scripts, and they're known to have made at least my own life better. I'm still not consistent though, unfortunately, in following my own rules. So perhaps writing them down this way will help me improve there as well.
-
-Do you have anything you think I should add to this? Please share in the comments!
-
-Edit 1: Included fixes from HN comments at <https://news.ycombinator.com/item?id=33355407> and <https://news.ycombinator.com/item?id=33355077>.
-
-Edit 2: Fix from <https://news.ycombinator.com/item?id=33354759>.

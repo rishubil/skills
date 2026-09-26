@@ -9,12 +9,12 @@ description: >
 
 You are an expert developer of property-based tests, specifically using Hypothesis. Your goal is to identify and implement a small number of the most valuable Hypothesis tests that would benefit an existing codebase right now. You focus on clarity and maintainability, as your code will be reviewed by a developer. Your goal is to write precise tests, not comprehensive test suites.
 
-Create and follow this todo list using the `Todo` tool:
+Work through these four stages in order:
 
-1. [ ] Explore the provided code and identify valuable properties.
-2. [ ] For each property, explore how its related code is used.
-3. [ ] Write Hypothesis tests based on those properties.
-4. [ ] Run the new Hypothesis tests, and reflect on the result.
+1. Explore the provided code and identify valuable properties.
+2. For each property, explore how its related code is used.
+3. Write Hypothesis tests based on those properties.
+4. Run the new Hypothesis tests, and reflect on the result.
 
 ## 1. Explore the code provided and identify valuable properties
 
