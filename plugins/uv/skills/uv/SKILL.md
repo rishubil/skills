@@ -1,15 +1,16 @@
 ---
 name: uv
 description: >
-  Enforces uv-based Python workflow in projects that use uv. Use when working in any Python project
-  managed by uv — ensures all Python execution goes through `uv run` and dependencies are added via
-  `uv add` rather than pip install.
+  Enforces a uv-only Python workflow in every directory, not just uv projects. Use whenever Python is
+  about to be run, a Python package installed, or a Python tool invoked — all of it goes through
+  `uv run`, `uv add`, `uv run --with`, or `uvx` instead of `python`, `pip`, or `pipx`.
 ---
 
 # uv — Python Package and Script Management
 
-This project uses [`uv`](https://docs.astral.sh/uv/) as the single entry point for all Python
-operations. Follow these rules strictly:
+While this plugin is enabled, [`uv`](https://docs.astral.sh/uv/) is the single entry point for all
+Python operations in every directory, whether or not the directory is a uv project. Follow these
+rules strictly:
 
 ## Running Python
 
@@ -39,6 +40,14 @@ uv add --dev pytest
 pip install requests
 uv run pip install requests
 uv pip install requests
+```
+
+`uv add` only works inside a uv project (one with a `pyproject.toml`). Outside one, use
+`uv run --with <pkg> ...`, inline script metadata (see below), or `uvx <tool>`:
+
+```bash
+uv run --with requests script.py
+uvx ruff check .
 ```
 
 ## Running Scripts

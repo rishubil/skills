@@ -97,7 +97,7 @@
     },
     {
       "name": "uv",
-      "description": "PreToolUse hook that blocks direct python/pip invocations and pip install via uv, enforcing uv run and uv add in uv-managed Python projects.",
+      "description": "PreToolUse hook that enforces uv for all Python use, blocking direct python/pip invocations in every directory where the plugin is enabled.",
       "source": "./plugins/uv",
       "strict": false,
       "skills": [
