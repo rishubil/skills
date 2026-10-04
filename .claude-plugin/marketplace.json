@@ -214,6 +214,15 @@
       "source": "./plugins/self-kill-guard",
       "strict": false,
       "skills": []
+    },
+    {
+      "name": "ste100-korean",
+      "description": "ASD-STE100-style controlled-language rules for every Korean and English text the agent writes, with an English-Korean glossary, a SessionStart hook, and a bilingual linter.",
+      "source": "./plugins/ste100-korean",
+      "strict": false,
+      "skills": [
+        "./skills/ste100-korean"
+      ]
     }
   ]
 }

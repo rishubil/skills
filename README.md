@@ -55,6 +55,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `discord-hang-alert` | `Notification` hook that pings Discord when a session is blocked waiting for you — permission prompts, subagent input, MCP elicitations. Not for progress reports. |
 | `unslop` | Edit text to remove AI tells — a 28-pattern checklist. Verbatim port of the `unslop` skill from Cursor's `pstack` plugin (MIT). |
 | `self-kill-guard` | PreToolUse hook that blocks Bash commands which would kill their own shell or Claude Code itself — `pkill -f`, `pgrep \| kill`, `ps \| grep \| kill` checked against what they would really match. |
+| `ste100-korean` | ASD-STE100-style controlled-language rules for Korean and English writing — an always-on `SessionStart` hook, an English-Korean `GLOSSARY.md`, and a bilingual linter backed by the Kiwi morphological analyzer. |
 
 ## Using in Claude Code
 
@@ -160,6 +161,7 @@ In short:
 | `plugins/resticprofile/skills/resticprofile/references/**` | MIT License — (c) resticprofile contributors (local reference cache) |
 | `plugins/design-md/skills/design-md/references/**` | Apache License 2.0 — (c) Google LLC (local reference cache) |
 | `plugins/unslop/skills/unslop/SKILL.md` | MIT License — (c) 2026 Lauren Tan (verbatim copy from `cursor/plugins`) |
+| `plugins/ste100-korean/skills/ste100-korean/**` | MIT License — adapted from `danyuchn/asd-ste100-skill` ((c) 2026 Dustin Yuchen Teng), `beamonic/ste-ko` ((c) 2026 Beamonic), `Turtle-Hwan/im-ai-copyeditor` ((c) 2026 Turtle-Hwan), and `cursor/plugins` unslop ((c) 2026 Lauren Tan) |
 
 If you are a rights holder for any of the cached third-party content
 and wish it removed, please open an issue.

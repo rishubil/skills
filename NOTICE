@@ -85,6 +85,27 @@ Third-party content in this repository
                 NOTICE.md.
      See:       plugins/unslop/skills/unslop/NOTICE.md
 
+7. plugins/ste100-korean/skills/ste100-korean/
+     Source:    https://github.com/danyuchn/asd-ste100-skill
+                https://github.com/beamonic/ste-ko
+                https://github.com/Turtle-Hwan/im-ai-copyeditor
+                https://github.com/cursor/plugins (pstack/skills/unslop)
+     Copyright: (c) 2026 Dustin Yuchen Teng
+                (c) 2026 Beamonic
+                (c) 2026 Turtle-Hwan
+                (c) 2026 Lauren Tan
+     License:   MIT License (all four)
+     Note:      Not a verbatim copy. The skill adapts the structure,
+                English rules, and linter of asd-ste100-skill, several
+                Korean rule ideas and a regex technique from ste-ko,
+                Korean rule ideas from im-ai-copyeditor, and English
+                rule ideas from unslop. The adapted files are
+                redistributed under the MIT License, with all four
+                upstream copyright notices
+                reproduced in the skill's NOTICE.md. The skill does not
+                contain the ASD-STE100 rule text or dictionary.
+     See:       plugins/ste100-korean/skills/ste100-korean/NOTICE.md
+
 Notes on attribution vs. license
 --------------------------------
 
