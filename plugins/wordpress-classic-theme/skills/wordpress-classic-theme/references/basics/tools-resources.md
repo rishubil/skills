@@ -1,13 +1,14 @@
 ---
 title: Tools & Resources
 source: https://developer.wordpress.org/themes/classic-themes/basics/tools-resources/
-updated: 2026-05-11
+updated: 2026-10-04
 ---
 
 # Tools & Resources
 
 **Author:** Damon Cook  
-**Published:** September 12, 2022
+**Published:** September 12, 2022  
+**Last Modified:** July 20, 2026
 
 ## Overview
 
@@ -64,7 +65,7 @@ This plugin enables developers to run WordPress.org's automated testing before s
 ## Training Materials
 
 Available resources include:
-- Site Design with Full Site Editing (Parts 1-3)
+- Simple Site Design and Site Editing (Parts 1-3)
 - Anatomy of a Block Theme
 - Creating landing pages with block themes
 - Building home pages with block themes

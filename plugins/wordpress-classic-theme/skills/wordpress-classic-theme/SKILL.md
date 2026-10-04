@@ -112,7 +112,6 @@ references/
 │   ├── index.md                          # Template files overview
 │   ├── post-template-files.md            # Post templates
 │   ├── page-template-files.md            # Page template files
-│   ├── page-templates.md                 # Page templates (custom)
 │   ├── attachment-template-files.md      # Attachment templates
 │   ├── custom-post-type-template-files.md # CPT templates
 │   ├── taxonomy-templates.md             # Taxonomy templates
@@ -176,7 +175,7 @@ references/
 | Featured images | `references/functionality/featured-images-post-thumbnails.md` |
 | Customizer basics | `references/customize-api/index.md` |
 | Customizer objects | `references/customize-api/customizer-objects.md` |
-| Page templates | `references/templates/page-templates.md` |
+| Page templates | `references/templates/page-template-files.md` |
 | Taxonomy templates | `references/templates/taxonomy-templates.md` |
 
 To find documentation, Read the paths above directly or search with `find <skill-path>/references -name "*.md" | grep <keyword>`.

@@ -1,12 +1,12 @@
 ---
 title: List of Conditional Tags
 source: https://developer.wordpress.org/themes/classic-themes/references/list-of-conditional-tags/
-updated: 2026-05-11
+updated: 2026-10-04
 ---
 
-Conditional Tags are a boolean data type that can be used in your Template Files to alter the display of content depending on the conditions that the current page matches. They tell WordPress what code to display under specific conditions. Conditional Tags usually work with PHP [if](http://php.net/manual/en/control-structures.if.php "PHP if conditional") / [else](http://php.net/manual/en/control-structures.else.php "PHP else conditional") Conditional Statements and have close relation with WOrdPress [Template Hierarchy](https://codex.wordpress.org/Template_Hierarchy "Template Hierarchy")..
+Conditional Tags are a boolean data type that can be used in your Template Files to alter the display of content depending on the conditions that the current page matches. They tell WordPress what code to display under specific conditions. Conditional Tags usually work with PHP [if](http://php.net/manual/en/control-structures.if.php "PHP if conditional") / [else](http://php.net/manual/en/control-structures.else.php "PHP else conditional") Conditional Statements and have a close relation with WordPress [Template Hierarchy](https://codex.wordpress.org/Template_Hierarchy "Template Hierarchy").
 
-**Warning: You can only use conditional query tags after the [WP\_Query](https://developer.wordpress.org/reference/classes/wp_query/) is set up or with [action hook](https://codex.wordpress.org/Plugin_API/Action_Reference#Actions_Run_During_a_Typical_Request "Plugin API/Action Reference").**
+**Warning: You can only use conditional query tags after the [WP\_Query](https://developer.wordpress.org/reference/classes/wp_query/) is set up or with an [action hook](https://codex.wordpress.org/Plugin_API/Action_Reference#Actions_Run_During_a_Typical_Request "Plugin API/Action Reference").**
 
 ## Complete List of Conditional Tags
 

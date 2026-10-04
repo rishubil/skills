@@ -1,7 +1,7 @@
 ---
 title: Page Templates
 source: https://developer.wordpress.org/themes/classic-themes/templates/page-template-files/
-updated: 2026-05-11
+updated: 2026-10-04
 ---
 
 Page templates are a specific type of [template file](https://developer.wordpress.org/themes/basics/template-files/ "Template Files") that can be applied to a specific page or groups of pages.
@@ -58,7 +58,11 @@ Sometimes it is appropriate to have a template globally available even if it app
 
 ## File Organization of Page Templates
 
-As discussed in [Organizing Theme Files](https://developer.wordpress.org/themes/basics/organizing-theme-files/), WordPress recognizes the subfolder **page-templates**. Therefore, it’s a good idea to store your global page templates in this folder to help keep them organized.
+As discussed in [Organizing Theme Files](https://developer.wordpress.org/themes/basics/organizing-theme-files/), WordPress can recognize page templates stored in the theme’s root folder or in a first-level subdirectory of the theme folder.
+
+The `page-templates/` folder is a common convention for organizing global page templates, but it is not required. Page templates can also be stored in other first-level subdirectories, such as `templates/` or `page_templates/`.
+
+Nested subdirectories, such as `pages/templates/`, are not supported for page templates.
 
 ## Creating Custom Page Templates for Global Use
 
