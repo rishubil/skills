@@ -1,8 +1,8 @@
 ---
 title: Google Maps - Meta Box Documentation
 source: https://docs.metabox.io/fields/map/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The **Google Maps field** lets you select and save a location directly on a map. It works together with an **address text field**, which supports **autocomplete** powered by the Google Maps Geocoding service.

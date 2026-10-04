@@ -1,8 +1,8 @@
 ---
 title: Displaying related posts based on a shared relationship with Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-related-posts-based-on-shared-relationship/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we’re going to **create and display related posts in a single post based on a shared relationship** with **Meta Box**. This can be applied to various scenarios, such as showing related events connected to the same artists, related products within the same category, or additional articles by the same author.

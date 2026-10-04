@@ -1,8 +1,8 @@
 ---
 title: MB Rest API - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-rest-api/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 [MB Rest API](https://metabox.io/plugins/mb-rest-api/) helps you get and update custom fields via the WordPress Rest API. It's very helpful if you develop an application that uses WordPress as a back end such as a mobile app, or if you need to integrate WordPress with another system.
@@ -327,7 +327,7 @@ Or via JavaScript with WordPress [apiFetch](https://developer.wordpress.org/bloc
 import apiFetch from '@wordpress/api-fetch';
 
 apiFetch( {
-    path: \`/meta-box/v1/settings-page?id=website-settings\`,
+    path: `/meta-box/v1/settings-page?id=website-settings`,
 } ).then( res => console.log( res ) );
 ```
 

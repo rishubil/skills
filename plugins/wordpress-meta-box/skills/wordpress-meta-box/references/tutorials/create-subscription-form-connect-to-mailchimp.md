@@ -1,8 +1,8 @@
 ---
 title: Creating a subscription form connecting to Mailchimp - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-subscription-form-connect-to-mailchimp/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’re going to use the [MB Frontend Submission](https://metabox.io/plugins/mb-frontend-submission/) extension of Meta Box to create a subscription form and connect it with an email marketing service - Mailchimp to manage and send emails fast and easily.

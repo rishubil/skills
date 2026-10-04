@@ -1,8 +1,8 @@
 ---
 title: Displaying opening hours for restaurants - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-opening-hours-restaurants-oxygen/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In a website for booking restaurants, there will be a lot of different restaurants. Definitely, each restaurant has its own opening hours and you may want to create a section for the opening time for each one. So, in this next part of the series, we’re going to figure out how to add an opening hours section into the singular page by Meta Box and Oxygen.

@@ -1,8 +1,8 @@
 ---
 title: Counting the number of related posts using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/count-related-posts-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **Numbering related posts** and **displaying their total count** is an effective way to enhance user experience. Using the **MB Views** extension from Meta Box, you can implement this feature easily and provide readers with a clear idea of how much relevant content they can explore.

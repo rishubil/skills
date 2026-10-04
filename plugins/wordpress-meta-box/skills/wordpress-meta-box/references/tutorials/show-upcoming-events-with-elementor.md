@@ -1,8 +1,8 @@
 ---
 title: Showing upcoming events - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-elementor/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **Showing upcoming events** provides a clear view of upcoming deadlines and important dates, allowing you to manage tasks and priorities effectively. Today, we’re going to do it by combining **Meta Box** and **Elementor**.

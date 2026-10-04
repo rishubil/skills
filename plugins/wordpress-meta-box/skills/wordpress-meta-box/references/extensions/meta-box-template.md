@@ -1,8 +1,8 @@
 ---
 title: MB Template - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-template/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB Template helps you write configuration for custom fields in the YAML format, which is human-readable and easy to understand.

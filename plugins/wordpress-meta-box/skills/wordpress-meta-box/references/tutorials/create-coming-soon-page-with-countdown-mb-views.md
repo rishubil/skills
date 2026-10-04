@@ -1,8 +1,8 @@
 ---
 title: Creating a coming soon page with countdown - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-coming-soon-page-with-countdown-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **An effective coming soon page** with a countdown is versatile for launches, offers, or maintenance. It builds anticipation, keeps visitors interested, and should allow easy updates without affecting the design.

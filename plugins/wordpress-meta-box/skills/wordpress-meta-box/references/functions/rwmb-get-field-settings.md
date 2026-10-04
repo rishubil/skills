@@ -1,8 +1,8 @@
 ---
 title: rwmb_get_field_settings - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-get-field-settings/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 `rwmb_get_field_settings` is a helper function that gets the field settings by field ID.

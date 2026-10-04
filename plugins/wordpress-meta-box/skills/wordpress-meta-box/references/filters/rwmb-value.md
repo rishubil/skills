@@ -1,8 +1,8 @@
 ---
 title: rwmb_value - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-value/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This filter is used to change a field value before saving it in the database.

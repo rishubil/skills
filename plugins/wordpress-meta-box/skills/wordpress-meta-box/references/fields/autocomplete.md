@@ -1,8 +1,8 @@
 ---
 title: Autocomplete - Meta Box Documentation
 source: https://docs.metabox.io/fields/autocomplete/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The autocomplete field creates a simple text input with autocomplete feature. You can select multiple values from the predefined list.

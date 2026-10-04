@@ -1,25 +1,25 @@
 ---
 title: Status column - Meta Box Documentation
 source: https://docs.metabox.io/status-column/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The status column lets you quickly switch the status of field groups, custom post types, custom taxonomies, settings pages, and relationships between Publish and Draft without opening each item individually. You can enable this feature for posts of a custom post type as well.
 
 ![The status column for the field groups](https://docs.metabox.io/assets/images/status-c54afd824fd0af29305222f48a37fda7.png)
 
-This feature adds a small toggle button directly to the management screen. Simply switch it **on** to publish, or **off** to save as a draft.
+This feature adds a small toggle button directly to the management screen. Switch it **on** to publish, or **off** to save as a draft.
 
 As a result, the traditional **Publish** / **Update** actions on the edit screens of field groups, custom post types, custom taxonomies, settings pages, and relationships are replaced with a single **Save Changes** button.
 
 ## Custom post types
 
-To add status column into the table of the post list of a custom post type, when you [creating that post type](custom-post-types.md) with Meta Box, navigate to the **Features** tab, then enable the setting as below:
+To add a status column to the table of the post list of a custom post type, when you [create that post type](custom-post-types.md) with Meta Box, navigate to the **Features** tab, then enable the setting as below:
 
 ![Enable the status column for the posts of custom post type](https://docs.metabox.io/assets/images/enable-feature-23b9495ebdeb2e4ccef0c2b539bb5191.png)
 
-Then, you'll see the Status column displayed. Just turn the button on to publish or turn it off to save the post to a draft.
+Then, you will see the Status column displayed. Turn the button on to publish or turn it off to save the post to a draft.
 
 ![The status column of the posts](https://docs.metabox.io/assets/images/status-posts-08965f4c6080c5ffe5a45fffb4e6f2b0.png)
 

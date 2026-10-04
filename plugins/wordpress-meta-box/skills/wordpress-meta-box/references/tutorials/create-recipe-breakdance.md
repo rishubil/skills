@@ -1,8 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-breakdance/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In today's practice, we're going to create a recipe page with Breakdance.

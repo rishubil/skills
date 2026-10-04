@@ -1,8 +1,8 @@
 ---
 title: Showing upcoming events - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-breakdance/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **Displaying upcoming events** highlights important dates and deadlines, making it easier for everyone to join. Let's use **Meta Box** and **Breakdance** to achieve this!

@@ -1,8 +1,8 @@
 ---
 title: MB Yoast SEO Integration - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-yoast-seo/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB Yoast SEO Integration helps you to add content of custom fields to Yoast SEO Content Analysis to have better SEO score.

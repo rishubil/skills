@@ -1,8 +1,8 @@
 ---
 title: Creating reading time to WordPress posts - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-reading-time-to-wordpress-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Providing a number of reading time will help the visitor know in advance how much time it takes to finish reading the post. Let’s find out how to have this reading time number in each article on your WordPress blog. We’ll use the **MB Views** from **Meta Box**.
@@ -101,7 +101,7 @@ const wordsPerMinute = 200;
 const readingTime = Math.ceil(wordCount / wordsPerMinute);
 
 // Display the estimated reading time
-time.innerHTML = \`${readingTime} MIN\`;
+time.innerHTML = `${readingTime} MIN`;
 ```
 
 ![Add some lines of code in JavaScript](https://imgur.elightup.com/0ldFOGd.png)
@@ -143,7 +143,7 @@ const readingTime = Math.ceil(wordCount / wordsPerMinute);
 This line is the formula to calculate the minute.
 
 ```php
-time.innerHTML = \`${readingTime} MIN\`;
+time.innerHTML = `${readingTime} MIN`;
 ```
 
 This line will help to pass the number that the formula figure out to the section where we set to display the number in the previous view.

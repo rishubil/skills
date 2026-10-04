@@ -1,8 +1,8 @@
 ---
 title: MB Group - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-group/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **MB Group** helps you to organize custom fields into repeatable and collapsible groups. You can use this extension to group related fields into one group to create hierarchy. You can clone the whole group, or sub-group. There's no limitation on the nesting level.

@@ -1,8 +1,8 @@
 ---
 title: Creating a dynamic landing page - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-dynamic-landing-page/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The information such as title, tagline, button, image, … of the landing page will be saved in custom fields. When you change them, the landing page will be changed the content but keep the layout and style. It’s called dynamic landing page.
@@ -115,6 +115,8 @@ To style the landing page, go to the CSS tab and add some CSS code to do it.
 Now, the landing page displays as I want.
 
 ![The landing page displays as you want](https://imgur.elightup.com/ie3wJiE.jpg)
+
+![The landing page displays as you want](https://imgur.elightup.com/THWKjSp.jpg)
 
 ### Method 2: Using PHP file
 

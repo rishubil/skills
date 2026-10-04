@@ -1,8 +1,8 @@
 ---
 title: Creating dynamic landing page in WordPress - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-dynamic-landing-page-with-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 If you're struggling and spending too much time creating landing pages for multiple marketing campaigns, even when they have the same content structure, check out this article right away!

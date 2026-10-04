@@ -1,8 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipe-meta-box-elementor/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’re going to find out how to **create a recipe page** using a page builder - Elementor. This page is a singular page of a custom post type and includes information that is stored in custom fields created with Meta Box.
@@ -107,6 +107,8 @@ Then, choose the name of the field you want to get. Here, it’s **Step Number**
 ![add the Text Editor element for the description](https://imgur.elightup.com/XrHGBg4.png)
 
 For the description of the step, add the **Text Editor** element. Then, also use the **Dynamic Tags** button > **Meta Box Fields** in the **Post** section and choose the corresponding fields.
+
+![add the Text Editor element for the description](https://imgur.elightup.com/7YWgCEs.png)
 
 Now, both the step and step’s description have been obtained already. It’ll automatically get and display the information saved in the first group (means the 1st step) only for the preview. You can style these elements on your own.
 

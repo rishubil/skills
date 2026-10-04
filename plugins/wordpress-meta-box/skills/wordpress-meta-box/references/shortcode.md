@@ -1,8 +1,8 @@
 ---
 title: Shortcode - Meta Box Documentation
 source: https://docs.metabox.io/shortcode/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Besides [normal ways](custom-fields.md#displaying-fields) to display fields on the website, Meta Box also provides a simple shortcode `[rwmb_meta]` to help you show custom fields in the post content or widgets easily.

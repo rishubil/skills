@@ -1,8 +1,8 @@
 ---
 title: Creating filters for real estate page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-filters-real-estate-page-with-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, I’ll walk you through how to **create a professional-looking property listing** using **Meta Box** and **Bricks Builder**, with filters displayed neatly in the sidebar and results updating instantly based on user selections.

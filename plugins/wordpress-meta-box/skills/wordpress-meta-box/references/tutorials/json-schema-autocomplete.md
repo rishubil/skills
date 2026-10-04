@@ -1,8 +1,8 @@
 ---
 title: JSON schema autocomplete simplifies field group creation - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/json-schema-autocomplete/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Writing JSON manually for field groups offers flexibility, but it’s easy to make mistakes. **JSON Schema Autocomplete solves that with instant suggestions and validation**.

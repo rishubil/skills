@@ -1,8 +1,8 @@
 ---
 title: MB Admin Columns - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-admin-columns/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **MB Admin Columns** helps you display the custom fields' values in the table of the post list in the **All Posts** screen in the **back end**. It works with any custom post types and supports for terms and users as well (requires [MB Term Meta](mb-term-meta.md) and [MB User Meta](mb-user-meta.md) correspondingly).

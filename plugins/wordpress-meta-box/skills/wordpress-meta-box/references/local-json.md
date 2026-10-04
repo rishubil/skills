@@ -1,21 +1,21 @@
 ---
 title: Local JSON - Meta Box Documentation
 source: https://docs.metabox.io/local-json/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
-Beside [creating fields with PHP](creating-fields-with-code.md), you can also register custom fields with JSON. This way is more convenient and easier to manage the fields since you can put them in a separate file, use version control (Git), leverage caching, and better code editor support with JSON schema.
+Besides [creating fields with PHP](creating-fields-with-code.md), you can also register custom fields with JSON. This way is more convenient and easier to manage the fields since you can put them in a separate file, use version control (Git), use caching, and get better code editor support with JSON schema.
 
 This feature is available in the [Meta Box Builder](https://metabox.io/plugins/meta-box-builder/) extension and is included in both [Meta Box Lite](https://metabox.io/lite/) and [Meta Box AIO](https://metabox.io/aio/).
 
 ## How it works
 
-To use local JSON to register custom fields, you need to create a new folder called `mb-json` field in your theme that is writable by the web server. After that, you can put the JSON files in the folder and Meta Box will automatically load the JSON files and register the fields, no more database queries.
+To use local JSON to register custom fields, you need to create a new folder called `mb-json` in your theme that is writable by the web server. After that, you can put the JSON files in the folder and Meta Box will automatically load the JSON files and register the fields, with no more database queries.
 
 ## JSON format
 
-The JSON format is the same as when you export a field group and is very similar to the [PHP version](creating-fields-with-code.md) when you creating a field group, except the `$schema` and `modified` attributes:
+The JSON format is the same as when you export a field group and is very similar to the [PHP version](creating-fields-with-code.md) when you create a field group, except the `$schema`, `modified`, and optional `private` attributes:
 
 ```json
 {
@@ -65,7 +65,7 @@ Before syncing, you can also review the changes by clicking on the **Review** li
 > 
 > When you change the content of a JSON file, and want Meta Box to detect the change to show the **Sync available** status, you have to **increase the `modified` attribute** in the JSON file. This attribute stores the last update time in timestamp.
 
-After syncing, you'll see the field group in the admin list like this:
+After syncing, you will see the field group in the admin list like this:
 
 ![After sync](https://docs.metabox.io/assets/images/local-json-sync-05ee9268922845e0ff137496856f279a.png)
 
@@ -74,7 +74,32 @@ Then you can change the field group, add more fields or edit existing fields. Yo
 > [!-warning] -warning
 > Purpose
 > 
-> Syncing from JSON to the database has only one purpose: to edit fields visually, and then sync back to JSON files (or export to JSON file to save somewhere else). Meta Box will **NOT** load fields from the database (to avoid making unnessary queries), and use JSON files only.
+> Syncing from JSON to the database has only one purpose: to edit fields visually, and then sync back to JSON files (or export to JSON file to save somewhere else). Meta Box will **NOT** load fields from the database (to avoid making unnecessary queries), and use JSON files only.
+
+## Hiding files from Sync
+
+If you ship JSON files in a theme or plugin and do not want them in the **Sync available** list, set `"private": true` in the file:
+
+```json
+{
+  "$schema": "https://schemas.metabox.io/field-group.json",
+  "private": true,
+  "title": "Theme fields",
+  "post_types": "post",
+  "fields": [
+    {
+      "name": "Subtitle",
+      "id": "subtitle",
+      "type": "text"
+    }
+  ],
+  "modified": 1739955432
+}
+```
+
+Meta Box still loads and registers the fields from that file. The Sync UI does not list it, so users cannot sync it to the database by mistake.
+
+The same `private` attribute works for settings pages, relationships, and custom models that use Local JSON.
 
 ## Adding custom folders
 
@@ -91,7 +116,7 @@ add_filter( 'mb_json_paths', function( $paths ) {
 
 ## Security
 
-It's a good practice to hide the JSON files from the public. The easiest way to do that is adding `index.php` file to the folder. This way, when people try to access the folder, they'll see a blank page.
+It is a good practice to hide the JSON files from the public. The easiest way to do that is adding an `index.php` file to the folder. This way, when people try to access the folder, they will see a blank page.
 
 ```php
 <?php

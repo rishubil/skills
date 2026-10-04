@@ -1,8 +1,8 @@
 ---
 title: Creating an FAQs page - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-meta-box-elementor/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’re going to add FAQs to a page using Meta Box. And, we’ll use Elementor to build the page.
@@ -79,6 +79,8 @@ Then, add a **Heading** element for the questions.
 ![Get the information as answers that save in MB custom fields](https://imgur.elightup.com/v6KL4iO.png)
 
 To get the information of the question saved in custom fields, click the **Dynamic Tags** button in the settings of the **Heading** element > choose **Meta Box Field** in the **Post** section.
+
+![Get the information as answers that save in MB custom fields](https://imgur.elightup.com/t0i8CjF.png)
 
 Then, choose the name of the field you want to get data from. In my case, it’s **Question**.
 

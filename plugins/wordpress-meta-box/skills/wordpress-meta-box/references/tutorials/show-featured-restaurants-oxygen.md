@@ -1,8 +1,8 @@
 ---
 title: Showing the featured restaurants - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-oxygen/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’ll display the featured posts on the frontend using a custom field for manually choosing. Take restaurants as an example:
@@ -108,6 +108,8 @@ Now, it’s time to display information of each restaurant. In the **div** insid
 ![Choose a text component and connect it to the corresponding field](https://imgur.elightup.com/wjnVBty.png)
 
 For the voucher information, choose a **Text** component and connect it to the corresponding field.
+
+![Choose a text component and connect it to the corresponding field](https://imgur.elightup.com/lgm6Ybz.gif)
 
 To get the restaurant’s name automatically, add the **Heading** component, and connect it with the title of the post.
 

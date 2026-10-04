@@ -1,8 +1,8 @@
 ---
 title: Displaying author bio in Wordpress - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-author-bio-in-wordpress-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 An author bio is a great asset for any blog where you can display all information about the author behind each post. So, you should have a section for their bio to let readers know more about the author who made the fantastic contents. Moreover, it also helps build credibility with your readers and can strengthen your site’s authority. Let’s find out how to have them using **MB Views** from **Meta Box**.

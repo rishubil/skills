@@ -1,8 +1,8 @@
 ---
 title: Database - Meta Box Documentation
 source: https://docs.metabox.io/database/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Wondering how the Meta Box stores custom fields in the database? Understanding this can help you get the custom fields easily and understand the returned value from `get_post_meta` or helper functions.
@@ -35,7 +35,7 @@ Using serialized data has some benefits:
 - Works perfectly with the helper function or with WordPress's `get_post_meta` function (WordPress automatically unserializes string and returns an array).
 - Reduces the database size (number of rows), especially when you have nested groups of many fields.
 
-However, serialized data has a big disadvantage: **you can't query posts by serialized values**.
+However, serialized data has a big disadvantage: **you cannot query posts by serialized values**.
 
 For example, if you have a cloneable field `start_date` for the `event` post type, and you want to query events in May 2019 like this:
 
@@ -53,7 +53,7 @@ $args = [
 $query = new WP_Query( $args );
 ```
 
-Then it doesn't work.
+Then it does not work.
 
 To solve this problem, you need to enable the **Clone as multiple** settings for the field.
 

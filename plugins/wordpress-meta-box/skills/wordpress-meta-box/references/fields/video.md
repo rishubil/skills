@@ -1,8 +1,8 @@
 ---
 title: Video - Meta Box Documentation
 source: https://docs.metabox.io/fields/video/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The video field uses the WordPress media popup for selecting / uploading videos.

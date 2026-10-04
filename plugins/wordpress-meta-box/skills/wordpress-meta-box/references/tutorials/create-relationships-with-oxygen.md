@@ -1,8 +1,8 @@
 ---
 title: Creating Relationships - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-relationships-with-oxygen/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Relationships feature from **Meta Box** allows you to relate post types, users, pages together. In this practice, we’ll share the way to create a bi-directional relationship between Courses and Instructors post types for example. Then, we’ll display the related instructors to a course and vice versa, using **Meta Box** and **Oxygen**.
@@ -165,6 +165,8 @@ On the other hand, we also can display the instructor name in the singular page 
 ![Display the related instructor](https://imgur.elightup.com/GUNjI5s.png)
 
 Add a **Div** component or just duplicate one from your created **Div** components.
+
+![Display the related instructor](https://imgur.elightup.com/rVzzYXE.png)
 
 Change the text in the **Content** section of the component.
 

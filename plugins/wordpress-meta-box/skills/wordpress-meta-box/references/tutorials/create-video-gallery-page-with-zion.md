@@ -1,8 +1,8 @@
 ---
 title: Creating a video gallery page - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-video-gallery-page-with-zion/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Do you want to display your video list on your page? In [this series](https://metabox.io/series/video-gallery/), I will show you **how to create a video gallery page** with the page builders. In today's practice, we're going to find out how to do it with **Meta Box** and **Zion**.

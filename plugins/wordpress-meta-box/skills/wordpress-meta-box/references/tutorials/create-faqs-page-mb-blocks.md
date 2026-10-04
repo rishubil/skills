@@ -1,8 +1,8 @@
 ---
 title: Creating an FAQs page - MB Blocks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-mb-blocks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In today’s practice, we’re going to **create an FAQs page** by using custom blocks and custom fields with the help of the **MB Blocks** extension from Meta Box.

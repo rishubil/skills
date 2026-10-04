@@ -1,8 +1,8 @@
 ---
 title: HTML5 Input Types - Meta Box Documentation
 source: https://docs.metabox.io/html5-input-types/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 ## Overview
@@ -11,9 +11,9 @@ In addition to the [supported field types](fields/index.md), Meta Box also suppo
 
 ## What is HTML5 input types?
 
-[HTML5 input types](http://html5doctor.com/html5-forms-input-types/) are types for the text input that are added to the HTML5 and are supported by all browsers. They act similar to `text` input, but for other data types, such as URL, email or date. Using HTML5 input types have some benefits:
+[HTML5 input types](http://html5doctor.com/html5-forms-input-types/) are types for the text input that are added to the HTML5 and are supported by all browsers. They act similar to `text` input, but for other data types, such as URL, email or date. Using HTML5 input types has some benefits:
 
-- You have built-in UI like the arrow up/down for `number` or a picker for date/time/week. The UI is various in different browsers, but it works. And it also supports mobile devices.
+- You have built-in UI like the arrow up/down for `number` or a picker for date/time/week. The UI is various in different browsers, but it works. It also supports mobile devices.
 
 ![built-in UI for week input](https://imgur.elightup.com/owRtMYv.png)
 
@@ -23,7 +23,7 @@ In addition to the [supported field types](fields/index.md), Meta Box also suppo
 
 - Finally, you have a semantic markup
 
-Here are the list of HTML5 input types that you can use:
+Here is the list of HTML5 input types that you can use:
 
 | Input Type | Description |
 | --- | --- |
@@ -37,7 +37,7 @@ Here are the list of HTML5 input types that you can use:
 | `week` | Week input field, which has the built-in UI for picking a week |
 | `datetime-local` | Datetime input field, which has the built-in UI for picking a date and time with the local timezone |
 
-Please note that some types such as `date`, `datetime`, `time` and `color` are already implemented with different UI. So they're not available as the custom HTML5 input types anymore.
+Please note that some types such as `date`, `datetime`, `time` and `color` are already implemented with different UI. So they are not available as the custom HTML5 input types anymore.
 
 ## Using HTML5 input types with Meta Box
 
@@ -53,6 +53,6 @@ For example, the code below creates a `tel` field:
 ]
 ```
 
-That's it.
+That is it.
 
-In order to customize the field, you might want to add some [custom attributes](custom-attributes.md) to the input such as `size`, `pattern`. Even without custom attributes, the field work just fine and you'll benefit from all things that HTML5 provide.
+In order to customize the field, you might want to add some [custom attributes](custom-attributes.md) to the input such as `size`, `pattern`. Even without custom attributes, the field works just fine and you will benefit from all things that HTML5 provides.

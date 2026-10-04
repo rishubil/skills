@@ -1,8 +1,8 @@
 ---
 title: Single image - Meta Box Documentation
 source: https://docs.metabox.io/fields/single-image/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The single image field allows users to select or upload one image via the WordPress media library.

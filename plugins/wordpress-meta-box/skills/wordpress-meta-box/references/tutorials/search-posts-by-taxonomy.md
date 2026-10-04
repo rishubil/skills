@@ -1,8 +1,8 @@
 ---
 title: Searching posts by taxonomy on archive page - P1 - Using Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/search-posts-by-taxonomy/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’ll create taxonomies for a custom post type, and in the archive page of this post type, also create a search box that allows users to search for posts based on the name of the taxonomy.

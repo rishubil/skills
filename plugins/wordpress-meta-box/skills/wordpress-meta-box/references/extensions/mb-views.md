@@ -1,8 +1,8 @@
 ---
 title: MB Views - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB Views helps you to get Meta Box fields and build your templates in the front end fast and easily.
@@ -331,7 +331,7 @@ For example, if you want to output an image if the post doesn't have a featured 
 {% endif %}
 ```
 
-If a field has multiple values, then you can use `for` -loop to render all the values, like this:
+If a field has multiple values, then you can use `for`\-loop to render all the values, like this:
 
 ```php
 {% for country in post.countries %}

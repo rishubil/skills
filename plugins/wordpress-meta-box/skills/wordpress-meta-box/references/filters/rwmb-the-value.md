@@ -1,8 +1,8 @@
 ---
 title: rwmb_the_value - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-the-value/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This filter is used to change the returned value of the [rwmb\_the\_value()](../functions/rwmb-the-value.md) helper function.

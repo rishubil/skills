@@ -1,8 +1,8 @@
 ---
 title: File Advanced - Meta Box Documentation
 source: https://docs.metabox.io/fields/file-advanced/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The file advanced field uses the WordPress media popup for selecting / uploading files. You can also reorder files if you want.

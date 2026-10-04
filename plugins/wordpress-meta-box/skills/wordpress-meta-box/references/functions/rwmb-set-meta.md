@@ -1,8 +1,8 @@
 ---
 title: rwmb_set_meta - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-set-meta/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 `rwmb_set_meta` is a helper function that helps you to set value for a field.

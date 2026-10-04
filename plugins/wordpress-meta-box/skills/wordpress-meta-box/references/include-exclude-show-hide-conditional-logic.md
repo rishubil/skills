@@ -1,8 +1,8 @@
 ---
 title: Include Exclude vs Show Hide vs Conditional Logic - Meta Box Documentation
 source: https://docs.metabox.io/include-exclude-show-hide-conditional-logic/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We have 3 extensions that can help you control the visibility of a meta box for a certain post/page:
@@ -11,7 +11,7 @@ We have 3 extensions that can help you control the visibility of a meta box for 
 - [MB Show Hide](extensions/meta-box-show-hide.md)
 - [MB Conditional Logic](extensions/meta-box-conditional-logic.md)
 
-That might be confused as you don't know which extension is the right choice for you. So the main difference between them is the following: **MB Include Exclude** hides meta boxes **by PHP**, meaning:
+That might be confusing as you do not know which extension is the right choice for you. So the main difference between them is the following: **MB Include Exclude** hides meta boxes **by PHP**, meaning:
 
 - Meta boxes are removed completely from the editing screen, no HTML markup is outputted at all
 - Since meta boxes are removed completely, there are no inputs at all and thus, there are no meta values are saved at all

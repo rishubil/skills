@@ -1,8 +1,8 @@
 ---
 title: Showing upcoming events - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Sharing what’s coming up helps us see important dates and deadlines, so we can manage events better. Take **the upcoming events** as an example. Let's use **Meta Box** and **Bricks** to make it happen!

@@ -1,8 +1,8 @@
 ---
 title: Datetime - Meta Box Documentation
 source: https://docs.metabox.io/fields/datetime/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The datetime field allows you to select a date and time via a friendly UI. This field uses jQuery UI date & time picker libraries.

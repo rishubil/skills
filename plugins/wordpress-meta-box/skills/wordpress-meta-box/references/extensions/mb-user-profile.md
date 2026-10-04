@@ -1,8 +1,8 @@
 ---
 title: MB User Profile - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-user-profile/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB User Profile helps you to add information to the user profile and edit these details on the front end. It also includes a register form, login form, and edit profile form that you can embed anywhere using shortcodes.
@@ -50,8 +50,9 @@ Below is the list of the settings. The attribute is used for the shortcode.
 | Always show | `show_if_user_can` | Always show the form if the current user has the proper capability. Should be a [WordPress capability](https://wordpress.org/support/article/roles-and-capabilities/). Useful if admins want to register for other people. |
 | Role for the new user | `role` | Role for the new user. If `append_role` is set to `true`, then the new role is appended, so users will have 2 roles: the default roles set by WordPress and this role. Default empty. |
 | Append role | `append_role` | Whether to append the role to users instead of setting only one role for users. |
-| reCaptcha key | `recaptcha_key` | Google reCaptcha site key (version 3). Optional. |
-| reCaptcha secret | `recaptcha_secret` | Google reCaptcha secret key (version 3). Optional. |
+| Captcha provider | `captcha_provider` | Captcha provider for the form. Use `recaptcha` for Google reCAPTCHA v3 or `turnstile` for Cloudflare Turnstile. Optional. |
+| Site key | `captcha_key` | Site key for the selected captcha provider. Optional. |
+| Secret key | `captcha_secret` | Secret key for the selected captcha provider. Optional. |
 
 ## Login form
 
@@ -86,8 +87,9 @@ Below is the list of the settings. The attribute is used for the shortcode.
 | Confirmation text | `confirmation` | Confirmation message if login is successful. |
 | Default username value | `value_username` | Default value for the username field. |
 | Default remember | `value_remember` | Default value for the remember checkbox field - `true` or `false` (default). |
-| reCaptcha key | `recaptcha_key` | Google reCaptcha site key (version 3). Optional. |
-| reCaptcha secret | `recaptcha_secret` | Google reCaptcha secret key (version 3). Optional. |
+| Captcha provider | `captcha_provider` | Captcha provider for the form. Use `recaptcha` for Google reCAPTCHA v3 or `turnstile` for Cloudflare Turnstile. Optional. |
+| Site key | `captcha_key` | Site key for the selected captcha provider. Optional. |
+| Secret key | `captcha_secret` | Secret key for the selected captcha provider. Optional. |
 
 ## Edit profile form
 
@@ -120,8 +122,9 @@ Below is the list of the settings. The attribute is used for the shortcode.
 | Submit button ID | `id_submit` | ID (HTML attribute) of the submit button. |
 | Confirmation text | `confirmation` | Confirmation message if the form submission is successful. |
 | Password strength | `password_strength` | Set the required password strength. Available options: `strong`, `medium`, `weak`, `very-weak`, or `false` to disable password strength meter. |
-| reCaptcha key | `recaptcha_key` | Google reCaptcha site key (version 3). Optional. |
-| reCaptcha secret | `recaptcha_secret` | Google reCaptcha secret key (version 3). Optional. |
+| Captcha provider | `captcha_provider` | Captcha provider for the form. Use `recaptcha` for Google reCAPTCHA v3 or `turnstile` for Cloudflare Turnstile. Optional. |
+| Site key | `captcha_key` | Site key for the selected captcha provider. Optional. |
+| Secret key | `captcha_secret` | Secret key for the selected captcha provider. Optional. |
 
 ### Default fields
 
@@ -194,6 +197,39 @@ To let users change their password, please use the field group ID `rwmb-user-inf
 ```php
 [mb_user_profile_info id="rwmb-user-info"]
 ```
+
+## Spam protection
+
+MB User Profile supports two captcha providers:
+
+- Google reCAPTCHA v3
+- Cloudflare Turnstile
+
+To enable captcha protection, set the `captcha_provider` attribute and then enter the matching site key (`captcha_key`) and secret key (`captcha_secret`) for that provider:
+
+Example for the registration form with Google reCAPTCHA v3:
+
+```php
+[mb_user_profile_register captcha_provider="recaptcha" captcha_key="your_site_key" captcha_secret="your_secret_key"]
+```
+
+Example for the registration form with Cloudflare Turnstile:
+
+```php
+[mb_user_profile_register captcha_provider="turnstile" captcha_key="your_site_key" captcha_secret="your_secret_key"]
+```
+
+The same captcha attributes are available for the login form and edit profile form.
+
+> [!-info] -info
+> Backward Compatibility
+> 
+> The old reCAPTCHA-specific keys have been migrated to the new provider-based key fields:
+> 
+> - `recaptcha_key` is now the `captcha_key` field
+> - `recaptcha_secret` is now the `captcha_secret` field
+> 
+> These old attribute names still work for backward compatibility.
 
 ## Settings
 

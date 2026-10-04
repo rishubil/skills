@@ -1,8 +1,8 @@
 ---
 title: Creating buttons with dynamic links - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-buttons-dynamic-links/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Dynamic links are created to show various links in different posts and are displayed as buttons. It can be made in a variety of ways. One method is to use custom fields.
@@ -114,6 +114,8 @@ Different from other page builders, Bricks allows you to choose the type of link
 ![Meta Box is suggested with the name of custom fields](https://imgur.elightup.com/8AuikQQ.png)
 
 After that, you will see Meta Box is suggested with the name of custom fields following. Choose one if you want.
+
+![Meta Box is suggested with the name of custom fields](https://imgur.elightup.com/WtMoWZg.png)
 
 Bricks will render a corresponding link to this preview post so that you can check if the data is correct.
 

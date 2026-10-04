@@ -1,8 +1,8 @@
 ---
 title: Displaying opening hours for restaurants - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-opening-hours-restaurant-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 For a website having information about more than one restaurant, each one may have their own opening hours. To have this kind of information, we can use custom fields.
@@ -28,27 +28,27 @@ Go to **Meta Box > Custom Fields > Add New** to create a new field group. Then, 
 
 | Name | ID | Type | Options | Condition |
 | --- | --- | --- | --- | --- |
-| Choose an option | choose\_an\_option | select | 1\. all\_days\_are\_the\_same 2. difference\_between\_weekdays\_and\_weekend 3. custom |
-| All days have the same opening hours | all\_days\_have\_the\_same\_opening\_hours | group | display only when: the choose\_an\_option\_ field = the all\_days\_are\_the\_same\_ option |
-| Type of opening hours | type\_of\_opening\_hours | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |
-| Choose time slots | choose\_time\_slots | group | display only when: the *type\_of\_opening\_hours* field = the *enter\_hours* option |
-| Start time | start\_time | time picker |
-| End time | end\_time | time picker |
-| Weekdays | weekdays | group | display only when: the *choose\_an\_opton* field = the *difference\_between\_weekdays\_and\_weekend* option |
-| Type of opening hours | type\_of\_opening\_hours **\_weekdays** | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |
-| Choose time slots | choose\_time\_slots\_weekdays | group | display only when: the *type\_of\_opening\_hours\_weekdays* field = the *enter\_hours* option |
-| Start time | start\_time\_weekdays | time picker |
-| End time | end\_time\_weekdays | time picker |
-| Weekend | weekend | group | display only when: the *choose\_an\_opton* field = the *difference\_between\_weekdays\_and\_weekend* option |
-| Type of opening hours | type\_of\_opening\_hours **\_weekend** | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |
-| Choose time slots | choose\_time\_slots\_weekend | group | display only when: the *type\_of\_opening\_hours\_weekend* field = the *enter\_hours* option |
-| Start time | start\_time\_weekend | time picker |
-| End time | end\_time\_weekend | time picker |
-| Monday | monday | group | display only when: the *choose\_an\_option* field = the *custom* option |
-| Type of opening hours | type\_of\_opening\_hours\_monday | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |
-| Choose time slots | choose\_time\_slots\_weekend | group | display only when: the *type\_of\_opening\_hours\_monday* field = the *enter\_hours* option |
-| Start time | start\_time\_weekend | time picker |
-| End time | end\_time\_weekend | time picker |
+| Choose an option | choose\_an\_option | select | 1\. all\_days\_are\_the\_same 2. difference\_between\_weekdays\_and\_weekend 3. custom |  |
+| All days have the same opening hours | all\_days\_have\_the\_same\_opening\_hours | group | display only when: the choose\_an\_option\_ field = the all\_days\_are\_the\_same\_ option |  |
+| Type of opening hours | type\_of\_opening\_hours | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |  |
+| Choose time slots | choose\_time\_slots | group | display only when: the *type\_of\_opening\_hours* field = the *enter\_hours* option |  |
+| Start time | start\_time | time picker |  |  |
+| End time | end\_time | time picker |  |  |
+| Weekdays | weekdays | group | display only when: the *choose\_an\_opton* field = the *difference\_between\_weekdays\_and\_weekend* option |  |
+| Type of opening hours | type\_of\_opening\_hours **\_weekdays** | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |  |
+| Choose time slots | choose\_time\_slots\_weekdays | group | display only when: the *type\_of\_opening\_hours\_weekdays* field = the *enter\_hours* option |  |
+| Start time | start\_time\_weekdays | time picker |  |  |
+| End time | end\_time\_weekdays | time picker |  |  |
+| Weekend | weekend | group | display only when: the *choose\_an\_opton* field = the *difference\_between\_weekdays\_and\_weekend* option |  |
+| Type of opening hours | type\_of\_opening\_hours **\_weekend** | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |  |
+| Choose time slots | choose\_time\_slots\_weekend | group | display only when: the *type\_of\_opening\_hours\_weekend* field = the *enter\_hours* option |  |
+| Start time | start\_time\_weekend | time picker |  |  |
+| End time | end\_time\_weekend | time picker |  |  |
+| Monday | monday | group | display only when: the *choose\_an\_option* field = the *custom* option |  |
+| Type of opening hours | type\_of\_opening\_hours\_monday | select | 1\. open\_all\_day 2. close\_all\_day 3. by\_appointment\_only 4. enter\_hours |  |
+| Choose time slots | choose\_time\_slots\_weekend | group | display only when: the *type\_of\_opening\_hours\_monday* field = the *enter\_hours* option |  |
+| Start time | start\_time\_weekend | time picker |  |  |
+| End time | end\_time\_weekend | time picker |  |  |
 | … | … | … | … | … |
 | Sunday | … | … | … | … |
 
@@ -143,6 +143,8 @@ First, if its value is `all_day_are_the_same`, the values of fields in the **All
 ![Add the code](https://imgur.elightup.com/fUMwtHG.png)
 
 I set a variable named same\_days to admit the value from the **Type of Opening Hours** field. If it is `enter_hours`, the **Choose Time Slots** group will be obtained and displayed the data. As we set before, this group is cloneable, so there is a loop here.
+
+![Add the code](https://imgur.elightup.com/4LO0llZ.png)
 
 After adding code, depending on if the view is new or not, choose the right **Type** and **Location** for the view in the **Settings** section.
 

@@ -1,8 +1,8 @@
 ---
 title: Displaying the latest products - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-products-meta-box-zion/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’ll create a section and choose the products or posts that are the latest ones to display only on the homepage.
@@ -86,6 +86,8 @@ Remember to **enable the repeater consumer**.
 ![enable the repeater consumer](https://imgur.elightup.com/DShULdO.png)
 
 But, it will display all the posts in the chosen post type. So, enter a number to the **Posts per page** box to limit the number of posts. I set 10 here, so only the 10 latest posts will display in the section.
+
+![enable the repeater consumer](https://imgur.elightup.com/6BGUqNF.png)
 
 Because we haven’t chosen any kind of information of the product to show yet, it’s still blank there.
 

@@ -1,8 +1,8 @@
 ---
 title: Showing posts with specific criteria - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-posts-specific-criteria-oxygen/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In this practice, we’ll find out how to show posts with this kind of specific criteria using Meta Box and Oxygen.
@@ -95,15 +95,15 @@ To set content in sections for easy styling later, you should use some Div compo
 
 Next, add a **Repeater** component to display all the posts as we want. However, we just choose to show only the dishes which are on sale, so we need to set a condition in the settings of this component.
 
-In the **Query** section, choose ‘ **advanced** ’, and edit the query to add some parameters as below.
+In the **Query** section, choose ‘**advanced**’, and edit the query to add some parameters as below.
 
 ![Add condition to display posts](https://imgur.elightup.com/9cUzpVF.gif)
 
 ![Add some parameters](https://imgur.elightup.com/p6w5399.png)
 
-The first parameter means that we’ll get posts from the post type which has the slug as ‘ **cuisine** ’.
+The first parameter means that we’ll get posts from the post type which has the slug as ‘**cuisine**’.
 
-The second one is the condition based on the ‘ **promotional\_price** ’ field. It means that if the field has any value in the field, the post will be displayed.
+The second one is the condition based on the ‘**promotional\_price**’ field. It means that if the field has any value in the field, the post will be displayed.
 
 That’s all for the condition.
 
@@ -122,6 +122,8 @@ Click the **Select Dynamic Data** button as below picture, and choose the **Feat
 ![All the featured images of the posts displayed](https://imgur.elightup.com/XhJhlwt.png)
 
 Then, you’ll see all the featured images of the posts displayed.
+
+![All the featured images of the posts displayed](https://imgur.elightup.com/indFyKZ.png)
 
 To get the names of the dishes from the post title, add a **Heading** component > **Insert Data** button > choose **Title** in the **Post** section.
 

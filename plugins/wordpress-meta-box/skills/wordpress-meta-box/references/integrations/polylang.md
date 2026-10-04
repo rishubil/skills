@@ -1,8 +1,8 @@
 ---
 title: Meta Box - Polylang integration - Meta Box Documentation
 source: https://docs.metabox.io/integrations/polylang/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Integration with Polylang offers an intuitive interface to translate both values and labels of all objects, including post types, taxonomies, custom fields, settings pages, and relationships. It works smoothly whether you're using Polylang or Polylang Pro.

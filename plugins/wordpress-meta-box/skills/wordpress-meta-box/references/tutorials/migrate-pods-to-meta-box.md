@@ -1,8 +1,8 @@
 ---
 title: Migrating custom post type and fields from Pods to Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/migrate-pods-to-meta-box/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We will move all the data of the custom post type and custom fields created with Pods to Meta Box easily following these few simple steps.

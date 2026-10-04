@@ -1,8 +1,8 @@
 ---
 title: Export/Import custom fields - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/export-import-custom-fields-meta-box-builder/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Instead of [using code to embed custom fields from one site to others](https://metabox.io/copy-custom-fields-with-meta-box-builder/), we could use another method supported by [MB Builder](https://metabox.io/plugins/meta-box-builder/). This extension allows you to export/import custom fields fast and easily.

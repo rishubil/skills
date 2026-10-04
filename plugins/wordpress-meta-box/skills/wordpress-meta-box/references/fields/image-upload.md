@@ -1,8 +1,8 @@
 ---
 title: Image Upload - Meta Box Documentation
 source: https://docs.metabox.io/fields/image-upload/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The image upload field displays an inline upload area that you can drag and drop or select images to upload.

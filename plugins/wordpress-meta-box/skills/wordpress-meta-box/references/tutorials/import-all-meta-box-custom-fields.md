@@ -1,8 +1,8 @@
 ---
 title: Importing all Meta Box custom fields - Using WP All Import - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/import-all-meta-box-custom-fields/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 To import all Meta Box custom fields, you need to map their corresponding data during the import process in WP All Import.

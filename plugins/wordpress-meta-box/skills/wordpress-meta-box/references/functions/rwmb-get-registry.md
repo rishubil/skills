@@ -1,8 +1,8 @@
 ---
 title: rwmb_get_registry - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-get-registry/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 `rwmb_get_registry` is a helper function that gets list of registered meta boxes or fields.

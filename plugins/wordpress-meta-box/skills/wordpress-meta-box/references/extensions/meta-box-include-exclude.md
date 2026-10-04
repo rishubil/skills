@@ -1,8 +1,8 @@
 ---
 title: MB Include Exclude - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-include-exclude/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This extension helps you to define advanced location rules for where to show field groups.

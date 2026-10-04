@@ -1,8 +1,8 @@
 ---
 title: Icon - Meta Box Documentation
 source: https://docs.metabox.io/fields/icon/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The icon field allows you to select an icon from a predefined icon library and show it on the front end. With this field, you can quickly search and select an icon from any icon library:

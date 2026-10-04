@@ -1,8 +1,8 @@
 ---
 title: Showing the featured restaurants - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-with-breakdance/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Sometimes you may want to feature some products on your homepage. It's a popular technique to **improve conversion** by attracting customers to the most irresistible products. So, let’s see how we **showcase featured products** on a page with **Meta Box** and **Breakdance**.

@@ -1,8 +1,8 @@
 ---
 title: Displaying the dynamic banners - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-dynamic-banners-meta-box-with-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Placing banners with the same content but different sizes on multiple places of the website may take a lot of time in designing. But, you totally can **use custom fields with dynamic content** to create those banners at once. Then, when you want to change the content, just replace it in custom fields without re-design the banner. Let’s do it with **Meta Box** and **Bricks**!

@@ -1,8 +1,8 @@
 ---
 title: Having a chronological timeline in WordPress using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-timeline-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we'll use the **MB Views** extension from Meta Box to **create a professional timeline**, visually presenting events, roadmaps, milestones, and changelogs for easy access.

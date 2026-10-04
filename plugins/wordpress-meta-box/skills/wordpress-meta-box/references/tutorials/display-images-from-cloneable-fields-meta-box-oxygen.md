@@ -1,8 +1,8 @@
 ---
 title: Displaying images from cloneable fields - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-from-cloneable-fields-meta-box-oxygen/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’re going to find out how to **use Oxygen to display images from cloneable fields** created with Meta Box.

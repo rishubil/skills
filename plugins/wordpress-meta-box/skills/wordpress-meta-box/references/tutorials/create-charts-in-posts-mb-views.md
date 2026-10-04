@@ -1,8 +1,8 @@
 ---
 title: Creating charts in posts - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-charts-in-posts-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Using charts to present information is a vivid and easy-to-understand manner for your audience. Whether you want to display statistics, growth trends, or comparisons among many items, **charts can make your content stand out and attract the attention** of your visitors.

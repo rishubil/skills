@@ -1,8 +1,8 @@
 ---
 title: Displaying images from cloneable fields - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-from-cloneable-fields-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we’ll use Meta Box and Bricks to display images from cloneable fields. Take the brand logos as an example:

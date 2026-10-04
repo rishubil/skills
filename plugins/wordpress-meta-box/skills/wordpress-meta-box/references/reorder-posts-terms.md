@@ -1,11 +1,11 @@
 ---
 title: Reorder posts & terms - Meta Box Documentation
 source: https://docs.metabox.io/reorder-posts-terms/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
-This feature lets you **drag and drop** posts (from any custom post type) or terms (from any custom taxonomy) to rearrange their order right inside the WordPress admin. It's perfect when you need a custom order that doesn't follow the default publish date or alphabetical sorting.
+This feature lets you **drag and drop** posts (from any custom post type) or terms (from any custom taxonomy) to rearrange their order right inside the WordPress admin. It is perfect when you need a custom order that does not follow the default publish date or alphabetical sorting.
 
 This functionality is included in the **[MB Custom Post Types & Custom Taxonomies](extensions/mb-custom-post-type.md)** extension - completely free to use.
 
@@ -15,13 +15,13 @@ To enable this feature, open your custom post type settings, switch to the **Fea
 
 ![Enable the reorder posts feature](https://docs.metabox.io/assets/images/enable-reorder-posts-b7153fd23f0c066520c203ad1228ebe8.png)
 
-If you're registering the post type via code, simply add:
+If you are registering the post type via code, simply add:
 
 ```php
 'order' => true,
 ```
 
-Once enabled, you'll see a new **Re-Order** tab in the post type's admin menu. Click it and rearrange your posts using drag‑and‑drop.
+Once enabled, you will see a new **Re-Order** tab in the post type's admin menu. Click it and rearrange your posts using drag-and-drop.
 
 ![Click on the Re-Order tab to rearrange posts](https://docs.metabox.io/assets/images/reorder-posts-ecd4402a83bd72f46262439962e65e68.gif)
 
@@ -62,7 +62,7 @@ Or enable it via code:
 'order' => true,
 ```
 
-After that, visit the taxonomy screen and click the **Re-Order** button to sort terms using drag‑and‑drop - including **hierarchical terms**.
+After that, visit the taxonomy screen and click the **Re-Order** button to sort terms using drag-and-drop - including **hierarchical terms**.
 
 ![Drag and drop terms to reorder](https://docs.metabox.io/assets/images/reorder-hierarchical-terms-4ed3101c53d8fa009b712b74a02a09db.gif)
 

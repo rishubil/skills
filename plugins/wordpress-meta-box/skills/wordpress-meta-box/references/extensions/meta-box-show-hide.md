@@ -1,8 +1,8 @@
 ---
 title: MB Show Hide - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-show-hide/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB Show Hide helps you to toggle the visibility of a meta box based on some conditions such as categories, page template or post format.

@@ -1,8 +1,8 @@
 ---
 title: Displaying the latest products - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-products-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’ll create a section and choose the products or posts that are the latest ones to display only on the homepage.
@@ -97,6 +97,8 @@ Then, scroll down to the **Settings** tab, select **Shortcode** in the **Type** 
 ![The shortcode is generated after click Public.](https://imgur.elightup.com/mmq9xkW.png)
 
 After publishing the template, you’ll see the shortcode generated. Just copy and paste it anywhere you want on the website.
+
+![The shortcode is generated after click Public.](https://imgur.elightup.com/hBWD7NI.png)
 
 For example, I’ve already had a homepage built with Gutenberg. I’ll paste it in this position.
 

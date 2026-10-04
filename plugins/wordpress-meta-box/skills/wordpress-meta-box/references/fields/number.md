@@ -1,8 +1,8 @@
 ---
 title: Number - Meta Box Documentation
 source: https://docs.metabox.io/fields/number/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The number field creates a simple HTML5 number input. You can enter a number or use the up/down arrow to change the number. It works with both integers and float numbers.

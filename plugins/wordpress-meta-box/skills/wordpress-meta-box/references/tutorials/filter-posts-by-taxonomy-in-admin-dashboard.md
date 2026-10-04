@@ -1,8 +1,8 @@
 ---
 title: Filtering posts by taxonomy in the admin dashboard - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-taxonomy-in-admin-dashboard/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Managing content on WordPress can become overwhelming as the number of posts grows, whether they are regular blog posts or part of a specific custom post type. Even with taxonomies to categorize posts, searching through large volumes of content remains challenging, especially when you need to find specific information within a particular post.

@@ -1,8 +1,8 @@
 ---
 title: MB Settings Page - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-settings-page/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB Settings Page helps you create settings pages for your website. You can use it to create a theme options page, or a settings page for your plugin, or a custom settings page for clients' websites.

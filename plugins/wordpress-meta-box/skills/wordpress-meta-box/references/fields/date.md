@@ -1,8 +1,8 @@
 ---
 title: Date - Meta Box Documentation
 source: https://docs.metabox.io/fields/date/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The date field allows you to select a date via a friendly UI. This field uses the jQuery UI datepicker library to select a date.

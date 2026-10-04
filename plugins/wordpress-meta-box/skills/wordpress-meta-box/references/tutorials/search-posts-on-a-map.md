@@ -1,8 +1,8 @@
 ---
 title: Searching Posts on a Map - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/search-posts-on-a-map/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we are going to find out how to **search posts on a map** using **MB Views**. Imagine that you run a restaurant chain, coffee shop, store, or any business with locations in different cities. Displaying all of them on a single map helps users get a clear overview and explore what’s available at a glance. This is exactly where this method becomes useful.
@@ -221,14 +221,14 @@ jQuery(function ($) {
         items.forEach(it => {
             if (!it.lat || !it.lng) return;
             let stars = it.rating_num ? '⭐'.repeat(it.rating_num) : '⭐';
-            let popup = \`
+            let popup = `
                 <div style="font-family:Arial;min-width:180px;">
                     <strong style="font-size:18px;color:#7a1c1c;">${it.title}</strong><br>
                     <span style="color:#f39c12;">${stars}</span><br>
                     <span>🍽 ${it.cuisine}</span><br>
                     <span>💰 ${it.price} $</span><br>
-                    ${it.address ? \`📍 ${it.address}\` : ''}
-                </div>\`;
+                    ${it.address ? `📍 ${it.address}` : ''}
+                </div>`;
             let mk = L.marker([it.lat, it.lng]).addTo(map).bindPopup(popup);
             currentMarkers.push(mk);
             points.push([it.lat, it.lng]);
@@ -310,14 +310,14 @@ function renderMarkers(items) {
     items.forEach(it => {
         if (!it.lat || !it.lng) return;
         let stars = it.rating_num ? '⭐'.repeat(it.rating_num) : '⭐';
-        let popup = \`
+        let popup = `
             <div style="font-family:Arial;min-width:180px;">
                 <strong style="font-size:18px;color:#7a1c1c;">${it.title}</strong><br>
                 <span style="color:#f39c12;">${stars}</span><br>
                 <span>🍽 ${it.cuisine}</span><br>
                 <span>💰 ${it.price} $</span><br>
-                ${it.address ? \`📍 ${it.address}\` : ''}
-            </div>\`;
+                ${it.address ? `📍 ${it.address}` : ''}
+            </div>`;
         let mk = L.marker([it.lat, it.lng]).addTo(map).bindPopup(popup);
         currentMarkers.push(mk);
         points.push([it.lat, it.lng]);
@@ -480,7 +480,7 @@ I added another feature that gets the user’s location, shows it with a marker,
 function updatePrice() {
     let min = $('#price-min').val();
     let max = $('#price-max').val();
-    $('#price-display').text(\`${min} - ${max}$\`);
+    $('#price-display').text(`${min} - ${max}$`);
 }
 
 $('#price-min, #price-max').on('input', updatePrice);
@@ -524,7 +524,7 @@ $('#filter-btn').on('click', function () {
     });
 
     renderMarkers(filtered);
-    $('#filter-info').text(\`Result: ${filtered.length} Restaurants\`);
+    $('#filter-info').text(`Result: ${filtered.length} Restaurants`);
 });
 ```
 
@@ -532,7 +532,7 @@ Subsequently, this section above creates the search button that filters results 
 
 ```php
 renderMarkers(Locations);
-    $('#filter-info').text(\`Show: ${Locations.length} Restaurants\`);
+    $('#filter-info').text(`Show: ${Locations.length} Restaurants`);
 });
 ```
 

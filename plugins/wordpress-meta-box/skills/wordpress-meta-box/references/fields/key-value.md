@@ -1,8 +1,8 @@
 ---
 title: Key Value - Meta Box Documentation
 source: https://docs.metabox.io/fields/key-value/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The key-value field allows you to enter an unlimited group of "key-value" pairs. It's usually used for a list of items, such as a product specification.

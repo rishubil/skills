@@ -1,8 +1,8 @@
 ---
 title: Storing cloneable fields in multiple rows in the database - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/store-cloneable-fields/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Normally, the data saved in a custom field is stored in one row only in the database, even when it is a cloneable/repeater field. To convert its data to store in multiple rows, let’s follow this tutorial.

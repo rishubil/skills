@@ -1,8 +1,8 @@
 ---
 title: Adding custom fields to Yoast SEO meta tags - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-custom-fields-to-yoast-seo/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Normally, when you use Yoast SEO on your site, there will be a section to fill in the title, and description that **helps search engines index them easier**. You can fill in static content or dynamic content in these sections. But in some cases, you may want to get content not only from those default fields but from custom fields. So, how to **add content from custom fields created with Meta Box to Yoast SEO meta tags**, just follow these practices.

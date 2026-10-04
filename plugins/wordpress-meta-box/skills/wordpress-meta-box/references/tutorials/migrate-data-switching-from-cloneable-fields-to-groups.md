@@ -1,8 +1,8 @@
 ---
 title: Migrating data when switching from cloneable fields to groups - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/migrate-data-switching-from-cloneable-fields-to-groups/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Learn how to safely migrate existing data when switching from cloneable fields to a Group field in Meta Box, so you can upgrade to a more structured setup without losing any information.

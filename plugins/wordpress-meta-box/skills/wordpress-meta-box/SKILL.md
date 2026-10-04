@@ -95,7 +95,11 @@ references/
 ├── cloning-fields.md               # Field cloning (repeatable fields)
 ├── database.md                     # Data storage
 ├── edit-meta-boxes.md              # Editing meta boxes
+├── abilities.md                    # WordPress Abilities API integration
+├── block-bindings.md               # Block bindings (field values in core blocks)
 ├── extensions/                     # Extension plugins
+│   └── *.md
+├── integrations/                   # Third-party integrations (index.md overview, Polylang, WPML)
 │   └── *.md
 ├── field-settings/                 # Settings for each field type
 │   └── *.md

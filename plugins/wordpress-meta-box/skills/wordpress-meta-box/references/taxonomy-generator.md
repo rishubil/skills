@@ -1,8 +1,8 @@
 ---
 title: Taxonomy Generator - Meta Box Documentation
 source: https://docs.metabox.io/taxonomy-generator/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 [Taxonomy Generator](https://metabox.io/taxonomy-generator/) is a free online tool to create custom taxonomy easily and quickly. You can use it without installing Meta Box.
@@ -43,4 +43,4 @@ When you complete all steps above, click the **Generate Code** button. Just wait
 
 ![Meta Box Taxonomy Generator generates code](https://imgur.elightup.com/MudzzYG.png)
 
-Copy the code and insert it to the `functions.php` file and it's all done.
+Copy the code and insert it to the `functions.php` file and it is all done.

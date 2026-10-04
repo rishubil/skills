@@ -1,8 +1,8 @@
 ---
 title: MB Blocks - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-blocks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 With the help of MB Blocks, WordPress developers are now able to create Gutenberg blocks using PHP only. There is no JavaScript configuration and build process. The plugin is also compatible with Full-Site Editing, so your blocks can be used to create templates in the FSE.
@@ -91,9 +91,9 @@ add_action( 'init', 'your_prefix_register_blocks' );
 
 ### Registering block fields
 
-Now you need to register block fields with Meta Box. The block fields must match the fields defined in the `block.json` 's `attributes` property above.
+Now you need to register block fields with Meta Box. The block fields must match the fields defined in the `block.json`'s `attributes` property above.
 
-Registering block fields is similar to [registering a field group](http://localhost:3000/creating-fields-with-code/) in Meta Box. The only difference is that you must set `type` to `block`:
+Registering block fields is similar to [registering a field group](../creating-fields-with-code.md) in Meta Box. The only difference is that you must set `type` to `block`:
 
 ```php
 add_filter( 'rwmb_meta_boxes', function( $meta_boxes ) {
@@ -222,7 +222,7 @@ The `block.json` allows you to add styles and scripts for blocks as follows. In 
 
 ## Block registration without block.json
 
-If you don't want to use `block.json` to register blocks, you can do that with pure PHP. The process is similar to [registering a field group](http://localhost:3000/creating-fields-with-code/) in Meta Box. The only difference is that you need to add some settings for the block.
+If you don't want to use `block.json` to register blocks, you can do that with pure PHP. The process is similar to [registering a field group](../creating-fields-with-code.md) in Meta Box. The only difference is that you need to add some settings for the block.
 
 Assuming we're creating a hero content block with 3 fields: title, image, and content. Open your theme's `functions.php` file (or your plugin's PHP file) and add the following code:
 
@@ -417,7 +417,7 @@ For example: `( $attributes, $block )`, `( $block, $attributes )`, `( $attribute
 // Or using static method.
 'render_callback' => [ 'MyClass', 'my_hero_callback' ],
 
-// You can also use MB Views to render the block by prefixing the view name with \`view:\`.
+// You can also use MB Views to render the block by prefixing the view name with `view:`.
 'render_callback' => 'view:hero-view',
 ```
 ```php

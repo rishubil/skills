@@ -1,8 +1,8 @@
 ---
 title: Displaying all listings on a map with Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-listings-on-map/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 If you own a chain restaurant, coffee shop, store, or even a company that has different branches in different cities, then you may want to markup all of them on a single map, and show this network on your website. Meta Box will give you an easy way to find exactly what you need!

@@ -1,21 +1,21 @@
 ---
 title: Updates - Meta Box Documentation
 source: https://docs.metabox.io/updates/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
-Meta Box and all extensions can be updated automatically or manually. The automatic update uses the WordPress update mechanism which checks for new versions twice a day. This is the recommended way to get new updates from our website.
+Meta Box and all extensions can be updated automatically or manually. The automatic update uses the WordPress update mechanism, which checks for new versions twice a day. This is the recommended way to get new updates from our website.
 
 ## Automatic update
 
-To enable automatic updates, you need to have a valid license key. Go to [My Account](https://metabox.io/my-account/) page to get it.
+To enable automatic updates, you need a valid license key. Go to [My Account](https://metabox.io/my-account/) page to get it.
 
-Then go to **Meta Box » License** and enter your license key and click **Save Changes** button.
+Then go to **Meta Box » License**, enter your license key and click **Save Changes** button.
 
 ![entering meta box license key](https://imgur.elightup.com/vybVU36.png)
 
-From now on, when WordPress checks new versions for plugins, it will also check for new versions of Meta Box extensions. If there is any new update, you'll see this:
+From now on, when WordPress checks for new versions of plugins, it also checks for new versions of Meta Box extensions. If there is any new update, you will see this:
 
 ![New versions](https://imgur.elightup.com/Gul7JuL.png)
 
@@ -31,11 +31,11 @@ You can also update the extensions manually by following these steps:
 ## FAQ
 
 > [!-info] -info
-> Why can't I update even with a valid license key?
+> Why can I not update even with a valid license key?
 > 
-> We cache the requests to check updates in a WordPress transient, which has a one-day lifetime. To force WordPress to check for updates, you need to remove this transient. To do that, please install the [WP-Sweep](https://wordpress.org/plugins/wp-sweep/) plugin and clear all transients. Then go to **Dashboard » Updates** and click the **Check again** button.
+> We cache the requests to check updates in a WordPress transient, which has a one-day lifetime. To force WordPress to check for updates, you need to remove this transient. To do that, install the [WP-Sweep](https://wordpress.org/plugins/wp-sweep/) plugin and clear all transients. Then go to **Dashboard » Updates** and click the **Check again** button.
 > 
-> [\# Link to this question](#why-cant-i-update-even-with-a-valid-license-key)
+> [\# Link to this question](#why-can-i-not-update-even-with-a-valid-license-key)
 
 > [!-info] -info
 > Can I define the license key via a constant in wp-config.php?

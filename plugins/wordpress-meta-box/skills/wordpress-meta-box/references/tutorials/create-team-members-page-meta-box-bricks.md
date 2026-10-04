@@ -1,8 +1,8 @@
 ---
 title: Creating a team members page - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-meta-box-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’ll introduce a way to create a team member page with **Bricks** using custom post type and custom fields.
@@ -81,6 +81,8 @@ Next, add a new field and insert the dynamic data from the custom fields by clic
 
 For instance, I choose the **Position**. Then, the position of each member will display in the preview immediately.
 
+![Add Item > Insert Dynamic Data to add a new field and insert the dynamic data from the custom fields](https://imgur.elightup.com/SxVeXby.gif)
+
 For other information like Facebook, Instagram, and Mail, simply do the same.
 
 Be noted that, when inserting dynamic data, it just displays them as text. To set them as URLs, you should add an attribute to these fields as below.
@@ -90,6 +92,8 @@ Be noted that, when inserting dynamic data, it just displays them as text. To se
 What’s more, the description of each member is the content of the post. So, we just need to add a **Post Content** element.
 
 Now, all the information of the members has been obtained.
+
+![To set information as URLs, you should add an attribute to these fields](https://imgur.elightup.com/gt7XfwX.png)
 
 Because Bricks does not support adding classes for each element, you should use the HTML tag for styling. You can set elements in different levels of HTML tag such as: H1, H2, H3, div, p, … That will help a lot for SEO as well.
 

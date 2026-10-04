@@ -1,8 +1,8 @@
 ---
 title: Displaying the latest products - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-product-meta-box-elementor/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’ll create a section and choose the products or posts that are the latest ones to display only on the homepage.
@@ -133,6 +133,8 @@ Next, in the **Query** section, choose the source as the post type of your produ
 ![In the Query section, choose the source as the post type of your products.](https://imgur.elightup.com/BoTDDnq.png)
 
 You can also see some settings for you to display the order of posts. Since we will display the newest posts then the oldest ones, so I set the order by date and choose DESC, which means **Descending** options.
+
+![In the Query section, choose the source as the post type of your products.](https://imgur.elightup.com/9rh4I3B.png)
 
 All the products are obtained and displayed in the time order: the latest post first, then the older one.
 

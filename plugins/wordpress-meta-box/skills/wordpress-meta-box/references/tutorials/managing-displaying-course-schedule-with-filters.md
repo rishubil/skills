@@ -1,8 +1,8 @@
 ---
 title: Managing & displaying course schedule with filters - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/managing-displaying-course-schedule-with-filters/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Using a schedule filter is perfect for an educational platform offering different course schedules, a booking page for doctors or spa services, movie or theater showtimes, or homestay listings with availability filters. This approach improves the user experience.

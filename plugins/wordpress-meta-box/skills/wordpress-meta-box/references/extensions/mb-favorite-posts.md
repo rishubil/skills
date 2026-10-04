@@ -1,8 +1,8 @@
 ---
 title: MB Favorite Posts - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-favorite-posts/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 ## Overview

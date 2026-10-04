@@ -1,8 +1,8 @@
 ---
 title: Creating a pricing table page - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-pricing-table-page-with-breakdance/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 When your products have some pricing plans instead of only one, a well-designed pricing table page will be an intelligent choice to show offering your products or services.

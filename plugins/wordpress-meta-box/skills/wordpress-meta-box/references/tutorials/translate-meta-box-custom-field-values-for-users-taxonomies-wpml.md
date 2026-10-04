@@ -1,8 +1,8 @@
 ---
 title: Translating Meta Box custom field values for users and taxonomies with WPML - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/translate-meta-box-custom-field-values-for-users-taxonomies-wpml/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Having a multilingual website for products, and services is more and more essential in the global economy. And, it’s undeniable that using a translation plugin is an optimal choice to build it.

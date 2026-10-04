@@ -1,8 +1,8 @@
 ---
 title: Meta Box AIO - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-aio/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Meta Box AIO is a special plugin that contains all the extensions. It allows you to install only one plugin and have everything, so you can have the plugin list short and clean.

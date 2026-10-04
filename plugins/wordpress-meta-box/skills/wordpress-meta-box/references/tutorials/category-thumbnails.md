@@ -1,8 +1,8 @@
 ---
 title: Creating category thumbnails - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/category-thumbnails/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **Category thumbnails** (featured images) are images that are chosen as the representative image for categories. This tutorial will show you a simple solution to create thumbnails for categories and **display those thumbnails on a page** and on the **archive pages of each category**.

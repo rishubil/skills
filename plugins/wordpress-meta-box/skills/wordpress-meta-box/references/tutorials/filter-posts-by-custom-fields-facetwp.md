@@ -1,8 +1,8 @@
 ---
 title: Filtering posts by custom fields with FacetWP - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/filter-posts-by-custom-fields-facetwp/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 On an archive page, we’ll display posts and filter them by the values stored in the custom fields created by Meta Box. With the help of FacetWP, we can do it easily without coding.
@@ -16,6 +16,8 @@ Here is the page about the restaurants I created as an example:
 ## Before getting started
 
 There are some things that need to be clarified. On the page, we’ll have two sections. One is used to filter the restaurants by conditions. We’ll create this part using FacetWP. The second part is to show up all the restaurants.
+
+![Two sections of the page](https://imgur.elightup.com/1KwGTbg.png)
 
 All the information of the restaurants is saved in a custom post type. Each restaurant is a post of a custom post type. Besides the basic information such as name and image of the restaurants which are the post title and featured images, other additional information will be saved in different custom fields.
 

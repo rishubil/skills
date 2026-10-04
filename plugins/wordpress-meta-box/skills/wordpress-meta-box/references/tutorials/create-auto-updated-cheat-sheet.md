@@ -1,8 +1,8 @@
 ---
 title: Creating an auto-updated cheat sheet - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-auto-updated-cheat-sheet/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we’ll create a submission form to input data, then the data will be automatically inserted into a table in a post.

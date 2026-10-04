@@ -1,8 +1,8 @@
 ---
 title: Custom HTML - Meta Box Documentation
 source: https://docs.metabox.io/fields/custom-html/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The custom HTML field allows you to output anything. You can even use a PHP callback function to output the HTML.

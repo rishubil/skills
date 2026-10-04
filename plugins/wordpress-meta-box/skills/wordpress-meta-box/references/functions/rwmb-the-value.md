@@ -1,8 +1,8 @@
 ---
 title: rwmb_the_value - Meta Box Documentation
 source: https://docs.metabox.io/functions/rwmb-the-value/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 `rwmb_the_value` is a helper function that outputs the HTML of a field.

@@ -1,8 +1,8 @@
 ---
 title: Bundling Meta Box into another plugin - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/bundle-meta-box-into-another-plugin/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 When you create a website for a client, hiding information such as the used plugins may be a good idea. In this case, **bundling Meta Box into another plugin** will come in handy.

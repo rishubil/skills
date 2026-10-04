@@ -1,8 +1,8 @@
 ---
-title: tutorials/build-hotel-booking-website-p1.md
+title: Building a hotel booking website using Meta Box - P1 - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/build-hotel-booking-website-p1/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 1. The archive page for all the rooms, along with their information.

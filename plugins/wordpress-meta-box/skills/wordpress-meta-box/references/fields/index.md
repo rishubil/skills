@@ -1,8 +1,8 @@
 ---
 title: Field types - Meta Box Documentation
 source: https://docs.metabox.io/fields/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Learn about field types, what they are and when you should use them.

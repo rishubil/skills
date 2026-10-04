@@ -1,8 +1,8 @@
 ---
 title: Displaying real-time opening status automatically - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/realtime-opening-status-automatically/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Having a real-time-opening-status is a brilliant feature on this kind of site. So, I’d like to share a way to **display the real-time opening status dynamically and automatically** right now on this post. It's easily with the help of MB Views from Meta Box. Let’s see how now!
@@ -175,9 +175,9 @@ TimeObject.forEach(function (elm) {
         })
 
         if (statusArray.includes('open')) {
-            document.getElementById("restaurant-status").innerHTML = \`OPEN\`;
+            document.getElementById("restaurant-status").innerHTML = `OPEN`;
         } else {
-            document.getElementById("restaurant-status").innerHTML = \`CLOSE\`;
+            document.getElementById("restaurant-status").innerHTML = `CLOSE`;
         }
 
     }
@@ -238,9 +238,9 @@ if (elm.day == short_Days(date)) {
         })
 
         if (statusArray.includes('open')) {
-            document.getElementById("restaurant-status").innerHTML = \`OPEN\`;
+            document.getElementById("restaurant-status").innerHTML = `OPEN`;
         } else {
-            document.getElementById("restaurant-status").innerHTML = \`CLOSE\`;
+            document.getElementById("restaurant-status").innerHTML = `CLOSE`;
         }
 
     }
@@ -256,9 +256,9 @@ If the current time meets the condition, the `open` value will be pushed into th
 
 ```php
 if (statusArray.includes('open')) {
-    document.getElementById("restaurant-status").innerHTML = \`OPEN\`;
+    document.getElementById("restaurant-status").innerHTML = `OPEN`;
 } else {
-    document.getElementById("restaurant-status").innerHTML = \`CLOSE\`;
+    document.getElementById("restaurant-status").innerHTML = `CLOSE`;
 }
 ```
 

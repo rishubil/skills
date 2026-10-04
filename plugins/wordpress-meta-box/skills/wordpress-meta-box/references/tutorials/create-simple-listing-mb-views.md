@@ -1,8 +1,8 @@
 ---
 title: Creating a simple listing - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Continuing our series on [how to create simple listing](create-simple-listing-meta-box-bricks.md), where we've explored the way to build custom post listings using various page builders, this sixth part introduces a new approach only with Meta Box. It’s using **MB Views**.

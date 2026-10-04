@@ -1,8 +1,8 @@
 ---
 title: Creating user profile page on the frontend - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-user-profile-page/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 WordPress allows you to add more users to your website, but only from the backend. To let visitors register and manage accounts on the frontend, you can **create a user profile page** and also add custom fields for them to fill in their information. If you are using the Meta Box plugin, you can do it easily.

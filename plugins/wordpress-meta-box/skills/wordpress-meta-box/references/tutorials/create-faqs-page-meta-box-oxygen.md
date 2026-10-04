@@ -1,8 +1,8 @@
 ---
 title: Creating an FAQs page - Meta Box + Oxygen - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-faqs-page-meta-box-oxygen/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We are going to **create an FAQs page** using **Meta Box** and **Oxygen**. It has questions and answers that have been saved in custom fields created with Meta Box.

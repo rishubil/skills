@@ -1,8 +1,8 @@
 ---
 title: MB Custom Post Types & Custom Taxonomies - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-custom-post-type/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This extension helps you create custom post types and custom taxonomies with a user-friendly interface.

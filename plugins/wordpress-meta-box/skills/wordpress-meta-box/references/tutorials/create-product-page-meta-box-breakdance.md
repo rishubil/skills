@@ -1,8 +1,8 @@
 ---
 title: Creating a product page - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-product-page-meta-box-breakdance/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In this practice, we’re going to find out the way to create a typical product page with Breakdance.
@@ -131,6 +131,8 @@ To display the unit of the pricing, click to the **Rental Price** option > **Adv
 ![Use a div to create information of page](https://imgur.elightup.com/hFoJXsc.png)
 
 For the rest information, each row contains two types of the text: the text on the left is statics and the right one is data from the custom fields. So, we will use a **Div** and some elements inside for each row.
+
+![Use a div to create information of page](https://imgur.elightup.com/r3riP5V.png)
 
 Then, add a **Heading** element to add the static text on the left side of the row.
 

@@ -1,8 +1,8 @@
 ---
 title: Displaying uploaded images as a WordPress image gallery - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-as-gallery/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Sometimes, you may want to show product images, a portfolio, or just a photography album on your site. So, the image gallery is very helpful. You can upload images to your website via a custom field then **display them as a gallery** on a page.

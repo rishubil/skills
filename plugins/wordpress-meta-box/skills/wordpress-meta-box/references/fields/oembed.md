@@ -1,8 +1,8 @@
 ---
 title: oEmbed - Meta Box Documentation
 source: https://docs.metabox.io/fields/oembed/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The oEmbed field creates a simple text input for entering a media URL. This field offers a live preview of the media content such as videos, audios, images, tweets, polls, podcasts, etc. from [many 3rd-party services](https://codex.wordpress.org/Embeds).

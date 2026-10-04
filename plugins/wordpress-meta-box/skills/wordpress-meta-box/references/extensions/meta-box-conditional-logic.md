@@ -1,8 +1,8 @@
 ---
 title: MB Conditional Logic - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-conditional-logic/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **MB Conditional Logic** helps you to show or hide meta boxes, custom fields or any elements based on other fields' values.

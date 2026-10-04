@@ -1,8 +1,8 @@
 ---
 title: Displaying images from cloneable fields - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-images-cloneable-fields-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Images like a series of brand logos of typical partners or avatar of clients in the testimonial section, could be saved in custom fields. This tutorial is on how to display them without using any page builders.

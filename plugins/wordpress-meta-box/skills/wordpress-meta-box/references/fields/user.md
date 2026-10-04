@@ -1,8 +1,8 @@
 ---
 title: User - Meta Box Documentation
 source: https://docs.metabox.io/fields/user/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The user field allows you to select one or multiple users. This field has several settings that can be displayed as a: simple select dropdown, checkbox list, or beautiful select dropdown with select2 library.

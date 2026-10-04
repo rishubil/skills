@@ -1,8 +1,8 @@
 ---
 title: Showing upcoming events - using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-upcoming-events-with-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we're delving into a practical application of the **MB Views** extension from Meta Box on how to **show upcoming events**. It helps to highlight important dates and deadlines, making it easier for everyone to stay informed and participate.

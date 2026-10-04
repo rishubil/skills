@@ -1,8 +1,8 @@
 ---
 title: Extensions - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/extensions/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Learn about Meta Box extensions, what features they offer and how to use them.

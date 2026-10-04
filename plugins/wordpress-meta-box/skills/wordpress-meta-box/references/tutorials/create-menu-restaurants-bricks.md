@@ -1,8 +1,8 @@
 ---
 title: Creating menus for restaurants - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-menu-restaurants-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 There will be a large number of restaurants on your site and you may want to create their own menu for each one. In this practice, we’re going to do it using Meta Box and Bricks Builder.
@@ -37,10 +37,10 @@ Go to **Meta Box > Custom Fields** to create fields. I’ll create all the field
 | Name | Field type | Settings |
 | --- | --- | --- |
 | Menu Details | Group | - Collapsible - Cloneable |
-| Name | Text |
-| Price | Text |
-| Description | Text |
-| Image | Single Image |
+| Name | Text |  |
+| Price | Text |  |
+| Description | Text |  |
+| Image | Single Image |  |
 
 ![The created fields](https://imgur.elightup.com/c8DdCdL.png)
 
@@ -87,6 +87,8 @@ To contain the dishes’ information, add the **Container** element inside the d
 ![Choose the Heading element to get the dish's name](https://imgur.elightup.com/E1AeYsS.png)
 
 To get the dish’s name, choose the **Heading** element. As the name of the dish is saved in the custom field of Meta Box, use the **Select Dynamic data** button and choose the field name in which we store the name of the dishes. Now you can see that the dishes’ names have just been displayed.
+
+![Choose the Heading element to get the dish's name](https://imgur.elightup.com/K5HAkiu.gif)
 
 For the dish’s price, choose the **Basic Text** element. It’s also stored in the created custom field. So, we also use the **Select Dynamic data** button and choose the field correspondingly. Then, you’ll see the dish’s price displayed immediately.
 

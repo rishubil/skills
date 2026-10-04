@@ -1,8 +1,8 @@
 ---
 title: WYSIWYG Editor - Meta Box Documentation
 source: https://docs.metabox.io/fields/wysiwyg/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The WYSIWYG field creates an editor to enter rich content. You can enter headings, paragraphs, lists, and insert media.

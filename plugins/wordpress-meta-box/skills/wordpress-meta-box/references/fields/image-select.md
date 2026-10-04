@@ -1,8 +1,8 @@
 ---
 title: Image Select - Meta Box Documentation
 source: https://docs.metabox.io/fields/image-select/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The image select field allows you to select a choice visually with images. It works similar to the radio/checkbox field but uses images for a more user-friendly interface.
@@ -36,9 +36,9 @@ This is a sample field settings array when creating this field with code:
     'name'     => 'Layout',
     'type'     => 'image_select',
     'options'  => [
-        'left'  => 'http://placehold.it/90x90&text=Left',
-        'right' => 'http://placehold.it/90x90&text=Right',
-        'none'  => 'http://placehold.it/90x90&text=None',
+        'left'  => 'https://placeholder.photo/90x90?text=Left',
+        'right' => 'https://placeholder.photo/90x90?text=Right',
+        'none'  => 'https://placeholder.photo/90x90?text=None',
     ],
 ],
 ```

@@ -1,8 +1,8 @@
 ---
 title: Displaying a users list on the frontend - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-users-list/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In this guide, I'll show you how to **use Meta Box to easily display a user list on a page** as well as publish the user accounts **only when they are allowed** by the owners, besides, hide the accounts that users don’t want to publish.

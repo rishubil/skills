@@ -1,8 +1,8 @@
 ---
 title: Showing the featured restaurants - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-featured-restaurants-with-zion/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In today’s practice, we're going to **show the featured products** using **Meta Box** and **Zion**.
@@ -38,6 +38,8 @@ After publishing, you will see your post type displayed as a menu.
 ## 2\. Creating custom fields
 
 Go to **Meta Box** > **Custom Fields** to create fields to save extra information for the restaurants as usual.
+
+![The post type displayed as a menu](https://imgur.elightup.com/BEilkwt.png)
 
 Here are all the custom fields that I created.
 

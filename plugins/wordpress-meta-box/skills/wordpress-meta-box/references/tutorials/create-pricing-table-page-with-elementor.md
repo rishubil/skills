@@ -1,8 +1,8 @@
 ---
 title: Creating a pricing table page - Meta Box + Elementor - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-pricing-table-page-with-elementor/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Continuing our series on [creating a pricing page](create-pricing-table-page-with-bricks.md), this article will cover in detail how to build one using the combination of **Meta Box** and **Elementor**. If your product offers multiple pricing plans, this tutorial will help you create a clear and well-structured pricing page.

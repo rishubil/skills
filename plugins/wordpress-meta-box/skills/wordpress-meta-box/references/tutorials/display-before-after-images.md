@@ -1,8 +1,8 @@
 ---
 title: Displaying before and after images - Using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-before-after-images/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **Displaying before-and-after images** in an interactive way is a powerful tool for showing transformations. It can let your audience visually compare changes or differences. Just drag between the images then they can see a more dynamic comparison.

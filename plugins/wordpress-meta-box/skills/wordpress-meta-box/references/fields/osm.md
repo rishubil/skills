@@ -1,8 +1,8 @@
 ---
 title: Open Street Map - Meta Box Documentation
 source: https://docs.metabox.io/fields/osm/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The **Open Street Map (OSM) field** lets you select and save a location using [OpenStreetMap](https://openstreetmap.org/).

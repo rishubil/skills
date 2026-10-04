@@ -1,8 +1,8 @@
 ---
 title: Hidden - Meta Box Documentation
 source: https://docs.metabox.io/fields/hidden/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The hidden field creates a simple hidden input. It's usually used to store custom data that cannot be changed.

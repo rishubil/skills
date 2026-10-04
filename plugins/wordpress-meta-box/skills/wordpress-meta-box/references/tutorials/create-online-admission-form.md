@@ -1,8 +1,8 @@
 ---
 title: Creating online admission form for schools - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-online-admission-form/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 instead of submitting hard copies for student information, schools may have online submission forms then students can submit on the website. We’re going to find out how to create that online admission forms in this practice.
@@ -10,6 +10,8 @@ instead of submitting hard copies for student information, schools may have onli
 Here is the example.
 
 ![Example of the online admission form](https://imgur.elightup.com/lP5a6JZ.png)
+
+![Example of the online admission form](https://imgur.elightup.com/cHAFehA.png)
 
 ## Preparation
 
@@ -120,6 +122,8 @@ Here is the settings for columns of each field:
 Here are all the fields that I’ve created in groups and sections:
 
 ![The created fields](https://imgur.elightup.com/5pxt1si.png)
+
+![The created fields](https://imgur.elightup.com/ZcJSrtm.png)
 
 ### Special settings of custom fields
 
@@ -263,6 +267,8 @@ This is how the form looks on the page:
 
 ![The form in the frontend](https://imgur.elightup.com/lP5a6JZ.png)
 
+![The form in the frontend](https://imgur.elightup.com/cHAFehA.png)
+
 To have advanced styling, go to the **CSS** tab of the template and add some CSS code:
 
 ![Add some css code for styling](https://imgur.elightup.com/yaRmTfz.png)
@@ -361,3 +367,5 @@ Additionally, I want to have a Print button instead of Submit, so that students 
 Try a test, after submitting information, the link is changed and the **Student ID** is generated as well:
 
 ![The final result](https://imgur.elightup.com/wHDPc7q.png)
+
+![The final result](https://imgur.elightup.com/Ha9G97T.png)

@@ -1,8 +1,8 @@
 ---
 title: Case Studies - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/case-studies/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 See how to use Meta Box in the real case studies with comprehensive tutorials.
@@ -342,7 +342,11 @@ See how to use Meta Box in the real case studies with comprehensive tutorials.
 - [Using Meta Box + Breakdance](create-pricing-table-page-with-breakdance.md)
 - [Using MB Views](create-pricing-table-page-with-mb-views.md)
 
-## Displaying related- [Displaying related posts by shared relationship](display-related-posts-based-on-shared-relationship.md)
+## Displaying related
+
+[![pricing table page](https://docs.metabox.io/assets/images/case-39-a5cf62602d26db99006622ad3ddd5fd8.png)](display-related-posts-based-on-shared-relationship.md)
+
+- [Displaying related posts by shared relationship](display-related-posts-based-on-shared-relationship.md)
 - [Using MB Views](display-related-posts-based-on-shared-relationship-mb-views.md)
 
 ## Building a Hotel Booking

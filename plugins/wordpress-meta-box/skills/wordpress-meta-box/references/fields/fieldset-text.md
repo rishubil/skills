@@ -1,8 +1,8 @@
 ---
 title: Fieldset Text - Meta Box Documentation
 source: https://docs.metabox.io/fields/fieldset-text/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The fieldset text creates a set of text inputs. It's useful if you want to save related information.

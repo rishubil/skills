@@ -1,8 +1,8 @@
 ---
 title: MB ACF Migration - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-acf-migration/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB ACF Migration extension helps you to migrate field groups and custom field data from Advanced Custom Fields (ACF) to Meta Box. It works with both free and pro versions of Advanced Custom Fields.

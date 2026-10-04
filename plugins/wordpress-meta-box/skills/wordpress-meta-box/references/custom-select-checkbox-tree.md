@@ -1,13 +1,13 @@
 ---
 title: Checkbox Tree - Meta Box Documentation
 source: https://docs.metabox.io/custom-select-checkbox-tree/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
-If you've used the [taxonomy field](fields/taxonomy.md), you will see it has an option to display options in a checkbox / select tree. When users select a parent item, it will show children item. It's quite a nice feature for users. But how to do that with normal checkbox list or select field types?
+If you have used the [taxonomy field](fields/taxonomy.md), you will see it has an option to display options in a checkbox / select tree. When users select a parent item, it will show children items. It is quite a nice feature for users. But how to do that with normal checkbox list or select field types?
 
-The answer is simple: it's already supported. And you need to register options for these fields with code like this:
+The answer is simple: it is already supported. You need to register options for these fields with code like this:
 
 ```php
 add_filter( 'rwmb_meta_boxes', function ( $meta_boxes ) {

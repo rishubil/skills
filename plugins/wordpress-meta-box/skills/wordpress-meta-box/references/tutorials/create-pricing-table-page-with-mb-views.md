@@ -1,8 +1,8 @@
 ---
-title: tutorials/create-pricing-table-page-with-mb-views.md
+title: Creating a pricing table page using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-pricing-table-page-with-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In this tutorial, I’ll show you how to create a clear and well-structured pricing table using **MB Views**.

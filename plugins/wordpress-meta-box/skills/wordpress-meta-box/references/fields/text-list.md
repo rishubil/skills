@@ -1,8 +1,8 @@
 ---
 title: Text List - Meta Box Documentation
 source: https://docs.metabox.io/fields/text-list/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The text list field creates a list of text inputs.

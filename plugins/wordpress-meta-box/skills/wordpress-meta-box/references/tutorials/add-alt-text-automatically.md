@@ -1,8 +1,8 @@
 ---
 title: Automatically adding alt text to uploaded images - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/add-alt-text-automatically/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The alternative text (Alt text) plays an important role in improving your website's SEO and image rankings. However, manually adding alt-text to every uploaded image in WordPress can be time-consuming, especially for sites that frequently upload large amounts of media.

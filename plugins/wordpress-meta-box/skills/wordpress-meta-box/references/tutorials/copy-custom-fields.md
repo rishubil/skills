@@ -1,8 +1,8 @@
 ---
 title: Copying custom fields from sites to sites - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/copy-custom-fields/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Instead of rebuilding similar custom fields in different sites, you can use the [MB Builder](https://metabox.io/plugins/meta-box-builder/) extension to easily copy them from one site to others with just a few clicks.

@@ -1,8 +1,8 @@
 ---
 title: Displaying personalized data for users - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-personalized-data-for-users/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we’ll walk you through a useful way of **displaying dynamic, personalized data for users** on your website with Meta Box.

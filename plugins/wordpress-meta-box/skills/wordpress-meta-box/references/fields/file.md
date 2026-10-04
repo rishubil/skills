@@ -1,8 +1,8 @@
 ---
 title: File - Meta Box Documentation
 source: https://docs.metabox.io/fields/file/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The file field creates a simple file upload with default UI like `<input type="file">`. Unlike other media fields, this field doesn't use Media Library UI to upload files.

@@ -1,8 +1,8 @@
 ---
 title: Showing posts with specific criteria - Meta Box + Zion - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/show-posts-specific-criteria-with-zion/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today, we’ll show you how to display posts with specific criteria, such as products that are on sale, using **Meta Box** and **Zion**.
@@ -142,6 +142,8 @@ You see that the dishes names are displayed.
 Add the **Column** element one more time to cover both the original price and the promotional price.
 
 For the original price information, choose the **Text Editor** element. Since this information is saved in custom fields created by **Meta Box**, click **Use dynamic data** and find the **Meta Box Field** in the **Post** section, then choose the corresponding field like in the image below.
+
+![The dishes names are displayed](https://imgur.elightup.com/aSq6v15.gif)
 
 As you can see in the gif, a number will be displayed without a unit of pricing. To have the unit displayed, and add the currency unit in the box like this.
 

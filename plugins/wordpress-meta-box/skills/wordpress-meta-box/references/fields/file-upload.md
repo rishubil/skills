@@ -1,8 +1,8 @@
 ---
 title: File Upload - Meta Box Documentation
 source: https://docs.metabox.io/fields/file-upload/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The file upload field displays an inline upload area that you can drag and drop or select files to upload. It doesn't open the Media Library popup for selecting existing files. You can upload new files only.

@@ -1,8 +1,8 @@
 ---
 title: Configuring homepage using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/configure-homepage/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 **Regularly updating the homepage brings fresh content** and helps impress website visitors easier. However, it may take time and effort to change its content. You definitely can avoid it with the help of custom fields created with Meta Box and MB Views. Let’s say goodbye to the hassle of coding in theme files!

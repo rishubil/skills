@@ -1,8 +1,8 @@
 ---
 title: Textarea - Meta Box Documentation
 source: https://docs.metabox.io/fields/textarea/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The textarea field creates a simple textarea (multiline) input. You can use this field for entering a paragraph of text.

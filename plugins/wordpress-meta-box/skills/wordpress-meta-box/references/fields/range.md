@@ -1,8 +1,8 @@
 ---
 title: Range - Meta Box Documentation
 source: https://docs.metabox.io/fields/range/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The range field creates an HTML5 range field where you can select a number by dragging a control.

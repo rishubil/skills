@@ -1,8 +1,8 @@
 ---
 title: Checkbox - Meta Box Documentation
 source: https://docs.metabox.io/fields/checkbox/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The checkbox field creates a single checkbox.

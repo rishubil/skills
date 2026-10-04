@@ -1,8 +1,8 @@
 ---
 title: Tutorials - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 [![create custom post type taxonomies](https://docs.metabox.io/assets/images/banner-1-807ff9418b5e3e0988a4657594319b84.png)](create-custom-post-types-taxonomies.md)

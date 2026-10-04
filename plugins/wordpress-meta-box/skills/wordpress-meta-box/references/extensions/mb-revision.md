@@ -1,8 +1,8 @@
 ---
 title: MB Revision - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-revision/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB Revision adds support for custom fields in WordPress revision that helps you to track changes of custom fields.

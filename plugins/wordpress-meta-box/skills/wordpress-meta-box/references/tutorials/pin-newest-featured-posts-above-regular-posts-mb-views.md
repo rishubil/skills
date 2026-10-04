@@ -1,8 +1,8 @@
 ---
 title: Pining newest featured posts above regular posts using MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/pin-newest-featured-posts-above-regular-posts-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In the previous tut, we focused on [displaying only the featured posts](show-featured-restaurants-mb-views.md). But in many real-world cases, highlighting important content without hiding the rest is a common need. Instead of splitting featured items into a separate section, you can simply prioritize them within the same list for better visibility. In this tutorial, we’re going to explore how to do it using the **MB Views** extension of **Meta Box**.

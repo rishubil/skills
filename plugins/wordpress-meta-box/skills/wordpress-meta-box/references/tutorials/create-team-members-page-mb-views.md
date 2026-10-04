@@ -1,8 +1,8 @@
 ---
 title: Creating a team members page - MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-team-members-page-mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’re going to use a new method to create a team members page using Meta Box only with MB Views.
@@ -88,9 +88,9 @@ This code is used to declare the variable that obtained posts from the Team Memb
 This function is to get the posts data from the variable that was declared above.
 
 ```php
-{% for post in posts %}\`
+{% for post in posts %}`
     ………
-{% endfor %}\`
+{% endfor %}`
 ```
 
 This is a loop to display all the posts in the Team Member post type.

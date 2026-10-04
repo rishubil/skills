@@ -1,8 +1,8 @@
 ---
 title: Image Advanced - Meta Box Documentation
 source: https://docs.metabox.io/fields/image-advanced/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The image advanced field uses the WordPress media popup for selecting / uploading images. You can also reorder images if you want.

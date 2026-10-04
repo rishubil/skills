@@ -1,8 +1,8 @@
 ---
 title: rwmb_before_save_post - Meta Box Documentation
 source: https://docs.metabox.io/actions/rwmb-before-save-post/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This action runs before a field group is saved.

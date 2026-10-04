@@ -1,8 +1,8 @@
 ---
 title: Text - Meta Box Documentation
 source: https://docs.metabox.io/fields/text/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The text field creates a simple text input. You can enter any value or select a value from a predefined list.

@@ -1,8 +1,8 @@
 ---
 title: Creating a simple listing - Meta Box + Kadence - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-simple-listing-with-kadence/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Today we’re going to try a new way to do it with **Kadence**. We also **display the products with information** on a page and **filter them** as well.

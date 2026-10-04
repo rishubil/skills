@@ -1,8 +1,8 @@
 ---
 title: Checkbox list - Meta Box Documentation
 source: https://docs.metabox.io/fields/checkbox-list/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The checkbox list field creates a list of tick-able checkboxes with options. You can select multiple choices from the predefined list.

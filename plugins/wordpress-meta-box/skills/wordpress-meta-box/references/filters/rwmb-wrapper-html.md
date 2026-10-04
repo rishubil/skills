@@ -1,8 +1,8 @@
 ---
 title: rwmb_wrapper_html - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-wrapper-html/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This filter is used to change the wrapper HTML of a field, e.g. the HTML content **inside the `<div class="rwmb-field..."></div>`**.

@@ -1,8 +1,8 @@
 ---
 title: MB User Meta - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-user-meta/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB User Meta helps you to add custom fields to user profile.

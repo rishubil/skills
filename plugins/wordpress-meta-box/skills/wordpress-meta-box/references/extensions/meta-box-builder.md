@@ -1,8 +1,8 @@
 ---
 title: MB Builder - Meta Box Documentation
 source: https://docs.metabox.io/extensions/meta-box-builder/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This extension helps you create custom fields, settings pages, and relationships with a user-friendly interface.
@@ -83,7 +83,7 @@ There are several settings:
 - Post settings, such as context, priority if you select the location is for posts.
 - Custom block settings, such as block icon, render callback if you select the location is for blocks, which means creating custom Gutenberg blocks. Requires [MB Blocks](mb-blocks.md) extension. See the **Create Gutenberg blocks** section below.
 - Tab style and default active tab: these are the settings for [MB Tabs](meta-box-tabs.md) extension.
-- Custom table settings, including table name, table prefix and option to create custom table automatically. These are the settings for [MB Custom Table](mb-custom-table.md) extension. Note that if you select to create the custom table automatically, all columns will have the data type `TEXT` to ensure maximum compatibility.
+- Custom table settings for [MB Custom Table](mb-custom-table.md): table name, table prefix, and auto-create. Use **Edit columns** to set SQL types and indexes. The builder suggests a type from each field. See [Recommended SQL column types](mb-custom-table.md#recommended-sql-column-types). If you save without editing columns, missing columns are added as `TEXT`.
 - Advanced:
 	- Custom CSS class: the custom CSS class for the wrapper `div` if you need to cusomize the style of the field group.
 		- Field ID prefix: if you want to prefix all fields in the field group, then this settings is for that. It's optional, but a good practice to keep your custom fields separated from other custom fields. You can also use underscore `_` as prefix to keep your fields hidden in the default WordPress **Custom Fields** meta box.

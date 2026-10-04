@@ -1,8 +1,8 @@
 ---
 title: Creating a recipe - Meta Box + Bricks - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/create-recipes-meta-box-bricks/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 We’re going to **create a recipe page** using **Meta Box** and **Bricks**. This page is a singular page of a custom post type and includes information that is stored in custom fields created with Meta Box.

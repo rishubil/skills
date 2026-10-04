@@ -1,8 +1,8 @@
 ---
 title: move-custom-post-types-custom-taxonomies-from-CPT-UI-to-Meta-Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/move-custom-post-types-custom-taxonomies-from-CPT-UI-to-Meta-Box/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 ## How to Move All Custom Post Types and Custom Taxonomies from CPT UI to Meta Box

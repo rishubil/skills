@@ -1,8 +1,8 @@
 ---
 title: rwmb_show - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-show/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This filter is used to decide whether to show a field group.

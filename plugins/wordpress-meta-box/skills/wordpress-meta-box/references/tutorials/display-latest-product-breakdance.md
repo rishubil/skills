@@ -1,8 +1,8 @@
 ---
 title: Displaying the latest products - Meta Box + Breakdance - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/display-latest-product-breakdance/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 In today's practice, we're going to create the latest product section using Meta Box and Breakdance.
@@ -16,6 +16,8 @@ I take the restaurants as an example for the posts as well as for the products:
 ## Preparation
 
 In this case, my products are restaurants. Each restaurant will be a post in a custom post type and displayed in a box as in the image below. It is created as a global block in Breakdance.
+
+![Each restaurant is a post in a custom post type](https://imgur.elightup.com/OFq9unJ.png)
 
 In the block, the name of the restaurant and its image are the title and the featured image of the post. Further, you may want to add some extra information for your products, so I have something as a demo, such as logo, address, and voucher. This extra information will be saved in the custom fields created by Meta Box.
 

@@ -1,8 +1,8 @@
 ---
 title: rwmb_get_value - Meta Box Documentation
 source: https://docs.metabox.io/filters/rwmb-get-value/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 This filter is used to change the returned value of the [rwmb\_get\_value()](../functions/rwmb-get-value.md) helper function.

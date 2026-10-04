@@ -1,8 +1,8 @@
 ---
 title: Custom fields vs custom taxonomies - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/custom-fields-vs-taxonomies/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 With the help of [Meta Box](https://metabox.io/), today you can easily create both custom fields and custom taxonomies to store data for the custom post types. However, many users may be confused about when they should use each of them. Let’s clarify it.
@@ -23,8 +23,8 @@ Therefore, grouping is the main difference between these two things.
 
 For example, I’m building a new site that has a custom post type for television shows. I have to identify which item of a TV show (including Title, Actors, Episode numbers, and Season numbers) makes sense as a taxonomy, which one is a custom field, or (rarely) both.
 
-| Custom Taxonomy | Custom Field |
-| --- | --- |
+| Custom Taxonomy | Custom Field |  |  |
+| --- | --- | --- | --- |
 | Title | Yes | Yes | Each TV show has lots of episodes so you can group all of them together in a taxonomy, then people can see an episode listing. |
 | Actors | Yes | Yes | Since actors act in many roles, it would be great to see what shows and episodes they’ve joined by grouping them into a taxonomy for actors. |
 | Season / Episode | No | Yes | Every TV series has a season 1 so it doesn’t make sense if we group season 1 of all TV shows into a taxonomy. It should be a post meta only. |

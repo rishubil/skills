@@ -1,8 +1,8 @@
 ---
 title: Rendering blocks with views in Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/render-block-with-view/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 [MB Blocks](../extensions/mb-blocks.md) is a powerful plugin for creating custom Gutenberg blocks. If using a separate template file to render the block is inconvenient, we have a more optimal way for you: **render blocks using views**.

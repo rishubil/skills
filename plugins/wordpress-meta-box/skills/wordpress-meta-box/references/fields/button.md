@@ -1,8 +1,8 @@
 ---
 title: Button - Meta Box Documentation
 source: https://docs.metabox.io/fields/button/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The button field creates a simple button. It doesn't have any value. Usually, this field is used to trigger custom JavaScript actions.

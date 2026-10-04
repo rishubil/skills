@@ -1,8 +1,8 @@
 ---
 title: Background - Meta Box Documentation
 source: https://docs.metabox.io/fields/background/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 The background field allows you to set background properties for a post. You can set the background color, select an image, and set other background settings.

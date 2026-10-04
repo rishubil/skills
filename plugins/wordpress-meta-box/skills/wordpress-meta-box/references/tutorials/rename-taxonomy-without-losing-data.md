@@ -1,8 +1,8 @@
 ---
 title: Renaming taxonomy without losing assigned posts with Meta Box - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/rename-taxonomy-without-losing-data/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Assuming that you already have a taxonomy with posts assigned to it. However, in some cases, you may want to rename that taxonomy for SEO purposes or to make it more meaningful. Normally, if you rename a taxonomy, WordPress treats it as a completely new one. As a result, all previously assigned posts will be detached and no longer linked to their terms.

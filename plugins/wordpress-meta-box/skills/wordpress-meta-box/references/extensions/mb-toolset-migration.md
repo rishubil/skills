@@ -1,8 +1,8 @@
 ---
 title: MB Toolset Migration - Meta Box Documentation
 source: https://docs.metabox.io/extensions/mb-toolset-migration/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 MB Toolset Migration extension helps you to migrate field groups, custom field data, and relationships from Toolset to Meta Box.

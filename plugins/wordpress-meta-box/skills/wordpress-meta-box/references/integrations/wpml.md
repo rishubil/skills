@@ -1,8 +1,8 @@
 ---
 title: Meta Box - WPML Integration - Meta Box Documentation
 source: https://docs.metabox.io/integrations/wpml/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 WPML (**WPML Multilingual CMS**) seamlessly integrates with Meta Box, allowing you to easily translate data (both values and labels) of various objects, including posts, taxonomies, custom fields, settings pages, relationships, and users.

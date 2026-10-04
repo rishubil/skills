@@ -1,8 +1,8 @@
 ---
 title: MB Views - Meta Box Documentation
 source: https://docs.metabox.io/tutorials/mb-views/
-version: 5.12.0
-fetched: 2026-05-11
+version: 5.15.1
+fetched: 2026-10-04
 ---
 
 Build front-end templates for WordPress without touching theme files. Support Twig and all field types.
