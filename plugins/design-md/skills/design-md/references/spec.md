@@ -2,8 +2,8 @@
 title: DESIGN.md Format Specification
 source: https://github.com/google-labs-code/design.md/blob/main/docs/spec.md
 version: alpha
-commit: bde692f
-fetched: 2026-07-22
+commit: 961439f
+fetched: 2026-10-04
 ---
 
 <!-- Generated from spec.mdx + spec-config.ts | version: alpha -->
@@ -52,6 +52,7 @@ Below is the schema for the design tokens defined in the front matter:
 version: <string>          # optional, current version: "alpha"
 name: <string>
 description: <string>      # optional
+omitted: <string[]|OmittedSection[]> # optional
 colors:
   <token-name>: <Color>
 typography:
@@ -67,9 +68,7 @@ components:
 
 The `<scale-level>` placeholder represents a named level in a sizing or spacing scale. Common level names include `xs`, `sm`, `md`, `lg`, `xl`, and `full`. Any descriptive string key is valid.
 
-**Color**: A color value is any valid CSS color string.
-
-Supported formats include:
+**Color**: A color value is any valid CSS color string. Supported formats include:
 
 - Hex: `#RGB`, `#RGBA`, `#RRGGBB`, `#RRGGBBAA`
 - Named colors: `red`, `cornflowerblue`, `transparent`
@@ -81,10 +80,6 @@ All color values are internally converted to sRGB for WCAG contrast checking. Th
 
 Hex notation (`#RRGGBB`) remains the recommended default for simplicity and broad tooling support.
 
-**Dimension**: A dimension value is a string with a unit suffix.
-
-Valid units are: px, em, rem.
-
 - `fontFamily` (string)
 - `fontSize` (Dimension)
 - `fontWeight` (number) - A numeric font weight value (e.g., `400`, `700`). In YAML, this may be expressed as either a bare number or a quoted string; both are equivalent.
@@ -94,6 +89,19 @@ Valid units are: px, em, rem.
   [`font-feature-settings`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-feature-settings).
 - `fontVariation` (string) - configures
   [`font-variation-settings`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variation-settings).
+
+**Dimension**: A dimension value is a string with a unit suffix. Valid units are: px, em, rem.
+
+**Omitted**: An array of sections that are intentionally omitted from the design system. This suppresses linter warnings for missing sections (e.g. colors, typography, spacing, rounded, components). Each entry can be:
+
+* A string representing the section name (e.g., `spacing`)
+* An object of the form `{ section: string, reason?: string }` mapping a section to a documented reason for its omission:
+  ```yaml
+  omitted:
+    - spacing
+    - section: rounded
+      reason: "No rounded corners defined in brand book"
+  ```
 
 **Token References**: A token reference must be wrapped in curly braces, and contain an object path to another value in the YAML tree. For most token groups, the reference must point to a primitive value (e.g., `colors.primary-60`), not a group (e.g., `colors`). Within the `components` section, references to composite values (e.g., `{typography.label-md}`) are permitted.
 

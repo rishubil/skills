@@ -75,7 +75,9 @@ The YAML front matter holds design tokens (`colors`, `typography`,
 is eight `##` sections, in a fixed order, that explain what the tokens mean
 and why. Sections may be omitted, but any that are present must stay in
 order: Overview → Colors → Typography → Layout → Elevation & Depth → Shapes
-→ Components → Do's and Don'ts.
+→ Components → Do's and Don'ts. When a token group is left out on purpose,
+list it under the `omitted` front matter key (a section name, or
+`{ section, reason }`) so the linter stops warning that it is missing.
 
 ## The rule that decides quality
 
