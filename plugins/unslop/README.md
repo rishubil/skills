@@ -2,11 +2,11 @@
 
 ## What it does
 
-Edits text to strip the patterns that mark it as AI-generated, then puts a human
-voice back in. The skill carries a checklist of 31 tells grouped into content,
-language, style, communication artifacts, filler, jargon, and plain speech, plus
-a short "adding soul" section for the other half of the job: removing patterns
-without adding voice just produces sterile writing.
+Edits text to strip the patterns that mark it as AI-generated. The skill
+carries a checklist of 28 tells grouped into content, language, style,
+communication artifacts, filler, jargon, and plain speech. Rule numbers are
+stable ids that other upstream skills cite, so the numbering has gaps and runs
+up to 33.
 
 Use it on prose you or an agent just wrote — docs, READMEs, PR descriptions,
 commit messages, release notes, blog posts, replies.

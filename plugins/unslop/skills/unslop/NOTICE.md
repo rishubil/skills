@@ -8,7 +8,8 @@ does not apply to it.
 - **Upstream project:** `pstack` plugin in the [cursor/plugins](https://github.com/cursor/plugins) repository
 - **Copyright:** (c) 2026 Lauren Tan
 - **License:** MIT License — https://github.com/cursor/plugins/blob/main/pstack/LICENSE
-- **Retrieved:** 2026-09-02
+- **Retrieved:** 2026-10-04
+- **Upstream commit:** [`70b2dc8`](https://github.com/cursor/plugins/blob/70b2dc8b4b85c8d5648624ca40d692c421fff32f/pstack/skills/unslop/SKILL.md) (2026-09-23)
 
 The upstream MIT License text is reproduced below, as required by its terms.
 

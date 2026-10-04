@@ -53,7 +53,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `design-md` | Author, apply, evolve, and export a `DESIGN.md` (Google Labs format) — design tokens plus prose that pin a project's visual identity across sessions and agents, with a PostToolUse hook that auto-lints on every Write/Edit. |
 | `discord-notify` | Ping the user on Discord through an incoming webhook when work finishes, fails, or is blocked — deliberately, under a strict no-spam policy. |
 | `discord-hang-alert` | `Notification` hook that pings Discord when a session is blocked waiting for you — permission prompts, subagent input, MCP elicitations. Not for progress reports. |
-| `unslop` | Edit text to remove AI tells and put a human voice back in — a 31-pattern checklist. Verbatim port of the `unslop` skill from Cursor's `pstack` plugin (MIT). |
+| `unslop` | Edit text to remove AI tells — a 28-pattern checklist. Verbatim port of the `unslop` skill from Cursor's `pstack` plugin (MIT). |
 | `self-kill-guard` | PreToolUse hook that blocks Bash commands which would kill their own shell or Claude Code itself — `pkill -f`, `pgrep \| kill`, `ps \| grep \| kill` checked against what they would really match. |
 
 ## Using in Claude Code
