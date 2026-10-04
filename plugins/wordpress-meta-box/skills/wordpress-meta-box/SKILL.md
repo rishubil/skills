@@ -87,7 +87,7 @@ The `references/` folder in this skill directory contains the full official docu
 ```
 references/
 ├── index.md                        # Home (full overview)
-├── getting-started.md              # Installation and getting started
+├── installation.md                 # Installation and requirements
 ├── custom-fields.md                # Custom fields overview
 ├── custom-post-types.md            # Custom post types
 ├── creating-fields-with-code.md    # Creating fields in code
@@ -101,8 +101,7 @@ references/
 │   └── *.md
 ├── integrations/                   # Third-party integrations (index.md overview, Polylang, WPML)
 │   └── *.md
-├── field-settings/                 # Settings for each field type
-│   └── *.md
+├── field-settings.md               # Settings common to all field types
 ├── fields/                         # Detailed guide per field type
 │   └── *.md
 ├── actions/                        # Action hook reference
@@ -117,12 +116,12 @@ references/
 
 | Topic | File Path |
 |-------|-----------|
-| Getting started | `references/getting-started.md` |
-| Full field type list | `references/field-types.md` |
-| Common field settings | `references/field-settings/index.md` |
+| Installation | `references/installation.md` |
+| Full field type list | `references/fields/index.md` |
+| Common field settings | `references/field-settings.md` |
 | Image field | `references/fields/image-advanced.md` |
 | Date field | `references/fields/date.md` |
-| Group field | `references/fields/group.md` |
+| Group field | `references/extensions/meta-box-group.md` |
 | Post relationship field | `references/fields/post.md` |
 | rwmb_meta() function | `references/functions/rwmb-meta.md` |
 | rwmb_the_value() function | `references/functions/rwmb-the-value.md` |
