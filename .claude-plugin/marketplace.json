@@ -223,6 +223,15 @@
       "skills": [
         "./skills/ste100-korean"
       ]
+    },
+    {
+      "name": "x-collector",
+      "description": "Collect public X.com posts without the paid API or a login — read posts and threads by URL, list account timelines, and search via search engines that index x.com.",
+      "source": "./plugins/x-collector",
+      "strict": false,
+      "skills": [
+        "./skills/x-collector"
+      ]
     }
   ]
 }

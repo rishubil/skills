@@ -56,6 +56,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `unslop` | Edit text to remove AI tells — a 28-pattern checklist. Verbatim port of the `unslop` skill from Cursor's `pstack` plugin (MIT). |
 | `self-kill-guard` | PreToolUse hook that blocks Bash commands which would kill their own shell or Claude Code itself — `pkill -f`, `pgrep \| kill`, `ps \| grep \| kill` checked against what they would really match. |
 | `ste100-korean` | ASD-STE100-style controlled-language rules for Korean and English writing — an always-on `SessionStart` hook, an English-Korean `GLOSSARY.md`, and a bilingual linter backed by the Kiwi morphological analyzer. |
+| `x-collector` | Collect public X.com (Twitter) posts without the paid API or a login — read posts/threads by URL, list an account's recent posts, and search via `site:x.com` on ddgs or SearXNG. |
 
 ## Using in Claude Code
 
