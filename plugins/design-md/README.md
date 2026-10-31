@@ -12,9 +12,10 @@ harvesting evidence and interviewing the user to author a new file, reading
 and applying an existing file's tokens and prose when building or restyling
 UI, evolving a file's tokens without letting the prose drift out of sync, and
 exporting the token block to Tailwind (v3/v4) or W3C DTCG `tokens.json` for
-downstream tooling. It ships a starter skeleton with pre-tuned design
-tokens, the upstream format spec, a philosophy reference, and a lint-clean
-worked example.
+downstream tooling. It ships two starting points — a filled light "ink on
+paper" preset (`assets/DESIGN.paper.md`, the default) and a dark-first
+skeleton (`assets/DESIGN.template.md`) — plus the upstream format spec, a
+philosophy reference, and a lint-clean worked example.
 
 The plugin also adds a **PostToolUse hook** that automatically runs
 `designmd lint` on any `DESIGN.md`-named file after a Write or Edit. On an

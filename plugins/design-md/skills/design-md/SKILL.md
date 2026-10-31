@@ -144,13 +144,24 @@ change.
    should read as a consequence of the Overview, not as an independent
    decision. If a later section contradicts the Overview's reference, the
    Overview is wrong or the later section is guessing.
-4. **Fill the template** at `assets/DESIGN.template.md` rather than writing
-   a file from scratch — it has the correct section order, valid starter
-   tokens, and inline guidance comments to delete as you go. The template's
-   starter tokens are a dark-first house default meant to be retuned per
-   project, and linting the untouched template reports one expected
-   `orphaned-tokens` warning for its `border` color — the components schema
-   has no border property, so that warning is accepted rather than fixed.
+4. **Start from a bundled file** rather than writing one from scratch. Both
+   have the correct section order and valid tokens, and both are meant to be
+   retuned per project:
+   - `assets/DESIGN.paper.md` is the default. It is a filled, lint-clean
+     preset — light "ink on paper" with one teal accent, square corners, no
+     shadows, Pretendard plus D2Coding, and a system-following dark theme —
+     with full prose. Only the Overview's reference object is left open.
+     Fill it in from the interview, retune what the evidence contradicts,
+     and update the prose of every token you change.
+   - `assets/DESIGN.template.md` is the alternative when the project wants
+     a dark-first, rounded, layered-surface look instead. It is a skeleton:
+     starter tokens plus guidance comments, with every prose section left
+     to write. Linting it untouched reports one expected `orphaned-tokens`
+     warning for its `border` color — the components schema has no border
+     property, so that warning is accepted rather than fixed.
+
+   If neither look fits the user's reference, pick the closer one for its
+   structure and replace the tokens and prose wholesale.
 5. **Lint before calling it done** (see Validation below).
 
 ## Workflow 2 — Building or restyling UI when a DESIGN.md exists
@@ -298,4 +309,5 @@ name list, or how consumers should handle unknown content — read
 | `references/spec.md` | You need the exact schema, the full section descriptions, recommended token names, or how unknown content should be handled. |
 | `references/philosophy.md` | You need the reasoning behind "prose over tokens" and "specific reference over adjectives" in more depth, e.g. to explain a pushback to the user. |
 | `references/example-paws-and-paths.md` | You want a complete, lint-clean worked example to model structure and prose density on. |
-| `assets/DESIGN.template.md` | You're authoring a new DESIGN.md and need a structurally valid starting point to fill in. |
+| `assets/DESIGN.paper.md` | You're authoring a new DESIGN.md — the default starting point: a filled light "ink on paper" preset with only the Overview reference left open. |
+| `assets/DESIGN.template.md` | You're authoring a new DESIGN.md for a dark-first, rounded look and want an empty skeleton to fill in. |
