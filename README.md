@@ -135,6 +135,7 @@ In addition to this repository, the following external skills are also used.
 | Marketplace | Plugin | Install Command |
 |---|---|---|
 | `anthropics/claude-plugins-official` | `skill-creator` | `/plugin marketplace add anthropics/claude-plugins-official` → `/plugin install skill-creator@claude-plugins-official` |
+| `anthropics/claude-plugins-official` | `modern-web-guidance` | `/plugin marketplace add anthropics/claude-plugins-official` → `/plugin install modern-web-guidance@claude-plugins-official` |
 | `multica-ai/andrej-karpathy-skills` | `andrej-karpathy-skills` | `/plugin marketplace add multica-ai/andrej-karpathy-skills` → `/plugin install andrej-karpathy-skills@karpathy-skills` |
 
 ## License
