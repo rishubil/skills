@@ -1,0 +1,229 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+if [[ "${TRACE-0}" == "1" ]]; then
+    set -o xtrace
+fi
+
+# Dry-run mode: exit 0 if the args are read-only, 1 otherwise. Never runs fj
+# and never prints. Used by the PreToolUse hook so this file stays the single
+# source of truth for the allowlist.
+DRY_RUN="${FJ_READONLY_DRY_RUN-0}"
+
+if [[ "$DRY_RUN" != "1" && "${1-}" =~ ^-*h(elp)?$ ]]; then
+    echo 'Usage: fj-readonly <fj-subcommand> [args...]
+
+Wrapper around the forgejo-cli (fj) that only allows read-only operations.
+Blocks any command that could modify remote or local state (create, edit,
+delete, merge, comment, checkout, clone, login, etc.).
+
+Examples:
+  fj-readonly whoami
+  fj-readonly issue view 3 comments
+  fj-readonly -H codeberg.org repo view owner/repo
+  fj-readonly pr search --state open
+
+Exit codes:
+  0  Command executed successfully
+  1  Command blocked (not read-only)
+  2  Usage error
+'
+    exit
+fi
+
+if [[ $# -lt 1 ]]; then
+    if [[ "$DRY_RUN" == "1" ]]; then
+        exit 1
+    fi
+    echo "Error: no subcommand provided" >&2
+    echo "Usage: fj-readonly <fj-subcommand> [args...]" >&2
+    exit 2
+fi
+
+# --- Read-only allowlist ---
+# Decisions are made on the positional tokens (options removed), so that
+# global options like `-H host` or `-R remote` may appear anywhere.
+# Anything not explicitly listed is blocked (fail closed).
+
+# Positional tokens extracted from the arguments.
+POSITIONALS=()
+
+collect_positionals() {
+    local skip_next=0
+    local arg
+    for arg in "$@"; do
+        if [[ "$skip_next" == "1" ]]; then
+            skip_next=0
+            continue
+        fi
+        case "$arg" in
+            --)
+                break
+                ;;
+            -H|--host|-C|--cwd|--style|-R|--remote|-r|--repo)
+                skip_next=1
+                ;;
+            -*)
+                ;;
+            *)
+                POSITIONALS+=("$arg")
+                ;;
+        esac
+    done
+}
+
+# Succeeds if the --set / -s flag of `org visibility` appears in the args.
+has_visibility_set_flag() {
+    local arg
+    for arg in "$@"; do
+        case "$arg" in
+            -s|-s*|--set|--set=*)
+                return 0
+                ;;
+        esac
+    done
+    return 1
+}
+
+is_readonly() {
+    local n="${#POSITIONALS[@]}"
+    local p0="${POSITIONALS[0]-}"
+    local p1="${POSITIONALS[1]-}"
+    local p2="${POSITIONALS[2]-}"
+    local p3="${POSITIONALS[3]-}"
+
+    case "$p0" in
+        whoami|version|completion)
+            return 0
+            ;;
+        auth)
+            [[ "$p1" == "list" ]] && return 0
+            ;;
+        repo)
+            case "$p1" in
+                view|readme|star-status|watch-status|browse)
+                    return 0
+                    ;;
+                labels|label)
+                    # `labels [REPO] view` — view takes no positionals.
+                    [[ "$p2" == "view" && "$n" -eq 3 ]] && return 0
+                    [[ "$p3" == "view" && "$n" -eq 4 ]] && return 0
+                    ;;
+            esac
+            ;;
+        issue)
+            case "$p1" in
+                search|view|templates|browse)
+                    return 0
+                    ;;
+                depend|block)
+                    [[ "$p2" == "list" ]] && return 0
+                    ;;
+            esac
+            ;;
+        pr)
+            case "$p1" in
+                search|view|status|browse)
+                    return 0
+                    ;;
+                depend|block)
+                    [[ "$p2" == "list" ]] && return 0
+                    ;;
+                review)
+                    # `pr review [ID] [COMMAND]`; default command is list,
+                    # `request` is a write.
+                    local rest=("${POSITIONALS[@]:2}")
+                    local r
+                    for r in "${rest[@]}"; do
+                        [[ "$r" == "request" ]] && return 1
+                    done
+                    case "${#rest[@]}" in
+                        0|1)
+                            return 0
+                            ;;
+                        2)
+                            [[ "${rest[1]}" == "list" ]] && return 0
+                            ;;
+                    esac
+                    ;;
+            esac
+            ;;
+        milestone)
+            [[ "$p1" == "search" || "$p1" == "view" ]] && return 0
+            ;;
+        wiki)
+            [[ "$p1" == "contents" || "$p1" == "view" || "$p1" == "browse" ]] && return 0
+            ;;
+        actions)
+            case "$p1" in
+                tasks)
+                    return 0
+                    ;;
+                variables|secrets)
+                    [[ "$p2" == "list" ]] && return 0
+                    ;;
+            esac
+            ;;
+        release)
+            case "$p1" in
+                list|view|browse)
+                    return 0
+                    ;;
+                asset)
+                    [[ "$p2" == "download" ]] && return 0
+                    ;;
+            esac
+            ;;
+        tag)
+            [[ "$p1" == "list" || "$p1" == "view" ]] && return 0
+            ;;
+        user)
+            case "$p1" in
+                search|view|browse|following|followers|repos|orgs|activity)
+                    return 0
+                    ;;
+                key|gpg)
+                    # `gpg verify` writes, so only list/view.
+                    [[ "$p2" == "list" || "$p2" == "view" ]] && return 0
+                    ;;
+            esac
+            ;;
+        org)
+            case "$p1" in
+                list|view|activity|members)
+                    return 0
+                    ;;
+                visibility)
+                    # With --set/-s it changes membership visibility.
+                    has_visibility_set_flag "$@" || return 0
+                    ;;
+                team)
+                    [[ "$p2" == "list" || "$p2" == "view" ]] && return 0
+                    [[ "$p2" == "repo" || "$p2" == "member" ]] && [[ "$p3" == "list" ]] && return 0
+                    ;;
+                label|repo)
+                    [[ "$p2" == "list" ]] && return 0
+                    ;;
+            esac
+            ;;
+    esac
+
+    return 1
+}
+
+collect_positionals "$@"
+
+if is_readonly "$@"; then
+    if [[ "$DRY_RUN" == "1" ]]; then
+        exit 0
+    fi
+    exec fj "$@"
+else
+    if [[ "$DRY_RUN" == "1" ]]; then
+        exit 1
+    fi
+    echo "Blocked: 'fj $*' is not a read-only command" >&2
+    exit 1
+fi

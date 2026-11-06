@@ -89,6 +89,13 @@
       "skills": []
     },
     {
+      "name": "fj-readonly",
+      "description": "PreToolUse hook that intercepts read-only forgejo-cli (fj) calls and redirects them to a safe allowlist-based wrapper script.",
+      "source": "./plugins/fj-readonly",
+      "strict": false,
+      "skills": []
+    },
+    {
       "name": "skill-eval-hook",
       "description": "UserPromptSubmit hook that forces mandatory skill evaluation before every task — Claude must assess each available skill and activate relevant ones before implementation.",
       "source": "./plugins/skill-eval-hook",
