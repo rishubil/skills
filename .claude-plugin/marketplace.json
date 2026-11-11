@@ -217,7 +217,7 @@
     },
     {
       "name": "self-kill-guard",
-      "description": "PreToolUse hook that blocks Bash commands which would kill their own shell or Claude Code itself — pkill -f, pgrep piped to kill, and ps | grep | kill chains checked against what they would actually match.",
+      "description": "PreToolUse hook that blocks Bash commands which would kill their own shell or Claude Code itself — pkill -f, pgrep piped to kill, and ps | grep | kill chains checked against what they would actually match — plus a non-blocking reminder to re-check kill code written to files.",
       "source": "./plugins/self-kill-guard",
       "strict": false,
       "skills": []
