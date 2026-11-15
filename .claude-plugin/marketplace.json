@@ -239,6 +239,15 @@
       "skills": [
         "./skills/x-collector"
       ]
+    },
+    {
+      "name": "agent-browser-obscura",
+      "description": "Browser automation with agent-browser on the lightweight, stealth-capable Obscura engine — one pinned named session, Chrome fallback only when Obscura cannot do the job. Replaces the upstream agent-browser skill.",
+      "source": "./plugins/agent-browser-obscura",
+      "strict": false,
+      "skills": [
+        "./skills/agent-browser-obscura"
+      ]
     }
   ]
 }

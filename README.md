@@ -58,6 +58,7 @@ This marketplace registers **one skill as one plugin**, so users can pick and in
 | `self-kill-guard` | PreToolUse hook that blocks Bash commands which would kill their own shell or Claude Code itself — `pkill -f`, `pgrep \| kill`, `ps \| grep \| kill` checked against what they would really match, plus a non-blocking reminder to re-check kill code written to files. |
 | `ste100-korean` | ASD-STE100-style controlled-language rules for Korean and English writing — an always-on `SessionStart` hook, an English-Korean `GLOSSARY.md`, and a bilingual linter backed by the Kiwi morphological analyzer. |
 | `x-collector` | Collect public X.com (Twitter) posts without the paid API or a login — read posts/threads by URL, list an account's recent posts, and search via `site:x.com` on ddgs or SearXNG. |
+| `agent-browser-obscura` | Browser tasks with [agent-browser](https://github.com/vercel-labs/agent-browser) on the lightweight, stealth-capable [Obscura](https://github.com/h4ckf0r0day/obscura) engine — one pinned named session, Chrome fallback only when Obscura cannot do the job. Replaces the upstream `agent-browser` skill. |
 
 ## Using in Claude Code
 
@@ -164,6 +165,7 @@ In short:
 | `plugins/resticprofile/skills/resticprofile/references/**` | MIT License — (c) resticprofile contributors (local reference cache) |
 | `plugins/design-md/skills/design-md/references/**` | Apache License 2.0 — (c) Google LLC (local reference cache) |
 | `plugins/unslop/skills/unslop/SKILL.md` | MIT License — (c) 2026 Lauren Tan (verbatim copy from `cursor/plugins`) |
+| `plugins/agent-browser-obscura/skills/agent-browser-obscura/SKILL.md` (adapted portions) | Apache License 2.0 — adapted from `vercel-labs/agent-browser` ((c) Vercel, Inc. and contributors) and `h4ckf0r0day/obscura` ((c) Obscura contributors) |
 | `plugins/ste100-korean/skills/ste100-korean/**` | MIT License — adapted from `danyuchn/asd-ste100-skill` ((c) 2026 Dustin Yuchen Teng), `beamonic/ste-ko` ((c) 2026 Beamonic), `Turtle-Hwan/im-ai-copyeditor` ((c) 2026 Turtle-Hwan), and `cursor/plugins` unslop ((c) 2026 Lauren Tan) |
 
 If you are a rights holder for any of the cached third-party content

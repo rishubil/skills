@@ -5,7 +5,7 @@ The MIT License in `LICENSE` applies only to the original work in this
 repository:
 
   - Each skill's `SKILL.md` (instructions authored for this repository;
-    the one exception is listed under item 6 below)
+    the exceptions are listed under items 6 and 8 below)
   - Scripts and auxiliary code under `plugins/*/scripts/`
   - The marketplace manifest at `.claude-plugin/marketplace.json`
   - The repository's own `README.md`, `CLAUDE.md`, this `NOTICE`, etc.
@@ -105,6 +105,19 @@ Third-party content in this repository
                 reproduced in the skill's NOTICE.md. The skill does not
                 contain the ASD-STE100 rule text or dictionary.
      See:       plugins/ste100-korean/skills/ste100-korean/NOTICE.md
+
+8. plugins/agent-browser-obscura/skills/agent-browser-obscura/SKILL.md
+     Source:    https://github.com/vercel-labs/agent-browser (skills/agent-browser)
+                https://github.com/h4ckf0r0day/obscura (skills/obscura, docs)
+     Copyright: (c) Vercel, Inc. and agent-browser contributors
+                (c) Obscura contributors
+     License:   Apache License 2.0 (both)
+     Note:      Not a verbatim copy. The skill adapts the upstream
+                agent-browser skill's triggers and guide-loading approach
+                and Obscura's stealth, environment-variable, and
+                limitation notes. The adapted portions stay under
+                Apache-2.0; measurements and behavior notes are original.
+     See:       plugins/agent-browser-obscura/skills/agent-browser-obscura/NOTICE.md
 
 Notes on attribution vs. license
 --------------------------------
